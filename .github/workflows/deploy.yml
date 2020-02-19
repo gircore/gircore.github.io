@@ -1,0 +1,27 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.804
+    - name: Install Wyam
+      run: dotnet tool install --tool-path . wyam.tool
+    - name: Build website
+      run: ./wyam -r Docs
+    - name: Publish website
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_branch: master
+        publish_dir: ./output
