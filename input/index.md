@@ -8,8 +8,14 @@ The foucs is not to just wrap the libraries:
 
 The long term goal is to create libraries which allow to easily convert C# MVVM applications from Windows to Linux.
 
-Currently the focus is set to [GTK] to provide a simple UI-Toolkit for C# on Linux. Later on [libhandy] will be integrated, to support convergent UIs which run on mobile phones, too.
+Supported libraries
+* [GTK] (wip): UI-Toolkit
+* [WebKitGTK] (wip): Browser-Engine
+* [JavaScriptCore] (planned): Javascript integration for [WebKitGTK]
+* [libhandy] (planned): Convergent UI-Widgets for [GTK] to support mobile phones
 
 [GObject]: https://developer.gnome.org/gobject/stable/
 [GTK]: https://gtk.org/
 [libhandy]: https://source.puri.sm/Librem5/libhandy
+[WebKitGTK]: https://webkitgtk.org/
+[JavaScriptCore]: https://webkitgtk.org/reference/jsc-glib/stable/index.html
