@@ -8,3 +8,6 @@ Whats up next?
 * If you want to get more details before starting to program see: [Supported Libraries](/docs/SupportedLibraries)
 * If you want to get startet see: [Use the library](/docs/Use)
 * If you want to contribute to the project see the github project: https://github.com/gircore/gir.core
+
+[GObject]: https://developer.gnome.org/gobject/stable/
+[GTK]: https://gtk.org/
