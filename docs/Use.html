@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Gir.Core - Overview</title>
+        <title>Gir.Core - Use</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -83,7 +83,8 @@
                     <ul class="sidebar-menu">
                         
 
-                <li class="selected"><a href="/docs/Overview">Overview</a></li>
+                <li><a href="/docs/SupportedLibraries">Supportedlibraries</a></li>
+                <li class="selected"><a href="/docs/Use">Use</a></li>
 
                     </ul>
                             
@@ -97,10 +98,20 @@
 
 
 		<section class="content-header">
-			<h1>Overview</h1>
+			<h1>Use</h1>
 		</section>
 	<section class="content">
-		<p>The libraries target .NET Core 3.1. A stable release is not planned before .NET 5, to allow the API to mature.</p>
+		<p>Due to the early development stage of the project there is no nuget available. The libraries target .NET Core 3.1. A stable release is not planned before .NET 5, to allow the API to mature.</p>
+<p>The buildpipline is ready but to get this out into the public it needs more testing on different linux distributions. Currently it is tested on Fedora 32. If you are willing to contribute head over to: <a href="https://github.com/gircore/gir.core/">https://github.com/gircore/gir.core/</a></p>
+<p>Until the nuget is available you could just build the code locally. To get started just checkout the code and build the project:</p>
+<pre><code>$ git clone https://github.com/gircore/gir.core.git
+$ cd Build
+$ dotnet run -- release build
+</code></pre>
+<p>You can reference the project you want to use like this.</p>
+<pre><code>$ dotnet add reference [relative path to gir.core repository]/Libs/Gtk/Core/Gtk.Core.csproj
+</code></pre>
+<p>The repository contains an example app, which demonstrates some of the available UI controls. Feel free to take a look and explore: <a href="https://github.com/gircore/gir.core/tree/develop/GtkApp">Example App</a></p>
 
 	</section>
                 
