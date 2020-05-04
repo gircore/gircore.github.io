@@ -19,7 +19,7 @@ The bindings make it easy to:
 ![A picture of an example gtk application with visible webpage][GtkAppBrowser]
 
 ## Libchamplain
-[Libcchamplain] is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.
+[Libchamplain] is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.
 
 ![A picture of an example gtk application with visible openstreetmap][GtkAppMaps]
 
