@@ -1,6 +1,7 @@
 Description: General information
 ---
-Currently there are multiple libraries supported to integrate deeply into linux.
+Currently there are multiple libraries supported to integrate deeply into linux: [Gtk](#gtk), [WebkitGTK](#webkitgtk), [Libchamplain](#libchamplain), [libhandy](#libhandy), [GIO](#gio).
+
 ## GTK
 [Gtk] is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
 
