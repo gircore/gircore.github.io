@@ -28,6 +28,11 @@ The bindings make it easy to:
 
 One widget of this library is the *Paginator* which is shown in the pictures above. It allows to swipe through widgets and is used to switch between the webpage and maps control.
 
+## GIO
+[GIO] is a library to allow easy access to input / output operations. Currently there is initial support for [DBus] operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.
+
+[DBus]: https://www.freedesktop.org/wiki/Software/dbus/
+[GIO]: https://developer.gnome.org/gio/stable/
 [libhandy]: https://source.puri.sm/Librem5/libhandy
 [Libchamplain]: https://wiki.gnome.org/Projects/libchamplain
 [WebkitGTK]: https://webkitgtk.org/

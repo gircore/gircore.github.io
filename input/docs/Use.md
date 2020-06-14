@@ -12,6 +12,6 @@ Until the nuget is available you could just build the code locally. To get start
 
 You can reference the project you want to use like this.
 
-    $ dotnet add reference [relative path to gir.core repository]/Libs/Gtk/Core/Gtk.Core.csproj
+    $ dotnet add reference [RepoPath]/Libs/Gtk/Core/Gtk.Core.csproj
 
 The repository contains an example app, which demonstrates some of the available UI controls. Feel free to take a look and explore: [Example App](https://github.com/gircore/gir.core/tree/develop/GtkApp)
