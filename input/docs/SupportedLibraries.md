@@ -34,6 +34,8 @@ One widget of this library is the *Paginator* which is shown in the pictures abo
 
 ## Gstreamer
 [Gstreamer] is a multimedia library to play back various media format via a flexible pipelining system.
+![A picture of the Tears of Steel project played via gstreamer][GstSintel]
+(Homepage of the free movie: https://mango.blender.org/)
 
 [DBus]: https://www.freedesktop.org/wiki/Software/dbus/
 [GIO]: https://developer.gnome.org/gio/stable/
@@ -49,3 +51,4 @@ One widget of this library is the *Paginator* which is shown in the pictures abo
 [GtkApp]: GtkApp.png "Example GtkApp"
 [GtkAppBrowser]: GtkAppBrowser.png "Example GtkApp with Browser"
 [GtkAppMaps]: GtkAppMaps.png "Example GtkApp with Maps"
+[GstSintel]: GstSintel.jpg "Gstreamer playing back Tears of Steel (https://mango.blender.org/)"
