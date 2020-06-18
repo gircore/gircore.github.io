@@ -33,7 +33,7 @@ One widget of this library is the *Paginator* which is shown in the pictures abo
 [GIO] is a library to allow easy access to input / output operations. Currently there is initial support for [DBus] operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.
 
 ## Gstreamer
-[Gstreamer] is a multimedia library to play back various media format via a flexible pipelining system.
+[Gstreamer] is a multimedia library to play back various media format via a flexible pipelining system. The code to playback a movie is in the [samples](https://github.com/gircore/gir.core/blob/develop/Samples/Gst/Play.cs).
 ![A picture of the Tears of Steel project played via gstreamer][GstSintel]
 (Homepage of the free movie: https://mango.blender.org/)
 
