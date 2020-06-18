@@ -51,4 +51,4 @@ One widget of this library is the *Paginator* which is shown in the pictures abo
 [GtkApp]: GtkApp.png "Example GtkApp"
 [GtkAppBrowser]: GtkAppBrowser.png "Example GtkApp with Browser"
 [GtkAppMaps]: GtkAppMaps.png "Example GtkApp with Maps"
-[GstSintel]: GstSintel.jpg "Gstreamer playing back Tears of Steel (https://mango.blender.org/)"
+[GstSintel]: GstSintel.png "Gstreamer playing back Tears of Steel (https://mango.blender.org/)"
