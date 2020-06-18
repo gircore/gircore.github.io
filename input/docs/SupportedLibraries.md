@@ -1,6 +1,6 @@
 Description: General information
 ---
-Currently there are multiple libraries supported to integrate deeply into linux: [Gtk](#gtk), [WebkitGTK](#webkitgtk), [Libchamplain](#libchamplain), [libhandy](#libhandy), [GIO](#gio).
+Currently there are multiple libraries supported to integrate deeply into linux: [Gtk](#gtk), [WebkitGTK](#webkitgtk), [Libchamplain](#libchamplain), [libhandy](#libhandy), [GIO](#gio), [gstreamer](#gstreamer).
 
 ## GTK
 [Gtk] is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
@@ -32,6 +32,9 @@ One widget of this library is the *Paginator* which is shown in the pictures abo
 ## GIO
 [GIO] is a library to allow easy access to input / output operations. Currently there is initial support for [DBus] operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.
 
+## Gstreamer
+[Gstreamer] is a multimedia library to play back various media format via a flexible pipelining system.
+
 [DBus]: https://www.freedesktop.org/wiki/Software/dbus/
 [GIO]: https://developer.gnome.org/gio/stable/
 [libhandy]: https://source.puri.sm/Librem5/libhandy
@@ -41,6 +44,7 @@ One widget of this library is the *Paginator* which is shown in the pictures abo
 [Gimp]: https://gimp.org
 [Gnome]: https://gnome.org
 [Xfce]: https://xfce.org
+[Gstreamer]: https://gstreamer.freedesktop.org/
 
 [GtkApp]: GtkApp.png "Example GtkApp"
 [GtkAppBrowser]: GtkAppBrowser.png "Example GtkApp with Browser"

@@ -14,4 +14,4 @@ You can reference the project you want to use like this.
 
     $ dotnet add reference [RepoPath]/Libs/Gtk/Core/Gtk.Core.csproj
 
-The repository contains an example app, which demonstrates some of the available UI controls. Feel free to take a look and explore: [Example App](https://github.com/gircore/gir.core/tree/develop/GtkApp)
+The repository's sample folder contains several example apps which show some of the available functions. Feel free to take a look and explore: [Samples](https://github.com/gircore/gir.core/tree/develop/Samples)
