@@ -6,7 +6,7 @@ The buildpipline is ready but to get this out into the public it needs more test
 
 Until the nuget is available you could just build the code locally. To get started just checkout the code and build the project:
 
-    $ git clone https://github.com/gircore/gir.core.git
+    $ git clone --recursive https://github.com/gircore/gir.core.git
     $ cd Build
     $ dotnet run -- release build
 
