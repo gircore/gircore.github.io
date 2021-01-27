@@ -1,0 +1,790 @@
+﻿toc:
+  - name: Gst.Base
+    link: Gst.Base
+    subfolderitems:
+    - name: Adapter
+      link: GstBase/Adapter
+    - name: Aggregator
+      link: GstBase/Aggregator
+      subfolderitems:
+      - name: Item
+        link: GstBase/Aggregator/Item
+      - name: OnSamplesSelected
+        link: GstBase/Aggregator/OnSamplesSelected
+      - name: SamplesSelectedSignal
+        link: GstBase/Aggregator/SamplesSelectedSignal
+    - name: AggregatorPad
+      link: GstBase/AggregatorPad
+      subfolderitems:
+      - name: Item
+        link: GstBase/AggregatorPad/Item
+      - name: OnBufferConsumed
+        link: GstBase/AggregatorPad/OnBufferConsumed
+      - name: BufferConsumedSignal
+        link: GstBase/AggregatorPad/BufferConsumedSignal
+    - name: BaseParse
+      link: GstBase/BaseParse
+    - name: BaseSink
+      link: GstBase/BaseSink
+    - name: BaseSrc
+      link: GstBase/BaseSrc
+    - name: BaseTransform
+      link: GstBase/BaseTransform
+    - name: CollectPads
+      link: GstBase/CollectPads
+    - name: Constants
+      link: GstBase/Constants
+      subfolderitems:
+      - name: Constants
+        link: GstBase/Constants/Constants
+      - name: BASE_PARSE_FLAG_DRAINING
+        link: GstBase/Constants/BASE_PARSE_FLAG_DRAINING
+      - name: BASE_PARSE_FLAG_LOST_SYNC
+        link: GstBase/Constants/BASE_PARSE_FLAG_LOST_SYNC
+      - name: BASE_TRANSFORM_SINK_NAME
+        link: GstBase/Constants/BASE_TRANSFORM_SINK_NAME
+      - name: BASE_TRANSFORM_SRC_NAME
+        link: GstBase/Constants/BASE_TRANSFORM_SRC_NAME
+    - name: DataQueue
+      link: GstBase/DataQueue
+      subfolderitems:
+      - name: Item
+        link: GstBase/DataQueue/Item
+      - name: OnEmpty
+        link: GstBase/DataQueue/OnEmpty
+      - name: OnFull
+        link: GstBase/DataQueue/OnFull
+      - name: EmptySignal
+        link: GstBase/DataQueue/EmptySignal
+      - name: FullSignal
+        link: GstBase/DataQueue/FullSignal
+    - name: Global
+      link: GstBase/Global
+      subfolderitems:
+      - name: Global
+        link: GstBase/Global/Global
+    - name: PushSrc
+      link: GstBase/PushSrc
+    - name: CollectDataDestroyNotify
+      link: GstBase/CollectDataDestroyNotify
+    - name: CollectPadsBufferFunction
+      link: GstBase/CollectPadsBufferFunction
+    - name: CollectPadsClipFunction
+      link: GstBase/CollectPadsClipFunction
+    - name: CollectPadsCompareFunction
+      link: GstBase/CollectPadsCompareFunction
+    - name: CollectPadsEventFunction
+      link: GstBase/CollectPadsEventFunction
+    - name: CollectPadsFlushFunction
+      link: GstBase/CollectPadsFlushFunction
+    - name: CollectPadsFunction
+      link: GstBase/CollectPadsFunction
+    - name: CollectPadsQueryFunction
+      link: GstBase/CollectPadsQueryFunction
+    - name: DataQueueCheckFullFunction
+      link: GstBase/DataQueueCheckFullFunction
+    - name: DataQueueEmptyCallback
+      link: GstBase/DataQueueEmptyCallback
+    - name: DataQueueFullCallback
+      link: GstBase/DataQueueFullCallback
+    - name: TypeFindHelperGetRangeFunction
+      link: GstBase/TypeFindHelperGetRangeFunction
+    - name: AggregatorStartTimeSelection
+      link: GstBase/AggregatorStartTimeSelection
+    - name: BaseParseFrameFlags
+      link: GstBase/BaseParseFrameFlags
+    - name: BaseSrcFlags
+      link: GstBase/BaseSrcFlags
+    - name: CollectPadsStateFlags
+      link: GstBase/CollectPadsStateFlags
+    - name: AdapterClass
+      link: GstBase/AdapterClass
+    - name: AggregatorClass
+      link: GstBase/AggregatorClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/AggregatorClass/parent_class
+      - name: flush
+        link: GstBase/AggregatorClass/flush
+      - name: clip
+        link: GstBase/AggregatorClass/clip
+      - name: finish_buffer
+        link: GstBase/AggregatorClass/finish_buffer
+      - name: sink_event
+        link: GstBase/AggregatorClass/sink_event
+      - name: sink_query
+        link: GstBase/AggregatorClass/sink_query
+      - name: src_event
+        link: GstBase/AggregatorClass/src_event
+      - name: src_query
+        link: GstBase/AggregatorClass/src_query
+      - name: src_activate
+        link: GstBase/AggregatorClass/src_activate
+      - name: aggregate
+        link: GstBase/AggregatorClass/aggregate
+      - name: stop
+        link: GstBase/AggregatorClass/stop
+      - name: start
+        link: GstBase/AggregatorClass/start
+      - name: get_next_time
+        link: GstBase/AggregatorClass/get_next_time
+      - name: create_new_pad
+        link: GstBase/AggregatorClass/create_new_pad
+      - name: update_src_caps
+        link: GstBase/AggregatorClass/update_src_caps
+      - name: fixate_src_caps
+        link: GstBase/AggregatorClass/fixate_src_caps
+      - name: negotiated_src_caps
+        link: GstBase/AggregatorClass/negotiated_src_caps
+      - name: decide_allocation
+        link: GstBase/AggregatorClass/decide_allocation
+      - name: propose_allocation
+        link: GstBase/AggregatorClass/propose_allocation
+      - name: negotiate
+        link: GstBase/AggregatorClass/negotiate
+      - name: sink_event_pre_queue
+        link: GstBase/AggregatorClass/sink_event_pre_queue
+      - name: sink_query_pre_queue
+        link: GstBase/AggregatorClass/sink_query_pre_queue
+      - name: finish_buffer_list
+        link: GstBase/AggregatorClass/finish_buffer_list
+      - name: peek_next_sample
+        link: GstBase/AggregatorClass/peek_next_sample
+      - name: _gst_reserved1
+        link: GstBase/AggregatorClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/AggregatorClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/AggregatorClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/AggregatorClass/_gst_reserved4
+      - name: _gst_reserved5
+        link: GstBase/AggregatorClass/_gst_reserved5
+      - name: _gst_reserved6
+        link: GstBase/AggregatorClass/_gst_reserved6
+      - name: _gst_reserved7
+        link: GstBase/AggregatorClass/_gst_reserved7
+      - name: _gst_reserved8
+        link: GstBase/AggregatorClass/_gst_reserved8
+      - name: _gst_reserved9
+        link: GstBase/AggregatorClass/_gst_reserved9
+      - name: _gst_reserved10
+        link: GstBase/AggregatorClass/_gst_reserved10
+      - name: _gst_reserved11
+        link: GstBase/AggregatorClass/_gst_reserved11
+      - name: _gst_reserved12
+        link: GstBase/AggregatorClass/_gst_reserved12
+      - name: _gst_reserved13
+        link: GstBase/AggregatorClass/_gst_reserved13
+      - name: _gst_reserved14
+        link: GstBase/AggregatorClass/_gst_reserved14
+      - name: _gst_reserved15
+        link: GstBase/AggregatorClass/_gst_reserved15
+    - name: AggregatorPadClass
+      link: GstBase/AggregatorPadClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/AggregatorPadClass/parent_class
+      - name: flush
+        link: GstBase/AggregatorPadClass/flush
+      - name: skip_buffer
+        link: GstBase/AggregatorPadClass/skip_buffer
+      - name: _gst_reserved1
+        link: GstBase/AggregatorPadClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/AggregatorPadClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/AggregatorPadClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/AggregatorPadClass/_gst_reserved4
+      - name: _gst_reserved5
+        link: GstBase/AggregatorPadClass/_gst_reserved5
+      - name: _gst_reserved6
+        link: GstBase/AggregatorPadClass/_gst_reserved6
+      - name: _gst_reserved7
+        link: GstBase/AggregatorPadClass/_gst_reserved7
+      - name: _gst_reserved8
+        link: GstBase/AggregatorPadClass/_gst_reserved8
+      - name: _gst_reserved9
+        link: GstBase/AggregatorPadClass/_gst_reserved9
+      - name: _gst_reserved10
+        link: GstBase/AggregatorPadClass/_gst_reserved10
+      - name: _gst_reserved11
+        link: GstBase/AggregatorPadClass/_gst_reserved11
+      - name: _gst_reserved12
+        link: GstBase/AggregatorPadClass/_gst_reserved12
+      - name: _gst_reserved13
+        link: GstBase/AggregatorPadClass/_gst_reserved13
+      - name: _gst_reserved14
+        link: GstBase/AggregatorPadClass/_gst_reserved14
+      - name: _gst_reserved15
+        link: GstBase/AggregatorPadClass/_gst_reserved15
+      - name: _gst_reserved16
+        link: GstBase/AggregatorPadClass/_gst_reserved16
+      - name: _gst_reserved17
+        link: GstBase/AggregatorPadClass/_gst_reserved17
+      - name: _gst_reserved18
+        link: GstBase/AggregatorPadClass/_gst_reserved18
+      - name: _gst_reserved19
+        link: GstBase/AggregatorPadClass/_gst_reserved19
+      - name: _gst_reserved20
+        link: GstBase/AggregatorPadClass/_gst_reserved20
+    - name: AggregatorPadPrivate
+      link: GstBase/AggregatorPadPrivate
+    - name: AggregatorPrivate
+      link: GstBase/AggregatorPrivate
+    - name: BaseParseClass
+      link: GstBase/BaseParseClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/BaseParseClass/parent_class
+      - name: start
+        link: GstBase/BaseParseClass/start
+      - name: stop
+        link: GstBase/BaseParseClass/stop
+      - name: set_sink_caps
+        link: GstBase/BaseParseClass/set_sink_caps
+      - name: handle_frame
+        link: GstBase/BaseParseClass/handle_frame
+      - name: pre_push_frame
+        link: GstBase/BaseParseClass/pre_push_frame
+      - name: convert
+        link: GstBase/BaseParseClass/convert
+      - name: sink_event
+        link: GstBase/BaseParseClass/sink_event
+      - name: src_event
+        link: GstBase/BaseParseClass/src_event
+      - name: get_sink_caps
+        link: GstBase/BaseParseClass/get_sink_caps
+      - name: detect
+        link: GstBase/BaseParseClass/detect
+      - name: sink_query
+        link: GstBase/BaseParseClass/sink_query
+      - name: src_query
+        link: GstBase/BaseParseClass/src_query
+      - name: _gst_reserved1
+        link: GstBase/BaseParseClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/BaseParseClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/BaseParseClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/BaseParseClass/_gst_reserved4
+      - name: _gst_reserved5
+        link: GstBase/BaseParseClass/_gst_reserved5
+      - name: _gst_reserved6
+        link: GstBase/BaseParseClass/_gst_reserved6
+      - name: _gst_reserved7
+        link: GstBase/BaseParseClass/_gst_reserved7
+      - name: _gst_reserved8
+        link: GstBase/BaseParseClass/_gst_reserved8
+      - name: _gst_reserved9
+        link: GstBase/BaseParseClass/_gst_reserved9
+      - name: _gst_reserved10
+        link: GstBase/BaseParseClass/_gst_reserved10
+      - name: _gst_reserved11
+        link: GstBase/BaseParseClass/_gst_reserved11
+      - name: _gst_reserved12
+        link: GstBase/BaseParseClass/_gst_reserved12
+      - name: _gst_reserved13
+        link: GstBase/BaseParseClass/_gst_reserved13
+      - name: _gst_reserved14
+        link: GstBase/BaseParseClass/_gst_reserved14
+      - name: _gst_reserved15
+        link: GstBase/BaseParseClass/_gst_reserved15
+      - name: _gst_reserved16
+        link: GstBase/BaseParseClass/_gst_reserved16
+      - name: _gst_reserved17
+        link: GstBase/BaseParseClass/_gst_reserved17
+      - name: _gst_reserved18
+        link: GstBase/BaseParseClass/_gst_reserved18
+    - name: BaseParseFrame
+      link: GstBase/BaseParseFrame
+      subfolderitems:
+      - name: buffer
+        link: GstBase/BaseParseFrame/buffer
+      - name: out_buffer
+        link: GstBase/BaseParseFrame/out_buffer
+      - name: flags
+        link: GstBase/BaseParseFrame/flags
+      - name: offset
+        link: GstBase/BaseParseFrame/offset
+      - name: overhead
+        link: GstBase/BaseParseFrame/overhead
+      - name: size
+        link: GstBase/BaseParseFrame/size
+      - name: _gst_reserved_i1
+        link: GstBase/BaseParseFrame/_gst_reserved_i1
+      - name: _gst_reserved_i2
+        link: GstBase/BaseParseFrame/_gst_reserved_i2
+      - name: _gst_reserved_p1
+        link: GstBase/BaseParseFrame/_gst_reserved_p1
+      - name: _gst_reserved_p2
+        link: GstBase/BaseParseFrame/_gst_reserved_p2
+      - name: _private_flags
+        link: GstBase/BaseParseFrame/_private_flags
+    - name: BaseParsePrivate
+      link: GstBase/BaseParsePrivate
+    - name: BaseSinkClass
+      link: GstBase/BaseSinkClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/BaseSinkClass/parent_class
+      - name: get_caps
+        link: GstBase/BaseSinkClass/get_caps
+      - name: set_caps
+        link: GstBase/BaseSinkClass/set_caps
+      - name: fixate
+        link: GstBase/BaseSinkClass/fixate
+      - name: activate_pull
+        link: GstBase/BaseSinkClass/activate_pull
+      - name: get_times
+        link: GstBase/BaseSinkClass/get_times
+      - name: propose_allocation
+        link: GstBase/BaseSinkClass/propose_allocation
+      - name: start
+        link: GstBase/BaseSinkClass/start
+      - name: stop
+        link: GstBase/BaseSinkClass/stop
+      - name: unlock
+        link: GstBase/BaseSinkClass/unlock
+      - name: unlock_stop
+        link: GstBase/BaseSinkClass/unlock_stop
+      - name: query
+        link: GstBase/BaseSinkClass/query
+      - name: event
+        link: GstBase/BaseSinkClass/event
+      - name: wait_event
+        link: GstBase/BaseSinkClass/wait_event
+      - name: prepare
+        link: GstBase/BaseSinkClass/prepare
+      - name: prepare_list
+        link: GstBase/BaseSinkClass/prepare_list
+      - name: preroll
+        link: GstBase/BaseSinkClass/preroll
+      - name: render
+        link: GstBase/BaseSinkClass/render
+      - name: render_list
+        link: GstBase/BaseSinkClass/render_list
+      - name: _gst_reserved1
+        link: GstBase/BaseSinkClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/BaseSinkClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/BaseSinkClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/BaseSinkClass/_gst_reserved4
+      - name: _gst_reserved5
+        link: GstBase/BaseSinkClass/_gst_reserved5
+      - name: _gst_reserved6
+        link: GstBase/BaseSinkClass/_gst_reserved6
+      - name: _gst_reserved7
+        link: GstBase/BaseSinkClass/_gst_reserved7
+      - name: _gst_reserved8
+        link: GstBase/BaseSinkClass/_gst_reserved8
+      - name: _gst_reserved9
+        link: GstBase/BaseSinkClass/_gst_reserved9
+      - name: _gst_reserved10
+        link: GstBase/BaseSinkClass/_gst_reserved10
+      - name: _gst_reserved11
+        link: GstBase/BaseSinkClass/_gst_reserved11
+      - name: _gst_reserved12
+        link: GstBase/BaseSinkClass/_gst_reserved12
+      - name: _gst_reserved13
+        link: GstBase/BaseSinkClass/_gst_reserved13
+      - name: _gst_reserved14
+        link: GstBase/BaseSinkClass/_gst_reserved14
+      - name: _gst_reserved15
+        link: GstBase/BaseSinkClass/_gst_reserved15
+      - name: _gst_reserved16
+        link: GstBase/BaseSinkClass/_gst_reserved16
+      - name: _gst_reserved17
+        link: GstBase/BaseSinkClass/_gst_reserved17
+      - name: _gst_reserved18
+        link: GstBase/BaseSinkClass/_gst_reserved18
+      - name: _gst_reserved19
+        link: GstBase/BaseSinkClass/_gst_reserved19
+      - name: _gst_reserved20
+        link: GstBase/BaseSinkClass/_gst_reserved20
+    - name: BaseSinkPrivate
+      link: GstBase/BaseSinkPrivate
+    - name: BaseSrcClass
+      link: GstBase/BaseSrcClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/BaseSrcClass/parent_class
+      - name: get_caps
+        link: GstBase/BaseSrcClass/get_caps
+      - name: negotiate
+        link: GstBase/BaseSrcClass/negotiate
+      - name: fixate
+        link: GstBase/BaseSrcClass/fixate
+      - name: set_caps
+        link: GstBase/BaseSrcClass/set_caps
+      - name: decide_allocation
+        link: GstBase/BaseSrcClass/decide_allocation
+      - name: start
+        link: GstBase/BaseSrcClass/start
+      - name: stop
+        link: GstBase/BaseSrcClass/stop
+      - name: get_times
+        link: GstBase/BaseSrcClass/get_times
+      - name: get_size
+        link: GstBase/BaseSrcClass/get_size
+      - name: is_seekable
+        link: GstBase/BaseSrcClass/is_seekable
+      - name: prepare_seek_segment
+        link: GstBase/BaseSrcClass/prepare_seek_segment
+      - name: do_seek
+        link: GstBase/BaseSrcClass/do_seek
+      - name: unlock
+        link: GstBase/BaseSrcClass/unlock
+      - name: unlock_stop
+        link: GstBase/BaseSrcClass/unlock_stop
+      - name: query
+        link: GstBase/BaseSrcClass/query
+      - name: event
+        link: GstBase/BaseSrcClass/event
+      - name: create
+        link: GstBase/BaseSrcClass/create
+      - name: alloc
+        link: GstBase/BaseSrcClass/alloc
+      - name: fill
+        link: GstBase/BaseSrcClass/fill
+      - name: _gst_reserved1
+        link: GstBase/BaseSrcClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/BaseSrcClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/BaseSrcClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/BaseSrcClass/_gst_reserved4
+      - name: _gst_reserved5
+        link: GstBase/BaseSrcClass/_gst_reserved5
+      - name: _gst_reserved6
+        link: GstBase/BaseSrcClass/_gst_reserved6
+      - name: _gst_reserved7
+        link: GstBase/BaseSrcClass/_gst_reserved7
+      - name: _gst_reserved8
+        link: GstBase/BaseSrcClass/_gst_reserved8
+      - name: _gst_reserved9
+        link: GstBase/BaseSrcClass/_gst_reserved9
+      - name: _gst_reserved10
+        link: GstBase/BaseSrcClass/_gst_reserved10
+      - name: _gst_reserved11
+        link: GstBase/BaseSrcClass/_gst_reserved11
+      - name: _gst_reserved12
+        link: GstBase/BaseSrcClass/_gst_reserved12
+      - name: _gst_reserved13
+        link: GstBase/BaseSrcClass/_gst_reserved13
+      - name: _gst_reserved14
+        link: GstBase/BaseSrcClass/_gst_reserved14
+      - name: _gst_reserved15
+        link: GstBase/BaseSrcClass/_gst_reserved15
+      - name: _gst_reserved16
+        link: GstBase/BaseSrcClass/_gst_reserved16
+      - name: _gst_reserved17
+        link: GstBase/BaseSrcClass/_gst_reserved17
+      - name: _gst_reserved18
+        link: GstBase/BaseSrcClass/_gst_reserved18
+      - name: _gst_reserved19
+        link: GstBase/BaseSrcClass/_gst_reserved19
+      - name: _gst_reserved20
+        link: GstBase/BaseSrcClass/_gst_reserved20
+    - name: BaseSrcPrivate
+      link: GstBase/BaseSrcPrivate
+    - name: BaseTransformClass
+      link: GstBase/BaseTransformClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/BaseTransformClass/parent_class
+      - name: passthrough_on_same_caps
+        link: GstBase/BaseTransformClass/passthrough_on_same_caps
+      - name: transform_ip_on_passthrough
+        link: GstBase/BaseTransformClass/transform_ip_on_passthrough
+      - name: transform_caps
+        link: GstBase/BaseTransformClass/transform_caps
+      - name: fixate_caps
+        link: GstBase/BaseTransformClass/fixate_caps
+      - name: accept_caps
+        link: GstBase/BaseTransformClass/accept_caps
+      - name: set_caps
+        link: GstBase/BaseTransformClass/set_caps
+      - name: query
+        link: GstBase/BaseTransformClass/query
+      - name: decide_allocation
+        link: GstBase/BaseTransformClass/decide_allocation
+      - name: filter_meta
+        link: GstBase/BaseTransformClass/filter_meta
+      - name: propose_allocation
+        link: GstBase/BaseTransformClass/propose_allocation
+      - name: transform_size
+        link: GstBase/BaseTransformClass/transform_size
+      - name: get_unit_size
+        link: GstBase/BaseTransformClass/get_unit_size
+      - name: start
+        link: GstBase/BaseTransformClass/start
+      - name: stop
+        link: GstBase/BaseTransformClass/stop
+      - name: sink_event
+        link: GstBase/BaseTransformClass/sink_event
+      - name: src_event
+        link: GstBase/BaseTransformClass/src_event
+      - name: prepare_output_buffer
+        link: GstBase/BaseTransformClass/prepare_output_buffer
+      - name: copy_metadata
+        link: GstBase/BaseTransformClass/copy_metadata
+      - name: transform_meta
+        link: GstBase/BaseTransformClass/transform_meta
+      - name: before_transform
+        link: GstBase/BaseTransformClass/before_transform
+      - name: transform
+        link: GstBase/BaseTransformClass/transform
+      - name: transform_ip
+        link: GstBase/BaseTransformClass/transform_ip
+      - name: submit_input_buffer
+        link: GstBase/BaseTransformClass/submit_input_buffer
+      - name: generate_output
+        link: GstBase/BaseTransformClass/generate_output
+      - name: _gst_reserved1
+        link: GstBase/BaseTransformClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/BaseTransformClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/BaseTransformClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/BaseTransformClass/_gst_reserved4
+      - name: _gst_reserved5
+        link: GstBase/BaseTransformClass/_gst_reserved5
+      - name: _gst_reserved6
+        link: GstBase/BaseTransformClass/_gst_reserved6
+      - name: _gst_reserved7
+        link: GstBase/BaseTransformClass/_gst_reserved7
+      - name: _gst_reserved8
+        link: GstBase/BaseTransformClass/_gst_reserved8
+      - name: _gst_reserved9
+        link: GstBase/BaseTransformClass/_gst_reserved9
+      - name: _gst_reserved10
+        link: GstBase/BaseTransformClass/_gst_reserved10
+      - name: _gst_reserved11
+        link: GstBase/BaseTransformClass/_gst_reserved11
+      - name: _gst_reserved12
+        link: GstBase/BaseTransformClass/_gst_reserved12
+      - name: _gst_reserved13
+        link: GstBase/BaseTransformClass/_gst_reserved13
+      - name: _gst_reserved14
+        link: GstBase/BaseTransformClass/_gst_reserved14
+      - name: _gst_reserved15
+        link: GstBase/BaseTransformClass/_gst_reserved15
+      - name: _gst_reserved16
+        link: GstBase/BaseTransformClass/_gst_reserved16
+      - name: _gst_reserved17
+        link: GstBase/BaseTransformClass/_gst_reserved17
+      - name: _gst_reserved18
+        link: GstBase/BaseTransformClass/_gst_reserved18
+    - name: BaseTransformPrivate
+      link: GstBase/BaseTransformPrivate
+    - name: BitReader
+      link: GstBase/BitReader
+      subfolderitems:
+      - name: data
+        link: GstBase/BitReader/data
+      - name: size
+        link: GstBase/BitReader/size
+      - name: byte
+        link: GstBase/BitReader/byte
+      - name: bit
+        link: GstBase/BitReader/bit
+      - name: _gst_reserved1
+        link: GstBase/BitReader/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/BitReader/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/BitReader/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/BitReader/_gst_reserved4
+    - name: BitWriter
+      link: GstBase/BitWriter
+      subfolderitems:
+      - name: data
+        link: GstBase/BitWriter/data
+      - name: bit_size
+        link: GstBase/BitWriter/bit_size
+      - name: bit_capacity
+        link: GstBase/BitWriter/bit_capacity
+      - name: auto_grow
+        link: GstBase/BitWriter/auto_grow
+      - name: owned
+        link: GstBase/BitWriter/owned
+      - name: _gst_reserved1
+        link: GstBase/BitWriter/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/BitWriter/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/BitWriter/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/BitWriter/_gst_reserved4
+    - name: ByteReader
+      link: GstBase/ByteReader
+      subfolderitems:
+      - name: data
+        link: GstBase/ByteReader/data
+      - name: size
+        link: GstBase/ByteReader/size
+      - name: byte
+        link: GstBase/ByteReader/byte
+      - name: _gst_reserved1
+        link: GstBase/ByteReader/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/ByteReader/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/ByteReader/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/ByteReader/_gst_reserved4
+    - name: ByteWriter
+      link: GstBase/ByteWriter
+      subfolderitems:
+      - name: parent
+        link: GstBase/ByteWriter/parent
+      - name: alloc_size
+        link: GstBase/ByteWriter/alloc_size
+      - name: fixed
+        link: GstBase/ByteWriter/fixed
+      - name: owned
+        link: GstBase/ByteWriter/owned
+      - name: _gst_reserved1
+        link: GstBase/ByteWriter/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/ByteWriter/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/ByteWriter/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/ByteWriter/_gst_reserved4
+    - name: CollectData
+      link: GstBase/CollectData
+      subfolderitems:
+      - name: collect
+        link: GstBase/CollectData/collect
+      - name: pad
+        link: GstBase/CollectData/pad
+      - name: buffer
+        link: GstBase/CollectData/buffer
+      - name: pos
+        link: GstBase/CollectData/pos
+      - name: segment
+        link: GstBase/CollectData/segment
+      - name: state
+        link: GstBase/CollectData/state
+      - name: priv
+        link: GstBase/CollectData/priv
+    - name: CollectDataPrivate
+      link: GstBase/CollectDataPrivate
+    - name: CollectPadsClass
+      link: GstBase/CollectPadsClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/CollectPadsClass/parent_class
+      - name: _gst_reserved1
+        link: GstBase/CollectPadsClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/CollectPadsClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/CollectPadsClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/CollectPadsClass/_gst_reserved4
+    - name: CollectPadsPrivate
+      link: GstBase/CollectPadsPrivate
+    - name: DataQueueClass
+      link: GstBase/DataQueueClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/DataQueueClass/parent_class
+      - name: empty
+        link: GstBase/DataQueueClass/empty
+      - name: full
+        link: GstBase/DataQueueClass/full
+      - name: _gst_reserved1
+        link: GstBase/DataQueueClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/DataQueueClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/DataQueueClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/DataQueueClass/_gst_reserved4
+    - name: DataQueueItem
+      link: GstBase/DataQueueItem
+      subfolderitems:
+      - name: object
+        link: GstBase/DataQueueItem/object
+      - name: size
+        link: GstBase/DataQueueItem/size
+      - name: duration
+        link: GstBase/DataQueueItem/duration
+      - name: visible
+        link: GstBase/DataQueueItem/visible
+      - name: destroy
+        link: GstBase/DataQueueItem/destroy
+      - name: _gst_reserved1
+        link: GstBase/DataQueueItem/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/DataQueueItem/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/DataQueueItem/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/DataQueueItem/_gst_reserved4
+    - name: DataQueuePrivate
+      link: GstBase/DataQueuePrivate
+    - name: DataQueueSize
+      link: GstBase/DataQueueSize
+      subfolderitems:
+      - name: visible
+        link: GstBase/DataQueueSize/visible
+      - name: bytes
+        link: GstBase/DataQueueSize/bytes
+      - name: time
+        link: GstBase/DataQueueSize/time
+    - name: FlowCombiner
+      link: GstBase/FlowCombiner
+    - name: PushSrcClass
+      link: GstBase/PushSrcClass
+      subfolderitems:
+      - name: parent_class
+        link: GstBase/PushSrcClass/parent_class
+      - name: create
+        link: GstBase/PushSrcClass/create
+      - name: alloc
+        link: GstBase/PushSrcClass/alloc
+      - name: fill
+        link: GstBase/PushSrcClass/fill
+      - name: _gst_reserved1
+        link: GstBase/PushSrcClass/_gst_reserved1
+      - name: _gst_reserved2
+        link: GstBase/PushSrcClass/_gst_reserved2
+      - name: _gst_reserved3
+        link: GstBase/PushSrcClass/_gst_reserved3
+      - name: _gst_reserved4
+        link: GstBase/PushSrcClass/_gst_reserved4
+    - name: QueueArray
+      link: GstBase/QueueArray
+    - name: Aggregator.SamplesSelectedSignalArgs
+      link: GstBase/Aggregator.SamplesSelectedSignalArgs
+      subfolderitems:
+      - name: SamplesSelectedSignalArgs
+        link: GstBase/Aggregator.SamplesSelectedSignalArgs/SamplesSelectedSignalArgs
+      - name: Segment
+        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Segment
+      - name: Pts
+        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Pts
+      - name: Dts
+        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Dts
+      - name: Duration
+        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Duration
+      - name: Info
+        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Info
+    - name: AggregatorPad.BufferConsumedSignalArgs
+      link: GstBase/AggregatorPad.BufferConsumedSignalArgs
+      subfolderitems:
+      - name: BufferConsumedSignalArgs
+        link: GstBase/AggregatorPad.BufferConsumedSignalArgs/BufferConsumedSignalArgs
+      - name: object
+        link: GstBase/AggregatorPad.BufferConsumedSignalArgs/object
