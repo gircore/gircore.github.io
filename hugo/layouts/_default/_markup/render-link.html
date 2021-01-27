@@ -1,1 +1,5 @@
+{{ if strings.HasPrefix .Destination "http" }}
+<a href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
+{{ else }}
 <a href="{{ (.Page.GetPage .Destination).RelPermalink | safeURL }}">{{ .Text | safeHTML }}</a>
+{{ end }}

@@ -1,6 +1,6 @@
 # Libraries
 
-Currently there are multiple libraries planned to be integrated deeply into linux: [Gtk](#gtk), [WebkitGTK](#webkitgtk), [Libchamplain](#libchamplain), [libhandy](#libhandy), [GIO](#gio), [gstreamer](#gstreamer).
+Currently there are multiple libraries planned to be integrated deeply into linux: [Gtk], [WebkitGTK], [Libchamplain] [libhandy], [GIO], [gstreamer].
 
 > **Note:** As the project is still in early development not all features mentioned below must be available: Refactorings can remove previous available features.
 
