@@ -1,28 +1,56 @@
 name: Deploy website
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - develop
 
 jobs:
   build:
-
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-dotnet@v1
+    - name: Checkout website
+      uses: actions/checkout@v2
       with:
-        dotnet-version: 2.1.804
-    - name: Install Wyam
-      run: dotnet tool install --tool-path . wyam.tool
+        path: 'website'
+
+    - name: Checkout gir.core
+      uses: actions/checkout@v2
+      with:
+        repository: 'gircore/gir.core'
+        ref: 'develop'
+        path: 'gircore'
+        submodules: 'true'
+        
+    - name: Prepare .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.x'
+        
+    - name: Run release build
+      run: dotnet run -- --release --xml-documentation --targets docs
+      working-directory: './gircore/Build'
+
+    - name: Move api docs into website
+      run: cp -r ./gircore/Docs/Api ./website/content/api
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        # extended: true
+
     - name: Build website
-      run: ./wyam -r Docs
+      run: hugo --minify
+      working-directory: './website/hugo'
+  
     - name: Publish website
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_branch: master
-        publish_dir: ./output
+        publish_dir: ./website/output
         cname: gircore.tiede.org
