@@ -1,6 +1,8 @@
 # API-Documentation
 
-> **Note:** The current API documentation is based on the development branch as there is no release available. The API is not stable or in a final state.
+{{<hint info>}}
+**Note:** The current API documentation is based on the development branch as there is no release available. The API is not stable or in a final state.
+{{</hint>}}
 
 ## Basic APIs
 - [GObject](../api/gobject.md)

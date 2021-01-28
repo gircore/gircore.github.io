@@ -2,7 +2,9 @@
 
 Currently there are multiple libraries planned to be integrated deeply into linux: [Gtk], [WebkitGTK], [Libchamplain] [libhandy], [GIO], [gstreamer].
 
-> **Note:** As the project is still in early development not all features mentioned below must be available: Refactorings can remove previous available features.
+{{<hint info>}}
+**Note:** As the project is still in early development not all features mentioned below must be available: Refactorings can remove previous available features.
+{{</hint>}}
 
 ## GTK
 [Gtk] is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
