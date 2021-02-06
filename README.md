@@ -1,2 +1,2 @@
 # gircore.github.io
-Home of the [Gir.Core website](https://gircore.tiede.org/)
+Home of the [Gir.Core website](https://gircore.github.io/)
