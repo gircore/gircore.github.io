@@ -1,790 +1,1192 @@
 ﻿toc:
-  - name: Gst.Base
-    link: Gst.Base
+  - name: GstPbutils-1.0
+    link: GstPbutils-1.0
     subfolderitems:
-    - name: Adapter
-      link: GstBase/Adapter
-    - name: Aggregator
-      link: GstBase/Aggregator
+    - name: AudioVisualizer
+      link: GstPbutils/AudioVisualizer
       subfolderitems:
-      - name: Item
-        link: GstBase/Aggregator/Item
-      - name: OnSamplesSelected
-        link: GstBase/Aggregator/OnSamplesSelected
-      - name: SamplesSelectedSignal
-        link: GstBase/Aggregator/SamplesSelectedSignal
-    - name: AggregatorPad
-      link: GstBase/AggregatorPad
-      subfolderitems:
-      - name: Item
-        link: GstBase/AggregatorPad/Item
-      - name: OnBufferConsumed
-        link: GstBase/AggregatorPad/OnBufferConsumed
-      - name: BufferConsumedSignal
-        link: GstBase/AggregatorPad/BufferConsumedSignal
-    - name: BaseParse
-      link: GstBase/BaseParse
-    - name: BaseSink
-      link: GstBase/BaseSink
-    - name: BaseSrc
-      link: GstBase/BaseSrc
-    - name: BaseTransform
-      link: GstBase/BaseTransform
-    - name: CollectPads
-      link: GstBase/CollectPads
+      - name: ShadeAmount
+        link: GstPbutils/AudioVisualizer/ShadeAmount
+      - name: Shader
+        link: GstPbutils/AudioVisualizer/Shader
+      - name: ShadeAmountPropertyDefinition
+        link: GstPbutils/AudioVisualizer/ShadeAmountPropertyDefinition
+      - name: ShaderPropertyDefinition
+        link: GstPbutils/AudioVisualizer/ShaderPropertyDefinition
     - name: Constants
-      link: GstBase/Constants
+      link: GstPbutils/Constants
       subfolderitems:
       - name: Constants
-        link: GstBase/Constants/Constants
-      - name: BASE_PARSE_FLAG_DRAINING
-        link: GstBase/Constants/BASE_PARSE_FLAG_DRAINING
-      - name: BASE_PARSE_FLAG_LOST_SYNC
-        link: GstBase/Constants/BASE_PARSE_FLAG_LOST_SYNC
-      - name: BASE_TRANSFORM_SINK_NAME
-        link: GstBase/Constants/BASE_TRANSFORM_SINK_NAME
-      - name: BASE_TRANSFORM_SRC_NAME
-        link: GstBase/Constants/BASE_TRANSFORM_SRC_NAME
-    - name: DataQueue
-      link: GstBase/DataQueue
+        link: GstPbutils/Constants/Constants
+      - name: ENCODING_CATEGORY_CAPTURE
+        link: GstPbutils/Constants/ENCODING_CATEGORY_CAPTURE
+      - name: ENCODING_CATEGORY_DEVICE
+        link: GstPbutils/Constants/ENCODING_CATEGORY_DEVICE
+      - name: ENCODING_CATEGORY_FILE_EXTENSION
+        link: GstPbutils/Constants/ENCODING_CATEGORY_FILE_EXTENSION
+      - name: ENCODING_CATEGORY_ONLINE_SERVICE
+        link: GstPbutils/Constants/ENCODING_CATEGORY_ONLINE_SERVICE
+      - name: ENCODING_CATEGORY_STORAGE_EDITING
+        link: GstPbutils/Constants/ENCODING_CATEGORY_STORAGE_EDITING
+      - name: PLUGINS_BASE_VERSION_MAJOR
+        link: GstPbutils/Constants/PLUGINS_BASE_VERSION_MAJOR
+      - name: PLUGINS_BASE_VERSION_MICRO
+        link: GstPbutils/Constants/PLUGINS_BASE_VERSION_MICRO
+      - name: PLUGINS_BASE_VERSION_MINOR
+        link: GstPbutils/Constants/PLUGINS_BASE_VERSION_MINOR
+      - name: PLUGINS_BASE_VERSION_NANO
+        link: GstPbutils/Constants/PLUGINS_BASE_VERSION_NANO
+    - name: Discoverer
+      link: GstPbutils/Discoverer
       subfolderitems:
+      - name: DiscoverUriAsync
+        link: GstPbutils/Discoverer/DiscoverUriAsync
+      - name: Start
+        link: GstPbutils/Discoverer/Start
+      - name: Stop
+        link: GstPbutils/Discoverer/Stop
       - name: Item
-        link: GstBase/DataQueue/Item
-      - name: OnEmpty
-        link: GstBase/DataQueue/OnEmpty
-      - name: OnFull
-        link: GstBase/DataQueue/OnFull
-      - name: EmptySignal
-        link: GstBase/DataQueue/EmptySignal
-      - name: FullSignal
-        link: GstBase/DataQueue/FullSignal
+        link: GstPbutils/Discoverer/Item
+      - name: Timeout
+        link: GstPbutils/Discoverer/Timeout
+      - name: UseCache
+        link: GstPbutils/Discoverer/UseCache
+      - name: OnDiscovered
+        link: GstPbutils/Discoverer/OnDiscovered
+      - name: OnFinished
+        link: GstPbutils/Discoverer/OnFinished
+      - name: OnSourceSetup
+        link: GstPbutils/Discoverer/OnSourceSetup
+      - name: OnStarting
+        link: GstPbutils/Discoverer/OnStarting
+      - name: DiscoveredSignal
+        link: GstPbutils/Discoverer/DiscoveredSignal
+      - name: FinishedSignal
+        link: GstPbutils/Discoverer/FinishedSignal
+      - name: SourceSetupSignal
+        link: GstPbutils/Discoverer/SourceSetupSignal
+      - name: StartingSignal
+        link: GstPbutils/Discoverer/StartingSignal
+      - name: TimeoutPropertyDefinition
+        link: GstPbutils/Discoverer/TimeoutPropertyDefinition
+      - name: UseCachePropertyDefinition
+        link: GstPbutils/Discoverer/UseCachePropertyDefinition
+    - name: DiscovererAudioInfo
+      link: GstPbutils/DiscovererAudioInfo
+      subfolderitems:
+      - name: GetBitrate
+        link: GstPbutils/DiscovererAudioInfo/GetBitrate
+      - name: GetChannelMask
+        link: GstPbutils/DiscovererAudioInfo/GetChannelMask
+      - name: GetChannels
+        link: GstPbutils/DiscovererAudioInfo/GetChannels
+      - name: GetDepth
+        link: GstPbutils/DiscovererAudioInfo/GetDepth
+      - name: GetLanguage
+        link: GstPbutils/DiscovererAudioInfo/GetLanguage
+      - name: GetMaxBitrate
+        link: GstPbutils/DiscovererAudioInfo/GetMaxBitrate
+      - name: GetSampleRate
+        link: GstPbutils/DiscovererAudioInfo/GetSampleRate
+    - name: DiscovererContainerInfo
+      link: GstPbutils/DiscovererContainerInfo
+    - name: DiscovererInfo
+      link: GstPbutils/DiscovererInfo
+      subfolderitems:
+      - name: Copy
+        link: GstPbutils/DiscovererInfo/Copy
+      - name: GetDuration
+        link: GstPbutils/DiscovererInfo/GetDuration
+      - name: GetLive
+        link: GstPbutils/DiscovererInfo/GetLive
+      - name: GetMissingElementsInstallerDetails
+        link: GstPbutils/DiscovererInfo/GetMissingElementsInstallerDetails
+      - name: GetResult
+        link: GstPbutils/DiscovererInfo/GetResult
+      - name: GetSeekable
+        link: GstPbutils/DiscovererInfo/GetSeekable
+      - name: GetStreamInfo
+        link: GstPbutils/DiscovererInfo/GetStreamInfo
+      - name: GetUri
+        link: GstPbutils/DiscovererInfo/GetUri
+    - name: DiscovererStreamInfo
+      link: GstPbutils/DiscovererStreamInfo
+      subfolderitems:
+      - name: GetNext
+        link: GstPbutils/DiscovererStreamInfo/GetNext
+      - name: GetPrevious
+        link: GstPbutils/DiscovererStreamInfo/GetPrevious
+      - name: GetStreamId
+        link: GstPbutils/DiscovererStreamInfo/GetStreamId
+      - name: GetStreamTypeNick
+        link: GstPbutils/DiscovererStreamInfo/GetStreamTypeNick
+    - name: DiscovererSubtitleInfo
+      link: GstPbutils/DiscovererSubtitleInfo
+      subfolderitems:
+      - name: GetLanguage
+        link: GstPbutils/DiscovererSubtitleInfo/GetLanguage
+    - name: DiscovererVideoInfo
+      link: GstPbutils/DiscovererVideoInfo
+      subfolderitems:
+      - name: GetBitrate
+        link: GstPbutils/DiscovererVideoInfo/GetBitrate
+      - name: GetDepth
+        link: GstPbutils/DiscovererVideoInfo/GetDepth
+      - name: GetFramerateDenom
+        link: GstPbutils/DiscovererVideoInfo/GetFramerateDenom
+      - name: GetFramerateNum
+        link: GstPbutils/DiscovererVideoInfo/GetFramerateNum
+      - name: GetHeight
+        link: GstPbutils/DiscovererVideoInfo/GetHeight
+      - name: GetMaxBitrate
+        link: GstPbutils/DiscovererVideoInfo/GetMaxBitrate
+      - name: GetParDenom
+        link: GstPbutils/DiscovererVideoInfo/GetParDenom
+      - name: GetParNum
+        link: GstPbutils/DiscovererVideoInfo/GetParNum
+      - name: GetWidth
+        link: GstPbutils/DiscovererVideoInfo/GetWidth
+      - name: IsImage
+        link: GstPbutils/DiscovererVideoInfo/IsImage
+      - name: IsInterlaced
+        link: GstPbutils/DiscovererVideoInfo/IsInterlaced
+    - name: EncodingAudioProfile
+      link: GstPbutils/EncodingAudioProfile
+    - name: EncodingContainerProfile
+      link: GstPbutils/EncodingContainerProfile
+      subfolderitems:
+      - name: AddProfile
+        link: GstPbutils/EncodingContainerProfile/AddProfile
+      - name: ContainsProfile
+        link: GstPbutils/EncodingContainerProfile/ContainsProfile
+    - name: EncodingProfile
+      link: GstPbutils/EncodingProfile
+      subfolderitems:
+      - name: Copy
+        link: GstPbutils/EncodingProfile/Copy
+      - name: GetAllowDynamicOutput
+        link: GstPbutils/EncodingProfile/GetAllowDynamicOutput
+      - name: GetDescription
+        link: GstPbutils/EncodingProfile/GetDescription
+      - name: GetFileExtension
+        link: GstPbutils/EncodingProfile/GetFileExtension
+      - name: GetName
+        link: GstPbutils/EncodingProfile/GetName
+      - name: GetPresence
+        link: GstPbutils/EncodingProfile/GetPresence
+      - name: GetPreset
+        link: GstPbutils/EncodingProfile/GetPreset
+      - name: GetPresetName
+        link: GstPbutils/EncodingProfile/GetPresetName
+      - name: GetSingleSegment
+        link: GstPbutils/EncodingProfile/GetSingleSegment
+      - name: GetTypeNick
+        link: GstPbutils/EncodingProfile/GetTypeNick
+      - name: IsEnabled
+        link: GstPbutils/EncodingProfile/IsEnabled
+      - name: IsEqual
+        link: GstPbutils/EncodingProfile/IsEqual
+      - name: SetAllowDynamicOutput
+        link: GstPbutils/EncodingProfile/SetAllowDynamicOutput
+      - name: SetDescription
+        link: GstPbutils/EncodingProfile/SetDescription
+      - name: SetEnabled
+        link: GstPbutils/EncodingProfile/SetEnabled
+      - name: SetName
+        link: GstPbutils/EncodingProfile/SetName
+      - name: SetPresence
+        link: GstPbutils/EncodingProfile/SetPresence
+      - name: SetPreset
+        link: GstPbutils/EncodingProfile/SetPreset
+      - name: SetPresetName
+        link: GstPbutils/EncodingProfile/SetPresetName
+      - name: SetSingleSegment
+        link: GstPbutils/EncodingProfile/SetSingleSegment
+    - name: EncodingTarget
+      link: GstPbutils/EncodingTarget
+      subfolderitems:
+      - name: AddProfile
+        link: GstPbutils/EncodingTarget/AddProfile
+      - name: GetCategory
+        link: GstPbutils/EncodingTarget/GetCategory
+      - name: GetDescription
+        link: GstPbutils/EncodingTarget/GetDescription
+      - name: GetName
+        link: GstPbutils/EncodingTarget/GetName
+      - name: GetPath
+        link: GstPbutils/EncodingTarget/GetPath
+      - name: GetProfile
+        link: GstPbutils/EncodingTarget/GetProfile
+    - name: EncodingVideoProfile
+      link: GstPbutils/EncodingVideoProfile
+      subfolderitems:
+      - name: GetPass
+        link: GstPbutils/EncodingVideoProfile/GetPass
+      - name: GetVariableframerate
+        link: GstPbutils/EncodingVideoProfile/GetVariableframerate
+      - name: SetPass
+        link: GstPbutils/EncodingVideoProfile/SetPass
+      - name: SetVariableframerate
+        link: GstPbutils/EncodingVideoProfile/SetVariableframerate
     - name: Global
-      link: GstBase/Global
+      link: GstPbutils/Global
       subfolderitems:
-      - name: Global
-        link: GstBase/Global/Global
-    - name: PushSrc
-      link: GstBase/PushSrc
-    - name: CollectDataDestroyNotify
-      link: GstBase/CollectDataDestroyNotify
-    - name: CollectPadsBufferFunction
-      link: GstBase/CollectPadsBufferFunction
-    - name: CollectPadsClipFunction
-      link: GstBase/CollectPadsClipFunction
-    - name: CollectPadsCompareFunction
-      link: GstBase/CollectPadsCompareFunction
-    - name: CollectPadsEventFunction
-      link: GstBase/CollectPadsEventFunction
-    - name: CollectPadsFlushFunction
-      link: GstBase/CollectPadsFlushFunction
-    - name: CollectPadsFunction
-      link: GstBase/CollectPadsFunction
-    - name: CollectPadsQueryFunction
-      link: GstBase/CollectPadsQueryFunction
-    - name: DataQueueCheckFullFunction
-      link: GstBase/DataQueueCheckFullFunction
-    - name: DataQueueEmptyCallback
-      link: GstBase/DataQueueEmptyCallback
-    - name: DataQueueFullCallback
-      link: GstBase/DataQueueFullCallback
-    - name: TypeFindHelperGetRangeFunction
-      link: GstBase/TypeFindHelperGetRangeFunction
-    - name: AggregatorStartTimeSelection
-      link: GstBase/AggregatorStartTimeSelection
-    - name: BaseParseFrameFlags
-      link: GstBase/BaseParseFrameFlags
-    - name: BaseSrcFlags
-      link: GstBase/BaseSrcFlags
-    - name: CollectPadsStateFlags
-      link: GstBase/CollectPadsStateFlags
-    - name: AdapterClass
-      link: GstBase/AdapterClass
-    - name: AggregatorClass
-      link: GstBase/AggregatorClass
+      - name: IsMissingPluginMessage
+        link: GstPbutils/Global/IsMissingPluginMessage
+      - name: MissingPluginMessageGetInstallerDetail
+        link: GstPbutils/Global/MissingPluginMessageGetInstallerDetail
+      - name: MissingPluginMessageGetDescription
+        link: GstPbutils/Global/MissingPluginMessageGetDescription
+      - name: InstallPluginsAsync
+        link: GstPbutils/Global/InstallPluginsAsync
+    - name: AudioVisualizerShaderFunc
+      link: GstPbutils/AudioVisualizerShaderFunc
+    - name: AudioVisualizerShaderFuncCallHandler
+      link: GstPbutils/AudioVisualizerShaderFuncCallHandler
       subfolderitems:
-      - name: parent_class
-        link: GstBase/AggregatorClass/parent_class
-      - name: flush
-        link: GstBase/AggregatorClass/flush
-      - name: clip
-        link: GstBase/AggregatorClass/clip
-      - name: finish_buffer
-        link: GstBase/AggregatorClass/finish_buffer
-      - name: sink_event
-        link: GstBase/AggregatorClass/sink_event
-      - name: sink_query
-        link: GstBase/AggregatorClass/sink_query
-      - name: src_event
-        link: GstBase/AggregatorClass/src_event
-      - name: src_query
-        link: GstBase/AggregatorClass/src_query
-      - name: src_activate
-        link: GstBase/AggregatorClass/src_activate
-      - name: aggregate
-        link: GstBase/AggregatorClass/aggregate
-      - name: stop
-        link: GstBase/AggregatorClass/stop
-      - name: start
-        link: GstBase/AggregatorClass/start
-      - name: get_next_time
-        link: GstBase/AggregatorClass/get_next_time
-      - name: create_new_pad
-        link: GstBase/AggregatorClass/create_new_pad
-      - name: update_src_caps
-        link: GstBase/AggregatorClass/update_src_caps
-      - name: fixate_src_caps
-        link: GstBase/AggregatorClass/fixate_src_caps
-      - name: negotiated_src_caps
-        link: GstBase/AggregatorClass/negotiated_src_caps
-      - name: decide_allocation
-        link: GstBase/AggregatorClass/decide_allocation
-      - name: propose_allocation
-        link: GstBase/AggregatorClass/propose_allocation
-      - name: negotiate
-        link: GstBase/AggregatorClass/negotiate
-      - name: sink_event_pre_queue
-        link: GstBase/AggregatorClass/sink_event_pre_queue
-      - name: sink_query_pre_queue
-        link: GstBase/AggregatorClass/sink_query_pre_queue
-      - name: finish_buffer_list
-        link: GstBase/AggregatorClass/finish_buffer_list
-      - name: peek_next_sample
-        link: GstBase/AggregatorClass/peek_next_sample
-      - name: _gst_reserved1
-        link: GstBase/AggregatorClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/AggregatorClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/AggregatorClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/AggregatorClass/_gst_reserved4
-      - name: _gst_reserved5
-        link: GstBase/AggregatorClass/_gst_reserved5
-      - name: _gst_reserved6
-        link: GstBase/AggregatorClass/_gst_reserved6
-      - name: _gst_reserved7
-        link: GstBase/AggregatorClass/_gst_reserved7
-      - name: _gst_reserved8
-        link: GstBase/AggregatorClass/_gst_reserved8
-      - name: _gst_reserved9
-        link: GstBase/AggregatorClass/_gst_reserved9
-      - name: _gst_reserved10
-        link: GstBase/AggregatorClass/_gst_reserved10
-      - name: _gst_reserved11
-        link: GstBase/AggregatorClass/_gst_reserved11
-      - name: _gst_reserved12
-        link: GstBase/AggregatorClass/_gst_reserved12
-      - name: _gst_reserved13
-        link: GstBase/AggregatorClass/_gst_reserved13
-      - name: _gst_reserved14
-        link: GstBase/AggregatorClass/_gst_reserved14
-      - name: _gst_reserved15
-        link: GstBase/AggregatorClass/_gst_reserved15
-    - name: AggregatorPadClass
-      link: GstBase/AggregatorPadClass
+      - name: Dispose
+        link: GstPbutils/AudioVisualizerShaderFuncCallHandler/Dispose
+      - name: AudioVisualizerShaderFuncCallHandler
+        link: GstPbutils/AudioVisualizerShaderFuncCallHandler/AudioVisualizerShaderFuncCallHandler
+      - name: NativeCallback
+        link: GstPbutils/AudioVisualizerShaderFuncCallHandler/NativeCallback
+    - name: AudioVisualizerShaderFuncAsyncHandler
+      link: GstPbutils/AudioVisualizerShaderFuncAsyncHandler
       subfolderitems:
-      - name: parent_class
-        link: GstBase/AggregatorPadClass/parent_class
-      - name: flush
-        link: GstBase/AggregatorPadClass/flush
-      - name: skip_buffer
-        link: GstBase/AggregatorPadClass/skip_buffer
-      - name: _gst_reserved1
-        link: GstBase/AggregatorPadClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/AggregatorPadClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/AggregatorPadClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/AggregatorPadClass/_gst_reserved4
-      - name: _gst_reserved5
-        link: GstBase/AggregatorPadClass/_gst_reserved5
-      - name: _gst_reserved6
-        link: GstBase/AggregatorPadClass/_gst_reserved6
-      - name: _gst_reserved7
-        link: GstBase/AggregatorPadClass/_gst_reserved7
-      - name: _gst_reserved8
-        link: GstBase/AggregatorPadClass/_gst_reserved8
-      - name: _gst_reserved9
-        link: GstBase/AggregatorPadClass/_gst_reserved9
-      - name: _gst_reserved10
-        link: GstBase/AggregatorPadClass/_gst_reserved10
-      - name: _gst_reserved11
-        link: GstBase/AggregatorPadClass/_gst_reserved11
-      - name: _gst_reserved12
-        link: GstBase/AggregatorPadClass/_gst_reserved12
-      - name: _gst_reserved13
-        link: GstBase/AggregatorPadClass/_gst_reserved13
-      - name: _gst_reserved14
-        link: GstBase/AggregatorPadClass/_gst_reserved14
-      - name: _gst_reserved15
-        link: GstBase/AggregatorPadClass/_gst_reserved15
-      - name: _gst_reserved16
-        link: GstBase/AggregatorPadClass/_gst_reserved16
-      - name: _gst_reserved17
-        link: GstBase/AggregatorPadClass/_gst_reserved17
-      - name: _gst_reserved18
-        link: GstBase/AggregatorPadClass/_gst_reserved18
-      - name: _gst_reserved19
-        link: GstBase/AggregatorPadClass/_gst_reserved19
-      - name: _gst_reserved20
-        link: GstBase/AggregatorPadClass/_gst_reserved20
-    - name: AggregatorPadPrivate
-      link: GstBase/AggregatorPadPrivate
-    - name: AggregatorPrivate
-      link: GstBase/AggregatorPrivate
-    - name: BaseParseClass
-      link: GstBase/BaseParseClass
+      - name: Dispose
+        link: GstPbutils/AudioVisualizerShaderFuncAsyncHandler/Dispose
+      - name: AudioVisualizerShaderFuncAsyncHandler
+        link: GstPbutils/AudioVisualizerShaderFuncAsyncHandler/AudioVisualizerShaderFuncAsyncHandler
+      - name: NativeCallback
+        link: GstPbutils/AudioVisualizerShaderFuncAsyncHandler/NativeCallback
+    - name: AudioVisualizerShaderFuncNotifiedHandler
+      link: GstPbutils/AudioVisualizerShaderFuncNotifiedHandler
       subfolderitems:
-      - name: parent_class
-        link: GstBase/BaseParseClass/parent_class
-      - name: start
-        link: GstBase/BaseParseClass/start
-      - name: stop
-        link: GstBase/BaseParseClass/stop
-      - name: set_sink_caps
-        link: GstBase/BaseParseClass/set_sink_caps
-      - name: handle_frame
-        link: GstBase/BaseParseClass/handle_frame
-      - name: pre_push_frame
-        link: GstBase/BaseParseClass/pre_push_frame
-      - name: convert
-        link: GstBase/BaseParseClass/convert
-      - name: sink_event
-        link: GstBase/BaseParseClass/sink_event
-      - name: src_event
-        link: GstBase/BaseParseClass/src_event
-      - name: get_sink_caps
-        link: GstBase/BaseParseClass/get_sink_caps
-      - name: detect
-        link: GstBase/BaseParseClass/detect
-      - name: sink_query
-        link: GstBase/BaseParseClass/sink_query
-      - name: src_query
-        link: GstBase/BaseParseClass/src_query
-      - name: _gst_reserved1
-        link: GstBase/BaseParseClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/BaseParseClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/BaseParseClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/BaseParseClass/_gst_reserved4
-      - name: _gst_reserved5
-        link: GstBase/BaseParseClass/_gst_reserved5
-      - name: _gst_reserved6
-        link: GstBase/BaseParseClass/_gst_reserved6
-      - name: _gst_reserved7
-        link: GstBase/BaseParseClass/_gst_reserved7
-      - name: _gst_reserved8
-        link: GstBase/BaseParseClass/_gst_reserved8
-      - name: _gst_reserved9
-        link: GstBase/BaseParseClass/_gst_reserved9
-      - name: _gst_reserved10
-        link: GstBase/BaseParseClass/_gst_reserved10
-      - name: _gst_reserved11
-        link: GstBase/BaseParseClass/_gst_reserved11
-      - name: _gst_reserved12
-        link: GstBase/BaseParseClass/_gst_reserved12
-      - name: _gst_reserved13
-        link: GstBase/BaseParseClass/_gst_reserved13
-      - name: _gst_reserved14
-        link: GstBase/BaseParseClass/_gst_reserved14
-      - name: _gst_reserved15
-        link: GstBase/BaseParseClass/_gst_reserved15
-      - name: _gst_reserved16
-        link: GstBase/BaseParseClass/_gst_reserved16
-      - name: _gst_reserved17
-        link: GstBase/BaseParseClass/_gst_reserved17
-      - name: _gst_reserved18
-        link: GstBase/BaseParseClass/_gst_reserved18
-    - name: BaseParseFrame
-      link: GstBase/BaseParseFrame
+      - name: Dispose
+        link: GstPbutils/AudioVisualizerShaderFuncNotifiedHandler/Dispose
+      - name: AudioVisualizerShaderFuncNotifiedHandler
+        link: GstPbutils/AudioVisualizerShaderFuncNotifiedHandler/AudioVisualizerShaderFuncNotifiedHandler
+      - name: OnDestroyNotify
+        link: GstPbutils/AudioVisualizerShaderFuncNotifiedHandler/OnDestroyNotify
+      - name: NativeCallback
+        link: GstPbutils/AudioVisualizerShaderFuncNotifiedHandler/NativeCallback
+      - name: DestroyNotify
+        link: GstPbutils/AudioVisualizerShaderFuncNotifiedHandler/DestroyNotify
+    - name: InstallPluginsResultFunc
+      link: GstPbutils/InstallPluginsResultFunc
+    - name: InstallPluginsResultFuncCallHandler
+      link: GstPbutils/InstallPluginsResultFuncCallHandler
       subfolderitems:
-      - name: buffer
-        link: GstBase/BaseParseFrame/buffer
-      - name: out_buffer
-        link: GstBase/BaseParseFrame/out_buffer
-      - name: flags
-        link: GstBase/BaseParseFrame/flags
-      - name: offset
-        link: GstBase/BaseParseFrame/offset
-      - name: overhead
-        link: GstBase/BaseParseFrame/overhead
-      - name: size
-        link: GstBase/BaseParseFrame/size
-      - name: _gst_reserved_i1
-        link: GstBase/BaseParseFrame/_gst_reserved_i1
-      - name: _gst_reserved_i2
-        link: GstBase/BaseParseFrame/_gst_reserved_i2
-      - name: _gst_reserved_p1
-        link: GstBase/BaseParseFrame/_gst_reserved_p1
-      - name: _gst_reserved_p2
-        link: GstBase/BaseParseFrame/_gst_reserved_p2
-      - name: _private_flags
-        link: GstBase/BaseParseFrame/_private_flags
-    - name: BaseParsePrivate
-      link: GstBase/BaseParsePrivate
-    - name: BaseSinkClass
-      link: GstBase/BaseSinkClass
+      - name: Dispose
+        link: GstPbutils/InstallPluginsResultFuncCallHandler/Dispose
+      - name: InstallPluginsResultFuncCallHandler
+        link: GstPbutils/InstallPluginsResultFuncCallHandler/InstallPluginsResultFuncCallHandler
+      - name: NativeCallback
+        link: GstPbutils/InstallPluginsResultFuncCallHandler/NativeCallback
+    - name: InstallPluginsResultFuncAsyncHandler
+      link: GstPbutils/InstallPluginsResultFuncAsyncHandler
       subfolderitems:
-      - name: parent_class
-        link: GstBase/BaseSinkClass/parent_class
-      - name: get_caps
-        link: GstBase/BaseSinkClass/get_caps
-      - name: set_caps
-        link: GstBase/BaseSinkClass/set_caps
-      - name: fixate
-        link: GstBase/BaseSinkClass/fixate
-      - name: activate_pull
-        link: GstBase/BaseSinkClass/activate_pull
-      - name: get_times
-        link: GstBase/BaseSinkClass/get_times
-      - name: propose_allocation
-        link: GstBase/BaseSinkClass/propose_allocation
-      - name: start
-        link: GstBase/BaseSinkClass/start
-      - name: stop
-        link: GstBase/BaseSinkClass/stop
-      - name: unlock
-        link: GstBase/BaseSinkClass/unlock
-      - name: unlock_stop
-        link: GstBase/BaseSinkClass/unlock_stop
-      - name: query
-        link: GstBase/BaseSinkClass/query
-      - name: event
-        link: GstBase/BaseSinkClass/event
-      - name: wait_event
-        link: GstBase/BaseSinkClass/wait_event
-      - name: prepare
-        link: GstBase/BaseSinkClass/prepare
-      - name: prepare_list
-        link: GstBase/BaseSinkClass/prepare_list
-      - name: preroll
-        link: GstBase/BaseSinkClass/preroll
-      - name: render
-        link: GstBase/BaseSinkClass/render
-      - name: render_list
-        link: GstBase/BaseSinkClass/render_list
-      - name: _gst_reserved1
-        link: GstBase/BaseSinkClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/BaseSinkClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/BaseSinkClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/BaseSinkClass/_gst_reserved4
-      - name: _gst_reserved5
-        link: GstBase/BaseSinkClass/_gst_reserved5
-      - name: _gst_reserved6
-        link: GstBase/BaseSinkClass/_gst_reserved6
-      - name: _gst_reserved7
-        link: GstBase/BaseSinkClass/_gst_reserved7
-      - name: _gst_reserved8
-        link: GstBase/BaseSinkClass/_gst_reserved8
-      - name: _gst_reserved9
-        link: GstBase/BaseSinkClass/_gst_reserved9
-      - name: _gst_reserved10
-        link: GstBase/BaseSinkClass/_gst_reserved10
-      - name: _gst_reserved11
-        link: GstBase/BaseSinkClass/_gst_reserved11
-      - name: _gst_reserved12
-        link: GstBase/BaseSinkClass/_gst_reserved12
-      - name: _gst_reserved13
-        link: GstBase/BaseSinkClass/_gst_reserved13
-      - name: _gst_reserved14
-        link: GstBase/BaseSinkClass/_gst_reserved14
-      - name: _gst_reserved15
-        link: GstBase/BaseSinkClass/_gst_reserved15
-      - name: _gst_reserved16
-        link: GstBase/BaseSinkClass/_gst_reserved16
-      - name: _gst_reserved17
-        link: GstBase/BaseSinkClass/_gst_reserved17
-      - name: _gst_reserved18
-        link: GstBase/BaseSinkClass/_gst_reserved18
-      - name: _gst_reserved19
-        link: GstBase/BaseSinkClass/_gst_reserved19
-      - name: _gst_reserved20
-        link: GstBase/BaseSinkClass/_gst_reserved20
-    - name: BaseSinkPrivate
-      link: GstBase/BaseSinkPrivate
-    - name: BaseSrcClass
-      link: GstBase/BaseSrcClass
+      - name: Dispose
+        link: GstPbutils/InstallPluginsResultFuncAsyncHandler/Dispose
+      - name: InstallPluginsResultFuncAsyncHandler
+        link: GstPbutils/InstallPluginsResultFuncAsyncHandler/InstallPluginsResultFuncAsyncHandler
+      - name: NativeCallback
+        link: GstPbutils/InstallPluginsResultFuncAsyncHandler/NativeCallback
+    - name: InstallPluginsResultFuncNotifiedHandler
+      link: GstPbutils/InstallPluginsResultFuncNotifiedHandler
       subfolderitems:
-      - name: parent_class
-        link: GstBase/BaseSrcClass/parent_class
-      - name: get_caps
-        link: GstBase/BaseSrcClass/get_caps
-      - name: negotiate
-        link: GstBase/BaseSrcClass/negotiate
-      - name: fixate
-        link: GstBase/BaseSrcClass/fixate
-      - name: set_caps
-        link: GstBase/BaseSrcClass/set_caps
-      - name: decide_allocation
-        link: GstBase/BaseSrcClass/decide_allocation
-      - name: start
-        link: GstBase/BaseSrcClass/start
-      - name: stop
-        link: GstBase/BaseSrcClass/stop
-      - name: get_times
-        link: GstBase/BaseSrcClass/get_times
-      - name: get_size
-        link: GstBase/BaseSrcClass/get_size
-      - name: is_seekable
-        link: GstBase/BaseSrcClass/is_seekable
-      - name: prepare_seek_segment
-        link: GstBase/BaseSrcClass/prepare_seek_segment
-      - name: do_seek
-        link: GstBase/BaseSrcClass/do_seek
-      - name: unlock
-        link: GstBase/BaseSrcClass/unlock
-      - name: unlock_stop
-        link: GstBase/BaseSrcClass/unlock_stop
-      - name: query
-        link: GstBase/BaseSrcClass/query
-      - name: event
-        link: GstBase/BaseSrcClass/event
-      - name: create
-        link: GstBase/BaseSrcClass/create
-      - name: alloc
-        link: GstBase/BaseSrcClass/alloc
-      - name: fill
-        link: GstBase/BaseSrcClass/fill
-      - name: _gst_reserved1
-        link: GstBase/BaseSrcClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/BaseSrcClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/BaseSrcClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/BaseSrcClass/_gst_reserved4
-      - name: _gst_reserved5
-        link: GstBase/BaseSrcClass/_gst_reserved5
-      - name: _gst_reserved6
-        link: GstBase/BaseSrcClass/_gst_reserved6
-      - name: _gst_reserved7
-        link: GstBase/BaseSrcClass/_gst_reserved7
-      - name: _gst_reserved8
-        link: GstBase/BaseSrcClass/_gst_reserved8
-      - name: _gst_reserved9
-        link: GstBase/BaseSrcClass/_gst_reserved9
-      - name: _gst_reserved10
-        link: GstBase/BaseSrcClass/_gst_reserved10
-      - name: _gst_reserved11
-        link: GstBase/BaseSrcClass/_gst_reserved11
-      - name: _gst_reserved12
-        link: GstBase/BaseSrcClass/_gst_reserved12
-      - name: _gst_reserved13
-        link: GstBase/BaseSrcClass/_gst_reserved13
-      - name: _gst_reserved14
-        link: GstBase/BaseSrcClass/_gst_reserved14
-      - name: _gst_reserved15
-        link: GstBase/BaseSrcClass/_gst_reserved15
-      - name: _gst_reserved16
-        link: GstBase/BaseSrcClass/_gst_reserved16
-      - name: _gst_reserved17
-        link: GstBase/BaseSrcClass/_gst_reserved17
-      - name: _gst_reserved18
-        link: GstBase/BaseSrcClass/_gst_reserved18
-      - name: _gst_reserved19
-        link: GstBase/BaseSrcClass/_gst_reserved19
-      - name: _gst_reserved20
-        link: GstBase/BaseSrcClass/_gst_reserved20
-    - name: BaseSrcPrivate
-      link: GstBase/BaseSrcPrivate
-    - name: BaseTransformClass
-      link: GstBase/BaseTransformClass
+      - name: Dispose
+        link: GstPbutils/InstallPluginsResultFuncNotifiedHandler/Dispose
+      - name: InstallPluginsResultFuncNotifiedHandler
+        link: GstPbutils/InstallPluginsResultFuncNotifiedHandler/InstallPluginsResultFuncNotifiedHandler
+      - name: OnDestroyNotify
+        link: GstPbutils/InstallPluginsResultFuncNotifiedHandler/OnDestroyNotify
+      - name: NativeCallback
+        link: GstPbutils/InstallPluginsResultFuncNotifiedHandler/NativeCallback
+      - name: DestroyNotify
+        link: GstPbutils/InstallPluginsResultFuncNotifiedHandler/DestroyNotify
+    - name: AudioVisualizerShader
+      link: GstPbutils/AudioVisualizerShader
+    - name: DiscovererResult
+      link: GstPbutils/DiscovererResult
+    - name: DiscovererSerializeFlags
+      link: GstPbutils/DiscovererSerializeFlags
+    - name: InstallPluginsReturn
+      link: GstPbutils/InstallPluginsReturn
+    - name: AudioVisualizerPrivate
+      link: GstPbutils/AudioVisualizerPrivate
       subfolderitems:
-      - name: parent_class
-        link: GstBase/BaseTransformClass/parent_class
-      - name: passthrough_on_same_caps
-        link: GstBase/BaseTransformClass/passthrough_on_same_caps
-      - name: transform_ip_on_passthrough
-        link: GstBase/BaseTransformClass/transform_ip_on_passthrough
-      - name: transform_caps
-        link: GstBase/BaseTransformClass/transform_caps
-      - name: fixate_caps
-        link: GstBase/BaseTransformClass/fixate_caps
-      - name: accept_caps
-        link: GstBase/BaseTransformClass/accept_caps
-      - name: set_caps
-        link: GstBase/BaseTransformClass/set_caps
-      - name: query
-        link: GstBase/BaseTransformClass/query
-      - name: decide_allocation
-        link: GstBase/BaseTransformClass/decide_allocation
-      - name: filter_meta
-        link: GstBase/BaseTransformClass/filter_meta
-      - name: propose_allocation
-        link: GstBase/BaseTransformClass/propose_allocation
-      - name: transform_size
-        link: GstBase/BaseTransformClass/transform_size
-      - name: get_unit_size
-        link: GstBase/BaseTransformClass/get_unit_size
-      - name: start
-        link: GstBase/BaseTransformClass/start
-      - name: stop
-        link: GstBase/BaseTransformClass/stop
-      - name: sink_event
-        link: GstBase/BaseTransformClass/sink_event
-      - name: src_event
-        link: GstBase/BaseTransformClass/src_event
-      - name: prepare_output_buffer
-        link: GstBase/BaseTransformClass/prepare_output_buffer
-      - name: copy_metadata
-        link: GstBase/BaseTransformClass/copy_metadata
-      - name: transform_meta
-        link: GstBase/BaseTransformClass/transform_meta
-      - name: before_transform
-        link: GstBase/BaseTransformClass/before_transform
-      - name: transform
-        link: GstBase/BaseTransformClass/transform
-      - name: transform_ip
-        link: GstBase/BaseTransformClass/transform_ip
-      - name: submit_input_buffer
-        link: GstBase/BaseTransformClass/submit_input_buffer
-      - name: generate_output
-        link: GstBase/BaseTransformClass/generate_output
-      - name: _gst_reserved1
-        link: GstBase/BaseTransformClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/BaseTransformClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/BaseTransformClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/BaseTransformClass/_gst_reserved4
-      - name: _gst_reserved5
-        link: GstBase/BaseTransformClass/_gst_reserved5
-      - name: _gst_reserved6
-        link: GstBase/BaseTransformClass/_gst_reserved6
-      - name: _gst_reserved7
-        link: GstBase/BaseTransformClass/_gst_reserved7
-      - name: _gst_reserved8
-        link: GstBase/BaseTransformClass/_gst_reserved8
-      - name: _gst_reserved9
-        link: GstBase/BaseTransformClass/_gst_reserved9
-      - name: _gst_reserved10
-        link: GstBase/BaseTransformClass/_gst_reserved10
-      - name: _gst_reserved11
-        link: GstBase/BaseTransformClass/_gst_reserved11
-      - name: _gst_reserved12
-        link: GstBase/BaseTransformClass/_gst_reserved12
-      - name: _gst_reserved13
-        link: GstBase/BaseTransformClass/_gst_reserved13
-      - name: _gst_reserved14
-        link: GstBase/BaseTransformClass/_gst_reserved14
-      - name: _gst_reserved15
-        link: GstBase/BaseTransformClass/_gst_reserved15
-      - name: _gst_reserved16
-        link: GstBase/BaseTransformClass/_gst_reserved16
-      - name: _gst_reserved17
-        link: GstBase/BaseTransformClass/_gst_reserved17
-      - name: _gst_reserved18
-        link: GstBase/BaseTransformClass/_gst_reserved18
-    - name: BaseTransformPrivate
-      link: GstBase/BaseTransformPrivate
-    - name: BitReader
-      link: GstBase/BitReader
+      - name: ToString
+        link: GstPbutils/AudioVisualizerPrivate/ToString
+      - name: op_Inequality
+        link: GstPbutils/AudioVisualizerPrivate/op_Inequality
+      - name: op_Equality
+        link: GstPbutils/AudioVisualizerPrivate/op_Equality
+      - name: GetHashCode
+        link: GstPbutils/AudioVisualizerPrivate/GetHashCode
+      - name: Equals
+        link: GstPbutils/AudioVisualizerPrivate/Equals
+      - name: AudioVisualizerPrivate
+        link: GstPbutils/AudioVisualizerPrivate/AudioVisualizerPrivate
+    - name: DiscovererPrivate
+      link: GstPbutils/DiscovererPrivate
       subfolderitems:
-      - name: data
-        link: GstBase/BitReader/data
-      - name: size
-        link: GstBase/BitReader/size
-      - name: byte
-        link: GstBase/BitReader/byte
-      - name: bit
-        link: GstBase/BitReader/bit
-      - name: _gst_reserved1
-        link: GstBase/BitReader/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/BitReader/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/BitReader/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/BitReader/_gst_reserved4
-    - name: BitWriter
-      link: GstBase/BitWriter
+      - name: ToString
+        link: GstPbutils/DiscovererPrivate/ToString
+      - name: op_Inequality
+        link: GstPbutils/DiscovererPrivate/op_Inequality
+      - name: op_Equality
+        link: GstPbutils/DiscovererPrivate/op_Equality
+      - name: GetHashCode
+        link: GstPbutils/DiscovererPrivate/GetHashCode
+      - name: Equals
+        link: GstPbutils/DiscovererPrivate/Equals
+      - name: DiscovererPrivate
+        link: GstPbutils/DiscovererPrivate/DiscovererPrivate
+    - name: InstallPluginsContext
+      link: GstPbutils/InstallPluginsContext
       subfolderitems:
-      - name: data
-        link: GstBase/BitWriter/data
-      - name: bit_size
-        link: GstBase/BitWriter/bit_size
-      - name: bit_capacity
-        link: GstBase/BitWriter/bit_capacity
-      - name: auto_grow
-        link: GstBase/BitWriter/auto_grow
-      - name: owned
-        link: GstBase/BitWriter/owned
-      - name: _gst_reserved1
-        link: GstBase/BitWriter/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/BitWriter/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/BitWriter/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/BitWriter/_gst_reserved4
-    - name: ByteReader
-      link: GstBase/ByteReader
+      - name: ToString
+        link: GstPbutils/InstallPluginsContext/ToString
+      - name: op_Inequality
+        link: GstPbutils/InstallPluginsContext/op_Inequality
+      - name: op_Equality
+        link: GstPbutils/InstallPluginsContext/op_Equality
+      - name: GetHashCode
+        link: GstPbutils/InstallPluginsContext/GetHashCode
+      - name: Equals
+        link: GstPbutils/InstallPluginsContext/Equals
+      - name: InstallPluginsContext
+        link: GstPbutils/InstallPluginsContext/InstallPluginsContext
+    - name: Discoverer.DiscoveredSignalArgs
+      link: GstPbutils/Discoverer.DiscoveredSignalArgs
       subfolderitems:
-      - name: data
-        link: GstBase/ByteReader/data
-      - name: size
-        link: GstBase/ByteReader/size
-      - name: byte
-        link: GstBase/ByteReader/byte
-      - name: _gst_reserved1
-        link: GstBase/ByteReader/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/ByteReader/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/ByteReader/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/ByteReader/_gst_reserved4
-    - name: ByteWriter
-      link: GstBase/ByteWriter
-      subfolderitems:
-      - name: parent
-        link: GstBase/ByteWriter/parent
-      - name: alloc_size
-        link: GstBase/ByteWriter/alloc_size
-      - name: fixed
-        link: GstBase/ByteWriter/fixed
-      - name: owned
-        link: GstBase/ByteWriter/owned
-      - name: _gst_reserved1
-        link: GstBase/ByteWriter/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/ByteWriter/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/ByteWriter/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/ByteWriter/_gst_reserved4
-    - name: CollectData
-      link: GstBase/CollectData
-      subfolderitems:
-      - name: collect
-        link: GstBase/CollectData/collect
-      - name: pad
-        link: GstBase/CollectData/pad
-      - name: buffer
-        link: GstBase/CollectData/buffer
-      - name: pos
-        link: GstBase/CollectData/pos
-      - name: segment
-        link: GstBase/CollectData/segment
-      - name: state
-        link: GstBase/CollectData/state
-      - name: priv
-        link: GstBase/CollectData/priv
-    - name: CollectDataPrivate
-      link: GstBase/CollectDataPrivate
-    - name: CollectPadsClass
-      link: GstBase/CollectPadsClass
-      subfolderitems:
-      - name: parent_class
-        link: GstBase/CollectPadsClass/parent_class
-      - name: _gst_reserved1
-        link: GstBase/CollectPadsClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/CollectPadsClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/CollectPadsClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/CollectPadsClass/_gst_reserved4
-    - name: CollectPadsPrivate
-      link: GstBase/CollectPadsPrivate
-    - name: DataQueueClass
-      link: GstBase/DataQueueClass
-      subfolderitems:
-      - name: parent_class
-        link: GstBase/DataQueueClass/parent_class
-      - name: empty
-        link: GstBase/DataQueueClass/empty
-      - name: full
-        link: GstBase/DataQueueClass/full
-      - name: _gst_reserved1
-        link: GstBase/DataQueueClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/DataQueueClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/DataQueueClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/DataQueueClass/_gst_reserved4
-    - name: DataQueueItem
-      link: GstBase/DataQueueItem
-      subfolderitems:
-      - name: object
-        link: GstBase/DataQueueItem/object
-      - name: size
-        link: GstBase/DataQueueItem/size
-      - name: duration
-        link: GstBase/DataQueueItem/duration
-      - name: visible
-        link: GstBase/DataQueueItem/visible
-      - name: destroy
-        link: GstBase/DataQueueItem/destroy
-      - name: _gst_reserved1
-        link: GstBase/DataQueueItem/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/DataQueueItem/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/DataQueueItem/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/DataQueueItem/_gst_reserved4
-    - name: DataQueuePrivate
-      link: GstBase/DataQueuePrivate
-    - name: DataQueueSize
-      link: GstBase/DataQueueSize
-      subfolderitems:
-      - name: visible
-        link: GstBase/DataQueueSize/visible
-      - name: bytes
-        link: GstBase/DataQueueSize/bytes
-      - name: time
-        link: GstBase/DataQueueSize/time
-    - name: FlowCombiner
-      link: GstBase/FlowCombiner
-    - name: PushSrcClass
-      link: GstBase/PushSrcClass
-      subfolderitems:
-      - name: parent_class
-        link: GstBase/PushSrcClass/parent_class
-      - name: create
-        link: GstBase/PushSrcClass/create
-      - name: alloc
-        link: GstBase/PushSrcClass/alloc
-      - name: fill
-        link: GstBase/PushSrcClass/fill
-      - name: _gst_reserved1
-        link: GstBase/PushSrcClass/_gst_reserved1
-      - name: _gst_reserved2
-        link: GstBase/PushSrcClass/_gst_reserved2
-      - name: _gst_reserved3
-        link: GstBase/PushSrcClass/_gst_reserved3
-      - name: _gst_reserved4
-        link: GstBase/PushSrcClass/_gst_reserved4
-    - name: QueueArray
-      link: GstBase/QueueArray
-    - name: Aggregator.SamplesSelectedSignalArgs
-      link: GstBase/Aggregator.SamplesSelectedSignalArgs
-      subfolderitems:
-      - name: SamplesSelectedSignalArgs
-        link: GstBase/Aggregator.SamplesSelectedSignalArgs/SamplesSelectedSignalArgs
-      - name: Segment
-        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Segment
-      - name: Pts
-        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Pts
-      - name: Dts
-        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Dts
-      - name: Duration
-        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Duration
+      - name: DiscoveredSignalArgs
+        link: GstPbutils/Discoverer.DiscoveredSignalArgs/DiscoveredSignalArgs
       - name: Info
-        link: GstBase/Aggregator.SamplesSelectedSignalArgs/Info
-    - name: AggregatorPad.BufferConsumedSignalArgs
-      link: GstBase/AggregatorPad.BufferConsumedSignalArgs
+        link: GstPbutils/Discoverer.DiscoveredSignalArgs/Info
+      - name: Error
+        link: GstPbutils/Discoverer.DiscoveredSignalArgs/Error
+    - name: Discoverer.SourceSetupSignalArgs
+      link: GstPbutils/Discoverer.SourceSetupSignalArgs
       subfolderitems:
-      - name: BufferConsumedSignalArgs
-        link: GstBase/AggregatorPad.BufferConsumedSignalArgs/BufferConsumedSignalArgs
-      - name: object
-        link: GstBase/AggregatorPad.BufferConsumedSignalArgs/object
+      - name: SourceSetupSignalArgs
+        link: GstPbutils/Discoverer.SourceSetupSignalArgs/SourceSetupSignalArgs
+      - name: Source
+        link: GstPbutils/Discoverer.SourceSetupSignalArgs/Source
+    - name: AudioVisualizer
+      link: GstPbutils.Native/AudioVisualizer
+      subfolderitems:
+      - name: AudioVisualizer
+        link: GstPbutils.Native/AudioVisualizer/AudioVisualizer
+    - name: Discoverer
+      link: GstPbutils.Native/Discoverer
+      subfolderitems:
+      - name: Discoverer
+        link: GstPbutils.Native/Discoverer/Discoverer
+    - name: DiscovererAudioInfo
+      link: GstPbutils.Native/DiscovererAudioInfo
+      subfolderitems:
+      - name: DiscovererAudioInfo
+        link: GstPbutils.Native/DiscovererAudioInfo/DiscovererAudioInfo
+    - name: DiscovererContainerInfo
+      link: GstPbutils.Native/DiscovererContainerInfo
+      subfolderitems:
+      - name: DiscovererContainerInfo
+        link: GstPbutils.Native/DiscovererContainerInfo/DiscovererContainerInfo
+    - name: DiscovererInfo
+      link: GstPbutils.Native/DiscovererInfo
+      subfolderitems:
+      - name: DiscovererInfo
+        link: GstPbutils.Native/DiscovererInfo/DiscovererInfo
+    - name: DiscovererStreamInfo
+      link: GstPbutils.Native/DiscovererStreamInfo
+      subfolderitems:
+      - name: DiscovererStreamInfo
+        link: GstPbutils.Native/DiscovererStreamInfo/DiscovererStreamInfo
+    - name: DiscovererSubtitleInfo
+      link: GstPbutils.Native/DiscovererSubtitleInfo
+      subfolderitems:
+      - name: DiscovererSubtitleInfo
+        link: GstPbutils.Native/DiscovererSubtitleInfo/DiscovererSubtitleInfo
+    - name: DiscovererVideoInfo
+      link: GstPbutils.Native/DiscovererVideoInfo
+      subfolderitems:
+      - name: DiscovererVideoInfo
+        link: GstPbutils.Native/DiscovererVideoInfo/DiscovererVideoInfo
+    - name: EncodingAudioProfile
+      link: GstPbutils.Native/EncodingAudioProfile
+      subfolderitems:
+      - name: EncodingAudioProfile
+        link: GstPbutils.Native/EncodingAudioProfile/EncodingAudioProfile
+    - name: EncodingContainerProfile
+      link: GstPbutils.Native/EncodingContainerProfile
+      subfolderitems:
+      - name: EncodingContainerProfile
+        link: GstPbutils.Native/EncodingContainerProfile/EncodingContainerProfile
+    - name: EncodingProfile
+      link: GstPbutils.Native/EncodingProfile
+      subfolderitems:
+      - name: EncodingProfile
+        link: GstPbutils.Native/EncodingProfile/EncodingProfile
+    - name: EncodingTarget
+      link: GstPbutils.Native/EncodingTarget
+      subfolderitems:
+      - name: EncodingTarget
+        link: GstPbutils.Native/EncodingTarget/EncodingTarget
+    - name: EncodingVideoProfile
+      link: GstPbutils.Native/EncodingVideoProfile
+      subfolderitems:
+      - name: EncodingVideoProfile
+        link: GstPbutils.Native/EncodingVideoProfile/EncodingVideoProfile
+    - name: Extensions
+      link: GstPbutils.Native/Extensions
+      subfolderitems:
+      - name: MarshalToStructure
+        link: GstPbutils.Native/Extensions/MarshalToStructure
+    - name: Functions
+      link: GstPbutils.Native/Functions
+      subfolderitems:
+      - name: InstallPluginsReturnGetName
+        link: GstPbutils.Native/Functions/InstallPluginsReturnGetName
+      - name: InstallPluginsSupported
+        link: GstPbutils.Native/Functions/InstallPluginsSupported
+      - name: InstallPluginsSync
+        link: GstPbutils.Native/Functions/InstallPluginsSync
+      - name: IsMissingPluginMessage
+        link: GstPbutils.Native/Functions/IsMissingPluginMessage
+      - name: MissingDecoderInstallerDetailNew
+        link: GstPbutils.Native/Functions/MissingDecoderInstallerDetailNew
+      - name: MissingDecoderMessageNew
+        link: GstPbutils.Native/Functions/MissingDecoderMessageNew
+      - name: MissingElementInstallerDetailNew
+        link: GstPbutils.Native/Functions/MissingElementInstallerDetailNew
+      - name: MissingElementMessageNew
+        link: GstPbutils.Native/Functions/MissingElementMessageNew
+      - name: MissingEncoderInstallerDetailNew
+        link: GstPbutils.Native/Functions/MissingEncoderInstallerDetailNew
+      - name: MissingEncoderMessageNew
+        link: GstPbutils.Native/Functions/MissingEncoderMessageNew
+      - name: MissingPluginMessageGetDescription
+        link: GstPbutils.Native/Functions/MissingPluginMessageGetDescription
+      - name: MissingPluginMessageGetInstallerDetail
+        link: GstPbutils.Native/Functions/MissingPluginMessageGetInstallerDetail
+      - name: MissingUriSinkInstallerDetailNew
+        link: GstPbutils.Native/Functions/MissingUriSinkInstallerDetailNew
+      - name: MissingUriSinkMessageNew
+        link: GstPbutils.Native/Functions/MissingUriSinkMessageNew
+      - name: MissingUriSourceInstallerDetailNew
+        link: GstPbutils.Native/Functions/MissingUriSourceInstallerDetailNew
+      - name: MissingUriSourceMessageNew
+        link: GstPbutils.Native/Functions/MissingUriSourceMessageNew
+      - name: PbUtilsAddCodecDescriptionToTagList
+        link: GstPbutils.Native/Functions/PbUtilsAddCodecDescriptionToTagList
+      - name: PbUtilsGetCodecDescription
+        link: GstPbutils.Native/Functions/PbUtilsGetCodecDescription
+      - name: PbUtilsGetDecoderDescription
+        link: GstPbutils.Native/Functions/PbUtilsGetDecoderDescription
+      - name: PbUtilsGetElementDescription
+        link: GstPbutils.Native/Functions/PbUtilsGetElementDescription
+      - name: PbUtilsGetEncoderDescription
+        link: GstPbutils.Native/Functions/PbUtilsGetEncoderDescription
+      - name: PbUtilsGetSinkDescription
+        link: GstPbutils.Native/Functions/PbUtilsGetSinkDescription
+      - name: PbUtilsGetSourceDescription
+        link: GstPbutils.Native/Functions/PbUtilsGetSourceDescription
+      - name: PbUtilsInit
+        link: GstPbutils.Native/Functions/PbUtilsInit
+      - name: PluginsBaseVersion
+        link: GstPbutils.Native/Functions/PluginsBaseVersion
+      - name: PluginsBaseVersionString
+        link: GstPbutils.Native/Functions/PluginsBaseVersionString
+      - name: CodecUtilsAacCapsSetLevelAndProfile
+        link: GstPbutils.Native/Functions/CodecUtilsAacCapsSetLevelAndProfile
+      - name: CodecUtilsAacGetChannels
+        link: GstPbutils.Native/Functions/CodecUtilsAacGetChannels
+      - name: CodecUtilsAacGetIndexFromSampleRate
+        link: GstPbutils.Native/Functions/CodecUtilsAacGetIndexFromSampleRate
+      - name: CodecUtilsAacGetLevel
+        link: GstPbutils.Native/Functions/CodecUtilsAacGetLevel
+      - name: CodecUtilsAacGetProfile
+        link: GstPbutils.Native/Functions/CodecUtilsAacGetProfile
+      - name: CodecUtilsAacGetSampleRate
+        link: GstPbutils.Native/Functions/CodecUtilsAacGetSampleRate
+      - name: CodecUtilsAacGetSampleRateFromIndex
+        link: GstPbutils.Native/Functions/CodecUtilsAacGetSampleRateFromIndex
+      - name: CodecUtilsH264CapsSetLevelAndProfile
+        link: GstPbutils.Native/Functions/CodecUtilsH264CapsSetLevelAndProfile
+      - name: CodecUtilsH264GetLevel
+        link: GstPbutils.Native/Functions/CodecUtilsH264GetLevel
+      - name: CodecUtilsH264GetLevelIdc
+        link: GstPbutils.Native/Functions/CodecUtilsH264GetLevelIdc
+      - name: CodecUtilsH264GetProfile
+        link: GstPbutils.Native/Functions/CodecUtilsH264GetProfile
+      - name: CodecUtilsH265CapsSetLevelTierAndProfile
+        link: GstPbutils.Native/Functions/CodecUtilsH265CapsSetLevelTierAndProfile
+      - name: CodecUtilsH265GetLevel
+        link: GstPbutils.Native/Functions/CodecUtilsH265GetLevel
+      - name: CodecUtilsH265GetLevelIdc
+        link: GstPbutils.Native/Functions/CodecUtilsH265GetLevelIdc
+      - name: CodecUtilsH265GetProfile
+        link: GstPbutils.Native/Functions/CodecUtilsH265GetProfile
+      - name: CodecUtilsH265GetTier
+        link: GstPbutils.Native/Functions/CodecUtilsH265GetTier
+      - name: CodecUtilsMpeg4videoCapsSetLevelAndProfile
+        link: GstPbutils.Native/Functions/CodecUtilsMpeg4videoCapsSetLevelAndProfile
+      - name: CodecUtilsMpeg4videoGetLevel
+        link: GstPbutils.Native/Functions/CodecUtilsMpeg4videoGetLevel
+      - name: CodecUtilsMpeg4videoGetProfile
+        link: GstPbutils.Native/Functions/CodecUtilsMpeg4videoGetProfile
+      - name: CodecUtilsOpusCreateCaps
+        link: GstPbutils.Native/Functions/CodecUtilsOpusCreateCaps
+      - name: CodecUtilsOpusCreateCapsFromHeader
+        link: GstPbutils.Native/Functions/CodecUtilsOpusCreateCapsFromHeader
+      - name: CodecUtilsOpusCreateHeader
+        link: GstPbutils.Native/Functions/CodecUtilsOpusCreateHeader
+      - name: CodecUtilsOpusParseCaps
+        link: GstPbutils.Native/Functions/CodecUtilsOpusParseCaps
+      - name: CodecUtilsOpusParseHeader
+        link: GstPbutils.Native/Functions/CodecUtilsOpusParseHeader
+      - name: EncodingListAllTargets
+        link: GstPbutils.Native/Functions/EncodingListAllTargets
+      - name: EncodingListAvailableCategories
+        link: GstPbutils.Native/Functions/EncodingListAvailableCategories
+      - name: InstallPluginsAsync
+        link: GstPbutils.Native/Functions/InstallPluginsAsync
+      - name: InstallPluginsInstallationInProgress
+        link: GstPbutils.Native/Functions/InstallPluginsInstallationInProgress
+      - name: Functions
+        link: GstPbutils.Native/Functions/Functions
+    - name: AudioVisualizerShaderFuncCallback
+      link: GstPbutils.Native/AudioVisualizerShaderFuncCallback
+    - name: InstallPluginsResultFuncCallback
+      link: GstPbutils.Native/InstallPluginsResultFuncCallback
+    - name: AudioVisualizerPrivate
+      link: GstPbutils.Native/AudioVisualizerPrivate
+      subfolderitems:
+      - name: AudioVisualizerPrivate
+        link: GstPbutils.Native/AudioVisualizerPrivate/AudioVisualizerPrivate
+    - name: DiscovererPrivate
+      link: GstPbutils.Native/DiscovererPrivate
+      subfolderitems:
+      - name: DiscovererPrivate
+        link: GstPbutils.Native/DiscovererPrivate/DiscovererPrivate
+    - name: InstallPluginsContext
+      link: GstPbutils.Native/InstallPluginsContext
+      subfolderitems:
+      - name: InstallPluginsContext
+        link: GstPbutils.Native/InstallPluginsContext/InstallPluginsContext
+    - name: AudioVisualizer.Class
+      link: GstPbutils.Native/AudioVisualizer.Class
+      subfolderitems:
+      - name: ParentClass
+        link: GstPbutils.Native/AudioVisualizer.Class/ParentClass
+      - name: Setup
+        link: GstPbutils.Native/AudioVisualizer.Class/Setup
+      - name: Render
+        link: GstPbutils.Native/AudioVisualizer.Class/Render
+      - name: DecideAllocation
+        link: GstPbutils.Native/AudioVisualizer.Class/DecideAllocation
+    - name: AudioVisualizer.Methods
+      link: GstPbutils.Native/AudioVisualizer.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/AudioVisualizer.Methods/Methods
+    - name: AudioVisualizer.Instance
+      link: GstPbutils.Native/AudioVisualizer.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/AudioVisualizer.Instance/Instance
+    - name: AudioVisualizer.Handle
+      link: GstPbutils.Native/AudioVisualizer.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/AudioVisualizer.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/AudioVisualizer.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/AudioVisualizer.Handle/Null
+    - name: AudioVisualizer.ManagedHandle
+      link: GstPbutils.Native/AudioVisualizer.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/AudioVisualizer.ManagedHandle/Create
+    - name: Discoverer.Class
+      link: GstPbutils.Native/Discoverer.Class
+      subfolderitems:
+      - name: Parentclass
+        link: GstPbutils.Native/Discoverer.Class/Parentclass
+      - name: Finished
+        link: GstPbutils.Native/Discoverer.Class/Finished
+      - name: Starting
+        link: GstPbutils.Native/Discoverer.Class/Starting
+      - name: Discovered
+        link: GstPbutils.Native/Discoverer.Class/Discovered
+      - name: SourceSetup
+        link: GstPbutils.Native/Discoverer.Class/SourceSetup
+      - name: Reserved
+        link: GstPbutils.Native/Discoverer.Class/Reserved
+    - name: Discoverer.Methods
+      link: GstPbutils.Native/Discoverer.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/Discoverer.Methods/Methods
+    - name: Discoverer.Instance
+      link: GstPbutils.Native/Discoverer.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/Discoverer.Instance/Instance
+    - name: Discoverer.Handle
+      link: GstPbutils.Native/Discoverer.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/Discoverer.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/Discoverer.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/Discoverer.Handle/Null
+    - name: Discoverer.ManagedHandle
+      link: GstPbutils.Native/Discoverer.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/Discoverer.ManagedHandle/Create
+    - name: DiscovererAudioInfo.Instance
+      link: GstPbutils.Native/DiscovererAudioInfo.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance/Instance
+    - name: DiscovererContainerInfo.Instance
+      link: GstPbutils.Native/DiscovererContainerInfo.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/DiscovererContainerInfo.Instance/Instance
+    - name: DiscovererInfo.Instance
+      link: GstPbutils.Native/DiscovererInfo.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/DiscovererInfo.Instance/Instance
+    - name: DiscovererStreamInfo.Instance
+      link: GstPbutils.Native/DiscovererStreamInfo.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance/Instance
+    - name: DiscovererSubtitleInfo.Instance
+      link: GstPbutils.Native/DiscovererSubtitleInfo.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/DiscovererSubtitleInfo.Instance/Instance
+    - name: DiscovererVideoInfo.Instance
+      link: GstPbutils.Native/DiscovererVideoInfo.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance/Instance
+    - name: EncodingAudioProfile.Class
+      link: GstPbutils.Native/EncodingAudioProfile.Class
+    - name: EncodingAudioProfile.Methods
+      link: GstPbutils.Native/EncodingAudioProfile.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/EncodingAudioProfile.Methods/Methods
+    - name: EncodingAudioProfile.Instance
+      link: GstPbutils.Native/EncodingAudioProfile.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/EncodingAudioProfile.Instance/Instance
+    - name: EncodingAudioProfile.Handle
+      link: GstPbutils.Native/EncodingAudioProfile.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/EncodingAudioProfile.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/EncodingAudioProfile.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/EncodingAudioProfile.Handle/Null
+    - name: EncodingAudioProfile.ManagedHandle
+      link: GstPbutils.Native/EncodingAudioProfile.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/EncodingAudioProfile.ManagedHandle/Create
+    - name: EncodingContainerProfile.Class
+      link: GstPbutils.Native/EncodingContainerProfile.Class
+    - name: EncodingContainerProfile.Methods
+      link: GstPbutils.Native/EncodingContainerProfile.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/EncodingContainerProfile.Methods/Methods
+    - name: EncodingContainerProfile.Instance
+      link: GstPbutils.Native/EncodingContainerProfile.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/EncodingContainerProfile.Instance/Instance
+    - name: EncodingContainerProfile.Handle
+      link: GstPbutils.Native/EncodingContainerProfile.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/EncodingContainerProfile.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/EncodingContainerProfile.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/EncodingContainerProfile.Handle/Null
+    - name: EncodingContainerProfile.ManagedHandle
+      link: GstPbutils.Native/EncodingContainerProfile.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/EncodingContainerProfile.ManagedHandle/Create
+    - name: EncodingProfile.Class
+      link: GstPbutils.Native/EncodingProfile.Class
+    - name: EncodingProfile.Methods
+      link: GstPbutils.Native/EncodingProfile.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/EncodingProfile.Methods/Methods
+    - name: EncodingProfile.Instance
+      link: GstPbutils.Native/EncodingProfile.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/EncodingProfile.Instance/Instance
+    - name: EncodingProfile.Handle
+      link: GstPbutils.Native/EncodingProfile.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/EncodingProfile.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/EncodingProfile.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/EncodingProfile.Handle/Null
+    - name: EncodingProfile.ManagedHandle
+      link: GstPbutils.Native/EncodingProfile.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/EncodingProfile.ManagedHandle/Create
+    - name: EncodingTarget.Instance
+      link: GstPbutils.Native/EncodingTarget.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/EncodingTarget.Instance/Instance
+    - name: EncodingVideoProfile.Class
+      link: GstPbutils.Native/EncodingVideoProfile.Class
+    - name: EncodingVideoProfile.Methods
+      link: GstPbutils.Native/EncodingVideoProfile.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/EncodingVideoProfile.Methods/Methods
+    - name: EncodingVideoProfile.Instance
+      link: GstPbutils.Native/EncodingVideoProfile.Instance
+      subfolderitems:
+      - name: Instance
+        link: GstPbutils.Native/EncodingVideoProfile.Instance/Instance
+    - name: EncodingVideoProfile.Handle
+      link: GstPbutils.Native/EncodingVideoProfile.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/EncodingVideoProfile.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/EncodingVideoProfile.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/EncodingVideoProfile.Handle/Null
+    - name: EncodingVideoProfile.ManagedHandle
+      link: GstPbutils.Native/EncodingVideoProfile.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/EncodingVideoProfile.ManagedHandle/Create
+    - name: AudioVisualizerPrivate.Struct
+      link: GstPbutils.Native/AudioVisualizerPrivate.Struct
+    - name: AudioVisualizerPrivate.Methods
+      link: GstPbutils.Native/AudioVisualizerPrivate.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/AudioVisualizerPrivate.Methods/Methods
+    - name: AudioVisualizerPrivate.Handle
+      link: GstPbutils.Native/AudioVisualizerPrivate.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/AudioVisualizerPrivate.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/AudioVisualizerPrivate.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/AudioVisualizerPrivate.Handle/Null
+    - name: AudioVisualizerPrivate.ManagedHandle
+      link: GstPbutils.Native/AudioVisualizerPrivate.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/AudioVisualizerPrivate.ManagedHandle/Create
+    - name: DiscovererPrivate.Struct
+      link: GstPbutils.Native/DiscovererPrivate.Struct
+    - name: DiscovererPrivate.Methods
+      link: GstPbutils.Native/DiscovererPrivate.Methods
+      subfolderitems:
+      - name: Methods
+        link: GstPbutils.Native/DiscovererPrivate.Methods/Methods
+    - name: DiscovererPrivate.Handle
+      link: GstPbutils.Native/DiscovererPrivate.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/DiscovererPrivate.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/DiscovererPrivate.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/DiscovererPrivate.Handle/Null
+    - name: DiscovererPrivate.ManagedHandle
+      link: GstPbutils.Native/DiscovererPrivate.ManagedHandle
+      subfolderitems:
+      - name: Create
+        link: GstPbutils.Native/DiscovererPrivate.ManagedHandle/Create
+    - name: InstallPluginsContext.Struct
+      link: GstPbutils.Native/InstallPluginsContext.Struct
+    - name: InstallPluginsContext.Methods
+      link: GstPbutils.Native/InstallPluginsContext.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/InstallPluginsContext.Methods/GetGType
+      - name: New
+        link: GstPbutils.Native/InstallPluginsContext.Methods/New
+      - name: Copy
+        link: GstPbutils.Native/InstallPluginsContext.Methods/Copy
+      - name: Free
+        link: GstPbutils.Native/InstallPluginsContext.Methods/Free
+      - name: SetConfirmSearch
+        link: GstPbutils.Native/InstallPluginsContext.Methods/SetConfirmSearch
+      - name: SetDesktopId
+        link: GstPbutils.Native/InstallPluginsContext.Methods/SetDesktopId
+      - name: SetStartupNotificationId
+        link: GstPbutils.Native/InstallPluginsContext.Methods/SetStartupNotificationId
+      - name: SetXid
+        link: GstPbutils.Native/InstallPluginsContext.Methods/SetXid
+      - name: Methods
+        link: GstPbutils.Native/InstallPluginsContext.Methods/Methods
+    - name: InstallPluginsContext.Handle
+      link: GstPbutils.Native/InstallPluginsContext.Handle
+      subfolderitems:
+      - name: Handle
+        link: GstPbutils.Native/InstallPluginsContext.Handle/Handle
+      - name: IsInvalid
+        link: GstPbutils.Native/InstallPluginsContext.Handle/IsInvalid
+      - name: Null
+        link: GstPbutils.Native/InstallPluginsContext.Handle/Null
+    - name: AudioVisualizer.Class.SetupCallback
+      link: GstPbutils.Native/AudioVisualizer.Class.SetupCallback
+    - name: AudioVisualizer.Class.RenderCallback
+      link: GstPbutils.Native/AudioVisualizer.Class.RenderCallback
+    - name: AudioVisualizer.Class.DecideAllocationCallback
+      link: GstPbutils.Native/AudioVisualizer.Class.DecideAllocationCallback
+    - name: AudioVisualizer.Instance.Struct
+      link: GstPbutils.Native/AudioVisualizer.Instance.Struct
+      subfolderitems:
+      - name: Parent
+        link: GstPbutils.Native/AudioVisualizer.Instance.Struct/Parent
+      - name: ReqSpf
+        link: GstPbutils.Native/AudioVisualizer.Instance.Struct/ReqSpf
+      - name: Vinfo
+        link: GstPbutils.Native/AudioVisualizer.Instance.Struct/Vinfo
+      - name: Ainfo
+        link: GstPbutils.Native/AudioVisualizer.Instance.Struct/Ainfo
+      - name: Priv
+        link: GstPbutils.Native/AudioVisualizer.Instance.Struct/Priv
+    - name: AudioVisualizer.Instance.Methods
+      link: GstPbutils.Native/AudioVisualizer.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/AudioVisualizer.Instance.Methods/GetGType
+    - name: Discoverer.Class.FinishedCallback
+      link: GstPbutils.Native/Discoverer.Class.FinishedCallback
+    - name: Discoverer.Class.StartingCallback
+      link: GstPbutils.Native/Discoverer.Class.StartingCallback
+    - name: Discoverer.Class.DiscoveredCallback
+      link: GstPbutils.Native/Discoverer.Class.DiscoveredCallback
+    - name: Discoverer.Class.SourceSetupCallback
+      link: GstPbutils.Native/Discoverer.Class.SourceSetupCallback
+    - name: Discoverer.Instance.Struct
+      link: GstPbutils.Native/Discoverer.Instance.Struct
+      subfolderitems:
+      - name: Parent
+        link: GstPbutils.Native/Discoverer.Instance.Struct/Parent
+      - name: Priv
+        link: GstPbutils.Native/Discoverer.Instance.Struct/Priv
+      - name: Reserved
+        link: GstPbutils.Native/Discoverer.Instance.Struct/Reserved
+    - name: Discoverer.Instance.Methods
+      link: GstPbutils.Native/Discoverer.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/Discoverer.Instance.Methods/GetGType
+      - name: New
+        link: GstPbutils.Native/Discoverer.Instance.Methods/New
+      - name: DiscoverUri
+        link: GstPbutils.Native/Discoverer.Instance.Methods/DiscoverUri
+      - name: DiscoverUriAsync
+        link: GstPbutils.Native/Discoverer.Instance.Methods/DiscoverUriAsync
+      - name: Start
+        link: GstPbutils.Native/Discoverer.Instance.Methods/Start
+      - name: Stop
+        link: GstPbutils.Native/Discoverer.Instance.Methods/Stop
+    - name: DiscovererAudioInfo.Instance.Struct
+      link: GstPbutils.Native/DiscovererAudioInfo.Instance.Struct
+    - name: DiscovererAudioInfo.Instance.Methods
+      link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetGType
+      - name: GetBitrate
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetBitrate
+      - name: GetChannelMask
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetChannelMask
+      - name: GetChannels
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetChannels
+      - name: GetDepth
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetDepth
+      - name: GetLanguage
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetLanguage
+      - name: GetMaxBitrate
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetMaxBitrate
+      - name: GetSampleRate
+        link: GstPbutils.Native/DiscovererAudioInfo.Instance.Methods/GetSampleRate
+    - name: DiscovererContainerInfo.Instance.Struct
+      link: GstPbutils.Native/DiscovererContainerInfo.Instance.Struct
+    - name: DiscovererContainerInfo.Instance.Methods
+      link: GstPbutils.Native/DiscovererContainerInfo.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/DiscovererContainerInfo.Instance.Methods/GetGType
+      - name: GetStreams
+        link: GstPbutils.Native/DiscovererContainerInfo.Instance.Methods/GetStreams
+    - name: DiscovererInfo.Instance.Struct
+      link: GstPbutils.Native/DiscovererInfo.Instance.Struct
+    - name: DiscovererInfo.Instance.Methods
+      link: GstPbutils.Native/DiscovererInfo.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetGType
+      - name: Copy
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/Copy
+      - name: GetAudioStreams
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetAudioStreams
+      - name: GetContainerStreams
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetContainerStreams
+      - name: GetDuration
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetDuration
+      - name: GetLive
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetLive
+      - name: GetMisc
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetMisc
+      - name: GetMissingElementsInstallerDetails
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetMissingElementsInstallerDetails
+      - name: GetResult
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetResult
+      - name: GetSeekable
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetSeekable
+      - name: GetStreamInfo
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetStreamInfo
+      - name: GetStreamList
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetStreamList
+      - name: GetStreams
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetStreams
+      - name: GetSubtitleStreams
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetSubtitleStreams
+      - name: GetTags
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetTags
+      - name: GetToc
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetToc
+      - name: GetUri
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetUri
+      - name: GetVideoStreams
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/GetVideoStreams
+      - name: ToVariant
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/ToVariant
+      - name: FromVariant
+        link: GstPbutils.Native/DiscovererInfo.Instance.Methods/FromVariant
+    - name: DiscovererStreamInfo.Instance.Struct
+      link: GstPbutils.Native/DiscovererStreamInfo.Instance.Struct
+    - name: DiscovererStreamInfo.Instance.Methods
+      link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetGType
+      - name: GetCaps
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetCaps
+      - name: GetMisc
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetMisc
+      - name: GetNext
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetNext
+      - name: GetPrevious
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetPrevious
+      - name: GetStreamId
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetStreamId
+      - name: GetStreamTypeNick
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetStreamTypeNick
+      - name: GetTags
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetTags
+      - name: GetToc
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/GetToc
+      - name: ListFree
+        link: GstPbutils.Native/DiscovererStreamInfo.Instance.Methods/ListFree
+    - name: DiscovererSubtitleInfo.Instance.Struct
+      link: GstPbutils.Native/DiscovererSubtitleInfo.Instance.Struct
+    - name: DiscovererSubtitleInfo.Instance.Methods
+      link: GstPbutils.Native/DiscovererSubtitleInfo.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/DiscovererSubtitleInfo.Instance.Methods/GetGType
+      - name: GetLanguage
+        link: GstPbutils.Native/DiscovererSubtitleInfo.Instance.Methods/GetLanguage
+    - name: DiscovererVideoInfo.Instance.Struct
+      link: GstPbutils.Native/DiscovererVideoInfo.Instance.Struct
+    - name: DiscovererVideoInfo.Instance.Methods
+      link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetGType
+      - name: GetBitrate
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetBitrate
+      - name: GetDepth
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetDepth
+      - name: GetFramerateDenom
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetFramerateDenom
+      - name: GetFramerateNum
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetFramerateNum
+      - name: GetHeight
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetHeight
+      - name: GetMaxBitrate
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetMaxBitrate
+      - name: GetParDenom
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetParDenom
+      - name: GetParNum
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetParNum
+      - name: GetWidth
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/GetWidth
+      - name: IsImage
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/IsImage
+      - name: IsInterlaced
+        link: GstPbutils.Native/DiscovererVideoInfo.Instance.Methods/IsInterlaced
+    - name: EncodingAudioProfile.Instance.Struct
+      link: GstPbutils.Native/EncodingAudioProfile.Instance.Struct
+    - name: EncodingAudioProfile.Instance.Methods
+      link: GstPbutils.Native/EncodingAudioProfile.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/EncodingAudioProfile.Instance.Methods/GetGType
+      - name: New
+        link: GstPbutils.Native/EncodingAudioProfile.Instance.Methods/New
+    - name: EncodingContainerProfile.Instance.Struct
+      link: GstPbutils.Native/EncodingContainerProfile.Instance.Struct
+    - name: EncodingContainerProfile.Instance.Methods
+      link: GstPbutils.Native/EncodingContainerProfile.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/EncodingContainerProfile.Instance.Methods/GetGType
+      - name: New
+        link: GstPbutils.Native/EncodingContainerProfile.Instance.Methods/New
+      - name: AddProfile
+        link: GstPbutils.Native/EncodingContainerProfile.Instance.Methods/AddProfile
+      - name: ContainsProfile
+        link: GstPbutils.Native/EncodingContainerProfile.Instance.Methods/ContainsProfile
+      - name: GetProfiles
+        link: GstPbutils.Native/EncodingContainerProfile.Instance.Methods/GetProfiles
+    - name: EncodingProfile.Instance.Struct
+      link: GstPbutils.Native/EncodingProfile.Instance.Struct
+    - name: EncodingProfile.Instance.Methods
+      link: GstPbutils.Native/EncodingProfile.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetGType
+      - name: Copy
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/Copy
+      - name: GetAllowDynamicOutput
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetAllowDynamicOutput
+      - name: GetDescription
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetDescription
+      - name: GetFileExtension
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetFileExtension
+      - name: GetFormat
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetFormat
+      - name: GetInputCaps
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetInputCaps
+      - name: GetName
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetName
+      - name: GetPresence
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetPresence
+      - name: GetPreset
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetPreset
+      - name: GetPresetName
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetPresetName
+      - name: GetRestriction
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetRestriction
+      - name: GetSingleSegment
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetSingleSegment
+      - name: GetTypeNick
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/GetTypeNick
+      - name: IsEnabled
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/IsEnabled
+      - name: IsEqual
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/IsEqual
+      - name: SetAllowDynamicOutput
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetAllowDynamicOutput
+      - name: SetDescription
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetDescription
+      - name: SetEnabled
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetEnabled
+      - name: SetFormat
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetFormat
+      - name: SetName
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetName
+      - name: SetPresence
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetPresence
+      - name: SetPreset
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetPreset
+      - name: SetPresetName
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetPresetName
+      - name: SetRestriction
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetRestriction
+      - name: SetSingleSegment
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/SetSingleSegment
+      - name: Find
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/Find
+      - name: FromDiscoverer
+        link: GstPbutils.Native/EncodingProfile.Instance.Methods/FromDiscoverer
+    - name: EncodingTarget.Instance.Struct
+      link: GstPbutils.Native/EncodingTarget.Instance.Struct
+    - name: EncodingTarget.Instance.Methods
+      link: GstPbutils.Native/EncodingTarget.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetGType
+      - name: New
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/New
+      - name: AddProfile
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/AddProfile
+      - name: GetCategory
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetCategory
+      - name: GetDescription
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetDescription
+      - name: GetName
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetName
+      - name: GetPath
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetPath
+      - name: GetProfile
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetProfile
+      - name: GetProfiles
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/GetProfiles
+      - name: Save
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/Save
+      - name: SaveToFile
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/SaveToFile
+      - name: Load
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/Load
+      - name: LoadFromFile
+        link: GstPbutils.Native/EncodingTarget.Instance.Methods/LoadFromFile
+    - name: EncodingVideoProfile.Instance.Struct
+      link: GstPbutils.Native/EncodingVideoProfile.Instance.Struct
+    - name: EncodingVideoProfile.Instance.Methods
+      link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods
+      subfolderitems:
+      - name: GetGType
+        link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods/GetGType
+      - name: New
+        link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods/New
+      - name: GetPass
+        link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods/GetPass
+      - name: GetVariableframerate
+        link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods/GetVariableframerate
+      - name: SetPass
+        link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods/SetPass
+      - name: SetVariableframerate
+        link: GstPbutils.Native/EncodingVideoProfile.Instance.Methods/SetVariableframerate

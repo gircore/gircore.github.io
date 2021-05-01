@@ -1,25 +1,79 @@
-<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.82.1"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="StatusIcon class #  public class StatusIcon : Object Public Members #     name description      Item { set; } Indexer to connect with a SignalHandler<StatusIcon> (7 indexers)   event OnActivate     event OnButtonPressEvent     event OnButtonReleaseEvent     event OnPopupMenu     event OnQueryTooltip     event OnScrollEvent     event OnSizeChanged     static readonly ActivateSignal  Signal Descriptor for OnActivate."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content><meta property="og:description" content="StatusIcon class #  public class StatusIcon : Object Public Members #     name description      Item { set; } Indexer to connect with a SignalHandler<StatusIcon> (7 indexers)   event OnActivate     event OnButtonPressEvent     event OnButtonReleaseEvent     event OnPopupMenu     event OnQueryTooltip     event OnScrollEvent     event OnSizeChanged     static readonly ActivateSignal  Signal Descriptor for OnActivate."><meta property="og:type" content="article"><meta property="og:url" content="https://gircore.github.io/api/gtk/statusicon.html"><meta property="article:section" content="api"><title>Status Icon | Gir.Core</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.701c1b5878ecad22429801e6977e66bd0deff613b2a34c8d0f07527ce70f8525.css integrity="sha256-cBwbWHjsrSJCmAHml35mvQ3v9hOyo0yNDwdSfOcPhSU="><script defer src=/en.search.min.696d507087840c1ae2fae6c599563472c98864e50f79e6683b89c5a6d548923d.js integrity="sha256-aW1QcIeEDBri+ubFmVY0csmIZOUPeeZoO4nFptVIkj0="></script></head><body><input type=checkbox class="hidden toggle" id=menu-control>
+<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.82.1"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="StatusIcon class #  public class StatusIcon : Object Public Members #     name description      Embedded { get; }     File { set; }     HasTooltip { get; set; }     IconName { get; set; }     Item { set; } Indexer to connect with a SignalHandler<StatusIcon> (7 indexers)    Orientation { get; }     Pixbuf { get; set; }     Screen { get; set; }     Size { get; }     Stock { get; set; }     StorageType { get; }     Title { get; set; }     TooltipMarkup { get; set; }     TooltipText { get; set; }     Visible { get; set; }    event OnActivate     event OnButtonPressEvent     event OnButtonReleaseEvent     event OnPopupMenu     event OnQueryTooltip     event OnScrollEvent     event OnSizeChanged      GetGicon ()     GetHasTooltip ()     GetIconName ()     GetPixbuf ()     GetScreen ()     GetSize ()     GetStock ()     GetStorageType ()     GetTitle ()     GetTooltipMarkup ()     GetTooltipText ()     GetVisible ()     GetX11WindowId ()     IsEmbedded ()     SetFromFile (…)     SetFromGicon (…)     SetFromIconName (…)     SetFromPixbuf (…)     SetFromStock (…)     SetHasTooltip (…)     SetName (…)     SetScreen (…)     SetTitle (…)     SetTooltipMarkup (…)     SetTooltipText (…)     SetVisible (…)    static readonly ActivateSignal  Signal Descriptor for OnActivate."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content><meta property="og:description" content="StatusIcon class #  public class StatusIcon : Object Public Members #     name description      Embedded { get; }     File { set; }     HasTooltip { get; set; }     IconName { get; set; }     Item { set; } Indexer to connect with a SignalHandler<StatusIcon> (7 indexers)    Orientation { get; }     Pixbuf { get; set; }     Screen { get; set; }     Size { get; }     Stock { get; set; }     StorageType { get; }     Title { get; set; }     TooltipMarkup { get; set; }     TooltipText { get; set; }     Visible { get; set; }    event OnActivate     event OnButtonPressEvent     event OnButtonReleaseEvent     event OnPopupMenu     event OnQueryTooltip     event OnScrollEvent     event OnSizeChanged      GetGicon ()     GetHasTooltip ()     GetIconName ()     GetPixbuf ()     GetScreen ()     GetSize ()     GetStock ()     GetStorageType ()     GetTitle ()     GetTooltipMarkup ()     GetTooltipText ()     GetVisible ()     GetX11WindowId ()     IsEmbedded ()     SetFromFile (…)     SetFromGicon (…)     SetFromIconName (…)     SetFromPixbuf (…)     SetFromStock (…)     SetHasTooltip (…)     SetName (…)     SetScreen (…)     SetTitle (…)     SetTooltipMarkup (…)     SetTooltipText (…)     SetVisible (…)    static readonly ActivateSignal  Signal Descriptor for OnActivate."><meta property="og:type" content="article"><meta property="og:url" content="https://gircore.github.io/api/gtk/statusicon.html"><meta property="article:section" content="api"><title>Status Icon | Gir.Core</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.701c1b5878ecad22429801e6977e66bd0deff613b2a34c8d0f07527ce70f8525.css integrity="sha256-cBwbWHjsrSJCmAHml35mvQ3v9hOyo0yNDwdSfOcPhSU="><script defer src=/en.search.min.7dffb7c802406de1c45cdc7120b72457d19e5ff02efa16d950aab68410bde24e.js integrity="sha256-ff+3yAJAbeHEXNxxILckV9GeX/Au+hbZUKq2hBC94k4="></script></head><body><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo.png alt=Logo><span>Gir.Core</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=https://gircore.github.io/docs/api.html>API</a></li><li><a href=https://gircore.github.io/docs/libraries.html>Libraries</a></li></ul><ul><li><a href=https://github.com/gircore/gir.core target=_blank rel=noopener>Github</a></li></ul></nav><script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Status Icon</strong>
 <label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#public-members>Public Members</a></li><li><a href=#see-also>See Also</a></li></ul></nav></aside></header><article class=markdown><h1 id=statusicon-class>StatusIcon class
 <a class=anchor href=#statusicon-class>#</a></h1><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>StatusIcon</span> : Object
 </code></pre></div><h2 id=public-members>Public Members
-<a class=anchor href=#public-members>#</a></h2><table><thead><tr><th>name</th><th>description</th></tr></thead><tbody><tr><td><a href=/api/gtk/statusicon/item.html>Item</a>
- { set; }</td><td>Indexer to connect with a SignalHandler&lt;StatusIcon> (7 indexers)</td></tr><tr><td>event 
+<a class=anchor href=#public-members>#</a></h2><table><thead><tr><th>name</th><th>description</th></tr></thead><tbody><tr><td><a href=/api/gtk/statusicon/embedded.html>Embedded</a>
+ { get; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/file.html>File</a>
+ { set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/hastooltip.html>HasTooltip</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/iconname.html>IconName</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/item.html>Item</a>
+ { set; }</td><td>Indexer to connect with a SignalHandler&lt;StatusIcon> (7 indexers)</td></tr><tr><td><a href=/api/gtk/statusicon/orientation.html>Orientation</a>
+ { get; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/pixbuf.html>Pixbuf</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/screen.html>Screen</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/size.html>Size</a>
+ { get; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/stock.html>Stock</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/storagetype.html>StorageType</a>
+ { get; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/title.html>Title</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/tooltipmarkup.html>TooltipMarkup</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/tooltiptext.html>TooltipText</a>
+ { get; set; }</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/visible.html>Visible</a>
+ { get; set; }</td><td></td></tr><tr><td>event 
 <a href=/api/gtk/statusicon/onactivate.html>OnActivate</a></td><td></td></tr><tr><td>event 
 <a href=/api/gtk/statusicon/onbuttonpressevent.html>OnButtonPressEvent</a></td><td></td></tr><tr><td>event 
 <a href=/api/gtk/statusicon/onbuttonreleaseevent.html>OnButtonReleaseEvent</a></td><td></td></tr><tr><td>event 
 <a href=/api/gtk/statusicon/onpopupmenu.html>OnPopupMenu</a></td><td></td></tr><tr><td>event 
 <a href=/api/gtk/statusicon/onquerytooltip.html>OnQueryTooltip</a></td><td></td></tr><tr><td>event 
 <a href=/api/gtk/statusicon/onscrollevent.html>OnScrollEvent</a></td><td></td></tr><tr><td>event 
-<a href=/api/gtk/statusicon/onsizechanged.html>OnSizeChanged</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/onsizechanged.html>OnSizeChanged</a></td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getgicon.html>GetGicon</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/gethastooltip.html>GetHasTooltip</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/geticonname.html>GetIconName</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getpixbuf.html>GetPixbuf</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getscreen.html>GetScreen</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getsize.html>GetSize</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getstock.html>GetStock</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getstoragetype.html>GetStorageType</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/gettitle.html>GetTitle</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/gettooltipmarkup.html>GetTooltipMarkup</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/gettooltiptext.html>GetTooltipText</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getvisible.html>GetVisible</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/getx11windowid.html>GetX11WindowId</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/isembedded.html>IsEmbedded</a>
+()</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setfromfile.html>SetFromFile</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setfromgicon.html>SetFromGicon</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setfromiconname.html>SetFromIconName</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setfrompixbuf.html>SetFromPixbuf</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setfromstock.html>SetFromStock</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/sethastooltip.html>SetHasTooltip</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setname.html>SetName</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setscreen.html>SetScreen</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/settitle.html>SetTitle</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/settooltipmarkup.html>SetTooltipMarkup</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/settooltiptext.html>SetTooltipText</a>
+(…)</td><td></td></tr><tr><td><a href=/api/gtk/statusicon/setvisible.html>SetVisible</a>
+(…)</td><td></td></tr><tr><td>static readonly 
 <a href=/api/gtk/statusicon/activatesignal.html>ActivateSignal</a></td><td>Signal Descriptor for OnActivate.</td></tr><tr><td>static readonly 
 <a href=/api/gtk/statusicon/buttonpresseventsignal.html>ButtonPressEventSignal</a></td><td>Signal Descriptor for OnButtonPressEvent.</td></tr><tr><td>static readonly 
 <a href=/api/gtk/statusicon/buttonreleaseeventsignal.html>ButtonReleaseEventSignal</a></td><td>Signal Descriptor for OnButtonReleaseEvent.</td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/embeddedpropertydefinition.html>EmbeddedPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/filepropertydefinition.html>FilePropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/hastooltippropertydefinition.html>HasTooltipPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/iconnamepropertydefinition.html>IconNamePropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/orientationpropertydefinition.html>OrientationPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/pixbufpropertydefinition.html>PixbufPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
 <a href=/api/gtk/statusicon/popupmenusignal.html>PopupMenuSignal</a></td><td>Signal Descriptor for OnPopupMenu.</td></tr><tr><td>static readonly 
 <a href=/api/gtk/statusicon/querytooltipsignal.html>QueryTooltipSignal</a></td><td>Signal Descriptor for OnQueryTooltip.</td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/screenpropertydefinition.html>ScreenPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
 <a href=/api/gtk/statusicon/scrolleventsignal.html>ScrollEventSignal</a></td><td>Signal Descriptor for OnScrollEvent.</td></tr><tr><td>static readonly 
-<a href=/api/gtk/statusicon/sizechangedsignal.html>SizeChangedSignal</a></td><td>Signal Descriptor for OnSizeChanged.</td></tr><tr><td>class 
+<a href=/api/gtk/statusicon/sizechangedsignal.html>SizeChangedSignal</a></td><td>Signal Descriptor for OnSizeChanged.</td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/sizepropertydefinition.html>SizePropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/stockpropertydefinition.html>StockPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/storagetypepropertydefinition.html>StorageTypePropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/titlepropertydefinition.html>TitlePropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/tooltipmarkuppropertydefinition.html>TooltipMarkupPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/tooltiptextpropertydefinition.html>TooltipTextPropertyDefinition</a></td><td></td></tr><tr><td>static readonly 
+<a href=/api/gtk/statusicon/visiblepropertydefinition.html>VisiblePropertyDefinition</a></td><td></td></tr><tr><td>class 
 <a href=/api/gtk/statusicon.buttonpresseventsignalargs.html>ButtonPressEventSignalArgs</a></td><td>Signal (Event) Arguments for OnButtonPressEvent</td></tr><tr><td>class 
 <a href=/api/gtk/statusicon.buttonreleaseeventsignalargs.html>ButtonReleaseEventSignalArgs</a></td><td>Signal (Event) Arguments for OnButtonReleaseEvent</td></tr><tr><td>class 
 <a href=/api/gtk/statusicon.popupmenusignalargs.html>PopupMenuSignalArgs</a></td><td>Signal (Event) Arguments for OnPopupMenu</td></tr><tr><td>class 
@@ -27,4 +81,4 @@
 <a href=/api/gtk/statusicon.scrolleventsignalargs.html>ScrollEventSignalArgs</a></td><td>Signal (Event) Arguments for OnScrollEvent</td></tr><tr><td>class 
 <a href=/api/gtk/statusicon.sizechangedsignalargs.html>SizeChangedSignalArgs</a></td><td>Signal (Event) Arguments for OnSizeChanged</td></tr></tbody></table><h2 id=see-also>See Also
 <a class=anchor href=#see-also>#</a></h2><ul><li>namespace 
-<a href=/api/gtk3.html>Gtk</a></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#public-members>Public Members</a></li><li><a href=#see-also>See Also</a></li></ul></nav></div></aside></main></body></html>
+<a href=/api/gtk-3.0.html>Gtk</a></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#public-members>Public Members</a></li><li><a href=#see-also>See Also</a></li></ul></nav></div></aside></main></body></html>
