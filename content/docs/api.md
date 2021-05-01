@@ -5,17 +5,17 @@
 {{</hint>}}
 
 ## Basic APIs
-- [GObject](../api/gobject.md)
-- [GLib](../api/glib.md)
-- [Gio](../api/gio.md)
-- [GdkPixbuf](../api/gdkpixbuf.md)
+- [GObject](../api/gobject-2.0.md)
+- [GLib](../api/glib-2.0.md)
+- [Gio](../api/gio-2.0.md)
+- [GdkPixbuf](../api/gdkpixbuf-2.0.md)
 
 ## Multimedia APIs
-- [Gst](../api/gst.md)
-- [Gst.PButils](../api/gst.pbutils.md)
-- [Gst.Audio](../api/gst.audi.md)
-- [Gst.Base](../api/gst.base.md)
-- [Gst.Video](../api/gst.video.md)
+- [Gst](../api/gst-1.0.md)
+- [Gst.PButils](../api/gstpbutils-1.0.md)
+- [Gst.Audio](../api/gstaudio-1.0.md)
+- [Gst.Base](../api/gstbase-1.0.md)
+- [Gst.Video](../api/gstvideo-1.0.md)
 
 ## UI APIs
-- [Gtk3](../api/gtk3.md)
+- [Gtk3](../api/gtk-3.0.md)
