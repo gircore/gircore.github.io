@@ -5,6 +5,8 @@
     - name: Allocator
       link: Gst/Allocator
       subfolderitems:
+      - name: Alloc
+        link: Gst/Allocator/Alloc
       - name: SetDefault
         link: Gst/Allocator/SetDefault
     - name: Application
@@ -17,8 +19,6 @@
     - name: Bin
       link: Gst/Bin
       subfolderitems:
-      - name: IterateRecurse
-        link: Gst/Bin/IterateRecurse
       - name: Add
         link: Gst/Bin/Add
       - name: FindUnlinkedPad
@@ -31,6 +31,20 @@
         link: Gst/Bin/GetByNameRecurseUp
       - name: GetSuppressedFlags
         link: Gst/Bin/GetSuppressedFlags
+      - name: IterateAllByElementFactoryName
+        link: Gst/Bin/IterateAllByElementFactoryName
+      - name: IterateAllByInterface
+        link: Gst/Bin/IterateAllByInterface
+      - name: IterateElements
+        link: Gst/Bin/IterateElements
+      - name: IterateRecurse
+        link: Gst/Bin/IterateRecurse
+      - name: IterateSinks
+        link: Gst/Bin/IterateSinks
+      - name: IterateSorted
+        link: Gst/Bin/IterateSorted
+      - name: IterateSources
+        link: Gst/Bin/IterateSources
       - name: RecalculateLatency
         link: Gst/Bin/RecalculateLatency
       - name: Remove
@@ -77,14 +91,20 @@
     - name: BufferPool
       link: Gst/BufferPool
       subfolderitems:
+      - name: GetConfig
+        link: Gst/BufferPool/GetConfig
       - name: GetOptions
         link: Gst/BufferPool/GetOptions
       - name: HasOption
         link: Gst/BufferPool/HasOption
       - name: IsActive
         link: Gst/BufferPool/IsActive
+      - name: ReleaseBuffer
+        link: Gst/BufferPool/ReleaseBuffer
       - name: SetActive
         link: Gst/BufferPool/SetActive
+      - name: SetConfig
+        link: Gst/BufferPool/SetConfig
       - name: SetFlushing
         link: Gst/BufferPool/SetFlushing
     - name: Bus
@@ -102,12 +122,26 @@
         link: Gst/Bus/AddSignalWatchFull
       - name: AddWatch
         link: Gst/Bus/AddWatch
+      - name: AsyncSignalFunc
+        link: Gst/Bus/AsyncSignalFunc
+      - name: CreateWatch
+        link: Gst/Bus/CreateWatch
       - name: DisableSyncMessageEmission
         link: Gst/Bus/DisableSyncMessageEmission
       - name: EnableSyncMessageEmission
         link: Gst/Bus/EnableSyncMessageEmission
       - name: HavePending
         link: Gst/Bus/HavePending
+      - name: Peek
+        link: Gst/Bus/Peek
+      - name: Poll
+        link: Gst/Bus/Poll
+      - name: Pop
+        link: Gst/Bus/Pop
+      - name: PopFiltered
+        link: Gst/Bus/PopFiltered
+      - name: Post
+        link: Gst/Bus/Post
       - name: RemoveSignalWatch
         link: Gst/Bus/RemoveSignalWatch
       - name: RemoveWatch
@@ -116,6 +150,10 @@
         link: Gst/Bus/SetFlushing
       - name: SetSyncHandler
         link: Gst/Bus/SetSyncHandler
+      - name: SyncSignalHandler
+        link: Gst/Bus/SyncSignalHandler
+      - name: TimedPop
+        link: Gst/Bus/TimedPop
       - name: Item
         link: Gst/Bus/Item
       - name: EnableAsync
@@ -577,6 +615,10 @@
     - name: ControlBinding
       link: Gst/ControlBinding
       subfolderitems:
+      - name: GetGValueArray
+        link: Gst/ControlBinding/GetGValueArray
+      - name: GetValue
+        link: Gst/ControlBinding/GetValue
       - name: GetValueArray
         link: Gst/ControlBinding/GetValueArray
       - name: IsDisabled
@@ -603,10 +645,14 @@
       subfolderitems:
       - name: CreateElement
         link: Gst/Device/CreateElement
+      - name: GetCaps
+        link: Gst/Device/GetCaps
       - name: GetDeviceClass
         link: Gst/Device/GetDeviceClass
       - name: GetDisplayName
         link: Gst/Device/GetDisplayName
+      - name: GetProperties
+        link: Gst/Device/GetProperties
       - name: HasClasses
         link: Gst/Device/HasClasses
       - name: HasClassesv
@@ -630,8 +676,12 @@
     - name: DeviceMonitor
       link: Gst/DeviceMonitor
       subfolderitems:
+      - name: AddFilter
+        link: Gst/DeviceMonitor/AddFilter
       - name: GetBus
         link: Gst/DeviceMonitor/GetBus
+      - name: GetDevices
+        link: Gst/DeviceMonitor/GetDevices
       - name: GetProviders
         link: Gst/DeviceMonitor/GetProviders
       - name: GetShowAllDevices
@@ -661,6 +711,8 @@
         link: Gst/DeviceProvider/DeviceRemove
       - name: GetBus
         link: Gst/DeviceProvider/GetBus
+      - name: GetDevices
+        link: Gst/DeviceProvider/GetDevices
       - name: GetFactory
         link: Gst/DeviceProvider/GetFactory
       - name: GetHiddenProviders
@@ -740,8 +792,16 @@
         link: Gst/Element/GetBus
       - name: GetClock
         link: Gst/Element/GetClock
+      - name: GetCompatiblePad
+        link: Gst/Element/GetCompatiblePad
       - name: GetCompatiblePadTemplate
         link: Gst/Element/GetCompatiblePadTemplate
+      - name: GetContext
+        link: Gst/Element/GetContext
+      - name: GetContextUnlocked
+        link: Gst/Element/GetContextUnlocked
+      - name: GetContexts
+        link: Gst/Element/GetContexts
       - name: GetCurrentClockTime
         link: Gst/Element/GetCurrentClockTime
       - name: GetCurrentRunningTime
@@ -752,6 +812,8 @@
         link: Gst/Element/GetMetadata
       - name: GetPadTemplate
         link: Gst/Element/GetPadTemplate
+      - name: GetPadTemplateList
+        link: Gst/Element/GetPadTemplateList
       - name: GetRequestPad
         link: Gst/Element/GetRequestPad
       - name: GetStartTime
@@ -760,36 +822,58 @@
         link: Gst/Element/GetStaticPad
       - name: IsLockedState
         link: Gst/Element/IsLockedState
+      - name: IteratePads
+        link: Gst/Element/IteratePads
+      - name: IterateSinkPads
+        link: Gst/Element/IterateSinkPads
+      - name: IterateSrcPads
+        link: Gst/Element/IterateSrcPads
       - name: Link
         link: Gst/Element/Link
+      - name: LinkFiltered
+        link: Gst/Element/LinkFiltered
       - name: LinkPads
         link: Gst/Element/LinkPads
+      - name: LinkPadsFiltered
+        link: Gst/Element/LinkPadsFiltered
       - name: LinkPadsFull
         link: Gst/Element/LinkPadsFull
       - name: LostState
         link: Gst/Element/LostState
       - name: MessageFull
         link: Gst/Element/MessageFull
+      - name: MessageFullWithDetails
+        link: Gst/Element/MessageFullWithDetails
       - name: NoMorePads
         link: Gst/Element/NoMorePads
+      - name: PostMessage
+        link: Gst/Element/PostMessage
       - name: ProvideClock
         link: Gst/Element/ProvideClock
+      - name: Query
+        link: Gst/Element/Query
       - name: ReleaseRequestPad
         link: Gst/Element/ReleaseRequestPad
       - name: RemovePad
         link: Gst/Element/RemovePad
       - name: RemovePropertyNotifyWatch
         link: Gst/Element/RemovePropertyNotifyWatch
+      - name: RequestPad
+        link: Gst/Element/RequestPad
       - name: Seek
         link: Gst/Element/Seek
       - name: SeekSimple
         link: Gst/Element/SeekSimple
+      - name: SendEvent
+        link: Gst/Element/SendEvent
       - name: SetBaseTime
         link: Gst/Element/SetBaseTime
       - name: SetBus
         link: Gst/Element/SetBus
       - name: SetClock
         link: Gst/Element/SetClock
+      - name: SetContext
+        link: Gst/Element/SetContext
       - name: SetLockedState
         link: Gst/Element/SetLockedState
       - name: SetStartTime
@@ -821,6 +905,14 @@
       subfolderitems:
       - name: Make
         link: Gst/ElementFactory/Make
+      - name: CanSinkAllCaps
+        link: Gst/ElementFactory/CanSinkAllCaps
+      - name: CanSinkAnyCaps
+        link: Gst/ElementFactory/CanSinkAnyCaps
+      - name: CanSrcAllCaps
+        link: Gst/ElementFactory/CanSrcAllCaps
+      - name: CanSrcAnyCaps
+        link: Gst/ElementFactory/CanSrcAnyCaps
       - name: Create
         link: Gst/ElementFactory/Create
       - name: GetElementType
@@ -831,6 +923,8 @@
         link: Gst/ElementFactory/GetMetadataKeys
       - name: GetNumPadTemplates
         link: Gst/ElementFactory/GetNumPadTemplates
+      - name: GetStaticPadTemplates
+        link: Gst/ElementFactory/GetStaticPadTemplates
       - name: GetUriProtocols
         link: Gst/ElementFactory/GetUriProtocols
       - name: GetUriType
@@ -891,16 +985,22 @@
       subfolderitems:
       - name: AddControlBinding
         link: Gst/Object/AddControlBinding
+      - name: DefaultError
+        link: Gst/Object/DefaultError
       - name: GetControlBinding
         link: Gst/Object/GetControlBinding
       - name: GetControlRate
         link: Gst/Object/GetControlRate
+      - name: GetGValueArray
+        link: Gst/Object/GetGValueArray
       - name: GetName
         link: Gst/Object/GetName
       - name: GetParent
         link: Gst/Object/GetParent
       - name: GetPathString
         link: Gst/Object/GetPathString
+      - name: GetValue
+        link: Gst/Object/GetValue
       - name: GetValueArray
         link: Gst/Object/GetValueArray
       - name: HasActiveControlBindings
@@ -931,8 +1031,6 @@
         link: Gst/Object/SyncValues
       - name: Unparent
         link: Gst/Object/Unparent
-      - name: Unref
-        link: Gst/Object/Unref
       - name: Item
         link: Gst/Object/Item
       - name: Name
@@ -950,24 +1048,42 @@
     - name: Pad
       link: Gst/Pad
       subfolderitems:
-      - name: Link
-        link: Gst/Pad/Link
+      - name: StickyEventsForeach
+        link: Gst/Pad/StickyEventsForeach
+      - name: StopTask
+        link: Gst/Pad/StopTask
+      - name: StoreStickyEvent
+        link: Gst/Pad/StoreStickyEvent
       - name: Unlink
         link: Gst/Pad/Unlink
+      - name: UseFixedCaps
+        link: Gst/Pad/UseFixedCaps
+      - name: Link
+        link: Gst/Pad/Link
       - name: ActivateMode
         link: Gst/Pad/ActivateMode
       - name: AddProbe
         link: Gst/Pad/AddProbe
       - name: CanLink
         link: Gst/Pad/CanLink
+      - name: Chain
+        link: Gst/Pad/Chain
+      - name: ChainList
+        link: Gst/Pad/ChainList
       - name: CheckReconfigure
         link: Gst/Pad/CheckReconfigure
       - name: CreateStreamId
         link: Gst/Pad/CreateStreamId
       - name: CreateStreamIdPrintfValist
         link: Gst/Pad/CreateStreamIdPrintfValist
+      - name: EventDefault
+        link: Gst/Pad/EventDefault
       - name: Forward
         link: Gst/Pad/Forward
+      - name: GetAllowedCaps
+        link: Gst/Pad/GetAllowedCaps
+      - name: GetCurrentCaps
+        link: Gst/Pad/GetCurrentCaps
       - name: GetDirection
         link: Gst/Pad/GetDirection
       - name: GetElementPrivate
@@ -978,12 +1094,16 @@
         link: Gst/Pad/GetOffset
       - name: GetPadTemplate
         link: Gst/Pad/GetPadTemplate
+      - name: GetPadTemplateCaps
+        link: Gst/Pad/GetPadTemplateCaps
       - name: GetParentElement
         link: Gst/Pad/GetParentElement
       - name: GetPeer
         link: Gst/Pad/GetPeer
       - name: GetSingleInternalLink
         link: Gst/Pad/GetSingleInternalLink
+      - name: GetStickyEvent
+        link: Gst/Pad/GetStickyEvent
       - name: GetStream
         link: Gst/Pad/GetStream
       - name: GetStreamId
@@ -1000,6 +1120,10 @@
         link: Gst/Pad/IsBlocking
       - name: IsLinked
         link: Gst/Pad/IsLinked
+      - name: IterateInternalLinks
+        link: Gst/Pad/IterateInternalLinks
+      - name: IterateInternalLinksDefault
+        link: Gst/Pad/IterateInternalLinksDefault
       - name: LinkFull
         link: Gst/Pad/LinkFull
       - name: LinkMaybeGhosting
@@ -1012,8 +1136,34 @@
         link: Gst/Pad/NeedsReconfigure
       - name: PauseTask
         link: Gst/Pad/PauseTask
+      - name: PeerQuery
+        link: Gst/Pad/PeerQuery
+      - name: PeerQueryAcceptCaps
+        link: Gst/Pad/PeerQueryAcceptCaps
+      - name: PeerQueryCaps
+        link: Gst/Pad/PeerQueryCaps
+      - name: ProxyQueryAcceptCaps
+        link: Gst/Pad/ProxyQueryAcceptCaps
+      - name: ProxyQueryCaps
+        link: Gst/Pad/ProxyQueryCaps
+      - name: Push
+        link: Gst/Pad/Push
+      - name: PushEvent
+        link: Gst/Pad/PushEvent
+      - name: PushList
+        link: Gst/Pad/PushList
+      - name: Query
+        link: Gst/Pad/Query
+      - name: QueryAcceptCaps
+        link: Gst/Pad/QueryAcceptCaps
+      - name: QueryCaps
+        link: Gst/Pad/QueryCaps
+      - name: QueryDefault
+        link: Gst/Pad/QueryDefault
       - name: RemoveProbe
         link: Gst/Pad/RemoveProbe
+      - name: SendEvent
+        link: Gst/Pad/SendEvent
       - name: SetActivateFunctionFull
         link: Gst/Pad/SetActivateFunctionFull
       - name: SetActivatemodeFunctionFull
@@ -1044,12 +1194,6 @@
         link: Gst/Pad/SetUnlinkFunctionFull
       - name: StartTask
         link: Gst/Pad/StartTask
-      - name: StickyEventsForeach
-        link: Gst/Pad/StickyEventsForeach
-      - name: StopTask
-        link: Gst/Pad/StopTask
-      - name: UseFixedCaps
-        link: Gst/Pad/UseFixedCaps
       - name: Item
         link: Gst/Pad/Item
       - name: Direction
@@ -1075,8 +1219,14 @@
     - name: PadTemplate
       link: Gst/PadTemplate
       subfolderitems:
+      - name: GetCaps
+        link: Gst/PadTemplate/GetCaps
+      - name: GetDocumentationCaps
+        link: Gst/PadTemplate/GetDocumentationCaps
       - name: PadCreated
         link: Gst/PadTemplate/PadCreated
+      - name: SetDocumentationCaps
+        link: Gst/PadTemplate/SetDocumentationCaps
       - name: Item
         link: Gst/PadTemplate/Item
       - name: Direction
@@ -1162,6 +1312,8 @@
         link: Gst/Plugin/AddDependency
       - name: AddDependencySimple
         link: Gst/Plugin/AddDependencySimple
+      - name: GetCacheData
+        link: Gst/Plugin/GetCacheData
       - name: GetDescription
         link: Gst/Plugin/GetDescription
       - name: GetFilename
@@ -1184,6 +1336,8 @@
         link: Gst/Plugin/IsLoaded
       - name: Load
         link: Gst/Plugin/Load
+      - name: SetCacheData
+        link: Gst/Plugin/SetCacheData
     - name: PluginFeature
       link: Gst/PluginFeature
       subfolderitems:
@@ -1213,16 +1367,26 @@
         link: Gst/Registry/AddPlugin
       - name: CheckFeatureVersion
         link: Gst/Registry/CheckFeatureVersion
+      - name: FeatureFilter
+        link: Gst/Registry/FeatureFilter
       - name: FindFeature
         link: Gst/Registry/FindFeature
       - name: FindPlugin
         link: Gst/Registry/FindPlugin
+      - name: GetFeatureList
+        link: Gst/Registry/GetFeatureList
+      - name: GetFeatureListByPlugin
+        link: Gst/Registry/GetFeatureListByPlugin
       - name: GetFeatureListCookie
         link: Gst/Registry/GetFeatureListCookie
+      - name: GetPluginList
+        link: Gst/Registry/GetPluginList
       - name: Lookup
         link: Gst/Registry/Lookup
       - name: LookupFeature
         link: Gst/Registry/LookupFeature
+      - name: PluginFilter
+        link: Gst/Registry/PluginFilter
       - name: RemoveFeature
         link: Gst/Registry/RemoveFeature
       - name: RemovePlugin
@@ -1242,16 +1406,24 @@
     - name: Stream
       link: Gst/Stream
       subfolderitems:
+      - name: GetCaps
+        link: Gst/Stream/GetCaps
       - name: GetStreamFlags
         link: Gst/Stream/GetStreamFlags
       - name: GetStreamId
         link: Gst/Stream/GetStreamId
       - name: GetStreamType
         link: Gst/Stream/GetStreamType
+      - name: GetTags
+        link: Gst/Stream/GetTags
+      - name: SetCaps
+        link: Gst/Stream/SetCaps
       - name: SetStreamFlags
         link: Gst/Stream/SetStreamFlags
       - name: SetStreamType
         link: Gst/Stream/SetStreamType
+      - name: SetTags
+        link: Gst/Stream/SetTags
       - name: StreamFlags
         link: Gst/Stream/StreamFlags
       - name: StreamId
@@ -1309,6 +1481,8 @@
         link: Gst/Task/SetEnterCallback
       - name: SetLeaveCallback
         link: Gst/Task/SetLeaveCallback
+      - name: SetLock
+        link: Gst/Task/SetLock
       - name: SetPool
         link: Gst/Task/SetPool
       - name: SetState
@@ -1341,6 +1515,10 @@
     - name: TypeFindFactory
       link: Gst/TypeFindFactory
       subfolderitems:
+      - name: CallFunction
+        link: Gst/TypeFindFactory/CallFunction
+      - name: GetCaps
+        link: Gst/TypeFindFactory/GetCaps
       - name: GetExtensions
         link: Gst/TypeFindFactory/GetExtensions
       - name: HasFunction
@@ -3758,408 +3936,192 @@
     - name: AllocationParams
       link: Gst/AllocationParams
       subfolderitems:
-      - name: ToString
-        link: Gst/AllocationParams/ToString
-      - name: op_Inequality
-        link: Gst/AllocationParams/op_Inequality
-      - name: op_Equality
-        link: Gst/AllocationParams/op_Equality
-      - name: GetHashCode
-        link: Gst/AllocationParams/GetHashCode
-      - name: Equals
-        link: Gst/AllocationParams/Equals
       - name: AllocationParams
         link: Gst/AllocationParams/AllocationParams
+      - name: Handle
+        link: Gst/AllocationParams/Handle
     - name: AllocatorPrivate
       link: Gst/AllocatorPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/AllocatorPrivate/ToString
-      - name: op_Inequality
-        link: Gst/AllocatorPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/AllocatorPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/AllocatorPrivate/GetHashCode
-      - name: Equals
-        link: Gst/AllocatorPrivate/Equals
       - name: AllocatorPrivate
         link: Gst/AllocatorPrivate/AllocatorPrivate
+      - name: Handle
+        link: Gst/AllocatorPrivate/Handle
     - name: AtomicQueue
       link: Gst/AtomicQueue
       subfolderitems:
-      - name: ToString
-        link: Gst/AtomicQueue/ToString
-      - name: op_Inequality
-        link: Gst/AtomicQueue/op_Inequality
-      - name: op_Equality
-        link: Gst/AtomicQueue/op_Equality
-      - name: GetHashCode
-        link: Gst/AtomicQueue/GetHashCode
-      - name: Equals
-        link: Gst/AtomicQueue/Equals
       - name: AtomicQueue
         link: Gst/AtomicQueue/AtomicQueue
+      - name: Handle
+        link: Gst/AtomicQueue/Handle
     - name: BinPrivate
       link: Gst/BinPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/BinPrivate/ToString
-      - name: op_Inequality
-        link: Gst/BinPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/BinPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/BinPrivate/GetHashCode
-      - name: Equals
-        link: Gst/BinPrivate/Equals
       - name: BinPrivate
         link: Gst/BinPrivate/BinPrivate
+      - name: Handle
+        link: Gst/BinPrivate/Handle
     - name: Buffer
       link: Gst/Buffer
       subfolderitems:
-      - name: ToString
-        link: Gst/Buffer/ToString
-      - name: op_Inequality
-        link: Gst/Buffer/op_Inequality
-      - name: op_Equality
-        link: Gst/Buffer/op_Equality
-      - name: GetHashCode
-        link: Gst/Buffer/GetHashCode
-      - name: Equals
-        link: Gst/Buffer/Equals
       - name: Buffer
         link: Gst/Buffer/Buffer
+      - name: Handle
+        link: Gst/Buffer/Handle
     - name: BufferList
       link: Gst/BufferList
       subfolderitems:
-      - name: ToString
-        link: Gst/BufferList/ToString
-      - name: op_Inequality
-        link: Gst/BufferList/op_Inequality
-      - name: op_Equality
-        link: Gst/BufferList/op_Equality
-      - name: GetHashCode
-        link: Gst/BufferList/GetHashCode
-      - name: Equals
-        link: Gst/BufferList/Equals
       - name: BufferList
         link: Gst/BufferList/BufferList
+      - name: Handle
+        link: Gst/BufferList/Handle
     - name: BufferPoolAcquireParams
       link: Gst/BufferPoolAcquireParams
       subfolderitems:
-      - name: ToString
-        link: Gst/BufferPoolAcquireParams/ToString
-      - name: op_Inequality
-        link: Gst/BufferPoolAcquireParams/op_Inequality
-      - name: op_Equality
-        link: Gst/BufferPoolAcquireParams/op_Equality
-      - name: GetHashCode
-        link: Gst/BufferPoolAcquireParams/GetHashCode
-      - name: Equals
-        link: Gst/BufferPoolAcquireParams/Equals
       - name: BufferPoolAcquireParams
         link: Gst/BufferPoolAcquireParams/BufferPoolAcquireParams
+      - name: Handle
+        link: Gst/BufferPoolAcquireParams/Handle
     - name: BufferPoolPrivate
       link: Gst/BufferPoolPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/BufferPoolPrivate/ToString
-      - name: op_Inequality
-        link: Gst/BufferPoolPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/BufferPoolPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/BufferPoolPrivate/GetHashCode
-      - name: Equals
-        link: Gst/BufferPoolPrivate/Equals
       - name: BufferPoolPrivate
         link: Gst/BufferPoolPrivate/BufferPoolPrivate
+      - name: Handle
+        link: Gst/BufferPoolPrivate/Handle
     - name: BusPrivate
       link: Gst/BusPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/BusPrivate/ToString
-      - name: op_Inequality
-        link: Gst/BusPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/BusPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/BusPrivate/GetHashCode
-      - name: Equals
-        link: Gst/BusPrivate/Equals
       - name: BusPrivate
         link: Gst/BusPrivate/BusPrivate
+      - name: Handle
+        link: Gst/BusPrivate/Handle
     - name: Caps
       link: Gst/Caps
       subfolderitems:
-      - name: ToString
-        link: Gst/Caps/ToString
-      - name: op_Inequality
-        link: Gst/Caps/op_Inequality
-      - name: op_Equality
-        link: Gst/Caps/op_Equality
-      - name: GetHashCode
-        link: Gst/Caps/GetHashCode
-      - name: Equals
-        link: Gst/Caps/Equals
       - name: Caps
         link: Gst/Caps/Caps
+      - name: Handle
+        link: Gst/Caps/Handle
     - name: CapsFeatures
       link: Gst/CapsFeatures
       subfolderitems:
-      - name: ToString
-        link: Gst/CapsFeatures/ToString
-      - name: op_Inequality
-        link: Gst/CapsFeatures/op_Inequality
-      - name: op_Equality
-        link: Gst/CapsFeatures/op_Equality
-      - name: GetHashCode
-        link: Gst/CapsFeatures/GetHashCode
-      - name: Equals
-        link: Gst/CapsFeatures/Equals
       - name: CapsFeatures
         link: Gst/CapsFeatures/CapsFeatures
+      - name: Handle
+        link: Gst/CapsFeatures/Handle
     - name: ClockEntry
       link: Gst/ClockEntry
       subfolderitems:
-      - name: ToString
-        link: Gst/ClockEntry/ToString
-      - name: op_Inequality
-        link: Gst/ClockEntry/op_Inequality
-      - name: op_Equality
-        link: Gst/ClockEntry/op_Equality
-      - name: GetHashCode
-        link: Gst/ClockEntry/GetHashCode
-      - name: Equals
-        link: Gst/ClockEntry/Equals
       - name: ClockEntry
         link: Gst/ClockEntry/ClockEntry
+      - name: Handle
+        link: Gst/ClockEntry/Handle
     - name: ClockPrivate
       link: Gst/ClockPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/ClockPrivate/ToString
-      - name: op_Inequality
-        link: Gst/ClockPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/ClockPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/ClockPrivate/GetHashCode
-      - name: Equals
-        link: Gst/ClockPrivate/Equals
       - name: ClockPrivate
         link: Gst/ClockPrivate/ClockPrivate
+      - name: Handle
+        link: Gst/ClockPrivate/Handle
     - name: Context
       link: Gst/Context
       subfolderitems:
-      - name: ToString
-        link: Gst/Context/ToString
-      - name: op_Inequality
-        link: Gst/Context/op_Inequality
-      - name: op_Equality
-        link: Gst/Context/op_Equality
-      - name: GetHashCode
-        link: Gst/Context/GetHashCode
-      - name: Equals
-        link: Gst/Context/Equals
       - name: Context
         link: Gst/Context/Context
+      - name: Handle
+        link: Gst/Context/Handle
     - name: ControlBindingPrivate
       link: Gst/ControlBindingPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/ControlBindingPrivate/ToString
-      - name: op_Inequality
-        link: Gst/ControlBindingPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/ControlBindingPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/ControlBindingPrivate/GetHashCode
-      - name: Equals
-        link: Gst/ControlBindingPrivate/Equals
       - name: ControlBindingPrivate
         link: Gst/ControlBindingPrivate/ControlBindingPrivate
+      - name: Handle
+        link: Gst/ControlBindingPrivate/Handle
     - name: DateTime
       link: Gst/DateTime
       subfolderitems:
-      - name: ToString
-        link: Gst/DateTime/ToString
-      - name: op_Inequality
-        link: Gst/DateTime/op_Inequality
-      - name: op_Equality
-        link: Gst/DateTime/op_Equality
-      - name: GetHashCode
-        link: Gst/DateTime/GetHashCode
-      - name: Equals
-        link: Gst/DateTime/Equals
       - name: DateTime
         link: Gst/DateTime/DateTime
+      - name: Handle
+        link: Gst/DateTime/Handle
     - name: DebugCategory
       link: Gst/DebugCategory
       subfolderitems:
-      - name: ToString
-        link: Gst/DebugCategory/ToString
-      - name: op_Inequality
-        link: Gst/DebugCategory/op_Inequality
-      - name: op_Equality
-        link: Gst/DebugCategory/op_Equality
-      - name: GetHashCode
-        link: Gst/DebugCategory/GetHashCode
-      - name: Equals
-        link: Gst/DebugCategory/Equals
       - name: DebugCategory
         link: Gst/DebugCategory/DebugCategory
+      - name: Handle
+        link: Gst/DebugCategory/Handle
     - name: DebugMessage
       link: Gst/DebugMessage
       subfolderitems:
-      - name: ToString
-        link: Gst/DebugMessage/ToString
-      - name: op_Inequality
-        link: Gst/DebugMessage/op_Inequality
-      - name: op_Equality
-        link: Gst/DebugMessage/op_Equality
-      - name: GetHashCode
-        link: Gst/DebugMessage/GetHashCode
-      - name: Equals
-        link: Gst/DebugMessage/Equals
       - name: DebugMessage
         link: Gst/DebugMessage/DebugMessage
+      - name: Handle
+        link: Gst/DebugMessage/Handle
     - name: DeviceMonitorPrivate
       link: Gst/DeviceMonitorPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/DeviceMonitorPrivate/ToString
-      - name: op_Inequality
-        link: Gst/DeviceMonitorPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/DeviceMonitorPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/DeviceMonitorPrivate/GetHashCode
-      - name: Equals
-        link: Gst/DeviceMonitorPrivate/Equals
       - name: DeviceMonitorPrivate
         link: Gst/DeviceMonitorPrivate/DeviceMonitorPrivate
+      - name: Handle
+        link: Gst/DeviceMonitorPrivate/Handle
     - name: DevicePrivate
       link: Gst/DevicePrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/DevicePrivate/ToString
-      - name: op_Inequality
-        link: Gst/DevicePrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/DevicePrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/DevicePrivate/GetHashCode
-      - name: Equals
-        link: Gst/DevicePrivate/Equals
       - name: DevicePrivate
         link: Gst/DevicePrivate/DevicePrivate
+      - name: Handle
+        link: Gst/DevicePrivate/Handle
     - name: DeviceProviderPrivate
       link: Gst/DeviceProviderPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/DeviceProviderPrivate/ToString
-      - name: op_Inequality
-        link: Gst/DeviceProviderPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/DeviceProviderPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/DeviceProviderPrivate/GetHashCode
-      - name: Equals
-        link: Gst/DeviceProviderPrivate/Equals
       - name: DeviceProviderPrivate
         link: Gst/DeviceProviderPrivate/DeviceProviderPrivate
+      - name: Handle
+        link: Gst/DeviceProviderPrivate/Handle
     - name: Event
       link: Gst/Event
       subfolderitems:
-      - name: ToString
-        link: Gst/Event/ToString
-      - name: op_Inequality
-        link: Gst/Event/op_Inequality
-      - name: op_Equality
-        link: Gst/Event/op_Equality
-      - name: GetHashCode
-        link: Gst/Event/GetHashCode
-      - name: Equals
-        link: Gst/Event/Equals
       - name: Event
         link: Gst/Event/Event
+      - name: Handle
+        link: Gst/Event/Handle
     - name: FormatDefinition
       link: Gst/FormatDefinition
       subfolderitems:
-      - name: ToString
-        link: Gst/FormatDefinition/ToString
-      - name: op_Inequality
-        link: Gst/FormatDefinition/op_Inequality
-      - name: op_Equality
-        link: Gst/FormatDefinition/op_Equality
-      - name: GetHashCode
-        link: Gst/FormatDefinition/GetHashCode
-      - name: Equals
-        link: Gst/FormatDefinition/Equals
       - name: FormatDefinition
         link: Gst/FormatDefinition/FormatDefinition
+      - name: Handle
+        link: Gst/FormatDefinition/Handle
     - name: GhostPadPrivate
       link: Gst/GhostPadPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/GhostPadPrivate/ToString
-      - name: op_Inequality
-        link: Gst/GhostPadPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/GhostPadPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/GhostPadPrivate/GetHashCode
-      - name: Equals
-        link: Gst/GhostPadPrivate/Equals
       - name: GhostPadPrivate
         link: Gst/GhostPadPrivate/GhostPadPrivate
+      - name: Handle
+        link: Gst/GhostPadPrivate/Handle
     - name: Iterator
       link: Gst/Iterator
       subfolderitems:
-      - name: ToString
-        link: Gst/Iterator/ToString
-      - name: op_Inequality
-        link: Gst/Iterator/op_Inequality
-      - name: op_Equality
-        link: Gst/Iterator/op_Equality
-      - name: GetHashCode
-        link: Gst/Iterator/GetHashCode
-      - name: Equals
-        link: Gst/Iterator/Equals
       - name: Iterator
         link: Gst/Iterator/Iterator
+      - name: Handle
+        link: Gst/Iterator/Handle
     - name: MapInfo
       link: Gst/MapInfo
       subfolderitems:
-      - name: ToString
-        link: Gst/MapInfo/ToString
-      - name: op_Inequality
-        link: Gst/MapInfo/op_Inequality
-      - name: op_Equality
-        link: Gst/MapInfo/op_Equality
-      - name: GetHashCode
-        link: Gst/MapInfo/GetHashCode
-      - name: Equals
-        link: Gst/MapInfo/Equals
       - name: MapInfo
         link: Gst/MapInfo/MapInfo
+      - name: Handle
+        link: Gst/MapInfo/Handle
     - name: Memory
       link: Gst/Memory
       subfolderitems:
-      - name: ToString
-        link: Gst/Memory/ToString
-      - name: op_Inequality
-        link: Gst/Memory/op_Inequality
-      - name: op_Equality
-        link: Gst/Memory/op_Equality
-      - name: GetHashCode
-        link: Gst/Memory/GetHashCode
-      - name: Equals
-        link: Gst/Memory/Equals
       - name: Memory
         link: Gst/Memory/Memory
+      - name: Handle
+        link: Gst/Memory/Handle
     - name: MessageTypeMismatchException
       link: Gst/MessageTypeMismatchException
       subfolderitems:
@@ -4168,408 +4130,192 @@
     - name: Message
       link: Gst/Message
       subfolderitems:
-      - name: ToString
-        link: Gst/Message/ToString
-      - name: op_Inequality
-        link: Gst/Message/op_Inequality
-      - name: op_Equality
-        link: Gst/Message/op_Equality
-      - name: GetHashCode
-        link: Gst/Message/GetHashCode
-      - name: Equals
-        link: Gst/Message/Equals
       - name: Message
         link: Gst/Message/Message
+      - name: Handle
+        link: Gst/Message/Handle
     - name: Meta
       link: Gst/Meta
       subfolderitems:
-      - name: ToString
-        link: Gst/Meta/ToString
-      - name: op_Inequality
-        link: Gst/Meta/op_Inequality
-      - name: op_Equality
-        link: Gst/Meta/op_Equality
-      - name: GetHashCode
-        link: Gst/Meta/GetHashCode
-      - name: Equals
-        link: Gst/Meta/Equals
       - name: Meta
         link: Gst/Meta/Meta
+      - name: Handle
+        link: Gst/Meta/Handle
     - name: MetaInfo
       link: Gst/MetaInfo
       subfolderitems:
-      - name: ToString
-        link: Gst/MetaInfo/ToString
-      - name: op_Inequality
-        link: Gst/MetaInfo/op_Inequality
-      - name: op_Equality
-        link: Gst/MetaInfo/op_Equality
-      - name: GetHashCode
-        link: Gst/MetaInfo/GetHashCode
-      - name: Equals
-        link: Gst/MetaInfo/Equals
       - name: MetaInfo
         link: Gst/MetaInfo/MetaInfo
+      - name: Handle
+        link: Gst/MetaInfo/Handle
     - name: MetaTransformCopy
       link: Gst/MetaTransformCopy
       subfolderitems:
-      - name: ToString
-        link: Gst/MetaTransformCopy/ToString
-      - name: op_Inequality
-        link: Gst/MetaTransformCopy/op_Inequality
-      - name: op_Equality
-        link: Gst/MetaTransformCopy/op_Equality
-      - name: GetHashCode
-        link: Gst/MetaTransformCopy/GetHashCode
-      - name: Equals
-        link: Gst/MetaTransformCopy/Equals
       - name: MetaTransformCopy
         link: Gst/MetaTransformCopy/MetaTransformCopy
+      - name: Handle
+        link: Gst/MetaTransformCopy/Handle
     - name: MiniObject
       link: Gst/MiniObject
       subfolderitems:
-      - name: ToString
-        link: Gst/MiniObject/ToString
-      - name: op_Inequality
-        link: Gst/MiniObject/op_Inequality
-      - name: op_Equality
-        link: Gst/MiniObject/op_Equality
-      - name: GetHashCode
-        link: Gst/MiniObject/GetHashCode
-      - name: Equals
-        link: Gst/MiniObject/Equals
       - name: MiniObject
         link: Gst/MiniObject/MiniObject
+      - name: Handle
+        link: Gst/MiniObject/Handle
     - name: PadPrivate
       link: Gst/PadPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/PadPrivate/ToString
-      - name: op_Inequality
-        link: Gst/PadPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/PadPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/PadPrivate/GetHashCode
-      - name: Equals
-        link: Gst/PadPrivate/Equals
       - name: PadPrivate
         link: Gst/PadPrivate/PadPrivate
+      - name: Handle
+        link: Gst/PadPrivate/Handle
     - name: PadProbeInfo
       link: Gst/PadProbeInfo
       subfolderitems:
-      - name: ToString
-        link: Gst/PadProbeInfo/ToString
-      - name: op_Inequality
-        link: Gst/PadProbeInfo/op_Inequality
-      - name: op_Equality
-        link: Gst/PadProbeInfo/op_Equality
-      - name: GetHashCode
-        link: Gst/PadProbeInfo/GetHashCode
-      - name: Equals
-        link: Gst/PadProbeInfo/Equals
       - name: PadProbeInfo
         link: Gst/PadProbeInfo/PadProbeInfo
+      - name: Handle
+        link: Gst/PadProbeInfo/Handle
     - name: ParamSpecArray
       link: Gst/ParamSpecArray
       subfolderitems:
-      - name: ToString
-        link: Gst/ParamSpecArray/ToString
-      - name: op_Inequality
-        link: Gst/ParamSpecArray/op_Inequality
-      - name: op_Equality
-        link: Gst/ParamSpecArray/op_Equality
-      - name: GetHashCode
-        link: Gst/ParamSpecArray/GetHashCode
-      - name: Equals
-        link: Gst/ParamSpecArray/Equals
       - name: ParamSpecArray
         link: Gst/ParamSpecArray/ParamSpecArray
+      - name: Handle
+        link: Gst/ParamSpecArray/Handle
     - name: ParamSpecFraction
       link: Gst/ParamSpecFraction
       subfolderitems:
-      - name: ToString
-        link: Gst/ParamSpecFraction/ToString
-      - name: op_Inequality
-        link: Gst/ParamSpecFraction/op_Inequality
-      - name: op_Equality
-        link: Gst/ParamSpecFraction/op_Equality
-      - name: GetHashCode
-        link: Gst/ParamSpecFraction/GetHashCode
-      - name: Equals
-        link: Gst/ParamSpecFraction/Equals
       - name: ParamSpecFraction
         link: Gst/ParamSpecFraction/ParamSpecFraction
+      - name: Handle
+        link: Gst/ParamSpecFraction/Handle
     - name: ParentBufferMeta
       link: Gst/ParentBufferMeta
       subfolderitems:
-      - name: ToString
-        link: Gst/ParentBufferMeta/ToString
-      - name: op_Inequality
-        link: Gst/ParentBufferMeta/op_Inequality
-      - name: op_Equality
-        link: Gst/ParentBufferMeta/op_Equality
-      - name: GetHashCode
-        link: Gst/ParentBufferMeta/GetHashCode
-      - name: Equals
-        link: Gst/ParentBufferMeta/Equals
       - name: ParentBufferMeta
         link: Gst/ParentBufferMeta/ParentBufferMeta
+      - name: Handle
+        link: Gst/ParentBufferMeta/Handle
     - name: ParseContext
       link: Gst/ParseContext
       subfolderitems:
-      - name: ToString
-        link: Gst/ParseContext/ToString
-      - name: op_Inequality
-        link: Gst/ParseContext/op_Inequality
-      - name: op_Equality
-        link: Gst/ParseContext/op_Equality
-      - name: GetHashCode
-        link: Gst/ParseContext/GetHashCode
-      - name: Equals
-        link: Gst/ParseContext/Equals
       - name: ParseContext
         link: Gst/ParseContext/ParseContext
+      - name: Handle
+        link: Gst/ParseContext/Handle
     - name: PipelinePrivate
       link: Gst/PipelinePrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/PipelinePrivate/ToString
-      - name: op_Inequality
-        link: Gst/PipelinePrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/PipelinePrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/PipelinePrivate/GetHashCode
-      - name: Equals
-        link: Gst/PipelinePrivate/Equals
       - name: PipelinePrivate
         link: Gst/PipelinePrivate/PipelinePrivate
+      - name: Handle
+        link: Gst/PipelinePrivate/Handle
     - name: PluginDesc
       link: Gst/PluginDesc
       subfolderitems:
-      - name: ToString
-        link: Gst/PluginDesc/ToString
-      - name: op_Inequality
-        link: Gst/PluginDesc/op_Inequality
-      - name: op_Equality
-        link: Gst/PluginDesc/op_Equality
-      - name: GetHashCode
-        link: Gst/PluginDesc/GetHashCode
-      - name: Equals
-        link: Gst/PluginDesc/Equals
       - name: PluginDesc
         link: Gst/PluginDesc/PluginDesc
+      - name: Handle
+        link: Gst/PluginDesc/Handle
     - name: Poll
       link: Gst/Poll
       subfolderitems:
-      - name: ToString
-        link: Gst/Poll/ToString
-      - name: op_Inequality
-        link: Gst/Poll/op_Inequality
-      - name: op_Equality
-        link: Gst/Poll/op_Equality
-      - name: GetHashCode
-        link: Gst/Poll/GetHashCode
-      - name: Equals
-        link: Gst/Poll/Equals
       - name: Poll
         link: Gst/Poll/Poll
+      - name: Handle
+        link: Gst/Poll/Handle
     - name: PollFD
       link: Gst/PollFD
       subfolderitems:
-      - name: ToString
-        link: Gst/PollFD/ToString
-      - name: op_Inequality
-        link: Gst/PollFD/op_Inequality
-      - name: op_Equality
-        link: Gst/PollFD/op_Equality
-      - name: GetHashCode
-        link: Gst/PollFD/GetHashCode
-      - name: Equals
-        link: Gst/PollFD/Equals
       - name: PollFD
         link: Gst/PollFD/PollFD
+      - name: Handle
+        link: Gst/PollFD/Handle
     - name: Promise
       link: Gst/Promise
       subfolderitems:
-      - name: ToString
-        link: Gst/Promise/ToString
-      - name: op_Inequality
-        link: Gst/Promise/op_Inequality
-      - name: op_Equality
-        link: Gst/Promise/op_Equality
-      - name: GetHashCode
-        link: Gst/Promise/GetHashCode
-      - name: Equals
-        link: Gst/Promise/Equals
       - name: Promise
         link: Gst/Promise/Promise
+      - name: Handle
+        link: Gst/Promise/Handle
     - name: ProtectionMeta
       link: Gst/ProtectionMeta
       subfolderitems:
-      - name: ToString
-        link: Gst/ProtectionMeta/ToString
-      - name: op_Inequality
-        link: Gst/ProtectionMeta/op_Inequality
-      - name: op_Equality
-        link: Gst/ProtectionMeta/op_Equality
-      - name: GetHashCode
-        link: Gst/ProtectionMeta/GetHashCode
-      - name: Equals
-        link: Gst/ProtectionMeta/Equals
       - name: ProtectionMeta
         link: Gst/ProtectionMeta/ProtectionMeta
+      - name: Handle
+        link: Gst/ProtectionMeta/Handle
     - name: ProxyPadPrivate
       link: Gst/ProxyPadPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/ProxyPadPrivate/ToString
-      - name: op_Inequality
-        link: Gst/ProxyPadPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/ProxyPadPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/ProxyPadPrivate/GetHashCode
-      - name: Equals
-        link: Gst/ProxyPadPrivate/Equals
       - name: ProxyPadPrivate
         link: Gst/ProxyPadPrivate/ProxyPadPrivate
+      - name: Handle
+        link: Gst/ProxyPadPrivate/Handle
     - name: Query
       link: Gst/Query
       subfolderitems:
-      - name: ToString
-        link: Gst/Query/ToString
-      - name: op_Inequality
-        link: Gst/Query/op_Inequality
-      - name: op_Equality
-        link: Gst/Query/op_Equality
-      - name: GetHashCode
-        link: Gst/Query/GetHashCode
-      - name: Equals
-        link: Gst/Query/Equals
       - name: Query
         link: Gst/Query/Query
+      - name: Handle
+        link: Gst/Query/Handle
     - name: ReferenceTimestampMeta
       link: Gst/ReferenceTimestampMeta
       subfolderitems:
-      - name: ToString
-        link: Gst/ReferenceTimestampMeta/ToString
-      - name: op_Inequality
-        link: Gst/ReferenceTimestampMeta/op_Inequality
-      - name: op_Equality
-        link: Gst/ReferenceTimestampMeta/op_Equality
-      - name: GetHashCode
-        link: Gst/ReferenceTimestampMeta/GetHashCode
-      - name: Equals
-        link: Gst/ReferenceTimestampMeta/Equals
       - name: ReferenceTimestampMeta
         link: Gst/ReferenceTimestampMeta/ReferenceTimestampMeta
+      - name: Handle
+        link: Gst/ReferenceTimestampMeta/Handle
     - name: RegistryPrivate
       link: Gst/RegistryPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/RegistryPrivate/ToString
-      - name: op_Inequality
-        link: Gst/RegistryPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/RegistryPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/RegistryPrivate/GetHashCode
-      - name: Equals
-        link: Gst/RegistryPrivate/Equals
       - name: RegistryPrivate
         link: Gst/RegistryPrivate/RegistryPrivate
+      - name: Handle
+        link: Gst/RegistryPrivate/Handle
     - name: Sample
       link: Gst/Sample
       subfolderitems:
-      - name: ToString
-        link: Gst/Sample/ToString
-      - name: op_Inequality
-        link: Gst/Sample/op_Inequality
-      - name: op_Equality
-        link: Gst/Sample/op_Equality
-      - name: GetHashCode
-        link: Gst/Sample/GetHashCode
-      - name: Equals
-        link: Gst/Sample/Equals
       - name: Sample
         link: Gst/Sample/Sample
+      - name: Handle
+        link: Gst/Sample/Handle
     - name: Segment
       link: Gst/Segment
       subfolderitems:
-      - name: ToString
-        link: Gst/Segment/ToString
-      - name: op_Inequality
-        link: Gst/Segment/op_Inequality
-      - name: op_Equality
-        link: Gst/Segment/op_Equality
-      - name: GetHashCode
-        link: Gst/Segment/GetHashCode
-      - name: Equals
-        link: Gst/Segment/Equals
       - name: Segment
         link: Gst/Segment/Segment
+      - name: Handle
+        link: Gst/Segment/Handle
     - name: StaticCaps
       link: Gst/StaticCaps
       subfolderitems:
-      - name: ToString
-        link: Gst/StaticCaps/ToString
-      - name: op_Inequality
-        link: Gst/StaticCaps/op_Inequality
-      - name: op_Equality
-        link: Gst/StaticCaps/op_Equality
-      - name: GetHashCode
-        link: Gst/StaticCaps/GetHashCode
-      - name: Equals
-        link: Gst/StaticCaps/Equals
       - name: StaticCaps
         link: Gst/StaticCaps/StaticCaps
+      - name: Handle
+        link: Gst/StaticCaps/Handle
     - name: StaticPadTemplate
       link: Gst/StaticPadTemplate
       subfolderitems:
-      - name: ToString
-        link: Gst/StaticPadTemplate/ToString
-      - name: op_Inequality
-        link: Gst/StaticPadTemplate/op_Inequality
-      - name: op_Equality
-        link: Gst/StaticPadTemplate/op_Equality
-      - name: GetHashCode
-        link: Gst/StaticPadTemplate/GetHashCode
-      - name: Equals
-        link: Gst/StaticPadTemplate/Equals
       - name: StaticPadTemplate
         link: Gst/StaticPadTemplate/StaticPadTemplate
+      - name: Handle
+        link: Gst/StaticPadTemplate/Handle
     - name: StreamCollectionPrivate
       link: Gst/StreamCollectionPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/StreamCollectionPrivate/ToString
-      - name: op_Inequality
-        link: Gst/StreamCollectionPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/StreamCollectionPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/StreamCollectionPrivate/GetHashCode
-      - name: Equals
-        link: Gst/StreamCollectionPrivate/Equals
       - name: StreamCollectionPrivate
         link: Gst/StreamCollectionPrivate/StreamCollectionPrivate
+      - name: Handle
+        link: Gst/StreamCollectionPrivate/Handle
     - name: StreamPrivate
       link: Gst/StreamPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/StreamPrivate/ToString
-      - name: op_Inequality
-        link: Gst/StreamPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/StreamPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/StreamPrivate/GetHashCode
-      - name: Equals
-        link: Gst/StreamPrivate/Equals
       - name: StreamPrivate
         link: Gst/StreamPrivate/StreamPrivate
+      - name: Handle
+        link: Gst/StreamPrivate/Handle
     - name: Structure
       link: Gst/Structure
       subfolderitems:
@@ -4577,33 +4323,17 @@
         link: Gst/Structure/GetName
       - name: SetName
         link: Gst/Structure/SetName
-      - name: ToString
-        link: Gst/Structure/ToString
-      - name: op_Inequality
-        link: Gst/Structure/op_Inequality
-      - name: op_Equality
-        link: Gst/Structure/op_Equality
-      - name: GetHashCode
-        link: Gst/Structure/GetHashCode
-      - name: Equals
-        link: Gst/Structure/Equals
       - name: Structure
         link: Gst/Structure/Structure
+      - name: Handle
+        link: Gst/Structure/Handle
     - name: SystemClockPrivate
       link: Gst/SystemClockPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/SystemClockPrivate/ToString
-      - name: op_Inequality
-        link: Gst/SystemClockPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/SystemClockPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/SystemClockPrivate/GetHashCode
-      - name: Equals
-        link: Gst/SystemClockPrivate/Equals
       - name: SystemClockPrivate
         link: Gst/SystemClockPrivate/SystemClockPrivate
+      - name: Handle
+        link: Gst/SystemClockPrivate/Handle
     - name: TagList
       link: Gst/TagList
       subfolderitems:
@@ -4617,138 +4347,66 @@
         link: Gst/TagList/GetTagSize
       - name: GetValueIndex
         link: Gst/TagList/GetValueIndex
-      - name: ToString
-        link: Gst/TagList/ToString
-      - name: op_Inequality
-        link: Gst/TagList/op_Inequality
-      - name: op_Equality
-        link: Gst/TagList/op_Equality
-      - name: GetHashCode
-        link: Gst/TagList/GetHashCode
-      - name: Equals
-        link: Gst/TagList/Equals
       - name: TagList
         link: Gst/TagList/TagList
+      - name: Handle
+        link: Gst/TagList/Handle
     - name: TaskPrivate
       link: Gst/TaskPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/TaskPrivate/ToString
-      - name: op_Inequality
-        link: Gst/TaskPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/TaskPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/TaskPrivate/GetHashCode
-      - name: Equals
-        link: Gst/TaskPrivate/Equals
       - name: TaskPrivate
         link: Gst/TaskPrivate/TaskPrivate
+      - name: Handle
+        link: Gst/TaskPrivate/Handle
     - name: TimedValue
       link: Gst/TimedValue
       subfolderitems:
-      - name: ToString
-        link: Gst/TimedValue/ToString
-      - name: op_Inequality
-        link: Gst/TimedValue/op_Inequality
-      - name: op_Equality
-        link: Gst/TimedValue/op_Equality
-      - name: GetHashCode
-        link: Gst/TimedValue/GetHashCode
-      - name: Equals
-        link: Gst/TimedValue/Equals
       - name: TimedValue
         link: Gst/TimedValue/TimedValue
+      - name: Handle
+        link: Gst/TimedValue/Handle
     - name: Toc
       link: Gst/Toc
       subfolderitems:
-      - name: ToString
-        link: Gst/Toc/ToString
-      - name: op_Inequality
-        link: Gst/Toc/op_Inequality
-      - name: op_Equality
-        link: Gst/Toc/op_Equality
-      - name: GetHashCode
-        link: Gst/Toc/GetHashCode
-      - name: Equals
-        link: Gst/Toc/Equals
       - name: Toc
         link: Gst/Toc/Toc
+      - name: Handle
+        link: Gst/Toc/Handle
     - name: TocEntry
       link: Gst/TocEntry
       subfolderitems:
-      - name: ToString
-        link: Gst/TocEntry/ToString
-      - name: op_Inequality
-        link: Gst/TocEntry/op_Inequality
-      - name: op_Equality
-        link: Gst/TocEntry/op_Equality
-      - name: GetHashCode
-        link: Gst/TocEntry/GetHashCode
-      - name: Equals
-        link: Gst/TocEntry/Equals
       - name: TocEntry
         link: Gst/TocEntry/TocEntry
+      - name: Handle
+        link: Gst/TocEntry/Handle
     - name: TracerPrivate
       link: Gst/TracerPrivate
       subfolderitems:
-      - name: ToString
-        link: Gst/TracerPrivate/ToString
-      - name: op_Inequality
-        link: Gst/TracerPrivate/op_Inequality
-      - name: op_Equality
-        link: Gst/TracerPrivate/op_Equality
-      - name: GetHashCode
-        link: Gst/TracerPrivate/GetHashCode
-      - name: Equals
-        link: Gst/TracerPrivate/Equals
       - name: TracerPrivate
         link: Gst/TracerPrivate/TracerPrivate
+      - name: Handle
+        link: Gst/TracerPrivate/Handle
     - name: TypeFind
       link: Gst/TypeFind
       subfolderitems:
-      - name: ToString
-        link: Gst/TypeFind/ToString
-      - name: op_Inequality
-        link: Gst/TypeFind/op_Inequality
-      - name: op_Equality
-        link: Gst/TypeFind/op_Equality
-      - name: GetHashCode
-        link: Gst/TypeFind/GetHashCode
-      - name: Equals
-        link: Gst/TypeFind/Equals
       - name: TypeFind
         link: Gst/TypeFind/TypeFind
+      - name: Handle
+        link: Gst/TypeFind/Handle
     - name: Uri
       link: Gst/Uri
       subfolderitems:
-      - name: ToString
-        link: Gst/Uri/ToString
-      - name: op_Inequality
-        link: Gst/Uri/op_Inequality
-      - name: op_Equality
-        link: Gst/Uri/op_Equality
-      - name: GetHashCode
-        link: Gst/Uri/GetHashCode
-      - name: Equals
-        link: Gst/Uri/Equals
       - name: Uri
         link: Gst/Uri/Uri
+      - name: Handle
+        link: Gst/Uri/Handle
     - name: ValueTable
       link: Gst/ValueTable
       subfolderitems:
-      - name: ToString
-        link: Gst/ValueTable/ToString
-      - name: op_Inequality
-        link: Gst/ValueTable/op_Inequality
-      - name: op_Equality
-        link: Gst/ValueTable/op_Equality
-      - name: GetHashCode
-        link: Gst/ValueTable/GetHashCode
-      - name: Equals
-        link: Gst/ValueTable/Equals
       - name: ValueTable
         link: Gst/ValueTable/ValueTable
+      - name: Handle
+        link: Gst/ValueTable/Handle
     - name: Bin.DeepElementAddedSignalArgs
       link: Gst/Bin.DeepElementAddedSignalArgs
       subfolderitems:
