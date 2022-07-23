@@ -2,7 +2,7 @@ name: Deploy website
 
 on:
   workflow_dispatch:
-  schedule:
+  #schedule:
     #        ┌───────────── minute (0 - 59)
     #        │  ┌───────────── hour (0 - 23)
     #        │  │ ┌───────────── day of the month (1 - 31)
@@ -12,7 +12,7 @@ on:
     #        │  │ │ │ │
     #        │  │ │ │ │
     #        *  * * * *
-    - cron: '30 3 * * 0'
+    #- cron: '30 3 * * 0'
   push:
     branches:
       - develop
@@ -28,25 +28,25 @@ jobs:
       with:
         path: 'website'
 
-    - name: Checkout gir.core
-      uses: actions/checkout@v2
-      with:
-        repository: 'gircore/gir.core'
-        ref: 'develop'
-        path: 'gircore'
-        submodules: 'true'
+    #- name: Checkout gir.core
+    #  uses: actions/checkout@v2
+    #  with:
+    #    repository: 'gircore/gir.core'
+    #    ref: 'develop'
+    #    path: 'gircore'
+    #    submodules: 'true'
         
-    - name: Prepare .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '5.0.x'
+    #- name: Prepare .NET
+    #  uses: actions/setup-dotnet@v1
+    #  with:
+    #    dotnet-version: '6.0.102'
         
-    - name: Run release build
-      run: dotnet run -- --release --xml-documentation --targets docs
-      working-directory: './gircore/Build'
+    #- name: Call generator
+    #  run: dotnet fsi GenerateLibs.fsx
+    #  working-directory: './gircore/src'
 
-    - name: Move api docs into website
-      run: cp -r ./gircore/Docs/Api ./website/content/api
+    #- name: Move api docs into website
+    #  run: cp -r ./gircore/Docs/Api ./website/content/api
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
