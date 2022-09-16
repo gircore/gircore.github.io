@@ -2,20 +2,6 @@ name: Deploy website
 
 on:
   workflow_dispatch:
-  #schedule:
-    #        ┌───────────── minute (0 - 59)
-    #        │  ┌───────────── hour (0 - 23)
-    #        │  │ ┌───────────── day of the month (1 - 31)
-    #        │  │ │ ┌───────────── month (1 - 12 or JAN-DEC)
-    #        │  │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
-    #        │  │ │ │ │
-    #        │  │ │ │ │
-    #        │  │ │ │ │
-    #        *  * * * *
-    #- cron: '30 3 * * 0'
-  push:
-    branches:
-      - develop
 
 jobs:
   build:
@@ -24,17 +10,17 @@ jobs:
 
     steps:
     - name: Checkout website
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: 'website'
 
-    #- name: Checkout gir.core
-    #  uses: actions/checkout@v2
-    #  with:
-    #    repository: 'gircore/gir.core'
-    #    ref: 'develop'
-    #    path: 'gircore'
-    #    submodules: 'true'
+    - name: Checkout gir.core
+      uses: actions/checkout@v3
+      with:
+        repository: 'gircore/gir.core'
+        ref: 'develop'
+        path: 'gircore'
+        submodules: 'true'
         
     #- name: Prepare .NET
     #  uses: actions/setup-dotnet@v1
@@ -47,6 +33,15 @@ jobs:
 
     #- name: Move api docs into website
     #  run: cp -r ./gircore/Docs/Api ./website/content/api
+      
+    - name: Move readme into website
+      run: cp ./gircore/docs/readme.md ./website/content/
+
+    - name: Rename readme
+      run: mv ./website/content/readme.md ./website/content/_index.md
+      
+    - name: Move docs into website
+      run: cp -r ./gircore/docs/docs ./website/content/docs
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
