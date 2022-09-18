@@ -1,5 +1,4 @@
-"use strict";(function(){const t={cache:!0};t.doc={id:"id",field:["title","content"],store:["title","href","section"]};const e=FlexSearch.create("balance",t);window.bookSearchIndex=e,e.add({id:0,href:"/docs/contributing.html",title:"Contributing",section:"Docs",content:` Contributing # Contributing to gir.core is very easy. If there is something wrong or missing just open an issue to get in contact.
-Contributing code is very welcome, too. Either look for issues with the enhancement Tag and get in contact or just create a pull request containing the improvements.
+"use strict";(function(){const t={cache:!0};t.doc={id:"id",field:["title","content"],store:["title","href","section"]};const e=FlexSearch.create("balance",t);window.bookSearchIndex=e,e.add({id:0,href:"/docs/contributing.html",title:"Contributing",section:"Docs",content:` Contributing # Contributing to gir.core is very easy. If there is something wrong or missing just open an issue to get in contact or join #gircore on matrix .
 If a pull request contributes new code, please be aware of the project\u0026rsquo;s license . For easy adoption of the code please adhere to the following coding guidelines.
 Coding Guidelines # The following guidelines aim to provide a framework to write code in a consistent style. If the following guidelines are incomplete the official C# coding conventions and framework design guidelines apply.
 Comments # Begin a comment with an uppercase letter. End a comment with a period. Insert a space before starting the comment text. Implicitly Typed Local Variables # Use var for variables if the type of the right hand side expression is obvious or not important. New Operator # Use object initializers to create objects. Members # Members include: Properties, constructors, methods, fields, events.
@@ -10,19 +9,19 @@ Private fields (enclosed in a region tag #region Fields) Properties (enclosed in
 `}),e.add({id:1,href:"/docs/libraries.html",title:"Libraries",section:"Docs",content:` Libraries # Currently there are multiple libraries planned to be integrated deeply into linux: Gtk , WebkitGTK , libshumate libadwaita , GIO , gstreamer .
 GTK # Gtk is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
 Supported widgets are for example: Windows, dialogs, labels, images, spinner, progressbars, several buttons and switches, textboxes, tables, lists, menus, toolbars, popovers, and much more. It powers several linux desktops like Gnome and Xfce and applications like Gimp .
+libadwaita # libadwaita extends GTK with new widgets to comply to the GNOME human interface guidelines. Additionally it supports mobile devices meaning full blown applications automatically adopt their UI to different view modes, if the available space changes.
 GIO # GIO is a library to allow easy access to input / output operations. Currently there is initial support for DBus operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.
 Gstreamer # Gstreamer is a multimedia library to play back various media format via a flexible pipelining system. The code to playback a movie is in the samples . (Homepage of the free movie: https://mango.blender.org/ )
 WebkitGTK (planned) # WebkitGTK is a browser component for GTK and can be used to embed the webkit webengine into an application as a widget. There is support for the web inspector and several settings to tweak the webview to your needs.
 The bindings make it easy to:
 Embed javascript into a webpage Call a javascript function Callback from the webpage into the C# code. ![A picture of an example gtk application with visible webpage][GtkAppBrowser]
 libshumate (planned) # libshumate is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.
-libadwaita (planned) # libadwaita extends GTK with new widgets, to support mobile devices. Meaning full blown applications automatically adopt their UI to different view modes,if the available space changes.
-`}),e.add({id:2,href:"/docs/windows.html",title:"Windows",section:"Docs",content:` Building on Windows # Currently, Gtk must be obtained manually on windows. Hopefully this can be automated down the line.
-MSYS2/GCC # The easiest way to get started on Windows is by installing gtk through msys2.
-Download msys2 from the official website . Run pacman -Syu to update the package database. Run pacman -S mingw-w64-x86_64-gtk3 to install gtk3. Add the directory C:/msys64/mingw64/bin to your PATH. Then, follow the gir.core instructions as normal.
-Other Libraries # In order to obtain other libraries (e.g. libhandy), use the MSYS2 Package Database to find the desired library.
-For example, libhandy can be found in mingw-w64-libhandy. Unfortunately, not all libraries in gir.core have msys2 packages at the moment.
-MSVC # Gtk can also be built with the MSVC toolchain, although this is less straightforward. Look at gvs-build for a build script that automates this process.
-Troubleshooting # System.DllNotFoundException # The DLL could not be found. Make sure it is in your PATH and try again. Try adding C:/msys64/mingw64/bin at the front of your PATH if you have other Gtk applications installed - this prevents the wrong version of the Gtk DLL being loaded by the bindings.
-For example, in PowerShell:
-PS\u0026gt; \$env:PATH = \u0026#34;C:\\msys64\\mingw64\\bin;\${env:PATH}\u0026#34; `})})()
+`}),e.add({id:2,href:"/docs/use.html",title:"Use",section:"Docs",content:` Use # To use the bindings create a C# project and just add the corresponding nuget packages .
+There are a lot of sample projects available which should get you started.
+As long as there is no API documentation available you can refer to the original documentation .
+The gir.core project is not providing the actual C libraries but only the C# bindings. Please ensure that the corresponding packages are installed on your system otherwise the binding will not find a target to bind to during runtime.
+In case the packages are not installed on your system please refer to the documentation of your systems package manager.
+Running on Linux # In most distributions the needed packages should already be installed. In case something is missing use the package manager of your distribution to install the missing dependencies.
+Running on MacOS # Use the Homebrew package database to find and install any needed packages.
+Running on Windows # The easiest way to get started on Windows is by installing the packages through msys2. The MSYS2 Package Database can be searched for matching packages.
+Download msys2 from the official website . Run pacman -Syu to update the package database. Run pacman -S mingw-w64-x86_64-XXX to install a package named XXX. Add the directory C:/msys64/mingw64/bin to the front of the PATH. `})})()
