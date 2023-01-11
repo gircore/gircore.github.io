@@ -1,4 +1,6 @@
-"use strict";(function(){const t={cache:!0};t.doc={id:"id",field:["title","content"],store:["title","href","section"]};const e=FlexSearch.create("balance",t);window.bookSearchIndex=e,e.add({id:0,href:"/docs/contributing.html",title:"Contributing",section:"Docs",content:` Contributing # Contributing to gir.core is very easy. If there is something wrong or missing just open an issue to get in contact or join #gircore on matrix .
+"use strict";(function(){const t={cache:!0};t.doc={id:"id",field:["title","content"],store:["title","href","section"]};const e=FlexSearch.create("balance",t);window.bookSearchIndex=e,e.add({id:0,href:"/docs/apps.html",title:"Apps",section:"Docs",content:` Applications # Applications using gir.core. To add a new application to the list edit this page .
+Denaro # Denaro is a personal finance manager.
+`}),e.add({id:1,href:"/docs/contributing.html",title:"Contributing",section:"Docs",content:` Contributing # Contributing to gir.core is very easy. If there is something wrong or missing just open an issue to get in contact or join #gircore on matrix .
 If a pull request contributes new code, please be aware of the project\u0026rsquo;s license . For easy adoption of the code please adhere to the following coding guidelines.
 Coding Guidelines # The following guidelines aim to provide a framework to write code in a consistent style. If the following guidelines are incomplete the official C# coding conventions and framework design guidelines apply.
 Comments # Begin a comment with an uppercase letter. End a comment with a period. Insert a space before starting the comment text. Implicitly Typed Local Variables # Use var for variables if the type of the right hand side expression is obvious or not important. New Operator # Use object initializers to create objects. Members # Members include: Properties, constructors, methods, fields, events.
@@ -6,7 +8,7 @@ Call static members by using the class name: MyClass.MyMember. Fields are only a
 Implementations which are external to the concrete class must be either in a separate #region or a separate partial class (e.g. interface implementations).
 Inside a source file the structure is like:
 Private fields (enclosed in a region tag #region Fields) Properties (enclosed in a region tag #region Properties) Constructors (enclosed in a region tag #region Constructors) Methods (enclosed in a region tag #region Methods) Access modifiers # All access modifiers should explicitly stated in the code.
-`}),e.add({id:1,href:"/docs/libraries.html",title:"Libraries",section:"Docs",content:` Libraries # Currently there are multiple libraries planned to be integrated deeply into linux: Gtk , WebkitGTK , libshumate libadwaita , GIO , gstreamer .
+`}),e.add({id:2,href:"/docs/libraries.html",title:"Libraries",section:"Docs",content:` Libraries # Currently there are multiple libraries planned to be integrated deeply into linux: Gtk , WebkitGTK , libshumate libadwaita , GIO , gstreamer .
 GTK # Gtk is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
 Supported widgets are for example: Windows, dialogs, labels, images, spinner, progressbars, several buttons and switches, textboxes, tables, lists, menus, toolbars, popovers, and much more. It powers several linux desktops like Gnome and Xfce and applications like Gimp .
 libadwaita # libadwaita extends GTK with new widgets to comply to the GNOME human interface guidelines. Additionally it supports mobile devices meaning full blown applications automatically adopt their UI to different view modes, if the available space changes.
@@ -16,7 +18,7 @@ WebkitGTK (planned) # WebkitGTK is a browser component for GTK and can be used t
 The bindings make it easy to:
 Embed javascript into a webpage Call a javascript function Callback from the webpage into the C# code. ![A picture of an example gtk application with visible webpage][GtkAppBrowser]
 libshumate (planned) # libshumate is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.
-`}),e.add({id:2,href:"/docs/use.html",title:"Use",section:"Docs",content:` Use # To use the bindings create a C# project and just add the corresponding nuget packages .
+`}),e.add({id:3,href:"/docs/use.html",title:"Use",section:"Docs",content:` Use # To use the bindings create a C# project and just add the corresponding nuget packages .
 There are a lot of sample projects available which should get you started.
 As long as there is no API documentation available you can refer to the original documentation .
 The gir.core project is not providing the actual C libraries but only the C# bindings. Please ensure that the corresponding packages are installed on your system otherwise the binding will not find a target to bind to during runtime.
