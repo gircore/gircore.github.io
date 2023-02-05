@@ -11,11 +11,11 @@ $ dotnet fsi CleanLibs.fsx Native Libraries # The project includes a C library (
 </span></span><span style=display:flex><span>$ dotnet fsi GenerateLibs.fsx
 </span></span><span style=display:flex><span>$ dotnet build GirCore.Libs.slnf
 </span></span></code></pre></div><p>If you want to clean the
-<a href>Libs folder</a>
+<a href=https://github.com/gircore/gir.core/tree/main/src/Libs>Libs folder</a>
 of all generated files run:</p><pre><code>$ dotnet fsi CleanLibs.fsx
 </code></pre><h2 id=native-libraries>Native Libraries
 <a class=anchor href=#native-libraries>#</a></h2><p>The project includes a C library (
-<a href>GirTest</a>
+<a href=https://github.com/gircore/gir.core/tree/main/src/Native/GirTestLib>GirTest</a>
 ) which is used for testing the generator.</p><p>This requires some additional dependencies:</p><ul><li>C compiler</li><li><a href=https://mesonbuild.com/SimpleStart.html>meson</a></li><li><code>gobject-introspection</code> (for Ubuntu, the <code>libgirepository1.0-dev</code> package is required)</li></ul><p>To compile the <code>GirTest</code> native library, run:</p><pre><code>$ dotnet fsi GenerateGirTestLib.fsx
 </code></pre><p>Then, to include the <code>GirTest</code> library when generating the bindings, run:</p><pre><code>$ dotnet fsi GenerateLibs.fsx GirTest-0.1.gir
 </code></pre><p>To compile all the generated bindings, including <code>GirTest</code>, run:</p><pre><code>$ dotnet build
