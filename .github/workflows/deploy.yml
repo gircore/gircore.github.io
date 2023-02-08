@@ -21,18 +21,6 @@ jobs:
         ref: 'main'
         path: 'gircore'
         submodules: 'true'
-        
-    #- name: Prepare .NET
-    #  uses: actions/setup-dotnet@v1
-    #  with:
-    #    dotnet-version: '6.0.102'
-        
-    #- name: Call generator
-    #  run: dotnet fsi GenerateLibs.fsx
-    #  working-directory: './gircore/src'
-
-    #- name: Move api docs into website
-    #  run: cp -r ./gircore/Docs/Api ./website/content/api
 
     - name: Create content folder
       run: mkdir ./website/content/
@@ -55,6 +43,25 @@ jobs:
     - name: Build website
       run: hugo --minify
       working-directory: './website/hugo'
+
+    - name: Prepare .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'
+
+    - name: Call generator
+      run: dotnet fsi GenerateLibs.fsx
+      working-directory: './gircore/src'
+
+    - name: Restore solution
+      run: dotnet restore GirCore.Libs.slnf
+      working-directory: './gircore/src'
+
+    - name: Install docfx
+      run: dotnet install -g docfx
+
+    - name: Build docs into website
+      run: docfx docfx/docfx.json
   
     - name: Publish website
       uses: peaceiris/actions-gh-pages@v3
