@@ -2,6 +2,11 @@ name: Deploy website
 
 on:
   workflow_dispatch:
+    inputs:
+      commit:
+        description: Commit hash to load the gir.core source code from
+        required: true
+        type: string
 
 jobs:
   build:
@@ -14,47 +19,51 @@ jobs:
       with:
         path: 'website'
 
-    - name: Checkout gir.core
+    - name: Checkout gir.core docs
       uses: actions/checkout@v3
       with:
         repository: 'gircore/gir.core'
         ref: 'main'
+        path: 'gircore-docs'
+    
+    - name: Checkout gir.core
+      uses: actions/checkout@v3
+      with:
+        repository: 'gircore/gir.core'
+        ref: ${{ github.event.inputs.commit}}
         path: 'gircore'
         submodules: 'true'
-        
-    #- name: Prepare .NET
-    #  uses: actions/setup-dotnet@v1
-    #  with:
-    #    dotnet-version: '6.0.102'
-        
-    #- name: Call generator
-    #  run: dotnet fsi GenerateLibs.fsx
-    #  working-directory: './gircore/src'
-
-    #- name: Move api docs into website
-    #  run: cp -r ./gircore/Docs/Api ./website/content/api
-
-    - name: Create content folder
-      run: mkdir ./website/content/
       
     - name: Move readme into website
-      run: cp ./gircore/docs/readme.md ./website/content/
+      run: cp ./gircore-docs/docs/readme.md ./website/docfx/
 
     - name: Rename readme
-      run: mv ./website/content/readme.md ./website/content/_index.md
+      run: mv ./website/docfx/readme.md ./website/docfx/index.md
       
     - name: Move docs into website
-      run: cp -r ./gircore/docs/docs ./website/content/docs
+      run: cp -r ./gircore-docs/docs/docs ./website/docfx/docs
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
+    - name: Move images into website
+      run: cp -r ./gircore-docs/docs/img/* ./website/docfx/img
+
+    - name: Prepare .NET
+      uses: actions/setup-dotnet@v3
       with:
-        hugo-version: 'latest'
-        extended: true
+        dotnet-version: '7.0.x'
 
-    - name: Build website
-      run: hugo --minify
-      working-directory: './website/hugo'
+    - name: Call generator
+      run: dotnet fsi GenerateLibs.fsx
+      working-directory: './gircore/src'
+
+    - name: Restore solution
+      run: dotnet restore GirCore.Libs.slnf
+      working-directory: './gircore/src'
+
+    - name: Install docfx
+      run: dotnet tool update -g docfx
+
+    - name: Build docs into website
+      run: docfx website/docfx/docfx.json
   
     - name: Publish website
       uses: peaceiris/actions-gh-pages@v3

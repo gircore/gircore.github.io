@@ -1,0 +1,48 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "gircore/src/Libs/**/**.csproj" ],
+          "exclude": [ "gircore/src/Libs/GirTest-0.1/**" ],
+          "src": "../../"
+        }
+      ],
+      "dest": "api",
+      "properties": {
+        "TargetFramework": "net7.0"
+      },
+      "disableGitFeatures": true,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [ "**/*.{md,yml}" ],
+        "exclude": [ "obj/**" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "**/img/**" ],
+        "exclude": [ "obj/**" ]
+      }
+    ],
+    "dest": "../output",
+    "globalMetadata": {
+      "_appLogoPath": "img/gircore-logo.svg",
+      "_disableContribution": true
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "postProcessors": [],
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}
