@@ -1,0 +1,1609 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Pipeline
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Pipeline
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gst.Pipeline">
+
+
+  <h1 id="Gst_Pipeline" data-uid="Gst.Pipeline" class="text-break">Class Pipeline
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gst.Object.html">Object</a></div>
+    <div class="level4"><a class="xref" href="Gst.Element.html">Element</a></div>
+    <div class="level5"><a class="xref" href="Gst.Bin.html">Bin</a></div>
+    <div class="level6"><span class="xref">Pipeline</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Gst.ChildProxy.html">ChildProxy</a></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_Add_Gst_Element_">Bin.Add(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_FindUnlinkedPad_Gst_PadDirection_">Bin.FindUnlinkedPad(PadDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_GetByInterface_System_UIntPtr_">Bin.GetByInterface(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_GetByName_System_String_">Bin.GetByName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_GetByNameRecurseUp_System_String_">Bin.GetByNameRecurseUp(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_GetSuppressedFlags">Bin.GetSuppressedFlags()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateAllByElementFactoryName_System_String_">Bin.IterateAllByElementFactoryName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateAllByInterface_System_UIntPtr_">Bin.IterateAllByInterface(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateElements">Bin.IterateElements()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateRecurse">Bin.IterateRecurse()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateSinks">Bin.IterateSinks()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateSorted">Bin.IterateSorted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_IterateSources">Bin.IterateSources()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_RecalculateLatency">Bin.RecalculateLatency()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_Remove_Gst_Element_">Bin.Remove(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_SetSuppressedFlags_Gst_ElementFlags_">Bin.SetSuppressedFlags(ElementFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_SyncChildrenStates">Bin.SyncChildrenStates()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_AsyncHandlingPropertyDefinition">Bin.AsyncHandlingPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_AsyncHandling">Bin.AsyncHandling</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_MessageForwardPropertyDefinition">Bin.MessageForwardPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_MessageForward">Bin.MessageForward</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_DeepElementAddedSignal">Bin.DeepElementAddedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_OnDeepElementAdded">Bin.OnDeepElementAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_DeepElementRemovedSignal">Bin.DeepElementRemovedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_OnDeepElementRemoved">Bin.OnDeepElementRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_DoLatencySignal">Bin.DoLatencySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_OnDoLatency">Bin.OnDoLatency</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_ElementAddedSignal">Bin.ElementAddedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_OnElementAdded">Bin.OnElementAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_ElementRemovedSignal">Bin.ElementRemovedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Bin.html#Gst_Bin_OnElementRemoved">Bin.OnElementRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MakeFromUri_Gst_URIType_System_String_System_String_">Element.MakeFromUri(URIType, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Item_System_String_">Element.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Register_Gst_Plugin_System_String_System_UInt32_System_UIntPtr_">Element.Register(Plugin, string, uint, nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_StateChangeReturnGetName_Gst_StateChangeReturn_">Element.StateChangeReturnGetName(StateChangeReturn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_StateGetName_Gst_State_">Element.StateGetName(State)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_TypeSetSkipDocumentation_System_UIntPtr_">Element.TypeSetSkipDocumentation(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AbortState">Element.AbortState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPad_Gst_Pad_">Element.AddPad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPropertyDeepNotifyWatch_System_String_System_Boolean_">Element.AddPropertyDeepNotifyWatch(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPropertyNotifyWatch_System_String_System_Boolean_">Element.AddPropertyNotifyWatch(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_CallAsync_Gst_ElementCallAsyncFunc_">Element.CallAsync(ElementCallAsyncFunc)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ChangeState_Gst_StateChange_">Element.ChangeState(StateChange)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ContinueState_Gst_StateChangeReturn_">Element.ContinueState(StateChangeReturn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_CreateAllPads">Element.CreateAllPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetBaseTime">Element.GetBaseTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCompatiblePad_Gst_Pad_Gst_Caps_">Element.GetCompatiblePad(Pad, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCompatiblePadTemplate_Gst_PadTemplate_">Element.GetCompatiblePadTemplate(PadTemplate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContext_System_String_">Element.GetContext(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContextUnlocked_System_String_">Element.GetContextUnlocked(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContexts">Element.GetContexts()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCurrentClockTime">Element.GetCurrentClockTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCurrentRunningTime">Element.GetCurrentRunningTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetFactory">Element.GetFactory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetMetadata_System_String_">Element.GetMetadata(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetPadTemplate_System_String_">Element.GetPadTemplate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetPadTemplateList">Element.GetPadTemplateList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetRequestPad_System_String_">Element.GetRequestPad(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetStartTime">Element.GetStartTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetStaticPad_System_String_">Element.GetStaticPad(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IsLockedState">Element.IsLockedState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IteratePads">Element.IteratePads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IterateSinkPads">Element.IterateSinkPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IterateSrcPads">Element.IterateSrcPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Link_Gst_Element_">Element.Link(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkFiltered_Gst_Element_Gst_Caps_">Element.LinkFiltered(Element, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPads_System_String_Gst_Element_System_String_">Element.LinkPads(string, Element, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPadsFiltered_System_String_Gst_Element_System_String_Gst_Caps_">Element.LinkPadsFiltered(string, Element, string, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPadsFull_System_String_Gst_Element_System_String_Gst_PadLinkCheck_">Element.LinkPadsFull(string, Element, string, PadLinkCheck)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LostState">Element.LostState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MessageFull_Gst_MessageType_System_UInt32_System_Int32_System_String_System_String_System_String_System_String_System_Int32_">Element.MessageFull(MessageType, uint, int, string, string, string, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MessageFullWithDetails_Gst_MessageType_System_UInt32_System_Int32_System_String_System_String_System_String_System_String_System_Int32_Gst_Structure_">Element.MessageFullWithDetails(MessageType, uint, int, string, string, string, string, int, Structure)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_NoMorePads">Element.NoMorePads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PostMessage_Gst_Message_">Element.PostMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ProvideClock">Element.ProvideClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Query_Gst_Query_">Element.Query(Query)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ReleaseRequestPad_Gst_Pad_">Element.ReleaseRequestPad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RemovePad_Gst_Pad_">Element.RemovePad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RemovePropertyNotifyWatch_System_UInt64_">Element.RemovePropertyNotifyWatch(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RequestPad_Gst_PadTemplate_System_String_Gst_Caps_">Element.RequestPad(PadTemplate, string, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RequestPadSimple_System_String_">Element.RequestPadSimple(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Seek_System_Double_Gst_Format_Gst_SeekFlags_Gst_SeekType_System_Int64_Gst_SeekType_System_Int64_">Element.Seek(double, Format, SeekFlags, SeekType, long, SeekType, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SeekSimple_Gst_Format_Gst_SeekFlags_System_Int64_">Element.SeekSimple(Format, SeekFlags, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SendEvent_Gst_Event_">Element.SendEvent(Event)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetBaseTime_System_UInt64_">Element.SetBaseTime(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetBus_Gst_Bus_">Element.SetBus(Bus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetContext_Gst_Context_">Element.SetContext(Context)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetLockedState_System_Boolean_">Element.SetLockedState(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetStartTime_System_UInt64_">Element.SetStartTime(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetState_Gst_State_">Element.SetState(State)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SyncStateWithParent">Element.SyncStateWithParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Unlink_Gst_Element_">Element.Unlink(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_UnlinkPads_System_String_Gst_Element_System_String_">Element.UnlinkPads(string, Element, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_NoMorePadsSignal">Element.NoMorePadsSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnNoMorePads">Element.OnNoMorePads</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PadAddedSignal">Element.PadAddedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnPadAdded">Element.OnPadAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PadRemovedSignal">Element.PadRemovedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnPadRemoved">Element.OnPadRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_CheckUniqueness_GLib_List_System_String_">Object.CheckUniqueness(List, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DefaultDeepNotify_GObject_Object_Gst_Object_GObject_ParamSpec_System_String___">Object.DefaultDeepNotify(Object, Object, ParamSpec, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_AddControlBinding_Gst_ControlBinding_">Object.AddControlBinding(ControlBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DefaultError_GLib_Error_System_String_">Object.DefaultError(Error, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetControlBinding_System_String_">Object.GetControlBinding(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetControlRate">Object.GetControlRate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetName">Object.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetParent">Object.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetPathString">Object.GetPathString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_System_UInt64_">Object.GetValue(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasActiveControlBindings">Object.HasActiveControlBindings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAncestor_Gst_Object_">Object.HasAncestor(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAsAncestor_Gst_Object_">Object.HasAsAncestor(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAsParent_Gst_Object_">Object.HasAsParent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_RemoveControlBinding_Gst_ControlBinding_">Object.RemoveControlBinding(ControlBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingDisabled_System_String_System_Boolean_">Object.SetControlBindingDisabled(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingsDisabled_System_Boolean_">Object.SetControlBindingsDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_System_UInt64_">Object.SetControlRate(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetName_System_String_">Object.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetParent_Gst_Object_">Object.SetParent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SuggestNextSync">Object.SuggestNextSync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_System_UInt64_">Object.SyncValues(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Unparent">Object.Unparent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_NamePropertyDefinition">Object.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Name">Object.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_ParentPropertyDefinition">Object.ParentPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Parent">Object.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DeepNotifySignal">Object.DeepNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_OnDeepNotify">Object.OnDeepNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a></h6>
+  <h6><strong>Assembly</strong>: Gst-1.0.dll</h6>
+  <h5 id="Gst_Pipeline_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Pipeline : Bin, IObject, INotifyPropertyChanged, IDisposable, ChildProxy, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline__ctor.md&amp;value=---%0Auid%3A%20Gst.Pipeline.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Framework.Generated.cs/#L18">View Source</a>
+  </span>
+  <a id="Gst_Pipeline__ctor_" data-uid="Gst.Pipeline.#ctor*"></a>
+  <h4 id="Gst_Pipeline__ctor" data-uid="Gst.Pipeline.#ctor">Pipeline()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pipeline()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline__ctor_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20Gst.Pipeline.%23ctor(GObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gst_Pipeline__ctor_" data-uid="Gst.Pipeline.#ctor*"></a>
+  <h4 id="Gst_Pipeline__ctor_GObject_ConstructArgument___" data-uid="Gst.Pipeline.#ctor(GObject.ConstructArgument[])">Pipeline(params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pipeline(params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Gst_Pipeline__ctor_" data-uid="Gst.Pipeline.#ctor*"></a>
+  <h4 id="Gst_Pipeline__ctor_System_IntPtr_System_Boolean_" data-uid="Gst.Pipeline.#ctor(System.IntPtr,System.Boolean)">Pipeline(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pipeline(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_AutoFlushBusPropertyDefinition.md&amp;value=---%0Auid%3A%20Gst.Pipeline.AutoFlushBusPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Gst_Pipeline_AutoFlushBusPropertyDefinition" data-uid="Gst.Pipeline.AutoFlushBusPropertyDefinition">AutoFlushBusPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, Pipeline&gt; AutoFlushBusPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gst.Pipeline.html">Pipeline</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_DelayPropertyDefinition.md&amp;value=---%0Auid%3A%20Gst.Pipeline.DelayPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Gst_Pipeline_DelayPropertyDefinition" data-uid="Gst.Pipeline.DelayPropertyDefinition">DelayPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, Pipeline&gt; DelayPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="Gst.Pipeline.html">Pipeline</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_LatencyPropertyDefinition.md&amp;value=---%0Auid%3A%20Gst.Pipeline.LatencyPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L36">View Source</a>
+  </span>
+  <h4 id="Gst_Pipeline_LatencyPropertyDefinition" data-uid="Gst.Pipeline.LatencyPropertyDefinition">LatencyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, Pipeline&gt; LatencyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="Gst.Pipeline.html">Pipeline</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_AutoFlushBus.md&amp;value=---%0Auid%3A%20Gst.Pipeline.AutoFlushBus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_AutoFlushBus_" data-uid="Gst.Pipeline.AutoFlushBus*"></a>
+  <h4 id="Gst_Pipeline_AutoFlushBus" data-uid="Gst.Pipeline.AutoFlushBus">AutoFlushBus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoFlushBus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_Delay.md&amp;value=---%0Auid%3A%20Gst.Pipeline.Delay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L29">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_Delay_" data-uid="Gst.Pipeline.Delay*"></a>
+  <h4 id="Gst_Pipeline_Delay" data-uid="Gst.Pipeline.Delay">Delay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Delay { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_Latency.md&amp;value=---%0Auid%3A%20Gst.Pipeline.Latency%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L41">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_Latency_" data-uid="Gst.Pipeline.Latency*"></a>
+  <h4 id="Gst_Pipeline_Latency" data-uid="Gst.Pipeline.Latency">Latency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Latency { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_AutoClock.md&amp;value=---%0Auid%3A%20Gst.Pipeline.AutoClock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_AutoClock_" data-uid="Gst.Pipeline.AutoClock*"></a>
+  <h4 id="Gst_Pipeline_AutoClock" data-uid="Gst.Pipeline.AutoClock">AutoClock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AutoClock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_ChildAdded_GObject_Object_System_String_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.ChildAdded(GObject.Object%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.InterfaceMethods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_ChildAdded_" data-uid="Gst.Pipeline.ChildAdded*"></a>
+  <h4 id="Gst_Pipeline_ChildAdded_GObject_Object_System_String_" data-uid="Gst.Pipeline.ChildAdded(GObject.Object,System.String)">ChildAdded(Object, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChildAdded(Object child, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Object.html">Object</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_ChildRemoved_GObject_Object_System_String_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.ChildRemoved(GObject.Object%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.InterfaceMethods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_ChildRemoved_" data-uid="Gst.Pipeline.ChildRemoved*"></a>
+  <h4 id="Gst_Pipeline_ChildRemoved_GObject_Object_System_String_" data-uid="Gst.Pipeline.ChildRemoved(GObject.Object,System.String)">ChildRemoved(Object, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChildRemoved(Object child, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Object.html">Object</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetAutoFlushBus.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetAutoFlushBus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetAutoFlushBus_" data-uid="Gst.Pipeline.GetAutoFlushBus*"></a>
+  <h4 id="Gst_Pipeline_GetAutoFlushBus" data-uid="Gst.Pipeline.GetAutoFlushBus">GetAutoFlushBus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAutoFlushBus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetBus.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetBus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetBus_" data-uid="Gst.Pipeline.GetBus*"></a>
+  <h4 id="Gst_Pipeline_GetBus" data-uid="Gst.Pipeline.GetBus">GetBus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bus GetBus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Bus.html">Bus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetChildByIndex_System_UInt32_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetChildByIndex(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.InterfaceMethods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetChildByIndex_" data-uid="Gst.Pipeline.GetChildByIndex*"></a>
+  <h4 id="Gst_Pipeline_GetChildByIndex_System_UInt32_" data-uid="Gst.Pipeline.GetChildByIndex(System.UInt32)">GetChildByIndex(uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object? GetChildByIndex(uint index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Object.html">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetChildByName_System_String_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetChildByName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.InterfaceMethods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetChildByName_" data-uid="Gst.Pipeline.GetChildByName*"></a>
+  <h4 id="Gst_Pipeline_GetChildByName_System_String_" data-uid="Gst.Pipeline.GetChildByName(System.String)">GetChildByName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object? GetChildByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Object.html">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetChildrenCount.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetChildrenCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.InterfaceMethods.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetChildrenCount_" data-uid="Gst.Pipeline.GetChildrenCount*"></a>
+  <h4 id="Gst_Pipeline_GetChildrenCount" data-uid="Gst.Pipeline.GetChildrenCount">GetChildrenCount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetChildrenCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetClock.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetClock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetClock_" data-uid="Gst.Pipeline.GetClock*"></a>
+  <h4 id="Gst_Pipeline_GetClock" data-uid="Gst.Pipeline.GetClock">GetClock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Clock GetClock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Clock.html">Clock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetDelay.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetDelay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetDelay_" data-uid="Gst.Pipeline.GetDelay*"></a>
+  <h4 id="Gst_Pipeline_GetDelay" data-uid="Gst.Pipeline.GetDelay">GetDelay()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetDelay()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetGType.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetGType_" data-uid="Gst.Pipeline.GetGType*"></a>
+  <h4 id="Gst_Pipeline_GetGType" data-uid="Gst.Pipeline.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetLatency.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetLatency%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L61">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetLatency_" data-uid="Gst.Pipeline.GetLatency*"></a>
+  <h4 id="Gst_Pipeline_GetLatency" data-uid="Gst.Pipeline.GetLatency">GetLatency()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
+public ulong GetLatency()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_GetPipelineClock.md&amp;value=---%0Auid%3A%20Gst.Pipeline.GetPipelineClock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L70">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_GetPipelineClock_" data-uid="Gst.Pipeline.GetPipelineClock*"></a>
+  <h4 id="Gst_Pipeline_GetPipelineClock" data-uid="Gst.Pipeline.GetPipelineClock">GetPipelineClock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
+public Clock GetPipelineClock()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Clock.html">Clock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_New_System_String_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.New(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Constructors.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_New_" data-uid="Gst.Pipeline.New*"></a>
+  <h4 id="Gst_Pipeline_New_System_String_" data-uid="Gst.Pipeline.New(System.String)">New(string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Pipeline New(string? name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Pipeline.html">Pipeline</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_SetAutoFlushBus_System_Boolean_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.SetAutoFlushBus(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L80">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_SetAutoFlushBus_" data-uid="Gst.Pipeline.SetAutoFlushBus*"></a>
+  <h4 id="Gst_Pipeline_SetAutoFlushBus_System_Boolean_" data-uid="Gst.Pipeline.SetAutoFlushBus(System.Boolean)">SetAutoFlushBus(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAutoFlushBus(bool autoFlush)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">autoFlush</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_SetClock_Gst_Clock_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.SetClock(Gst.Clock)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L89">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_SetClock_" data-uid="Gst.Pipeline.SetClock*"></a>
+  <h4 id="Gst_Pipeline_SetClock_Gst_Clock_" data-uid="Gst.Pipeline.SetClock(Gst.Clock)">SetClock(Clock)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetClock(Clock clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Clock.html">Clock</a></td>
+        <td><span class="parametername">clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_SetDelay_System_UInt64_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.SetDelay(System.UInt64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L98">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_SetDelay_" data-uid="Gst.Pipeline.SetDelay*"></a>
+  <h4 id="Gst_Pipeline_SetDelay_System_UInt64_" data-uid="Gst.Pipeline.SetDelay(System.UInt64)">SetDelay(ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDelay(ulong delay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">delay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_SetLatency_System_UInt64_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.SetLatency(System.UInt64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L106">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_SetLatency_" data-uid="Gst.Pipeline.SetLatency*"></a>
+  <h4 id="Gst_Pipeline_SetLatency_System_UInt64_" data-uid="Gst.Pipeline.SetLatency(System.UInt64)">SetLatency(ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
+public void SetLatency(ulong latency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">latency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_SetProperty_System_String_GObject_Value_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.SetProperty(System.String%2CGObject.Value)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.InterfaceMethods.Generated.cs/#L65">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_SetProperty_" data-uid="Gst.Pipeline.SetProperty*"></a>
+  <h4 id="Gst_Pipeline_SetProperty_System_String_GObject_Value_" data-uid="Gst.Pipeline.SetProperty(System.String,GObject.Value)">SetProperty(string, Value)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProperty(string name, Value value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline_UseClock_Gst_Clock_.md&amp;value=---%0Auid%3A%20Gst.Pipeline.UseClock(Gst.Clock)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Methods.Generated.cs/#L116">View Source</a>
+  </span>
+  <a id="Gst_Pipeline_UseClock_" data-uid="Gst.Pipeline.UseClock*"></a>
+  <h4 id="Gst_Pipeline_UseClock_Gst_Clock_" data-uid="Gst.Pipeline.UseClock(Gst.Clock)">UseClock(Clock?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseClock(Clock? clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Clock.html">Clock</a></td>
+        <td><span class="parametername">clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Gst.ChildProxy.html">ChildProxy</a>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gst_Pipeline.md&amp;value=---%0Auid%3A%20Gst.Pipeline%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gst-1.0/Public/Pipeline.Properties.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

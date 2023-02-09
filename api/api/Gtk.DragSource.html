@@ -1,0 +1,1161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DragSource
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class DragSource
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.DragSource">
+
+
+  <h1 id="Gtk_DragSource" data-uid="Gtk.DragSource" class="text-break">Class DragSource
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="Gtk.EventController.html">EventController</a></div>
+    <div class="level3"><a class="xref" href="Gtk.Gesture.html">Gesture</a></div>
+    <div class="level4"><a class="xref" href="Gtk.GestureSingle.html">GestureSingle</a></div>
+    <div class="level5"><span class="xref">DragSource</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_GetButton">GestureSingle.GetButton()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_GetCurrentButton">GestureSingle.GetCurrentButton()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_GetCurrentSequence">GestureSingle.GetCurrentSequence()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_GetExclusive">GestureSingle.GetExclusive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_GetTouchOnly">GestureSingle.GetTouchOnly()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_SetButton_System_UInt32_">GestureSingle.SetButton(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_SetExclusive_System_Boolean_">GestureSingle.SetExclusive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_SetTouchOnly_System_Boolean_">GestureSingle.SetTouchOnly(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_ButtonPropertyDefinition">GestureSingle.ButtonPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_Button">GestureSingle.Button</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_ExclusivePropertyDefinition">GestureSingle.ExclusivePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_Exclusive">GestureSingle.Exclusive</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_TouchOnlyPropertyDefinition">GestureSingle.TouchOnlyPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.GestureSingle.html#Gtk_GestureSingle_TouchOnly">GestureSingle.TouchOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_GetDevice">Gesture.GetDevice()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_GetGroup">Gesture.GetGroup()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_GetLastEvent_Gdk_EventSequence_">Gesture.GetLastEvent(EventSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_GetLastUpdatedSequence">Gesture.GetLastUpdatedSequence()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_GetSequenceState_Gdk_EventSequence_">Gesture.GetSequenceState(EventSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_GetSequences">Gesture.GetSequences()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_Group_Gtk_Gesture_">Gesture.Group(Gesture)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_HandlesSequence_Gdk_EventSequence_">Gesture.HandlesSequence(EventSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_IsActive">Gesture.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_IsGroupedWith_Gtk_Gesture_">Gesture.IsGroupedWith(Gesture)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_IsRecognized">Gesture.IsRecognized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_SetSequenceState_Gdk_EventSequence_Gtk_EventSequenceState_">Gesture.SetSequenceState(EventSequence, EventSequenceState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_SetState_Gtk_EventSequenceState_">Gesture.SetState(EventSequenceState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_Ungroup">Gesture.Ungroup()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_NPointsPropertyDefinition">Gesture.NPointsPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_NPoints">Gesture.NPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_BeginSignal">Gesture.BeginSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_OnBegin">Gesture.OnBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_CancelSignal">Gesture.CancelSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_OnCancel">Gesture.OnCancel</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_EndSignal">Gesture.EndSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_OnEnd">Gesture.OnEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_SequenceStateChangedSignal">Gesture.SequenceStateChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_OnSequenceStateChanged">Gesture.OnSequenceStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_UpdateSignal">Gesture.UpdateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Gesture.html#Gtk_Gesture_OnUpdate">Gesture.OnUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetCurrentEvent">EventController.GetCurrentEvent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetCurrentEventDevice">EventController.GetCurrentEventDevice()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetCurrentEventState">EventController.GetCurrentEventState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetCurrentEventTime">EventController.GetCurrentEventTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetName">EventController.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetPropagationLimit">EventController.GetPropagationLimit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetPropagationPhase">EventController.GetPropagationPhase()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_GetWidget">EventController.GetWidget()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_Reset">EventController.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_SetName_System_String_">EventController.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_SetPropagationLimit_Gtk_PropagationLimit_">EventController.SetPropagationLimit(PropagationLimit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_SetPropagationPhase_Gtk_PropagationPhase_">EventController.SetPropagationPhase(PropagationPhase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_SetStaticName_System_String_">EventController.SetStaticName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_NamePropertyDefinition">EventController.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_Name">EventController.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_PropagationLimitPropertyDefinition">EventController.PropagationLimitPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_PropagationLimit">EventController.PropagationLimit</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_PropagationPhasePropertyDefinition">EventController.PropagationPhasePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_PropagationPhase">EventController.PropagationPhase</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_WidgetPropertyDefinition">EventController.WidgetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.EventController.html#Gtk_EventController_Widget">EventController.Widget</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk-4.0.dll</h6>
+  <h5 id="Gtk_DragSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DragSource : GestureSingle, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource__ctor_System_Boolean_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20Gtk.DragSource.%23ctor(System.Boolean%2CGObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_DragSource__ctor_" data-uid="Gtk.DragSource.#ctor*"></a>
+  <h4 id="Gtk_DragSource__ctor_System_Boolean_GObject_ConstructArgument___" data-uid="Gtk.DragSource.#ctor(System.Boolean,GObject.ConstructArgument[])">DragSource(bool, params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DragSource(bool owned, params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">owned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.DragSource.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Gtk_DragSource__ctor_" data-uid="Gtk.DragSource.#ctor*"></a>
+  <h4 id="Gtk_DragSource__ctor_System_IntPtr_System_Boolean_" data-uid="Gtk.DragSource.#ctor(System.IntPtr,System.Boolean)">DragSource(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DragSource(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_ActionsPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.DragSource.ActionsPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_ActionsPropertyDefinition" data-uid="Gtk.DragSource.ActionsPropertyDefinition">ActionsPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;DragAction, DragSource&gt; ActionsPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="Gdk.DragAction.html">DragAction</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_ContentPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.DragSource.ContentPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Properties.Generated.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_ContentPropertyDefinition" data-uid="Gtk.DragSource.ContentPropertyDefinition">ContentPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ContentProvider?, DragSource&gt; ContentPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_DragBeginSignal.md&amp;value=---%0Auid%3A%20Gtk.DragSource.DragBeginSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L29">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_DragBeginSignal" data-uid="Gtk.DragSource.DragBeginSignal">DragBeginSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDragBegin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;DragSource, DragSource.DragBeginSignalArgs&gt; DragBeginSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.DragBeginSignalArgs.html">DragBeginSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_DragCancelSignal.md&amp;value=---%0Auid%3A%20Gtk.DragSource.DragCancelSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_DragCancelSignal" data-uid="Gtk.DragSource.DragCancelSignal">DragCancelSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDragCancel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ReturningSignal&lt;DragSource, DragSource.DragCancelSignalArgs, bool&gt; DragCancelSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ReturningSignal-3.html">ReturningSignal</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.DragCancelSignalArgs.html">DragCancelSignalArgs</a>, <span class="xref">bool</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_DragEndSignal.md&amp;value=---%0Auid%3A%20Gtk.DragSource.DragEndSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_DragEndSignal" data-uid="Gtk.DragSource.DragEndSignal">DragEndSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDragEnd.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;DragSource, DragSource.DragEndSignalArgs&gt; DragEndSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.DragEndSignalArgs.html">DragEndSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_PrepareSignal.md&amp;value=---%0Auid%3A%20Gtk.DragSource.PrepareSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L113">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_PrepareSignal" data-uid="Gtk.DragSource.PrepareSignal">PrepareSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnPrepare.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ReturningSignal&lt;DragSource, DragSource.PrepareSignalArgs, ContentProvider?&gt; PrepareSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ReturningSignal-3.html">ReturningSignal</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.PrepareSignalArgs.html">PrepareSignalArgs</a>, <a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_Actions.md&amp;value=---%0Auid%3A%20Gtk.DragSource.Actions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_Actions_" data-uid="Gtk.DragSource.Actions*"></a>
+  <h4 id="Gtk_DragSource_Actions" data-uid="Gtk.DragSource.Actions">Actions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DragAction Actions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.DragAction.html">DragAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_Content.md&amp;value=---%0Auid%3A%20Gtk.DragSource.Content%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Properties.Generated.cs/#L29">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_Content_" data-uid="Gtk.DragSource.Content*"></a>
+  <h4 id="Gtk_DragSource_Content" data-uid="Gtk.DragSource.Content">Content</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProvider? Content { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_DragCancel.md&amp;value=---%0Auid%3A%20Gtk.DragSource.DragCancel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_DragCancel_" data-uid="Gtk.DragSource.DragCancel*"></a>
+  <h4 id="Gtk_DragSource_DragCancel" data-uid="Gtk.DragSource.DragCancel">DragCancel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DragCancel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_GetActions.md&amp;value=---%0Auid%3A%20Gtk.DragSource.GetActions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_GetActions_" data-uid="Gtk.DragSource.GetActions*"></a>
+  <h4 id="Gtk_DragSource_GetActions" data-uid="Gtk.DragSource.GetActions">GetActions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DragAction GetActions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.DragAction.html">DragAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_GetContent.md&amp;value=---%0Auid%3A%20Gtk.DragSource.GetContent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_GetContent_" data-uid="Gtk.DragSource.GetContent*"></a>
+  <h4 id="Gtk_DragSource_GetContent" data-uid="Gtk.DragSource.GetContent">GetContent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProvider? GetContent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_GetDrag.md&amp;value=---%0Auid%3A%20Gtk.DragSource.GetDrag%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_GetDrag_" data-uid="Gtk.DragSource.GetDrag*"></a>
+  <h4 id="Gtk_DragSource_GetDrag" data-uid="Gtk.DragSource.GetDrag">GetDrag()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Drag? GetDrag()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Drag.html">Drag</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_GetGType.md&amp;value=---%0Auid%3A%20Gtk.DragSource.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_GetGType_" data-uid="Gtk.DragSource.GetGType*"></a>
+  <h4 id="Gtk_DragSource_GetGType" data-uid="Gtk.DragSource.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_New.md&amp;value=---%0Auid%3A%20Gtk.DragSource.New%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Constructors.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_New_" data-uid="Gtk.DragSource.New*"></a>
+  <h4 id="Gtk_DragSource_New" data-uid="Gtk.DragSource.New">New()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DragSource New()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.DragSource.html">DragSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_SetActions_Gdk_DragAction_.md&amp;value=---%0Auid%3A%20Gtk.DragSource.SetActions(Gdk.DragAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_SetActions_" data-uid="Gtk.DragSource.SetActions*"></a>
+  <h4 id="Gtk_DragSource_SetActions_Gdk_DragAction_" data-uid="Gtk.DragSource.SetActions(Gdk.DragAction)">SetActions(DragAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActions(DragAction actions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.DragAction.html">DragAction</a></td>
+        <td><span class="parametername">actions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_SetContent_Gdk_ContentProvider_.md&amp;value=---%0Auid%3A%20Gtk.DragSource.SetContent(Gdk.ContentProvider)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L62">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_SetContent_" data-uid="Gtk.DragSource.SetContent*"></a>
+  <h4 id="Gtk_DragSource_SetContent_Gdk_ContentProvider_" data-uid="Gtk.DragSource.SetContent(Gdk.ContentProvider)">SetContent(ContentProvider?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContent(ContentProvider? content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_SetIcon_Gdk_Paintable_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Gtk.DragSource.SetIcon(Gdk.Paintable%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Methods.Generated.cs/#L71">View Source</a>
+  </span>
+  <a id="Gtk_DragSource_SetIcon_" data-uid="Gtk.DragSource.SetIcon*"></a>
+  <h4 id="Gtk_DragSource_SetIcon_Gdk_Paintable_System_Int32_System_Int32_" data-uid="Gtk.DragSource.SetIcon(Gdk.Paintable,System.Int32,System.Int32)">SetIcon(Paintable?, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIcon(Paintable? paintable, int hotX, int hotY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Paintable.html">Paintable</a></td>
+        <td><span class="parametername">paintable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">hotX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">hotY</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_OnDragBegin.md&amp;value=---%0Auid%3A%20Gtk.DragSource.OnDragBegin%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_OnDragBegin" data-uid="Gtk.DragSource.OnDragBegin">OnDragBegin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;DragSource, DragSource.DragBeginSignalArgs&gt; OnDragBegin</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.DragBeginSignalArgs.html">DragBeginSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_OnDragCancel.md&amp;value=---%0Auid%3A%20Gtk.DragSource.OnDragCancel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L62">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_OnDragCancel" data-uid="Gtk.DragSource.OnDragCancel">OnDragCancel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReturningSignalHandler&lt;DragSource, DragSource.DragCancelSignalArgs, bool&gt; OnDragCancel</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ReturningSignalHandler-3.html">ReturningSignalHandler</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.DragCancelSignalArgs.html">DragCancelSignalArgs</a>, <span class="xref">bool</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_OnDragEnd.md&amp;value=---%0Auid%3A%20Gtk.DragSource.OnDragEnd%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L90">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_OnDragEnd" data-uid="Gtk.DragSource.OnDragEnd">OnDragEnd</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;DragSource, DragSource.DragEndSignalArgs&gt; OnDragEnd</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.DragEndSignalArgs.html">DragEndSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource_OnPrepare.md&amp;value=---%0Auid%3A%20Gtk.DragSource.OnPrepare%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L118">View Source</a>
+  </span>
+  <h4 id="Gtk_DragSource_OnPrepare" data-uid="Gtk.DragSource.OnPrepare">OnPrepare</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReturningSignalHandler&lt;DragSource, DragSource.PrepareSignalArgs, ContentProvider?&gt; OnPrepare</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ReturningSignalHandler-3.html">ReturningSignalHandler</a>&lt;<a class="xref" href="Gtk.DragSource.html">DragSource</a>, <a class="xref" href="Gtk.DragSource.html">DragSource</a>.<a class="xref" href="Gtk.DragSource.PrepareSignalArgs.html">PrepareSignalArgs</a>, <a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_DragSource.md&amp;value=---%0Auid%3A%20Gtk.DragSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/DragSource.Signals.Generated.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

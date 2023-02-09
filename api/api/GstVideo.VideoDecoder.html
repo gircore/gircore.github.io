@@ -1,0 +1,2616 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class VideoDecoder
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class VideoDecoder
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GstVideo.VideoDecoder">
+
+
+  <h1 id="GstVideo_VideoDecoder" data-uid="GstVideo.VideoDecoder" class="text-break">Class VideoDecoder
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gst.Object.html">Object</a></div>
+    <div class="level4"><a class="xref" href="Gst.Element.html">Element</a></div>
+    <div class="level5"><span class="xref">VideoDecoder</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MakeFromUri_Gst_URIType_System_String_System_String_">Element.MakeFromUri(URIType, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Item_System_String_">Element.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Register_Gst_Plugin_System_String_System_UInt32_System_UIntPtr_">Element.Register(Plugin, string, uint, nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_StateChangeReturnGetName_Gst_StateChangeReturn_">Element.StateChangeReturnGetName(StateChangeReturn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_StateGetName_Gst_State_">Element.StateGetName(State)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_TypeSetSkipDocumentation_System_UIntPtr_">Element.TypeSetSkipDocumentation(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AbortState">Element.AbortState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPad_Gst_Pad_">Element.AddPad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPropertyDeepNotifyWatch_System_String_System_Boolean_">Element.AddPropertyDeepNotifyWatch(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPropertyNotifyWatch_System_String_System_Boolean_">Element.AddPropertyNotifyWatch(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_CallAsync_Gst_ElementCallAsyncFunc_">Element.CallAsync(ElementCallAsyncFunc)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ChangeState_Gst_StateChange_">Element.ChangeState(StateChange)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ContinueState_Gst_StateChangeReturn_">Element.ContinueState(StateChangeReturn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_CreateAllPads">Element.CreateAllPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetBaseTime">Element.GetBaseTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetBus">Element.GetBus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetClock">Element.GetClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCompatiblePad_Gst_Pad_Gst_Caps_">Element.GetCompatiblePad(Pad, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCompatiblePadTemplate_Gst_PadTemplate_">Element.GetCompatiblePadTemplate(PadTemplate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContext_System_String_">Element.GetContext(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContextUnlocked_System_String_">Element.GetContextUnlocked(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContexts">Element.GetContexts()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCurrentClockTime">Element.GetCurrentClockTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCurrentRunningTime">Element.GetCurrentRunningTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetFactory">Element.GetFactory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetMetadata_System_String_">Element.GetMetadata(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetPadTemplate_System_String_">Element.GetPadTemplate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetPadTemplateList">Element.GetPadTemplateList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetRequestPad_System_String_">Element.GetRequestPad(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetStartTime">Element.GetStartTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetStaticPad_System_String_">Element.GetStaticPad(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IsLockedState">Element.IsLockedState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IteratePads">Element.IteratePads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IterateSinkPads">Element.IterateSinkPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IterateSrcPads">Element.IterateSrcPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Link_Gst_Element_">Element.Link(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkFiltered_Gst_Element_Gst_Caps_">Element.LinkFiltered(Element, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPads_System_String_Gst_Element_System_String_">Element.LinkPads(string, Element, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPadsFiltered_System_String_Gst_Element_System_String_Gst_Caps_">Element.LinkPadsFiltered(string, Element, string, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPadsFull_System_String_Gst_Element_System_String_Gst_PadLinkCheck_">Element.LinkPadsFull(string, Element, string, PadLinkCheck)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LostState">Element.LostState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MessageFull_Gst_MessageType_System_UInt32_System_Int32_System_String_System_String_System_String_System_String_System_Int32_">Element.MessageFull(MessageType, uint, int, string, string, string, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MessageFullWithDetails_Gst_MessageType_System_UInt32_System_Int32_System_String_System_String_System_String_System_String_System_Int32_Gst_Structure_">Element.MessageFullWithDetails(MessageType, uint, int, string, string, string, string, int, Structure)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_NoMorePads">Element.NoMorePads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PostMessage_Gst_Message_">Element.PostMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ProvideClock">Element.ProvideClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Query_Gst_Query_">Element.Query(Query)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ReleaseRequestPad_Gst_Pad_">Element.ReleaseRequestPad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RemovePad_Gst_Pad_">Element.RemovePad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RemovePropertyNotifyWatch_System_UInt64_">Element.RemovePropertyNotifyWatch(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RequestPad_Gst_PadTemplate_System_String_Gst_Caps_">Element.RequestPad(PadTemplate, string, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RequestPadSimple_System_String_">Element.RequestPadSimple(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Seek_System_Double_Gst_Format_Gst_SeekFlags_Gst_SeekType_System_Int64_Gst_SeekType_System_Int64_">Element.Seek(double, Format, SeekFlags, SeekType, long, SeekType, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SeekSimple_Gst_Format_Gst_SeekFlags_System_Int64_">Element.SeekSimple(Format, SeekFlags, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SendEvent_Gst_Event_">Element.SendEvent(Event)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetBaseTime_System_UInt64_">Element.SetBaseTime(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetBus_Gst_Bus_">Element.SetBus(Bus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetClock_Gst_Clock_">Element.SetClock(Clock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetContext_Gst_Context_">Element.SetContext(Context)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetLockedState_System_Boolean_">Element.SetLockedState(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetStartTime_System_UInt64_">Element.SetStartTime(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetState_Gst_State_">Element.SetState(State)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SyncStateWithParent">Element.SyncStateWithParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Unlink_Gst_Element_">Element.Unlink(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_UnlinkPads_System_String_Gst_Element_System_String_">Element.UnlinkPads(string, Element, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_NoMorePadsSignal">Element.NoMorePadsSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnNoMorePads">Element.OnNoMorePads</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PadAddedSignal">Element.PadAddedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnPadAdded">Element.OnPadAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PadRemovedSignal">Element.PadRemovedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnPadRemoved">Element.OnPadRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_CheckUniqueness_GLib_List_System_String_">Object.CheckUniqueness(List, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DefaultDeepNotify_GObject_Object_Gst_Object_GObject_ParamSpec_System_String___">Object.DefaultDeepNotify(Object, Object, ParamSpec, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_AddControlBinding_Gst_ControlBinding_">Object.AddControlBinding(ControlBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DefaultError_GLib_Error_System_String_">Object.DefaultError(Error, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetControlBinding_System_String_">Object.GetControlBinding(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetControlRate">Object.GetControlRate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetName">Object.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetParent">Object.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetPathString">Object.GetPathString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_System_UInt64_">Object.GetValue(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasActiveControlBindings">Object.HasActiveControlBindings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAncestor_Gst_Object_">Object.HasAncestor(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAsAncestor_Gst_Object_">Object.HasAsAncestor(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAsParent_Gst_Object_">Object.HasAsParent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_RemoveControlBinding_Gst_ControlBinding_">Object.RemoveControlBinding(ControlBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingDisabled_System_String_System_Boolean_">Object.SetControlBindingDisabled(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingsDisabled_System_Boolean_">Object.SetControlBindingsDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_System_UInt64_">Object.SetControlRate(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetName_System_String_">Object.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetParent_Gst_Object_">Object.SetParent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SuggestNextSync">Object.SuggestNextSync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_System_UInt64_">Object.SyncValues(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Unparent">Object.Unparent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_NamePropertyDefinition">Object.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Name">Object.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_ParentPropertyDefinition">Object.ParentPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Parent">Object.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DeepNotifySignal">Object.DeepNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_OnDeepNotify">Object.OnDeepNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GstVideo.html">GstVideo</a></h6>
+  <h6><strong>Assembly</strong>: GstVideo-1.0.dll</h6>
+  <h5 id="GstVideo_VideoDecoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VideoDecoder : Element, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder__ctor.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Framework.Generated.cs/#L18">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder__ctor_" data-uid="GstVideo.VideoDecoder.#ctor*"></a>
+  <h4 id="GstVideo_VideoDecoder__ctor" data-uid="GstVideo.VideoDecoder.#ctor">VideoDecoder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoDecoder()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder__ctor_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.%23ctor(GObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder__ctor_" data-uid="GstVideo.VideoDecoder.#ctor*"></a>
+  <h4 id="GstVideo_VideoDecoder__ctor_GObject_ConstructArgument___" data-uid="GstVideo.VideoDecoder.#ctor(GObject.ConstructArgument[])">VideoDecoder(params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VideoDecoder(params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder__ctor_" data-uid="GstVideo.VideoDecoder.#ctor*"></a>
+  <h4 id="GstVideo_VideoDecoder__ctor_System_IntPtr_System_Boolean_" data-uid="GstVideo.VideoDecoder.#ctor(System.IntPtr,System.Boolean)">VideoDecoder(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected VideoDecoder(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AutomaticRequestSyncPointFlagsPropertyDefinition.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AutomaticRequestSyncPointFlagsPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="GstVideo_VideoDecoder_AutomaticRequestSyncPointFlagsPropertyDefinition" data-uid="GstVideo.VideoDecoder.AutomaticRequestSyncPointFlagsPropertyDefinition">AutomaticRequestSyncPointFlagsPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;VideoDecoderRequestSyncPointFlags, VideoDecoder&gt; AutomaticRequestSyncPointFlagsPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="GstVideo.VideoDecoderRequestSyncPointFlags.html">VideoDecoderRequestSyncPointFlags</a>, <a class="xref" href="GstVideo.VideoDecoder.html">VideoDecoder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AutomaticRequestSyncPointsPropertyDefinition.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AutomaticRequestSyncPointsPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L24">View Source</a>
+  </span>
+  <h4 id="GstVideo_VideoDecoder_AutomaticRequestSyncPointsPropertyDefinition" data-uid="GstVideo.VideoDecoder.AutomaticRequestSyncPointsPropertyDefinition">AutomaticRequestSyncPointsPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, VideoDecoder&gt; AutomaticRequestSyncPointsPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="GstVideo.VideoDecoder.html">VideoDecoder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_DiscardCorruptedFramesPropertyDefinition.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.DiscardCorruptedFramesPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L36">View Source</a>
+  </span>
+  <h4 id="GstVideo_VideoDecoder_DiscardCorruptedFramesPropertyDefinition" data-uid="GstVideo.VideoDecoder.DiscardCorruptedFramesPropertyDefinition">DiscardCorruptedFramesPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, VideoDecoder&gt; DiscardCorruptedFramesPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="GstVideo.VideoDecoder.html">VideoDecoder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_MaxErrorsPropertyDefinition.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.MaxErrorsPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L48">View Source</a>
+  </span>
+  <h4 id="GstVideo_VideoDecoder_MaxErrorsPropertyDefinition" data-uid="GstVideo.VideoDecoder.MaxErrorsPropertyDefinition">MaxErrorsPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, VideoDecoder&gt; MaxErrorsPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="GstVideo.VideoDecoder.html">VideoDecoder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_MinForceKeyUnitIntervalPropertyDefinition.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.MinForceKeyUnitIntervalPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L60">View Source</a>
+  </span>
+  <h4 id="GstVideo_VideoDecoder_MinForceKeyUnitIntervalPropertyDefinition" data-uid="GstVideo.VideoDecoder.MinForceKeyUnitIntervalPropertyDefinition">MinForceKeyUnitIntervalPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, VideoDecoder&gt; MinForceKeyUnitIntervalPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="GstVideo.VideoDecoder.html">VideoDecoder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_QosPropertyDefinition.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.QosPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L72">View Source</a>
+  </span>
+  <h4 id="GstVideo_VideoDecoder_QosPropertyDefinition" data-uid="GstVideo.VideoDecoder.QosPropertyDefinition">QosPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, VideoDecoder&gt; QosPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="GstVideo.VideoDecoder.html">VideoDecoder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AutomaticRequestSyncPointFlags.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AutomaticRequestSyncPointFlags%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_AutomaticRequestSyncPointFlags_" data-uid="GstVideo.VideoDecoder.AutomaticRequestSyncPointFlags*"></a>
+  <h4 id="GstVideo_VideoDecoder_AutomaticRequestSyncPointFlags" data-uid="GstVideo.VideoDecoder.AutomaticRequestSyncPointFlags">AutomaticRequestSyncPointFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoDecoderRequestSyncPointFlags AutomaticRequestSyncPointFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoDecoderRequestSyncPointFlags.html">VideoDecoderRequestSyncPointFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AutomaticRequestSyncPoints.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AutomaticRequestSyncPoints%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L29">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_AutomaticRequestSyncPoints_" data-uid="GstVideo.VideoDecoder.AutomaticRequestSyncPoints*"></a>
+  <h4 id="GstVideo_VideoDecoder_AutomaticRequestSyncPoints" data-uid="GstVideo.VideoDecoder.AutomaticRequestSyncPoints">AutomaticRequestSyncPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutomaticRequestSyncPoints { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_DiscardCorruptedFrames.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.DiscardCorruptedFrames%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L41">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_DiscardCorruptedFrames_" data-uid="GstVideo.VideoDecoder.DiscardCorruptedFrames*"></a>
+  <h4 id="GstVideo_VideoDecoder_DiscardCorruptedFrames" data-uid="GstVideo.VideoDecoder.DiscardCorruptedFrames">DiscardCorruptedFrames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DiscardCorruptedFrames { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_MaxErrors.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.MaxErrors%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_MaxErrors_" data-uid="GstVideo.VideoDecoder.MaxErrors*"></a>
+  <h4 id="GstVideo_VideoDecoder_MaxErrors" data-uid="GstVideo.VideoDecoder.MaxErrors">MaxErrors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxErrors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_MinForceKeyUnitInterval.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.MinForceKeyUnitInterval%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L65">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_MinForceKeyUnitInterval_" data-uid="GstVideo.VideoDecoder.MinForceKeyUnitInterval*"></a>
+  <h4 id="GstVideo_VideoDecoder_MinForceKeyUnitInterval" data-uid="GstVideo.VideoDecoder.MinForceKeyUnitInterval">MinForceKeyUnitInterval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong MinForceKeyUnitInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_Qos.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.Qos%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L77">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_Qos_" data-uid="GstVideo.VideoDecoder.Qos*"></a>
+  <h4 id="GstVideo_VideoDecoder_Qos" data-uid="GstVideo.VideoDecoder.Qos">Qos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Qos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AddToFrame_System_Int32_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AddToFrame(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_AddToFrame_" data-uid="GstVideo.VideoDecoder.AddToFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_AddToFrame_System_Int32_" data-uid="GstVideo.VideoDecoder.AddToFrame(System.Int32)">AddToFrame(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToFrame(int nBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">nBytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AllocateOutputBuffer.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AllocateOutputBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_AllocateOutputBuffer_" data-uid="GstVideo.VideoDecoder.AllocateOutputBuffer*"></a>
+  <h4 id="GstVideo_VideoDecoder_AllocateOutputBuffer" data-uid="GstVideo.VideoDecoder.AllocateOutputBuffer">AllocateOutputBuffer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Buffer AllocateOutputBuffer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Buffer.html">Buffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AllocateOutputFrame_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AllocateOutputFrame(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_AllocateOutputFrame_" data-uid="GstVideo.VideoDecoder.AllocateOutputFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_AllocateOutputFrame_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.AllocateOutputFrame(GstVideo.VideoCodecFrame)">AllocateOutputFrame(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlowReturn AllocateOutputFrame(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_AllocateOutputFrameWithParams_GstVideo_VideoCodecFrame_Gst_BufferPoolAcquireParams_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.AllocateOutputFrameWithParams(GstVideo.VideoCodecFrame%2CGst.BufferPoolAcquireParams)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L43">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_AllocateOutputFrameWithParams_" data-uid="GstVideo.VideoDecoder.AllocateOutputFrameWithParams*"></a>
+  <h4 id="GstVideo_VideoDecoder_AllocateOutputFrameWithParams_GstVideo_VideoCodecFrame_Gst_BufferPoolAcquireParams_" data-uid="GstVideo.VideoDecoder.AllocateOutputFrameWithParams(GstVideo.VideoCodecFrame,Gst.BufferPoolAcquireParams)">AllocateOutputFrameWithParams(VideoCodecFrame, BufferPoolAcquireParams)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.12&quot;)]
+public FlowReturn AllocateOutputFrameWithParams(VideoCodecFrame frame, BufferPoolAcquireParams @params)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.BufferPoolAcquireParams.html">BufferPoolAcquireParams</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_DropFrame_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.DropFrame(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_DropFrame_" data-uid="GstVideo.VideoDecoder.DropFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_DropFrame_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.DropFrame(GstVideo.VideoCodecFrame)">DropFrame(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlowReturn DropFrame(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_DropSubframe_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.DropSubframe(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L61">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_DropSubframe_" data-uid="GstVideo.VideoDecoder.DropSubframe*"></a>
+  <h4 id="GstVideo_VideoDecoder_DropSubframe_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.DropSubframe(GstVideo.VideoCodecFrame)">DropSubframe(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public FlowReturn DropSubframe(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_FinishFrame_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.FinishFrame(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L71">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_FinishFrame_" data-uid="GstVideo.VideoDecoder.FinishFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_FinishFrame_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.FinishFrame(GstVideo.VideoCodecFrame)">FinishFrame(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlowReturn FinishFrame(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_FinishSubframe_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.FinishSubframe(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L79">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_FinishSubframe_" data-uid="GstVideo.VideoDecoder.FinishSubframe*"></a>
+  <h4 id="GstVideo_VideoDecoder_FinishSubframe_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.FinishSubframe(GstVideo.VideoCodecFrame)">FinishSubframe(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public FlowReturn FinishSubframe(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetBufferPool.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetBufferPool%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L90">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetBufferPool_" data-uid="GstVideo.VideoDecoder.GetBufferPool*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetBufferPool" data-uid="GstVideo.VideoDecoder.GetBufferPool">GetBufferPool()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferPool GetBufferPool()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.BufferPool.html">BufferPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetEstimateRate.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetEstimateRate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L99">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetEstimateRate_" data-uid="GstVideo.VideoDecoder.GetEstimateRate*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetEstimateRate" data-uid="GstVideo.VideoDecoder.GetEstimateRate">GetEstimateRate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEstimateRate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetFrame_System_Int32_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetFrame(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L108">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetFrame_" data-uid="GstVideo.VideoDecoder.GetFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetFrame_System_Int32_" data-uid="GstVideo.VideoDecoder.GetFrame(System.Int32)">GetFrame(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoCodecFrame GetFrame(int frameNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">frameNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetFrames.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetFrames%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L117">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetFrames_" data-uid="GstVideo.VideoDecoder.GetFrames*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetFrames" data-uid="GstVideo.VideoDecoder.GetFrames">GetFrames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List GetFrames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.List.html">List</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetGType.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetGType_" data-uid="GstVideo.VideoDecoder.GetGType*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetGType" data-uid="GstVideo.VideoDecoder.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetInputSubframeIndex_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetInputSubframeIndex(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L125">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetInputSubframeIndex_" data-uid="GstVideo.VideoDecoder.GetInputSubframeIndex*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetInputSubframeIndex_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.GetInputSubframeIndex(GstVideo.VideoCodecFrame)">GetInputSubframeIndex(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public uint GetInputSubframeIndex(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetMaxDecodeTime_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetMaxDecodeTime(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L136">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetMaxDecodeTime_" data-uid="GstVideo.VideoDecoder.GetMaxDecodeTime*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetMaxDecodeTime_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.GetMaxDecodeTime(GstVideo.VideoCodecFrame)">GetMaxDecodeTime(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetMaxDecodeTime(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetMaxErrors.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetMaxErrors%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L145">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetMaxErrors_" data-uid="GstVideo.VideoDecoder.GetMaxErrors*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetMaxErrors" data-uid="GstVideo.VideoDecoder.GetMaxErrors">GetMaxErrors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxErrors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetNeedsFormat.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetNeedsFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L153">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetNeedsFormat_" data-uid="GstVideo.VideoDecoder.GetNeedsFormat*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetNeedsFormat" data-uid="GstVideo.VideoDecoder.GetNeedsFormat">GetNeedsFormat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
+public bool GetNeedsFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetNeedsSyncPoint.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetNeedsSyncPoint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L162">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetNeedsSyncPoint_" data-uid="GstVideo.VideoDecoder.GetNeedsSyncPoint*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetNeedsSyncPoint" data-uid="GstVideo.VideoDecoder.GetNeedsSyncPoint">GetNeedsSyncPoint()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public bool GetNeedsSyncPoint()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetOldestFrame.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetOldestFrame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L172">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetOldestFrame_" data-uid="GstVideo.VideoDecoder.GetOldestFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetOldestFrame" data-uid="GstVideo.VideoDecoder.GetOldestFrame">GetOldestFrame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoCodecFrame GetOldestFrame()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetOutputState.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetOutputState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L181">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetOutputState_" data-uid="GstVideo.VideoDecoder.GetOutputState*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetOutputState" data-uid="GstVideo.VideoDecoder.GetOutputState">GetOutputState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoCodecState GetOutputState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecState.html">VideoCodecState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetPacketized.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetPacketized%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L190">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetPacketized_" data-uid="GstVideo.VideoDecoder.GetPacketized*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetPacketized" data-uid="GstVideo.VideoDecoder.GetPacketized">GetPacketized()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetPacketized()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetPendingFrameSize.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetPendingFrameSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L198">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetPendingFrameSize_" data-uid="GstVideo.VideoDecoder.GetPendingFrameSize*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetPendingFrameSize" data-uid="GstVideo.VideoDecoder.GetPendingFrameSize">GetPendingFrameSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
+public nuint GetPendingFrameSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetProcessedSubframeIndex_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetProcessedSubframeIndex(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L207">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetProcessedSubframeIndex_" data-uid="GstVideo.VideoDecoder.GetProcessedSubframeIndex*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetProcessedSubframeIndex_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.GetProcessedSubframeIndex(GstVideo.VideoCodecFrame)">GetProcessedSubframeIndex(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public uint GetProcessedSubframeIndex(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetQosProportion.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetQosProportion%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L216">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetQosProportion_" data-uid="GstVideo.VideoDecoder.GetQosProportion*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetQosProportion" data-uid="GstVideo.VideoDecoder.GetQosProportion">GetQosProportion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0.3&quot;)]
+public double GetQosProportion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_GetSubframeMode.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.GetSubframeMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L225">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_GetSubframeMode_" data-uid="GstVideo.VideoDecoder.GetSubframeMode*"></a>
+  <h4 id="GstVideo_VideoDecoder_GetSubframeMode" data-uid="GstVideo.VideoDecoder.GetSubframeMode">GetSubframeMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public bool GetSubframeMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_HaveFrame.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.HaveFrame%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L235">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_HaveFrame_" data-uid="GstVideo.VideoDecoder.HaveFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_HaveFrame" data-uid="GstVideo.VideoDecoder.HaveFrame">HaveFrame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlowReturn HaveFrame()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_HaveLastSubframe_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.HaveLastSubframe(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L243">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_HaveLastSubframe_" data-uid="GstVideo.VideoDecoder.HaveLastSubframe*"></a>
+  <h4 id="GstVideo_VideoDecoder_HaveLastSubframe_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.HaveLastSubframe(GstVideo.VideoCodecFrame)">HaveLastSubframe(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public FlowReturn HaveLastSubframe(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_MergeTags_Gst_TagList_Gst_TagMergeMode_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.MergeTags(Gst.TagList%2CGst.TagMergeMode)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L253">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_MergeTags_" data-uid="GstVideo.VideoDecoder.MergeTags*"></a>
+  <h4 id="GstVideo_VideoDecoder_MergeTags_Gst_TagList_Gst_TagMergeMode_" data-uid="GstVideo.VideoDecoder.MergeTags(Gst.TagList,Gst.TagMergeMode)">MergeTags(TagList?, TagMergeMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeTags(TagList? tags, TagMergeMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.TagList.html">TagList</a></td>
+        <td><span class="parametername">tags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.TagMergeMode.html">TagMergeMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_Negotiate.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.Negotiate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L262">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_Negotiate_" data-uid="GstVideo.VideoDecoder.Negotiate*"></a>
+  <h4 id="GstVideo_VideoDecoder_Negotiate" data-uid="GstVideo.VideoDecoder.Negotiate">Negotiate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Negotiate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_ProxyGetcaps_Gst_Caps_Gst_Caps_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.ProxyGetcaps(Gst.Caps%2CGst.Caps)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L270">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_ProxyGetcaps_" data-uid="GstVideo.VideoDecoder.ProxyGetcaps*"></a>
+  <h4 id="GstVideo_VideoDecoder_ProxyGetcaps_Gst_Caps_Gst_Caps_" data-uid="GstVideo.VideoDecoder.ProxyGetcaps(Gst.Caps,Gst.Caps)">ProxyGetcaps(Caps?, Caps?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
+public Caps ProxyGetcaps(Caps? caps, Caps? filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Caps.html">Caps</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Caps.html">Caps</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Caps.html">Caps</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_ReleaseFrame_GstVideo_VideoCodecFrame_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.ReleaseFrame(GstVideo.VideoCodecFrame)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L279">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_ReleaseFrame_" data-uid="GstVideo.VideoDecoder.ReleaseFrame*"></a>
+  <h4 id="GstVideo_VideoDecoder_ReleaseFrame_GstVideo_VideoCodecFrame_" data-uid="GstVideo.VideoDecoder.ReleaseFrame(GstVideo.VideoCodecFrame)">ReleaseFrame(VideoCodecFrame)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.2.2&quot;)]
+public void ReleaseFrame(VideoCodecFrame frame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_RequestSyncPoint_GstVideo_VideoCodecFrame_GstVideo_VideoDecoderRequestSyncPointFlags_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.RequestSyncPoint(GstVideo.VideoCodecFrame%2CGstVideo.VideoDecoderRequestSyncPointFlags)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L288">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_RequestSyncPoint_" data-uid="GstVideo.VideoDecoder.RequestSyncPoint*"></a>
+  <h4 id="GstVideo_VideoDecoder_RequestSyncPoint_GstVideo_VideoCodecFrame_GstVideo_VideoDecoderRequestSyncPointFlags_" data-uid="GstVideo.VideoDecoder.RequestSyncPoint(GstVideo.VideoCodecFrame,GstVideo.VideoDecoderRequestSyncPointFlags)">RequestSyncPoint(VideoCodecFrame, VideoDecoderRequestSyncPointFlags)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public void RequestSyncPoint(VideoCodecFrame frame, VideoDecoderRequestSyncPointFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecFrame.html">VideoCodecFrame</a></td>
+        <td><span class="parametername">frame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoDecoderRequestSyncPointFlags.html">VideoDecoderRequestSyncPointFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetEstimateRate_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetEstimateRate(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L298">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetEstimateRate_" data-uid="GstVideo.VideoDecoder.SetEstimateRate*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetEstimateRate_System_Boolean_" data-uid="GstVideo.VideoDecoder.SetEstimateRate(System.Boolean)">SetEstimateRate(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEstimateRate(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetInterlacedOutputState_GstVideo_VideoFormat_GstVideo_VideoInterlaceMode_System_UInt32_System_UInt32_GstVideo_VideoCodecState_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetInterlacedOutputState(GstVideo.VideoFormat%2CGstVideo.VideoInterlaceMode%2CSystem.UInt32%2CSystem.UInt32%2CGstVideo.VideoCodecState)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L306">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetInterlacedOutputState_" data-uid="GstVideo.VideoDecoder.SetInterlacedOutputState*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetInterlacedOutputState_GstVideo_VideoFormat_GstVideo_VideoInterlaceMode_System_UInt32_System_UInt32_GstVideo_VideoCodecState_" data-uid="GstVideo.VideoDecoder.SetInterlacedOutputState(GstVideo.VideoFormat,GstVideo.VideoInterlaceMode,System.UInt32,System.UInt32,GstVideo.VideoCodecState)">SetInterlacedOutputState(VideoFormat, VideoInterlaceMode, uint, uint, VideoCodecState?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.16.&quot;)]
+public VideoCodecState SetInterlacedOutputState(VideoFormat fmt, VideoInterlaceMode interlaceMode, uint width, uint height, VideoCodecState? reference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoFormat.html">VideoFormat</a></td>
+        <td><span class="parametername">fmt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoInterlaceMode.html">VideoInterlaceMode</a></td>
+        <td><span class="parametername">interlaceMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecState.html">VideoCodecState</a></td>
+        <td><span class="parametername">reference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecState.html">VideoCodecState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetLatency_System_UInt64_System_UInt64_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetLatency(System.UInt64%2CSystem.UInt64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L316">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetLatency_" data-uid="GstVideo.VideoDecoder.SetLatency*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetLatency_System_UInt64_System_UInt64_" data-uid="GstVideo.VideoDecoder.SetLatency(System.UInt64,System.UInt64)">SetLatency(ulong, ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLatency(ulong minLatency, ulong maxLatency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">minLatency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">maxLatency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetMaxErrors_System_Int32_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetMaxErrors(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L325">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetMaxErrors_" data-uid="GstVideo.VideoDecoder.SetMaxErrors*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetMaxErrors_System_Int32_" data-uid="GstVideo.VideoDecoder.SetMaxErrors(System.Int32)">SetMaxErrors(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxErrors(int num)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">num</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetNeedsFormat_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetNeedsFormat(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L333">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetNeedsFormat_" data-uid="GstVideo.VideoDecoder.SetNeedsFormat*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetNeedsFormat_System_Boolean_" data-uid="GstVideo.VideoDecoder.SetNeedsFormat(System.Boolean)">SetNeedsFormat(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
+public void SetNeedsFormat(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetNeedsSyncPoint_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetNeedsSyncPoint(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L342">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetNeedsSyncPoint_" data-uid="GstVideo.VideoDecoder.SetNeedsSyncPoint*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetNeedsSyncPoint_System_Boolean_" data-uid="GstVideo.VideoDecoder.SetNeedsSyncPoint(System.Boolean)">SetNeedsSyncPoint(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public void SetNeedsSyncPoint(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetOutputState_GstVideo_VideoFormat_System_UInt32_System_UInt32_GstVideo_VideoCodecState_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetOutputState(GstVideo.VideoFormat%2CSystem.UInt32%2CSystem.UInt32%2CGstVideo.VideoCodecState)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L352">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetOutputState_" data-uid="GstVideo.VideoDecoder.SetOutputState*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetOutputState_GstVideo_VideoFormat_System_UInt32_System_UInt32_GstVideo_VideoCodecState_" data-uid="GstVideo.VideoDecoder.SetOutputState(GstVideo.VideoFormat,System.UInt32,System.UInt32,GstVideo.VideoCodecState)">SetOutputState(VideoFormat, uint, uint, VideoCodecState?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoCodecState SetOutputState(VideoFormat fmt, uint width, uint height, VideoCodecState? reference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoFormat.html">VideoFormat</a></td>
+        <td><span class="parametername">fmt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecState.html">VideoCodecState</a></td>
+        <td><span class="parametername">reference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstVideo.VideoCodecState.html">VideoCodecState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetPacketized_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetPacketized(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L361">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetPacketized_" data-uid="GstVideo.VideoDecoder.SetPacketized*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetPacketized_System_Boolean_" data-uid="GstVideo.VideoDecoder.SetPacketized(System.Boolean)">SetPacketized(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPacketized(bool packetized)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">packetized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetSubframeMode_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetSubframeMode(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L369">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetSubframeMode_" data-uid="GstVideo.VideoDecoder.SetSubframeMode*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetSubframeMode_System_Boolean_" data-uid="GstVideo.VideoDecoder.SetSubframeMode(System.Boolean)">SetSubframeMode(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public void SetSubframeMode(bool subframeMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">subframeMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder_SetUseDefaultPadAcceptcaps_System_Boolean_.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder.SetUseDefaultPadAcceptcaps(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Methods.Generated.cs/#L378">View Source</a>
+  </span>
+  <a id="GstVideo_VideoDecoder_SetUseDefaultPadAcceptcaps_" data-uid="GstVideo.VideoDecoder.SetUseDefaultPadAcceptcaps*"></a>
+  <h4 id="GstVideo_VideoDecoder_SetUseDefaultPadAcceptcaps_System_Boolean_" data-uid="GstVideo.VideoDecoder.SetUseDefaultPadAcceptcaps(System.Boolean)">SetUseDefaultPadAcceptcaps(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
+public void SetUseDefaultPadAcceptcaps(bool use)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">use</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=GstVideo_VideoDecoder.md&amp;value=---%0Auid%3A%20GstVideo.VideoDecoder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/GstVideo-1.0/Public/VideoDecoder.Properties.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

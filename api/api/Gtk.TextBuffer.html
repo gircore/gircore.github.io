@@ -1,0 +1,3818 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TextBuffer
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TextBuffer
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.TextBuffer">
+
+
+  <h1 id="Gtk_TextBuffer" data-uid="Gtk.TextBuffer" class="text-break">Class TextBuffer
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">TextBuffer</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk-4.0.dll</h6>
+  <h5 id="Gtk_TextBuffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextBuffer : Object, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer__ctor_System_Boolean_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.%23ctor(System.Boolean%2CGObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer__ctor_" data-uid="Gtk.TextBuffer.#ctor*"></a>
+  <h4 id="Gtk_TextBuffer__ctor_System_Boolean_GObject_ConstructArgument___" data-uid="Gtk.TextBuffer.#ctor(System.Boolean,GObject.ConstructArgument[])">TextBuffer(bool, params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBuffer(bool owned, params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">owned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer__ctor_" data-uid="Gtk.TextBuffer.#ctor*"></a>
+  <h4 id="Gtk_TextBuffer__ctor_System_IntPtr_System_Boolean_" data-uid="Gtk.TextBuffer.#ctor(System.IntPtr,System.Boolean)">TextBuffer(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextBuffer(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_ApplyTagSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.ApplyTagSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L31">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_ApplyTagSignal" data-uid="Gtk.TextBuffer.ApplyTagSignal">ApplyTagSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnApplyTag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.ApplyTagSignalArgs&gt; ApplyTagSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.ApplyTagSignalArgs.html">ApplyTagSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_BeginUserActionSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.BeginUserActionSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L50">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_BeginUserActionSignal" data-uid="Gtk.TextBuffer.BeginUserActionSignal">BeginUserActionSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnBeginUserAction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer&gt; BeginUserActionSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CanRedoPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CanRedoPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_CanRedoPropertyDefinition" data-uid="Gtk.TextBuffer.CanRedoPropertyDefinition">CanRedoPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextBuffer&gt; CanRedoPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CanUndoPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CanUndoPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L23">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_CanUndoPropertyDefinition" data-uid="Gtk.TextBuffer.CanUndoPropertyDefinition">CanUndoPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextBuffer&gt; CanUndoPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_ChangedSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.ChangedSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_ChangedSignal" data-uid="Gtk.TextBuffer.ChangedSignal">ChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer&gt; ChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CursorPositionPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CursorPositionPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_CursorPositionPropertyDefinition" data-uid="Gtk.TextBuffer.CursorPositionPropertyDefinition">CursorPositionPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextBuffer&gt; CursorPositionPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_DeleteRangeSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.DeleteRangeSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L97">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_DeleteRangeSignal" data-uid="Gtk.TextBuffer.DeleteRangeSignal">DeleteRangeSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDeleteRange.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.DeleteRangeSignalArgs&gt; DeleteRangeSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.DeleteRangeSignalArgs.html">DeleteRangeSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_EnableUndoPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.EnableUndoPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L45">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_EnableUndoPropertyDefinition" data-uid="Gtk.TextBuffer.EnableUndoPropertyDefinition">EnableUndoPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextBuffer&gt; EnableUndoPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_EndUserActionSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.EndUserActionSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L116">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_EndUserActionSignal" data-uid="Gtk.TextBuffer.EndUserActionSignal">EndUserActionSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnEndUserAction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer&gt; EndUserActionSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_HasSelectionPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.HasSelectionPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_HasSelectionPropertyDefinition" data-uid="Gtk.TextBuffer.HasSelectionPropertyDefinition">HasSelectionPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextBuffer&gt; HasSelectionPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertChildAnchorSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertChildAnchorSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L144">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_InsertChildAnchorSignal" data-uid="Gtk.TextBuffer.InsertChildAnchorSignal">InsertChildAnchorSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnInsertChildAnchor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.InsertChildAnchorSignalArgs&gt; InsertChildAnchorSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.InsertChildAnchorSignalArgs.html">InsertChildAnchorSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertPaintableSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertPaintableSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L172">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_InsertPaintableSignal" data-uid="Gtk.TextBuffer.InsertPaintableSignal">InsertPaintableSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnInsertPaintable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.InsertPaintableSignalArgs&gt; InsertPaintableSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.InsertPaintableSignalArgs.html">InsertPaintableSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertTextSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertTextSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L201">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_InsertTextSignal" data-uid="Gtk.TextBuffer.InsertTextSignal">InsertTextSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnInsertText.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.InsertTextSignalArgs&gt; InsertTextSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.InsertTextSignalArgs.html">InsertTextSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_MarkDeletedSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.MarkDeletedSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L228">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_MarkDeletedSignal" data-uid="Gtk.TextBuffer.MarkDeletedSignal">MarkDeletedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMarkDeleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.MarkDeletedSignalArgs&gt; MarkDeletedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.MarkDeletedSignalArgs.html">MarkDeletedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_MarkSetSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.MarkSetSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L256">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_MarkSetSignal" data-uid="Gtk.TextBuffer.MarkSetSignal">MarkSetSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnMarkSet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.MarkSetSignalArgs&gt; MarkSetSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.MarkSetSignalArgs.html">MarkSetSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_ModifiedChangedSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.ModifiedChangedSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L275">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_ModifiedChangedSignal" data-uid="Gtk.TextBuffer.ModifiedChangedSignal">ModifiedChangedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnModifiedChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer&gt; ModifiedChangedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_PasteDoneSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.PasteDoneSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L302">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_PasteDoneSignal" data-uid="Gtk.TextBuffer.PasteDoneSignal">PasteDoneSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnPasteDone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.PasteDoneSignalArgs&gt; PasteDoneSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.PasteDoneSignalArgs.html">PasteDoneSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_RedoSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.RedoSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L321">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_RedoSignal" data-uid="Gtk.TextBuffer.RedoSignal">RedoSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRedo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer&gt; RedoSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_RemoveTagSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.RemoveTagSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L350">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_RemoveTagSignal" data-uid="Gtk.TextBuffer.RemoveTagSignal">RemoveTagSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRemoveTag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer, TextBuffer.RemoveTagSignalArgs&gt; RemoveTagSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.RemoveTagSignalArgs.html">RemoveTagSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_TagTablePropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.TagTablePropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L68">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_TagTablePropertyDefinition" data-uid="Gtk.TextBuffer.TagTablePropertyDefinition">TagTablePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;TextTagTable?, TextBuffer&gt; TagTablePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="Gtk.TextTagTable.html">TextTagTable</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_TextPropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.TextPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L79">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_TextPropertyDefinition" data-uid="Gtk.TextBuffer.TextPropertyDefinition">TextPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, TextBuffer&gt; TextPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_UndoSignal.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.UndoSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L369">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_UndoSignal" data-uid="Gtk.TextBuffer.UndoSignal">UndoSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnUndo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextBuffer&gt; UndoSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CanRedo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CanRedo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CanRedo_" data-uid="Gtk.TextBuffer.CanRedo*"></a>
+  <h4 id="Gtk_TextBuffer_CanRedo" data-uid="Gtk.TextBuffer.CanRedo">CanRedo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRedo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CanUndo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CanUndo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L28">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CanUndo_" data-uid="Gtk.TextBuffer.CanUndo*"></a>
+  <h4 id="Gtk_TextBuffer_CanUndo" data-uid="Gtk.TextBuffer.CanUndo">CanUndo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUndo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CursorPosition.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CursorPosition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L39">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CursorPosition_" data-uid="Gtk.TextBuffer.CursorPosition*"></a>
+  <h4 id="Gtk_TextBuffer_CursorPosition" data-uid="Gtk.TextBuffer.CursorPosition">CursorPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CursorPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_EnableUndo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.EnableUndo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L50">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_EnableUndo_" data-uid="Gtk.TextBuffer.EnableUndo*"></a>
+  <h4 id="Gtk_TextBuffer_EnableUndo" data-uid="Gtk.TextBuffer.EnableUndo">EnableUndo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableUndo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_HasSelection.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.HasSelection%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L62">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_HasSelection_" data-uid="Gtk.TextBuffer.HasSelection*"></a>
+  <h4 id="Gtk_TextBuffer_HasSelection" data-uid="Gtk.TextBuffer.HasSelection">HasSelection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSelection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_TagTable.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.TagTable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L73">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_TagTable_" data-uid="Gtk.TextBuffer.TagTable*"></a>
+  <h4 id="Gtk_TextBuffer_TagTable" data-uid="Gtk.TextBuffer.TagTable">TagTable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextTagTable? TagTable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextTagTable.html">TextTagTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_Text.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.Text%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Properties.Generated.cs/#L84">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_Text_" data-uid="Gtk.TextBuffer.Text*"></a>
+  <h4 id="Gtk_TextBuffer_Text" data-uid="Gtk.TextBuffer.Text">Text</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Text { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_AddMark_Gtk_TextMark_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.AddMark(Gtk.TextMark%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_AddMark_" data-uid="Gtk.TextBuffer.AddMark*"></a>
+  <h4 id="Gtk_TextBuffer_AddMark_Gtk_TextMark_Gtk_TextIter_" data-uid="Gtk.TextBuffer.AddMark(Gtk.TextMark,Gtk.TextIter)">AddMark(TextMark, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMark(TextMark mark, TextIter where)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td><span class="parametername">mark</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">where</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_AddSelectionClipboard_Gdk_Clipboard_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.AddSelectionClipboard(Gdk.Clipboard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_AddSelectionClipboard_" data-uid="Gtk.TextBuffer.AddSelectionClipboard*"></a>
+  <h4 id="Gtk_TextBuffer_AddSelectionClipboard_Gdk_Clipboard_" data-uid="Gtk.TextBuffer.AddSelectionClipboard(Gdk.Clipboard)">AddSelectionClipboard(Clipboard)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSelectionClipboard(Clipboard clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Clipboard.html">Clipboard</a></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_ApplyTag_Gtk_TextTag_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.ApplyTag(Gtk.TextTag%2CGtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_ApplyTag_" data-uid="Gtk.TextBuffer.ApplyTag*"></a>
+  <h4 id="Gtk_TextBuffer_ApplyTag_Gtk_TextTag_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.ApplyTag(Gtk.TextTag,Gtk.TextIter,Gtk.TextIter)">ApplyTag(TextTag, TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyTag(TextTag tag, TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextTag.html">TextTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_ApplyTagByName_System_String_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.ApplyTagByName(System.String%2CGtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_ApplyTagByName_" data-uid="Gtk.TextBuffer.ApplyTagByName*"></a>
+  <h4 id="Gtk_TextBuffer_ApplyTagByName_System_String_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.ApplyTagByName(System.String,Gtk.TextIter,Gtk.TextIter)">ApplyTagByName(string, TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyTagByName(string name, TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_Backspace_Gtk_TextIter_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.Backspace(Gtk.TextIter%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_Backspace_" data-uid="Gtk.TextBuffer.Backspace*"></a>
+  <h4 id="Gtk_TextBuffer_Backspace_Gtk_TextIter_System_Boolean_System_Boolean_" data-uid="Gtk.TextBuffer.Backspace(Gtk.TextIter,System.Boolean,System.Boolean)">Backspace(TextIter, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Backspace(TextIter iter, bool interactive, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">interactive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_BeginIrreversibleAction.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.BeginIrreversibleAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L62">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_BeginIrreversibleAction_" data-uid="Gtk.TextBuffer.BeginIrreversibleAction*"></a>
+  <h4 id="Gtk_TextBuffer_BeginIrreversibleAction" data-uid="Gtk.TextBuffer.BeginIrreversibleAction">BeginIrreversibleAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginIrreversibleAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_BeginUserAction.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.BeginUserAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L71">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_BeginUserAction_" data-uid="Gtk.TextBuffer.BeginUserAction*"></a>
+  <h4 id="Gtk_TextBuffer_BeginUserAction" data-uid="Gtk.TextBuffer.BeginUserAction">BeginUserAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginUserAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CopyClipboard_Gdk_Clipboard_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CopyClipboard(Gdk.Clipboard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L80">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CopyClipboard_" data-uid="Gtk.TextBuffer.CopyClipboard*"></a>
+  <h4 id="Gtk_TextBuffer_CopyClipboard_Gdk_Clipboard_" data-uid="Gtk.TextBuffer.CopyClipboard(Gdk.Clipboard)">CopyClipboard(Clipboard)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyClipboard(Clipboard clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Clipboard.html">Clipboard</a></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CreateChildAnchor_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CreateChildAnchor(Gtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L89">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CreateChildAnchor_" data-uid="Gtk.TextBuffer.CreateChildAnchor*"></a>
+  <h4 id="Gtk_TextBuffer_CreateChildAnchor_Gtk_TextIter_" data-uid="Gtk.TextBuffer.CreateChildAnchor(Gtk.TextIter)">CreateChildAnchor(TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextChildAnchor CreateChildAnchor(TextIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextChildAnchor.html">TextChildAnchor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CreateMark_System_String_Gtk_TextIter_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CreateMark(System.String%2CGtk.TextIter%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L98">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CreateMark_" data-uid="Gtk.TextBuffer.CreateMark*"></a>
+  <h4 id="Gtk_TextBuffer_CreateMark_System_String_Gtk_TextIter_System_Boolean_" data-uid="Gtk.TextBuffer.CreateMark(System.String,Gtk.TextIter,System.Boolean)">CreateMark(string?, TextIter, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMark CreateMark(string? markName, TextIter where, bool leftGravity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">markName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">where</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">leftGravity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_CutClipboard_Gdk_Clipboard_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.CutClipboard(Gdk.Clipboard%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L107">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_CutClipboard_" data-uid="Gtk.TextBuffer.CutClipboard*"></a>
+  <h4 id="Gtk_TextBuffer_CutClipboard_Gdk_Clipboard_System_Boolean_" data-uid="Gtk.TextBuffer.CutClipboard(Gdk.Clipboard,System.Boolean)">CutClipboard(Clipboard, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CutClipboard(Clipboard clipboard, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Clipboard.html">Clipboard</a></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_Delete_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.Delete(Gtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L116">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_Delete_" data-uid="Gtk.TextBuffer.Delete*"></a>
+  <h4 id="Gtk_TextBuffer_Delete_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.Delete(Gtk.TextIter,Gtk.TextIter)">Delete(TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_DeleteInteractive_Gtk_TextIter_Gtk_TextIter_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.DeleteInteractive(Gtk.TextIter%2CGtk.TextIter%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L125">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_DeleteInteractive_" data-uid="Gtk.TextBuffer.DeleteInteractive*"></a>
+  <h4 id="Gtk_TextBuffer_DeleteInteractive_Gtk_TextIter_Gtk_TextIter_System_Boolean_" data-uid="Gtk.TextBuffer.DeleteInteractive(Gtk.TextIter,Gtk.TextIter,System.Boolean)">DeleteInteractive(TextIter, TextIter, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteInteractive(TextIter startIter, TextIter endIter, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">startIter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">endIter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_DeleteMark_Gtk_TextMark_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.DeleteMark(Gtk.TextMark)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L134">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_DeleteMark_" data-uid="Gtk.TextBuffer.DeleteMark*"></a>
+  <h4 id="Gtk_TextBuffer_DeleteMark_Gtk_TextMark_" data-uid="Gtk.TextBuffer.DeleteMark(Gtk.TextMark)">DeleteMark(TextMark)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteMark(TextMark mark)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td><span class="parametername">mark</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_DeleteMarkByName_System_String_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.DeleteMarkByName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L143">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_DeleteMarkByName_" data-uid="Gtk.TextBuffer.DeleteMarkByName*"></a>
+  <h4 id="Gtk_TextBuffer_DeleteMarkByName_System_String_" data-uid="Gtk.TextBuffer.DeleteMarkByName(System.String)">DeleteMarkByName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteMarkByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_DeleteSelection_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.DeleteSelection(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L152">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_DeleteSelection_" data-uid="Gtk.TextBuffer.DeleteSelection*"></a>
+  <h4 id="Gtk_TextBuffer_DeleteSelection_System_Boolean_System_Boolean_" data-uid="Gtk.TextBuffer.DeleteSelection(System.Boolean,System.Boolean)">DeleteSelection(bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DeleteSelection(bool interactive, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">interactive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_EndIrreversibleAction.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.EndIrreversibleAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L161">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_EndIrreversibleAction_" data-uid="Gtk.TextBuffer.EndIrreversibleAction*"></a>
+  <h4 id="Gtk_TextBuffer_EndIrreversibleAction" data-uid="Gtk.TextBuffer.EndIrreversibleAction">EndIrreversibleAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndIrreversibleAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_EndUserAction.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.EndUserAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L170">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_EndUserAction_" data-uid="Gtk.TextBuffer.EndUserAction*"></a>
+  <h4 id="Gtk_TextBuffer_EndUserAction" data-uid="Gtk.TextBuffer.EndUserAction">EndUserAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndUserAction()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetCanRedo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetCanRedo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L180">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetCanRedo_" data-uid="Gtk.TextBuffer.GetCanRedo*"></a>
+  <h4 id="Gtk_TextBuffer_GetCanRedo" data-uid="Gtk.TextBuffer.GetCanRedo">GetCanRedo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCanRedo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetCanUndo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetCanUndo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L189">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetCanUndo_" data-uid="Gtk.TextBuffer.GetCanUndo*"></a>
+  <h4 id="Gtk_TextBuffer_GetCanUndo" data-uid="Gtk.TextBuffer.GetCanUndo">GetCanUndo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCanUndo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetCharCount.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetCharCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L198">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetCharCount_" data-uid="Gtk.TextBuffer.GetCharCount*"></a>
+  <h4 id="Gtk_TextBuffer_GetCharCount" data-uid="Gtk.TextBuffer.GetCharCount">GetCharCount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCharCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetEnableUndo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetEnableUndo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L207">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetEnableUndo_" data-uid="Gtk.TextBuffer.GetEnableUndo*"></a>
+  <h4 id="Gtk_TextBuffer_GetEnableUndo" data-uid="Gtk.TextBuffer.GetEnableUndo">GetEnableUndo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetEnableUndo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetGType.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetGType_" data-uid="Gtk.TextBuffer.GetGType*"></a>
+  <h4 id="Gtk_TextBuffer_GetGType" data-uid="Gtk.TextBuffer.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetHasSelection.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetHasSelection%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L217">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetHasSelection_" data-uid="Gtk.TextBuffer.GetHasSelection*"></a>
+  <h4 id="Gtk_TextBuffer_GetHasSelection" data-uid="Gtk.TextBuffer.GetHasSelection">GetHasSelection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetHasSelection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetInsert.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetInsert%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L226">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetInsert_" data-uid="Gtk.TextBuffer.GetInsert*"></a>
+  <h4 id="Gtk_TextBuffer_GetInsert" data-uid="Gtk.TextBuffer.GetInsert">GetInsert()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMark GetInsert()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetLineCount.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetLineCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L241">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetLineCount_" data-uid="Gtk.TextBuffer.GetLineCount*"></a>
+  <h4 id="Gtk_TextBuffer_GetLineCount" data-uid="Gtk.TextBuffer.GetLineCount">GetLineCount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLineCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetMark_System_String_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetMark(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L250">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetMark_" data-uid="Gtk.TextBuffer.GetMark*"></a>
+  <h4 id="Gtk_TextBuffer_GetMark_System_String_" data-uid="Gtk.TextBuffer.GetMark(System.String)">GetMark(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMark? GetMark(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetMaxUndoLevels.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetMaxUndoLevels%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L259">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetMaxUndoLevels_" data-uid="Gtk.TextBuffer.GetMaxUndoLevels*"></a>
+  <h4 id="Gtk_TextBuffer_GetMaxUndoLevels" data-uid="Gtk.TextBuffer.GetMaxUndoLevels">GetMaxUndoLevels()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetMaxUndoLevels()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetModified.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetModified%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L268">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetModified_" data-uid="Gtk.TextBuffer.GetModified*"></a>
+  <h4 id="Gtk_TextBuffer_GetModified" data-uid="Gtk.TextBuffer.GetModified">GetModified()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetModified()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetSelectionBound.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetSelectionBound%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L277">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetSelectionBound_" data-uid="Gtk.TextBuffer.GetSelectionBound*"></a>
+  <h4 id="Gtk_TextBuffer_GetSelectionBound" data-uid="Gtk.TextBuffer.GetSelectionBound">GetSelectionBound()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMark GetSelectionBound()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetSelectionContent.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetSelectionContent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L287">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetSelectionContent_" data-uid="Gtk.TextBuffer.GetSelectionContent*"></a>
+  <h4 id="Gtk_TextBuffer_GetSelectionContent" data-uid="Gtk.TextBuffer.GetSelectionContent">GetSelectionContent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProvider GetSelectionContent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetSlice_Gtk_TextIter_Gtk_TextIter_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetSlice(Gtk.TextIter%2CGtk.TextIter%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L296">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetSlice_" data-uid="Gtk.TextBuffer.GetSlice*"></a>
+  <h4 id="Gtk_TextBuffer_GetSlice_Gtk_TextIter_Gtk_TextIter_System_Boolean_" data-uid="Gtk.TextBuffer.GetSlice(Gtk.TextIter,Gtk.TextIter,System.Boolean)">GetSlice(TextIter, TextIter, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSlice(TextIter start, TextIter end, bool includeHiddenChars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">includeHiddenChars</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetTagTable.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetTagTable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L306">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetTagTable_" data-uid="Gtk.TextBuffer.GetTagTable*"></a>
+  <h4 id="Gtk_TextBuffer_GetTagTable" data-uid="Gtk.TextBuffer.GetTagTable">GetTagTable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextTagTable GetTagTable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextTagTable.html">TextTagTable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_GetText_Gtk_TextIter_Gtk_TextIter_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.GetText(Gtk.TextIter%2CGtk.TextIter%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L315">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_GetText_" data-uid="Gtk.TextBuffer.GetText*"></a>
+  <h4 id="Gtk_TextBuffer_GetText_Gtk_TextIter_Gtk_TextIter_System_Boolean_" data-uid="Gtk.TextBuffer.GetText(Gtk.TextIter,Gtk.TextIter,System.Boolean)">GetText(TextIter, TextIter, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetText(TextIter start, TextIter end, bool includeHiddenChars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">includeHiddenChars</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_Insert_Gtk_TextIter_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.Insert(Gtk.TextIter%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L324">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_Insert_" data-uid="Gtk.TextBuffer.Insert*"></a>
+  <h4 id="Gtk_TextBuffer_Insert_Gtk_TextIter_System_String_System_Int32_" data-uid="Gtk.TextBuffer.Insert(Gtk.TextIter,System.String,System.Int32)">Insert(TextIter, string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(TextIter iter, string text, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertAtCursor_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertAtCursor(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L333">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertAtCursor_" data-uid="Gtk.TextBuffer.InsertAtCursor*"></a>
+  <h4 id="Gtk_TextBuffer_InsertAtCursor_System_String_System_Int32_" data-uid="Gtk.TextBuffer.InsertAtCursor(System.String,System.Int32)">InsertAtCursor(string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertAtCursor(string text, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertChildAnchor_Gtk_TextIter_Gtk_TextChildAnchor_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertChildAnchor(Gtk.TextIter%2CGtk.TextChildAnchor)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L342">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertChildAnchor_" data-uid="Gtk.TextBuffer.InsertChildAnchor*"></a>
+  <h4 id="Gtk_TextBuffer_InsertChildAnchor_Gtk_TextIter_Gtk_TextChildAnchor_" data-uid="Gtk.TextBuffer.InsertChildAnchor(Gtk.TextIter,Gtk.TextChildAnchor)">InsertChildAnchor(TextIter, TextChildAnchor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertChildAnchor(TextIter iter, TextChildAnchor anchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextChildAnchor.html">TextChildAnchor</a></td>
+        <td><span class="parametername">anchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertInteractive_Gtk_TextIter_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertInteractive(Gtk.TextIter%2CSystem.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L351">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertInteractive_" data-uid="Gtk.TextBuffer.InsertInteractive*"></a>
+  <h4 id="Gtk_TextBuffer_InsertInteractive_Gtk_TextIter_System_String_System_Int32_System_Boolean_" data-uid="Gtk.TextBuffer.InsertInteractive(Gtk.TextIter,System.String,System.Int32,System.Boolean)">InsertInteractive(TextIter, string, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsertInteractive(TextIter iter, string text, int len, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertInteractiveAtCursor_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertInteractiveAtCursor(System.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L360">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertInteractiveAtCursor_" data-uid="Gtk.TextBuffer.InsertInteractiveAtCursor*"></a>
+  <h4 id="Gtk_TextBuffer_InsertInteractiveAtCursor_System_String_System_Int32_System_Boolean_" data-uid="Gtk.TextBuffer.InsertInteractiveAtCursor(System.String,System.Int32,System.Boolean)">InsertInteractiveAtCursor(string, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsertInteractiveAtCursor(string text, int len, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertMarkup_Gtk_TextIter_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertMarkup(Gtk.TextIter%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L369">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertMarkup_" data-uid="Gtk.TextBuffer.InsertMarkup*"></a>
+  <h4 id="Gtk_TextBuffer_InsertMarkup_Gtk_TextIter_System_String_System_Int32_" data-uid="Gtk.TextBuffer.InsertMarkup(Gtk.TextIter,System.String,System.Int32)">InsertMarkup(TextIter, string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertMarkup(TextIter iter, string markup, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">markup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertPaintable_Gtk_TextIter_Gdk_Paintable_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertPaintable(Gtk.TextIter%2CGdk.Paintable)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L378">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertPaintable_" data-uid="Gtk.TextBuffer.InsertPaintable*"></a>
+  <h4 id="Gtk_TextBuffer_InsertPaintable_Gtk_TextIter_Gdk_Paintable_" data-uid="Gtk.TextBuffer.InsertPaintable(Gtk.TextIter,Gdk.Paintable)">InsertPaintable(TextIter, Paintable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertPaintable(TextIter iter, Paintable paintable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.Paintable.html">Paintable</a></td>
+        <td><span class="parametername">paintable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertRange_Gtk_TextIter_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertRange(Gtk.TextIter%2CGtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L387">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertRange_" data-uid="Gtk.TextBuffer.InsertRange*"></a>
+  <h4 id="Gtk_TextBuffer_InsertRange_Gtk_TextIter_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.InsertRange(Gtk.TextIter,Gtk.TextIter,Gtk.TextIter)">InsertRange(TextIter, TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertRange(TextIter iter, TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_InsertRangeInteractive_Gtk_TextIter_Gtk_TextIter_Gtk_TextIter_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.InsertRangeInteractive(Gtk.TextIter%2CGtk.TextIter%2CGtk.TextIter%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L396">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_InsertRangeInteractive_" data-uid="Gtk.TextBuffer.InsertRangeInteractive*"></a>
+  <h4 id="Gtk_TextBuffer_InsertRangeInteractive_Gtk_TextIter_Gtk_TextIter_Gtk_TextIter_System_Boolean_" data-uid="Gtk.TextBuffer.InsertRangeInteractive(Gtk.TextIter,Gtk.TextIter,Gtk.TextIter,System.Boolean)">InsertRangeInteractive(TextIter, TextIter, TextIter, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InsertRangeInteractive(TextIter iter, TextIter start, TextIter end, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_MoveMark_Gtk_TextMark_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.MoveMark(Gtk.TextMark%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L405">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_MoveMark_" data-uid="Gtk.TextBuffer.MoveMark*"></a>
+  <h4 id="Gtk_TextBuffer_MoveMark_Gtk_TextMark_Gtk_TextIter_" data-uid="Gtk.TextBuffer.MoveMark(Gtk.TextMark,Gtk.TextIter)">MoveMark(TextMark, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveMark(TextMark mark, TextIter where)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextMark.html">TextMark</a></td>
+        <td><span class="parametername">mark</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">where</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_MoveMarkByName_System_String_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.MoveMarkByName(System.String%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L414">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_MoveMarkByName_" data-uid="Gtk.TextBuffer.MoveMarkByName*"></a>
+  <h4 id="Gtk_TextBuffer_MoveMarkByName_System_String_Gtk_TextIter_" data-uid="Gtk.TextBuffer.MoveMarkByName(System.String,Gtk.TextIter)">MoveMarkByName(string, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveMarkByName(string name, TextIter where)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">where</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_New_Gtk_TextTagTable_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.New(Gtk.TextTagTable)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Constructors.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_New_" data-uid="Gtk.TextBuffer.New*"></a>
+  <h4 id="Gtk_TextBuffer_New_Gtk_TextTagTable_" data-uid="Gtk.TextBuffer.New(Gtk.TextTagTable)">New(TextTagTable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TextBuffer New(TextTagTable? table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextTagTable.html">TextTagTable</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_PasteClipboard_Gdk_Clipboard_Gtk_TextIter_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.PasteClipboard(Gdk.Clipboard%2CGtk.TextIter%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L423">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_PasteClipboard_" data-uid="Gtk.TextBuffer.PasteClipboard*"></a>
+  <h4 id="Gtk_TextBuffer_PasteClipboard_Gdk_Clipboard_Gtk_TextIter_System_Boolean_" data-uid="Gtk.TextBuffer.PasteClipboard(Gdk.Clipboard,Gtk.TextIter,System.Boolean)">PasteClipboard(Clipboard, TextIter?, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PasteClipboard(Clipboard clipboard, TextIter? overrideLocation, bool defaultEditable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Clipboard.html">Clipboard</a></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">overrideLocation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">defaultEditable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_PlaceCursor_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.PlaceCursor(Gtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L432">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_PlaceCursor_" data-uid="Gtk.TextBuffer.PlaceCursor*"></a>
+  <h4 id="Gtk_TextBuffer_PlaceCursor_Gtk_TextIter_" data-uid="Gtk.TextBuffer.PlaceCursor(Gtk.TextIter)">PlaceCursor(TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceCursor(TextIter where)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">where</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_Redo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.Redo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L441">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_Redo_" data-uid="Gtk.TextBuffer.Redo*"></a>
+  <h4 id="Gtk_TextBuffer_Redo" data-uid="Gtk.TextBuffer.Redo">Redo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Redo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_RemoveAllTags_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.RemoveAllTags(Gtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L450">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_RemoveAllTags_" data-uid="Gtk.TextBuffer.RemoveAllTags*"></a>
+  <h4 id="Gtk_TextBuffer_RemoveAllTags_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.RemoveAllTags(Gtk.TextIter,Gtk.TextIter)">RemoveAllTags(TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllTags(TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_RemoveSelectionClipboard_Gdk_Clipboard_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.RemoveSelectionClipboard(Gdk.Clipboard)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L459">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_RemoveSelectionClipboard_" data-uid="Gtk.TextBuffer.RemoveSelectionClipboard*"></a>
+  <h4 id="Gtk_TextBuffer_RemoveSelectionClipboard_Gdk_Clipboard_" data-uid="Gtk.TextBuffer.RemoveSelectionClipboard(Gdk.Clipboard)">RemoveSelectionClipboard(Clipboard)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSelectionClipboard(Clipboard clipboard)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.Clipboard.html">Clipboard</a></td>
+        <td><span class="parametername">clipboard</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_RemoveTag_Gtk_TextTag_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.RemoveTag(Gtk.TextTag%2CGtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L468">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_RemoveTag_" data-uid="Gtk.TextBuffer.RemoveTag*"></a>
+  <h4 id="Gtk_TextBuffer_RemoveTag_Gtk_TextTag_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.RemoveTag(Gtk.TextTag,Gtk.TextIter,Gtk.TextIter)">RemoveTag(TextTag, TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTag(TextTag tag, TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextTag.html">TextTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_RemoveTagByName_System_String_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.RemoveTagByName(System.String%2CGtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L477">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_RemoveTagByName_" data-uid="Gtk.TextBuffer.RemoveTagByName*"></a>
+  <h4 id="Gtk_TextBuffer_RemoveTagByName_System_String_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.RemoveTagByName(System.String,Gtk.TextIter,Gtk.TextIter)">RemoveTagByName(string, TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTagByName(string name, TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_SelectRange_Gtk_TextIter_Gtk_TextIter_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.SelectRange(Gtk.TextIter%2CGtk.TextIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L486">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_SelectRange_" data-uid="Gtk.TextBuffer.SelectRange*"></a>
+  <h4 id="Gtk_TextBuffer_SelectRange_Gtk_TextIter_Gtk_TextIter_" data-uid="Gtk.TextBuffer.SelectRange(Gtk.TextIter,Gtk.TextIter)">SelectRange(TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectRange(TextIter ins, TextIter bound)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">ins</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">bound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_SetEnableUndo_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.SetEnableUndo(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L495">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_SetEnableUndo_" data-uid="Gtk.TextBuffer.SetEnableUndo*"></a>
+  <h4 id="Gtk_TextBuffer_SetEnableUndo_System_Boolean_" data-uid="Gtk.TextBuffer.SetEnableUndo(System.Boolean)">SetEnableUndo(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnableUndo(bool enableUndo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">enableUndo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_SetMaxUndoLevels_System_UInt32_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.SetMaxUndoLevels(System.UInt32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L504">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_SetMaxUndoLevels_" data-uid="Gtk.TextBuffer.SetMaxUndoLevels*"></a>
+  <h4 id="Gtk_TextBuffer_SetMaxUndoLevels_System_UInt32_" data-uid="Gtk.TextBuffer.SetMaxUndoLevels(System.UInt32)">SetMaxUndoLevels(uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxUndoLevels(uint maxUndoLevels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">maxUndoLevels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_SetModified_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.SetModified(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L513">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_SetModified_" data-uid="Gtk.TextBuffer.SetModified*"></a>
+  <h4 id="Gtk_TextBuffer_SetModified_System_Boolean_" data-uid="Gtk.TextBuffer.SetModified(System.Boolean)">SetModified(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetModified(bool setting)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">setting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_SetText_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.SetText(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L522">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_SetText_" data-uid="Gtk.TextBuffer.SetText*"></a>
+  <h4 id="Gtk_TextBuffer_SetText_System_String_System_Int32_" data-uid="Gtk.TextBuffer.SetText(System.String,System.Int32)">SetText(string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetText(string text, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_Undo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.Undo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Methods.Generated.cs/#L531">View Source</a>
+  </span>
+  <a id="Gtk_TextBuffer_Undo_" data-uid="Gtk.TextBuffer.Undo*"></a>
+  <h4 id="Gtk_TextBuffer_Undo" data-uid="Gtk.TextBuffer.Undo">Undo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Undo()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnApplyTag.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnApplyTag%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L36">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnApplyTag" data-uid="Gtk.TextBuffer.OnApplyTag">OnApplyTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.ApplyTagSignalArgs&gt; OnApplyTag</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.ApplyTagSignalArgs.html">ApplyTagSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnBeginUserAction.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnBeginUserAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L55">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnBeginUserAction" data-uid="Gtk.TextBuffer.OnBeginUserAction">OnBeginUserAction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer&gt; OnBeginUserAction</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnChanged.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L74">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnChanged" data-uid="Gtk.TextBuffer.OnChanged">OnChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer&gt; OnChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnDeleteRange.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnDeleteRange%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L102">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnDeleteRange" data-uid="Gtk.TextBuffer.OnDeleteRange">OnDeleteRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.DeleteRangeSignalArgs&gt; OnDeleteRange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.DeleteRangeSignalArgs.html">DeleteRangeSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnEndUserAction.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnEndUserAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L121">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnEndUserAction" data-uid="Gtk.TextBuffer.OnEndUserAction">OnEndUserAction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer&gt; OnEndUserAction</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnInsertChildAnchor.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnInsertChildAnchor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L149">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnInsertChildAnchor" data-uid="Gtk.TextBuffer.OnInsertChildAnchor">OnInsertChildAnchor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.InsertChildAnchorSignalArgs&gt; OnInsertChildAnchor</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.InsertChildAnchorSignalArgs.html">InsertChildAnchorSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnInsertPaintable.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnInsertPaintable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L177">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnInsertPaintable" data-uid="Gtk.TextBuffer.OnInsertPaintable">OnInsertPaintable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.InsertPaintableSignalArgs&gt; OnInsertPaintable</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.InsertPaintableSignalArgs.html">InsertPaintableSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnInsertText.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnInsertText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L206">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnInsertText" data-uid="Gtk.TextBuffer.OnInsertText">OnInsertText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.InsertTextSignalArgs&gt; OnInsertText</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.InsertTextSignalArgs.html">InsertTextSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnMarkDeleted.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnMarkDeleted%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L233">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnMarkDeleted" data-uid="Gtk.TextBuffer.OnMarkDeleted">OnMarkDeleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.MarkDeletedSignalArgs&gt; OnMarkDeleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.MarkDeletedSignalArgs.html">MarkDeletedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnMarkSet.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnMarkSet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L261">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnMarkSet" data-uid="Gtk.TextBuffer.OnMarkSet">OnMarkSet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.MarkSetSignalArgs&gt; OnMarkSet</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.MarkSetSignalArgs.html">MarkSetSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnModifiedChanged.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnModifiedChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L280">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnModifiedChanged" data-uid="Gtk.TextBuffer.OnModifiedChanged">OnModifiedChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer&gt; OnModifiedChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnPasteDone.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnPasteDone%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L307">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnPasteDone" data-uid="Gtk.TextBuffer.OnPasteDone">OnPasteDone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.PasteDoneSignalArgs&gt; OnPasteDone</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.PasteDoneSignalArgs.html">PasteDoneSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnRedo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnRedo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L326">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnRedo" data-uid="Gtk.TextBuffer.OnRedo">OnRedo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer&gt; OnRedo</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnRemoveTag.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnRemoveTag%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L355">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnRemoveTag" data-uid="Gtk.TextBuffer.OnRemoveTag">OnRemoveTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer, TextBuffer.RemoveTagSignalArgs&gt; OnRemoveTag</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>, <a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>.<a class="xref" href="Gtk.TextBuffer.RemoveTagSignalArgs.html">RemoveTagSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer_OnUndo.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer.OnUndo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L374">View Source</a>
+  </span>
+  <h4 id="Gtk_TextBuffer_OnUndo" data-uid="Gtk.TextBuffer.OnUndo">OnUndo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextBuffer&gt; OnUndo</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TextBuffer.md&amp;value=---%0Auid%3A%20Gtk.TextBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TextBuffer.Signals.Generated.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

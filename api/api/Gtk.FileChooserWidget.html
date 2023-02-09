@@ -1,0 +1,3075 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class FileChooserWidget
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class FileChooserWidget
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.FileChooserWidget">
+
+
+  <h1 id="Gtk_FileChooserWidget" data-uid="Gtk.FileChooserWidget" class="text-break">Class FileChooserWidget
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gtk.Widget.html">Widget</a></div>
+    <div class="level4"><span class="xref">FileChooserWidget</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Gtk.Accessible.html">Accessible</a></div>
+    <div><a class="xref" href="Gtk.Buildable.html">Buildable</a></div>
+    <div><a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a></div>
+    <div><a class="xref" href="Gtk.FileChooser.html">FileChooser</a></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDefaultDirection">Widget.GetDefaultDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetDefaultDirection_Gtk_TextDirection_">Widget.SetDefaultDirection(TextDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActionSetEnabled_System_String_System_Boolean_">Widget.ActionSetEnabled(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Activate">Widget.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateActionVariant_System_String_GLib_Variant_">Widget.ActivateActionVariant(string, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateDefault">Widget.ActivateDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddController_Gtk_EventController_">Widget.AddController(EventController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddCssClass_System_String_">Widget.AddCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddMnemonicLabel_Gtk_Widget_">Widget.AddMnemonicLabel(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddTickCallback_Gtk_TickCallback_">Widget.AddTickCallback(TickCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Allocate_System_Int32_System_Int32_System_Int32_Gsk_Transform_">Widget.Allocate(int, int, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ChildFocus_Gtk_DirectionType_">Widget.ChildFocus(DirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ComputeExpand_Gtk_Orientation_">Widget.ComputeExpand(Orientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Contains_System_Double_System_Double_">Widget.Contains(double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoContext">Widget.CreatePangoContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoLayout_System_String_">Widget.CreatePangoLayout(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DisposeTemplate_System_UIntPtr_">Widget.DisposeTemplate(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragCheckThreshold_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.DragCheckThreshold(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ErrorBell">Widget.ErrorBell()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedBaseline">Widget.GetAllocatedBaseline()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedHeight">Widget.GetAllocatedHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedWidth">Widget.GetAllocatedWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAncestor_System_UIntPtr_">Widget.GetAncestor(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanFocus">Widget.GetCanFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanTarget">Widget.GetCanTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetChildVisible">Widget.GetChildVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetClipboard">Widget.GetClipboard()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCssClasses">Widget.GetCssClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCssName">Widget.GetCssName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCursor">Widget.GetCursor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDirection">Widget.GetDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDisplay">Widget.GetDisplay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFirstChild">Widget.GetFirstChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusChild">Widget.GetFocusChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusOnClick">Widget.GetFocusOnClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusable">Widget.GetFocusable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFontMap">Widget.GetFontMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFontOptions">Widget.GetFontOptions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFrameClock">Widget.GetFrameClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHalign">Widget.GetHalign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasTooltip">Widget.GetHasTooltip()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHeight">Widget.GetHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHexpand">Widget.GetHexpand()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHexpandSet">Widget.GetHexpandSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetLastChild">Widget.GetLastChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetLayoutManager">Widget.GetLayoutManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMapped">Widget.GetMapped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginBottom">Widget.GetMarginBottom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginEnd">Widget.GetMarginEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginStart">Widget.GetMarginStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginTop">Widget.GetMarginTop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetName">Widget.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetNative">Widget.GetNative()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetNextSibling">Widget.GetNextSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetOpacity">Widget.GetOpacity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetOverflow">Widget.GetOverflow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPangoContext">Widget.GetPangoContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetParent">Widget.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPrevSibling">Widget.GetPrevSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPrimaryClipboard">Widget.GetPrimaryClipboard()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRealized">Widget.GetRealized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetReceivesDefault">Widget.GetReceivesDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRequestMode">Widget.GetRequestMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRoot">Widget.GetRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetScaleFactor">Widget.GetScaleFactor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSensitive">Widget.GetSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSettings">Widget.GetSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSize_Gtk_Orientation_">Widget.GetSize(Orientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStateFlags">Widget.GetStateFlags()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStyleContext">Widget.GetStyleContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTemplateChild_System_UIntPtr_System_String_">Widget.GetTemplateChild(nuint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipMarkup">Widget.GetTooltipMarkup()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipText">Widget.GetTooltipText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetValign">Widget.GetValign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVexpand">Widget.GetVexpand()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVexpandSet">Widget.GetVexpandSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVisible">Widget.GetVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetWidth">Widget.GetWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabFocus">Widget.GrabFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasCssClass_System_String_">Widget.HasCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasDefault">Widget.GetHasDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasFocus">Widget.GetHasFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasVisibleFocus">Widget.HasVisibleFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Hide">Widget.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InDestruction">Widget.InDestruction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InitTemplate">Widget.InitTemplate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertActionGroup_System_String_Gio_ActionGroup_">Widget.InsertActionGroup(string, ActionGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertAfter_Gtk_Widget_Gtk_Widget_">Widget.InsertAfter(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertBefore_Gtk_Widget_Gtk_Widget_">Widget.InsertBefore(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsAncestor_Gtk_Widget_">Widget.IsAncestor(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsDrawable">Widget.IsDrawable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsFocus">Widget.IsFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsSensitive">Widget.IsSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsVisible">Widget.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailed_Gtk_DirectionType_">Widget.KeynavFailed(DirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ListMnemonicLabels">Widget.ListMnemonicLabels()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Map">Widget.Map()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivate_System_Boolean_">Widget.MnemonicActivate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ObserveChildren">Widget.ObserveChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ObserveControllers">Widget.ObserveControllers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Pick_System_Double_System_Double_Gtk_PickFlags_">Widget.Pick(double, double, PickFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueAllocate">Widget.QueueAllocate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueDraw">Widget.QueueDraw()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueResize">Widget.QueueResize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Realize">Widget.Realize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveController_Gtk_EventController_">Widget.RemoveController(EventController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveCssClass_System_String_">Widget.RemoveCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveMnemonicLabel_Gtk_Widget_">Widget.RemoveMnemonicLabel(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveTickCallback_System_UInt32_">Widget.RemoveTickCallback(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCanFocus_System_Boolean_">Widget.SetCanFocus(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCanTarget_System_Boolean_">Widget.SetCanTarget(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetChildVisible_System_Boolean_">Widget.SetChildVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCssClasses_System_String___">Widget.SetCssClasses(string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCursor_Gdk_Cursor_">Widget.SetCursor(Cursor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCursorFromName_System_String_">Widget.SetCursorFromName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetDirection_Gtk_TextDirection_">Widget.SetDirection(TextDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusChild_Gtk_Widget_">Widget.SetFocusChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusOnClick_System_Boolean_">Widget.SetFocusOnClick(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusable_System_Boolean_">Widget.SetFocusable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFontMap_Pango_FontMap_">Widget.SetFontMap(FontMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFontOptions_Cairo_FontOptions_">Widget.SetFontOptions(FontOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHalign_Gtk_Align_">Widget.SetHalign(Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHasTooltip_System_Boolean_">Widget.SetHasTooltip(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHexpand_System_Boolean_">Widget.SetHexpand(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHexpandSet_System_Boolean_">Widget.SetHexpandSet(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetLayoutManager_Gtk_LayoutManager_">Widget.SetLayoutManager(LayoutManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginBottom_System_Int32_">Widget.SetMarginBottom(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginEnd_System_Int32_">Widget.SetMarginEnd(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginStart_System_Int32_">Widget.SetMarginStart(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginTop_System_Int32_">Widget.SetMarginTop(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetName_System_String_">Widget.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetOpacity_System_Double_">Widget.SetOpacity(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetOverflow_Gtk_Overflow_">Widget.SetOverflow(Overflow)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetParent_Gtk_Widget_">Widget.SetParent(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetReceivesDefault_System_Boolean_">Widget.SetReceivesDefault(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetSensitive_System_Boolean_">Widget.SetSensitive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetSizeRequest_System_Int32_System_Int32_">Widget.SetSizeRequest(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetStateFlags_Gtk_StateFlags_System_Boolean_">Widget.SetStateFlags(StateFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetTooltipMarkup_System_String_">Widget.SetTooltipMarkup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetTooltipText_System_String_">Widget.SetTooltipText(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetValign_Gtk_Align_">Widget.SetValign(Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVexpand_System_Boolean_">Widget.SetVexpand(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVexpandSet_System_Boolean_">Widget.SetVexpandSet(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVisible_System_Boolean_">Widget.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShouldLayout">Widget.ShouldLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Show">Widget.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SizeAllocate_Gdk_Rectangle_System_Int32_">Widget.SizeAllocate(Rectangle, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SnapshotChild_Gtk_Widget_Gtk_Snapshot_">Widget.SnapshotChild(Widget, Snapshot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TriggerTooltipQuery">Widget.TriggerTooltipQuery()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unmap">Widget.Unmap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unparent">Widget.Unparent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unrealize">Widget.Unrealize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnsetStateFlags_Gtk_StateFlags_">Widget.UnsetStateFlags(StateFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanFocusPropertyDefinition">Widget.CanFocusPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanFocus">Widget.CanFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanTargetPropertyDefinition">Widget.CanTargetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanTarget">Widget.CanTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssClassesPropertyDefinition">Widget.CssClassesPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssClasses">Widget.CssClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssNamePropertyDefinition">Widget.CssNamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssName">Widget.CssName</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CursorPropertyDefinition">Widget.CursorPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Cursor">Widget.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOnClickPropertyDefinition">Widget.FocusOnClickPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOnClick">Widget.FocusOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusablePropertyDefinition">Widget.FocusablePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Focusable">Widget.Focusable</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HalignPropertyDefinition">Widget.HalignPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Halign">Widget.Halign</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasDefaultPropertyDefinition">Widget.HasDefaultPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasDefault">Widget.HasDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasFocusPropertyDefinition">Widget.HasFocusPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasFocus">Widget.HasFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasTooltipPropertyDefinition">Widget.HasTooltipPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasTooltip">Widget.HasTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HeightRequestPropertyDefinition">Widget.HeightRequestPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HeightRequest">Widget.HeightRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandPropertyDefinition">Widget.HexpandPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Hexpand">Widget.Hexpand</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandSetPropertyDefinition">Widget.HexpandSetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandSet">Widget.HexpandSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LayoutManagerPropertyDefinition">Widget.LayoutManagerPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LayoutManager">Widget.LayoutManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginBottomPropertyDefinition">Widget.MarginBottomPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginBottom">Widget.MarginBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginEndPropertyDefinition">Widget.MarginEndPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginEnd">Widget.MarginEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginStartPropertyDefinition">Widget.MarginStartPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginStart">Widget.MarginStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginTopPropertyDefinition">Widget.MarginTopPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginTop">Widget.MarginTop</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_NamePropertyDefinition">Widget.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Name">Widget.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OpacityPropertyDefinition">Widget.OpacityPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Opacity">Widget.Opacity</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OverflowPropertyDefinition">Widget.OverflowPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Overflow">Widget.Overflow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ParentPropertyDefinition">Widget.ParentPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Parent">Widget.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ReceivesDefaultPropertyDefinition">Widget.ReceivesDefaultPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ReceivesDefault">Widget.ReceivesDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RootPropertyDefinition">Widget.RootPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Root">Widget.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScaleFactorPropertyDefinition">Widget.ScaleFactorPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScaleFactor">Widget.ScaleFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SensitivePropertyDefinition">Widget.SensitivePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Sensitive">Widget.Sensitive</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipMarkupPropertyDefinition">Widget.TooltipMarkupPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipMarkup">Widget.TooltipMarkup</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipTextPropertyDefinition">Widget.TooltipTextPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipText">Widget.TooltipText</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ValignPropertyDefinition">Widget.ValignPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Valign">Widget.Valign</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandPropertyDefinition">Widget.VexpandPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Vexpand">Widget.Vexpand</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandSetPropertyDefinition">Widget.VexpandSetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandSet">Widget.VexpandSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VisiblePropertyDefinition">Widget.VisiblePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Visible">Widget.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WidthRequestPropertyDefinition">Widget.WidthRequestPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WidthRequest">Widget.WidthRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroySignal">Widget.DestroySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroy">Widget.OnDestroy</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DirectionChangedSignal">Widget.DirectionChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDirectionChanged">Widget.OnDirectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HideSignal">Widget.HideSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHide">Widget.OnHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailedSignal">Widget.KeynavFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeynavFailed">Widget.OnKeynavFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapSignal">Widget.MapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMap">Widget.OnMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivateSignal">Widget.MnemonicActivateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMnemonicActivate">Widget.OnMnemonicActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MoveFocusSignal">Widget.MoveFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMoveFocus">Widget.OnMoveFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueryTooltipSignal">Widget.QueryTooltipSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnQueryTooltip">Widget.OnQueryTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RealizeSignal">Widget.RealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnRealize">Widget.OnRealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowSignal">Widget.ShowSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShow">Widget.OnShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateFlagsChangedSignal">Widget.StateFlagsChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateFlagsChanged">Widget.OnStateFlagsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapSignal">Widget.UnmapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmap">Widget.OnUnmap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnrealizeSignal">Widget.UnrealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnrealize">Widget.OnUnrealize</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk-4.0.dll</h6>
+  <h5 id="Gtk_FileChooserWidget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileChooserWidget : Widget, IObject, INotifyPropertyChanged, IDisposable, Accessible, Buildable, ConstraintTarget, FileChooser, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget__ctor.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Framework.Generated.cs/#L18">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget__ctor_" data-uid="Gtk.FileChooserWidget.#ctor*"></a>
+  <h4 id="Gtk_FileChooserWidget__ctor" data-uid="Gtk.FileChooserWidget.#ctor">FileChooserWidget()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileChooserWidget()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget__ctor_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.%23ctor(GObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget__ctor_" data-uid="Gtk.FileChooserWidget.#ctor*"></a>
+  <h4 id="Gtk_FileChooserWidget__ctor_GObject_ConstructArgument___" data-uid="Gtk.FileChooserWidget.#ctor(GObject.ConstructArgument[])">FileChooserWidget(params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FileChooserWidget(params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget__ctor_" data-uid="Gtk.FileChooserWidget.#ctor*"></a>
+  <h4 id="Gtk_FileChooserWidget__ctor_System_IntPtr_System_Boolean_" data-uid="Gtk.FileChooserWidget.#ctor(System.IntPtr,System.Boolean)">FileChooserWidget(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FileChooserWidget(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_DesktopFolderSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.DesktopFolderSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_DesktopFolderSignal" data-uid="Gtk.FileChooserWidget.DesktopFolderSignal">DesktopFolderSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDesktopFolder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; DesktopFolderSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_DownFolderSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.DownFolderSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L40">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_DownFolderSignal" data-uid="Gtk.FileChooserWidget.DownFolderSignal">DownFolderSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnDownFolder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; DownFolderSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_HomeFolderSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.HomeFolderSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_HomeFolderSignal" data-uid="Gtk.FileChooserWidget.HomeFolderSignal">HomeFolderSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnHomeFolder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; HomeFolderSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_LocationPopupOnPasteSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.LocationPopupOnPasteSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L105">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_LocationPopupOnPasteSignal" data-uid="Gtk.FileChooserWidget.LocationPopupOnPasteSignal">LocationPopupOnPasteSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnLocationPopupOnPaste.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; LocationPopupOnPasteSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_LocationPopupSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.LocationPopupSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L86">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_LocationPopupSignal" data-uid="Gtk.FileChooserWidget.LocationPopupSignal">LocationPopupSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnLocationPopup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget, FileChooserWidget.LocationPopupSignalArgs&gt; LocationPopupSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>, <a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>.<a class="xref" href="Gtk.FileChooserWidget.LocationPopupSignalArgs.html">LocationPopupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_LocationTogglePopupSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.LocationTogglePopupSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L124">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_LocationTogglePopupSignal" data-uid="Gtk.FileChooserWidget.LocationTogglePopupSignal">LocationTogglePopupSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnLocationTogglePopup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; LocationTogglePopupSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_PlacesShortcutSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.PlacesShortcutSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L143">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_PlacesShortcutSignal" data-uid="Gtk.FileChooserWidget.PlacesShortcutSignal">PlacesShortcutSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnPlacesShortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; PlacesShortcutSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_QuickBookmarkSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.QuickBookmarkSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L170">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_QuickBookmarkSignal" data-uid="Gtk.FileChooserWidget.QuickBookmarkSignal">QuickBookmarkSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnQuickBookmark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget, FileChooserWidget.QuickBookmarkSignalArgs&gt; QuickBookmarkSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>, <a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>.<a class="xref" href="Gtk.FileChooserWidget.QuickBookmarkSignalArgs.html">QuickBookmarkSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_RecentShortcutSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.RecentShortcutSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L189">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_RecentShortcutSignal" data-uid="Gtk.FileChooserWidget.RecentShortcutSignal">RecentShortcutSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnRecentShortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; RecentShortcutSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SearchModePropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SearchModePropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_SearchModePropertyDefinition" data-uid="Gtk.FileChooserWidget.SearchModePropertyDefinition">SearchModePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, FileChooserWidget&gt; SearchModePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SearchShortcutSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SearchShortcutSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L208">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_SearchShortcutSignal" data-uid="Gtk.FileChooserWidget.SearchShortcutSignal">SearchShortcutSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnSearchShortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; SearchShortcutSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_ShowHiddenSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.ShowHiddenSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L227">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_ShowHiddenSignal" data-uid="Gtk.FileChooserWidget.ShowHiddenSignal">ShowHiddenSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnShowHidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; ShowHiddenSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SubtitlePropertyDefinition.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SubtitlePropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Properties.Generated.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_SubtitlePropertyDefinition" data-uid="Gtk.FileChooserWidget.SubtitlePropertyDefinition">SubtitlePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, FileChooserWidget&gt; SubtitlePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_UpFolderSignal.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.UpFolderSignal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L246">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_UpFolderSignal" data-uid="Gtk.FileChooserWidget.UpFolderSignal">UpFolderSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnUpFolder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;FileChooserWidget&gt; UpFolderSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_AccessibleRole.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.AccessibleRole%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L12">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_AccessibleRole_" data-uid="Gtk.FileChooserWidget.AccessibleRole*"></a>
+  <h4 id="Gtk_FileChooserWidget_AccessibleRole" data-uid="Gtk.FileChooserWidget.AccessibleRole">AccessibleRole</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibleRole AccessibleRole { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRole.html">AccessibleRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_Action.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.Action%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L19">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_Action_" data-uid="Gtk.FileChooserWidget.Action*"></a>
+  <h4 id="Gtk_FileChooserWidget_Action" data-uid="Gtk.FileChooserWidget.Action">Action</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileChooserAction Action { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileChooserAction.html">FileChooserAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_CreateFolders.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.CreateFolders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_CreateFolders_" data-uid="Gtk.FileChooserWidget.CreateFolders*"></a>
+  <h4 id="Gtk_FileChooserWidget_CreateFolders" data-uid="Gtk.FileChooserWidget.CreateFolders">CreateFolders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CreateFolders { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_Filter.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.Filter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L33">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_Filter_" data-uid="Gtk.FileChooserWidget.Filter*"></a>
+  <h4 id="Gtk_FileChooserWidget_Filter" data-uid="Gtk.FileChooserWidget.Filter">Filter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileFilter? Filter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileFilter.html">FileFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_Filters.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.Filters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L40">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_Filters_" data-uid="Gtk.FileChooserWidget.Filters*"></a>
+  <h4 id="Gtk_FileChooserWidget_Filters" data-uid="Gtk.FileChooserWidget.Filters">Filters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListModel Filters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.ListModel.html">ListModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SearchMode.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SearchMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SearchMode_" data-uid="Gtk.FileChooserWidget.SearchMode*"></a>
+  <h4 id="Gtk_FileChooserWidget_SearchMode" data-uid="Gtk.FileChooserWidget.SearchMode">SearchMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SearchMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SelectMultiple.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SelectMultiple%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L46">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SelectMultiple_" data-uid="Gtk.FileChooserWidget.SelectMultiple*"></a>
+  <h4 id="Gtk_FileChooserWidget_SelectMultiple" data-uid="Gtk.FileChooserWidget.SelectMultiple">SelectMultiple</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SelectMultiple { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_ShortcutFolders.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.ShortcutFolders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceProperties.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_ShortcutFolders_" data-uid="Gtk.FileChooserWidget.ShortcutFolders*"></a>
+  <h4 id="Gtk_FileChooserWidget_ShortcutFolders" data-uid="Gtk.FileChooserWidget.ShortcutFolders">ShortcutFolders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListModel ShortcutFolders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.ListModel.html">ListModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_Subtitle.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.Subtitle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Properties.Generated.cs/#L29">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_Subtitle_" data-uid="Gtk.FileChooserWidget.Subtitle*"></a>
+  <h4 id="Gtk_FileChooserWidget_Subtitle" data-uid="Gtk.FileChooserWidget.Subtitle">Subtitle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Subtitle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_AddChoice_System_String_System_String_System_String___System_String___.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.AddChoice(System.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L66">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_AddChoice_" data-uid="Gtk.FileChooserWidget.AddChoice*"></a>
+  <h4 id="Gtk_FileChooserWidget_AddChoice_System_String_System_String_System_String___System_String___" data-uid="Gtk.FileChooserWidget.AddChoice(System.String,System.String,System.String[],System.String[])">AddChoice(string, string, string[], string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChoice(string id, string label, string[] options, string[] optionLabels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span>[]</td>
+        <td><span class="parametername">optionLabels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_AddFilter_Gtk_FileFilter_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.AddFilter(Gtk.FileFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L76">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_AddFilter_" data-uid="Gtk.FileChooserWidget.AddFilter*"></a>
+  <h4 id="Gtk_FileChooserWidget_AddFilter_Gtk_FileFilter_" data-uid="Gtk.FileChooserWidget.AddFilter(Gtk.FileFilter)">AddFilter(FileFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFilter(FileFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileFilter.html">FileFilter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetAccessibleRole.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetAccessibleRole%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetAccessibleRole_" data-uid="Gtk.FileChooserWidget.GetAccessibleRole*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetAccessibleRole" data-uid="Gtk.FileChooserWidget.GetAccessibleRole">GetAccessibleRole()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibleRole GetAccessibleRole()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRole.html">AccessibleRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetAction.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetAction%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L86">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetAction_" data-uid="Gtk.FileChooserWidget.GetAction*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetAction" data-uid="Gtk.FileChooserWidget.GetAction">GetAction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileChooserAction GetAction()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileChooserAction.html">FileChooserAction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetBuildableId.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetBuildableId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L56">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetBuildableId_" data-uid="Gtk.FileChooserWidget.GetBuildableId*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetBuildableId" data-uid="Gtk.FileChooserWidget.GetBuildableId">GetBuildableId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetBuildableId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetChoice_System_String_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetChoice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L95">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetChoice_" data-uid="Gtk.FileChooserWidget.GetChoice*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetChoice_System_String_" data-uid="Gtk.FileChooserWidget.GetChoice(System.String)">GetChoice(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetChoice(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetCreateFolders.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetCreateFolders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L104">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetCreateFolders_" data-uid="Gtk.FileChooserWidget.GetCreateFolders*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetCreateFolders" data-uid="Gtk.FileChooserWidget.GetCreateFolders">GetCreateFolders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCreateFolders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetCurrentFolder.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetCurrentFolder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L113">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetCurrentFolder_" data-uid="Gtk.FileChooserWidget.GetCurrentFolder*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetCurrentFolder" data-uid="Gtk.FileChooserWidget.GetCurrentFolder">GetCurrentFolder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public File? GetCurrentFolder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetCurrentName.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetCurrentName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L122">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetCurrentName_" data-uid="Gtk.FileChooserWidget.GetCurrentName*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetCurrentName" data-uid="Gtk.FileChooserWidget.GetCurrentName">GetCurrentName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetCurrentName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetFile.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetFile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L131">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetFile_" data-uid="Gtk.FileChooserWidget.GetFile*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetFile" data-uid="Gtk.FileChooserWidget.GetFile">GetFile()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public File? GetFile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetFiles.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetFiles%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L140">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetFiles_" data-uid="Gtk.FileChooserWidget.GetFiles*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetFiles" data-uid="Gtk.FileChooserWidget.GetFiles">GetFiles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListModel GetFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.ListModel.html">ListModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetFilter.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L149">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetFilter_" data-uid="Gtk.FileChooserWidget.GetFilter*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetFilter" data-uid="Gtk.FileChooserWidget.GetFilter">GetFilter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileFilter? GetFilter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileFilter.html">FileFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetFilters.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetFilters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L158">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetFilters_" data-uid="Gtk.FileChooserWidget.GetFilters*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetFilters" data-uid="Gtk.FileChooserWidget.GetFilters">GetFilters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListModel GetFilters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.ListModel.html">ListModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetGType.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetGType_" data-uid="Gtk.FileChooserWidget.GetGType*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetGType" data-uid="Gtk.FileChooserWidget.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetSelectMultiple.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetSelectMultiple%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L167">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetSelectMultiple_" data-uid="Gtk.FileChooserWidget.GetSelectMultiple*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetSelectMultiple" data-uid="Gtk.FileChooserWidget.GetSelectMultiple">GetSelectMultiple()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSelectMultiple()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_GetShortcutFolders.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.GetShortcutFolders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L176">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_GetShortcutFolders_" data-uid="Gtk.FileChooserWidget.GetShortcutFolders*"></a>
+  <h4 id="Gtk_FileChooserWidget_GetShortcutFolders" data-uid="Gtk.FileChooserWidget.GetShortcutFolders">GetShortcutFolders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListModel GetShortcutFolders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.ListModel.html">ListModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_New_Gtk_FileChooserAction_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.New(Gtk.FileChooserAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Constructors.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_New_" data-uid="Gtk.FileChooserWidget.New*"></a>
+  <h4 id="Gtk_FileChooserWidget_New_Gtk_FileChooserAction_" data-uid="Gtk.FileChooserWidget.New(Gtk.FileChooserAction)">New(FileChooserAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileChooserWidget New(FileChooserAction action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileChooserAction.html">FileChooserAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_RemoveChoice_System_String_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.RemoveChoice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L185">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_RemoveChoice_" data-uid="Gtk.FileChooserWidget.RemoveChoice*"></a>
+  <h4 id="Gtk_FileChooserWidget_RemoveChoice_System_String_" data-uid="Gtk.FileChooserWidget.RemoveChoice(System.String)">RemoveChoice(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveChoice(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_RemoveFilter_Gtk_FileFilter_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.RemoveFilter(Gtk.FileFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L194">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_RemoveFilter_" data-uid="Gtk.FileChooserWidget.RemoveFilter*"></a>
+  <h4 id="Gtk_FileChooserWidget_RemoveFilter_Gtk_FileFilter_" data-uid="Gtk.FileChooserWidget.RemoveFilter(Gtk.FileFilter)">RemoveFilter(FileFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFilter(FileFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileFilter.html">FileFilter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_ResetProperty_Gtk_AccessibleProperty_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.ResetProperty(Gtk.AccessibleProperty)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_ResetProperty_" data-uid="Gtk.FileChooserWidget.ResetProperty*"></a>
+  <h4 id="Gtk_FileChooserWidget_ResetProperty_Gtk_AccessibleProperty_" data-uid="Gtk.FileChooserWidget.ResetProperty(Gtk.AccessibleProperty)">ResetProperty(AccessibleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetProperty(AccessibleProperty property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleProperty.html">AccessibleProperty</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_ResetRelation_Gtk_AccessibleRelation_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.ResetRelation(Gtk.AccessibleRelation)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_ResetRelation_" data-uid="Gtk.FileChooserWidget.ResetRelation*"></a>
+  <h4 id="Gtk_FileChooserWidget_ResetRelation_Gtk_AccessibleRelation_" data-uid="Gtk.FileChooserWidget.ResetRelation(Gtk.AccessibleRelation)">ResetRelation(AccessibleRelation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRelation(AccessibleRelation relation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRelation.html">AccessibleRelation</a></td>
+        <td><span class="parametername">relation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_ResetState_Gtk_AccessibleState_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.ResetState(Gtk.AccessibleState)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_ResetState_" data-uid="Gtk.FileChooserWidget.ResetState*"></a>
+  <h4 id="Gtk_FileChooserWidget_ResetState_Gtk_AccessibleState_" data-uid="Gtk.FileChooserWidget.ResetState(Gtk.AccessibleState)">ResetState(AccessibleState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetState(AccessibleState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleState.html">AccessibleState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SetAction_Gtk_FileChooserAction_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SetAction(Gtk.FileChooserAction)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L204">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SetAction_" data-uid="Gtk.FileChooserWidget.SetAction*"></a>
+  <h4 id="Gtk_FileChooserWidget_SetAction_Gtk_FileChooserAction_" data-uid="Gtk.FileChooserWidget.SetAction(Gtk.FileChooserAction)">SetAction(FileChooserAction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAction(FileChooserAction action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileChooserAction.html">FileChooserAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SetChoice_System_String_System_String_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SetChoice(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L213">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SetChoice_" data-uid="Gtk.FileChooserWidget.SetChoice*"></a>
+  <h4 id="Gtk_FileChooserWidget_SetChoice_System_String_System_String_" data-uid="Gtk.FileChooserWidget.SetChoice(System.String,System.String)">SetChoice(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChoice(string id, string option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SetCreateFolders_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SetCreateFolders(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L222">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SetCreateFolders_" data-uid="Gtk.FileChooserWidget.SetCreateFolders*"></a>
+  <h4 id="Gtk_FileChooserWidget_SetCreateFolders_System_Boolean_" data-uid="Gtk.FileChooserWidget.SetCreateFolders(System.Boolean)">SetCreateFolders(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCreateFolders(bool createFolders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">createFolders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SetCurrentName_System_String_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SetCurrentName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L232">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SetCurrentName_" data-uid="Gtk.FileChooserWidget.SetCurrentName*"></a>
+  <h4 id="Gtk_FileChooserWidget_SetCurrentName_System_String_" data-uid="Gtk.FileChooserWidget.SetCurrentName(System.String)">SetCurrentName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCurrentName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SetFilter_Gtk_FileFilter_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SetFilter(Gtk.FileFilter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L242">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SetFilter_" data-uid="Gtk.FileChooserWidget.SetFilter*"></a>
+  <h4 id="Gtk_FileChooserWidget_SetFilter_Gtk_FileFilter_" data-uid="Gtk.FileChooserWidget.SetFilter(Gtk.FileFilter)">SetFilter(FileFilter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFilter(FileFilter filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.FileFilter.html">FileFilter</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_SetSelectMultiple_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.SetSelectMultiple(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.InterfaceMethods.Generated.cs/#L251">View Source</a>
+  </span>
+  <a id="Gtk_FileChooserWidget_SetSelectMultiple_" data-uid="Gtk.FileChooserWidget.SetSelectMultiple*"></a>
+  <h4 id="Gtk_FileChooserWidget_SetSelectMultiple_System_Boolean_" data-uid="Gtk.FileChooserWidget.SetSelectMultiple(System.Boolean)">SetSelectMultiple(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectMultiple(bool selectMultiple)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">selectMultiple</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnDesktopFolder.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnDesktopFolder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnDesktopFolder" data-uid="Gtk.FileChooserWidget.OnDesktopFolder">OnDesktopFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnDesktopFolder</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnDownFolder.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnDownFolder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L45">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnDownFolder" data-uid="Gtk.FileChooserWidget.OnDownFolder">OnDownFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnDownFolder</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnHomeFolder.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnHomeFolder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L64">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnHomeFolder" data-uid="Gtk.FileChooserWidget.OnHomeFolder">OnHomeFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnHomeFolder</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnLocationPopup.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnLocationPopup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L91">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnLocationPopup" data-uid="Gtk.FileChooserWidget.OnLocationPopup">OnLocationPopup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget, FileChooserWidget.LocationPopupSignalArgs&gt; OnLocationPopup</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>, <a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>.<a class="xref" href="Gtk.FileChooserWidget.LocationPopupSignalArgs.html">LocationPopupSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnLocationPopupOnPaste.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnLocationPopupOnPaste%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L110">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnLocationPopupOnPaste" data-uid="Gtk.FileChooserWidget.OnLocationPopupOnPaste">OnLocationPopupOnPaste</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnLocationPopupOnPaste</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnLocationTogglePopup.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnLocationTogglePopup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L129">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnLocationTogglePopup" data-uid="Gtk.FileChooserWidget.OnLocationTogglePopup">OnLocationTogglePopup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnLocationTogglePopup</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnPlacesShortcut.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnPlacesShortcut%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L148">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnPlacesShortcut" data-uid="Gtk.FileChooserWidget.OnPlacesShortcut">OnPlacesShortcut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnPlacesShortcut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnQuickBookmark.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnQuickBookmark%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L175">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnQuickBookmark" data-uid="Gtk.FileChooserWidget.OnQuickBookmark">OnQuickBookmark</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget, FileChooserWidget.QuickBookmarkSignalArgs&gt; OnQuickBookmark</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>, <a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>.<a class="xref" href="Gtk.FileChooserWidget.QuickBookmarkSignalArgs.html">QuickBookmarkSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnRecentShortcut.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnRecentShortcut%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L194">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnRecentShortcut" data-uid="Gtk.FileChooserWidget.OnRecentShortcut">OnRecentShortcut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnRecentShortcut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnSearchShortcut.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnSearchShortcut%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L213">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnSearchShortcut" data-uid="Gtk.FileChooserWidget.OnSearchShortcut">OnSearchShortcut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnSearchShortcut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnShowHidden.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnShowHidden%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L232">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnShowHidden" data-uid="Gtk.FileChooserWidget.OnShowHidden">OnShowHidden</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnShowHidden</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget_OnUpFolder.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget.OnUpFolder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L251">View Source</a>
+  </span>
+  <h4 id="Gtk_FileChooserWidget_OnUpFolder" data-uid="Gtk.FileChooserWidget.OnUpFolder">OnUpFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;FileChooserWidget&gt; OnUpFolder</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="Gtk.FileChooserWidget.html">FileChooserWidget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Accessible.html">Accessible</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Buildable.html">Buildable</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.FileChooser.html">FileChooser</a>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_FileChooserWidget.md&amp;value=---%0Auid%3A%20Gtk.FileChooserWidget%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/FileChooserWidget.Signals.Generated.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2293 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ViewStack
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ViewStack
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Adw.ViewStack">
+
+
+  <h1 id="Adw_ViewStack" data-uid="Adw.ViewStack" class="text-break">Class ViewStack
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gtk.Widget.html">Widget</a></div>
+    <div class="level4"><span class="xref">ViewStack</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Gtk.Accessible.html">Accessible</a></div>
+    <div><a class="xref" href="Gtk.Buildable.html">Buildable</a></div>
+    <div><a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDefaultDirection">Widget.GetDefaultDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetDefaultDirection_Gtk_TextDirection_">Widget.SetDefaultDirection(TextDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActionSetEnabled_System_String_System_Boolean_">Widget.ActionSetEnabled(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Activate">Widget.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateActionVariant_System_String_GLib_Variant_">Widget.ActivateActionVariant(string, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateDefault">Widget.ActivateDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddController_Gtk_EventController_">Widget.AddController(EventController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddCssClass_System_String_">Widget.AddCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddMnemonicLabel_Gtk_Widget_">Widget.AddMnemonicLabel(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddTickCallback_Gtk_TickCallback_">Widget.AddTickCallback(TickCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Allocate_System_Int32_System_Int32_System_Int32_Gsk_Transform_">Widget.Allocate(int, int, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ChildFocus_Gtk_DirectionType_">Widget.ChildFocus(DirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ComputeExpand_Gtk_Orientation_">Widget.ComputeExpand(Orientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Contains_System_Double_System_Double_">Widget.Contains(double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoContext">Widget.CreatePangoContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoLayout_System_String_">Widget.CreatePangoLayout(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DisposeTemplate_System_UIntPtr_">Widget.DisposeTemplate(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragCheckThreshold_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.DragCheckThreshold(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ErrorBell">Widget.ErrorBell()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedBaseline">Widget.GetAllocatedBaseline()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedHeight">Widget.GetAllocatedHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedWidth">Widget.GetAllocatedWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAncestor_System_UIntPtr_">Widget.GetAncestor(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanFocus">Widget.GetCanFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanTarget">Widget.GetCanTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetChildVisible">Widget.GetChildVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetClipboard">Widget.GetClipboard()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCssClasses">Widget.GetCssClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCssName">Widget.GetCssName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCursor">Widget.GetCursor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDirection">Widget.GetDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDisplay">Widget.GetDisplay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFirstChild">Widget.GetFirstChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusChild">Widget.GetFocusChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusOnClick">Widget.GetFocusOnClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusable">Widget.GetFocusable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFontMap">Widget.GetFontMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFontOptions">Widget.GetFontOptions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFrameClock">Widget.GetFrameClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHalign">Widget.GetHalign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasTooltip">Widget.GetHasTooltip()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHeight">Widget.GetHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHexpand">Widget.GetHexpand()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHexpandSet">Widget.GetHexpandSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetLastChild">Widget.GetLastChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetLayoutManager">Widget.GetLayoutManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMapped">Widget.GetMapped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginBottom">Widget.GetMarginBottom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginEnd">Widget.GetMarginEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginStart">Widget.GetMarginStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginTop">Widget.GetMarginTop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetName">Widget.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetNative">Widget.GetNative()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetNextSibling">Widget.GetNextSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetOpacity">Widget.GetOpacity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetOverflow">Widget.GetOverflow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPangoContext">Widget.GetPangoContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetParent">Widget.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPrevSibling">Widget.GetPrevSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPrimaryClipboard">Widget.GetPrimaryClipboard()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRealized">Widget.GetRealized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetReceivesDefault">Widget.GetReceivesDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRequestMode">Widget.GetRequestMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRoot">Widget.GetRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetScaleFactor">Widget.GetScaleFactor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSensitive">Widget.GetSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSettings">Widget.GetSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSize_Gtk_Orientation_">Widget.GetSize(Orientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStateFlags">Widget.GetStateFlags()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStyleContext">Widget.GetStyleContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTemplateChild_System_UIntPtr_System_String_">Widget.GetTemplateChild(nuint, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipMarkup">Widget.GetTooltipMarkup()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipText">Widget.GetTooltipText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetValign">Widget.GetValign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVexpand">Widget.GetVexpand()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVexpandSet">Widget.GetVexpandSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVisible">Widget.GetVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetWidth">Widget.GetWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabFocus">Widget.GrabFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasCssClass_System_String_">Widget.HasCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasDefault">Widget.GetHasDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasFocus">Widget.GetHasFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasVisibleFocus">Widget.HasVisibleFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Hide">Widget.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InDestruction">Widget.InDestruction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InitTemplate">Widget.InitTemplate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertActionGroup_System_String_Gio_ActionGroup_">Widget.InsertActionGroup(string, ActionGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertAfter_Gtk_Widget_Gtk_Widget_">Widget.InsertAfter(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertBefore_Gtk_Widget_Gtk_Widget_">Widget.InsertBefore(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsAncestor_Gtk_Widget_">Widget.IsAncestor(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsDrawable">Widget.IsDrawable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsFocus">Widget.IsFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsSensitive">Widget.IsSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsVisible">Widget.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailed_Gtk_DirectionType_">Widget.KeynavFailed(DirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ListMnemonicLabels">Widget.ListMnemonicLabels()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Map">Widget.Map()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivate_System_Boolean_">Widget.MnemonicActivate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ObserveChildren">Widget.ObserveChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ObserveControllers">Widget.ObserveControllers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Pick_System_Double_System_Double_Gtk_PickFlags_">Widget.Pick(double, double, PickFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueAllocate">Widget.QueueAllocate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueDraw">Widget.QueueDraw()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueResize">Widget.QueueResize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Realize">Widget.Realize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveController_Gtk_EventController_">Widget.RemoveController(EventController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveCssClass_System_String_">Widget.RemoveCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveMnemonicLabel_Gtk_Widget_">Widget.RemoveMnemonicLabel(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveTickCallback_System_UInt32_">Widget.RemoveTickCallback(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCanFocus_System_Boolean_">Widget.SetCanFocus(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCanTarget_System_Boolean_">Widget.SetCanTarget(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetChildVisible_System_Boolean_">Widget.SetChildVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCssClasses_System_String___">Widget.SetCssClasses(string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCursor_Gdk_Cursor_">Widget.SetCursor(Cursor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCursorFromName_System_String_">Widget.SetCursorFromName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetDirection_Gtk_TextDirection_">Widget.SetDirection(TextDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusChild_Gtk_Widget_">Widget.SetFocusChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusOnClick_System_Boolean_">Widget.SetFocusOnClick(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusable_System_Boolean_">Widget.SetFocusable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFontMap_Pango_FontMap_">Widget.SetFontMap(FontMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFontOptions_Cairo_FontOptions_">Widget.SetFontOptions(FontOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHalign_Gtk_Align_">Widget.SetHalign(Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHasTooltip_System_Boolean_">Widget.SetHasTooltip(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHexpand_System_Boolean_">Widget.SetHexpand(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHexpandSet_System_Boolean_">Widget.SetHexpandSet(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetLayoutManager_Gtk_LayoutManager_">Widget.SetLayoutManager(LayoutManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginBottom_System_Int32_">Widget.SetMarginBottom(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginEnd_System_Int32_">Widget.SetMarginEnd(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginStart_System_Int32_">Widget.SetMarginStart(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginTop_System_Int32_">Widget.SetMarginTop(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetName_System_String_">Widget.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetOpacity_System_Double_">Widget.SetOpacity(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetOverflow_Gtk_Overflow_">Widget.SetOverflow(Overflow)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetParent_Gtk_Widget_">Widget.SetParent(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetReceivesDefault_System_Boolean_">Widget.SetReceivesDefault(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetSensitive_System_Boolean_">Widget.SetSensitive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetSizeRequest_System_Int32_System_Int32_">Widget.SetSizeRequest(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetStateFlags_Gtk_StateFlags_System_Boolean_">Widget.SetStateFlags(StateFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetTooltipMarkup_System_String_">Widget.SetTooltipMarkup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetTooltipText_System_String_">Widget.SetTooltipText(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetValign_Gtk_Align_">Widget.SetValign(Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVexpand_System_Boolean_">Widget.SetVexpand(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVexpandSet_System_Boolean_">Widget.SetVexpandSet(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVisible_System_Boolean_">Widget.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShouldLayout">Widget.ShouldLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Show">Widget.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SizeAllocate_Gdk_Rectangle_System_Int32_">Widget.SizeAllocate(Rectangle, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SnapshotChild_Gtk_Widget_Gtk_Snapshot_">Widget.SnapshotChild(Widget, Snapshot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TriggerTooltipQuery">Widget.TriggerTooltipQuery()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unmap">Widget.Unmap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unparent">Widget.Unparent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unrealize">Widget.Unrealize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnsetStateFlags_Gtk_StateFlags_">Widget.UnsetStateFlags(StateFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanFocusPropertyDefinition">Widget.CanFocusPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanFocus">Widget.CanFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanTargetPropertyDefinition">Widget.CanTargetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanTarget">Widget.CanTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssClassesPropertyDefinition">Widget.CssClassesPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssClasses">Widget.CssClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssNamePropertyDefinition">Widget.CssNamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssName">Widget.CssName</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CursorPropertyDefinition">Widget.CursorPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Cursor">Widget.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOnClickPropertyDefinition">Widget.FocusOnClickPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOnClick">Widget.FocusOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusablePropertyDefinition">Widget.FocusablePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Focusable">Widget.Focusable</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HalignPropertyDefinition">Widget.HalignPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Halign">Widget.Halign</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasDefaultPropertyDefinition">Widget.HasDefaultPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasDefault">Widget.HasDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasFocusPropertyDefinition">Widget.HasFocusPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasFocus">Widget.HasFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasTooltipPropertyDefinition">Widget.HasTooltipPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasTooltip">Widget.HasTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HeightRequestPropertyDefinition">Widget.HeightRequestPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HeightRequest">Widget.HeightRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandPropertyDefinition">Widget.HexpandPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Hexpand">Widget.Hexpand</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandSetPropertyDefinition">Widget.HexpandSetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandSet">Widget.HexpandSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LayoutManagerPropertyDefinition">Widget.LayoutManagerPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LayoutManager">Widget.LayoutManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginBottomPropertyDefinition">Widget.MarginBottomPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginBottom">Widget.MarginBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginEndPropertyDefinition">Widget.MarginEndPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginEnd">Widget.MarginEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginStartPropertyDefinition">Widget.MarginStartPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginStart">Widget.MarginStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginTopPropertyDefinition">Widget.MarginTopPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginTop">Widget.MarginTop</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_NamePropertyDefinition">Widget.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Name">Widget.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OpacityPropertyDefinition">Widget.OpacityPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Opacity">Widget.Opacity</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OverflowPropertyDefinition">Widget.OverflowPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Overflow">Widget.Overflow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ParentPropertyDefinition">Widget.ParentPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Parent">Widget.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ReceivesDefaultPropertyDefinition">Widget.ReceivesDefaultPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ReceivesDefault">Widget.ReceivesDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RootPropertyDefinition">Widget.RootPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Root">Widget.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScaleFactorPropertyDefinition">Widget.ScaleFactorPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScaleFactor">Widget.ScaleFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SensitivePropertyDefinition">Widget.SensitivePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Sensitive">Widget.Sensitive</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipMarkupPropertyDefinition">Widget.TooltipMarkupPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipMarkup">Widget.TooltipMarkup</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipTextPropertyDefinition">Widget.TooltipTextPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipText">Widget.TooltipText</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ValignPropertyDefinition">Widget.ValignPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Valign">Widget.Valign</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandPropertyDefinition">Widget.VexpandPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Vexpand">Widget.Vexpand</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandSetPropertyDefinition">Widget.VexpandSetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandSet">Widget.VexpandSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VisiblePropertyDefinition">Widget.VisiblePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Visible">Widget.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WidthRequestPropertyDefinition">Widget.WidthRequestPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WidthRequest">Widget.WidthRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroySignal">Widget.DestroySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroy">Widget.OnDestroy</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DirectionChangedSignal">Widget.DirectionChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDirectionChanged">Widget.OnDirectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HideSignal">Widget.HideSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHide">Widget.OnHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailedSignal">Widget.KeynavFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeynavFailed">Widget.OnKeynavFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapSignal">Widget.MapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMap">Widget.OnMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivateSignal">Widget.MnemonicActivateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMnemonicActivate">Widget.OnMnemonicActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MoveFocusSignal">Widget.MoveFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMoveFocus">Widget.OnMoveFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueryTooltipSignal">Widget.QueryTooltipSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnQueryTooltip">Widget.OnQueryTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RealizeSignal">Widget.RealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnRealize">Widget.OnRealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowSignal">Widget.ShowSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShow">Widget.OnShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateFlagsChangedSignal">Widget.StateFlagsChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateFlagsChanged">Widget.OnStateFlagsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapSignal">Widget.UnmapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmap">Widget.OnUnmap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnrealizeSignal">Widget.UnrealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnrealize">Widget.OnUnrealize</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Adw.html">Adw</a></h6>
+  <h6><strong>Assembly</strong>: Adw-1.dll</h6>
+  <h5 id="Adw_ViewStack_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ViewStack : Widget, IObject, INotifyPropertyChanged, IDisposable, Accessible, Buildable, ConstraintTarget, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack__ctor.md&amp;value=---%0Auid%3A%20Adw.ViewStack.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Framework.Generated.cs/#L18">View Source</a>
+  </span>
+  <a id="Adw_ViewStack__ctor_" data-uid="Adw.ViewStack.#ctor*"></a>
+  <h4 id="Adw_ViewStack__ctor" data-uid="Adw.ViewStack.#ctor">ViewStack()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewStack()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack__ctor_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20Adw.ViewStack.%23ctor(GObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Adw_ViewStack__ctor_" data-uid="Adw.ViewStack.#ctor*"></a>
+  <h4 id="Adw_ViewStack__ctor_GObject_ConstructArgument___" data-uid="Adw.ViewStack.#ctor(GObject.ConstructArgument[])">ViewStack(params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ViewStack(params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Adw_ViewStack__ctor_" data-uid="Adw.ViewStack.#ctor*"></a>
+  <h4 id="Adw_ViewStack__ctor_System_IntPtr_System_Boolean_" data-uid="Adw.ViewStack.#ctor(System.IntPtr,System.Boolean)">ViewStack(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ViewStack(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_HhomogeneousPropertyDefinition.md&amp;value=---%0Auid%3A%20Adw.ViewStack.HhomogeneousPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="Adw_ViewStack_HhomogeneousPropertyDefinition" data-uid="Adw.ViewStack.HhomogeneousPropertyDefinition">HhomogeneousPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, ViewStack&gt; HhomogeneousPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Adw.ViewStack.html">ViewStack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_PagesPropertyDefinition.md&amp;value=---%0Auid%3A%20Adw.ViewStack.PagesPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Adw_ViewStack_PagesPropertyDefinition" data-uid="Adw.ViewStack.PagesPropertyDefinition">PagesPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;SelectionModel, ViewStack&gt; PagesPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="Gtk.SelectionModel.html">SelectionModel</a>, <a class="xref" href="Adw.ViewStack.html">ViewStack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_VhomogeneousPropertyDefinition.md&amp;value=---%0Auid%3A%20Adw.ViewStack.VhomogeneousPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L35">View Source</a>
+  </span>
+  <h4 id="Adw_ViewStack_VhomogeneousPropertyDefinition" data-uid="Adw.ViewStack.VhomogeneousPropertyDefinition">VhomogeneousPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, ViewStack&gt; VhomogeneousPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Adw.ViewStack.html">ViewStack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_VisibleChildNamePropertyDefinition.md&amp;value=---%0Auid%3A%20Adw.ViewStack.VisibleChildNamePropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Adw_ViewStack_VisibleChildNamePropertyDefinition" data-uid="Adw.ViewStack.VisibleChildNamePropertyDefinition">VisibleChildNamePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, ViewStack&gt; VisibleChildNamePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="Adw.ViewStack.html">ViewStack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_VisibleChildPropertyDefinition.md&amp;value=---%0Auid%3A%20Adw.ViewStack.VisibleChildPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L47">View Source</a>
+  </span>
+  <h4 id="Adw_ViewStack_VisibleChildPropertyDefinition" data-uid="Adw.ViewStack.VisibleChildPropertyDefinition">VisibleChildPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;Widget?, ViewStack&gt; VisibleChildPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="Gtk.Widget.html">Widget</a>, <a class="xref" href="Adw.ViewStack.html">ViewStack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_AccessibleRole.md&amp;value=---%0Auid%3A%20Adw.ViewStack.AccessibleRole%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.InterfaceProperties.Generated.cs/#L12">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_AccessibleRole_" data-uid="Adw.ViewStack.AccessibleRole*"></a>
+  <h4 id="Adw_ViewStack_AccessibleRole" data-uid="Adw.ViewStack.AccessibleRole">AccessibleRole</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibleRole AccessibleRole { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRole.html">AccessibleRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_Hhomogeneous.md&amp;value=---%0Auid%3A%20Adw.ViewStack.Hhomogeneous%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_Hhomogeneous_" data-uid="Adw.ViewStack.Hhomogeneous*"></a>
+  <h4 id="Adw_ViewStack_Hhomogeneous" data-uid="Adw.ViewStack.Hhomogeneous">Hhomogeneous</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Hhomogeneous { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_Pages.md&amp;value=---%0Auid%3A%20Adw.ViewStack.Pages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L29">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_Pages_" data-uid="Adw.ViewStack.Pages*"></a>
+  <h4 id="Adw_ViewStack_Pages" data-uid="Adw.ViewStack.Pages">Pages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionModel Pages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.SelectionModel.html">SelectionModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_Vhomogeneous.md&amp;value=---%0Auid%3A%20Adw.ViewStack.Vhomogeneous%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L40">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_Vhomogeneous_" data-uid="Adw.ViewStack.Vhomogeneous*"></a>
+  <h4 id="Adw_ViewStack_Vhomogeneous" data-uid="Adw.ViewStack.Vhomogeneous">Vhomogeneous</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Vhomogeneous { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_VisibleChild.md&amp;value=---%0Auid%3A%20Adw.ViewStack.VisibleChild%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L52">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_VisibleChild_" data-uid="Adw.ViewStack.VisibleChild*"></a>
+  <h4 id="Adw_ViewStack_VisibleChild" data-uid="Adw.ViewStack.VisibleChild">VisibleChild</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget? VisibleChild { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_VisibleChildName.md&amp;value=---%0Auid%3A%20Adw.ViewStack.VisibleChildName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L64">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_VisibleChildName_" data-uid="Adw.ViewStack.VisibleChildName*"></a>
+  <h4 id="Adw_ViewStack_VisibleChildName" data-uid="Adw.ViewStack.VisibleChildName">VisibleChildName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? VisibleChildName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_Add_Gtk_Widget_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.Add(Gtk.Widget)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_Add_" data-uid="Adw.ViewStack.Add*"></a>
+  <h4 id="Adw_ViewStack_Add_Gtk_Widget_" data-uid="Adw.ViewStack.Add(Gtk.Widget)">Add(Widget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public ViewStackPage Add(Widget child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adw.ViewStackPage.html">ViewStackPage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_AddNamed_Gtk_Widget_System_String_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.AddNamed(Gtk.Widget%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L25">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_AddNamed_" data-uid="Adw.ViewStack.AddNamed*"></a>
+  <h4 id="Adw_ViewStack_AddNamed_Gtk_Widget_System_String_" data-uid="Adw.ViewStack.AddNamed(Gtk.Widget,System.String)">AddNamed(Widget, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public ViewStackPage AddNamed(Widget child, string? name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adw.ViewStackPage.html">ViewStackPage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_AddTitled_Gtk_Widget_System_String_System_String_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.AddTitled(Gtk.Widget%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L34">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_AddTitled_" data-uid="Adw.ViewStack.AddTitled*"></a>
+  <h4 id="Adw_ViewStack_AddTitled_Gtk_Widget_System_String_System_String_" data-uid="Adw.ViewStack.AddTitled(Gtk.Widget,System.String,System.String)">AddTitled(Widget, string?, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public ViewStackPage AddTitled(Widget child, string? name, string title)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adw.ViewStackPage.html">ViewStackPage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_AddTitledWithIcon_Gtk_Widget_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.AddTitledWithIcon(Gtk.Widget%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L43">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_AddTitledWithIcon_" data-uid="Adw.ViewStack.AddTitledWithIcon*"></a>
+  <h4 id="Adw_ViewStack_AddTitledWithIcon_Gtk_Widget_System_String_System_String_System_String_" data-uid="Adw.ViewStack.AddTitledWithIcon(Gtk.Widget,System.String,System.String,System.String)">AddTitledWithIcon(Widget, string?, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
+public ViewStackPage AddTitledWithIcon(Widget child, string? name, string title, string iconName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">title</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">iconName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adw.ViewStackPage.html">ViewStackPage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetAccessibleRole.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetAccessibleRole%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.InterfaceMethods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetAccessibleRole_" data-uid="Adw.ViewStack.GetAccessibleRole*"></a>
+  <h4 id="Adw_ViewStack_GetAccessibleRole" data-uid="Adw.ViewStack.GetAccessibleRole">GetAccessibleRole()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibleRole GetAccessibleRole()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRole.html">AccessibleRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetBuildableId.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetBuildableId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.InterfaceMethods.Generated.cs/#L56">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetBuildableId_" data-uid="Adw.ViewStack.GetBuildableId*"></a>
+  <h4 id="Adw_ViewStack_GetBuildableId" data-uid="Adw.ViewStack.GetBuildableId">GetBuildableId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetBuildableId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetChildByName_System_String_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetChildByName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L52">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetChildByName_" data-uid="Adw.ViewStack.GetChildByName*"></a>
+  <h4 id="Adw_ViewStack_GetChildByName_System_String_" data-uid="Adw.ViewStack.GetChildByName(System.String)">GetChildByName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public Widget? GetChildByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetGType.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetGType_" data-uid="Adw.ViewStack.GetGType*"></a>
+  <h4 id="Adw_ViewStack_GetGType" data-uid="Adw.ViewStack.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetHhomogeneous.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetHhomogeneous%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L61">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetHhomogeneous_" data-uid="Adw.ViewStack.GetHhomogeneous*"></a>
+  <h4 id="Adw_ViewStack_GetHhomogeneous" data-uid="Adw.ViewStack.GetHhomogeneous">GetHhomogeneous()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public bool GetHhomogeneous()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetPage_Gtk_Widget_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetPage(Gtk.Widget)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L70">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetPage_" data-uid="Adw.ViewStack.GetPage*"></a>
+  <h4 id="Adw_ViewStack_GetPage_Gtk_Widget_" data-uid="Adw.ViewStack.GetPage(Gtk.Widget)">GetPage(Widget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public ViewStackPage GetPage(Widget child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adw.ViewStackPage.html">ViewStackPage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetPages.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetPages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L79">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetPages_" data-uid="Adw.ViewStack.GetPages*"></a>
+  <h4 id="Adw_ViewStack_GetPages" data-uid="Adw.ViewStack.GetPages">GetPages()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public SelectionModel GetPages()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.SelectionModel.html">SelectionModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetVhomogeneous.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetVhomogeneous%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L88">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetVhomogeneous_" data-uid="Adw.ViewStack.GetVhomogeneous*"></a>
+  <h4 id="Adw_ViewStack_GetVhomogeneous" data-uid="Adw.ViewStack.GetVhomogeneous">GetVhomogeneous()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public bool GetVhomogeneous()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetVisibleChild.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetVisibleChild%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L97">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetVisibleChild_" data-uid="Adw.ViewStack.GetVisibleChild*"></a>
+  <h4 id="Adw_ViewStack_GetVisibleChild" data-uid="Adw.ViewStack.GetVisibleChild">GetVisibleChild()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public Widget? GetVisibleChild()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_GetVisibleChildName.md&amp;value=---%0Auid%3A%20Adw.ViewStack.GetVisibleChildName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L106">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_GetVisibleChildName_" data-uid="Adw.ViewStack.GetVisibleChildName*"></a>
+  <h4 id="Adw_ViewStack_GetVisibleChildName" data-uid="Adw.ViewStack.GetVisibleChildName">GetVisibleChildName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public string? GetVisibleChildName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_New.md&amp;value=---%0Auid%3A%20Adw.ViewStack.New%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Constructors.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_New_" data-uid="Adw.ViewStack.New*"></a>
+  <h4 id="Adw_ViewStack_New" data-uid="Adw.ViewStack.New">New()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public static ViewStack New()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Adw.ViewStack.html">ViewStack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_Remove_Gtk_Widget_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.Remove(Gtk.Widget)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L115">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_Remove_" data-uid="Adw.ViewStack.Remove*"></a>
+  <h4 id="Adw_ViewStack_Remove_Gtk_Widget_" data-uid="Adw.ViewStack.Remove(Gtk.Widget)">Remove(Widget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public void Remove(Widget child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_ResetProperty_Gtk_AccessibleProperty_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.ResetProperty(Gtk.AccessibleProperty)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.InterfaceMethods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_ResetProperty_" data-uid="Adw.ViewStack.ResetProperty*"></a>
+  <h4 id="Adw_ViewStack_ResetProperty_Gtk_AccessibleProperty_" data-uid="Adw.ViewStack.ResetProperty(Gtk.AccessibleProperty)">ResetProperty(AccessibleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetProperty(AccessibleProperty property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleProperty.html">AccessibleProperty</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_ResetRelation_Gtk_AccessibleRelation_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.ResetRelation(Gtk.AccessibleRelation)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.InterfaceMethods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_ResetRelation_" data-uid="Adw.ViewStack.ResetRelation*"></a>
+  <h4 id="Adw_ViewStack_ResetRelation_Gtk_AccessibleRelation_" data-uid="Adw.ViewStack.ResetRelation(Gtk.AccessibleRelation)">ResetRelation(AccessibleRelation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRelation(AccessibleRelation relation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRelation.html">AccessibleRelation</a></td>
+        <td><span class="parametername">relation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_ResetState_Gtk_AccessibleState_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.ResetState(Gtk.AccessibleState)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.InterfaceMethods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_ResetState_" data-uid="Adw.ViewStack.ResetState*"></a>
+  <h4 id="Adw_ViewStack_ResetState_Gtk_AccessibleState_" data-uid="Adw.ViewStack.ResetState(Gtk.AccessibleState)">ResetState(AccessibleState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetState(AccessibleState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleState.html">AccessibleState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_SetHhomogeneous_System_Boolean_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.SetHhomogeneous(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L124">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_SetHhomogeneous_" data-uid="Adw.ViewStack.SetHhomogeneous*"></a>
+  <h4 id="Adw_ViewStack_SetHhomogeneous_System_Boolean_" data-uid="Adw.ViewStack.SetHhomogeneous(System.Boolean)">SetHhomogeneous(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public void SetHhomogeneous(bool hhomogeneous)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">hhomogeneous</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_SetVhomogeneous_System_Boolean_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.SetVhomogeneous(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L133">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_SetVhomogeneous_" data-uid="Adw.ViewStack.SetVhomogeneous*"></a>
+  <h4 id="Adw_ViewStack_SetVhomogeneous_System_Boolean_" data-uid="Adw.ViewStack.SetVhomogeneous(System.Boolean)">SetVhomogeneous(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public void SetVhomogeneous(bool vhomogeneous)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">vhomogeneous</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_SetVisibleChild_Gtk_Widget_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.SetVisibleChild(Gtk.Widget)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L142">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_SetVisibleChild_" data-uid="Adw.ViewStack.SetVisibleChild*"></a>
+  <h4 id="Adw_ViewStack_SetVisibleChild_Gtk_Widget_" data-uid="Adw.ViewStack.SetVisibleChild(Gtk.Widget)">SetVisibleChild(Widget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public void SetVisibleChild(Widget child)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Widget.html">Widget</a></td>
+        <td><span class="parametername">child</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack_SetVisibleChildName_System_String_.md&amp;value=---%0Auid%3A%20Adw.ViewStack.SetVisibleChildName(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Methods.Generated.cs/#L151">View Source</a>
+  </span>
+  <a id="Adw_ViewStack_SetVisibleChildName_" data-uid="Adw.ViewStack.SetVisibleChildName*"></a>
+  <h4 id="Adw_ViewStack_SetVisibleChildName_System_String_" data-uid="Adw.ViewStack.SetVisibleChildName(System.String)">SetVisibleChildName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.0&quot;)]
+public void SetVisibleChildName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Accessible.html">Accessible</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Buildable.html">Buildable</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Adw_ViewStack.md&amp;value=---%0Auid%3A%20Adw.ViewStack%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Adw-1/Public/ViewStack.Properties.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

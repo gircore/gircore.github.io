@@ -1,0 +1,1824 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TreeStore
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TreeStore
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gtk.TreeStore">
+
+
+  <h1 id="Gtk_TreeStore" data-uid="Gtk.TreeStore" class="text-break">Class TreeStore
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">TreeStore</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Gtk.Buildable.html">Buildable</a></div>
+    <div><a class="xref" href="Gtk.TreeDragDest.html">TreeDragDest</a></div>
+    <div><a class="xref" href="Gtk.TreeDragSource.html">TreeDragSource</a></div>
+    <div><a class="xref" href="Gtk.TreeModel.html">TreeModel</a></div>
+    <div><a class="xref" href="Gtk.TreeSortable.html">TreeSortable</a></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
+  <h6><strong>Assembly</strong>: Gtk-4.0.dll</h6>
+  <h5 id="Gtk_TreeStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TreeStore : Object, IObject, INotifyPropertyChanged, IDisposable, Buildable, TreeDragDest, TreeDragSource, TreeModel, TreeSortable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore__ctor_System_Boolean_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.%23ctor(System.Boolean%2CGObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore__ctor_" data-uid="Gtk.TreeStore.#ctor*"></a>
+  <h4 id="Gtk_TreeStore__ctor_System_Boolean_GObject_ConstructArgument___" data-uid="Gtk.TreeStore.#ctor(System.Boolean,GObject.ConstructArgument[])">TreeStore(bool, params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TreeStore(bool owned, params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">owned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Framework.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore__ctor_" data-uid="Gtk.TreeStore.#ctor*"></a>
+  <h4 id="Gtk_TreeStore__ctor_System_IntPtr_System_Boolean_" data-uid="Gtk.TreeStore.#ctor(System.IntPtr,System.Boolean)">TreeStore(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TreeStore(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_Clear.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L18">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_Clear_" data-uid="Gtk.TreeStore.Clear*"></a>
+  <h4 id="Gtk_TreeStore_Clear" data-uid="Gtk.TreeStore.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_DragDataDelete_Gtk_TreePath_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.DragDataDelete(Gtk.TreePath)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L44">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_DragDataDelete_" data-uid="Gtk.TreeStore.DragDataDelete*"></a>
+  <h4 id="Gtk_TreeStore_DragDataDelete_Gtk_TreePath_" data-uid="Gtk.TreeStore.DragDataDelete(Gtk.TreePath)">DragDataDelete(TreePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DragDataDelete(TreePath path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_DragDataGet_Gtk_TreePath_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.DragDataGet(Gtk.TreePath)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L53">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_DragDataGet_" data-uid="Gtk.TreeStore.DragDataGet*"></a>
+  <h4 id="Gtk_TreeStore_DragDataGet_Gtk_TreePath_" data-uid="Gtk.TreeStore.DragDataGet(Gtk.TreePath)">DragDataGet(TreePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentProvider? DragDataGet(TreePath path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gdk.ContentProvider.html">ContentProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_DragDataReceived_Gtk_TreePath_GObject_Value_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.DragDataReceived(Gtk.TreePath%2CGObject.Value)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_DragDataReceived_" data-uid="Gtk.TreeStore.DragDataReceived*"></a>
+  <h4 id="Gtk_TreeStore_DragDataReceived_Gtk_TreePath_GObject_Value_" data-uid="Gtk.TreeStore.DragDataReceived(Gtk.TreePath,GObject.Value)">DragDataReceived(TreePath, Value)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DragDataReceived(TreePath dest, Value value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">dest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_FilterNew_Gtk_TreePath_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.FilterNew(Gtk.TreePath)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L71">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_FilterNew_" data-uid="Gtk.TreeStore.FilterNew*"></a>
+  <h4 id="Gtk_TreeStore_FilterNew_Gtk_TreePath_" data-uid="Gtk.TreeStore.FilterNew(Gtk.TreePath)">FilterNew(TreePath?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TreeModel FilterNew(TreePath? root)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">root</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeModel.html">TreeModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetBuildableId.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetBuildableId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetBuildableId_" data-uid="Gtk.TreeStore.GetBuildableId*"></a>
+  <h4 id="Gtk_TreeStore_GetBuildableId" data-uid="Gtk.TreeStore.GetBuildableId">GetBuildableId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetBuildableId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetColumnType_System_Int32_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetColumnType(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L81">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetColumnType_" data-uid="Gtk.TreeStore.GetColumnType*"></a>
+  <h4 id="Gtk_TreeStore_GetColumnType_System_Int32_" data-uid="Gtk.TreeStore.GetColumnType(System.Int32)">GetColumnType(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nuint GetColumnType(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetFlags.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetFlags%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L90">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetFlags_" data-uid="Gtk.TreeStore.GetFlags*"></a>
+  <h4 id="Gtk_TreeStore_GetFlags" data-uid="Gtk.TreeStore.GetFlags">GetFlags()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TreeModelFlags GetFlags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeModelFlags.html">TreeModelFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetGType.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetGType_" data-uid="Gtk.TreeStore.GetGType*"></a>
+  <h4 id="Gtk_TreeStore_GetGType" data-uid="Gtk.TreeStore.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetNColumns.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetNColumns%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L102">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetNColumns_" data-uid="Gtk.TreeStore.GetNColumns*"></a>
+  <h4 id="Gtk_TreeStore_GetNColumns" data-uid="Gtk.TreeStore.GetNColumns">GetNColumns()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNColumns()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetPath_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetPath(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L111">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetPath_" data-uid="Gtk.TreeStore.GetPath*"></a>
+  <h4 id="Gtk_TreeStore_GetPath_Gtk_TreeIter_" data-uid="Gtk.TreeStore.GetPath(Gtk.TreeIter)">GetPath(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TreePath GetPath(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_GetStringFromIter_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.GetStringFromIter(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L120">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_GetStringFromIter_" data-uid="Gtk.TreeStore.GetStringFromIter*"></a>
+  <h4 id="Gtk_TreeStore_GetStringFromIter_Gtk_TreeIter_" data-uid="Gtk.TreeStore.GetStringFromIter(Gtk.TreeIter)">GetStringFromIter(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetStringFromIter(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_HasDefaultSortFunc.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.HasDefaultSortFunc%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L227">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_HasDefaultSortFunc_" data-uid="Gtk.TreeStore.HasDefaultSortFunc*"></a>
+  <h4 id="Gtk_TreeStore_HasDefaultSortFunc" data-uid="Gtk.TreeStore.HasDefaultSortFunc">HasDefaultSortFunc()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasDefaultSortFunc()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IsAncestor_Gtk_TreeIter_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IsAncestor(Gtk.TreeIter%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L31">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IsAncestor_" data-uid="Gtk.TreeStore.IsAncestor*"></a>
+  <h4 id="Gtk_TreeStore_IsAncestor_Gtk_TreeIter_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IsAncestor(Gtk.TreeIter,Gtk.TreeIter)">IsAncestor(TreeIter, TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAncestor(TreeIter iter, TreeIter descendant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">descendant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IterDepth_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IterDepth(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L40">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IterDepth_" data-uid="Gtk.TreeStore.IterDepth*"></a>
+  <h4 id="Gtk_TreeStore_IterDepth_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IterDepth(Gtk.TreeIter)">IterDepth(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IterDepth(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IterHasChild_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IterHasChild(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L132">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IterHasChild_" data-uid="Gtk.TreeStore.IterHasChild*"></a>
+  <h4 id="Gtk_TreeStore_IterHasChild_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IterHasChild(Gtk.TreeIter)">IterHasChild(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IterHasChild(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IterIsValid_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IterIsValid(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L49">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IterIsValid_" data-uid="Gtk.TreeStore.IterIsValid*"></a>
+  <h4 id="Gtk_TreeStore_IterIsValid_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IterIsValid(Gtk.TreeIter)">IterIsValid(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IterIsValid(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IterNChildren_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IterNChildren(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L141">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IterNChildren_" data-uid="Gtk.TreeStore.IterNChildren*"></a>
+  <h4 id="Gtk_TreeStore_IterNChildren_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IterNChildren(Gtk.TreeIter)">IterNChildren(TreeIter?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IterNChildren(TreeIter? iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IterNext_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IterNext(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L150">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IterNext_" data-uid="Gtk.TreeStore.IterNext*"></a>
+  <h4 id="Gtk_TreeStore_IterNext_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IterNext(Gtk.TreeIter)">IterNext(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IterNext(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_IterPrevious_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.IterPrevious(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L161">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_IterPrevious_" data-uid="Gtk.TreeStore.IterPrevious*"></a>
+  <h4 id="Gtk_TreeStore_IterPrevious_Gtk_TreeIter_" data-uid="Gtk.TreeStore.IterPrevious(Gtk.TreeIter)">IterPrevious(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IterPrevious(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_MoveAfter_Gtk_TreeIter_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.MoveAfter(Gtk.TreeIter%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L58">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_MoveAfter_" data-uid="Gtk.TreeStore.MoveAfter*"></a>
+  <h4 id="Gtk_TreeStore_MoveAfter_Gtk_TreeIter_Gtk_TreeIter_" data-uid="Gtk.TreeStore.MoveAfter(Gtk.TreeIter,Gtk.TreeIter)">MoveAfter(TreeIter, TreeIter?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveAfter(TreeIter iter, TreeIter? position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_MoveBefore_Gtk_TreeIter_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.MoveBefore(Gtk.TreeIter%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L67">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_MoveBefore_" data-uid="Gtk.TreeStore.MoveBefore*"></a>
+  <h4 id="Gtk_TreeStore_MoveBefore_Gtk_TreeIter_Gtk_TreeIter_" data-uid="Gtk.TreeStore.MoveBefore(Gtk.TreeIter,Gtk.TreeIter)">MoveBefore(TreeIter, TreeIter?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveBefore(TreeIter iter, TreeIter? position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RefNode_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RefNode(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L170">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RefNode_" data-uid="Gtk.TreeStore.RefNode*"></a>
+  <h4 id="Gtk_TreeStore_RefNode_Gtk_TreeIter_" data-uid="Gtk.TreeStore.RefNode(Gtk.TreeIter)">RefNode(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefNode(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_Remove_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.Remove(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L77">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_Remove_" data-uid="Gtk.TreeStore.Remove*"></a>
+  <h4 id="Gtk_TreeStore_Remove_Gtk_TreeIter_" data-uid="Gtk.TreeStore.Remove(Gtk.TreeIter)">Remove(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RowChanged_Gtk_TreePath_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RowChanged(Gtk.TreePath%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L179">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RowChanged_" data-uid="Gtk.TreeStore.RowChanged*"></a>
+  <h4 id="Gtk_TreeStore_RowChanged_Gtk_TreePath_Gtk_TreeIter_" data-uid="Gtk.TreeStore.RowChanged(Gtk.TreePath,Gtk.TreeIter)">RowChanged(TreePath, TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RowChanged(TreePath path, TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RowDeleted_Gtk_TreePath_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RowDeleted(Gtk.TreePath)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L188">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RowDeleted_" data-uid="Gtk.TreeStore.RowDeleted*"></a>
+  <h4 id="Gtk_TreeStore_RowDeleted_Gtk_TreePath_" data-uid="Gtk.TreeStore.RowDeleted(Gtk.TreePath)">RowDeleted(TreePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RowDeleted(TreePath path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RowDraggable_Gtk_TreePath_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RowDraggable(Gtk.TreePath)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L62">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RowDraggable_" data-uid="Gtk.TreeStore.RowDraggable*"></a>
+  <h4 id="Gtk_TreeStore_RowDraggable_Gtk_TreePath_" data-uid="Gtk.TreeStore.RowDraggable(Gtk.TreePath)">RowDraggable(TreePath)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RowDraggable(TreePath path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RowDropPossible_Gtk_TreePath_GObject_Value_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RowDropPossible(Gtk.TreePath%2CGObject.Value)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L35">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RowDropPossible_" data-uid="Gtk.TreeStore.RowDropPossible*"></a>
+  <h4 id="Gtk_TreeStore_RowDropPossible_Gtk_TreePath_GObject_Value_" data-uid="Gtk.TreeStore.RowDropPossible(Gtk.TreePath,GObject.Value)">RowDropPossible(TreePath, Value)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RowDropPossible(TreePath destPath, Value value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">destPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RowHasChildToggled_Gtk_TreePath_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RowHasChildToggled(Gtk.TreePath%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L197">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RowHasChildToggled_" data-uid="Gtk.TreeStore.RowHasChildToggled*"></a>
+  <h4 id="Gtk_TreeStore_RowHasChildToggled_Gtk_TreePath_Gtk_TreeIter_" data-uid="Gtk.TreeStore.RowHasChildToggled(Gtk.TreePath,Gtk.TreeIter)">RowHasChildToggled(TreePath, TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RowHasChildToggled(TreePath path, TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_RowInserted_Gtk_TreePath_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.RowInserted(Gtk.TreePath%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L206">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_RowInserted_" data-uid="Gtk.TreeStore.RowInserted*"></a>
+  <h4 id="Gtk_TreeStore_RowInserted_Gtk_TreePath_Gtk_TreeIter_" data-uid="Gtk.TreeStore.RowInserted(Gtk.TreePath,Gtk.TreeIter)">RowInserted(TreePath, TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RowInserted(TreePath path, TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreePath.html">TreePath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_SetDefaultSortFunc_Gtk_TreeIterCompareFunc_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.SetDefaultSortFunc(Gtk.TreeIterCompareFunc)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L236">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_SetDefaultSortFunc_" data-uid="Gtk.TreeStore.SetDefaultSortFunc*"></a>
+  <h4 id="Gtk_TreeStore_SetDefaultSortFunc_Gtk_TreeIterCompareFunc_" data-uid="Gtk.TreeStore.SetDefaultSortFunc(Gtk.TreeIterCompareFunc)">SetDefaultSortFunc(TreeIterCompareFunc)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultSortFunc(TreeIterCompareFunc sortFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIterCompareFunc.html">TreeIterCompareFunc</a></td>
+        <td><span class="parametername">sortFunc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_SetSortColumnId_System_Int32_Gtk_SortType_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.SetSortColumnId(System.Int32%2CGtk.SortType)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L245">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_SetSortColumnId_" data-uid="Gtk.TreeStore.SetSortColumnId*"></a>
+  <h4 id="Gtk_TreeStore_SetSortColumnId_System_Int32_Gtk_SortType_" data-uid="Gtk.TreeStore.SetSortColumnId(System.Int32,Gtk.SortType)">SetSortColumnId(int, SortType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSortColumnId(int sortColumnId, SortType order)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sortColumnId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.SortType.html">SortType</a></td>
+        <td><span class="parametername">order</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_SetSortFunc_System_Int32_Gtk_TreeIterCompareFunc_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.SetSortFunc(System.Int32%2CGtk.TreeIterCompareFunc)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L254">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_SetSortFunc_" data-uid="Gtk.TreeStore.SetSortFunc*"></a>
+  <h4 id="Gtk_TreeStore_SetSortFunc_System_Int32_Gtk_TreeIterCompareFunc_" data-uid="Gtk.TreeStore.SetSortFunc(System.Int32,Gtk.TreeIterCompareFunc)">SetSortFunc(int, TreeIterCompareFunc)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSortFunc(int sortColumnId, TreeIterCompareFunc sortFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sortColumnId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIterCompareFunc.html">TreeIterCompareFunc</a></td>
+        <td><span class="parametername">sortFunc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_SetValue_Gtk_TreeIter_System_Int32_GObject_Value_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.SetValue(Gtk.TreeIter%2CSystem.Int32%2CGObject.Value)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L89">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_SetValue_" data-uid="Gtk.TreeStore.SetValue*"></a>
+  <h4 id="Gtk_TreeStore_SetValue_Gtk_TreeIter_System_Int32_GObject_Value_" data-uid="Gtk.TreeStore.SetValue(Gtk.TreeIter,System.Int32,GObject.Value)">SetValue(TreeIter, int, Value)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(TreeIter iter, int column, Value value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Value.html">Value</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_SortColumnChanged.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.SortColumnChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L263">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_SortColumnChanged_" data-uid="Gtk.TreeStore.SortColumnChanged*"></a>
+  <h4 id="Gtk_TreeStore_SortColumnChanged" data-uid="Gtk.TreeStore.SortColumnChanged">SortColumnChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortColumnChanged()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_Swap_Gtk_TreeIter_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.Swap(Gtk.TreeIter%2CGtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L99">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_Swap_" data-uid="Gtk.TreeStore.Swap*"></a>
+  <h4 id="Gtk_TreeStore_Swap_Gtk_TreeIter_Gtk_TreeIter_" data-uid="Gtk.TreeStore.Swap(Gtk.TreeIter,Gtk.TreeIter)">Swap(TreeIter, TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Swap(TreeIter a, TreeIter b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">a</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore_UnrefNode_Gtk_TreeIter_.md&amp;value=---%0Auid%3A%20Gtk.TreeStore.UnrefNode(Gtk.TreeIter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.InterfaceMethods.Generated.cs/#L217">View Source</a>
+  </span>
+  <a id="Gtk_TreeStore_UnrefNode_" data-uid="Gtk.TreeStore.UnrefNode*"></a>
+  <h4 id="Gtk_TreeStore_UnrefNode_Gtk_TreeIter_" data-uid="Gtk.TreeStore.UnrefNode(Gtk.TreeIter)">UnrefNode(TreeIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnrefNode(TreeIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TreeIter.html">TreeIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Buildable.html">Buildable</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.TreeDragDest.html">TreeDragDest</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.TreeDragSource.html">TreeDragSource</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.TreeModel.html">TreeModel</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.TreeSortable.html">TreeSortable</a>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=Gtk_TreeStore.md&amp;value=---%0Auid%3A%20Gtk.TreeStore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/Gtk-4.0/Public/TreeStore.Methods.Generated.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

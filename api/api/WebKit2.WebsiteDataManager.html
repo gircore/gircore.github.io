@@ -1,0 +1,1783 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class WebsiteDataManager
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class WebsiteDataManager
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../https://raw.githubusercontent.com/gircore/gir.core/develop/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WebKit2.WebsiteDataManager">
+
+
+  <h1 id="WebKit2_WebsiteDataManager" data-uid="WebKit2.WebsiteDataManager" class="text-break">Class WebsiteDataManager
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">WebsiteDataManager</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WebKit2.html">WebKit2</a></h6>
+  <h6><strong>Assembly</strong>: WebKit2-5.0.dll</h6>
+  <h5 id="WebKit2_WebsiteDataManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebsiteDataManager : Object, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager__ctor_System_Boolean_GObject_ConstructArgument___.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.%23ctor(System.Boolean%2CGObject.ConstructArgument%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Framework.Generated.cs/#L18">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager__ctor_" data-uid="WebKit2.WebsiteDataManager.#ctor*"></a>
+  <h4 id="WebKit2_WebsiteDataManager__ctor_System_Boolean_GObject_ConstructArgument___" data-uid="WebKit2.WebsiteDataManager.#ctor(System.Boolean,GObject.ConstructArgument[])">WebsiteDataManager(bool, params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WebsiteDataManager(bool owned, params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">owned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager__ctor_System_IntPtr_System_Boolean_.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.%23ctor(System.IntPtr%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Framework.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager__ctor_" data-uid="WebKit2.WebsiteDataManager.#ctor*"></a>
+  <h4 id="WebKit2_WebsiteDataManager__ctor_System_IntPtr_System_Boolean_" data-uid="WebKit2.WebsiteDataManager.#ctor(System.IntPtr,System.Boolean)">WebsiteDataManager(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected WebsiteDataManager(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_BaseCacheDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.BaseCacheDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L12">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_BaseCacheDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.BaseCacheDirectoryPropertyDefinition">BaseCacheDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; BaseCacheDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_BaseDataDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.BaseDataDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L23">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_BaseDataDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.BaseDataDirectoryPropertyDefinition">BaseDataDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; BaseDataDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_DiskCacheDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.DiskCacheDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L34">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_DiskCacheDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.DiskCacheDirectoryPropertyDefinition">DiskCacheDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; DiskCacheDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_DomCacheDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.DomCacheDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L45">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_DomCacheDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.DomCacheDirectoryPropertyDefinition">DomCacheDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; DomCacheDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_HstsCacheDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.HstsCacheDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L56">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_HstsCacheDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.HstsCacheDirectoryPropertyDefinition">HstsCacheDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; HstsCacheDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_IndexeddbDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.IndexeddbDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L67">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_IndexeddbDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.IndexeddbDirectoryPropertyDefinition">IndexeddbDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; IndexeddbDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_IsEphemeralPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.IsEphemeralPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L78">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_IsEphemeralPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.IsEphemeralPropertyDefinition">IsEphemeralPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, WebsiteDataManager&gt; IsEphemeralPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_ItpDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.ItpDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L89">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_ItpDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.ItpDirectoryPropertyDefinition">ItpDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; ItpDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_LocalStorageDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.LocalStorageDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L100">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_LocalStorageDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.LocalStorageDirectoryPropertyDefinition">LocalStorageDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; LocalStorageDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_OfflineApplicationCacheDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.OfflineApplicationCacheDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L111">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_OfflineApplicationCacheDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.OfflineApplicationCacheDirectoryPropertyDefinition">OfflineApplicationCacheDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; OfflineApplicationCacheDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_ServiceWorkerRegistrationsDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.ServiceWorkerRegistrationsDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L122">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_ServiceWorkerRegistrationsDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.ServiceWorkerRegistrationsDirectoryPropertyDefinition">ServiceWorkerRegistrationsDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; ServiceWorkerRegistrationsDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_WebsqlDirectoryPropertyDefinition.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.WebsqlDirectoryPropertyDefinition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L133">View Source</a>
+  </span>
+  <h4 id="WebKit2_WebsiteDataManager_WebsqlDirectoryPropertyDefinition" data-uid="WebKit2.WebsiteDataManager.WebsqlDirectoryPropertyDefinition">WebsqlDirectoryPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, WebsiteDataManager&gt; WebsqlDirectoryPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_BaseCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.BaseCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_BaseCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.BaseCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_BaseCacheDirectory" data-uid="WebKit2.WebsiteDataManager.BaseCacheDirectory">BaseCacheDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? BaseCacheDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_BaseDataDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.BaseDataDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L28">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_BaseDataDirectory_" data-uid="WebKit2.WebsiteDataManager.BaseDataDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_BaseDataDirectory" data-uid="WebKit2.WebsiteDataManager.BaseDataDirectory">BaseDataDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? BaseDataDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_DiskCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.DiskCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L39">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_DiskCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.DiskCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_DiskCacheDirectory" data-uid="WebKit2.WebsiteDataManager.DiskCacheDirectory">DiskCacheDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DiskCacheDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_DomCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.DomCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L50">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_DomCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.DomCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_DomCacheDirectory" data-uid="WebKit2.WebsiteDataManager.DomCacheDirectory">DomCacheDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DomCacheDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_HstsCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.HstsCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L61">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_HstsCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.HstsCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_HstsCacheDirectory" data-uid="WebKit2.WebsiteDataManager.HstsCacheDirectory">HstsCacheDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? HstsCacheDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_IndexeddbDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.IndexeddbDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L72">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_IndexeddbDirectory_" data-uid="WebKit2.WebsiteDataManager.IndexeddbDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_IndexeddbDirectory" data-uid="WebKit2.WebsiteDataManager.IndexeddbDirectory">IndexeddbDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? IndexeddbDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_IsEphemeral.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.IsEphemeral%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L83">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_IsEphemeral_" data-uid="WebKit2.WebsiteDataManager.IsEphemeral*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_IsEphemeral" data-uid="WebKit2.WebsiteDataManager.IsEphemeral">IsEphemeral</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEphemeral { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_ItpDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.ItpDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L94">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_ItpDirectory_" data-uid="WebKit2.WebsiteDataManager.ItpDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_ItpDirectory" data-uid="WebKit2.WebsiteDataManager.ItpDirectory">ItpDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ItpDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_LocalStorageDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.LocalStorageDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L105">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_LocalStorageDirectory_" data-uid="WebKit2.WebsiteDataManager.LocalStorageDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_LocalStorageDirectory" data-uid="WebKit2.WebsiteDataManager.LocalStorageDirectory">LocalStorageDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? LocalStorageDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_OfflineApplicationCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.OfflineApplicationCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L116">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_OfflineApplicationCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.OfflineApplicationCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_OfflineApplicationCacheDirectory" data-uid="WebKit2.WebsiteDataManager.OfflineApplicationCacheDirectory">OfflineApplicationCacheDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? OfflineApplicationCacheDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_ServiceWorkerRegistrationsDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.ServiceWorkerRegistrationsDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L127">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_ServiceWorkerRegistrationsDirectory_" data-uid="WebKit2.WebsiteDataManager.ServiceWorkerRegistrationsDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_ServiceWorkerRegistrationsDirectory" data-uid="WebKit2.WebsiteDataManager.ServiceWorkerRegistrationsDirectory">ServiceWorkerRegistrationsDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ServiceWorkerRegistrationsDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_WebsqlDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.WebsqlDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L138">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_WebsqlDirectory_" data-uid="WebKit2.WebsiteDataManager.WebsqlDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_WebsqlDirectory" data-uid="WebKit2.WebsiteDataManager.WebsqlDirectory">WebsqlDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? WebsqlDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetBaseCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetBaseCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L20">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetBaseCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.GetBaseCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetBaseCacheDirectory" data-uid="WebKit2.WebsiteDataManager.GetBaseCacheDirectory">GetBaseCacheDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetBaseCacheDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetBaseDataDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetBaseDataDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L29">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetBaseDataDirectory_" data-uid="WebKit2.WebsiteDataManager.GetBaseDataDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetBaseDataDirectory" data-uid="WebKit2.WebsiteDataManager.GetBaseDataDirectory">GetBaseDataDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetBaseDataDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetCookieManager.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetCookieManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L38">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetCookieManager_" data-uid="WebKit2.WebsiteDataManager.GetCookieManager*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetCookieManager" data-uid="WebKit2.WebsiteDataManager.GetCookieManager">GetCookieManager()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.16&quot;)]
+public CookieManager GetCookieManager()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2.CookieManager.html">CookieManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetDiskCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetDiskCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L47">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetDiskCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.GetDiskCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetDiskCacheDirectory" data-uid="WebKit2.WebsiteDataManager.GetDiskCacheDirectory">GetDiskCacheDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetDiskCacheDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetDomCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetDomCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L56">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetDomCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.GetDomCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetDomCacheDirectory" data-uid="WebKit2.WebsiteDataManager.GetDomCacheDirectory">GetDomCacheDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public string? GetDomCacheDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetGType.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetGType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Functions.Generated.cs/#L17">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetGType_" data-uid="WebKit2.WebsiteDataManager.GetGType*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetGType" data-uid="WebKit2.WebsiteDataManager.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetHstsCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetHstsCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L65">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetHstsCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.GetHstsCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetHstsCacheDirectory" data-uid="WebKit2.WebsiteDataManager.GetHstsCacheDirectory">GetHstsCacheDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public string? GetHstsCacheDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetIndexeddbDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetIndexeddbDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L74">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetIndexeddbDirectory_" data-uid="WebKit2.WebsiteDataManager.GetIndexeddbDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetIndexeddbDirectory" data-uid="WebKit2.WebsiteDataManager.GetIndexeddbDirectory">GetIndexeddbDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetIndexeddbDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetIsEphemeral.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetIsEphemeral%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L157">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetIsEphemeral_" data-uid="WebKit2.WebsiteDataManager.GetIsEphemeral*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetIsEphemeral" data-uid="WebKit2.WebsiteDataManager.GetIsEphemeral">GetIsEphemeral()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.16&quot;)]
+public bool GetIsEphemeral()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetItpDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetItpDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L83">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetItpDirectory_" data-uid="WebKit2.WebsiteDataManager.GetItpDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetItpDirectory" data-uid="WebKit2.WebsiteDataManager.GetItpDirectory">GetItpDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public string? GetItpDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetItpEnabled.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetItpEnabled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L92">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetItpEnabled_" data-uid="WebKit2.WebsiteDataManager.GetItpEnabled*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetItpEnabled" data-uid="WebKit2.WebsiteDataManager.GetItpEnabled">GetItpEnabled()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public bool GetItpEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetLocalStorageDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetLocalStorageDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L103">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetLocalStorageDirectory_" data-uid="WebKit2.WebsiteDataManager.GetLocalStorageDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetLocalStorageDirectory" data-uid="WebKit2.WebsiteDataManager.GetLocalStorageDirectory">GetLocalStorageDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetLocalStorageDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetOfflineApplicationCacheDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetOfflineApplicationCacheDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L112">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetOfflineApplicationCacheDirectory_" data-uid="WebKit2.WebsiteDataManager.GetOfflineApplicationCacheDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetOfflineApplicationCacheDirectory" data-uid="WebKit2.WebsiteDataManager.GetOfflineApplicationCacheDirectory">GetOfflineApplicationCacheDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetOfflineApplicationCacheDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetPersistentCredentialStorageEnabled.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetPersistentCredentialStorageEnabled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L121">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetPersistentCredentialStorageEnabled_" data-uid="WebKit2.WebsiteDataManager.GetPersistentCredentialStorageEnabled*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetPersistentCredentialStorageEnabled" data-uid="WebKit2.WebsiteDataManager.GetPersistentCredentialStorageEnabled">GetPersistentCredentialStorageEnabled()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public bool GetPersistentCredentialStorageEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetServiceWorkerRegistrationsDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetServiceWorkerRegistrationsDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L130">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetServiceWorkerRegistrationsDirectory_" data-uid="WebKit2.WebsiteDataManager.GetServiceWorkerRegistrationsDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetServiceWorkerRegistrationsDirectory" data-uid="WebKit2.WebsiteDataManager.GetServiceWorkerRegistrationsDirectory">GetServiceWorkerRegistrationsDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public string? GetServiceWorkerRegistrationsDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetTlsErrorsPolicy.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetTlsErrorsPolicy%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L139">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetTlsErrorsPolicy_" data-uid="WebKit2.WebsiteDataManager.GetTlsErrorsPolicy*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetTlsErrorsPolicy" data-uid="WebKit2.WebsiteDataManager.GetTlsErrorsPolicy">GetTlsErrorsPolicy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public TLSErrorsPolicy GetTlsErrorsPolicy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2.TLSErrorsPolicy.html">TLSErrorsPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_GetWebsqlDirectory.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.GetWebsqlDirectory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L148">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_GetWebsqlDirectory_" data-uid="WebKit2.WebsiteDataManager.GetWebsqlDirectory*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_GetWebsqlDirectory" data-uid="WebKit2.WebsiteDataManager.GetWebsqlDirectory">GetWebsqlDirectory()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.10&quot;)]
+public string? GetWebsqlDirectory()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_NewEphemeral.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.NewEphemeral%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Constructors.Generated.cs/#L16">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_NewEphemeral_" data-uid="WebKit2.WebsiteDataManager.NewEphemeral*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_NewEphemeral" data-uid="WebKit2.WebsiteDataManager.NewEphemeral">NewEphemeral()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.16&quot;)]
+public static WebsiteDataManager NewEphemeral()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2.WebsiteDataManager.html">WebsiteDataManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_SetItpEnabled_System_Boolean_.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.SetItpEnabled(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L168">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_SetItpEnabled_" data-uid="WebKit2.WebsiteDataManager.SetItpEnabled*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_SetItpEnabled_System_Boolean_" data-uid="WebKit2.WebsiteDataManager.SetItpEnabled(System.Boolean)">SetItpEnabled(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public void SetItpEnabled(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_SetMemoryPressureSettings_WebKit2_MemoryPressureSettings_.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.SetMemoryPressureSettings(WebKit2.MemoryPressureSettings)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Functions.Generated.cs/#L26">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_SetMemoryPressureSettings_" data-uid="WebKit2.WebsiteDataManager.SetMemoryPressureSettings*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_SetMemoryPressureSettings_WebKit2_MemoryPressureSettings_" data-uid="WebKit2.WebsiteDataManager.SetMemoryPressureSettings(WebKit2.MemoryPressureSettings)">SetMemoryPressureSettings(MemoryPressureSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
+public static void SetMemoryPressureSettings(MemoryPressureSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2.MemoryPressureSettings.html">MemoryPressureSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_SetNetworkProxySettings_WebKit2_NetworkProxyMode_WebKit2_NetworkProxySettings_.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.SetNetworkProxySettings(WebKit2.NetworkProxyMode%2CWebKit2.NetworkProxySettings)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L177">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_SetNetworkProxySettings_" data-uid="WebKit2.WebsiteDataManager.SetNetworkProxySettings*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_SetNetworkProxySettings_WebKit2_NetworkProxyMode_WebKit2_NetworkProxySettings_" data-uid="WebKit2.WebsiteDataManager.SetNetworkProxySettings(WebKit2.NetworkProxyMode,WebKit2.NetworkProxySettings)">SetNetworkProxySettings(NetworkProxyMode, NetworkProxySettings?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public void SetNetworkProxySettings(NetworkProxyMode proxyMode, NetworkProxySettings? proxySettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2.NetworkProxyMode.html">NetworkProxyMode</a></td>
+        <td><span class="parametername">proxyMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebKit2.NetworkProxySettings.html">NetworkProxySettings</a></td>
+        <td><span class="parametername">proxySettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_SetPersistentCredentialStorageEnabled_System_Boolean_.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.SetPersistentCredentialStorageEnabled(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L186">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_SetPersistentCredentialStorageEnabled_" data-uid="WebKit2.WebsiteDataManager.SetPersistentCredentialStorageEnabled*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_SetPersistentCredentialStorageEnabled_System_Boolean_" data-uid="WebKit2.WebsiteDataManager.SetPersistentCredentialStorageEnabled(System.Boolean)">SetPersistentCredentialStorageEnabled(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public void SetPersistentCredentialStorageEnabled(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager_SetTlsErrorsPolicy_WebKit2_TLSErrorsPolicy_.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager.SetTlsErrorsPolicy(WebKit2.TLSErrorsPolicy)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Methods.Generated.cs/#L195">View Source</a>
+  </span>
+  <a id="WebKit2_WebsiteDataManager_SetTlsErrorsPolicy_" data-uid="WebKit2.WebsiteDataManager.SetTlsErrorsPolicy*"></a>
+  <h4 id="WebKit2_WebsiteDataManager_SetTlsErrorsPolicy_WebKit2_TLSErrorsPolicy_" data-uid="WebKit2.WebsiteDataManager.SetTlsErrorsPolicy(WebKit2.TLSErrorsPolicy)">SetTlsErrorsPolicy(TLSErrorsPolicy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public void SetTlsErrorsPolicy(TLSErrorsPolicy policy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2.TLSErrorsPolicy.html">TLSErrorsPolicy</a></td>
+        <td><span class="parametername">policy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/new/main/apiSpec/new?filename=WebKit2_WebsiteDataManager.md&amp;value=---%0Auid%3A%20WebKit2.WebsiteDataManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/gircore/gir.core/blob/main/src/Libs/WebKit2-5.0/Public/WebsiteDataManager.Properties.Generated.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
