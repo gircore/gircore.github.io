@@ -1,0 +1,1065 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Context
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Context
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="JavaScriptCore.Internal.Context">
+
+
+  <h1 id="JavaScriptCore_Internal_Context" data-uid="JavaScriptCore.Internal.Context" class="text-break">Class Context
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Context</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="JavaScriptCore.html">JavaScriptCore</a>.<a class="xref" href="JavaScriptCore.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: JavaScriptCore-5.0.dll</h6>
+  <h5 id="JavaScriptCore_Internal_Context_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Context</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="JavaScriptCore_Internal_Context_CheckSyntax_" data-uid="JavaScriptCore.Internal.Context.CheckSyntax*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_CheckSyntax_System_IntPtr_System_String_System_Int64_JavaScriptCore_CheckSyntaxMode_System_String_System_UInt32_System_IntPtr__" data-uid="JavaScriptCore.Internal.Context.CheckSyntax(System.IntPtr,System.String,System.Int64,JavaScriptCore.CheckSyntaxMode,System.String,System.UInt32,System.IntPtr@)">CheckSyntax(nint, string, long, CheckSyntaxMode, string, uint, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_check_syntax.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern CheckSyntaxResult CheckSyntax(nint context, string code, long length, CheckSyntaxMode mode, string uri, uint lineNumber, out nint exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.CheckSyntaxMode.html">CheckSyntaxMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.CheckSyntaxResult.html">CheckSyntaxResult</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_ClearException_" data-uid="JavaScriptCore.Internal.Context.ClearException*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_ClearException_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.ClearException(System.IntPtr)">ClearException(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_clear_exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ClearException(nint context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_Evaluate_" data-uid="JavaScriptCore.Internal.Context.Evaluate*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_Evaluate_System_IntPtr_System_String_System_Int64_" data-uid="JavaScriptCore.Internal.Context.Evaluate(System.IntPtr,System.String,System.Int64)">Evaluate(nint, string, long)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_evaluate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint Evaluate(nint context, string code, long length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_EvaluateInObject_" data-uid="JavaScriptCore.Internal.Context.EvaluateInObject*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_EvaluateInObject_System_IntPtr_System_String_System_Int64_System_IntPtr_System_IntPtr_System_String_System_UInt32_System_IntPtr__" data-uid="JavaScriptCore.Internal.Context.EvaluateInObject(System.IntPtr,System.String,System.Int64,System.IntPtr,System.IntPtr,System.String,System.UInt32,System.IntPtr@)">EvaluateInObject(nint, string, long, nint, nint, string, uint, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_evaluate_in_object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint EvaluateInObject(nint context, string code, long length, nint objectInstance, nint objectClass, string uri, uint lineNumber, out nint @object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">objectInstance</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">objectClass</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_EvaluateWithSourceUri_" data-uid="JavaScriptCore.Internal.Context.EvaluateWithSourceUri*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_EvaluateWithSourceUri_System_IntPtr_System_String_System_Int64_System_String_System_UInt32_" data-uid="JavaScriptCore.Internal.Context.EvaluateWithSourceUri(System.IntPtr,System.String,System.Int64,System.String,System.UInt32)">EvaluateWithSourceUri(nint, string, long, string, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_evaluate_with_source_uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint EvaluateWithSourceUri(nint context, string code, long length, string uri, uint lineNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">code</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">lineNumber</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_GetCurrent_" data-uid="JavaScriptCore.Internal.Context.GetCurrent*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_GetCurrent" data-uid="JavaScriptCore.Internal.Context.GetCurrent">GetCurrent()</h4>
+  <div class="markdown level1 summary"><p>Calls native function jsc_context_get_current.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint GetCurrent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_GetException_" data-uid="JavaScriptCore.Internal.Context.GetException*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_GetException_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.GetException(System.IntPtr)">GetException(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_get_exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint GetException(nint context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_GetGlobalObject_" data-uid="JavaScriptCore.Internal.Context.GetGlobalObject*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_GetGlobalObject_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.GetGlobalObject(System.IntPtr)">GetGlobalObject(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_get_global_object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint GetGlobalObject(nint context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_GetGType_" data-uid="JavaScriptCore.Internal.Context.GetGType*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_GetGType" data-uid="JavaScriptCore.Internal.Context.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function jsc_context_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_GetValue_" data-uid="JavaScriptCore.Internal.Context.GetValue*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_GetValue_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Context.GetValue(System.IntPtr,System.String)">GetValue(nint, string)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_get_value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint GetValue(nint context, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_GetVirtualMachine_" data-uid="JavaScriptCore.Internal.Context.GetVirtualMachine*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_GetVirtualMachine_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.GetVirtualMachine(System.IntPtr)">GetVirtualMachine(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_get_virtual_machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint GetVirtualMachine(nint context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_New_" data-uid="JavaScriptCore.Internal.Context.New*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_New" data-uid="JavaScriptCore.Internal.Context.New">New()</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor jsc_context_new.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint New()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_NewWithVirtualMachine_" data-uid="JavaScriptCore.Internal.Context.NewWithVirtualMachine*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_NewWithVirtualMachine_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.NewWithVirtualMachine(System.IntPtr)">NewWithVirtualMachine(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor jsc_context_new_with_virtual_machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint NewWithVirtualMachine(nint vm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">vm</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_PopExceptionHandler_" data-uid="JavaScriptCore.Internal.Context.PopExceptionHandler*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_PopExceptionHandler_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.PopExceptionHandler(System.IntPtr)">PopExceptionHandler(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_pop_exception_handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void PopExceptionHandler(nint context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_PushExceptionHandler_" data-uid="JavaScriptCore.Internal.Context.PushExceptionHandler*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_PushExceptionHandler_System_IntPtr_JavaScriptCore_Internal_ExceptionHandler_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="JavaScriptCore.Internal.Context.PushExceptionHandler(System.IntPtr,JavaScriptCore.Internal.ExceptionHandler,System.IntPtr,GLib.Internal.DestroyNotify)">PushExceptionHandler(nint, ExceptionHandler, nint, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_push_exception_handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void PushExceptionHandler(nint context, ExceptionHandler handler, nint userData, DestroyNotify destroyNotify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.Internal.ExceptionHandler.html">ExceptionHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroyNotify</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_RegisterClass_" data-uid="JavaScriptCore.Internal.Context.RegisterClass*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_RegisterClass_System_IntPtr_System_String_System_IntPtr_JavaScriptCore_Internal_ClassVTableHandle_GLib_Internal_DestroyNotify_" data-uid="JavaScriptCore.Internal.Context.RegisterClass(System.IntPtr,System.String,System.IntPtr,JavaScriptCore.Internal.ClassVTableHandle,GLib.Internal.DestroyNotify)">RegisterClass(nint, string, nint, ClassVTableHandle, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_register_class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint RegisterClass(nint context, string name, nint parentClass, ClassVTableHandle vtable, DestroyNotify destroyNotify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">parentClass</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.Internal.ClassVTableHandle.html">ClassVTableHandle</a></td>
+        <td><span class="parametername">vtable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">destroyNotify</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_SetValue_" data-uid="JavaScriptCore.Internal.Context.SetValue*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_SetValue_System_IntPtr_System_String_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.SetValue(System.IntPtr,System.String,System.IntPtr)">SetValue(nint, string, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_set_value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetValue(nint context, string name, nint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_Throw_" data-uid="JavaScriptCore.Internal.Context.Throw*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_Throw_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Context.Throw(System.IntPtr,System.String)">Throw(nint, string)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_throw.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Throw(nint context, string errorMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_ThrowException_" data-uid="JavaScriptCore.Internal.Context.ThrowException*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_ThrowException_System_IntPtr_System_IntPtr_" data-uid="JavaScriptCore.Internal.Context.ThrowException(System.IntPtr,System.IntPtr)">ThrowException(nint, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_throw_exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ThrowException(nint context, nint exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="JavaScriptCore_Internal_Context_ThrowWithName_" data-uid="JavaScriptCore.Internal.Context.ThrowWithName*"></a>
+  <h4 id="JavaScriptCore_Internal_Context_ThrowWithName_System_IntPtr_System_String_System_String_" data-uid="JavaScriptCore.Internal.Context.ThrowWithName(System.IntPtr,System.String,System.String)">ThrowWithName(nint, string, string)</h4>
+  <div class="markdown level1 summary"><p>Calls native method jsc_context_throw_with_name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ThrowWithName(nint context, string errorName, string errorMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">errorName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

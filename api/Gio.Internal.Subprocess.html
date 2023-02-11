@@ -1,0 +1,1480 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Subprocess
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Subprocess
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.Internal.Subprocess">
+
+
+  <h1 id="Gio_Internal_Subprocess" data-uid="Gio.Internal.Subprocess" class="text-break">Class Subprocess
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Subprocess</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a>.<a class="xref" href="Gio.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: Gio-2.0.dll</h6>
+  <h5 id="Gio_Internal_Subprocess_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Subprocess</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Gio_Internal_Subprocess_Communicate_" data-uid="Gio.Internal.Subprocess.Communicate*"></a>
+  <h4 id="Gio_Internal_Subprocess_Communicate_System_IntPtr_GLib_Internal_BytesHandle_System_IntPtr_GLib_Internal_BytesOwnedHandle__GLib_Internal_BytesOwnedHandle__GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.Communicate(System.IntPtr,GLib.Internal.BytesHandle,System.IntPtr,GLib.Internal.BytesOwnedHandle@,GLib.Internal.BytesOwnedHandle@,GLib.Internal.ErrorOwnedHandle@)">Communicate(nint, BytesHandle, nint, out BytesOwnedHandle, out BytesOwnedHandle, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_communicate.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool Communicate(nint subprocess, BytesHandle stdinBuf, nint cancellable, out BytesOwnedHandle stdoutBuf, out BytesOwnedHandle stderrBuf, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.BytesHandle.html">BytesHandle</a></td>
+        <td><span class="parametername">stdinBuf</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.BytesOwnedHandle.html">BytesOwnedHandle</a></td>
+        <td><span class="parametername">stdoutBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.BytesOwnedHandle.html">BytesOwnedHandle</a></td>
+        <td><span class="parametername">stderrBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_CommunicateAsync_" data-uid="Gio.Internal.Subprocess.CommunicateAsync*"></a>
+  <h4 id="Gio_Internal_Subprocess_CommunicateAsync_System_IntPtr_GLib_Internal_BytesHandle_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.Subprocess.CommunicateAsync(System.IntPtr,GLib.Internal.BytesHandle,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">CommunicateAsync(nint, BytesHandle, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_communicate_async.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void CommunicateAsync(nint subprocess, BytesHandle stdinBuf, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.BytesHandle.html">BytesHandle</a></td>
+        <td><span class="parametername">stdinBuf</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_CommunicateFinish_" data-uid="Gio.Internal.Subprocess.CommunicateFinish*"></a>
+  <h4 id="Gio_Internal_Subprocess_CommunicateFinish_System_IntPtr_System_IntPtr_GLib_Internal_BytesOwnedHandle__GLib_Internal_BytesOwnedHandle__GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.CommunicateFinish(System.IntPtr,System.IntPtr,GLib.Internal.BytesOwnedHandle@,GLib.Internal.BytesOwnedHandle@,GLib.Internal.ErrorOwnedHandle@)">CommunicateFinish(nint, nint, out BytesOwnedHandle, out BytesOwnedHandle, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_communicate_finish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool CommunicateFinish(nint subprocess, nint result, out BytesOwnedHandle stdoutBuf, out BytesOwnedHandle stderrBuf, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.BytesOwnedHandle.html">BytesOwnedHandle</a></td>
+        <td><span class="parametername">stdoutBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.BytesOwnedHandle.html">BytesOwnedHandle</a></td>
+        <td><span class="parametername">stderrBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_CommunicateUtf8_" data-uid="Gio.Internal.Subprocess.CommunicateUtf8*"></a>
+  <h4 id="Gio_Internal_Subprocess_CommunicateUtf8_System_IntPtr_System_String_System_IntPtr_System_String__System_String__GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.CommunicateUtf8(System.IntPtr,System.String,System.IntPtr,System.String@,System.String@,GLib.Internal.ErrorOwnedHandle@)">CommunicateUtf8(nint, string?, nint, out string?, out string?, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_communicate_utf8.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool CommunicateUtf8(nint subprocess, string? stdinBuf, nint cancellable, out string? stdoutBuf, out string? stderrBuf, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">stdinBuf</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">stdoutBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">stderrBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_CommunicateUtf8Async_" data-uid="Gio.Internal.Subprocess.CommunicateUtf8Async*"></a>
+  <h4 id="Gio_Internal_Subprocess_CommunicateUtf8Async_System_IntPtr_System_String_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.Subprocess.CommunicateUtf8Async(System.IntPtr,System.String,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">CommunicateUtf8Async(nint, string?, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_communicate_utf8_async.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void CommunicateUtf8Async(nint subprocess, string? stdinBuf, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">stdinBuf</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_CommunicateUtf8Finish_" data-uid="Gio.Internal.Subprocess.CommunicateUtf8Finish*"></a>
+  <h4 id="Gio_Internal_Subprocess_CommunicateUtf8Finish_System_IntPtr_System_IntPtr_System_String__System_String__GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.CommunicateUtf8Finish(System.IntPtr,System.IntPtr,System.String@,System.String@,GLib.Internal.ErrorOwnedHandle@)">CommunicateUtf8Finish(nint, nint, out string?, out string?, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_communicate_utf8_finish.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool CommunicateUtf8Finish(nint subprocess, nint result, out string? stdoutBuf, out string? stderrBuf, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">stdoutBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">stderrBuf</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_ForceExit_" data-uid="Gio.Internal.Subprocess.ForceExit*"></a>
+  <h4 id="Gio_Internal_Subprocess_ForceExit_System_IntPtr_" data-uid="Gio.Internal.Subprocess.ForceExit(System.IntPtr)">ForceExit(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_force_exit.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern void ForceExit(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetExitStatus_" data-uid="Gio.Internal.Subprocess.GetExitStatus*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetExitStatus_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetExitStatus(System.IntPtr)">GetExitStatus(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_exit_status.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern int GetExitStatus(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetGType_" data-uid="Gio.Internal.Subprocess.GetGType*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetGType" data-uid="Gio.Internal.Subprocess.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function g_subprocess_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetIdentifier_" data-uid="Gio.Internal.Subprocess.GetIdentifier*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetIdentifier_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetIdentifier(System.IntPtr)">GetIdentifier(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_identifier.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern nint GetIdentifier(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetIfExited_" data-uid="Gio.Internal.Subprocess.GetIfExited*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetIfExited_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetIfExited(System.IntPtr)">GetIfExited(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_if_exited.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool GetIfExited(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetIfSignaled_" data-uid="Gio.Internal.Subprocess.GetIfSignaled*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetIfSignaled_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetIfSignaled(System.IntPtr)">GetIfSignaled(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_if_signaled.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool GetIfSignaled(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetStatus_" data-uid="Gio.Internal.Subprocess.GetStatus*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetStatus_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetStatus(System.IntPtr)">GetStatus(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_status.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern int GetStatus(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetStderrPipe_" data-uid="Gio.Internal.Subprocess.GetStderrPipe*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetStderrPipe_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetStderrPipe(System.IntPtr)">GetStderrPipe(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_stderr_pipe.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern nint GetStderrPipe(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetStdinPipe_" data-uid="Gio.Internal.Subprocess.GetStdinPipe*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetStdinPipe_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetStdinPipe(System.IntPtr)">GetStdinPipe(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_stdin_pipe.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern nint GetStdinPipe(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetStdoutPipe_" data-uid="Gio.Internal.Subprocess.GetStdoutPipe*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetStdoutPipe_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetStdoutPipe(System.IntPtr)">GetStdoutPipe(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_stdout_pipe.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern nint GetStdoutPipe(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetSuccessful_" data-uid="Gio.Internal.Subprocess.GetSuccessful*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetSuccessful_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetSuccessful(System.IntPtr)">GetSuccessful(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_successful.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool GetSuccessful(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_GetTermSig_" data-uid="Gio.Internal.Subprocess.GetTermSig*"></a>
+  <h4 id="Gio_Internal_Subprocess_GetTermSig_System_IntPtr_" data-uid="Gio.Internal.Subprocess.GetTermSig(System.IntPtr)">GetTermSig(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_get_term_sig.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern int GetTermSig(nint subprocess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_Newv_" data-uid="Gio.Internal.Subprocess.Newv*"></a>
+  <h4 id="Gio_Internal_Subprocess_Newv_System_IntPtr_Gio_SubprocessFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.Newv(System.IntPtr,Gio.SubprocessFlags,GLib.Internal.ErrorOwnedHandle@)">Newv(nint, SubprocessFlags, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_subprocess_newv.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern nint Newv(nint argv, SubprocessFlags flags, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">argv</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.SubprocessFlags.html">SubprocessFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_SendSignal_" data-uid="Gio.Internal.Subprocess.SendSignal*"></a>
+  <h4 id="Gio_Internal_Subprocess_SendSignal_System_IntPtr_System_Int32_" data-uid="Gio.Internal.Subprocess.SendSignal(System.IntPtr,System.Int32)">SendSignal(nint, int)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_send_signal.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern void SendSignal(nint subprocess, int signalNum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">signalNum</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_Wait_" data-uid="Gio.Internal.Subprocess.Wait*"></a>
+  <h4 id="Gio_Internal_Subprocess_Wait_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.Wait(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">Wait(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_wait.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool Wait(nint subprocess, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_WaitAsync_" data-uid="Gio.Internal.Subprocess.WaitAsync*"></a>
+  <h4 id="Gio_Internal_Subprocess_WaitAsync_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.Subprocess.WaitAsync(System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">WaitAsync(nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_wait_async.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern void WaitAsync(nint subprocess, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_WaitCheck_" data-uid="Gio.Internal.Subprocess.WaitCheck*"></a>
+  <h4 id="Gio_Internal_Subprocess_WaitCheck_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.WaitCheck(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">WaitCheck(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_wait_check.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool WaitCheck(nint subprocess, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_WaitCheckAsync_" data-uid="Gio.Internal.Subprocess.WaitCheckAsync*"></a>
+  <h4 id="Gio_Internal_Subprocess_WaitCheckAsync_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.Subprocess.WaitCheckAsync(System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">WaitCheckAsync(nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_wait_check_async.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern void WaitCheckAsync(nint subprocess, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_WaitCheckFinish_" data-uid="Gio.Internal.Subprocess.WaitCheckFinish*"></a>
+  <h4 id="Gio_Internal_Subprocess_WaitCheckFinish_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.WaitCheckFinish(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">WaitCheckFinish(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_wait_check_finish.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool WaitCheckFinish(nint subprocess, nint result, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_Subprocess_WaitFinish_" data-uid="Gio.Internal.Subprocess.WaitFinish*"></a>
+  <h4 id="Gio_Internal_Subprocess_WaitFinish_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.Subprocess.WaitFinish(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">WaitFinish(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_subprocess_wait_finish.
+Version: 2.40</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.40&quot;)]
+public static extern bool WaitFinish(nint subprocess, nint result, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">subprocess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

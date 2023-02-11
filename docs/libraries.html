@@ -1,54 +1,138 @@
-<!doctype html><html lang=en><head><meta name=generator content="Hugo 0.110.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Libraries # Currently there are multiple libraries available to get started with C# development for Linux: Gtk , WebkitGTK , libshumate libadwaita , GIO , gstreamer .
-GTK # Gtk is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
-Supported widgets are for example: Windows, dialogs, labels, images, spinner, progressbars, several buttons and switches, textboxes, tables, lists, menus, toolbars, popovers, and much more."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content><meta property="og:description" content="Libraries # Currently there are multiple libraries available to get started with C# development for Linux: Gtk , WebkitGTK , libshumate libadwaita , GIO , gstreamer .
-GTK # Gtk is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.
-Supported widgets are for example: Windows, dialogs, labels, images, spinner, progressbars, several buttons and switches, textboxes, tables, lists, menus, toolbars, popovers, and much more."><meta property="og:type" content="article"><meta property="og:url" content="https://gircore.github.io/docs/libraries.html"><meta property="article:section" content="docs"><title>Libraries | Gir.Core</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.1c696c565a4ad64d41d79db12343261ad2f9de7a02af2818ade6c73dafe9f173.css integrity="sha256-HGlsVlpK1k1B152xI0MmGtL53noCrygYrebHPa/p8XM="><script defer src=/en.search.min.e4ba28c3e560f7e27ddbfc9f24cc55a8b61936f88d56777fe23e7a6cf1a3da1d.js integrity="sha256-5Loow+Vg9+J92/yfJMxVqLYZNviNVnd/4j56bPGj2h0="></script></head><body><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo.png alt=Logo><span>Gir.Core</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><a href=https://gircore.github.io/docs/apps.html>Apps</a></li><li><a href=https://gircore.github.io/docs/build.html>Build</a></li><li><a href=https://gircore.github.io/docs/contributing.html>Contributing</a></li><li><a href=https://gircore.github.io/docs/libraries.html class=active>Libraries</a></li><li><a href=https://gircore.github.io/docs/use.html>Use</a></li></ul><ul><li><a href=https://gircore.github.io/api/api/index.html target=_blank rel=noopener>Documentation</a></li><li><a href=https://github.com/gircore/gir.core target=_blank rel=noopener>Github</a></li></ul></nav><script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>Libraries</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#gtk>GTK</a></li><li><a href=#libadwaita>libadwaita</a></li><li><a href=#gio>GIO</a></li><li><a href=#gstreamer>GStreamer</a></li><li><a href=#webkitgtk>WebKitGTK</a></li><li><a href=#libshumate-planned>libshumate (planned)</a></li></ul></nav></aside></header><article class=markdown><h1 id=libraries>Libraries
-<a class=anchor href=#libraries>#</a></h1><p>Currently there are multiple libraries available to get started with C# development for Linux:
-<a href=https://gtk.org>Gtk</a>
-,
-<a href=https://webkitgtk.org/>WebkitGTK</a>
-,
-<a href=https://gitlab.gnome.org/GNOME/libshumate/>libshumate</a>
-<a href=https://gitlab.gnome.org/GNOME/libadwaita>libadwaita</a>
-,
-<a href=https://developer.gnome.org/gio/stable/>GIO</a>
-,
-<a href=https://gstreamer.freedesktop.org/>gstreamer</a>
-.</p><h2 id=gtk>GTK
-<a class=anchor href=#gtk>#</a></h2><p><a href=https://gtk.org>Gtk</a>
-is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.</p><p>Supported widgets are for example: Windows, dialogs, labels, images, spinner, progressbars, several buttons and switches, textboxes, tables, lists, menus, toolbars, popovers, and much more. It powers several linux desktops like
-<a href=https://gnome.org>Gnome</a>
-and
-<a href=https://xfce.org>Xfce</a>
-and applications like
-<a href=https://gimp.org>Gimp</a>
-.</p><p><img src=img/GtkApp.png alt="A picture of an example gtk application" title="Example GtkApp"></p><p>Visit the
-<a href=https://github.com/gircore/gir.core/tree/main/src/Samples/Gtk-4.0>GTK samples</a>
-to get an overview.</p><h2 id=libadwaita>libadwaita
-<a class=anchor href=#libadwaita>#</a></h2><p><a href=https://gitlab.gnome.org/GNOME/libadwaita>libadwaita</a>
-extends GTK with new widgets to comply to the GNOME human interface guidelines. Additionally it supports mobile devices meaning full blown applications automatically adopt their UI to different view modes, if the available space changes.</p><p>Visit the
-<a href=https://github.com/gircore/gir.core/tree/main/src/Samples/Adw-1/>libadwaita samples</a>
-to get an overview.</p><h2 id=gio>GIO
-<a class=anchor href=#gio>#</a></h2><p><a href=https://developer.gnome.org/gio/stable/>GIO</a>
-is a library to allow easy access to input / output operations. Currently there is initial support for
-<a href=https://www.freedesktop.org/wiki/Software/dbus/>DBus</a>
-operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.</p><p>Visit the
-<a href=https://github.com/gircore/gir.core/tree/main/src/Samples/Gio-2.0/>GIO samples</a>
-to get an overview.</p><h2 id=gstreamer>GStreamer
-<a class=anchor href=#gstreamer>#</a></h2><p><a href=https://gstreamer.freedesktop.org/>GStreamer</a>
-is a multimedia library to play back various media format via a flexible pipelining system.
-<img src=img/GstSintel.png alt="A picture of the Tears of Steel project played via gstreamer" title="Gstreamer playing back Tears of Steel (https://mango.blender.org/)">
-(Homepage of the free movie:
-<a href=https://mango.blender.org/>https://mango.blender.org/</a>
-)</p><p>Visit the
-<a href=https://github.com/gircore/gir.core/tree/main/src/Samples/Gst-1.0/>GStreamer samples</a>
-to get an overview.</p><h2 id=webkitgtk>WebKitGTK
-<a class=anchor href=#webkitgtk>#</a></h2><p><a href=https://webkitgtk.org/>WebKitGTK</a>
-is a browser component for GTK and can be used to embed the webkit webengine into an application as a widget. There is support for the web inspector and several settings to tweak the webview to your needs. WebKitGTK only supports Linux.</p><p>The bindings make it easy to:</p><ul><li>Embed javascript into a webpage</li><li>Call a javascript function</li><li>Callback from the webpage into the C# code.</li></ul><p>Visit the
-<a href=https://github.com/gircore/gir.core/tree/main/src/Samples/WebKit2-5.0/>WebKit samples</a>
-to get an overview.</p><h2 id=libshumate-planned>libshumate (planned)
-<a class=anchor href=#libshumate-planned>#</a></h2><p><a href=https://gitlab.gnome.org/GNOME/libshumate/>libshumate</a>
-is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#gtk>GTK</a></li><li><a href=#libadwaita>libadwaita</a></li><li><a href=#gio>GIO</a></li><li><a href=#gstreamer>GStreamer</a></li><li><a href=#webkitgtk>WebKitGTK</a></li><li><a href=#libshumate-planned>libshumate (planned)</a></li></ul></nav></div></aside></main></body></html>
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Libraries </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Libraries ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="libraries">Libraries</h1>
+
+<p>Currently there are multiple libraries available to get started with C# development for Linux: <a href="https://gtk.org">Gtk</a>, <a href="https://webkitgtk.org/">WebkitGTK</a>, <a href="https://gitlab.gnome.org/GNOME/libshumate/">libshumate</a> <a href="https://gitlab.gnome.org/GNOME/libadwaita">libadwaita</a>, <a href="https://developer.gnome.org/gio/stable/">GIO</a>, <a href="https://gstreamer.freedesktop.org/">gstreamer</a>.</p>
+<h2 id="gtk">GTK</h2>
+<p><a href="https://gtk.org">Gtk</a> is the toolkit which is used to display windows and widgets on the screen. The widgets can be added directly in code or described through an xml file.</p>
+<p>Supported widgets are for example: Windows, dialogs, labels, images, spinner, progressbars, several buttons and switches, textboxes, tables,  lists, menus, toolbars, popovers, and much more. It powers several linux desktops like <a href="https://gnome.org">Gnome</a> and <a href="https://xfce.org">Xfce</a> and applications like <a href="https://gimp.org">Gimp</a>.</p>
+<p><img src="../img/GtkApp.png" alt="A picture of an example gtk application" title="Example GtkApp"></p>
+<p>Visit the <a href="https://github.com/gircore/gir.core/tree/main/src/Samples/Gtk-4.0">GTK samples</a> to get an overview.</p>
+<h2 id="libadwaita">libadwaita</h2>
+<p><a href="https://gitlab.gnome.org/GNOME/libadwaita">libadwaita</a> extends GTK with new widgets to comply to the GNOME human interface guidelines. Additionally it supports mobile devices meaning full blown applications automatically adopt their UI to different view modes, if the available space changes.</p>
+<p>Visit the <a href="https://github.com/gircore/gir.core/tree/main/src/Samples/Adw-1/">libadwaita samples</a> to get an overview.</p>
+<h2 id="gio">GIO</h2>
+<p><a href="https://developer.gnome.org/gio/stable/">GIO</a> is a library to allow easy access to input / output operations. Currently there is initial support for <a href="https://www.freedesktop.org/wiki/Software/dbus/">DBus</a> operations. DBus is a standardized IPC-Framework which all major linux desktops use for interprocess communication.</p>
+<p>Visit the <a href="https://github.com/gircore/gir.core/tree/main/src/Samples/Gio-2.0/">GIO samples</a> to get an overview.</p>
+<h2 id="gstreamer">GStreamer</h2>
+<p><a href="https://gstreamer.freedesktop.org/">GStreamer</a> is a multimedia library to play back various media format via a flexible pipelining system.
+<img src="../img/GstSintel.png" alt="A picture of the Tears of Steel project played via gstreamer" title="Gstreamer playing back Tears of Steel (https://mango.blender.org/)">
+(Homepage of the free movie: <a href="https://mango.blender.org/">https://mango.blender.org/</a>)</p>
+<p>Visit the <a href="https://github.com/gircore/gir.core/tree/main/src/Samples/Gst-1.0/">GStreamer samples</a> to get an overview.</p>
+<h2 id="webkitgtk">WebKitGTK</h2>
+<p><a href="https://webkitgtk.org/">WebKitGTK</a> is a browser component for GTK and can be used to embed the webkit webengine into an application as a widget. There is support for the web inspector and several settings to tweak the webview to your needs. WebKitGTK only supports Linux.</p>
+<p>The bindings make it easy to:</p>
+<ul>
+<li>Embed javascript into a webpage</li>
+<li>Call a javascript function</li>
+<li>Callback from the webpage into the C# code.</li>
+</ul>
+<p>Visit the <a href="https://github.com/gircore/gir.core/tree/main/src/Samples/WebKit2-5.0/">WebKit samples</a> to get an overview.</p>
+<h2 id="libshumate-planned">libshumate (planned)</h2>
+<p><a href="https://gitlab.gnome.org/GNOME/libshumate/">libshumate</a> is map component for GTK and can be used to embed maps into an application widget. By default it uses openstreetmap.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/gircore/gircore.github.io/blob/develop/docfx/docs/libraries.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

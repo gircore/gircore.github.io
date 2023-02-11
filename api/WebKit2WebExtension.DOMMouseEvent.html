@@ -1,0 +1,1822 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DOMMouseEvent
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class DOMMouseEvent
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WebKit2WebExtension.DOMMouseEvent">
+
+
+  <h1 id="WebKit2WebExtension_DOMMouseEvent" data-uid="WebKit2WebExtension.DOMMouseEvent" class="text-break">Class DOMMouseEvent
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="WebKit2WebExtension.DOMObject.html">DOMObject</a></div>
+    <div class="level3"><a class="xref" href="WebKit2WebExtension.DOMEvent.html">DOMEvent</a></div>
+    <div class="level4"><a class="xref" href="WebKit2WebExtension.DOMUIEvent.html">DOMUIEvent</a></div>
+    <div class="level5"><span class="xref">DOMMouseEvent</span></div>
+      <div class="level6"><a class="xref" href="WebKit2WebExtension.DOMWheelEvent.html">DOMWheelEvent</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetCharCode">DOMUIEvent.GetCharCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetDetail">DOMUIEvent.GetDetail()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetKeyCode">DOMUIEvent.GetKeyCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetLayerX">DOMUIEvent.GetLayerX()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetLayerY">DOMUIEvent.GetLayerY()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetPageX">DOMUIEvent.GetPageX()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetPageY">DOMUIEvent.GetPageY()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_GetView">DOMUIEvent.GetView()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_InitUiEvent_System_String_System_Boolean_System_Boolean_WebKit2WebExtension_DOMDOMWindow_System_Int64_">DOMUIEvent.InitUiEvent(string, bool, bool, DOMDOMWindow, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_CharCodePropertyDefinition">DOMUIEvent.CharCodePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_CharCode">DOMUIEvent.CharCode</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_DetailPropertyDefinition">DOMUIEvent.DetailPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_Detail">DOMUIEvent.Detail</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_KeyCodePropertyDefinition">DOMUIEvent.KeyCodePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_KeyCode">DOMUIEvent.KeyCode</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_LayerXPropertyDefinition">DOMUIEvent.LayerXPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_LayerX">DOMUIEvent.LayerX</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_LayerYPropertyDefinition">DOMUIEvent.LayerYPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_LayerY">DOMUIEvent.LayerY</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_PageXPropertyDefinition">DOMUIEvent.PageXPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_PageX">DOMUIEvent.PageX</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_PageYPropertyDefinition">DOMUIEvent.PageYPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_PageY">DOMUIEvent.PageY</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_ViewPropertyDefinition">DOMUIEvent.ViewPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMUIEvent.html#WebKit2WebExtension_DOMUIEvent_View">DOMUIEvent.View</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetBubbles">DOMEvent.GetBubbles()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetCancelBubble">DOMEvent.GetCancelBubble()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetCancelable">DOMEvent.GetCancelable()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetCurrentTarget">DOMEvent.GetCurrentTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetEventPhase">DOMEvent.GetEventPhase()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetEventType">DOMEvent.GetEventType()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetReturnValue">DOMEvent.GetReturnValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetSrcElement">DOMEvent.GetSrcElement()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetTarget">DOMEvent.GetTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_GetTimeStamp">DOMEvent.GetTimeStamp()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_InitEvent_System_String_System_Boolean_System_Boolean_">DOMEvent.InitEvent(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_PreventDefault">DOMEvent.PreventDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_SetCancelBubble_System_Boolean_">DOMEvent.SetCancelBubble(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_SetReturnValue_System_Boolean_">DOMEvent.SetReturnValue(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_StopPropagation">DOMEvent.StopPropagation()</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_BubblesPropertyDefinition">DOMEvent.BubblesPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_Bubbles">DOMEvent.Bubbles</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_CancelBubblePropertyDefinition">DOMEvent.CancelBubblePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_CancelBubble">DOMEvent.CancelBubble</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_CancelablePropertyDefinition">DOMEvent.CancelablePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_Cancelable">DOMEvent.Cancelable</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_CurrentTargetPropertyDefinition">DOMEvent.CurrentTargetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_CurrentTarget">DOMEvent.CurrentTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_EventPhasePropertyDefinition">DOMEvent.EventPhasePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_EventPhase">DOMEvent.EventPhase</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_ReturnValuePropertyDefinition">DOMEvent.ReturnValuePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_ReturnValue">DOMEvent.ReturnValue</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_SrcElementPropertyDefinition">DOMEvent.SrcElementPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_SrcElement">DOMEvent.SrcElement</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_TargetPropertyDefinition">DOMEvent.TargetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_Target">DOMEvent.Target</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_TimeStampPropertyDefinition">DOMEvent.TimeStampPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_TimeStamp">DOMEvent.TimeStamp</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_TypePropertyDefinition">DOMEvent.TypePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="WebKit2WebExtension.DOMEvent.html#WebKit2WebExtension_DOMEvent_Type">DOMEvent.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WebKit2WebExtension.html">WebKit2WebExtension</a></h6>
+  <h6><strong>Assembly</strong>: WebKit2WebExtension-5.0.dll</h6>
+  <h5 id="WebKit2WebExtension_DOMMouseEvent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DOMMouseEvent : DOMUIEvent, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent__ctor_" data-uid="WebKit2WebExtension.DOMMouseEvent.#ctor*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent__ctor_System_Boolean_GObject_ConstructArgument___" data-uid="WebKit2WebExtension.DOMMouseEvent.#ctor(System.Boolean,GObject.ConstructArgument[])">DOMMouseEvent(bool, params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DOMMouseEvent(bool owned, params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">owned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent__ctor_" data-uid="WebKit2WebExtension.DOMMouseEvent.#ctor*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent__ctor_System_IntPtr_System_Boolean_" data-uid="WebKit2WebExtension.DOMMouseEvent.#ctor(System.IntPtr,System.Boolean)">DOMMouseEvent(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DOMMouseEvent(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_AltKeyPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.AltKeyPropertyDefinition">AltKeyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, DOMMouseEvent&gt; AltKeyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ButtonPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ButtonPropertyDefinition">ButtonPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;uint, DOMMouseEvent&gt; ButtonPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">uint</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ClientXPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ClientXPropertyDefinition">ClientXPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; ClientXPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ClientYPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ClientYPropertyDefinition">ClientYPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; ClientYPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_CtrlKeyPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.CtrlKeyPropertyDefinition">CtrlKeyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, DOMMouseEvent&gt; CtrlKeyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_FromElementPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.FromElementPropertyDefinition">FromElementPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;DOMNode?, DOMMouseEvent&gt; FromElementPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="WebKit2WebExtension.DOMNode.html">DOMNode</a>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_MetaKeyPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.MetaKeyPropertyDefinition">MetaKeyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, DOMMouseEvent&gt; MetaKeyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_OffsetXPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.OffsetXPropertyDefinition">OffsetXPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; OffsetXPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_OffsetYPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.OffsetYPropertyDefinition">OffsetYPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; OffsetYPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_RelatedTargetPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.RelatedTargetPropertyDefinition">RelatedTargetPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;DOMEventTarget, DOMMouseEvent&gt; RelatedTargetPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="WebKit2WebExtension.DOMEventTarget.html">DOMEventTarget</a>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ScreenXPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ScreenXPropertyDefinition">ScreenXPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; ScreenXPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ScreenYPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ScreenYPropertyDefinition">ScreenYPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; ScreenYPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ShiftKeyPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ShiftKeyPropertyDefinition">ShiftKeyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, DOMMouseEvent&gt; ShiftKeyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ToElementPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.ToElementPropertyDefinition">ToElementPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;DOMNode?, DOMMouseEvent&gt; ToElementPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="WebKit2WebExtension.DOMNode.html">DOMNode</a>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_XPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.XPropertyDefinition">XPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; XPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_YPropertyDefinition" data-uid="WebKit2WebExtension.DOMMouseEvent.YPropertyDefinition">YPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;long, DOMMouseEvent&gt; YPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">long</span>, <a class="xref" href="WebKit2WebExtension.DOMMouseEvent.html">DOMMouseEvent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_AltKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.AltKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_AltKey" data-uid="WebKit2WebExtension.DOMMouseEvent.AltKey">AltKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AltKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_Button_" data-uid="WebKit2WebExtension.DOMMouseEvent.Button*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_Button" data-uid="WebKit2WebExtension.DOMMouseEvent.Button">Button</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Button { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_ClientX_" data-uid="WebKit2WebExtension.DOMMouseEvent.ClientX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ClientX" data-uid="WebKit2WebExtension.DOMMouseEvent.ClientX">ClientX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ClientX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_ClientY_" data-uid="WebKit2WebExtension.DOMMouseEvent.ClientY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ClientY" data-uid="WebKit2WebExtension.DOMMouseEvent.ClientY">ClientY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ClientY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_CtrlKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.CtrlKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_CtrlKey" data-uid="WebKit2WebExtension.DOMMouseEvent.CtrlKey">CtrlKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CtrlKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_FromElement_" data-uid="WebKit2WebExtension.DOMMouseEvent.FromElement*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_FromElement" data-uid="WebKit2WebExtension.DOMMouseEvent.FromElement">FromElement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMNode? FromElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMNode.html">DOMNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_MetaKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.MetaKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_MetaKey" data-uid="WebKit2WebExtension.DOMMouseEvent.MetaKey">MetaKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MetaKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_OffsetX_" data-uid="WebKit2WebExtension.DOMMouseEvent.OffsetX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_OffsetX" data-uid="WebKit2WebExtension.DOMMouseEvent.OffsetX">OffsetX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long OffsetX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_OffsetY_" data-uid="WebKit2WebExtension.DOMMouseEvent.OffsetY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_OffsetY" data-uid="WebKit2WebExtension.DOMMouseEvent.OffsetY">OffsetY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long OffsetY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_RelatedTarget_" data-uid="WebKit2WebExtension.DOMMouseEvent.RelatedTarget*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_RelatedTarget" data-uid="WebKit2WebExtension.DOMMouseEvent.RelatedTarget">RelatedTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMEventTarget RelatedTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMEventTarget.html">DOMEventTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_ScreenX_" data-uid="WebKit2WebExtension.DOMMouseEvent.ScreenX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ScreenX" data-uid="WebKit2WebExtension.DOMMouseEvent.ScreenX">ScreenX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ScreenX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_ScreenY_" data-uid="WebKit2WebExtension.DOMMouseEvent.ScreenY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ScreenY" data-uid="WebKit2WebExtension.DOMMouseEvent.ScreenY">ScreenY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ScreenY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_ShiftKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.ShiftKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ShiftKey" data-uid="WebKit2WebExtension.DOMMouseEvent.ShiftKey">ShiftKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShiftKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_ToElement_" data-uid="WebKit2WebExtension.DOMMouseEvent.ToElement*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_ToElement" data-uid="WebKit2WebExtension.DOMMouseEvent.ToElement">ToElement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMNode? ToElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMNode.html">DOMNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_X_" data-uid="WebKit2WebExtension.DOMMouseEvent.X*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_X" data-uid="WebKit2WebExtension.DOMMouseEvent.X">X</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long X { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_Y_" data-uid="WebKit2WebExtension.DOMMouseEvent.Y*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_Y" data-uid="WebKit2WebExtension.DOMMouseEvent.Y">Y</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Y { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetAltKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetAltKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetAltKey" data-uid="WebKit2WebExtension.DOMMouseEvent.GetAltKey">GetAltKey()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAltKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetButton_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetButton*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetButton" data-uid="WebKit2WebExtension.DOMMouseEvent.GetButton">GetButton()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort GetButton()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ushort</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetClientX_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetClientX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetClientX" data-uid="WebKit2WebExtension.DOMMouseEvent.GetClientX">GetClientX()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetClientX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetClientY_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetClientY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetClientY" data-uid="WebKit2WebExtension.DOMMouseEvent.GetClientY">GetClientY()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetClientY()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetCtrlKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetCtrlKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetCtrlKey" data-uid="WebKit2WebExtension.DOMMouseEvent.GetCtrlKey">GetCtrlKey()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCtrlKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetFromElement_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetFromElement*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetFromElement" data-uid="WebKit2WebExtension.DOMMouseEvent.GetFromElement">GetFromElement()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMNode GetFromElement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMNode.html">DOMNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetGType_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetGType*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetGType" data-uid="WebKit2WebExtension.DOMMouseEvent.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetMetaKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetMetaKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetMetaKey" data-uid="WebKit2WebExtension.DOMMouseEvent.GetMetaKey">GetMetaKey()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetMetaKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetOffsetX_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetOffsetX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetOffsetX" data-uid="WebKit2WebExtension.DOMMouseEvent.GetOffsetX">GetOffsetX()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetOffsetX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetOffsetY_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetOffsetY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetOffsetY" data-uid="WebKit2WebExtension.DOMMouseEvent.GetOffsetY">GetOffsetY()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetOffsetY()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetRelatedTarget_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetRelatedTarget*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetRelatedTarget" data-uid="WebKit2WebExtension.DOMMouseEvent.GetRelatedTarget">GetRelatedTarget()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMEventTarget GetRelatedTarget()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMEventTarget.html">DOMEventTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetScreenX_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetScreenX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetScreenX" data-uid="WebKit2WebExtension.DOMMouseEvent.GetScreenX">GetScreenX()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetScreenX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetScreenY_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetScreenY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetScreenY" data-uid="WebKit2WebExtension.DOMMouseEvent.GetScreenY">GetScreenY()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetScreenY()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetShiftKey_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetShiftKey*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetShiftKey" data-uid="WebKit2WebExtension.DOMMouseEvent.GetShiftKey">GetShiftKey()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetShiftKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetToElement_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetToElement*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetToElement" data-uid="WebKit2WebExtension.DOMMouseEvent.GetToElement">GetToElement()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMNode GetToElement()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMNode.html">DOMNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetX_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetX*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetX" data-uid="WebKit2WebExtension.DOMMouseEvent.GetX">GetX()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetX()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_GetY_" data-uid="WebKit2WebExtension.DOMMouseEvent.GetY*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_GetY" data-uid="WebKit2WebExtension.DOMMouseEvent.GetY">GetY()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetY()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="WebKit2WebExtension_DOMMouseEvent_InitMouseEvent_" data-uid="WebKit2WebExtension.DOMMouseEvent.InitMouseEvent*"></a>
+  <h4 id="WebKit2WebExtension_DOMMouseEvent_InitMouseEvent_System_String_System_Boolean_System_Boolean_WebKit2WebExtension_DOMDOMWindow_System_Int64_System_Int64_System_Int64_System_Int64_System_Int64_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_UInt16_WebKit2WebExtension_DOMEventTarget_" data-uid="WebKit2WebExtension.DOMMouseEvent.InitMouseEvent(System.String,System.Boolean,System.Boolean,WebKit2WebExtension.DOMDOMWindow,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.UInt16,WebKit2WebExtension.DOMEventTarget)">InitMouseEvent(string, bool, bool, DOMDOMWindow, long, long, long, long, long, bool, bool, bool, bool, ushort, DOMEventTarget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitMouseEvent(string type, bool canBubble, bool cancelable, DOMDOMWindow view, long detail, long screenX, long screenY, long clientX, long clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, ushort button, DOMEventTarget relatedTarget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">canBubble</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">cancelable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMDOMWindow.html">DOMDOMWindow</a></td>
+        <td><span class="parametername">view</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">detail</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">screenX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">screenY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">clientX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">clientY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ctrlKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">altKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">shiftKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">metaKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ushort</span></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WebKit2WebExtension.DOMEventTarget.html">DOMEventTarget</a></td>
+        <td><span class="parametername">relatedTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

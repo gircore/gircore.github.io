@@ -1,0 +1,796 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AudioConverter
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AudioConverter
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GstAudio.Internal.AudioConverter">
+
+
+  <h1 id="GstAudio_Internal_AudioConverter" data-uid="GstAudio.Internal.AudioConverter" class="text-break">Class AudioConverter
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AudioConverter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GstAudio.html">GstAudio</a>.<a class="xref" href="GstAudio.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: GstAudio-1.0.dll</h6>
+  <h5 id="GstAudio_Internal_AudioConverter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioConverter</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GstAudio_Internal_AudioConverter_Convert_" data-uid="GstAudio.Internal.AudioConverter.Convert*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_Convert_GstAudio_Internal_AudioConverterHandle_GstAudio_AudioConverterFlags_System_Byte___System_UIntPtr_System_Byte____System_IntPtr__" data-uid="GstAudio.Internal.AudioConverter.Convert(GstAudio.Internal.AudioConverterHandle,GstAudio.AudioConverterFlags,System.Byte[],System.UIntPtr,System.Byte[]@,System.IntPtr@)">Convert(AudioConverterHandle, AudioConverterFlags, byte[], nuint, out byte[], out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_convert.
+Version: 1.14</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.14&quot;)]
+public static extern bool Convert(AudioConverterHandle convert, AudioConverterFlags flags, byte[] @in, nuint inSize, out byte[] @out, out nint outSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.AudioConverterFlags.html">AudioConverterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">in</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><span class="parametername">inSize</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">out</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outSize</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_Free_" data-uid="GstAudio.Internal.AudioConverter.Free*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_Free_GstAudio_Internal_AudioConverterHandle_" data-uid="GstAudio.Internal.AudioConverter.Free(GstAudio.Internal.AudioConverterHandle)">Free(AudioConverterHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_free.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Free(AudioConverterHandle convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_GetConfig_" data-uid="GstAudio.Internal.AudioConverter.GetConfig*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_GetConfig_GstAudio_Internal_AudioConverterHandle_System_IntPtr__System_IntPtr__" data-uid="GstAudio.Internal.AudioConverter.GetConfig(GstAudio.Internal.AudioConverterHandle,System.IntPtr@,System.IntPtr@)">GetConfig(AudioConverterHandle, out nint, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_get_config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern StructureUnownedHandle GetConfig(AudioConverterHandle convert, out nint inRate, out nint outRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">inRate</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outRate</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureUnownedHandle.html">StructureUnownedHandle</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_GetGType_" data-uid="GstAudio.Internal.AudioConverter.GetGType*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_GetGType" data-uid="GstAudio.Internal.AudioConverter.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_audio_converter_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_GetInFrames_" data-uid="GstAudio.Internal.AudioConverter.GetInFrames*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_GetInFrames_GstAudio_Internal_AudioConverterHandle_System_UIntPtr_" data-uid="GstAudio.Internal.AudioConverter.GetInFrames(GstAudio.Internal.AudioConverterHandle,System.UIntPtr)">GetInFrames(AudioConverterHandle, nuint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_get_in_frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetInFrames(AudioConverterHandle convert, nuint outFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><span class="parametername">outFrames</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_GetMaxLatency_" data-uid="GstAudio.Internal.AudioConverter.GetMaxLatency*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_GetMaxLatency_GstAudio_Internal_AudioConverterHandle_" data-uid="GstAudio.Internal.AudioConverter.GetMaxLatency(GstAudio.Internal.AudioConverterHandle)">GetMaxLatency(AudioConverterHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_get_max_latency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetMaxLatency(AudioConverterHandle convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_GetOutFrames_" data-uid="GstAudio.Internal.AudioConverter.GetOutFrames*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_GetOutFrames_GstAudio_Internal_AudioConverterHandle_System_UIntPtr_" data-uid="GstAudio.Internal.AudioConverter.GetOutFrames(GstAudio.Internal.AudioConverterHandle,System.UIntPtr)">GetOutFrames(AudioConverterHandle, nuint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_get_out_frames.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetOutFrames(AudioConverterHandle convert, nuint inFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><span class="parametername">inFrames</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_IsPassthrough_" data-uid="GstAudio.Internal.AudioConverter.IsPassthrough*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_IsPassthrough_GstAudio_Internal_AudioConverterHandle_" data-uid="GstAudio.Internal.AudioConverter.IsPassthrough(GstAudio.Internal.AudioConverterHandle)">IsPassthrough(AudioConverterHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_is_passthrough.
+Version: 1.16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
+public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_New_" data-uid="GstAudio.Internal.AudioConverter.New*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_New_GstAudio_AudioConverterFlags_GstAudio_Internal_AudioInfoHandle_GstAudio_Internal_AudioInfoHandle_Gst_Internal_StructureHandle_" data-uid="GstAudio.Internal.AudioConverter.New(GstAudio.AudioConverterFlags,GstAudio.Internal.AudioInfoHandle,GstAudio.Internal.AudioInfoHandle,Gst.Internal.StructureHandle)">New(AudioConverterFlags, AudioInfoHandle, AudioInfoHandle, StructureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor gst_audio_converter_new.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern AudioConverterOwnedHandle New(AudioConverterFlags flags, AudioInfoHandle inInfo, AudioInfoHandle outInfo, StructureHandle config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.AudioConverterFlags.html">AudioConverterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioInfoHandle.html">AudioInfoHandle</a></td>
+        <td><span class="parametername">inInfo</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioInfoHandle.html">AudioInfoHandle</a></td>
+        <td><span class="parametername">outInfo</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterOwnedHandle.html">AudioConverterOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_Reset_" data-uid="GstAudio.Internal.AudioConverter.Reset*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_Reset_GstAudio_Internal_AudioConverterHandle_" data-uid="GstAudio.Internal.AudioConverter.Reset(GstAudio.Internal.AudioConverterHandle)">Reset(AudioConverterHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_reset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Reset(AudioConverterHandle convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_Samples_" data-uid="GstAudio.Internal.AudioConverter.Samples*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_Samples_GstAudio_Internal_AudioConverterHandle_GstAudio_AudioConverterFlags_System_IntPtr_System_UIntPtr_System_IntPtr_System_UIntPtr_" data-uid="GstAudio.Internal.AudioConverter.Samples(GstAudio.Internal.AudioConverterHandle,GstAudio.AudioConverterFlags,System.IntPtr,System.UIntPtr,System.IntPtr,System.UIntPtr)">Samples(AudioConverterHandle, AudioConverterFlags, nint, nuint, nint, nuint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_samples.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Samples(AudioConverterHandle convert, AudioConverterFlags flags, nint @in, nuint inFrames, nint @out, nuint outFrames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.AudioConverterFlags.html">AudioConverterFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">in</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><span class="parametername">inFrames</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">out</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><span class="parametername">outFrames</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_SupportsInplace_" data-uid="GstAudio.Internal.AudioConverter.SupportsInplace*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_SupportsInplace_GstAudio_Internal_AudioConverterHandle_" data-uid="GstAudio.Internal.AudioConverter.SupportsInplace(GstAudio.Internal.AudioConverterHandle)">SupportsInplace(AudioConverterHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_supports_inplace.
+Version: 1.12</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.12&quot;)]
+public static extern bool SupportsInplace(AudioConverterHandle convert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioConverter_UpdateConfig_" data-uid="GstAudio.Internal.AudioConverter.UpdateConfig*"></a>
+  <h4 id="GstAudio_Internal_AudioConverter_UpdateConfig_GstAudio_Internal_AudioConverterHandle_System_Int32_System_Int32_Gst_Internal_StructureHandle_" data-uid="GstAudio.Internal.AudioConverter.UpdateConfig(GstAudio.Internal.AudioConverterHandle,System.Int32,System.Int32,Gst.Internal.StructureHandle)">UpdateConfig(AudioConverterHandle, int, int, StructureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_update_config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool UpdateConfig(AudioConverterHandle convert, int inRate, int outRate, StructureHandle config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioConverterHandle.html">AudioConverterHandle</a></td>
+        <td><span class="parametername">convert</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">inRate</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">outRate</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

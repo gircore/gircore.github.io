@@ -1,0 +1,3061 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class DBusConnection
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class DBusConnection
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gio.Internal.DBusConnection">
+
+
+  <h1 id="Gio_Internal_DBusConnection" data-uid="Gio.Internal.DBusConnection" class="text-break">Class DBusConnection
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">DBusConnection</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a>.<a class="xref" href="Gio.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: Gio-2.0.dll</h6>
+  <h5 id="Gio_Internal_DBusConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DBusConnection</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Gio_Internal_DBusConnection_AddFilter_" data-uid="Gio.Internal.DBusConnection.AddFilter*"></a>
+  <h4 id="Gio_Internal_DBusConnection_AddFilter_System_IntPtr_Gio_Internal_DBusMessageFilterFunction_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="Gio.Internal.DBusConnection.AddFilter(System.IntPtr,Gio.Internal.DBusMessageFilterFunction,System.IntPtr,GLib.Internal.DestroyNotify)">AddFilter(nint, DBusMessageFilterFunction, nint, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_add_filter.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern uint AddFilter(nint connection, DBusMessageFilterFunction filterFunction, nint userData, DestroyNotify userDataFreeFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.DBusMessageFilterFunction.html">DBusMessageFilterFunction</a></td>
+        <td><span class="parametername">filterFunction</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">userDataFreeFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_Call_" data-uid="Gio.Internal.DBusConnection.Call*"></a>
+  <h4 id="Gio_Internal_DBusConnection_Call_System_IntPtr_System_String_System_String_System_String_System_String_GLib_Internal_VariantHandle_GLib_Internal_VariantTypeHandle_Gio_DBusCallFlags_System_Int32_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.Call(System.IntPtr,System.String,System.String,System.String,System.String,GLib.Internal.VariantHandle,GLib.Internal.VariantTypeHandle,Gio.DBusCallFlags,System.Int32,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">Call(nint, string?, string, string, string, VariantHandle, VariantTypeHandle, DBusCallFlags, int, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_call.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void Call(nint connection, string? busName, string objectPath, string interfaceName, string methodName, VariantHandle parameters, VariantTypeHandle replyType, DBusCallFlags flags, int timeoutMsec, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">busName</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">interfaceName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantHandle.html">VariantHandle</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantTypeHandle.html">VariantTypeHandle</a></td>
+        <td><span class="parametername">replyType</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusCallFlags.html">DBusCallFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">timeoutMsec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CallFinish_" data-uid="Gio.Internal.DBusConnection.CallFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CallFinish_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.CallFinish(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">CallFinish(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_call_finish.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern VariantOwnedHandle CallFinish(nint connection, nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantOwnedHandle.html">VariantOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CallSync_" data-uid="Gio.Internal.DBusConnection.CallSync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CallSync_System_IntPtr_System_String_System_String_System_String_System_String_GLib_Internal_VariantHandle_GLib_Internal_VariantTypeHandle_Gio_DBusCallFlags_System_Int32_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.CallSync(System.IntPtr,System.String,System.String,System.String,System.String,GLib.Internal.VariantHandle,GLib.Internal.VariantTypeHandle,Gio.DBusCallFlags,System.Int32,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">CallSync(nint, string?, string, string, string, VariantHandle, VariantTypeHandle, DBusCallFlags, int, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_call_sync.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern VariantOwnedHandle CallSync(nint connection, string? busName, string objectPath, string interfaceName, string methodName, VariantHandle parameters, VariantTypeHandle replyType, DBusCallFlags flags, int timeoutMsec, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">busName</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">interfaceName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantHandle.html">VariantHandle</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantTypeHandle.html">VariantTypeHandle</a></td>
+        <td><span class="parametername">replyType</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusCallFlags.html">DBusCallFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">timeoutMsec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantOwnedHandle.html">VariantOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CallWithUnixFdList_" data-uid="Gio.Internal.DBusConnection.CallWithUnixFdList*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CallWithUnixFdList_System_IntPtr_System_String_System_String_System_String_System_String_GLib_Internal_VariantHandle_GLib_Internal_VariantTypeHandle_Gio_DBusCallFlags_System_Int32_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.CallWithUnixFdList(System.IntPtr,System.String,System.String,System.String,System.String,GLib.Internal.VariantHandle,GLib.Internal.VariantTypeHandle,Gio.DBusCallFlags,System.Int32,System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">CallWithUnixFdList(nint, string?, string, string, string, VariantHandle, VariantTypeHandle, DBusCallFlags, int, nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_call_with_unix_fd_list.
+Version: 2.30</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public static extern void CallWithUnixFdList(nint connection, string? busName, string objectPath, string interfaceName, string methodName, VariantHandle parameters, VariantTypeHandle replyType, DBusCallFlags flags, int timeoutMsec, nint fdList, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">busName</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">interfaceName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantHandle.html">VariantHandle</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantTypeHandle.html">VariantTypeHandle</a></td>
+        <td><span class="parametername">replyType</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusCallFlags.html">DBusCallFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">timeoutMsec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">fdList</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CallWithUnixFdListFinish_" data-uid="Gio.Internal.DBusConnection.CallWithUnixFdListFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CallWithUnixFdListFinish_System_IntPtr_System_IntPtr__System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.CallWithUnixFdListFinish(System.IntPtr,System.IntPtr@,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">CallWithUnixFdListFinish(nint, out nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_call_with_unix_fd_list_finish.
+Version: 2.30</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public static extern VariantOwnedHandle CallWithUnixFdListFinish(nint connection, out nint outFdList, nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outFdList</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantOwnedHandle.html">VariantOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CallWithUnixFdListSync_" data-uid="Gio.Internal.DBusConnection.CallWithUnixFdListSync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CallWithUnixFdListSync_System_IntPtr_System_String_System_String_System_String_System_String_GLib_Internal_VariantHandle_GLib_Internal_VariantTypeHandle_Gio_DBusCallFlags_System_Int32_System_IntPtr_System_IntPtr__System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.CallWithUnixFdListSync(System.IntPtr,System.String,System.String,System.String,System.String,GLib.Internal.VariantHandle,GLib.Internal.VariantTypeHandle,Gio.DBusCallFlags,System.Int32,System.IntPtr,System.IntPtr@,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">CallWithUnixFdListSync(nint, string?, string, string, string, VariantHandle, VariantTypeHandle, DBusCallFlags, int, nint, out nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_call_with_unix_fd_list_sync.
+Version: 2.30</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
+public static extern VariantOwnedHandle CallWithUnixFdListSync(nint connection, string? busName, string objectPath, string interfaceName, string methodName, VariantHandle parameters, VariantTypeHandle replyType, DBusCallFlags flags, int timeoutMsec, nint fdList, out nint outFdList, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">busName</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">interfaceName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">methodName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantHandle.html">VariantHandle</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantTypeHandle.html">VariantTypeHandle</a></td>
+        <td><span class="parametername">replyType</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusCallFlags.html">DBusCallFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">timeoutMsec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">fdList</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outFdList</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantOwnedHandle.html">VariantOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_Close_" data-uid="Gio.Internal.DBusConnection.Close*"></a>
+  <h4 id="Gio_Internal_DBusConnection_Close_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.Close(System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">Close(nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_close.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void Close(nint connection, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CloseFinish_" data-uid="Gio.Internal.DBusConnection.CloseFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CloseFinish_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.CloseFinish(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">CloseFinish(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_close_finish.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool CloseFinish(nint connection, nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_CloseSync_" data-uid="Gio.Internal.DBusConnection.CloseSync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_CloseSync_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.CloseSync(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">CloseSync(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_close_sync.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool CloseSync(nint connection, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_EmitSignal_" data-uid="Gio.Internal.DBusConnection.EmitSignal*"></a>
+  <h4 id="Gio_Internal_DBusConnection_EmitSignal_System_IntPtr_System_String_System_String_System_String_System_String_GLib_Internal_VariantHandle_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.EmitSignal(System.IntPtr,System.String,System.String,System.String,System.String,GLib.Internal.VariantHandle,GLib.Internal.ErrorOwnedHandle@)">EmitSignal(nint, string?, string, string, string, VariantHandle, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_emit_signal.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool EmitSignal(nint connection, string? destinationBusName, string objectPath, string interfaceName, string signalName, VariantHandle parameters, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">destinationBusName</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">interfaceName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">signalName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.VariantHandle.html">VariantHandle</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_ExportActionGroup_" data-uid="Gio.Internal.DBusConnection.ExportActionGroup*"></a>
+  <h4 id="Gio_Internal_DBusConnection_ExportActionGroup_System_IntPtr_System_String_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.ExportActionGroup(System.IntPtr,System.String,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">ExportActionGroup(nint, string, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_export_action_group.
+Version: 2.32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public static extern uint ExportActionGroup(nint connection, string objectPath, nint actionGroup, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">actionGroup</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_ExportMenuModel_" data-uid="Gio.Internal.DBusConnection.ExportMenuModel*"></a>
+  <h4 id="Gio_Internal_DBusConnection_ExportMenuModel_System_IntPtr_System_String_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.ExportMenuModel(System.IntPtr,System.String,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">ExportMenuModel(nint, string, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_export_menu_model.
+Version: 2.32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public static extern uint ExportMenuModel(nint connection, string objectPath, nint menu, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">menu</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_Flush_" data-uid="Gio.Internal.DBusConnection.Flush*"></a>
+  <h4 id="Gio_Internal_DBusConnection_Flush_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.Flush(System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">Flush(nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_flush.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void Flush(nint connection, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_FlushFinish_" data-uid="Gio.Internal.DBusConnection.FlushFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_FlushFinish_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.FlushFinish(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">FlushFinish(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_flush_finish.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool FlushFinish(nint connection, nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_FlushSync_" data-uid="Gio.Internal.DBusConnection.FlushSync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_FlushSync_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.FlushSync(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">FlushSync(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_flush_sync.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool FlushSync(nint connection, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetCapabilities_" data-uid="Gio.Internal.DBusConnection.GetCapabilities*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetCapabilities_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetCapabilities(System.IntPtr)">GetCapabilities(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_capabilities.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern DBusCapabilityFlags GetCapabilities(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.DBusCapabilityFlags.html">DBusCapabilityFlags</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetExitOnClose_" data-uid="Gio.Internal.DBusConnection.GetExitOnClose*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetExitOnClose_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetExitOnClose(System.IntPtr)">GetExitOnClose(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_exit_on_close.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool GetExitOnClose(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetFlags_" data-uid="Gio.Internal.DBusConnection.GetFlags*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetFlags_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetFlags(System.IntPtr)">GetFlags(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_flags.
+Version: 2.60</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.60&quot;)]
+public static extern DBusConnectionFlags GetFlags(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.DBusConnectionFlags.html">DBusConnectionFlags</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetGType_" data-uid="Gio.Internal.DBusConnection.GetGType*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetGType" data-uid="Gio.Internal.DBusConnection.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function g_dbus_connection_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetGuid_" data-uid="Gio.Internal.DBusConnection.GetGuid*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetGuid_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetGuid(System.IntPtr)">GetGuid(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_guid.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint GetGuid(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetLastSerial_" data-uid="Gio.Internal.DBusConnection.GetLastSerial*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetLastSerial_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetLastSerial(System.IntPtr)">GetLastSerial(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_last_serial.
+Version: 2.34</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
+public static extern uint GetLastSerial(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetPeerCredentials_" data-uid="Gio.Internal.DBusConnection.GetPeerCredentials*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetPeerCredentials_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetPeerCredentials(System.IntPtr)">GetPeerCredentials(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_peer_credentials.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint GetPeerCredentials(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetStream_" data-uid="Gio.Internal.DBusConnection.GetStream*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetStream_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetStream(System.IntPtr)">GetStream(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_stream.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint GetStream(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_GetUniqueName_" data-uid="Gio.Internal.DBusConnection.GetUniqueName*"></a>
+  <h4 id="Gio_Internal_DBusConnection_GetUniqueName_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.GetUniqueName(System.IntPtr)">GetUniqueName(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_get_unique_name.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint GetUniqueName(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_IsClosed_" data-uid="Gio.Internal.DBusConnection.IsClosed*"></a>
+  <h4 id="Gio_Internal_DBusConnection_IsClosed_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.IsClosed(System.IntPtr)">IsClosed(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_is_closed.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool IsClosed(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_New_" data-uid="Gio.Internal.DBusConnection.New*"></a>
+  <h4 id="Gio_Internal_DBusConnection_New_System_IntPtr_System_String_Gio_DBusConnectionFlags_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.New(System.IntPtr,System.String,Gio.DBusConnectionFlags,System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">New(nint, string?, DBusConnectionFlags, nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function g_dbus_connection_new.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void New(nint stream, string? guid, DBusConnectionFlags flags, nint observer, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusConnectionFlags.html">DBusConnectionFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_NewFinish_" data-uid="Gio.Internal.DBusConnection.NewFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_NewFinish_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.NewFinish(System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">NewFinish(nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_dbus_connection_new_finish.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint NewFinish(nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_NewForAddress_" data-uid="Gio.Internal.DBusConnection.NewForAddress*"></a>
+  <h4 id="Gio_Internal_DBusConnection_NewForAddress_System_String_Gio_DBusConnectionFlags_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.NewForAddress(System.String,Gio.DBusConnectionFlags,System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">NewForAddress(string, DBusConnectionFlags, nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function g_dbus_connection_new_for_address.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void NewForAddress(string address, DBusConnectionFlags flags, nint observer, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusConnectionFlags.html">DBusConnectionFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_NewForAddressFinish_" data-uid="Gio.Internal.DBusConnection.NewForAddressFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_NewForAddressFinish_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.NewForAddressFinish(System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">NewForAddressFinish(nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_dbus_connection_new_for_address_finish.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint NewForAddressFinish(nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_NewForAddressSync_" data-uid="Gio.Internal.DBusConnection.NewForAddressSync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_NewForAddressSync_System_String_Gio_DBusConnectionFlags_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.NewForAddressSync(System.String,Gio.DBusConnectionFlags,System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">NewForAddressSync(string, DBusConnectionFlags, nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_dbus_connection_new_for_address_sync.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint NewForAddressSync(string address, DBusConnectionFlags flags, nint observer, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusConnectionFlags.html">DBusConnectionFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_NewSync_" data-uid="Gio.Internal.DBusConnection.NewSync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_NewSync_System_IntPtr_System_String_Gio_DBusConnectionFlags_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.NewSync(System.IntPtr,System.String,Gio.DBusConnectionFlags,System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">NewSync(nint, string?, DBusConnectionFlags, nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_dbus_connection_new_sync.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint NewSync(nint stream, string? guid, DBusConnectionFlags flags, nint observer, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusConnectionFlags.html">DBusConnectionFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">observer</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_RegisterObject_" data-uid="Gio.Internal.DBusConnection.RegisterObject*"></a>
+  <h4 id="Gio_Internal_DBusConnection_RegisterObject_System_IntPtr_System_String_Gio_Internal_DBusInterfaceInfoHandle_Gio_Internal_DBusInterfaceVTableHandle_System_IntPtr_GLib_Internal_DestroyNotify_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.RegisterObject(System.IntPtr,System.String,Gio.Internal.DBusInterfaceInfoHandle,Gio.Internal.DBusInterfaceVTableHandle,System.IntPtr,GLib.Internal.DestroyNotify,GLib.Internal.ErrorOwnedHandle@)">RegisterObject(nint, string, DBusInterfaceInfoHandle, DBusInterfaceVTableHandle, nint, DestroyNotify, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_register_object.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern uint RegisterObject(nint connection, string objectPath, DBusInterfaceInfoHandle interfaceInfo, DBusInterfaceVTableHandle vtable, nint userData, DestroyNotify userDataFreeFunc, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.DBusInterfaceInfoHandle.html">DBusInterfaceInfoHandle</a></td>
+        <td><span class="parametername">interfaceInfo</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.DBusInterfaceVTableHandle.html">DBusInterfaceVTableHandle</a></td>
+        <td><span class="parametername">vtable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">userDataFreeFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_RegisterObjectWithClosures_" data-uid="Gio.Internal.DBusConnection.RegisterObjectWithClosures*"></a>
+  <h4 id="Gio_Internal_DBusConnection_RegisterObjectWithClosures_System_IntPtr_System_String_Gio_Internal_DBusInterfaceInfoHandle_GObject_Internal_ClosureHandle_GObject_Internal_ClosureHandle_GObject_Internal_ClosureHandle_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.RegisterObjectWithClosures(System.IntPtr,System.String,Gio.Internal.DBusInterfaceInfoHandle,GObject.Internal.ClosureHandle,GObject.Internal.ClosureHandle,GObject.Internal.ClosureHandle,GLib.Internal.ErrorOwnedHandle@)">RegisterObjectWithClosures(nint, string, DBusInterfaceInfoHandle, ClosureHandle, ClosureHandle, ClosureHandle, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_register_object_with_closures.
+Version: 2.46</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.46&quot;)]
+public static extern uint RegisterObjectWithClosures(nint connection, string objectPath, DBusInterfaceInfoHandle interfaceInfo, ClosureHandle methodCallClosure, ClosureHandle getPropertyClosure, ClosureHandle setPropertyClosure, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.DBusInterfaceInfoHandle.html">DBusInterfaceInfoHandle</a></td>
+        <td><span class="parametername">interfaceInfo</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">methodCallClosure</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">getPropertyClosure</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">setPropertyClosure</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_RegisterSubtree_" data-uid="Gio.Internal.DBusConnection.RegisterSubtree*"></a>
+  <h4 id="Gio_Internal_DBusConnection_RegisterSubtree_System_IntPtr_System_String_Gio_Internal_DBusSubtreeVTableHandle_Gio_DBusSubtreeFlags_System_IntPtr_GLib_Internal_DestroyNotify_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.RegisterSubtree(System.IntPtr,System.String,Gio.Internal.DBusSubtreeVTableHandle,Gio.DBusSubtreeFlags,System.IntPtr,GLib.Internal.DestroyNotify,GLib.Internal.ErrorOwnedHandle@)">RegisterSubtree(nint, string, DBusSubtreeVTableHandle, DBusSubtreeFlags, nint, DestroyNotify, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_register_subtree.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern uint RegisterSubtree(nint connection, string objectPath, DBusSubtreeVTableHandle vtable, DBusSubtreeFlags flags, nint userData, DestroyNotify userDataFreeFunc, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.DBusSubtreeVTableHandle.html">DBusSubtreeVTableHandle</a></td>
+        <td><span class="parametername">vtable</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusSubtreeFlags.html">DBusSubtreeFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">userDataFreeFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_RemoveFilter_" data-uid="Gio.Internal.DBusConnection.RemoveFilter*"></a>
+  <h4 id="Gio_Internal_DBusConnection_RemoveFilter_System_IntPtr_System_UInt32_" data-uid="Gio.Internal.DBusConnection.RemoveFilter(System.IntPtr,System.UInt32)">RemoveFilter(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_remove_filter.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void RemoveFilter(nint connection, uint filterId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">filterId</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SendMessage_" data-uid="Gio.Internal.DBusConnection.SendMessage*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SendMessage_System_IntPtr_System_IntPtr_Gio_DBusSendMessageFlags_System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.SendMessage(System.IntPtr,System.IntPtr,Gio.DBusSendMessageFlags,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">SendMessage(nint, nint, DBusSendMessageFlags, out nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_send_message.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool SendMessage(nint connection, nint message, DBusSendMessageFlags flags, out nint outSerial, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusSendMessageFlags.html">DBusSendMessageFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outSerial</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SendMessageWithReply_" data-uid="Gio.Internal.DBusConnection.SendMessageWithReply*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SendMessageWithReply_System_IntPtr_System_IntPtr_Gio_DBusSendMessageFlags_System_Int32_System_IntPtr__System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.SendMessageWithReply(System.IntPtr,System.IntPtr,Gio.DBusSendMessageFlags,System.Int32,System.IntPtr@,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">SendMessageWithReply(nint, nint, DBusSendMessageFlags, int, out nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_send_message_with_reply.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void SendMessageWithReply(nint connection, nint message, DBusSendMessageFlags flags, int timeoutMsec, out nint outSerial, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusSendMessageFlags.html">DBusSendMessageFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">timeoutMsec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outSerial</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SendMessageWithReplyFinish_" data-uid="Gio.Internal.DBusConnection.SendMessageWithReplyFinish*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SendMessageWithReplyFinish_System_IntPtr_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.SendMessageWithReplyFinish(System.IntPtr,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">SendMessageWithReplyFinish(nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_send_message_with_reply_finish.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint SendMessageWithReplyFinish(nint connection, nint res, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">res</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SendMessageWithReplySync_" data-uid="Gio.Internal.DBusConnection.SendMessageWithReplySync*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SendMessageWithReplySync_System_IntPtr_System_IntPtr_Gio_DBusSendMessageFlags_System_Int32_System_IntPtr__System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusConnection.SendMessageWithReplySync(System.IntPtr,System.IntPtr,Gio.DBusSendMessageFlags,System.Int32,System.IntPtr@,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">SendMessageWithReplySync(nint, nint, DBusSendMessageFlags, int, out nint, nint, out ErrorOwnedHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_send_message_with_reply_sync.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern nint SendMessageWithReplySync(nint connection, nint message, DBusSendMessageFlags flags, int timeoutMsec, out nint outSerial, nint cancellable, out ErrorOwnedHandle error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusSendMessageFlags.html">DBusSendMessageFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">timeoutMsec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">outSerial</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SetExitOnClose_" data-uid="Gio.Internal.DBusConnection.SetExitOnClose*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SetExitOnClose_System_IntPtr_System_Boolean_" data-uid="Gio.Internal.DBusConnection.SetExitOnClose(System.IntPtr,System.Boolean)">SetExitOnClose(nint, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_set_exit_on_close.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void SetExitOnClose(nint connection, bool exitOnClose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">exitOnClose</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SignalSubscribe_" data-uid="Gio.Internal.DBusConnection.SignalSubscribe*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SignalSubscribe_System_IntPtr_System_String_System_String_System_String_System_String_System_String_Gio_DBusSignalFlags_Gio_Internal_DBusSignalCallback_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="Gio.Internal.DBusConnection.SignalSubscribe(System.IntPtr,System.String,System.String,System.String,System.String,System.String,Gio.DBusSignalFlags,Gio.Internal.DBusSignalCallback,System.IntPtr,GLib.Internal.DestroyNotify)">SignalSubscribe(nint, string?, string?, string?, string?, string?, DBusSignalFlags, DBusSignalCallback, nint, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_signal_subscribe.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern uint SignalSubscribe(nint connection, string? sender, string? interfaceName, string? member, string? objectPath, string? arg0, DBusSignalFlags flags, DBusSignalCallback callback, nint userData, DestroyNotify userDataFreeFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">interfaceName</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">objectPath</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.DBusSignalFlags.html">DBusSignalFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.DBusSignalCallback.html">DBusSignalCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">userDataFreeFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_SignalUnsubscribe_" data-uid="Gio.Internal.DBusConnection.SignalUnsubscribe*"></a>
+  <h4 id="Gio_Internal_DBusConnection_SignalUnsubscribe_System_IntPtr_System_UInt32_" data-uid="Gio.Internal.DBusConnection.SignalUnsubscribe(System.IntPtr,System.UInt32)">SignalUnsubscribe(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_signal_unsubscribe.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void SignalUnsubscribe(nint connection, uint subscriptionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">subscriptionId</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_StartMessageProcessing_" data-uid="Gio.Internal.DBusConnection.StartMessageProcessing*"></a>
+  <h4 id="Gio_Internal_DBusConnection_StartMessageProcessing_System_IntPtr_" data-uid="Gio.Internal.DBusConnection.StartMessageProcessing(System.IntPtr)">StartMessageProcessing(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_start_message_processing.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern void StartMessageProcessing(nint connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_UnexportActionGroup_" data-uid="Gio.Internal.DBusConnection.UnexportActionGroup*"></a>
+  <h4 id="Gio_Internal_DBusConnection_UnexportActionGroup_System_IntPtr_System_UInt32_" data-uid="Gio.Internal.DBusConnection.UnexportActionGroup(System.IntPtr,System.UInt32)">UnexportActionGroup(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_unexport_action_group.
+Version: 2.32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public static extern void UnexportActionGroup(nint connection, uint exportId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">exportId</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_UnexportMenuModel_" data-uid="Gio.Internal.DBusConnection.UnexportMenuModel*"></a>
+  <h4 id="Gio_Internal_DBusConnection_UnexportMenuModel_System_IntPtr_System_UInt32_" data-uid="Gio.Internal.DBusConnection.UnexportMenuModel(System.IntPtr,System.UInt32)">UnexportMenuModel(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_unexport_menu_model.
+Version: 2.32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
+public static extern void UnexportMenuModel(nint connection, uint exportId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">exportId</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_UnregisterObject_" data-uid="Gio.Internal.DBusConnection.UnregisterObject*"></a>
+  <h4 id="Gio_Internal_DBusConnection_UnregisterObject_System_IntPtr_System_UInt32_" data-uid="Gio.Internal.DBusConnection.UnregisterObject(System.IntPtr,System.UInt32)">UnregisterObject(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_unregister_object.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool UnregisterObject(nint connection, uint registrationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">registrationId</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gio_Internal_DBusConnection_UnregisterSubtree_" data-uid="Gio.Internal.DBusConnection.UnregisterSubtree*"></a>
+  <h4 id="Gio_Internal_DBusConnection_UnregisterSubtree_System_IntPtr_System_UInt32_" data-uid="Gio.Internal.DBusConnection.UnregisterSubtree(System.IntPtr,System.UInt32)">UnregisterSubtree(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_dbus_connection_unregister_subtree.
+Version: 2.26</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
+public static extern bool UnregisterSubtree(nint connection, uint registrationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">registrationId</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

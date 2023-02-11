@@ -1,0 +1,1546 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AudioRingBuffer
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AudioRingBuffer
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GstAudio.Internal.AudioRingBuffer">
+
+
+  <h1 id="GstAudio_Internal_AudioRingBuffer" data-uid="GstAudio.Internal.AudioRingBuffer" class="text-break">Class AudioRingBuffer
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">AudioRingBuffer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GstAudio.html">GstAudio</a>.<a class="xref" href="GstAudio.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: GstAudio-1.0.dll</h6>
+  <h5 id="GstAudio_Internal_AudioRingBuffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioRingBuffer</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Acquire_" data-uid="GstAudio.Internal.AudioRingBuffer.Acquire*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Acquire_System_IntPtr_GstAudio_Internal_AudioRingBufferSpecHandle_" data-uid="GstAudio.Internal.AudioRingBuffer.Acquire(System.IntPtr,GstAudio.Internal.AudioRingBufferSpecHandle)">Acquire(nint, AudioRingBufferSpecHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_acquire.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Acquire(nint buf, AudioRingBufferSpecHandle spec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioRingBufferSpecHandle.html">AudioRingBufferSpecHandle</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Activate_" data-uid="GstAudio.Internal.AudioRingBuffer.Activate*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Activate_System_IntPtr_System_Boolean_" data-uid="GstAudio.Internal.AudioRingBuffer.Activate(System.IntPtr,System.Boolean)">Activate(nint, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_activate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Activate(nint buf, bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Advance_" data-uid="GstAudio.Internal.AudioRingBuffer.Advance*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Advance_System_IntPtr_System_UInt32_" data-uid="GstAudio.Internal.AudioRingBuffer.Advance(System.IntPtr,System.UInt32)">Advance(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_advance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Advance(nint buf, uint advance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">advance</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Clear_" data-uid="GstAudio.Internal.AudioRingBuffer.Clear*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Clear_System_IntPtr_System_Int32_" data-uid="GstAudio.Internal.AudioRingBuffer.Clear(System.IntPtr,System.Int32)">Clear(nint, int)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_clear.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Clear(nint buf, int segment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">segment</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_ClearAll_" data-uid="GstAudio.Internal.AudioRingBuffer.ClearAll*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_ClearAll_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.ClearAll(System.IntPtr)">ClearAll(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_clear_all.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ClearAll(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_CloseDevice_" data-uid="GstAudio.Internal.AudioRingBuffer.CloseDevice*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_CloseDevice_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.CloseDevice(System.IntPtr)">CloseDevice(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_close_device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool CloseDevice(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Commit_" data-uid="GstAudio.Internal.AudioRingBuffer.Commit*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Commit_System_IntPtr_System_IntPtr_System_Byte___System_Int32_System_Int32_System_IntPtr__" data-uid="GstAudio.Internal.AudioRingBuffer.Commit(System.IntPtr,System.IntPtr,System.Byte[],System.Int32,System.Int32,System.IntPtr@)">Commit(nint, nint, byte[], int, int, ref nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_commit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint Commit(nint buf, nint sample, byte[] data, int inSamples, int outSamples, ref nint accum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">sample</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">inSamples</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">outSamples</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">accum</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Convert_" data-uid="GstAudio.Internal.AudioRingBuffer.Convert*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Convert_System_IntPtr_Gst_Format_System_Int64_Gst_Format_System_IntPtr__" data-uid="GstAudio.Internal.AudioRingBuffer.Convert(System.IntPtr,Gst.Format,System.Int64,Gst.Format,System.IntPtr@)">Convert(nint, Format, long, Format, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_convert.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Convert(nint buf, Format srcFmt, long srcVal, Format destFmt, out nint destVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Format.html">Format</a></td>
+        <td><span class="parametername">srcFmt</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">long</span></td>
+        <td><span class="parametername">srcVal</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Format.html">Format</a></td>
+        <td><span class="parametername">destFmt</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">destVal</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_DebugSpecBuff_" data-uid="GstAudio.Internal.AudioRingBuffer.DebugSpecBuff*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_DebugSpecBuff_GstAudio_Internal_AudioRingBufferSpecHandle_" data-uid="GstAudio.Internal.AudioRingBuffer.DebugSpecBuff(GstAudio.Internal.AudioRingBufferSpecHandle)">DebugSpecBuff(AudioRingBufferSpecHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_audio_ring_buffer_debug_spec_buff.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void DebugSpecBuff(AudioRingBufferSpecHandle spec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioRingBufferSpecHandle.html">AudioRingBufferSpecHandle</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_DebugSpecCaps_" data-uid="GstAudio.Internal.AudioRingBuffer.DebugSpecCaps*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_DebugSpecCaps_GstAudio_Internal_AudioRingBufferSpecHandle_" data-uid="GstAudio.Internal.AudioRingBuffer.DebugSpecCaps(GstAudio.Internal.AudioRingBufferSpecHandle)">DebugSpecCaps(AudioRingBufferSpecHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_audio_ring_buffer_debug_spec_caps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void DebugSpecCaps(AudioRingBufferSpecHandle spec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioRingBufferSpecHandle.html">AudioRingBufferSpecHandle</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Delay_" data-uid="GstAudio.Internal.AudioRingBuffer.Delay*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Delay_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.Delay(System.IntPtr)">Delay(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_delay.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint Delay(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_DeviceIsOpen_" data-uid="GstAudio.Internal.AudioRingBuffer.DeviceIsOpen*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_DeviceIsOpen_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.DeviceIsOpen(System.IntPtr)">DeviceIsOpen(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_device_is_open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool DeviceIsOpen(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_GetGType_" data-uid="GstAudio.Internal.AudioRingBuffer.GetGType*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_GetGType" data-uid="GstAudio.Internal.AudioRingBuffer.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_audio_ring_buffer_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_IsAcquired_" data-uid="GstAudio.Internal.AudioRingBuffer.IsAcquired*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_IsAcquired_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.IsAcquired(System.IntPtr)">IsAcquired(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_is_acquired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool IsAcquired(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_IsActive_" data-uid="GstAudio.Internal.AudioRingBuffer.IsActive*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_IsActive_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.IsActive(System.IntPtr)">IsActive(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_is_active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool IsActive(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_IsFlushing_" data-uid="GstAudio.Internal.AudioRingBuffer.IsFlushing*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_IsFlushing_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.IsFlushing(System.IntPtr)">IsFlushing(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_is_flushing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool IsFlushing(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_MayStart_" data-uid="GstAudio.Internal.AudioRingBuffer.MayStart*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_MayStart_System_IntPtr_System_Boolean_" data-uid="GstAudio.Internal.AudioRingBuffer.MayStart(System.IntPtr,System.Boolean)">MayStart(nint, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_may_start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void MayStart(nint buf, bool allowed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">allowed</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_OpenDevice_" data-uid="GstAudio.Internal.AudioRingBuffer.OpenDevice*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_OpenDevice_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.OpenDevice(System.IntPtr)">OpenDevice(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_open_device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool OpenDevice(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_ParseCaps_" data-uid="GstAudio.Internal.AudioRingBuffer.ParseCaps*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_ParseCaps_GstAudio_Internal_AudioRingBufferSpecHandle_Gst_Internal_CapsHandle_" data-uid="GstAudio.Internal.AudioRingBuffer.ParseCaps(GstAudio.Internal.AudioRingBufferSpecHandle,Gst.Internal.CapsHandle)">ParseCaps(AudioRingBufferSpecHandle, CapsHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_audio_ring_buffer_parse_caps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool ParseCaps(AudioRingBufferSpecHandle spec, CapsHandle caps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioRingBufferSpecHandle.html">AudioRingBufferSpecHandle</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsHandle.html">CapsHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Pause_" data-uid="GstAudio.Internal.AudioRingBuffer.Pause*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Pause_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.Pause(System.IntPtr)">Pause(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_pause.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Pause(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_PrepareRead_" data-uid="GstAudio.Internal.AudioRingBuffer.PrepareRead*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_PrepareRead_System_IntPtr_System_IntPtr__System_Byte____System_IntPtr__" data-uid="GstAudio.Internal.AudioRingBuffer.PrepareRead(System.IntPtr,System.IntPtr@,System.Byte[]@,System.IntPtr@)">PrepareRead(nint, out nint, out byte[], out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_prepare_read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool PrepareRead(nint buf, out nint segment, out byte[] readptr, out nint len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">segment</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">readptr</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Read_" data-uid="GstAudio.Internal.AudioRingBuffer.Read*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Read_System_IntPtr_System_UInt64_System_Byte___System_UInt32_System_IntPtr__" data-uid="GstAudio.Internal.AudioRingBuffer.Read(System.IntPtr,System.UInt64,System.Byte[],System.UInt32,System.IntPtr@)">Read(nint, ulong, byte[], uint, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint Read(nint buf, ulong sample, byte[] data, uint len, out nint timestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">sample</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Release_" data-uid="GstAudio.Internal.AudioRingBuffer.Release*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Release_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.Release(System.IntPtr)">Release(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_release.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Release(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SamplesDone_" data-uid="GstAudio.Internal.AudioRingBuffer.SamplesDone*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SamplesDone_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.SamplesDone(System.IntPtr)">SamplesDone(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_samples_done.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern ulong SamplesDone(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SetCallback_" data-uid="GstAudio.Internal.AudioRingBuffer.SetCallback*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SetCallback_System_IntPtr_GstAudio_Internal_AudioRingBufferCallback_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.SetCallback(System.IntPtr,GstAudio.Internal.AudioRingBufferCallback,System.IntPtr)">SetCallback(nint, AudioRingBufferCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_set_callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetCallback(nint buf, AudioRingBufferCallback cb, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioRingBufferCallback.html">AudioRingBufferCallback</a></td>
+        <td><span class="parametername">cb</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SetCallbackFull_" data-uid="GstAudio.Internal.AudioRingBuffer.SetCallbackFull*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SetCallbackFull_System_IntPtr_GstAudio_Internal_AudioRingBufferCallback_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GstAudio.Internal.AudioRingBuffer.SetCallbackFull(System.IntPtr,GstAudio.Internal.AudioRingBufferCallback,System.IntPtr,GLib.Internal.DestroyNotify)">SetCallbackFull(nint, AudioRingBufferCallback, nint, DestroyNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_set_callback_full.
+Version: 1.12</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.12&quot;)]
+public static extern void SetCallbackFull(nint buf, AudioRingBufferCallback cb, nint userData, DestroyNotify notify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GstAudio.Internal.AudioRingBufferCallback.html">AudioRingBufferCallback</a></td>
+        <td><span class="parametername">cb</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
+        <td><span class="parametername">notify</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SetChannelPositions_" data-uid="GstAudio.Internal.AudioRingBuffer.SetChannelPositions*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SetChannelPositions_System_IntPtr_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.SetChannelPositions(System.IntPtr,System.IntPtr)">SetChannelPositions(nint, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_set_channel_positions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetChannelPositions(nint buf, nint position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SetFlushing_" data-uid="GstAudio.Internal.AudioRingBuffer.SetFlushing*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SetFlushing_System_IntPtr_System_Boolean_" data-uid="GstAudio.Internal.AudioRingBuffer.SetFlushing(System.IntPtr,System.Boolean)">SetFlushing(nint, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_set_flushing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetFlushing(nint buf, bool flushing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">flushing</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SetSample_" data-uid="GstAudio.Internal.AudioRingBuffer.SetSample*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SetSample_System_IntPtr_System_UInt64_" data-uid="GstAudio.Internal.AudioRingBuffer.SetSample(System.IntPtr,System.UInt64)">SetSample(nint, ulong)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_set_sample.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetSample(nint buf, ulong sample)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">sample</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_SetTimestamp_" data-uid="GstAudio.Internal.AudioRingBuffer.SetTimestamp*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_SetTimestamp_System_IntPtr_System_Int32_System_UInt64_" data-uid="GstAudio.Internal.AudioRingBuffer.SetTimestamp(System.IntPtr,System.Int32,System.UInt64)">SetTimestamp(nint, int, ulong)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_set_timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetTimestamp(nint buf, int readseg, ulong timestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">readseg</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Start_" data-uid="GstAudio.Internal.AudioRingBuffer.Start*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Start_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.Start(System.IntPtr)">Start(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Start(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstAudio_Internal_AudioRingBuffer_Stop_" data-uid="GstAudio.Internal.AudioRingBuffer.Stop*"></a>
+  <h4 id="GstAudio_Internal_AudioRingBuffer_Stop_System_IntPtr_" data-uid="GstAudio.Internal.AudioRingBuffer.Stop(System.IntPtr)">Stop(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_audio_ring_buffer_stop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool Stop(nint buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">buf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

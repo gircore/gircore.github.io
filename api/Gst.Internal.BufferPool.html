@@ -1,0 +1,1082 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BufferPool
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BufferPool
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Gst.Internal.BufferPool">
+
+
+  <h1 id="Gst_Internal_BufferPool" data-uid="Gst.Internal.BufferPool" class="text-break">Class BufferPool
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">BufferPool</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a>.<a class="xref" href="Gst.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: Gst-1.0.dll</h6>
+  <h5 id="Gst_Internal_BufferPool_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BufferPool</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Gst_Internal_BufferPool_AcquireBuffer_" data-uid="Gst.Internal.BufferPool.AcquireBuffer*"></a>
+  <h4 id="Gst_Internal_BufferPool_AcquireBuffer_System_IntPtr_Gst_Internal_BufferOwnedHandle__Gst_Internal_BufferPoolAcquireParamsHandle_" data-uid="Gst.Internal.BufferPool.AcquireBuffer(System.IntPtr,Gst.Internal.BufferOwnedHandle@,Gst.Internal.BufferPoolAcquireParamsHandle)">AcquireBuffer(nint, out BufferOwnedHandle, BufferPoolAcquireParamsHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_acquire_buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern FlowReturn AcquireBuffer(nint pool, out BufferOwnedHandle buffer, BufferPoolAcquireParamsHandle @params)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.BufferOwnedHandle.html">BufferOwnedHandle</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.BufferPoolAcquireParamsHandle.html">BufferPoolAcquireParamsHandle</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigAddOption_" data-uid="Gst.Internal.BufferPool.ConfigAddOption*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigAddOption_Gst_Internal_StructureHandle_System_String_" data-uid="Gst.Internal.BufferPool.ConfigAddOption(Gst.Internal.StructureHandle,System.String)">ConfigAddOption(StructureHandle, string)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_add_option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ConfigAddOption(StructureHandle config, string option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">option</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigGetAllocator_" data-uid="Gst.Internal.BufferPool.ConfigGetAllocator*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigGetAllocator_Gst_Internal_StructureHandle_System_IntPtr__Gst_Internal_AllocationParamsHandle_" data-uid="Gst.Internal.BufferPool.ConfigGetAllocator(Gst.Internal.StructureHandle,System.IntPtr@,Gst.Internal.AllocationParamsHandle)">ConfigGetAllocator(StructureHandle, out nint, AllocationParamsHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_get_allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool ConfigGetAllocator(StructureHandle config, out nint allocator, AllocationParamsHandle @params)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.AllocationParamsHandle.html">AllocationParamsHandle</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigGetOption_" data-uid="Gst.Internal.BufferPool.ConfigGetOption*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigGetOption_Gst_Internal_StructureHandle_System_UInt32_" data-uid="Gst.Internal.BufferPool.ConfigGetOption(Gst.Internal.StructureHandle,System.UInt32)">ConfigGetOption(StructureHandle, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_get_option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint ConfigGetOption(StructureHandle config, uint index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigGetParams_" data-uid="Gst.Internal.BufferPool.ConfigGetParams*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigGetParams_Gst_Internal_StructureHandle_Gst_Internal_CapsUnownedHandle__System_IntPtr__System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.BufferPool.ConfigGetParams(Gst.Internal.StructureHandle,Gst.Internal.CapsUnownedHandle@,System.IntPtr@,System.IntPtr@,System.IntPtr@)">ConfigGetParams(StructureHandle, out CapsUnownedHandle, out nint, out nint, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_get_params.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool ConfigGetParams(StructureHandle config, out CapsUnownedHandle caps, out nint size, out nint minBuffers, out nint maxBuffers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsUnownedHandle.html">CapsUnownedHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">minBuffers</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">maxBuffers</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigHasOption_" data-uid="Gst.Internal.BufferPool.ConfigHasOption*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigHasOption_Gst_Internal_StructureHandle_System_String_" data-uid="Gst.Internal.BufferPool.ConfigHasOption(Gst.Internal.StructureHandle,System.String)">ConfigHasOption(StructureHandle, string)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_has_option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool ConfigHasOption(StructureHandle config, string option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">option</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigNOptions_" data-uid="Gst.Internal.BufferPool.ConfigNOptions*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigNOptions_Gst_Internal_StructureHandle_" data-uid="Gst.Internal.BufferPool.ConfigNOptions(Gst.Internal.StructureHandle)">ConfigNOptions(StructureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_n_options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint ConfigNOptions(StructureHandle config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigSetAllocator_" data-uid="Gst.Internal.BufferPool.ConfigSetAllocator*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigSetAllocator_Gst_Internal_StructureHandle_System_IntPtr_Gst_Internal_AllocationParamsHandle_" data-uid="Gst.Internal.BufferPool.ConfigSetAllocator(Gst.Internal.StructureHandle,System.IntPtr,Gst.Internal.AllocationParamsHandle)">ConfigSetAllocator(StructureHandle, nint, AllocationParamsHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_set_allocator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ConfigSetAllocator(StructureHandle config, nint allocator, AllocationParamsHandle @params)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.AllocationParamsHandle.html">AllocationParamsHandle</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigSetParams_" data-uid="Gst.Internal.BufferPool.ConfigSetParams*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigSetParams_Gst_Internal_StructureHandle_Gst_Internal_CapsHandle_System_UInt32_System_UInt32_System_UInt32_" data-uid="Gst.Internal.BufferPool.ConfigSetParams(Gst.Internal.StructureHandle,Gst.Internal.CapsHandle,System.UInt32,System.UInt32,System.UInt32)">ConfigSetParams(StructureHandle, CapsHandle, uint, uint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_set_params.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ConfigSetParams(StructureHandle config, CapsHandle caps, uint size, uint minBuffers, uint maxBuffers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsHandle.html">CapsHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">minBuffers</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">maxBuffers</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ConfigValidateParams_" data-uid="Gst.Internal.BufferPool.ConfigValidateParams*"></a>
+  <h4 id="Gst_Internal_BufferPool_ConfigValidateParams_Gst_Internal_StructureHandle_Gst_Internal_CapsHandle_System_UInt32_System_UInt32_System_UInt32_" data-uid="Gst.Internal.BufferPool.ConfigValidateParams(Gst.Internal.StructureHandle,Gst.Internal.CapsHandle,System.UInt32,System.UInt32,System.UInt32)">ConfigValidateParams(StructureHandle, CapsHandle, uint, uint, uint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_config_validate_params.
+Version: 1.4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
+public static extern bool ConfigValidateParams(StructureHandle config, CapsHandle caps, uint size, uint minBuffers, uint maxBuffers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsHandle.html">CapsHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">minBuffers</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">maxBuffers</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_GetConfig_" data-uid="Gst.Internal.BufferPool.GetConfig*"></a>
+  <h4 id="Gst_Internal_BufferPool_GetConfig_System_IntPtr_" data-uid="Gst.Internal.BufferPool.GetConfig(System.IntPtr)">GetConfig(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_get_config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern StructureOwnedHandle GetConfig(nint pool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureOwnedHandle.html">StructureOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_GetGType_" data-uid="Gst.Internal.BufferPool.GetGType*"></a>
+  <h4 id="Gst_Internal_BufferPool_GetGType" data-uid="Gst.Internal.BufferPool.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_buffer_pool_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_GetOptions_" data-uid="Gst.Internal.BufferPool.GetOptions*"></a>
+  <h4 id="Gst_Internal_BufferPool_GetOptions_System_IntPtr_" data-uid="Gst.Internal.BufferPool.GetOptions(System.IntPtr)">GetOptions(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_get_options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint GetOptions(nint pool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_HasOption_" data-uid="Gst.Internal.BufferPool.HasOption*"></a>
+  <h4 id="Gst_Internal_BufferPool_HasOption_System_IntPtr_System_String_" data-uid="Gst.Internal.BufferPool.HasOption(System.IntPtr,System.String)">HasOption(nint, string)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_has_option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool HasOption(nint pool, string option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">option</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_IsActive_" data-uid="Gst.Internal.BufferPool.IsActive*"></a>
+  <h4 id="Gst_Internal_BufferPool_IsActive_System_IntPtr_" data-uid="Gst.Internal.BufferPool.IsActive(System.IntPtr)">IsActive(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_is_active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool IsActive(nint pool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_New_" data-uid="Gst.Internal.BufferPool.New*"></a>
+  <h4 id="Gst_Internal_BufferPool_New" data-uid="Gst.Internal.BufferPool.New">New()</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor gst_buffer_pool_new.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint New()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_ReleaseBuffer_" data-uid="Gst.Internal.BufferPool.ReleaseBuffer*"></a>
+  <h4 id="Gst_Internal_BufferPool_ReleaseBuffer_System_IntPtr_Gst_Internal_BufferHandle_" data-uid="Gst.Internal.BufferPool.ReleaseBuffer(System.IntPtr,Gst.Internal.BufferHandle)">ReleaseBuffer(nint, BufferHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_release_buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void ReleaseBuffer(nint pool, BufferHandle buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.BufferHandle.html">BufferHandle</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_SetActive_" data-uid="Gst.Internal.BufferPool.SetActive*"></a>
+  <h4 id="Gst_Internal_BufferPool_SetActive_System_IntPtr_System_Boolean_" data-uid="Gst.Internal.BufferPool.SetActive(System.IntPtr,System.Boolean)">SetActive(nint, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_set_active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool SetActive(nint pool, bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_SetConfig_" data-uid="Gst.Internal.BufferPool.SetConfig*"></a>
+  <h4 id="Gst_Internal_BufferPool_SetConfig_System_IntPtr_Gst_Internal_StructureHandle_" data-uid="Gst.Internal.BufferPool.SetConfig(System.IntPtr,Gst.Internal.StructureHandle)">SetConfig(nint, StructureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_set_config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool SetConfig(nint pool, StructureHandle config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.StructureHandle.html">StructureHandle</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Gst_Internal_BufferPool_SetFlushing_" data-uid="Gst.Internal.BufferPool.SetFlushing*"></a>
+  <h4 id="Gst_Internal_BufferPool_SetFlushing_System_IntPtr_System_Boolean_" data-uid="Gst.Internal.BufferPool.SetFlushing(System.IntPtr,System.Boolean)">SetFlushing(nint, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_pool_set_flushing.
+Version: 1.4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
+public static extern void SetFlushing(nint pool, bool flushing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">pool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">flushing</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

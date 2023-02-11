@@ -1,0 +1,1377 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Aggregator
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Aggregator
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GstBase.Aggregator">
+
+
+  <h1 id="GstBase_Aggregator" data-uid="GstBase.Aggregator" class="text-break">Class Aggregator
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gst.Object.html">Object</a></div>
+    <div class="level4"><a class="xref" href="Gst.Element.html">Element</a></div>
+    <div class="level5"><span class="xref">Aggregator</span></div>
+      <div class="level6"><a class="xref" href="GstAudio.AudioAggregator.html">AudioAggregator</a></div>
+      <div class="level6"><a class="xref" href="GstVideo.VideoAggregator.html">VideoAggregator</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MakeFromUri_Gst_URIType_System_String_System_String_">Element.MakeFromUri(URIType, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Item_System_String_">Element.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Register_Gst_Plugin_System_String_System_UInt32_System_UIntPtr_">Element.Register(Plugin, string, uint, nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_StateChangeReturnGetName_Gst_StateChangeReturn_">Element.StateChangeReturnGetName(StateChangeReturn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_StateGetName_Gst_State_">Element.StateGetName(State)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_TypeSetSkipDocumentation_System_UIntPtr_">Element.TypeSetSkipDocumentation(nuint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AbortState">Element.AbortState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPad_Gst_Pad_">Element.AddPad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPropertyDeepNotifyWatch_System_String_System_Boolean_">Element.AddPropertyDeepNotifyWatch(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_AddPropertyNotifyWatch_System_String_System_Boolean_">Element.AddPropertyNotifyWatch(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_CallAsync_Gst_ElementCallAsyncFunc_">Element.CallAsync(ElementCallAsyncFunc)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ChangeState_Gst_StateChange_">Element.ChangeState(StateChange)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ContinueState_Gst_StateChangeReturn_">Element.ContinueState(StateChangeReturn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_CreateAllPads">Element.CreateAllPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetBaseTime">Element.GetBaseTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetBus">Element.GetBus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetClock">Element.GetClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCompatiblePad_Gst_Pad_Gst_Caps_">Element.GetCompatiblePad(Pad, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCompatiblePadTemplate_Gst_PadTemplate_">Element.GetCompatiblePadTemplate(PadTemplate)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContext_System_String_">Element.GetContext(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContextUnlocked_System_String_">Element.GetContextUnlocked(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetContexts">Element.GetContexts()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCurrentClockTime">Element.GetCurrentClockTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetCurrentRunningTime">Element.GetCurrentRunningTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetFactory">Element.GetFactory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetMetadata_System_String_">Element.GetMetadata(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetPadTemplate_System_String_">Element.GetPadTemplate(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetPadTemplateList">Element.GetPadTemplateList()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetRequestPad_System_String_">Element.GetRequestPad(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetStartTime">Element.GetStartTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_GetStaticPad_System_String_">Element.GetStaticPad(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IsLockedState">Element.IsLockedState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IteratePads">Element.IteratePads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IterateSinkPads">Element.IterateSinkPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_IterateSrcPads">Element.IterateSrcPads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Link_Gst_Element_">Element.Link(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkFiltered_Gst_Element_Gst_Caps_">Element.LinkFiltered(Element, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPads_System_String_Gst_Element_System_String_">Element.LinkPads(string, Element, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPadsFiltered_System_String_Gst_Element_System_String_Gst_Caps_">Element.LinkPadsFiltered(string, Element, string, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LinkPadsFull_System_String_Gst_Element_System_String_Gst_PadLinkCheck_">Element.LinkPadsFull(string, Element, string, PadLinkCheck)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_LostState">Element.LostState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MessageFull_Gst_MessageType_System_UInt32_System_Int32_System_String_System_String_System_String_System_String_System_Int32_">Element.MessageFull(MessageType, uint, int, string, string, string, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_MessageFullWithDetails_Gst_MessageType_System_UInt32_System_Int32_System_String_System_String_System_String_System_String_System_Int32_Gst_Structure_">Element.MessageFullWithDetails(MessageType, uint, int, string, string, string, string, int, Structure)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_NoMorePads">Element.NoMorePads()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PostMessage_Gst_Message_">Element.PostMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ProvideClock">Element.ProvideClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Query_Gst_Query_">Element.Query(Query)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_ReleaseRequestPad_Gst_Pad_">Element.ReleaseRequestPad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RemovePad_Gst_Pad_">Element.RemovePad(Pad)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RemovePropertyNotifyWatch_System_UInt64_">Element.RemovePropertyNotifyWatch(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RequestPad_Gst_PadTemplate_System_String_Gst_Caps_">Element.RequestPad(PadTemplate, string, Caps)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_RequestPadSimple_System_String_">Element.RequestPadSimple(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Seek_System_Double_Gst_Format_Gst_SeekFlags_Gst_SeekType_System_Int64_Gst_SeekType_System_Int64_">Element.Seek(double, Format, SeekFlags, SeekType, long, SeekType, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SeekSimple_Gst_Format_Gst_SeekFlags_System_Int64_">Element.SeekSimple(Format, SeekFlags, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SendEvent_Gst_Event_">Element.SendEvent(Event)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetBaseTime_System_UInt64_">Element.SetBaseTime(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetBus_Gst_Bus_">Element.SetBus(Bus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetClock_Gst_Clock_">Element.SetClock(Clock)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetContext_Gst_Context_">Element.SetContext(Context)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetLockedState_System_Boolean_">Element.SetLockedState(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetStartTime_System_UInt64_">Element.SetStartTime(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SetState_Gst_State_">Element.SetState(State)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_SyncStateWithParent">Element.SyncStateWithParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_Unlink_Gst_Element_">Element.Unlink(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_UnlinkPads_System_String_Gst_Element_System_String_">Element.UnlinkPads(string, Element, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_NoMorePadsSignal">Element.NoMorePadsSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnNoMorePads">Element.OnNoMorePads</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PadAddedSignal">Element.PadAddedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnPadAdded">Element.OnPadAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_PadRemovedSignal">Element.PadRemovedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Element.html#Gst_Element_OnPadRemoved">Element.OnPadRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_CheckUniqueness_GLib_List_System_String_">Object.CheckUniqueness(List, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DefaultDeepNotify_GObject_Object_Gst_Object_GObject_ParamSpec_System_String___">Object.DefaultDeepNotify(Object, Object, ParamSpec, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_AddControlBinding_Gst_ControlBinding_">Object.AddControlBinding(ControlBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DefaultError_GLib_Error_System_String_">Object.DefaultError(Error, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetControlBinding_System_String_">Object.GetControlBinding(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetControlRate">Object.GetControlRate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetName">Object.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetParent">Object.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetPathString">Object.GetPathString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_System_UInt64_">Object.GetValue(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasActiveControlBindings">Object.HasActiveControlBindings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAncestor_Gst_Object_">Object.HasAncestor(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAsAncestor_Gst_Object_">Object.HasAsAncestor(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_HasAsParent_Gst_Object_">Object.HasAsParent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_RemoveControlBinding_Gst_ControlBinding_">Object.RemoveControlBinding(ControlBinding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingDisabled_System_String_System_Boolean_">Object.SetControlBindingDisabled(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingsDisabled_System_Boolean_">Object.SetControlBindingsDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_System_UInt64_">Object.SetControlRate(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetName_System_String_">Object.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetParent_Gst_Object_">Object.SetParent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SuggestNextSync">Object.SuggestNextSync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_System_UInt64_">Object.SyncValues(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Unparent">Object.Unparent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_NamePropertyDefinition">Object.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Name">Object.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_ParentPropertyDefinition">Object.ParentPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_Parent">Object.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_DeepNotifySignal">Object.DeepNotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_OnDeepNotify">Object.OnDeepNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GstBase.html">GstBase</a></h6>
+  <h6><strong>Assembly</strong>: GstBase-1.0.dll</h6>
+  <h5 id="GstBase_Aggregator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Aggregator : Element, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="GstBase_Aggregator__ctor_" data-uid="GstBase.Aggregator.#ctor*"></a>
+  <h4 id="GstBase_Aggregator__ctor" data-uid="GstBase.Aggregator.#ctor">Aggregator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Aggregator()</code></pre>
+  </div>
+
+
+  <a id="GstBase_Aggregator__ctor_" data-uid="GstBase.Aggregator.#ctor*"></a>
+  <h4 id="GstBase_Aggregator__ctor_GObject_ConstructArgument___" data-uid="GstBase.Aggregator.#ctor(GObject.ConstructArgument[])">Aggregator(params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Aggregator(params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator__ctor_" data-uid="GstBase.Aggregator.#ctor*"></a>
+  <h4 id="GstBase_Aggregator__ctor_System_IntPtr_System_Boolean_" data-uid="GstBase.Aggregator.#ctor(System.IntPtr,System.Boolean)">Aggregator(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Aggregator(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="GstBase_Aggregator_EmitSignalsPropertyDefinition" data-uid="GstBase.Aggregator.EmitSignalsPropertyDefinition">EmitSignalsPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, Aggregator&gt; EmitSignalsPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="GstBase_Aggregator_LatencyPropertyDefinition" data-uid="GstBase.Aggregator.LatencyPropertyDefinition">LatencyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, Aggregator&gt; LatencyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="GstBase_Aggregator_MinUpstreamLatencyPropertyDefinition" data-uid="GstBase.Aggregator.MinUpstreamLatencyPropertyDefinition">MinUpstreamLatencyPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, Aggregator&gt; MinUpstreamLatencyPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="GstBase_Aggregator_SamplesSelectedSignal" data-uid="GstBase.Aggregator.SamplesSelectedSignal">SamplesSelectedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnSamplesSelected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;Aggregator, Aggregator.SamplesSelectedSignalArgs&gt; SamplesSelectedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="GstBase.Aggregator.html">Aggregator</a>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>.<a class="xref" href="GstBase.Aggregator.SamplesSelectedSignalArgs.html">SamplesSelectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="GstBase_Aggregator_StartTimePropertyDefinition" data-uid="GstBase.Aggregator.StartTimePropertyDefinition">StartTimePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, Aggregator&gt; StartTimePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="GstBase_Aggregator_StartTimeSelectionPropertyDefinition" data-uid="GstBase.Aggregator.StartTimeSelectionPropertyDefinition">StartTimeSelectionPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;AggregatorStartTimeSelection, Aggregator&gt; StartTimeSelectionPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="GstBase.AggregatorStartTimeSelection.html">AggregatorStartTimeSelection</a>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="GstBase_Aggregator_EmitSignals_" data-uid="GstBase.Aggregator.EmitSignals*"></a>
+  <h4 id="GstBase_Aggregator_EmitSignals" data-uid="GstBase.Aggregator.EmitSignals">EmitSignals</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EmitSignals { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_Latency_" data-uid="GstBase.Aggregator.Latency*"></a>
+  <h4 id="GstBase_Aggregator_Latency" data-uid="GstBase.Aggregator.Latency">Latency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Latency { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_MinUpstreamLatency_" data-uid="GstBase.Aggregator.MinUpstreamLatency*"></a>
+  <h4 id="GstBase_Aggregator_MinUpstreamLatency" data-uid="GstBase.Aggregator.MinUpstreamLatency">MinUpstreamLatency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong MinUpstreamLatency { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_StartTime_" data-uid="GstBase.Aggregator.StartTime*"></a>
+  <h4 id="GstBase_Aggregator_StartTime" data-uid="GstBase.Aggregator.StartTime">StartTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong StartTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_StartTimeSelection_" data-uid="GstBase.Aggregator.StartTimeSelection*"></a>
+  <h4 id="GstBase_Aggregator_StartTimeSelection" data-uid="GstBase.Aggregator.StartTimeSelection">StartTimeSelection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AggregatorStartTimeSelection StartTimeSelection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstBase.AggregatorStartTimeSelection.html">AggregatorStartTimeSelection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GstBase_Aggregator_FinishBuffer_" data-uid="GstBase.Aggregator.FinishBuffer*"></a>
+  <h4 id="GstBase_Aggregator_FinishBuffer_Gst_Buffer_" data-uid="GstBase.Aggregator.FinishBuffer(Gst.Buffer)">FinishBuffer(Buffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlowReturn FinishBuffer(Buffer buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Buffer.html">Buffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_FinishBufferList_" data-uid="GstBase.Aggregator.FinishBufferList*"></a>
+  <h4 id="GstBase_Aggregator_FinishBufferList_Gst_BufferList_" data-uid="GstBase.Aggregator.FinishBufferList(Gst.BufferList)">FinishBufferList(BufferList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.18&quot;)]
+public FlowReturn FinishBufferList(BufferList bufferlist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.BufferList.html">BufferList</a></td>
+        <td><span class="parametername">bufferlist</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.FlowReturn.html">FlowReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_GetBufferPool_" data-uid="GstBase.Aggregator.GetBufferPool*"></a>
+  <h4 id="GstBase_Aggregator_GetBufferPool" data-uid="GstBase.Aggregator.GetBufferPool">GetBufferPool()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BufferPool? GetBufferPool()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.BufferPool.html">BufferPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_GetGType_" data-uid="GstBase.Aggregator.GetGType*"></a>
+  <h4 id="GstBase_Aggregator_GetGType" data-uid="GstBase.Aggregator.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_GetIgnoreInactivePads_" data-uid="GstBase.Aggregator.GetIgnoreInactivePads*"></a>
+  <h4 id="GstBase_Aggregator_GetIgnoreInactivePads" data-uid="GstBase.Aggregator.GetIgnoreInactivePads">GetIgnoreInactivePads()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public bool GetIgnoreInactivePads()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_GetLatency_" data-uid="GstBase.Aggregator.GetLatency*"></a>
+  <h4 id="GstBase_Aggregator_GetLatency" data-uid="GstBase.Aggregator.GetLatency">GetLatency()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetLatency()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_Negotiate_" data-uid="GstBase.Aggregator.Negotiate*"></a>
+  <h4 id="GstBase_Aggregator_Negotiate" data-uid="GstBase.Aggregator.Negotiate">Negotiate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.18&quot;)]
+public bool Negotiate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_PeekNextSample_" data-uid="GstBase.Aggregator.PeekNextSample*"></a>
+  <h4 id="GstBase_Aggregator_PeekNextSample_GstBase_AggregatorPad_" data-uid="GstBase.Aggregator.PeekNextSample(GstBase.AggregatorPad)">PeekNextSample(AggregatorPad)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.18&quot;)]
+public Sample PeekNextSample(AggregatorPad pad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstBase.AggregatorPad.html">AggregatorPad</a></td>
+        <td><span class="parametername">pad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Sample.html">Sample</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_SelectedSamples_" data-uid="GstBase.Aggregator.SelectedSamples*"></a>
+  <h4 id="GstBase_Aggregator_SelectedSamples_System_UInt64_System_UInt64_System_UInt64_Gst_Structure_" data-uid="GstBase.Aggregator.SelectedSamples(System.UInt64,System.UInt64,System.UInt64,Gst.Structure)">SelectedSamples(ulong, ulong, ulong, Structure?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.18&quot;)]
+public void SelectedSamples(ulong pts, ulong dts, ulong duration, Structure? info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">pts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">dts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Structure.html">Structure</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_SetIgnoreInactivePads_" data-uid="GstBase.Aggregator.SetIgnoreInactivePads*"></a>
+  <h4 id="GstBase_Aggregator_SetIgnoreInactivePads_System_Boolean_" data-uid="GstBase.Aggregator.SetIgnoreInactivePads(System.Boolean)">SetIgnoreInactivePads(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
+public void SetIgnoreInactivePads(bool ignore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">ignore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_SetLatency_" data-uid="GstBase.Aggregator.SetLatency*"></a>
+  <h4 id="GstBase_Aggregator_SetLatency_System_UInt64_System_UInt64_" data-uid="GstBase.Aggregator.SetLatency(System.UInt64,System.UInt64)">SetLatency(ulong, ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLatency(ulong minLatency, ulong maxLatency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">minLatency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td><span class="parametername">maxLatency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_SetSrcCaps_" data-uid="GstBase.Aggregator.SetSrcCaps*"></a>
+  <h4 id="GstBase_Aggregator_SetSrcCaps_Gst_Caps_" data-uid="GstBase.Aggregator.SetSrcCaps(Gst.Caps)">SetSrcCaps(Caps)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSrcCaps(Caps caps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Caps.html">Caps</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_SimpleGetNextTime_" data-uid="GstBase.Aggregator.SimpleGetNextTime*"></a>
+  <h4 id="GstBase_Aggregator_SimpleGetNextTime" data-uid="GstBase.Aggregator.SimpleGetNextTime">SimpleGetNextTime()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
+public ulong SimpleGetNextTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ulong</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GstBase_Aggregator_UpdateSegment_" data-uid="GstBase.Aggregator.UpdateSegment*"></a>
+  <h4 id="GstBase_Aggregator_UpdateSegment_Gst_Segment_" data-uid="GstBase.Aggregator.UpdateSegment(Gst.Segment)">UpdateSegment(Segment)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.18&quot;)]
+public void UpdateSegment(Segment segment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Segment.html">Segment</a></td>
+        <td><span class="parametername">segment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="GstBase_Aggregator_OnSamplesSelected" data-uid="GstBase.Aggregator.OnSamplesSelected">OnSamplesSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;Aggregator, Aggregator.SamplesSelectedSignalArgs&gt; OnSamplesSelected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="GstBase.Aggregator.html">Aggregator</a>, <a class="xref" href="GstBase.Aggregator.html">Aggregator</a>.<a class="xref" href="GstBase.Aggregator.SamplesSelectedSignalArgs.html">SamplesSelectedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Closure
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Closure
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GObject.Internal.Closure">
+
+
+  <h1 id="GObject_Internal_Closure" data-uid="GObject.Internal.Closure" class="text-break">Class Closure
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Closure</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a>.<a class="xref" href="GObject.Internal.html">Internal</a></h6>
+  <h6><strong>Assembly</strong>: GObject-2.0.dll</h6>
+  <h5 id="GObject_Internal_Closure_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Closure</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="GObject_Internal_Closure_AddFinalizeNotifier_" data-uid="GObject.Internal.Closure.AddFinalizeNotifier*"></a>
+  <h4 id="GObject_Internal_Closure_AddFinalizeNotifier_GObject_Internal_ClosureHandle_System_IntPtr_GObject_Internal_ClosureNotify_" data-uid="GObject.Internal.Closure.AddFinalizeNotifier(GObject.Internal.ClosureHandle,System.IntPtr,GObject.Internal.ClosureNotify)">AddFinalizeNotifier(ClosureHandle, nint, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_add_finalize_notifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void AddFinalizeNotifier(ClosureHandle closure, nint notifyData, ClosureNotify notifyFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">notifyData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notifyFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_AddInvalidateNotifier_" data-uid="GObject.Internal.Closure.AddInvalidateNotifier*"></a>
+  <h4 id="GObject_Internal_Closure_AddInvalidateNotifier_GObject_Internal_ClosureHandle_System_IntPtr_GObject_Internal_ClosureNotify_" data-uid="GObject.Internal.Closure.AddInvalidateNotifier(GObject.Internal.ClosureHandle,System.IntPtr,GObject.Internal.ClosureNotify)">AddInvalidateNotifier(ClosureHandle, nint, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_add_invalidate_notifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void AddInvalidateNotifier(ClosureHandle closure, nint notifyData, ClosureNotify notifyFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">notifyData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notifyFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_AddMarshalGuards_" data-uid="GObject.Internal.Closure.AddMarshalGuards*"></a>
+  <h4 id="GObject_Internal_Closure_AddMarshalGuards_GObject_Internal_ClosureHandle_System_IntPtr_GObject_Internal_ClosureNotify_System_IntPtr_GObject_Internal_ClosureNotify_" data-uid="GObject.Internal.Closure.AddMarshalGuards(GObject.Internal.ClosureHandle,System.IntPtr,GObject.Internal.ClosureNotify,System.IntPtr,GObject.Internal.ClosureNotify)">AddMarshalGuards(ClosureHandle, nint, ClosureNotify, nint, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_add_marshal_guards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void AddMarshalGuards(ClosureHandle closure, nint preMarshalData, ClosureNotify preMarshalNotify, nint postMarshalData, ClosureNotify postMarshalNotify)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">preMarshalData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">preMarshalNotify</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">postMarshalData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">postMarshalNotify</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_GetGType_" data-uid="GObject.Internal.Closure.GetGType*"></a>
+  <h4 id="GObject_Internal_Closure_GetGType" data-uid="GObject.Internal.Closure.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function g_closure_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">nuint</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_Invalidate_" data-uid="GObject.Internal.Closure.Invalidate*"></a>
+  <h4 id="GObject_Internal_Closure_Invalidate_GObject_Internal_ClosureHandle_" data-uid="GObject.Internal.Closure.Invalidate(GObject.Internal.ClosureHandle)">Invalidate(ClosureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_invalidate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Invalidate(ClosureHandle closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_Invoke_" data-uid="GObject.Internal.Closure.Invoke*"></a>
+  <h4 id="GObject_Internal_Closure_Invoke_GObject_Internal_ClosureHandle_GObject_Internal_ValueHandle_System_UInt32_GObject_Internal_ValueData___System_IntPtr_" data-uid="GObject.Internal.Closure.Invoke(GObject.Internal.ClosureHandle,GObject.Internal.ValueHandle,System.UInt32,GObject.Internal.ValueData[],System.IntPtr)">Invoke(ClosureHandle, ValueHandle, uint, ValueData[], nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_invoke.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Invoke(ClosureHandle closure, ValueHandle returnValue, uint nParamValues, ValueData[] paramValues, nint invocationHint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ValueHandle.html">ValueHandle</a></td>
+        <td><span class="parametername">returnValue</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">nParamValues</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ValueData.html">ValueData</a>[]</td>
+        <td><span class="parametername">paramValues</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">invocationHint</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_NewObject_" data-uid="GObject.Internal.Closure.NewObject*"></a>
+  <h4 id="GObject_Internal_Closure_NewObject_System_UInt32_System_IntPtr_" data-uid="GObject.Internal.Closure.NewObject(System.UInt32,System.IntPtr)">NewObject(uint, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_closure_new_object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern ClosureOwnedHandle NewObject(uint sizeofClosure, nint @object)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">sizeofClosure</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureOwnedHandle.html">ClosureOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_NewSimple_" data-uid="GObject.Internal.Closure.NewSimple*"></a>
+  <h4 id="GObject_Internal_Closure_NewSimple_System_UInt32_System_IntPtr_" data-uid="GObject.Internal.Closure.NewSimple(System.UInt32,System.IntPtr)">NewSimple(uint, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_closure_new_simple.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern ClosureUnownedHandle NewSimple(uint sizeofClosure, nint data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">uint</span></td>
+        <td><span class="parametername">sizeofClosure</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureUnownedHandle.html">ClosureUnownedHandle</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_Ref_" data-uid="GObject.Internal.Closure.Ref*"></a>
+  <h4 id="GObject_Internal_Closure_Ref_GObject_Internal_ClosureHandle_" data-uid="GObject.Internal.Closure.Ref(GObject.Internal.ClosureHandle)">Ref(ClosureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_ref.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern ClosureUnownedHandle Ref(ClosureHandle closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureUnownedHandle.html">ClosureUnownedHandle</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_RemoveFinalizeNotifier_" data-uid="GObject.Internal.Closure.RemoveFinalizeNotifier*"></a>
+  <h4 id="GObject_Internal_Closure_RemoveFinalizeNotifier_GObject_Internal_ClosureHandle_System_IntPtr_GObject_Internal_ClosureNotify_" data-uid="GObject.Internal.Closure.RemoveFinalizeNotifier(GObject.Internal.ClosureHandle,System.IntPtr,GObject.Internal.ClosureNotify)">RemoveFinalizeNotifier(ClosureHandle, nint, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_remove_finalize_notifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void RemoveFinalizeNotifier(ClosureHandle closure, nint notifyData, ClosureNotify notifyFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">notifyData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notifyFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_RemoveInvalidateNotifier_" data-uid="GObject.Internal.Closure.RemoveInvalidateNotifier*"></a>
+  <h4 id="GObject_Internal_Closure_RemoveInvalidateNotifier_GObject_Internal_ClosureHandle_System_IntPtr_GObject_Internal_ClosureNotify_" data-uid="GObject.Internal.Closure.RemoveInvalidateNotifier(GObject.Internal.ClosureHandle,System.IntPtr,GObject.Internal.ClosureNotify)">RemoveInvalidateNotifier(ClosureHandle, nint, ClosureNotify)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_remove_invalidate_notifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void RemoveInvalidateNotifier(ClosureHandle closure, nint notifyData, ClosureNotify notifyFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">notifyData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureNotify.html">ClosureNotify</a></td>
+        <td><span class="parametername">notifyFunc</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_SetMarshal_" data-uid="GObject.Internal.Closure.SetMarshal*"></a>
+  <h4 id="GObject_Internal_Closure_SetMarshal_GObject_Internal_ClosureHandle_GObject_Internal_ClosureMarshal_" data-uid="GObject.Internal.Closure.SetMarshal(GObject.Internal.ClosureHandle,GObject.Internal.ClosureMarshal)">SetMarshal(ClosureHandle, ClosureMarshal)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_set_marshal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetMarshal(ClosureHandle closure, ClosureMarshal marshal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureMarshal.html">ClosureMarshal</a></td>
+        <td><span class="parametername">marshal</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_SetMetaMarshal_" data-uid="GObject.Internal.Closure.SetMetaMarshal*"></a>
+  <h4 id="GObject_Internal_Closure_SetMetaMarshal_GObject_Internal_ClosureHandle_System_IntPtr_GObject_Internal_ClosureMarshal_" data-uid="GObject.Internal.Closure.SetMetaMarshal(GObject.Internal.ClosureHandle,System.IntPtr,GObject.Internal.ClosureMarshal)">SetMetaMarshal(ClosureHandle, nint, ClosureMarshal)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_set_meta_marshal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetMetaMarshal(ClosureHandle closure, nint marshalData, ClosureMarshal metaMarshal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">nint</span></td>
+        <td><span class="parametername">marshalData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureMarshal.html">ClosureMarshal</a></td>
+        <td><span class="parametername">metaMarshal</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_Sink_" data-uid="GObject.Internal.Closure.Sink*"></a>
+  <h4 id="GObject_Internal_Closure_Sink_GObject_Internal_ClosureHandle_" data-uid="GObject.Internal.Closure.Sink(GObject.Internal.ClosureHandle)">Sink(ClosureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_sink.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Sink(ClosureHandle closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="GObject_Internal_Closure_Unref_" data-uid="GObject.Internal.Closure.Unref*"></a>
+  <h4 id="GObject_Internal_Closure_Unref_GObject_Internal_ClosureHandle_" data-uid="GObject.Internal.Closure.Unref(GObject.Internal.ClosureHandle)">Unref(ClosureHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_closure_unref.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Unref(ClosureHandle closure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ClosureHandle.html">ClosureHandle</a></td>
+        <td><span class="parametername">closure</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
