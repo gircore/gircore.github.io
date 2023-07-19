@@ -1,0 +1,1799 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Buffer
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Buffer
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../img/gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GtkSource.Buffer">
+
+
+
+  <h1 id="GtkSource_Buffer" data-uid="GtkSource.Buffer" class="text-break">Class Buffer
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="Gtk.TextBuffer.html">TextBuffer</a></div>
+    <div class="level3"><span class="xref">Buffer</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_AddMark_Gtk_TextMark_Gtk_TextIter_">TextBuffer.AddMark(TextMark, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_AddSelectionClipboard_Gdk_Clipboard_">TextBuffer.AddSelectionClipboard(Clipboard)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_ApplyTag_Gtk_TextTag_Gtk_TextIter_Gtk_TextIter_">TextBuffer.ApplyTag(TextTag, TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_ApplyTagByName_System_String_Gtk_TextIter_Gtk_TextIter_">TextBuffer.ApplyTagByName(string, TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_Backspace_Gtk_TextIter_System_Boolean_System_Boolean_">TextBuffer.Backspace(TextIter, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_BeginIrreversibleAction">TextBuffer.BeginIrreversibleAction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_BeginUserAction">TextBuffer.BeginUserAction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CopyClipboard_Gdk_Clipboard_">TextBuffer.CopyClipboard(Clipboard)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CreateChildAnchor_Gtk_TextIter_">TextBuffer.CreateChildAnchor(TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CreateMark_System_String_Gtk_TextIter_System_Boolean_">TextBuffer.CreateMark(string, TextIter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CutClipboard_Gdk_Clipboard_System_Boolean_">TextBuffer.CutClipboard(Clipboard, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_Delete_Gtk_TextIter_Gtk_TextIter_">TextBuffer.Delete(TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_DeleteInteractive_Gtk_TextIter_Gtk_TextIter_System_Boolean_">TextBuffer.DeleteInteractive(TextIter, TextIter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_DeleteMark_Gtk_TextMark_">TextBuffer.DeleteMark(TextMark)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_DeleteMarkByName_System_String_">TextBuffer.DeleteMarkByName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_DeleteSelection_System_Boolean_System_Boolean_">TextBuffer.DeleteSelection(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_EndIrreversibleAction">TextBuffer.EndIrreversibleAction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_EndUserAction">TextBuffer.EndUserAction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetCanRedo">TextBuffer.GetCanRedo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetCanUndo">TextBuffer.GetCanUndo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetCharCount">TextBuffer.GetCharCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetEnableUndo">TextBuffer.GetEnableUndo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetHasSelection">TextBuffer.GetHasSelection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetInsert">TextBuffer.GetInsert()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetLineCount">TextBuffer.GetLineCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetMark_System_String_">TextBuffer.GetMark(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetMaxUndoLevels">TextBuffer.GetMaxUndoLevels()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetModified">TextBuffer.GetModified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetSelectionBound">TextBuffer.GetSelectionBound()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetSelectionContent">TextBuffer.GetSelectionContent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetSlice_Gtk_TextIter_Gtk_TextIter_System_Boolean_">TextBuffer.GetSlice(TextIter, TextIter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetTagTable">TextBuffer.GetTagTable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_GetText_Gtk_TextIter_Gtk_TextIter_System_Boolean_">TextBuffer.GetText(TextIter, TextIter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_Insert_Gtk_TextIter_System_String_System_Int32_">TextBuffer.Insert(TextIter, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertAtCursor_System_String_System_Int32_">TextBuffer.InsertAtCursor(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertChildAnchor_Gtk_TextIter_Gtk_TextChildAnchor_">TextBuffer.InsertChildAnchor(TextIter, TextChildAnchor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertInteractive_Gtk_TextIter_System_String_System_Int32_System_Boolean_">TextBuffer.InsertInteractive(TextIter, string, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertInteractiveAtCursor_System_String_System_Int32_System_Boolean_">TextBuffer.InsertInteractiveAtCursor(string, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertMarkup_Gtk_TextIter_System_String_System_Int32_">TextBuffer.InsertMarkup(TextIter, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertPaintable_Gtk_TextIter_Gdk_Paintable_">TextBuffer.InsertPaintable(TextIter, Paintable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertRange_Gtk_TextIter_Gtk_TextIter_Gtk_TextIter_">TextBuffer.InsertRange(TextIter, TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertRangeInteractive_Gtk_TextIter_Gtk_TextIter_Gtk_TextIter_System_Boolean_">TextBuffer.InsertRangeInteractive(TextIter, TextIter, TextIter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_MoveMark_Gtk_TextMark_Gtk_TextIter_">TextBuffer.MoveMark(TextMark, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_MoveMarkByName_System_String_Gtk_TextIter_">TextBuffer.MoveMarkByName(string, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_PasteClipboard_Gdk_Clipboard_Gtk_TextIter_System_Boolean_">TextBuffer.PasteClipboard(Clipboard, TextIter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_PlaceCursor_Gtk_TextIter_">TextBuffer.PlaceCursor(TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_Redo">TextBuffer.Redo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_RemoveAllTags_Gtk_TextIter_Gtk_TextIter_">TextBuffer.RemoveAllTags(TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_RemoveSelectionClipboard_Gdk_Clipboard_">TextBuffer.RemoveSelectionClipboard(Clipboard)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_RemoveTag_Gtk_TextTag_Gtk_TextIter_Gtk_TextIter_">TextBuffer.RemoveTag(TextTag, TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_RemoveTagByName_System_String_Gtk_TextIter_Gtk_TextIter_">TextBuffer.RemoveTagByName(string, TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_SelectRange_Gtk_TextIter_Gtk_TextIter_">TextBuffer.SelectRange(TextIter, TextIter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_SetEnableUndo_System_Boolean_">TextBuffer.SetEnableUndo(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_SetMaxUndoLevels_System_UInt32_">TextBuffer.SetMaxUndoLevels(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_SetModified_System_Boolean_">TextBuffer.SetModified(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_SetText_System_String_System_Int32_">TextBuffer.SetText(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_Undo">TextBuffer.Undo()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CanRedoPropertyDefinition">TextBuffer.CanRedoPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CanRedo">TextBuffer.CanRedo</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CanUndoPropertyDefinition">TextBuffer.CanUndoPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CanUndo">TextBuffer.CanUndo</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CursorPositionPropertyDefinition">TextBuffer.CursorPositionPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_CursorPosition">TextBuffer.CursorPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_EnableUndoPropertyDefinition">TextBuffer.EnableUndoPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_EnableUndo">TextBuffer.EnableUndo</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_HasSelectionPropertyDefinition">TextBuffer.HasSelectionPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_HasSelection">TextBuffer.HasSelection</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_TagTablePropertyDefinition">TextBuffer.TagTablePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_TagTable">TextBuffer.TagTable</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_TextPropertyDefinition">TextBuffer.TextPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_Text">TextBuffer.Text</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_ApplyTagSignal">TextBuffer.ApplyTagSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnApplyTag">TextBuffer.OnApplyTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_BeginUserActionSignal">TextBuffer.BeginUserActionSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnBeginUserAction">TextBuffer.OnBeginUserAction</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_ChangedSignal">TextBuffer.ChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnChanged">TextBuffer.OnChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_DeleteRangeSignal">TextBuffer.DeleteRangeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnDeleteRange">TextBuffer.OnDeleteRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_EndUserActionSignal">TextBuffer.EndUserActionSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnEndUserAction">TextBuffer.OnEndUserAction</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertChildAnchorSignal">TextBuffer.InsertChildAnchorSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnInsertChildAnchor">TextBuffer.OnInsertChildAnchor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertPaintableSignal">TextBuffer.InsertPaintableSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnInsertPaintable">TextBuffer.OnInsertPaintable</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_InsertTextSignal">TextBuffer.InsertTextSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnInsertText">TextBuffer.OnInsertText</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_MarkDeletedSignal">TextBuffer.MarkDeletedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnMarkDeleted">TextBuffer.OnMarkDeleted</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_MarkSetSignal">TextBuffer.MarkSetSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnMarkSet">TextBuffer.OnMarkSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_ModifiedChangedSignal">TextBuffer.ModifiedChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnModifiedChanged">TextBuffer.OnModifiedChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_PasteDoneSignal">TextBuffer.PasteDoneSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnPasteDone">TextBuffer.OnPasteDone</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_RedoSignal">TextBuffer.RedoSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnRedo">TextBuffer.OnRedo</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_RemoveTagSignal">TextBuffer.RemoveTagSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnRemoveTag">TextBuffer.OnRemoveTag</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_UndoSignal">TextBuffer.UndoSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.TextBuffer.html#Gtk_TextBuffer_OnUndo">TextBuffer.OnUndo</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NewValist_GObject_Type_System_String_System_IntPtr_">Object.NewValist(Type, string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_CompatControl_System_UIntPtr_System_IntPtr_">Object.CompatControl(nuint, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_AddWeakPointer_System_IntPtr__">Object.AddWeakPointer(ref nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyFull_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyFull(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_GLib_Quark_">Object.GetQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetValist_System_String_System_IntPtr_">Object.GetValist(string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RemoveWeakPointer_System_IntPtr__">Object.RemoveWeakPointer(ref nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetData_System_String_System_IntPtr_">Object.SetData(string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetQdata_GLib_Quark_System_IntPtr_">Object.SetQdata(Quark, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetValist_System_String_System_IntPtr_">Object.SetValist(string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_GLib_Quark_">Object.StealQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GtkSource.html">GtkSource</a></h6>
+  <h6><strong>Assembly</strong>: GtkSource-5.dll</h6>
+  <h5 id="GtkSource_Buffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Buffer : TextBuffer, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="GtkSource_Buffer__ctor_" data-uid="GtkSource.Buffer.#ctor*"></a>
+  <h4 id="GtkSource_Buffer__ctor_System_Boolean_GObject_ConstructArgument___" data-uid="GtkSource.Buffer.#ctor(System.Boolean,GObject.ConstructArgument[])">Buffer(bool, params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Buffer(bool owned, params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">owned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer__ctor_" data-uid="GtkSource.Buffer.#ctor*"></a>
+  <h4 id="GtkSource_Buffer__ctor_System_IntPtr_System_Boolean_" data-uid="GtkSource.Buffer.#ctor(System.IntPtr,System.Boolean)">Buffer(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Buffer(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="GtkSource_Buffer_BracketMatchedSignal" data-uid="GtkSource.Buffer.BracketMatchedSignal">BracketMatchedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnBracketMatched.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;Buffer, Buffer.BracketMatchedSignalArgs&gt; BracketMatchedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>.<a class="xref" href="GtkSource.Buffer.BracketMatchedSignalArgs.html">BracketMatchedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_CursorMovedSignal" data-uid="GtkSource.Buffer.CursorMovedSignal">CursorMovedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnCursorMoved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;Buffer&gt; CursorMovedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-1.html">Signal</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_HighlightMatchingBracketsPropertyDefinition" data-uid="GtkSource.Buffer.HighlightMatchingBracketsPropertyDefinition">HighlightMatchingBracketsPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, Buffer&gt; HighlightMatchingBracketsPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_HighlightSyntaxPropertyDefinition" data-uid="GtkSource.Buffer.HighlightSyntaxPropertyDefinition">HighlightSyntaxPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, Buffer&gt; HighlightSyntaxPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_HighlightUpdatedSignal" data-uid="GtkSource.Buffer.HighlightUpdatedSignal">HighlightUpdatedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnHighlightUpdated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;Buffer, Buffer.HighlightUpdatedSignalArgs&gt; HighlightUpdatedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>.<a class="xref" href="GtkSource.Buffer.HighlightUpdatedSignalArgs.html">HighlightUpdatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_ImplicitTrailingNewlinePropertyDefinition" data-uid="GtkSource.Buffer.ImplicitTrailingNewlinePropertyDefinition">ImplicitTrailingNewlinePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, Buffer&gt; ImplicitTrailingNewlinePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_LanguagePropertyDefinition" data-uid="GtkSource.Buffer.LanguagePropertyDefinition">LanguagePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;Language?, Buffer&gt; LanguagePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="GtkSource.Language.html">Language</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_SourceMarkUpdatedSignal" data-uid="GtkSource.Buffer.SourceMarkUpdatedSignal">SourceMarkUpdatedSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnSourceMarkUpdated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;Buffer, Buffer.SourceMarkUpdatedSignalArgs&gt; SourceMarkUpdatedSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>.<a class="xref" href="GtkSource.Buffer.SourceMarkUpdatedSignalArgs.html">SourceMarkUpdatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_StyleSchemePropertyDefinition" data-uid="GtkSource.Buffer.StyleSchemePropertyDefinition">StyleSchemePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;StyleScheme?, Buffer&gt; StyleSchemePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="GtkSource.StyleScheme.html">StyleScheme</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="GtkSource_Buffer_HighlightMatchingBrackets_" data-uid="GtkSource.Buffer.HighlightMatchingBrackets*"></a>
+  <h4 id="GtkSource_Buffer_HighlightMatchingBrackets" data-uid="GtkSource.Buffer.HighlightMatchingBrackets">HighlightMatchingBrackets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HighlightMatchingBrackets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_HighlightSyntax_" data-uid="GtkSource.Buffer.HighlightSyntax*"></a>
+  <h4 id="GtkSource_Buffer_HighlightSyntax" data-uid="GtkSource.Buffer.HighlightSyntax">HighlightSyntax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HighlightSyntax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_ImplicitTrailingNewline_" data-uid="GtkSource.Buffer.ImplicitTrailingNewline*"></a>
+  <h4 id="GtkSource_Buffer_ImplicitTrailingNewline" data-uid="GtkSource.Buffer.ImplicitTrailingNewline">ImplicitTrailingNewline</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ImplicitTrailingNewline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_Language_" data-uid="GtkSource.Buffer.Language*"></a>
+  <h4 id="GtkSource_Buffer_Language" data-uid="GtkSource.Buffer.Language">Language</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Language? Language { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Language.html">Language</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_StyleScheme_" data-uid="GtkSource.Buffer.StyleScheme*"></a>
+  <h4 id="GtkSource_Buffer_StyleScheme" data-uid="GtkSource.Buffer.StyleScheme">StyleScheme</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StyleScheme? StyleScheme { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.StyleScheme.html">StyleScheme</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="GtkSource_Buffer_ChangeCase_" data-uid="GtkSource.Buffer.ChangeCase*"></a>
+  <h4 id="GtkSource_Buffer_ChangeCase_GtkSource_ChangeCaseType_Gtk_TextIter_Gtk_TextIter_" data-uid="GtkSource.Buffer.ChangeCase(GtkSource.ChangeCaseType,Gtk.TextIter,Gtk.TextIter)">ChangeCase(ChangeCaseType, TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeCase(ChangeCaseType caseType, TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.ChangeCaseType.html">ChangeCaseType</a></td>
+        <td><span class="parametername">caseType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_CreateSourceMark_" data-uid="GtkSource.Buffer.CreateSourceMark*"></a>
+  <h4 id="GtkSource_Buffer_CreateSourceMark_System_String_System_String_Gtk_TextIter_" data-uid="GtkSource.Buffer.CreateSourceMark(System.String,System.String,Gtk.TextIter)">CreateSourceMark(string?, string, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mark CreateSourceMark(string? name, string category, TextIter where)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">where</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Mark.html">Mark</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_EnsureHighlight_" data-uid="GtkSource.Buffer.EnsureHighlight*"></a>
+  <h4 id="GtkSource_Buffer_EnsureHighlight_Gtk_TextIter_Gtk_TextIter_" data-uid="GtkSource.Buffer.EnsureHighlight(Gtk.TextIter,Gtk.TextIter)">EnsureHighlight(TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureHighlight(TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetContextClassesAtIter_" data-uid="GtkSource.Buffer.GetContextClassesAtIter*"></a>
+  <h4 id="GtkSource_Buffer_GetContextClassesAtIter_Gtk_TextIter_" data-uid="GtkSource.Buffer.GetContextClassesAtIter(Gtk.TextIter)">GetContextClassesAtIter(TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetContextClassesAtIter(TextIter iter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetGType_" data-uid="GtkSource.Buffer.GetGType*"></a>
+  <h4 id="GtkSource_Buffer_GetGType" data-uid="GtkSource.Buffer.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetHighlightMatchingBrackets_" data-uid="GtkSource.Buffer.GetHighlightMatchingBrackets*"></a>
+  <h4 id="GtkSource_Buffer_GetHighlightMatchingBrackets" data-uid="GtkSource.Buffer.GetHighlightMatchingBrackets">GetHighlightMatchingBrackets()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetHighlightMatchingBrackets()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetHighlightSyntax_" data-uid="GtkSource.Buffer.GetHighlightSyntax*"></a>
+  <h4 id="GtkSource_Buffer_GetHighlightSyntax" data-uid="GtkSource.Buffer.GetHighlightSyntax">GetHighlightSyntax()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetHighlightSyntax()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetImplicitTrailingNewline_" data-uid="GtkSource.Buffer.GetImplicitTrailingNewline*"></a>
+  <h4 id="GtkSource_Buffer_GetImplicitTrailingNewline" data-uid="GtkSource.Buffer.GetImplicitTrailingNewline">GetImplicitTrailingNewline()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetImplicitTrailingNewline()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetLanguage_" data-uid="GtkSource.Buffer.GetLanguage*"></a>
+  <h4 id="GtkSource_Buffer_GetLanguage" data-uid="GtkSource.Buffer.GetLanguage">GetLanguage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Language? GetLanguage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Language.html">Language</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetSourceMarksAtIter_" data-uid="GtkSource.Buffer.GetSourceMarksAtIter*"></a>
+  <h4 id="GtkSource_Buffer_GetSourceMarksAtIter_Gtk_TextIter_System_String_" data-uid="GtkSource.Buffer.GetSourceMarksAtIter(Gtk.TextIter,System.String)">GetSourceMarksAtIter(TextIter, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SList GetSourceMarksAtIter(TextIter iter, string? category)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.SList.html">SList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetSourceMarksAtLine_" data-uid="GtkSource.Buffer.GetSourceMarksAtLine*"></a>
+  <h4 id="GtkSource_Buffer_GetSourceMarksAtLine_System_Int32_System_String_" data-uid="GtkSource.Buffer.GetSourceMarksAtLine(System.Int32,System.String)">GetSourceMarksAtLine(int, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SList GetSourceMarksAtLine(int line, string? category)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.SList.html">SList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_GetStyleScheme_" data-uid="GtkSource.Buffer.GetStyleScheme*"></a>
+  <h4 id="GtkSource_Buffer_GetStyleScheme" data-uid="GtkSource.Buffer.GetStyleScheme">GetStyleScheme()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StyleScheme? GetStyleScheme()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.StyleScheme.html">StyleScheme</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_IterHasContextClass_" data-uid="GtkSource.Buffer.IterHasContextClass*"></a>
+  <h4 id="GtkSource_Buffer_IterHasContextClass_Gtk_TextIter_System_String_" data-uid="GtkSource.Buffer.IterHasContextClass(Gtk.TextIter,System.String)">IterHasContextClass(TextIter, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IterHasContextClass(TextIter iter, string contextClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">contextClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_JoinLines_" data-uid="GtkSource.Buffer.JoinLines*"></a>
+  <h4 id="GtkSource_Buffer_JoinLines_Gtk_TextIter_Gtk_TextIter_" data-uid="GtkSource.Buffer.JoinLines(Gtk.TextIter,Gtk.TextIter)">JoinLines(TextIter, TextIter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JoinLines(TextIter start, TextIter end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_New_" data-uid="GtkSource.Buffer.New*"></a>
+  <h4 id="GtkSource_Buffer_New_Gtk_TextTagTable_" data-uid="GtkSource.Buffer.New(Gtk.TextTagTable)">New(TextTagTable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Buffer New(TextTagTable? table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextTagTable.html">TextTagTable</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Buffer.html">Buffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_NewWithLanguage_" data-uid="GtkSource.Buffer.NewWithLanguage*"></a>
+  <h4 id="GtkSource_Buffer_NewWithLanguage_GtkSource_Language_" data-uid="GtkSource.Buffer.NewWithLanguage(GtkSource.Language)">NewWithLanguage(Language)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Buffer NewWithLanguage(Language language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Language.html">Language</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Buffer.html">Buffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_RemoveSourceMarks_" data-uid="GtkSource.Buffer.RemoveSourceMarks*"></a>
+  <h4 id="GtkSource_Buffer_RemoveSourceMarks_Gtk_TextIter_Gtk_TextIter_System_String_" data-uid="GtkSource.Buffer.RemoveSourceMarks(Gtk.TextIter,Gtk.TextIter,System.String)">RemoveSourceMarks(TextIter, TextIter, string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSourceMarks(TextIter start, TextIter end, string? category)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_SetHighlightMatchingBrackets_" data-uid="GtkSource.Buffer.SetHighlightMatchingBrackets*"></a>
+  <h4 id="GtkSource_Buffer_SetHighlightMatchingBrackets_System_Boolean_" data-uid="GtkSource.Buffer.SetHighlightMatchingBrackets(System.Boolean)">SetHighlightMatchingBrackets(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHighlightMatchingBrackets(bool highlight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">highlight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_SetHighlightSyntax_" data-uid="GtkSource.Buffer.SetHighlightSyntax*"></a>
+  <h4 id="GtkSource_Buffer_SetHighlightSyntax_System_Boolean_" data-uid="GtkSource.Buffer.SetHighlightSyntax(System.Boolean)">SetHighlightSyntax(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHighlightSyntax(bool highlight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">highlight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_SetImplicitTrailingNewline_" data-uid="GtkSource.Buffer.SetImplicitTrailingNewline*"></a>
+  <h4 id="GtkSource_Buffer_SetImplicitTrailingNewline_System_Boolean_" data-uid="GtkSource.Buffer.SetImplicitTrailingNewline(System.Boolean)">SetImplicitTrailingNewline(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetImplicitTrailingNewline(bool implicitTrailingNewline)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">implicitTrailingNewline</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_SetLanguage_" data-uid="GtkSource.Buffer.SetLanguage*"></a>
+  <h4 id="GtkSource_Buffer_SetLanguage_GtkSource_Language_" data-uid="GtkSource.Buffer.SetLanguage(GtkSource.Language)">SetLanguage(Language?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLanguage(Language? language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Language.html">Language</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_SetStyleScheme_" data-uid="GtkSource.Buffer.SetStyleScheme*"></a>
+  <h4 id="GtkSource_Buffer_SetStyleScheme_GtkSource_StyleScheme_" data-uid="GtkSource.Buffer.SetStyleScheme(GtkSource.StyleScheme)">SetStyleScheme(StyleScheme?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStyleScheme(StyleScheme? scheme)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.StyleScheme.html">StyleScheme</a></td>
+        <td><span class="parametername">scheme</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_Buffer_SortLines_" data-uid="GtkSource.Buffer.SortLines*"></a>
+  <h4 id="GtkSource_Buffer_SortLines_Gtk_TextIter_Gtk_TextIter_GtkSource_SortFlags_System_Int32_" data-uid="GtkSource.Buffer.SortLines(Gtk.TextIter,Gtk.TextIter,GtkSource.SortFlags,System.Int32)">SortLines(TextIter, TextIter, SortFlags, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortLines(TextIter start, TextIter end, SortFlags flags, int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GtkSource.SortFlags.html">SortFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <h4 id="GtkSource_Buffer_OnBracketMatched" data-uid="GtkSource.Buffer.OnBracketMatched">OnBracketMatched</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;Buffer, Buffer.BracketMatchedSignalArgs&gt; OnBracketMatched</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>.<a class="xref" href="GtkSource.Buffer.BracketMatchedSignalArgs.html">BracketMatchedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_OnCursorMoved" data-uid="GtkSource.Buffer.OnCursorMoved">OnCursorMoved</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;Buffer&gt; OnCursorMoved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-1.html">SignalHandler</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_OnHighlightUpdated" data-uid="GtkSource.Buffer.OnHighlightUpdated">OnHighlightUpdated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;Buffer, Buffer.HighlightUpdatedSignalArgs&gt; OnHighlightUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>.<a class="xref" href="GtkSource.Buffer.HighlightUpdatedSignalArgs.html">HighlightUpdatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_Buffer_OnSourceMarkUpdated" data-uid="GtkSource.Buffer.OnSourceMarkUpdated">OnSourceMarkUpdated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;Buffer, Buffer.SourceMarkUpdatedSignalArgs&gt; OnSourceMarkUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="GtkSource.Buffer.html">Buffer</a>, <a class="xref" href="GtkSource.Buffer.html">Buffer</a>.<a class="xref" href="GtkSource.Buffer.SourceMarkUpdatedSignalArgs.html">SourceMarkUpdatedSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

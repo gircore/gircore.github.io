@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gio.Internal.DBusMessage">
 
 
+
   <h1 id="Gio_Internal_DBusMessage" data-uid="Gio.Internal.DBusMessage" class="text-break">Class DBusMessage
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">DBusMessage</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a>.<a class="xref" href="Gio.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gio_Internal_DBusMessage_BytesNeeded_" data-uid="Gio.Internal.DBusMessage.BytesNeeded*"></a>
-  <h4 id="Gio_Internal_DBusMessage_BytesNeeded_System_Byte___System_UIntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusMessage.BytesNeeded(System.Byte[],System.UIntPtr,GLib.Internal.ErrorOwnedHandle@)">BytesNeeded(byte[], nuint, out ErrorOwnedHandle)</h4>
+  <h4 id="Gio_Internal_DBusMessage_BytesNeeded_System_Byte__System_UIntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusMessage.BytesNeeded(System.Byte@,System.UIntPtr,GLib.Internal.ErrorOwnedHandle@)">BytesNeeded(ref byte, nuint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_dbus_message_bytes_needed.
 Version: 2.26</p>
 </div>
@@ -120,10 +121,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern long BytesNeeded(byte[] blob, nuint blobLen, out ErrorOwnedHandle error)</code></pre>
+public static extern long BytesNeeded(ref byte blob, nuint blobLen, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,13 +134,13 @@ public static extern long BytesNeeded(byte[] blob, nuint blobLen, out ErrorOwned
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">blob</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">blobLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -147,13 +148,12 @@ public static extern long BytesNeeded(byte[] blob, nuint blobLen, out ErrorOwned
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -162,7 +162,7 @@ public static extern long BytesNeeded(byte[] blob, nuint blobLen, out ErrorOwned
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -180,7 +180,7 @@ Version: 2.26</p>
 public static extern nint Copy(nint message, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -190,20 +190,19 @@ public static extern nint Copy(nint message, out ErrorOwnedHandle error)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -212,7 +211,7 @@ public static extern nint Copy(nint message, out ErrorOwnedHandle error)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -227,10 +226,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetArg0(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetArg0(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -240,14 +239,14 @@ public static extern nint GetArg0(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -256,7 +255,7 @@ public static extern nint GetArg0(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -274,7 +273,7 @@ Version: 2.26</p>
 public static extern VariantUnownedHandle GetBody(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -284,14 +283,14 @@ public static extern VariantUnownedHandle GetBody(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -316,7 +315,7 @@ public static extern VariantUnownedHandle GetBody(nint message)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern DBusMessageByteOrder GetByteOrder(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -326,14 +325,14 @@ public static extern VariantUnownedHandle GetBody(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -357,10 +356,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetDestination(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetDestination(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -370,14 +369,14 @@ public static extern nint GetDestination(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -386,7 +385,7 @@ public static extern nint GetDestination(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -401,10 +400,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetErrorName(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetErrorName(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -414,14 +413,14 @@ public static extern nint GetErrorName(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -430,7 +429,7 @@ public static extern nint GetErrorName(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -448,7 +447,7 @@ Version: 2.26</p>
 public static extern DBusMessageFlags GetFlags(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -458,14 +457,14 @@ public static extern DBusMessageFlags GetFlags(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -490,7 +489,7 @@ public static extern DBusMessageFlags GetFlags(nint message)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -499,7 +498,7 @@ public static extern DBusMessageFlags GetFlags(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -517,7 +516,7 @@ Version: 2.26</p>
 public static extern VariantUnownedHandle GetHeader(nint message, DBusMessageHeaderField headerField)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -527,7 +526,7 @@ public static extern VariantUnownedHandle GetHeader(nint message, DBusMessageHea
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -540,7 +539,7 @@ public static extern VariantUnownedHandle GetHeader(nint message, DBusMessageHea
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -567,7 +566,7 @@ Version: 2.26</p>
 public static extern byte[] GetHeaderFields(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -577,14 +576,14 @@ public static extern byte[] GetHeaderFields(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -593,7 +592,7 @@ public static extern byte[] GetHeaderFields(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -608,10 +607,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetInterface(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetInterface(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -621,14 +620,14 @@ public static extern nint GetInterface(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -637,7 +636,7 @@ public static extern nint GetInterface(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -655,7 +654,7 @@ Version: 2.26</p>
 public static extern bool GetLocked(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -665,14 +664,14 @@ public static extern bool GetLocked(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -681,7 +680,7 @@ public static extern bool GetLocked(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -696,10 +695,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetMember(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetMember(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -709,14 +708,14 @@ public static extern nint GetMember(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -725,7 +724,7 @@ public static extern nint GetMember(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -743,7 +742,7 @@ Version: 2.26</p>
 public static extern DBusMessageType GetMessageType(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -753,14 +752,14 @@ public static extern DBusMessageType GetMessageType(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -787,7 +786,7 @@ Version: 2.26</p>
 public static extern uint GetNumUnixFds(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -797,14 +796,14 @@ public static extern uint GetNumUnixFds(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -813,7 +812,7 @@ public static extern uint GetNumUnixFds(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -828,10 +827,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetPath(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetPath(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -841,14 +840,14 @@ public static extern nint GetPath(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -857,7 +856,7 @@ public static extern nint GetPath(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -875,7 +874,7 @@ Version: 2.26</p>
 public static extern uint GetReplySerial(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -885,14 +884,14 @@ public static extern uint GetReplySerial(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -901,7 +900,7 @@ public static extern uint GetReplySerial(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -916,10 +915,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetSender(nint message)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetSender(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -929,14 +928,14 @@ public static extern nint GetSender(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -945,7 +944,7 @@ public static extern nint GetSender(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -963,7 +962,7 @@ Version: 2.26</p>
 public static extern uint GetSerial(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -973,14 +972,14 @@ public static extern uint GetSerial(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -989,7 +988,7 @@ public static extern uint GetSerial(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1004,10 +1003,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint GetSignature(nint message)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetSignature(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1017,14 +1016,14 @@ public static extern nint GetSignature(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1033,7 +1032,7 @@ public static extern nint GetSignature(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1051,7 +1050,7 @@ Version: 2.26</p>
 public static extern nint GetUnixFdList(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1061,14 +1060,14 @@ public static extern nint GetUnixFdList(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1077,7 +1076,7 @@ public static extern nint GetUnixFdList(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -1095,7 +1094,7 @@ Version: 2.26</p>
 public static extern void Lock(nint message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1105,7 +1104,7 @@ public static extern void Lock(nint message)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1123,7 +1122,7 @@ Version: 2.26</p>
 public static extern nint New()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1132,14 +1131,14 @@ public static extern nint New()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_NewFromBlob_" data-uid="Gio.Internal.DBusMessage.NewFromBlob*"></a>
-  <h4 id="Gio_Internal_DBusMessage_NewFromBlob_System_Byte___System_UIntPtr_Gio_DBusCapabilityFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusMessage.NewFromBlob(System.Byte[],System.UIntPtr,Gio.DBusCapabilityFlags,GLib.Internal.ErrorOwnedHandle@)">NewFromBlob(byte[], nuint, DBusCapabilityFlags, out ErrorOwnedHandle)</h4>
+  <h4 id="Gio_Internal_DBusMessage_NewFromBlob_System_Byte__System_UIntPtr_Gio_DBusCapabilityFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusMessage.NewFromBlob(System.Byte@,System.UIntPtr,Gio.DBusCapabilityFlags,GLib.Internal.ErrorOwnedHandle@)">NewFromBlob(ref byte, nuint, DBusCapabilityFlags, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_dbus_message_new_from_blob.
 Version: 2.26</p>
 </div>
@@ -1147,10 +1146,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint NewFromBlob(byte[] blob, nuint blobLen, DBusCapabilityFlags capabilities, out ErrorOwnedHandle error)</code></pre>
+public static extern nint NewFromBlob(ref byte blob, nuint blobLen, DBusCapabilityFlags capabilities, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1160,13 +1159,13 @@ public static extern nint NewFromBlob(byte[] blob, nuint blobLen, DBusCapability
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">blob</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">blobLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1180,13 +1179,12 @@ public static extern nint NewFromBlob(byte[] blob, nuint blobLen, DBusCapability
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1195,14 +1193,14 @@ public static extern nint NewFromBlob(byte[] blob, nuint blobLen, DBusCapability
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_NewMethodCall_" data-uid="Gio.Internal.DBusMessage.NewMethodCall*"></a>
-  <h4 id="Gio_Internal_DBusMessage_NewMethodCall_System_String_System_String_System_String_System_String_" data-uid="Gio.Internal.DBusMessage.NewMethodCall(System.String,System.String,System.String,System.String)">NewMethodCall(string?, string, string?, string)</h4>
+  <h4 id="Gio_Internal_DBusMessage_NewMethodCall_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.NewMethodCall(GLib.Internal.NullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle)">NewMethodCall(NullableUtf8StringHandle, NonNullableUtf8StringHandle, NullableUtf8StringHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_dbus_message_new_method_call.
 Version: 2.26</p>
 </div>
@@ -1210,10 +1208,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint NewMethodCall(string? name, string path, string? @interface, string method)</code></pre>
+public static extern nint NewMethodCall(NullableUtf8StringHandle name, NonNullableUtf8StringHandle path, NullableUtf8StringHandle @interface, NonNullableUtf8StringHandle method)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1223,24 +1221,24 @@ public static extern nint NewMethodCall(string? name, string path, string? @inte
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">path</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">interface</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">method</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1248,7 +1246,7 @@ public static extern nint NewMethodCall(string? name, string path, string? @inte
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1257,14 +1255,14 @@ public static extern nint NewMethodCall(string? name, string path, string? @inte
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_NewMethodErrorLiteral_" data-uid="Gio.Internal.DBusMessage.NewMethodErrorLiteral*"></a>
-  <h4 id="Gio_Internal_DBusMessage_NewMethodErrorLiteral_System_IntPtr_System_String_System_String_" data-uid="Gio.Internal.DBusMessage.NewMethodErrorLiteral(System.IntPtr,System.String,System.String)">NewMethodErrorLiteral(nint, string, string)</h4>
+  <h4 id="Gio_Internal_DBusMessage_NewMethodErrorLiteral_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.NewMethodErrorLiteral(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle)">NewMethodErrorLiteral(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_new_method_error_literal.
 Version: 2.26</p>
 </div>
@@ -1272,10 +1270,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint NewMethodErrorLiteral(nint methodCallMessage, string errorName, string errorMessage)</code></pre>
+public static extern nint NewMethodErrorLiteral(nint methodCallMessage, NonNullableUtf8StringHandle errorName, NonNullableUtf8StringHandle errorMessage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1285,18 +1283,18 @@ public static extern nint NewMethodErrorLiteral(nint methodCallMessage, string e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">methodCallMessage</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">errorName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">errorMessage</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1304,7 +1302,7 @@ public static extern nint NewMethodErrorLiteral(nint methodCallMessage, string e
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1313,14 +1311,14 @@ public static extern nint NewMethodErrorLiteral(nint methodCallMessage, string e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_NewMethodErrorValist_" data-uid="Gio.Internal.DBusMessage.NewMethodErrorValist*"></a>
-  <h4 id="Gio_Internal_DBusMessage_NewMethodErrorValist_System_IntPtr_System_String_System_String_System_IntPtr_" data-uid="Gio.Internal.DBusMessage.NewMethodErrorValist(System.IntPtr,System.String,System.String,System.IntPtr)">NewMethodErrorValist(nint, string, string, nint)</h4>
+  <h4 id="Gio_Internal_DBusMessage_NewMethodErrorValist_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="Gio.Internal.DBusMessage.NewMethodErrorValist(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">NewMethodErrorValist(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_new_method_error_valist.
 Version: 2.26</p>
 </div>
@@ -1328,10 +1326,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint NewMethodErrorValist(nint methodCallMessage, string errorName, string errorMessageFormat, nint varArgs)</code></pre>
+public static extern nint NewMethodErrorValist(nint methodCallMessage, NonNullableUtf8StringHandle errorName, NonNullableUtf8StringHandle errorMessageFormat, nint varArgs)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1341,24 +1339,24 @@ public static extern nint NewMethodErrorValist(nint methodCallMessage, string er
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">methodCallMessage</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">errorName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">errorMessageFormat</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">varArgs</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1366,7 +1364,7 @@ public static extern nint NewMethodErrorValist(nint methodCallMessage, string er
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1375,7 +1373,7 @@ public static extern nint NewMethodErrorValist(nint methodCallMessage, string er
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1393,7 +1391,7 @@ Version: 2.26</p>
 public static extern nint NewMethodReply(nint methodCallMessage)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1403,14 +1401,14 @@ public static extern nint NewMethodReply(nint methodCallMessage)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">methodCallMessage</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1419,14 +1417,14 @@ public static extern nint NewMethodReply(nint methodCallMessage)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_NewSignal_" data-uid="Gio.Internal.DBusMessage.NewSignal*"></a>
-  <h4 id="Gio_Internal_DBusMessage_NewSignal_System_String_System_String_System_String_" data-uid="Gio.Internal.DBusMessage.NewSignal(System.String,System.String,System.String)">NewSignal(string, string, string)</h4>
+  <h4 id="Gio_Internal_DBusMessage_NewSignal_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.NewSignal(GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle)">NewSignal(NonNullableUtf8StringHandle, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_dbus_message_new_signal.
 Version: 2.26</p>
 </div>
@@ -1434,10 +1432,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint NewSignal(string path, string @interface, string signal)</code></pre>
+public static extern nint NewSignal(NonNullableUtf8StringHandle path, NonNullableUtf8StringHandle @interface, NonNullableUtf8StringHandle signal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1447,18 +1445,18 @@ public static extern nint NewSignal(string path, string @interface, string signa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">path</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">interface</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">signal</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1466,7 +1464,7 @@ public static extern nint NewSignal(string path, string @interface, string signa
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1475,7 +1473,7 @@ public static extern nint NewSignal(string path, string @interface, string signa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1490,10 +1488,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern string Print(nint message, uint indent)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle Print(nint message, uint indent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1503,12 +1501,12 @@ public static extern string Print(nint message, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">indent</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1516,7 +1514,7 @@ public static extern string Print(nint message, uint indent)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1525,7 +1523,7 @@ public static extern string Print(nint message, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1543,7 +1541,7 @@ Version: 2.26</p>
 public static extern void SetBody(nint message, VariantHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1553,7 +1551,7 @@ public static extern void SetBody(nint message, VariantHandle body)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1575,7 +1573,7 @@ public static extern void SetBody(nint message, VariantHandle body)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void SetByteOrder(nint message, DBusMessageByteOrder byteOrder)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1585,7 +1583,7 @@ public static extern void SetBody(nint message, VariantHandle body)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1598,7 +1596,7 @@ public static extern void SetBody(nint message, VariantHandle body)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetDestination_" data-uid="Gio.Internal.DBusMessage.SetDestination*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetDestination_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetDestination(System.IntPtr,System.String)">SetDestination(nint, string?)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetDestination_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetDestination(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetDestination(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_destination.
 Version: 2.26</p>
 </div>
@@ -1606,10 +1604,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetDestination(nint message, string? value)</code></pre>
+public static extern void SetDestination(nint message, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1619,12 +1617,12 @@ public static extern void SetDestination(nint message, string? value)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1632,7 +1630,7 @@ public static extern void SetDestination(nint message, string? value)</code></pr
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetErrorName_" data-uid="Gio.Internal.DBusMessage.SetErrorName*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetErrorName_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetErrorName(System.IntPtr,System.String)">SetErrorName(nint, string)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetErrorName_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetErrorName(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">SetErrorName(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_error_name.
 Version: 2.26</p>
 </div>
@@ -1640,10 +1638,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetErrorName(nint message, string value)</code></pre>
+public static extern void SetErrorName(nint message, NonNullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1653,12 +1651,12 @@ public static extern void SetErrorName(nint message, string value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1677,7 +1675,7 @@ Version: 2.26</p>
 public static extern void SetFlags(nint message, DBusMessageFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1687,7 +1685,7 @@ public static extern void SetFlags(nint message, DBusMessageFlags flags)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1711,7 +1709,7 @@ Version: 2.26</p>
 public static extern void SetHeader(nint message, DBusMessageHeaderField headerField, VariantHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1721,7 +1719,7 @@ public static extern void SetHeader(nint message, DBusMessageHeaderField headerF
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1740,7 +1738,7 @@ public static extern void SetHeader(nint message, DBusMessageHeaderField headerF
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetInterface_" data-uid="Gio.Internal.DBusMessage.SetInterface*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetInterface_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetInterface(System.IntPtr,System.String)">SetInterface(nint, string?)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetInterface_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetInterface(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetInterface(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_interface.
 Version: 2.26</p>
 </div>
@@ -1748,10 +1746,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetInterface(nint message, string? value)</code></pre>
+public static extern void SetInterface(nint message, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1761,12 +1759,12 @@ public static extern void SetInterface(nint message, string? value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1774,7 +1772,7 @@ public static extern void SetInterface(nint message, string? value)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetMember_" data-uid="Gio.Internal.DBusMessage.SetMember*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetMember_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetMember(System.IntPtr,System.String)">SetMember(nint, string?)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetMember_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetMember(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetMember(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_member.
 Version: 2.26</p>
 </div>
@@ -1782,10 +1780,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetMember(nint message, string? value)</code></pre>
+public static extern void SetMember(nint message, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1795,12 +1793,12 @@ public static extern void SetMember(nint message, string? value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1819,7 +1817,7 @@ Version: 2.26</p>
 public static extern void SetMessageType(nint message, DBusMessageType type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1829,7 +1827,7 @@ public static extern void SetMessageType(nint message, DBusMessageType type)</co
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1853,7 +1851,7 @@ Version: 2.26</p>
 public static extern void SetNumUnixFds(nint message, uint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1863,12 +1861,12 @@ public static extern void SetNumUnixFds(nint message, uint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1876,7 +1874,7 @@ public static extern void SetNumUnixFds(nint message, uint value)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetPath_" data-uid="Gio.Internal.DBusMessage.SetPath*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetPath_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetPath(System.IntPtr,System.String)">SetPath(nint, string?)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetPath_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetPath(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetPath(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_path.
 Version: 2.26</p>
 </div>
@@ -1884,10 +1882,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetPath(nint message, string? value)</code></pre>
+public static extern void SetPath(nint message, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1897,12 +1895,12 @@ public static extern void SetPath(nint message, string? value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1921,7 +1919,7 @@ Version: 2.26</p>
 public static extern void SetReplySerial(nint message, uint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1931,12 +1929,12 @@ public static extern void SetReplySerial(nint message, uint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1944,7 +1942,7 @@ public static extern void SetReplySerial(nint message, uint value)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetSender_" data-uid="Gio.Internal.DBusMessage.SetSender*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetSender_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetSender(System.IntPtr,System.String)">SetSender(nint, string?)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetSender_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetSender(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetSender(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_sender.
 Version: 2.26</p>
 </div>
@@ -1952,10 +1950,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetSender(nint message, string? value)</code></pre>
+public static extern void SetSender(nint message, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1965,12 +1963,12 @@ public static extern void SetSender(nint message, string? value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1989,7 +1987,7 @@ Version: 2.26</p>
 public static extern void SetSerial(nint message, uint serial)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1999,12 +1997,12 @@ public static extern void SetSerial(nint message, uint serial)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">serial</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2012,7 +2010,7 @@ public static extern void SetSerial(nint message, uint serial)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_SetSignature_" data-uid="Gio.Internal.DBusMessage.SetSignature*"></a>
-  <h4 id="Gio_Internal_DBusMessage_SetSignature_System_IntPtr_System_String_" data-uid="Gio.Internal.DBusMessage.SetSignature(System.IntPtr,System.String)">SetSignature(nint, string?)</h4>
+  <h4 id="Gio_Internal_DBusMessage_SetSignature_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DBusMessage.SetSignature(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetSignature(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_set_signature.
 Version: 2.26</p>
 </div>
@@ -2020,10 +2018,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern void SetSignature(nint message, string? value)</code></pre>
+public static extern void SetSignature(nint message, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2033,12 +2031,12 @@ public static extern void SetSignature(nint message, string? value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -2057,7 +2055,7 @@ Version: 2.26</p>
 public static extern void SetUnixFdList(nint message, nint fdList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2067,12 +2065,12 @@ public static extern void SetUnixFdList(nint message, nint fdList)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">fdList</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -2080,7 +2078,7 @@ public static extern void SetUnixFdList(nint message, nint fdList)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_DBusMessage_ToBlob_" data-uid="Gio.Internal.DBusMessage.ToBlob*"></a>
-  <h4 id="Gio_Internal_DBusMessage_ToBlob_System_IntPtr_System_IntPtr__Gio_DBusCapabilityFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusMessage.ToBlob(System.IntPtr,System.IntPtr@,Gio.DBusCapabilityFlags,GLib.Internal.ErrorOwnedHandle@)">ToBlob(nint, out nint, DBusCapabilityFlags, out ErrorOwnedHandle)</h4>
+  <h4 id="Gio_Internal_DBusMessage_ToBlob_System_IntPtr_System_UIntPtr__Gio_DBusCapabilityFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="Gio.Internal.DBusMessage.ToBlob(System.IntPtr,System.UIntPtr@,Gio.DBusCapabilityFlags,GLib.Internal.ErrorOwnedHandle@)">ToBlob(nint, out nuint, DBusCapabilityFlags, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_dbus_message_to_blob.
 Version: 2.26</p>
 </div>
@@ -2088,10 +2086,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern byte[] ToBlob(nint message, out nint outSize, DBusCapabilityFlags capabilities, out ErrorOwnedHandle error)</code></pre>
+public static extern byte[] ToBlob(nint message, out nuint outSize, DBusCapabilityFlags capabilities, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2101,12 +2099,12 @@ public static extern byte[] ToBlob(nint message, out nint outSize, DBusCapabilit
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">outSize</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -2120,13 +2118,12 @@ public static extern byte[] ToBlob(nint message, out nint outSize, DBusCapabilit
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2135,7 +2132,7 @@ public static extern byte[] ToBlob(nint message, out nint outSize, DBusCapabilit
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -2153,7 +2150,7 @@ Version: 2.26</p>
 public static extern bool ToGerror(nint message, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2163,20 +2160,19 @@ public static extern bool ToGerror(nint message, out ErrorOwnedHandle error)</co
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2185,12 +2181,13 @@ public static extern bool ToGerror(nint message, out ErrorOwnedHandle error)</co
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -2219,7 +2216,7 @@ public static extern bool ToGerror(nint message, out ErrorOwnedHandle error)</co
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

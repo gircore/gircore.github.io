@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,6 +70,7 @@
             <article class="content wrap" id="_content" data-uid="Gst.Internal.ControlSourceGetValueArray">
 
 
+
   <h1 id="Gst_Internal_ControlSourceGetValueArray" data-uid="Gst.Internal.ControlSourceGetValueArray" class="text-break">Delegate ControlSourceGetValueArray
 </h1>
   <div class="markdown level0 summary"></div>
@@ -78,10 +79,10 @@
   <h6><strong>Assembly</strong>: Gst-1.0.dll</h6>
   <h5 id="Gst_Internal_ControlSourceGetValueArray_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate bool ControlSourceGetValueArray(nint self, ulong timestamp, ulong interval, uint nValues, nint values)</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate bool ControlSourceGetValueArray(nint self, ClockTime timestamp, ClockTime interval, uint nValues, ref double values)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -91,34 +92,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">timestamp</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">interval</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nValues</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">values</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -127,11 +128,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -160,7 +162,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

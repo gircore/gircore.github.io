@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GLib.Internal.Regex">
 
 
+
   <h1 id="GLib_Internal_Regex" data-uid="GLib.Internal.Regex" class="text-break">Class Regex
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Regex</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a>.<a class="xref" href="GLib.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="GLib_Internal_Regex_CheckReplacement_" data-uid="GLib.Internal.Regex.CheckReplacement*"></a>
-  <h4 id="GLib_Internal_Regex_CheckReplacement_System_String_System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.CheckReplacement(System.String,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">CheckReplacement(string, out nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_Regex_CheckReplacement_GLib_Internal_NonNullableUtf8StringHandle_System_Boolean__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.CheckReplacement(GLib.Internal.NonNullableUtf8StringHandle,System.Boolean@,GLib.Internal.ErrorOwnedHandle@)">CheckReplacement(NonNullableUtf8StringHandle, out bool, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_regex_check_replacement.
 Version: 2.14</p>
 </div>
@@ -120,10 +121,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern bool CheckReplacement(string replacement, out nint hasReferences, out ErrorOwnedHandle error)</code></pre>
+public static extern bool CheckReplacement(NonNullableUtf8StringHandle replacement, out bool hasReferences, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,13 +134,13 @@ public static extern bool CheckReplacement(string replacement, out nint hasRefer
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">replacement</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">hasReferences</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -147,13 +148,12 @@ public static extern bool CheckReplacement(string replacement, out nint hasRefer
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -162,7 +162,7 @@ public static extern bool CheckReplacement(string replacement, out nint hasRefer
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -178,7 +178,7 @@ public static extern bool CheckReplacement(string replacement, out nint hasRefer
     <pre><code class="lang-csharp hljs">public static extern uint ErrorQuark()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -187,14 +187,14 @@ public static extern bool CheckReplacement(string replacement, out nint hasRefer
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_EscapeNul_" data-uid="GLib.Internal.Regex.EscapeNul*"></a>
-  <h4 id="GLib_Internal_Regex_EscapeNul_System_String_System_Int32_" data-uid="GLib.Internal.Regex.EscapeNul(System.String,System.Int32)">EscapeNul(string, int)</h4>
+  <h4 id="GLib_Internal_Regex_EscapeNul_GLib_Internal_NonNullableUtf8StringHandle_System_Int32_" data-uid="GLib.Internal.Regex.EscapeNul(GLib.Internal.NonNullableUtf8StringHandle,System.Int32)">EscapeNul(NonNullableUtf8StringHandle, int)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_regex_escape_nul.
 Version: 2.30</p>
 </div>
@@ -202,10 +202,10 @@ Version: 2.30</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
-public static extern string EscapeNul(string @string, int length)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle EscapeNul(NonNullableUtf8StringHandle @string, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -215,12 +215,12 @@ public static extern string EscapeNul(string @string, int length)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -228,7 +228,7 @@ public static extern string EscapeNul(string @string, int length)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -237,14 +237,14 @@ public static extern string EscapeNul(string @string, int length)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_EscapeString_" data-uid="GLib.Internal.Regex.EscapeString*"></a>
-  <h4 id="GLib_Internal_Regex_EscapeString_System_String___System_Int32_" data-uid="GLib.Internal.Regex.EscapeString(System.String[],System.Int32)">EscapeString(string[], int)</h4>
+  <h4 id="GLib_Internal_Regex_EscapeString_GLib_Internal_NonNullableUtf8StringHandle_System_Int32_" data-uid="GLib.Internal.Regex.EscapeString(GLib.Internal.NonNullableUtf8StringHandle,System.Int32)">EscapeString(NonNullableUtf8StringHandle, int)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_regex_escape_string.
 Version: 2.14</p>
 </div>
@@ -252,10 +252,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string EscapeString(string[] @string, int length)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle EscapeString(NonNullableUtf8StringHandle @string, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -265,12 +265,12 @@ public static extern string EscapeString(string[] @string, int length)</code></p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -278,7 +278,7 @@ public static extern string EscapeString(string[] @string, int length)</code></p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -287,7 +287,7 @@ public static extern string EscapeString(string[] @string, int length)</code></p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -305,7 +305,7 @@ Version: 2.14</p>
 public static extern int GetCaptureCount(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -322,7 +322,7 @@ public static extern int GetCaptureCount(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -331,7 +331,7 @@ public static extern int GetCaptureCount(RegexHandle regex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -349,7 +349,7 @@ Version: 2.26</p>
 public static extern RegexCompileFlags GetCompileFlags(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -366,7 +366,7 @@ public static extern RegexCompileFlags GetCompileFlags(RegexHandle regex)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -391,7 +391,7 @@ public static extern RegexCompileFlags GetCompileFlags(RegexHandle regex)</code>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -400,7 +400,7 @@ public static extern RegexCompileFlags GetCompileFlags(RegexHandle regex)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -418,7 +418,7 @@ Version: 2.34</p>
 public static extern bool GetHasCrOrLf(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -435,7 +435,7 @@ public static extern bool GetHasCrOrLf(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -444,7 +444,7 @@ public static extern bool GetHasCrOrLf(RegexHandle regex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -462,7 +462,7 @@ Version: 2.26</p>
 public static extern RegexMatchFlags GetMatchFlags(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -479,7 +479,7 @@ public static extern RegexMatchFlags GetMatchFlags(RegexHandle regex)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -506,7 +506,7 @@ Version: 2.14</p>
 public static extern int GetMaxBackref(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -523,7 +523,7 @@ public static extern int GetMaxBackref(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -532,7 +532,7 @@ public static extern int GetMaxBackref(RegexHandle regex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -550,7 +550,7 @@ Version: 2.38</p>
 public static extern int GetMaxLookbehind(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -567,7 +567,7 @@ public static extern int GetMaxLookbehind(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -576,7 +576,7 @@ public static extern int GetMaxLookbehind(RegexHandle regex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -591,10 +591,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern nint GetPattern(RegexHandle regex)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetPattern(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -611,7 +611,7 @@ public static extern nint GetPattern(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -620,14 +620,14 @@ public static extern nint GetPattern(RegexHandle regex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_GetStringNumber_" data-uid="GLib.Internal.Regex.GetStringNumber*"></a>
-  <h4 id="GLib_Internal_Regex_GetStringNumber_GLib_Internal_RegexHandle_System_String_" data-uid="GLib.Internal.Regex.GetStringNumber(GLib.Internal.RegexHandle,System.String)">GetStringNumber(RegexHandle, string)</h4>
+  <h4 id="GLib_Internal_Regex_GetStringNumber_GLib_Internal_RegexHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GLib.Internal.Regex.GetStringNumber(GLib.Internal.RegexHandle,GLib.Internal.NonNullableUtf8StringHandle)">GetStringNumber(RegexHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_regex_get_string_number.
 Version: 2.14</p>
 </div>
@@ -635,10 +635,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern int GetStringNumber(RegexHandle regex, string name)</code></pre>
+public static extern int GetStringNumber(RegexHandle regex, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -653,7 +653,7 @@ public static extern int GetStringNumber(RegexHandle regex, string name)</code><
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -661,7 +661,7 @@ public static extern int GetStringNumber(RegexHandle regex, string name)</code><
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -670,14 +670,14 @@ public static extern int GetStringNumber(RegexHandle regex, string name)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_Match_" data-uid="GLib.Internal.Regex.Match*"></a>
-  <h4 id="GLib_Internal_Regex_Match_GLib_Internal_RegexHandle_System_String_GLib_RegexMatchFlags_GLib_Internal_MatchInfoOwnedHandle__" data-uid="GLib.Internal.Regex.Match(GLib.Internal.RegexHandle,System.String,GLib.RegexMatchFlags,GLib.Internal.MatchInfoOwnedHandle@)">Match(RegexHandle, string, RegexMatchFlags, out MatchInfoOwnedHandle)</h4>
+  <h4 id="GLib_Internal_Regex_Match_GLib_Internal_RegexHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexMatchFlags_GLib_Internal_MatchInfoOwnedHandle__" data-uid="GLib.Internal.Regex.Match(GLib.Internal.RegexHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexMatchFlags,GLib.Internal.MatchInfoOwnedHandle@)">Match(RegexHandle, NonNullableUtf8StringHandle, RegexMatchFlags, out MatchInfoOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_regex_match.
 Version: 2.14</p>
 </div>
@@ -685,10 +685,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern bool Match(RegexHandle regex, string @string, RegexMatchFlags matchOptions, out MatchInfoOwnedHandle matchInfo)</code></pre>
+public static extern bool Match(RegexHandle regex, NonNullableUtf8StringHandle @string, RegexMatchFlags matchOptions, out MatchInfoOwnedHandle matchInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -703,7 +703,7 @@ public static extern bool Match(RegexHandle regex, string @string, RegexMatchFla
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
@@ -722,7 +722,7 @@ public static extern bool Match(RegexHandle regex, string @string, RegexMatchFla
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -731,14 +731,14 @@ public static extern bool Match(RegexHandle regex, string @string, RegexMatchFla
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_MatchAll_" data-uid="GLib.Internal.Regex.MatchAll*"></a>
-  <h4 id="GLib_Internal_Regex_MatchAll_GLib_Internal_RegexHandle_System_String_GLib_RegexMatchFlags_GLib_Internal_MatchInfoOwnedHandle__" data-uid="GLib.Internal.Regex.MatchAll(GLib.Internal.RegexHandle,System.String,GLib.RegexMatchFlags,GLib.Internal.MatchInfoOwnedHandle@)">MatchAll(RegexHandle, string, RegexMatchFlags, out MatchInfoOwnedHandle)</h4>
+  <h4 id="GLib_Internal_Regex_MatchAll_GLib_Internal_RegexHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexMatchFlags_GLib_Internal_MatchInfoOwnedHandle__" data-uid="GLib.Internal.Regex.MatchAll(GLib.Internal.RegexHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexMatchFlags,GLib.Internal.MatchInfoOwnedHandle@)">MatchAll(RegexHandle, NonNullableUtf8StringHandle, RegexMatchFlags, out MatchInfoOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_regex_match_all.
 Version: 2.14</p>
 </div>
@@ -746,10 +746,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern bool MatchAll(RegexHandle regex, string @string, RegexMatchFlags matchOptions, out MatchInfoOwnedHandle matchInfo)</code></pre>
+public static extern bool MatchAll(RegexHandle regex, NonNullableUtf8StringHandle @string, RegexMatchFlags matchOptions, out MatchInfoOwnedHandle matchInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -764,7 +764,7 @@ public static extern bool MatchAll(RegexHandle regex, string @string, RegexMatch
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
@@ -783,7 +783,7 @@ public static extern bool MatchAll(RegexHandle regex, string @string, RegexMatch
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -792,7 +792,7 @@ public static extern bool MatchAll(RegexHandle regex, string @string, RegexMatch
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -810,7 +810,7 @@ Version: 2.14</p>
 public static extern bool MatchAllFull(RegexHandle regex, string[] @string, long stringLen, int startPosition, RegexMatchFlags matchOptions, out MatchInfoOwnedHandle matchInfo, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -825,18 +825,18 @@ public static extern bool MatchAllFull(RegexHandle regex, string[] @string, long
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stringLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">startPosition</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -856,13 +856,12 @@ public static extern bool MatchAllFull(RegexHandle regex, string[] @string, long
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -871,7 +870,7 @@ public static extern bool MatchAllFull(RegexHandle regex, string[] @string, long
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -889,7 +888,7 @@ Version: 2.14</p>
 public static extern bool MatchFull(RegexHandle regex, string[] @string, long stringLen, int startPosition, RegexMatchFlags matchOptions, out MatchInfoOwnedHandle matchInfo, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -904,18 +903,18 @@ public static extern bool MatchFull(RegexHandle regex, string[] @string, long st
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stringLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">startPosition</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -935,13 +934,12 @@ public static extern bool MatchFull(RegexHandle regex, string[] @string, long st
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -950,14 +948,14 @@ public static extern bool MatchFull(RegexHandle regex, string[] @string, long st
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_MatchSimple_" data-uid="GLib.Internal.Regex.MatchSimple*"></a>
-  <h4 id="GLib_Internal_Regex_MatchSimple_System_String_System_String_GLib_RegexCompileFlags_GLib_RegexMatchFlags_" data-uid="GLib.Internal.Regex.MatchSimple(System.String,System.String,GLib.RegexCompileFlags,GLib.RegexMatchFlags)">MatchSimple(string, string, RegexCompileFlags, RegexMatchFlags)</h4>
+  <h4 id="GLib_Internal_Regex_MatchSimple_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexCompileFlags_GLib_RegexMatchFlags_" data-uid="GLib.Internal.Regex.MatchSimple(GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexCompileFlags,GLib.RegexMatchFlags)">MatchSimple(NonNullableUtf8StringHandle, NonNullableUtf8StringHandle, RegexCompileFlags, RegexMatchFlags)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_regex_match_simple.
 Version: 2.14</p>
 </div>
@@ -965,10 +963,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern bool MatchSimple(string pattern, string @string, RegexCompileFlags compileOptions, RegexMatchFlags matchOptions)</code></pre>
+public static extern bool MatchSimple(NonNullableUtf8StringHandle pattern, NonNullableUtf8StringHandle @string, RegexCompileFlags compileOptions, RegexMatchFlags matchOptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -978,13 +976,13 @@ public static extern bool MatchSimple(string pattern, string @string, RegexCompi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">pattern</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
@@ -1003,7 +1001,7 @@ public static extern bool MatchSimple(string pattern, string @string, RegexCompi
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1012,14 +1010,14 @@ public static extern bool MatchSimple(string pattern, string @string, RegexCompi
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_New_" data-uid="GLib.Internal.Regex.New*"></a>
-  <h4 id="GLib_Internal_Regex_New_System_String_GLib_RegexCompileFlags_GLib_RegexMatchFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.New(System.String,GLib.RegexCompileFlags,GLib.RegexMatchFlags,GLib.Internal.ErrorOwnedHandle@)">New(string, RegexCompileFlags, RegexMatchFlags, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_Regex_New_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexCompileFlags_GLib_RegexMatchFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.New(GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexCompileFlags,GLib.RegexMatchFlags,GLib.Internal.ErrorOwnedHandle@)">New(NonNullableUtf8StringHandle, RegexCompileFlags, RegexMatchFlags, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_regex_new.
 Version: 2.14</p>
 </div>
@@ -1027,10 +1025,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern RegexOwnedHandle New(string pattern, RegexCompileFlags compileOptions, RegexMatchFlags matchOptions, out ErrorOwnedHandle error)</code></pre>
+public static extern RegexOwnedHandle New(NonNullableUtf8StringHandle pattern, RegexCompileFlags compileOptions, RegexMatchFlags matchOptions, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1040,7 +1038,7 @@ public static extern RegexOwnedHandle New(string pattern, RegexCompileFlags comp
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">pattern</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1060,13 +1058,12 @@ public static extern RegexOwnedHandle New(string pattern, RegexCompileFlags comp
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1093,7 +1090,7 @@ Version: 2.14</p>
 public static extern RegexOwnedHandle Ref(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1110,7 +1107,7 @@ public static extern RegexOwnedHandle Ref(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1126,7 +1123,7 @@ public static extern RegexOwnedHandle Ref(RegexHandle regex)</code></pre>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_Replace_" data-uid="GLib.Internal.Regex.Replace*"></a>
-  <h4 id="GLib_Internal_Regex_Replace_GLib_Internal_RegexHandle_System_String___System_Int64_System_Int32_System_String_GLib_RegexMatchFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.Replace(GLib.Internal.RegexHandle,System.String[],System.Int64,System.Int32,System.String,GLib.RegexMatchFlags,GLib.Internal.ErrorOwnedHandle@)">Replace(RegexHandle, string[], long, int, string, RegexMatchFlags, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_Regex_Replace_GLib_Internal_RegexHandle_System_String___System_Int64_System_Int32_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexMatchFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.Replace(GLib.Internal.RegexHandle,System.String[],System.Int64,System.Int32,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexMatchFlags,GLib.Internal.ErrorOwnedHandle@)">Replace(RegexHandle, string[], long, int, NonNullableUtf8StringHandle, RegexMatchFlags, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_regex_replace.
 Version: 2.14</p>
 </div>
@@ -1134,10 +1131,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string Replace(RegexHandle regex, string[] @string, long stringLen, int startPosition, string replacement, RegexMatchFlags matchOptions, out ErrorOwnedHandle error)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle Replace(RegexHandle regex, string[] @string, long stringLen, int startPosition, NonNullableUtf8StringHandle replacement, RegexMatchFlags matchOptions, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1152,24 +1149,24 @@ public static extern string Replace(RegexHandle regex, string[] @string, long st
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stringLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">startPosition</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">replacement</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1183,13 +1180,12 @@ public static extern string Replace(RegexHandle regex, string[] @string, long st
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1198,7 +1194,7 @@ public static extern string Replace(RegexHandle regex, string[] @string, long st
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1213,10 +1209,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string ReplaceEval(RegexHandle regex, string[] @string, long stringLen, int startPosition, RegexMatchFlags matchOptions, RegexEvalCallback eval, nint userData, out ErrorOwnedHandle error)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle ReplaceEval(RegexHandle regex, string[] @string, long stringLen, int startPosition, RegexMatchFlags matchOptions, RegexEvalCallback eval, nint userData, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1231,18 +1227,18 @@ public static extern string ReplaceEval(RegexHandle regex, string[] @string, lon
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stringLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">startPosition</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1260,7 +1256,7 @@ public static extern string ReplaceEval(RegexHandle regex, string[] @string, lon
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1268,13 +1264,12 @@ public static extern string ReplaceEval(RegexHandle regex, string[] @string, lon
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1283,14 +1278,14 @@ public static extern string ReplaceEval(RegexHandle regex, string[] @string, lon
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_ReplaceLiteral_" data-uid="GLib.Internal.Regex.ReplaceLiteral*"></a>
-  <h4 id="GLib_Internal_Regex_ReplaceLiteral_GLib_Internal_RegexHandle_System_String___System_Int64_System_Int32_System_String_GLib_RegexMatchFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.ReplaceLiteral(GLib.Internal.RegexHandle,System.String[],System.Int64,System.Int32,System.String,GLib.RegexMatchFlags,GLib.Internal.ErrorOwnedHandle@)">ReplaceLiteral(RegexHandle, string[], long, int, string, RegexMatchFlags, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_Regex_ReplaceLiteral_GLib_Internal_RegexHandle_System_String___System_Int64_System_Int32_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexMatchFlags_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.Regex.ReplaceLiteral(GLib.Internal.RegexHandle,System.String[],System.Int64,System.Int32,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexMatchFlags,GLib.Internal.ErrorOwnedHandle@)">ReplaceLiteral(RegexHandle, string[], long, int, NonNullableUtf8StringHandle, RegexMatchFlags, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_regex_replace_literal.
 Version: 2.14</p>
 </div>
@@ -1298,10 +1293,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string ReplaceLiteral(RegexHandle regex, string[] @string, long stringLen, int startPosition, string replacement, RegexMatchFlags matchOptions, out ErrorOwnedHandle error)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle ReplaceLiteral(RegexHandle regex, string[] @string, long stringLen, int startPosition, NonNullableUtf8StringHandle replacement, RegexMatchFlags matchOptions, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1316,24 +1311,24 @@ public static extern string ReplaceLiteral(RegexHandle regex, string[] @string, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stringLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">startPosition</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">replacement</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1347,13 +1342,12 @@ public static extern string ReplaceLiteral(RegexHandle regex, string[] @string, 
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1362,14 +1356,14 @@ public static extern string ReplaceLiteral(RegexHandle regex, string[] @string, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_Split_" data-uid="GLib.Internal.Regex.Split*"></a>
-  <h4 id="GLib_Internal_Regex_Split_GLib_Internal_RegexHandle_System_String_GLib_RegexMatchFlags_" data-uid="GLib.Internal.Regex.Split(GLib.Internal.RegexHandle,System.String,GLib.RegexMatchFlags)">Split(RegexHandle, string, RegexMatchFlags)</h4>
+  <h4 id="GLib_Internal_Regex_Split_GLib_Internal_RegexHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexMatchFlags_" data-uid="GLib.Internal.Regex.Split(GLib.Internal.RegexHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexMatchFlags)">Split(RegexHandle, NonNullableUtf8StringHandle, RegexMatchFlags)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_regex_split.
 Version: 2.14</p>
 </div>
@@ -1377,10 +1371,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string[] Split(RegexHandle regex, string @string, RegexMatchFlags matchOptions)</code></pre>
+public static extern string[] Split(RegexHandle regex, NonNullableUtf8StringHandle @string, RegexMatchFlags matchOptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1395,7 +1389,7 @@ public static extern string[] Split(RegexHandle regex, string @string, RegexMatc
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
@@ -1408,7 +1402,7 @@ public static extern string[] Split(RegexHandle regex, string @string, RegexMatc
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1417,7 +1411,7 @@ public static extern string[] Split(RegexHandle regex, string @string, RegexMatc
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1435,7 +1429,7 @@ Version: 2.14</p>
 public static extern string[] SplitFull(RegexHandle regex, string[] @string, long stringLen, int startPosition, RegexMatchFlags matchOptions, int maxTokens, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1450,18 +1444,18 @@ public static extern string[] SplitFull(RegexHandle regex, string[] @string, lon
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stringLen</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">startPosition</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1473,7 +1467,7 @@ public static extern string[] SplitFull(RegexHandle regex, string[] @string, lon
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxTokens</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1481,13 +1475,12 @@ public static extern string[] SplitFull(RegexHandle regex, string[] @string, lon
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1496,14 +1489,14 @@ public static extern string[] SplitFull(RegexHandle regex, string[] @string, lon
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Regex_SplitSimple_" data-uid="GLib.Internal.Regex.SplitSimple*"></a>
-  <h4 id="GLib_Internal_Regex_SplitSimple_System_String_System_String_GLib_RegexCompileFlags_GLib_RegexMatchFlags_" data-uid="GLib.Internal.Regex.SplitSimple(System.String,System.String,GLib.RegexCompileFlags,GLib.RegexMatchFlags)">SplitSimple(string, string, RegexCompileFlags, RegexMatchFlags)</h4>
+  <h4 id="GLib_Internal_Regex_SplitSimple_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_RegexCompileFlags_GLib_RegexMatchFlags_" data-uid="GLib.Internal.Regex.SplitSimple(GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.RegexCompileFlags,GLib.RegexMatchFlags)">SplitSimple(NonNullableUtf8StringHandle, NonNullableUtf8StringHandle, RegexCompileFlags, RegexMatchFlags)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_regex_split_simple.
 Version: 2.14</p>
 </div>
@@ -1511,10 +1504,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string[] SplitSimple(string pattern, string @string, RegexCompileFlags compileOptions, RegexMatchFlags matchOptions)</code></pre>
+public static extern string[] SplitSimple(NonNullableUtf8StringHandle pattern, NonNullableUtf8StringHandle @string, RegexCompileFlags compileOptions, RegexMatchFlags matchOptions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1524,13 +1517,13 @@ public static extern string[] SplitSimple(string pattern, string @string, RegexC
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">pattern</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
@@ -1549,7 +1542,7 @@ public static extern string[] SplitSimple(string pattern, string @string, RegexC
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1558,7 +1551,7 @@ public static extern string[] SplitSimple(string pattern, string @string, RegexC
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1576,7 +1569,7 @@ Version: 2.14</p>
 public static extern void Unref(RegexHandle regex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1592,6 +1585,7 @@ public static extern void Unref(RegexHandle regex)</code></pre>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1620,7 +1614,7 @@ public static extern void Unref(RegexHandle regex)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

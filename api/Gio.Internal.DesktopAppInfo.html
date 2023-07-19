@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gio.Internal.DesktopAppInfo">
 
 
+
   <h1 id="Gio_Internal_DesktopAppInfo" data-uid="Gio.Internal.DesktopAppInfo" class="text-break">Class DesktopAppInfo
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">DesktopAppInfo</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a>.<a class="xref" href="Gio.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gio_Internal_DesktopAppInfo_GetActionName_" data-uid="Gio.Internal.DesktopAppInfo.GetActionName*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetActionName_System_IntPtr_System_String_" data-uid="Gio.Internal.DesktopAppInfo.GetActionName(System.IntPtr,System.String)">GetActionName(nint, string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetActionName_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.GetActionName(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetActionName(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_action_name.
 Version: 2.38</p>
 </div>
@@ -120,10 +121,10 @@ Version: 2.38</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
-public static extern string GetActionName(nint info, string actionName)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle GetActionName(nint info, NonNullableUtf8StringHandle actionName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,12 +134,12 @@ public static extern string GetActionName(nint info, string actionName)</code></
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">actionName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -146,7 +147,7 @@ public static extern string GetActionName(nint info, string actionName)</code></
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -155,14 +156,14 @@ public static extern string GetActionName(nint info, string actionName)</code></
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_GetBoolean_" data-uid="Gio.Internal.DesktopAppInfo.GetBoolean*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetBoolean_System_IntPtr_System_String_" data-uid="Gio.Internal.DesktopAppInfo.GetBoolean(System.IntPtr,System.String)">GetBoolean(nint, string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetBoolean_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.GetBoolean(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetBoolean(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_boolean.
 Version: 2.36</p>
 </div>
@@ -170,10 +171,10 @@ Version: 2.36</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.36&quot;)]
-public static extern bool GetBoolean(nint info, string key)</code></pre>
+public static extern bool GetBoolean(nint info, NonNullableUtf8StringHandle key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -183,12 +184,12 @@ public static extern bool GetBoolean(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -196,7 +197,7 @@ public static extern bool GetBoolean(nint info, string key)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -205,7 +206,7 @@ public static extern bool GetBoolean(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -218,10 +219,10 @@ public static extern bool GetBoolean(nint info, string key)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetCategories(nint info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NullableUtf8StringUnownedHandle GetCategories(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -231,14 +232,14 @@ public static extern bool GetBoolean(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -247,7 +248,7 @@ public static extern bool GetBoolean(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -262,10 +263,10 @@ Version: 2.24</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.24&quot;)]
-public static extern nint GetFilename(nint info)</code></pre>
+public static extern NullablePlatformStringUnownedHandle GetFilename(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -275,14 +276,14 @@ public static extern nint GetFilename(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -291,49 +292,7 @@ public static extern nint GetFilename(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
-        <td><p>Transfer ownership: None Nullable: True</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Gio_Internal_DesktopAppInfo_GetGenericName_" data-uid="Gio.Internal.DesktopAppInfo.GetGenericName*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetGenericName_System_IntPtr_" data-uid="Gio.Internal.DesktopAppInfo.GetGenericName(System.IntPtr)">GetGenericName(nint)</h4>
-  <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_generic_name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetGenericName(nint info)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><span class="parametername">info</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullablePlatformStringUnownedHandle.html">NullablePlatformStringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -349,7 +308,7 @@ public static extern nint GetFilename(nint info)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -358,25 +317,23 @@ public static extern nint GetFilename(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="Gio_Internal_DesktopAppInfo_GetImplementations_" data-uid="Gio.Internal.DesktopAppInfo.GetImplementations*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetImplementations_System_String_" data-uid="Gio.Internal.DesktopAppInfo.GetImplementations(System.String)">GetImplementations(string)</h4>
-  <div class="markdown level1 summary"><p>Calls native function g_desktop_app_info_get_implementations.
-Version: 2.42</p>
+  <a id="Gio_Internal_DesktopAppInfo_GetGenericName_" data-uid="Gio.Internal.DesktopAppInfo.GetGenericName*"></a>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetGenericName_System_IntPtr_" data-uid="Gio.Internal.DesktopAppInfo.GetGenericName(System.IntPtr)">GetGenericName(nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_generic_name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Version(&quot;2.42&quot;)]
-public static extern ListOwnedHandle GetImplementations(string @interface)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NullableUtf8StringUnownedHandle GetGenericName(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -386,14 +343,58 @@ public static extern ListOwnedHandle GetImplementations(string @interface)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_Internal_DesktopAppInfo_GetImplementations_" data-uid="Gio.Internal.DesktopAppInfo.GetImplementations*"></a>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetImplementations_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.GetImplementations(GLib.Internal.NonNullableUtf8StringHandle)">GetImplementations(NonNullableUtf8StringHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function g_desktop_app_info_get_implementations.
+Version: 2.42</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.42&quot;)]
+public static extern ListOwnedHandle GetImplementations(NonNullableUtf8StringHandle @interface)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">interface</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -418,7 +419,7 @@ public static extern ListOwnedHandle GetImplementations(string @interface)</code
     <pre><code class="lang-csharp hljs">public static extern bool GetIsHidden(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -428,14 +429,14 @@ public static extern ListOwnedHandle GetImplementations(string @interface)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -444,7 +445,7 @@ public static extern ListOwnedHandle GetImplementations(string @interface)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -462,7 +463,7 @@ Version: 2.32</p>
 public static extern nint GetKeywords(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -472,14 +473,14 @@ public static extern nint GetKeywords(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -488,14 +489,14 @@ public static extern nint GetKeywords(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_GetLocaleString_" data-uid="Gio.Internal.DesktopAppInfo.GetLocaleString*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetLocaleString_System_IntPtr_System_String_" data-uid="Gio.Internal.DesktopAppInfo.GetLocaleString(System.IntPtr,System.String)">GetLocaleString(nint, string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetLocaleString_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.GetLocaleString(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetLocaleString(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_locale_string.
 Version: 2.56</p>
 </div>
@@ -503,10 +504,10 @@ Version: 2.56</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.56&quot;)]
-public static extern string? GetLocaleString(nint info, string key)</code></pre>
+public static extern NullableUtf8StringOwnedHandle GetLocaleString(nint info, NonNullableUtf8StringHandle key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -516,12 +517,12 @@ public static extern string? GetLocaleString(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -529,7 +530,7 @@ public static extern string? GetLocaleString(nint info, string key)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -538,7 +539,7 @@ public static extern string? GetLocaleString(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringOwnedHandle.html">NullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -556,7 +557,7 @@ Version: 2.30</p>
 public static extern bool GetNodisplay(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -566,14 +567,14 @@ public static extern bool GetNodisplay(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -582,14 +583,14 @@ public static extern bool GetNodisplay(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_GetShowIn_" data-uid="Gio.Internal.DesktopAppInfo.GetShowIn*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetShowIn_System_IntPtr_System_String_" data-uid="Gio.Internal.DesktopAppInfo.GetShowIn(System.IntPtr,System.String)">GetShowIn(nint, string?)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetShowIn_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.GetShowIn(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">GetShowIn(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_show_in.
 Version: 2.30</p>
 </div>
@@ -597,10 +598,10 @@ Version: 2.30</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.30&quot;)]
-public static extern bool GetShowIn(nint info, string? desktopEnv)</code></pre>
+public static extern bool GetShowIn(nint info, NullableUtf8StringHandle desktopEnv)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -610,12 +611,12 @@ public static extern bool GetShowIn(nint info, string? desktopEnv)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">desktopEnv</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -623,7 +624,7 @@ public static extern bool GetShowIn(nint info, string? desktopEnv)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -632,7 +633,7 @@ public static extern bool GetShowIn(nint info, string? desktopEnv)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -647,10 +648,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern nint GetStartupWmClass(nint info)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetStartupWmClass(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -660,14 +661,14 @@ public static extern nint GetStartupWmClass(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -676,14 +677,14 @@ public static extern nint GetStartupWmClass(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_GetString_" data-uid="Gio.Internal.DesktopAppInfo.GetString*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetString_System_IntPtr_System_String_" data-uid="Gio.Internal.DesktopAppInfo.GetString(System.IntPtr,System.String)">GetString(nint, string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetString_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.GetString(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetString(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_string.
 Version: 2.36</p>
 </div>
@@ -691,10 +692,10 @@ Version: 2.36</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.36&quot;)]
-public static extern string? GetString(nint info, string key)</code></pre>
+public static extern NullableUtf8StringOwnedHandle GetString(nint info, NonNullableUtf8StringHandle key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -704,12 +705,12 @@ public static extern string? GetString(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -717,7 +718,7 @@ public static extern string? GetString(nint info, string key)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -726,14 +727,14 @@ public static extern string? GetString(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringOwnedHandle.html">NullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_GetStringList_" data-uid="Gio.Internal.DesktopAppInfo.GetStringList*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_GetStringList_System_IntPtr_System_String_System_IntPtr__" data-uid="Gio.Internal.DesktopAppInfo.GetStringList(System.IntPtr,System.String,System.IntPtr@)">GetStringList(nint, string, out nint)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_GetStringList_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_UIntPtr__" data-uid="Gio.Internal.DesktopAppInfo.GetStringList(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.UIntPtr@)">GetStringList(nint, NonNullableUtf8StringHandle, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_get_string_list.
 Version: 2.60</p>
 </div>
@@ -741,10 +742,10 @@ Version: 2.60</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.60&quot;)]
-public static extern string[] GetStringList(nint info, string key, out nint length)</code></pre>
+public static extern string[] GetStringList(nint info, NonNullableUtf8StringHandle key, out nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -754,18 +755,18 @@ public static extern string[] GetStringList(nint info, string key, out nint leng
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -773,7 +774,7 @@ public static extern string[] GetStringList(nint info, string key, out nint leng
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -782,14 +783,14 @@ public static extern string[] GetStringList(nint info, string key, out nint leng
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_HasKey_" data-uid="Gio.Internal.DesktopAppInfo.HasKey*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_HasKey_System_IntPtr_System_String_" data-uid="Gio.Internal.DesktopAppInfo.HasKey(System.IntPtr,System.String)">HasKey(nint, string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_HasKey_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.HasKey(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">HasKey(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_has_key.
 Version: 2.36</p>
 </div>
@@ -797,10 +798,10 @@ Version: 2.36</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.36&quot;)]
-public static extern bool HasKey(nint info, string key)</code></pre>
+public static extern bool HasKey(nint info, NonNullableUtf8StringHandle key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -810,12 +811,12 @@ public static extern bool HasKey(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -823,7 +824,7 @@ public static extern bool HasKey(nint info, string key)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -832,14 +833,14 @@ public static extern bool HasKey(nint info, string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_LaunchAction_" data-uid="Gio.Internal.DesktopAppInfo.LaunchAction*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_LaunchAction_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.Internal.DesktopAppInfo.LaunchAction(System.IntPtr,System.String,System.IntPtr)">LaunchAction(nint, string, nint)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_LaunchAction_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="Gio.Internal.DesktopAppInfo.LaunchAction(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">LaunchAction(nint, NonNullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_desktop_app_info_launch_action.
 Version: 2.38</p>
 </div>
@@ -847,10 +848,10 @@ Version: 2.38</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
-public static extern void LaunchAction(nint info, string actionName, nint launchContext)</code></pre>
+public static extern void LaunchAction(nint info, NonNullableUtf8StringHandle actionName, nint launchContext)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -860,18 +861,18 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">actionName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">launchContext</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -888,7 +889,7 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
     <pre><code class="lang-csharp hljs">public static extern bool LaunchUrisAsManager(nint appinfo, ListHandle uris, nint launchContext, SpawnFlags spawnFlags, SpawnChildSetupFunc userSetup, nint userSetupData, DesktopAppLaunchCallback pidCallback, nint pidCallbackData, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -898,7 +899,7 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">appinfo</span></td>
         <td></td>
       </tr>
@@ -909,7 +910,7 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">launchContext</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -927,7 +928,7 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userSetupData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -939,7 +940,7 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">pidCallbackData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -947,13 +948,12 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -962,7 +962,7 @@ public static extern void LaunchAction(nint info, string actionName, nint launch
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -980,7 +980,7 @@ Version: 2.58</p>
 public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle uris, nint launchContext, SpawnFlags spawnFlags, SpawnChildSetupFunc userSetup, nint userSetupData, DesktopAppLaunchCallback pidCallback, nint pidCallbackData, int stdinFd, int stdoutFd, int stderrFd, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -990,7 +990,7 @@ public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle ur
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">appinfo</span></td>
         <td></td>
       </tr>
@@ -1001,7 +1001,7 @@ public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle ur
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">launchContext</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1019,7 +1019,7 @@ public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle ur
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userSetupData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1031,25 +1031,25 @@ public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle ur
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">pidCallbackData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">stdinFd</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">stdoutFd</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">stderrFd</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1057,13 +1057,12 @@ public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle ur
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1072,7 +1071,7 @@ public static extern bool LaunchUrisAsManagerWithFds(nint appinfo, ListHandle ur
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1090,7 +1089,7 @@ Version: 2.38</p>
 public static extern nint ListActions(nint info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1100,14 +1099,14 @@ public static extern nint ListActions(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1116,23 +1115,23 @@ public static extern nint ListActions(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_New_" data-uid="Gio.Internal.DesktopAppInfo.New*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_New_System_String_" data-uid="Gio.Internal.DesktopAppInfo.New(System.String)">New(string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_New_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.New(GLib.Internal.NonNullableUtf8StringHandle)">New(NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_desktop_app_info_new.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint New(string desktopId)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint New(NonNullableUtf8StringHandle desktopId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1142,7 +1141,7 @@ public static extern nint ListActions(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">desktopId</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1150,7 +1149,7 @@ public static extern nint ListActions(nint info)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1159,23 +1158,23 @@ public static extern nint ListActions(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_DesktopAppInfo_NewFromFilename_" data-uid="Gio.Internal.DesktopAppInfo.NewFromFilename*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_NewFromFilename_System_String_" data-uid="Gio.Internal.DesktopAppInfo.NewFromFilename(System.String)">NewFromFilename(string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_NewFromFilename_GLib_Internal_NonNullablePlatformStringHandle_" data-uid="Gio.Internal.DesktopAppInfo.NewFromFilename(GLib.Internal.NonNullablePlatformStringHandle)">NewFromFilename(NonNullablePlatformStringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_desktop_app_info_new_from_filename.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint NewFromFilename(string filename)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint NewFromFilename(NonNullablePlatformStringHandle filename)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1185,7 +1184,7 @@ public static extern nint ListActions(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullablePlatformStringHandle.html">NonNullablePlatformStringHandle</a></td>
         <td><span class="parametername">filename</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1193,7 +1192,7 @@ public static extern nint ListActions(nint info)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1202,7 +1201,7 @@ public static extern nint ListActions(nint info)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -1220,7 +1219,7 @@ Version: 2.18</p>
 public static extern nint NewFromKeyfile(KeyFileHandle keyFile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1238,7 +1237,7 @@ public static extern nint NewFromKeyfile(KeyFileHandle keyFile)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1247,66 +1246,23 @@ public static extern nint NewFromKeyfile(KeyFileHandle keyFile)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="Gio_Internal_DesktopAppInfo_Search_" data-uid="Gio.Internal.DesktopAppInfo.Search*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_Search_System_String_" data-uid="Gio.Internal.DesktopAppInfo.Search(System.String)">Search(string)</h4>
-  <div class="markdown level1 summary"><p>Calls native function g_desktop_app_info_search.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string[][] Search(string searchString)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">searchString</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span>[][]</td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Gio_Internal_DesktopAppInfo_SetDesktopEnv_" data-uid="Gio.Internal.DesktopAppInfo.SetDesktopEnv*"></a>
-  <h4 id="Gio_Internal_DesktopAppInfo_SetDesktopEnv_System_String_" data-uid="Gio.Internal.DesktopAppInfo.SetDesktopEnv(System.String)">SetDesktopEnv(string)</h4>
+  <h4 id="Gio_Internal_DesktopAppInfo_SetDesktopEnv_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.DesktopAppInfo.SetDesktopEnv(GLib.Internal.NonNullableUtf8StringHandle)">SetDesktopEnv(NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_desktop_app_info_set_desktop_env.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetDesktopEnv(string desktopEnv)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetDesktopEnv(NonNullableUtf8StringHandle desktopEnv)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1316,13 +1272,14 @@ public static extern nint NewFromKeyfile(KeyFileHandle keyFile)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">desktopEnv</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1351,7 +1308,7 @@ public static extern nint NewFromKeyfile(KeyFileHandle keyFile)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

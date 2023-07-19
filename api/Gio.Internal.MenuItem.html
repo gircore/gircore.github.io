@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gio.Internal.MenuItem">
 
 
+
   <h1 id="Gio_Internal_MenuItem" data-uid="Gio.Internal.MenuItem" class="text-break">Class MenuItem
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">MenuItem</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gio.html">Gio</a>.<a class="xref" href="Gio.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gio_Internal_MenuItem_GetAttributeValue_" data-uid="Gio.Internal.MenuItem.GetAttributeValue*"></a>
-  <h4 id="Gio_Internal_MenuItem_GetAttributeValue_System_IntPtr_System_String_GLib_Internal_VariantTypeHandle_" data-uid="Gio.Internal.MenuItem.GetAttributeValue(System.IntPtr,System.String,GLib.Internal.VariantTypeHandle)">GetAttributeValue(nint, string, VariantTypeHandle)</h4>
+  <h4 id="Gio_Internal_MenuItem_GetAttributeValue_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_VariantTypeHandle_" data-uid="Gio.Internal.MenuItem.GetAttributeValue(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.VariantTypeHandle)">GetAttributeValue(nint, NonNullableUtf8StringHandle, VariantTypeHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_get_attribute_value.
 Version: 2.34</p>
 </div>
@@ -120,10 +121,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern VariantOwnedHandle GetAttributeValue(nint menuItem, string attribute, VariantTypeHandle expectedType)</code></pre>
+public static extern VariantOwnedHandle GetAttributeValue(nint menuItem, NonNullableUtf8StringHandle attribute, VariantTypeHandle expectedType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,12 +134,12 @@ public static extern VariantOwnedHandle GetAttributeValue(nint menuItem, string 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">attribute</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -152,7 +153,7 @@ public static extern VariantOwnedHandle GetAttributeValue(nint menuItem, string 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -177,7 +178,7 @@ public static extern VariantOwnedHandle GetAttributeValue(nint menuItem, string 
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -186,14 +187,14 @@ public static extern VariantOwnedHandle GetAttributeValue(nint menuItem, string 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_GetLink_" data-uid="Gio.Internal.MenuItem.GetLink*"></a>
-  <h4 id="Gio_Internal_MenuItem_GetLink_System_IntPtr_System_String_" data-uid="Gio.Internal.MenuItem.GetLink(System.IntPtr,System.String)">GetLink(nint, string)</h4>
+  <h4 id="Gio_Internal_MenuItem_GetLink_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.MenuItem.GetLink(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetLink(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_get_link.
 Version: 2.34</p>
 </div>
@@ -201,10 +202,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern nint GetLink(nint menuItem, string link)</code></pre>
+public static extern nint GetLink(nint menuItem, NonNullableUtf8StringHandle link)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -214,12 +215,12 @@ public static extern nint GetLink(nint menuItem, string link)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">link</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -227,7 +228,7 @@ public static extern nint GetLink(nint menuItem, string link)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -236,14 +237,14 @@ public static extern nint GetLink(nint menuItem, string link)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_New_" data-uid="Gio.Internal.MenuItem.New*"></a>
-  <h4 id="Gio_Internal_MenuItem_New_System_String_System_String_" data-uid="Gio.Internal.MenuItem.New(System.String,System.String)">New(string?, string?)</h4>
+  <h4 id="Gio_Internal_MenuItem_New_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.MenuItem.New(GLib.Internal.NullableUtf8StringHandle,GLib.Internal.NullableUtf8StringHandle)">New(NullableUtf8StringHandle, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_menu_item_new.
 Version: 2.32</p>
 </div>
@@ -251,10 +252,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern nint New(string? label, string? detailedAction)</code></pre>
+public static extern nint New(NullableUtf8StringHandle label, NullableUtf8StringHandle detailedAction)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -264,13 +265,13 @@ public static extern nint New(string? label, string? detailedAction)</code></pre
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">label</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">detailedAction</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -278,7 +279,7 @@ public static extern nint New(string? label, string? detailedAction)</code></pre
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -287,7 +288,7 @@ public static extern nint New(string? label, string? detailedAction)</code></pre
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -305,7 +306,7 @@ Version: 2.34</p>
 public static extern nint NewFromModel(nint model, int itemIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -315,13 +316,13 @@ public static extern nint NewFromModel(nint model, int itemIndex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">model</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">itemIndex</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -329,7 +330,7 @@ public static extern nint NewFromModel(nint model, int itemIndex)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -338,14 +339,14 @@ public static extern nint NewFromModel(nint model, int itemIndex)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_NewSection_" data-uid="Gio.Internal.MenuItem.NewSection*"></a>
-  <h4 id="Gio_Internal_MenuItem_NewSection_System_String_System_IntPtr_" data-uid="Gio.Internal.MenuItem.NewSection(System.String,System.IntPtr)">NewSection(string?, nint)</h4>
+  <h4 id="Gio_Internal_MenuItem_NewSection_GLib_Internal_NullableUtf8StringHandle_System_IntPtr_" data-uid="Gio.Internal.MenuItem.NewSection(GLib.Internal.NullableUtf8StringHandle,System.IntPtr)">NewSection(NullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_menu_item_new_section.
 Version: 2.32</p>
 </div>
@@ -353,10 +354,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern nint NewSection(string? label, nint section)</code></pre>
+public static extern nint NewSection(NullableUtf8StringHandle label, nint section)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -366,13 +367,13 @@ public static extern nint NewSection(string? label, nint section)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">label</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">section</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -380,7 +381,7 @@ public static extern nint NewSection(string? label, nint section)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -389,14 +390,14 @@ public static extern nint NewSection(string? label, nint section)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_NewSubmenu_" data-uid="Gio.Internal.MenuItem.NewSubmenu*"></a>
-  <h4 id="Gio_Internal_MenuItem_NewSubmenu_System_String_System_IntPtr_" data-uid="Gio.Internal.MenuItem.NewSubmenu(System.String,System.IntPtr)">NewSubmenu(string?, nint)</h4>
+  <h4 id="Gio_Internal_MenuItem_NewSubmenu_GLib_Internal_NullableUtf8StringHandle_System_IntPtr_" data-uid="Gio.Internal.MenuItem.NewSubmenu(GLib.Internal.NullableUtf8StringHandle,System.IntPtr)">NewSubmenu(NullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_menu_item_new_submenu.
 Version: 2.32</p>
 </div>
@@ -404,10 +405,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern nint NewSubmenu(string? label, nint submenu)</code></pre>
+public static extern nint NewSubmenu(NullableUtf8StringHandle label, nint submenu)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -417,13 +418,13 @@ public static extern nint NewSubmenu(string? label, nint submenu)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">label</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">submenu</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -431,7 +432,7 @@ public static extern nint NewSubmenu(string? label, nint submenu)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -440,14 +441,14 @@ public static extern nint NewSubmenu(string? label, nint submenu)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_SetActionAndTargetValue_" data-uid="Gio.Internal.MenuItem.SetActionAndTargetValue*"></a>
-  <h4 id="Gio_Internal_MenuItem_SetActionAndTargetValue_System_IntPtr_System_String_GLib_Internal_VariantHandle_" data-uid="Gio.Internal.MenuItem.SetActionAndTargetValue(System.IntPtr,System.String,GLib.Internal.VariantHandle)">SetActionAndTargetValue(nint, string?, VariantHandle)</h4>
+  <h4 id="Gio_Internal_MenuItem_SetActionAndTargetValue_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_VariantHandle_" data-uid="Gio.Internal.MenuItem.SetActionAndTargetValue(System.IntPtr,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.VariantHandle)">SetActionAndTargetValue(nint, NullableUtf8StringHandle, VariantHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_set_action_and_target_value.
 Version: 2.32</p>
 </div>
@@ -455,10 +456,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern void SetActionAndTargetValue(nint menuItem, string? action, VariantHandle targetValue)</code></pre>
+public static extern void SetActionAndTargetValue(nint menuItem, NullableUtf8StringHandle action, VariantHandle targetValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -468,12 +469,12 @@ public static extern void SetActionAndTargetValue(nint menuItem, string? action,
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">action</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -487,7 +488,7 @@ public static extern void SetActionAndTargetValue(nint menuItem, string? action,
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_SetAttributeValue_" data-uid="Gio.Internal.MenuItem.SetAttributeValue*"></a>
-  <h4 id="Gio_Internal_MenuItem_SetAttributeValue_System_IntPtr_System_String_GLib_Internal_VariantHandle_" data-uid="Gio.Internal.MenuItem.SetAttributeValue(System.IntPtr,System.String,GLib.Internal.VariantHandle)">SetAttributeValue(nint, string, VariantHandle)</h4>
+  <h4 id="Gio_Internal_MenuItem_SetAttributeValue_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_VariantHandle_" data-uid="Gio.Internal.MenuItem.SetAttributeValue(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.VariantHandle)">SetAttributeValue(nint, NonNullableUtf8StringHandle, VariantHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_set_attribute_value.
 Version: 2.32</p>
 </div>
@@ -495,10 +496,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern void SetAttributeValue(nint menuItem, string attribute, VariantHandle value)</code></pre>
+public static extern void SetAttributeValue(nint menuItem, NonNullableUtf8StringHandle attribute, VariantHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -508,12 +509,12 @@ public static extern void SetAttributeValue(nint menuItem, string attribute, Var
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">attribute</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -527,7 +528,7 @@ public static extern void SetAttributeValue(nint menuItem, string attribute, Var
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_SetDetailedAction_" data-uid="Gio.Internal.MenuItem.SetDetailedAction*"></a>
-  <h4 id="Gio_Internal_MenuItem_SetDetailedAction_System_IntPtr_System_String_" data-uid="Gio.Internal.MenuItem.SetDetailedAction(System.IntPtr,System.String)">SetDetailedAction(nint, string)</h4>
+  <h4 id="Gio_Internal_MenuItem_SetDetailedAction_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gio.Internal.MenuItem.SetDetailedAction(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">SetDetailedAction(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_set_detailed_action.
 Version: 2.32</p>
 </div>
@@ -535,10 +536,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern void SetDetailedAction(nint menuItem, string detailedAction)</code></pre>
+public static extern void SetDetailedAction(nint menuItem, NonNullableUtf8StringHandle detailedAction)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -548,12 +549,12 @@ public static extern void SetDetailedAction(nint menuItem, string detailedAction
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">detailedAction</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -572,7 +573,7 @@ Version: 2.38</p>
 public static extern void SetIcon(nint menuItem, nint icon)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -582,12 +583,12 @@ public static extern void SetIcon(nint menuItem, nint icon)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">icon</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -595,7 +596,7 @@ public static extern void SetIcon(nint menuItem, nint icon)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_SetLabel_" data-uid="Gio.Internal.MenuItem.SetLabel*"></a>
-  <h4 id="Gio_Internal_MenuItem_SetLabel_System_IntPtr_System_String_" data-uid="Gio.Internal.MenuItem.SetLabel(System.IntPtr,System.String)">SetLabel(nint, string?)</h4>
+  <h4 id="Gio_Internal_MenuItem_SetLabel_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gio.Internal.MenuItem.SetLabel(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetLabel(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_set_label.
 Version: 2.32</p>
 </div>
@@ -603,10 +604,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern void SetLabel(nint menuItem, string? label)</code></pre>
+public static extern void SetLabel(nint menuItem, NullableUtf8StringHandle label)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -616,12 +617,12 @@ public static extern void SetLabel(nint menuItem, string? label)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">label</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -629,7 +630,7 @@ public static extern void SetLabel(nint menuItem, string? label)</code></pre>
     </tbody>
   </table>
   <a id="Gio_Internal_MenuItem_SetLink_" data-uid="Gio.Internal.MenuItem.SetLink*"></a>
-  <h4 id="Gio_Internal_MenuItem_SetLink_System_IntPtr_System_String_System_IntPtr_" data-uid="Gio.Internal.MenuItem.SetLink(System.IntPtr,System.String,System.IntPtr)">SetLink(nint, string, nint)</h4>
+  <h4 id="Gio_Internal_MenuItem_SetLink_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="Gio.Internal.MenuItem.SetLink(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">SetLink(nint, NonNullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_menu_item_set_link.
 Version: 2.32</p>
 </div>
@@ -637,10 +638,10 @@ Version: 2.32</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.32&quot;)]
-public static extern void SetLink(nint menuItem, string link, nint model)</code></pre>
+public static extern void SetLink(nint menuItem, NonNullableUtf8StringHandle link, nint model)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -650,18 +651,18 @@ public static extern void SetLink(nint menuItem, string link, nint model)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">link</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">model</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -680,7 +681,7 @@ Version: 2.32</p>
 public static extern void SetSection(nint menuItem, nint section)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -690,12 +691,12 @@ public static extern void SetSection(nint menuItem, nint section)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">section</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -714,7 +715,7 @@ Version: 2.32</p>
 public static extern void SetSubmenu(nint menuItem, nint submenu)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -724,18 +725,19 @@ public static extern void SetSubmenu(nint menuItem, nint submenu)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">menuItem</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">submenu</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -764,7 +766,7 @@ public static extern void SetSubmenu(nint menuItem, nint submenu)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

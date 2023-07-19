@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,6 +70,7 @@
             <article class="content wrap" id="_content" data-uid="Gtk.Accessible">
 
 
+
   <h1 id="Gtk_Accessible" data-uid="Gtk.Accessible" class="text-break">Interface Accessible
 </h1>
   <div class="markdown level0 summary"></div>
@@ -96,7 +97,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;AccessibleRole, Accessible&gt; AccessibleRolePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -121,7 +122,7 @@
     <pre><code class="lang-csharp hljs">AccessibleRole AccessibleRole { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -137,6 +138,30 @@
   </table>
   <h3 id="methods">Methods
 </h3>
+  <a id="Gtk_Accessible_GetAccessibleParent_" data-uid="Gtk.Accessible.GetAccessibleParent*"></a>
+  <h4 id="Gtk_Accessible_GetAccessibleParent" data-uid="Gtk.Accessible.GetAccessibleParent">GetAccessibleParent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+Accessible? GetAccessibleParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Gtk_Accessible_GetAccessibleRole_" data-uid="Gtk.Accessible.GetAccessibleRole*"></a>
   <h4 id="Gtk_Accessible_GetAccessibleRole" data-uid="Gtk.Accessible.GetAccessibleRole">GetAccessibleRole()</h4>
   <div class="markdown level1 summary"></div>
@@ -146,7 +171,7 @@
     <pre><code class="lang-csharp hljs">AccessibleRole GetAccessibleRole()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -160,6 +185,175 @@
       </tr>
     </tbody>
   </table>
+  <a id="Gtk_Accessible_GetAtContext_" data-uid="Gtk.Accessible.GetAtContext*"></a>
+  <h4 id="Gtk_Accessible_GetAtContext" data-uid="Gtk.Accessible.GetAtContext">GetAtContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+ATContext GetAtContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.ATContext.html">ATContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_Accessible_GetBounds_" data-uid="Gtk.Accessible.GetBounds*"></a>
+  <h4 id="Gtk_Accessible_GetBounds_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="Gtk.Accessible.GetBounds(System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetBounds(out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+bool GetBounds(out int x, out int y, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_Accessible_GetFirstAccessibleChild_" data-uid="Gtk.Accessible.GetFirstAccessibleChild*"></a>
+  <h4 id="Gtk_Accessible_GetFirstAccessibleChild" data-uid="Gtk.Accessible.GetFirstAccessibleChild">GetFirstAccessibleChild()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+Accessible? GetFirstAccessibleChild()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_Accessible_GetNextAccessibleSibling_" data-uid="Gtk.Accessible.GetNextAccessibleSibling*"></a>
+  <h4 id="Gtk_Accessible_GetNextAccessibleSibling" data-uid="Gtk.Accessible.GetNextAccessibleSibling">GetNextAccessibleSibling()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+Accessible? GetNextAccessibleSibling()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_Accessible_GetPlatformState_" data-uid="Gtk.Accessible.GetPlatformState*"></a>
+  <h4 id="Gtk_Accessible_GetPlatformState_Gtk_AccessiblePlatformState_" data-uid="Gtk.Accessible.GetPlatformState(Gtk.AccessiblePlatformState)">GetPlatformState(AccessiblePlatformState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+bool GetPlatformState(AccessiblePlatformState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessiblePlatformState.html">AccessiblePlatformState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Gtk_Accessible_ResetProperty_" data-uid="Gtk.Accessible.ResetProperty*"></a>
   <h4 id="Gtk_Accessible_ResetProperty_Gtk_AccessibleProperty_" data-uid="Gtk.Accessible.ResetProperty(Gtk.AccessibleProperty)">ResetProperty(AccessibleProperty)</h4>
   <div class="markdown level1 summary"></div>
@@ -169,7 +363,7 @@
     <pre><code class="lang-csharp hljs">void ResetProperty(AccessibleProperty property)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -194,7 +388,7 @@
     <pre><code class="lang-csharp hljs">void ResetRelation(AccessibleRelation relation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -219,7 +413,7 @@
     <pre><code class="lang-csharp hljs">void ResetState(AccessibleState state)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -235,6 +429,64 @@
       </tr>
     </tbody>
   </table>
+  <a id="Gtk_Accessible_SetAccessibleParent_" data-uid="Gtk.Accessible.SetAccessibleParent*"></a>
+  <h4 id="Gtk_Accessible_SetAccessibleParent_Gtk_Accessible_Gtk_Accessible_" data-uid="Gtk.Accessible.SetAccessibleParent(Gtk.Accessible,Gtk.Accessible)">SetAccessibleParent(Accessible?, Accessible?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+void SetAccessibleParent(Accessible? parent, Accessible? nextSibling)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">nextSibling</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_Accessible_UpdateNextAccessibleSibling_" data-uid="Gtk.Accessible.UpdateNextAccessibleSibling*"></a>
+  <h4 id="Gtk_Accessible_UpdateNextAccessibleSibling_Gtk_Accessible_" data-uid="Gtk.Accessible.UpdateNextAccessibleSibling(Gtk.Accessible)">UpdateNextAccessibleSibling(Accessible?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+void UpdateNextAccessibleSibling(Accessible? newSibling)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">newSibling</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
 </article>
           </div>
 
@@ -263,7 +515,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

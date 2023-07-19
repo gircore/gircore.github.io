@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,6 +70,7 @@
             <article class="content wrap" id="_content" data-uid="Gio.File">
 
 
+
   <h1 id="Gio_File" data-uid="Gio.File" class="text-break">Interface File
 </h1>
   <div class="markdown level0 summary"></div>
@@ -88,6 +89,535 @@
   </div>
   <h3 id="methods">Methods
 </h3>
+  <a id="Gio_File_AppendTo_" data-uid="Gio.File.AppendTo*"></a>
+  <h4 id="Gio_File_AppendTo_Gio_FileCreateFlags_Gio_Cancellable_" data-uid="Gio.File.AppendTo(Gio.FileCreateFlags,Gio.Cancellable)">AppendTo(FileCreateFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileOutputStream AppendTo(FileCreateFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileCreateFlags.html">FileCreateFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileOutputStream.html">FileOutputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_AppendToFinish_" data-uid="Gio.File.AppendToFinish*"></a>
+  <h4 id="Gio_File_AppendToFinish_Gio_AsyncResult_" data-uid="Gio.File.AppendToFinish(Gio.AsyncResult)">AppendToFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileOutputStream AppendToFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileOutputStream.html">FileOutputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_BuildAttributeListForCopy_" data-uid="Gio.File.BuildAttributeListForCopy*"></a>
+  <h4 id="Gio_File_BuildAttributeListForCopy_Gio_FileCopyFlags_Gio_Cancellable_" data-uid="Gio.File.BuildAttributeListForCopy(Gio.FileCopyFlags,Gio.Cancellable)">BuildAttributeListForCopy(FileCopyFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.68&quot;)]
+string BuildAttributeListForCopy(FileCopyFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileCopyFlags.html">FileCopyFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Copy_" data-uid="Gio.File.Copy*"></a>
+  <h4 id="Gio_File_Copy_Gio_File_Gio_FileCopyFlags_Gio_Cancellable_Gio_FileProgressCallback_" data-uid="Gio.File.Copy(Gio.File,Gio.FileCopyFlags,Gio.Cancellable,Gio.FileProgressCallback)">Copy(File, FileCopyFlags, Cancellable?, FileProgressCallback?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Copy(File destination, FileCopyFlags flags, Cancellable? cancellable, FileProgressCallback? progressCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileCopyFlags.html">FileCopyFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileProgressCallback.html">FileProgressCallback</a></td>
+        <td><span class="parametername">progressCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_CopyAttributes_" data-uid="Gio.File.CopyAttributes*"></a>
+  <h4 id="Gio_File_CopyAttributes_Gio_File_Gio_FileCopyFlags_Gio_Cancellable_" data-uid="Gio.File.CopyAttributes(Gio.File,Gio.FileCopyFlags,Gio.Cancellable)">CopyAttributes(File, FileCopyFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CopyAttributes(File destination, FileCopyFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileCopyFlags.html">FileCopyFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_CopyFinish_" data-uid="Gio.File.CopyFinish*"></a>
+  <h4 id="Gio_File_CopyFinish_Gio_AsyncResult_" data-uid="Gio.File.CopyFinish(Gio.AsyncResult)">CopyFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CopyFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Create_" data-uid="Gio.File.Create*"></a>
+  <h4 id="Gio_File_Create_Gio_FileCreateFlags_Gio_Cancellable_" data-uid="Gio.File.Create(Gio.FileCreateFlags,Gio.Cancellable)">Create(FileCreateFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileOutputStream Create(FileCreateFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileCreateFlags.html">FileCreateFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileOutputStream.html">FileOutputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_CreateFinish_" data-uid="Gio.File.CreateFinish*"></a>
+  <h4 id="Gio_File_CreateFinish_Gio_AsyncResult_" data-uid="Gio.File.CreateFinish(Gio.AsyncResult)">CreateFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileOutputStream CreateFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileOutputStream.html">FileOutputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_CreateReadwrite_" data-uid="Gio.File.CreateReadwrite*"></a>
+  <h4 id="Gio_File_CreateReadwrite_Gio_FileCreateFlags_Gio_Cancellable_" data-uid="Gio.File.CreateReadwrite(Gio.FileCreateFlags,Gio.Cancellable)">CreateReadwrite(FileCreateFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+FileIOStream CreateReadwrite(FileCreateFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileCreateFlags.html">FileCreateFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileIOStream.html">FileIOStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_CreateReadwriteFinish_" data-uid="Gio.File.CreateReadwriteFinish*"></a>
+  <h4 id="Gio_File_CreateReadwriteFinish_Gio_AsyncResult_" data-uid="Gio.File.CreateReadwriteFinish(Gio.AsyncResult)">CreateReadwriteFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+FileIOStream CreateReadwriteFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileIOStream.html">FileIOStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Delete_" data-uid="Gio.File.Delete*"></a>
+  <h4 id="Gio_File_Delete_Gio_Cancellable_" data-uid="Gio.File.Delete(Gio.Cancellable)">Delete(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Delete(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_DeleteFinish_" data-uid="Gio.File.DeleteFinish*"></a>
+  <h4 id="Gio_File_DeleteFinish_Gio_AsyncResult_" data-uid="Gio.File.DeleteFinish(Gio.AsyncResult)">DeleteFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
+bool DeleteFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Gio_File_Dup_" data-uid="Gio.File.Dup*"></a>
   <h4 id="Gio_File_Dup" data-uid="Gio.File.Dup">Dup()</h4>
   <div class="markdown level1 summary"></div>
@@ -97,7 +627,7 @@
     <pre><code class="lang-csharp hljs">File Dup()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -111,6 +641,177 @@
       </tr>
     </tbody>
   </table>
+  <a id="Gio_File_EjectMountableFinish_" data-uid="Gio.File.EjectMountableFinish*"></a>
+  <h4 id="Gio_File_EjectMountableFinish_Gio_AsyncResult_" data-uid="Gio.File.EjectMountableFinish(Gio.AsyncResult)">EjectMountableFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool EjectMountableFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_EjectMountableWithOperationFinish_" data-uid="Gio.File.EjectMountableWithOperationFinish*"></a>
+  <h4 id="Gio_File_EjectMountableWithOperationFinish_Gio_AsyncResult_" data-uid="Gio.File.EjectMountableWithOperationFinish(Gio.AsyncResult)">EjectMountableWithOperationFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+bool EjectMountableWithOperationFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_EnumerateChildren_" data-uid="Gio.File.EnumerateChildren*"></a>
+  <h4 id="Gio_File_EnumerateChildren_System_String_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.EnumerateChildren(System.String,Gio.FileQueryInfoFlags,Gio.Cancellable)">EnumerateChildren(string, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileEnumerator EnumerateChildren(string attributes, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileEnumerator.html">FileEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_EnumerateChildrenFinish_" data-uid="Gio.File.EnumerateChildrenFinish*"></a>
+  <h4 id="Gio_File_EnumerateChildrenFinish_Gio_AsyncResult_" data-uid="Gio.File.EnumerateChildrenFinish(Gio.AsyncResult)">EnumerateChildrenFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileEnumerator EnumerateChildrenFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileEnumerator.html">FileEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Gio_File_Equal_" data-uid="Gio.File.Equal*"></a>
   <h4 id="Gio_File_Equal_Gio_File_" data-uid="Gio.File.Equal(Gio.File)">Equal(File)</h4>
   <div class="markdown level1 summary"></div>
@@ -120,7 +821,7 @@
     <pre><code class="lang-csharp hljs">bool Equal(File file2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -137,7 +838,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -146,7 +847,87 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_FindEnclosingMount_" data-uid="Gio.File.FindEnclosingMount*"></a>
+  <h4 id="Gio_File_FindEnclosingMount_Gio_Cancellable_" data-uid="Gio.File.FindEnclosingMount(Gio.Cancellable)">FindEnclosingMount(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Mount FindEnclosingMount(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Mount.html">Mount</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_FindEnclosingMountFinish_" data-uid="Gio.File.FindEnclosingMountFinish*"></a>
+  <h4 id="Gio_File_FindEnclosingMountFinish_Gio_AsyncResult_" data-uid="Gio.File.FindEnclosingMountFinish(Gio.AsyncResult)">FindEnclosingMountFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Mount FindEnclosingMountFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Mount.html">Mount</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -160,7 +941,7 @@
     <pre><code class="lang-csharp hljs">string? GetBasename()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -169,7 +950,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -183,7 +964,7 @@
     <pre><code class="lang-csharp hljs">File GetChild(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -193,14 +974,54 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_GetChildForDisplayName_" data-uid="Gio.File.GetChildForDisplayName*"></a>
+  <h4 id="Gio_File_GetChildForDisplayName_System_String_" data-uid="Gio.File.GetChildForDisplayName(System.String)">GetChildForDisplayName(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">File GetChildForDisplayName(string displayName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">displayName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -223,7 +1044,7 @@
     <pre><code class="lang-csharp hljs">File? GetParent()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -246,7 +1067,7 @@
     <pre><code class="lang-csharp hljs">string GetParseName()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -255,7 +1076,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -269,7 +1090,7 @@
     <pre><code class="lang-csharp hljs">string? GetPath()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -278,7 +1099,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -292,7 +1113,7 @@
     <pre><code class="lang-csharp hljs">string? GetRelativePath(File descendant)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -309,7 +1130,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -318,7 +1139,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -332,7 +1153,7 @@
     <pre><code class="lang-csharp hljs">string GetUri()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -341,7 +1162,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -355,7 +1176,7 @@
     <pre><code class="lang-csharp hljs">string? GetUriScheme()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -364,30 +1185,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Gio_File_Hash_" data-uid="Gio.File.Hash*"></a>
-  <h4 id="Gio_File_Hash" data-uid="Gio.File.Hash">Hash()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">uint Hash()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -402,7 +1200,7 @@
 bool HasParent(File? parent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -419,7 +1217,7 @@ bool HasParent(File? parent)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -428,7 +1226,7 @@ bool HasParent(File? parent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -442,7 +1240,7 @@ bool HasParent(File? parent)</code></pre>
     <pre><code class="lang-csharp hljs">bool HasPrefix(File prefix)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -459,7 +1257,7 @@ bool HasParent(File? parent)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -468,7 +1266,7 @@ bool HasParent(File? parent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -482,7 +1280,7 @@ bool HasParent(File? parent)</code></pre>
     <pre><code class="lang-csharp hljs">bool HasUriScheme(string uriScheme)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -492,14 +1290,14 @@ bool HasParent(File? parent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">uriScheme</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -508,7 +1306,30 @@ bool HasParent(File? parent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Hash_" data-uid="Gio.File.Hash*"></a>
+  <h4 id="Gio_File_Hash" data-uid="Gio.File.Hash">Hash()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint Hash()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -522,7 +1343,7 @@ bool HasParent(File? parent)</code></pre>
     <pre><code class="lang-csharp hljs">bool IsNative()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -531,22 +1352,44 @@ bool HasParent(File? parent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Gio_File_PeekPath_" data-uid="Gio.File.PeekPath*"></a>
-  <h4 id="Gio_File_PeekPath" data-uid="Gio.File.PeekPath">PeekPath()</h4>
+  <a id="Gio_File_LoadBytes_" data-uid="Gio.File.LoadBytes*"></a>
+  <h4 id="Gio_File_LoadBytes_Gio_Cancellable_System_String__" data-uid="Gio.File.LoadBytes(Gio.Cancellable,System.String@)">LoadBytes(Cancellable?, out string?)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.56&quot;)]
-string? PeekPath()</code></pre>
+Bytes LoadBytes(Cancellable? cancellable, out string? etagOut)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">etagOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -555,21 +1398,67 @@ string? PeekPath()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Bytes.html">Bytes</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Gio_File_QueryExists_" data-uid="Gio.File.QueryExists*"></a>
-  <h4 id="Gio_File_QueryExists_Gio_Cancellable_" data-uid="Gio.File.QueryExists(Gio.Cancellable)">QueryExists(Cancellable?)</h4>
+  <a id="Gio_File_LoadBytesFinish_" data-uid="Gio.File.LoadBytesFinish*"></a>
+  <h4 id="Gio_File_LoadBytesFinish_Gio_AsyncResult_System_String__" data-uid="Gio.File.LoadBytesFinish(Gio.AsyncResult,System.String@)">LoadBytesFinish(AsyncResult, out string?)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool QueryExists(Cancellable? cancellable)</code></pre>
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.56&quot;)]
+Bytes LoadBytesFinish(AsyncResult result, out string? etagOut)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">etagOut</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Bytes.html">Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MakeDirectory_" data-uid="Gio.File.MakeDirectory*"></a>
+  <h4 id="Gio_File_MakeDirectory_Gio_Cancellable_" data-uid="Gio.File.MakeDirectory(Gio.Cancellable)">MakeDirectory(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool MakeDirectory(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -586,7 +1475,7 @@ string? PeekPath()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -595,7 +1484,811 @@ string? PeekPath()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MakeDirectoryFinish_" data-uid="Gio.File.MakeDirectoryFinish*"></a>
+  <h4 id="Gio_File_MakeDirectoryFinish_Gio_AsyncResult_" data-uid="Gio.File.MakeDirectoryFinish(Gio.AsyncResult)">MakeDirectoryFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
+bool MakeDirectoryFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MakeDirectoryWithParents_" data-uid="Gio.File.MakeDirectoryWithParents*"></a>
+  <h4 id="Gio_File_MakeDirectoryWithParents_Gio_Cancellable_" data-uid="Gio.File.MakeDirectoryWithParents(Gio.Cancellable)">MakeDirectoryWithParents(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.18&quot;)]
+bool MakeDirectoryWithParents(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MakeSymbolicLink_" data-uid="Gio.File.MakeSymbolicLink*"></a>
+  <h4 id="Gio_File_MakeSymbolicLink_System_String_Gio_Cancellable_" data-uid="Gio.File.MakeSymbolicLink(System.String,Gio.Cancellable)">MakeSymbolicLink(string, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool MakeSymbolicLink(string symlinkValue, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">symlinkValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MakeSymbolicLinkFinish_" data-uid="Gio.File.MakeSymbolicLinkFinish*"></a>
+  <h4 id="Gio_File_MakeSymbolicLinkFinish_Gio_AsyncResult_" data-uid="Gio.File.MakeSymbolicLinkFinish(Gio.AsyncResult)">MakeSymbolicLinkFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.74&quot;)]
+bool MakeSymbolicLinkFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MeasureDiskUsageFinish_" data-uid="Gio.File.MeasureDiskUsageFinish*"></a>
+  <h4 id="Gio_File_MeasureDiskUsageFinish_Gio_AsyncResult_System_UInt64__System_UInt64__System_UInt64__" data-uid="Gio.File.MeasureDiskUsageFinish(Gio.AsyncResult,System.UInt64@,System.UInt64@,System.UInt64@)">MeasureDiskUsageFinish(AsyncResult, out ulong, out ulong, out ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
+bool MeasureDiskUsageFinish(AsyncResult result, out ulong diskUsage, out ulong numDirs, out ulong numFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">diskUsage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">numDirs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">numFiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Monitor_" data-uid="Gio.File.Monitor*"></a>
+  <h4 id="Gio_File_Monitor_Gio_FileMonitorFlags_Gio_Cancellable_" data-uid="Gio.File.Monitor(Gio.FileMonitorFlags,Gio.Cancellable)">Monitor(FileMonitorFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.18&quot;)]
+FileMonitor Monitor(FileMonitorFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileMonitorFlags.html">FileMonitorFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileMonitor.html">FileMonitor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MonitorDirectory_" data-uid="Gio.File.MonitorDirectory*"></a>
+  <h4 id="Gio_File_MonitorDirectory_Gio_FileMonitorFlags_Gio_Cancellable_" data-uid="Gio.File.MonitorDirectory(Gio.FileMonitorFlags,Gio.Cancellable)">MonitorDirectory(FileMonitorFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileMonitor MonitorDirectory(FileMonitorFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileMonitorFlags.html">FileMonitorFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileMonitor.html">FileMonitor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MonitorFile_" data-uid="Gio.File.MonitorFile*"></a>
+  <h4 id="Gio_File_MonitorFile_Gio_FileMonitorFlags_Gio_Cancellable_" data-uid="Gio.File.MonitorFile(Gio.FileMonitorFlags,Gio.Cancellable)">MonitorFile(FileMonitorFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileMonitor MonitorFile(FileMonitorFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileMonitorFlags.html">FileMonitorFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileMonitor.html">FileMonitor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MountEnclosingVolumeFinish_" data-uid="Gio.File.MountEnclosingVolumeFinish*"></a>
+  <h4 id="Gio_File_MountEnclosingVolumeFinish_Gio_AsyncResult_" data-uid="Gio.File.MountEnclosingVolumeFinish(Gio.AsyncResult)">MountEnclosingVolumeFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool MountEnclosingVolumeFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MountMountableFinish_" data-uid="Gio.File.MountMountableFinish*"></a>
+  <h4 id="Gio_File_MountMountableFinish_Gio_AsyncResult_" data-uid="Gio.File.MountMountableFinish(Gio.AsyncResult)">MountMountableFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">File MountMountableFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Move_" data-uid="Gio.File.Move*"></a>
+  <h4 id="Gio_File_Move_Gio_File_Gio_FileCopyFlags_Gio_Cancellable_Gio_FileProgressCallback_" data-uid="Gio.File.Move(Gio.File,Gio.FileCopyFlags,Gio.Cancellable,Gio.FileProgressCallback)">Move(File, FileCopyFlags, Cancellable?, FileProgressCallback?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Move(File destination, FileCopyFlags flags, Cancellable? cancellable, FileProgressCallback? progressCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileCopyFlags.html">FileCopyFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileProgressCallback.html">FileProgressCallback</a></td>
+        <td><span class="parametername">progressCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_MoveFinish_" data-uid="Gio.File.MoveFinish*"></a>
+  <h4 id="Gio_File_MoveFinish_Gio_AsyncResult_" data-uid="Gio.File.MoveFinish(Gio.AsyncResult)">MoveFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.72&quot;)]
+bool MoveFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_OpenReadwrite_" data-uid="Gio.File.OpenReadwrite*"></a>
+  <h4 id="Gio_File_OpenReadwrite_Gio_Cancellable_" data-uid="Gio.File.OpenReadwrite(Gio.Cancellable)">OpenReadwrite(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+FileIOStream OpenReadwrite(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileIOStream.html">FileIOStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_OpenReadwriteFinish_" data-uid="Gio.File.OpenReadwriteFinish*"></a>
+  <h4 id="Gio_File_OpenReadwriteFinish_Gio_AsyncResult_" data-uid="Gio.File.OpenReadwriteFinish(Gio.AsyncResult)">OpenReadwriteFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+FileIOStream OpenReadwriteFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileIOStream.html">FileIOStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_PeekPath_" data-uid="Gio.File.PeekPath*"></a>
+  <h4 id="Gio_File_PeekPath" data-uid="Gio.File.PeekPath">PeekPath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.56&quot;)]
+string? PeekPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_PollMountableFinish_" data-uid="Gio.File.PollMountableFinish*"></a>
+  <h4 id="Gio_File_PollMountableFinish_Gio_AsyncResult_" data-uid="Gio.File.PollMountableFinish(Gio.AsyncResult)">PollMountableFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+bool PollMountableFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryDefaultHandler_" data-uid="Gio.File.QueryDefaultHandler*"></a>
+  <h4 id="Gio_File_QueryDefaultHandler_Gio_Cancellable_" data-uid="Gio.File.QueryDefaultHandler(Gio.Cancellable)">QueryDefaultHandler(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AppInfo QueryDefaultHandler(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AppInfo.html">AppInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryDefaultHandlerFinish_" data-uid="Gio.File.QueryDefaultHandlerFinish*"></a>
+  <h4 id="Gio_File_QueryDefaultHandlerFinish_Gio_AsyncResult_" data-uid="Gio.File.QueryDefaultHandlerFinish(Gio.AsyncResult)">QueryDefaultHandlerFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.60&quot;)]
+AppInfo QueryDefaultHandlerFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AppInfo.html">AppInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryExists_" data-uid="Gio.File.QueryExists*"></a>
+  <h4 id="Gio_File_QueryExists_Gio_Cancellable_" data-uid="Gio.File.QueryExists(Gio.Cancellable)">QueryExists(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool QueryExists(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -610,7 +2303,7 @@ string? PeekPath()</code></pre>
 FileType QueryFileType(FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -632,7 +2325,7 @@ FileType QueryFileType(FileQueryInfoFlags flags, Cancellable? cancellable)</code
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -646,16 +2339,16 @@ FileType QueryFileType(FileQueryInfoFlags flags, Cancellable? cancellable)</code
       </tr>
     </tbody>
   </table>
-  <a id="Gio_File_ResolveRelativePath_" data-uid="Gio.File.ResolveRelativePath*"></a>
-  <h4 id="Gio_File_ResolveRelativePath_System_String_" data-uid="Gio.File.ResolveRelativePath(System.String)">ResolveRelativePath(string)</h4>
+  <a id="Gio_File_QueryFilesystemInfo_" data-uid="Gio.File.QueryFilesystemInfo*"></a>
+  <h4 id="Gio_File_QueryFilesystemInfo_System_String_Gio_Cancellable_" data-uid="Gio.File.QueryFilesystemInfo(System.String,Gio.Cancellable)">QueryFilesystemInfo(string, Cancellable?)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">File ResolveRelativePath(string relativePath)</code></pre>
+    <pre><code class="lang-csharp hljs">FileInfo QueryFilesystemInfo(string attributes, Cancellable? cancellable)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -665,14 +2358,586 @@ FileType QueryFileType(FileQueryInfoFlags flags, Cancellable? cancellable)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInfo.html">FileInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryFilesystemInfoFinish_" data-uid="Gio.File.QueryFilesystemInfoFinish*"></a>
+  <h4 id="Gio_File_QueryFilesystemInfoFinish_Gio_AsyncResult_" data-uid="Gio.File.QueryFilesystemInfoFinish(Gio.AsyncResult)">QueryFilesystemInfoFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileInfo QueryFilesystemInfoFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInfo.html">FileInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryInfo_" data-uid="Gio.File.QueryInfo*"></a>
+  <h4 id="Gio_File_QueryInfo_System_String_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.QueryInfo(System.String,Gio.FileQueryInfoFlags,Gio.Cancellable)">QueryInfo(string, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileInfo QueryInfo(string attributes, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInfo.html">FileInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryInfoFinish_" data-uid="Gio.File.QueryInfoFinish*"></a>
+  <h4 id="Gio_File_QueryInfoFinish_Gio_AsyncResult_" data-uid="Gio.File.QueryInfoFinish(Gio.AsyncResult)">QueryInfoFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileInfo QueryInfoFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInfo.html">FileInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QuerySettableAttributes_" data-uid="Gio.File.QuerySettableAttributes*"></a>
+  <h4 id="Gio_File_QuerySettableAttributes_Gio_Cancellable_" data-uid="Gio.File.QuerySettableAttributes(Gio.Cancellable)">QuerySettableAttributes(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileAttributeInfoList QuerySettableAttributes(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeInfoList.html">FileAttributeInfoList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_QueryWritableNamespaces_" data-uid="Gio.File.QueryWritableNamespaces*"></a>
+  <h4 id="Gio_File_QueryWritableNamespaces_Gio_Cancellable_" data-uid="Gio.File.QueryWritableNamespaces(Gio.Cancellable)">QueryWritableNamespaces(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileAttributeInfoList QueryWritableNamespaces(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeInfoList.html">FileAttributeInfoList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Read_" data-uid="Gio.File.Read*"></a>
+  <h4 id="Gio_File_Read_Gio_Cancellable_" data-uid="Gio.File.Read(Gio.Cancellable)">Read(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileInputStream Read(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInputStream.html">FileInputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_ReadFinish_" data-uid="Gio.File.ReadFinish*"></a>
+  <h4 id="Gio_File_ReadFinish_Gio_AsyncResult_" data-uid="Gio.File.ReadFinish(Gio.AsyncResult)">ReadFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileInputStream ReadFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInputStream.html">FileInputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_Replace_" data-uid="Gio.File.Replace*"></a>
+  <h4 id="Gio_File_Replace_System_String_System_Boolean_Gio_FileCreateFlags_Gio_Cancellable_" data-uid="Gio.File.Replace(System.String,System.Boolean,Gio.FileCreateFlags,Gio.Cancellable)">Replace(string?, bool, FileCreateFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileOutputStream Replace(string? etag, bool makeBackup, FileCreateFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">etag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">makeBackup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileCreateFlags.html">FileCreateFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileOutputStream.html">FileOutputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_ReplaceContentsFinish_" data-uid="Gio.File.ReplaceContentsFinish*"></a>
+  <h4 id="Gio_File_ReplaceContentsFinish_Gio_AsyncResult_System_String__" data-uid="Gio.File.ReplaceContentsFinish(Gio.AsyncResult,System.String@)">ReplaceContentsFinish(AsyncResult, out string?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ReplaceContentsFinish(AsyncResult res, out string? newEtag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">newEtag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_ReplaceFinish_" data-uid="Gio.File.ReplaceFinish*"></a>
+  <h4 id="Gio_File_ReplaceFinish_Gio_AsyncResult_" data-uid="Gio.File.ReplaceFinish(Gio.AsyncResult)">ReplaceFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileOutputStream ReplaceFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileOutputStream.html">FileOutputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_ReplaceReadwrite_" data-uid="Gio.File.ReplaceReadwrite*"></a>
+  <h4 id="Gio_File_ReplaceReadwrite_System_String_System_Boolean_Gio_FileCreateFlags_Gio_Cancellable_" data-uid="Gio.File.ReplaceReadwrite(System.String,System.Boolean,Gio.FileCreateFlags,Gio.Cancellable)">ReplaceReadwrite(string?, bool, FileCreateFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+FileIOStream ReplaceReadwrite(string? etag, bool makeBackup, FileCreateFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">etag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">makeBackup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileCreateFlags.html">FileCreateFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileIOStream.html">FileIOStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_ReplaceReadwriteFinish_" data-uid="Gio.File.ReplaceReadwriteFinish*"></a>
+  <h4 id="Gio_File_ReplaceReadwriteFinish_Gio_AsyncResult_" data-uid="Gio.File.ReplaceReadwriteFinish(Gio.AsyncResult)">ReplaceReadwriteFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+FileIOStream ReplaceReadwriteFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileIOStream.html">FileIOStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_ResolveRelativePath_" data-uid="Gio.File.ResolveRelativePath*"></a>
+  <h4 id="Gio_File_ResolveRelativePath_System_String_" data-uid="Gio.File.ResolveRelativePath(System.String)">ResolveRelativePath(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">File ResolveRelativePath(string relativePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">relativePath</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -682,6 +2947,613 @@ FileType QueryFileType(FileQueryInfoFlags flags, Cancellable? cancellable)</code
     <tbody>
       <tr>
         <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttribute_" data-uid="Gio.File.SetAttribute*"></a>
+  <h4 id="Gio_File_SetAttribute_System_String_Gio_FileAttributeType_System_IntPtr_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttribute(System.String,Gio.FileAttributeType,System.IntPtr,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttribute(string, FileAttributeType, nint, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttribute(string attribute, FileAttributeType type, nint valueP, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileAttributeType.html">FileAttributeType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">valueP</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributeByteString_" data-uid="Gio.File.SetAttributeByteString*"></a>
+  <h4 id="Gio_File_SetAttributeByteString_System_String_System_String_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributeByteString(System.String,System.String,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributeByteString(string, string, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributeByteString(string attribute, string value, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributeInt32_" data-uid="Gio.File.SetAttributeInt32*"></a>
+  <h4 id="Gio_File_SetAttributeInt32_System_String_System_Int32_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributeInt32(System.String,System.Int32,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributeInt32(string, int, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributeInt32(string attribute, int value, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributeInt64_" data-uid="Gio.File.SetAttributeInt64*"></a>
+  <h4 id="Gio_File_SetAttributeInt64_System_String_System_Int64_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributeInt64(System.String,System.Int64,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributeInt64(string, long, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributeInt64(string attribute, long value, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributeString_" data-uid="Gio.File.SetAttributeString*"></a>
+  <h4 id="Gio_File_SetAttributeString_System_String_System_String_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributeString(System.String,System.String,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributeString(string, string, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributeString(string attribute, string value, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributeUint32_" data-uid="Gio.File.SetAttributeUint32*"></a>
+  <h4 id="Gio_File_SetAttributeUint32_System_String_System_UInt32_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributeUint32(System.String,System.UInt32,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributeUint32(string, uint, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributeUint32(string attribute, uint value, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributeUint64_" data-uid="Gio.File.SetAttributeUint64*"></a>
+  <h4 id="Gio_File_SetAttributeUint64_System_String_System_UInt64_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributeUint64(System.String,System.UInt64,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributeUint64(string, ulong, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributeUint64(string attribute, ulong value, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">attribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetAttributesFromInfo_" data-uid="Gio.File.SetAttributesFromInfo*"></a>
+  <h4 id="Gio_File_SetAttributesFromInfo_Gio_FileInfo_Gio_FileQueryInfoFlags_Gio_Cancellable_" data-uid="Gio.File.SetAttributesFromInfo(Gio.FileInfo,Gio.FileQueryInfoFlags,Gio.Cancellable)">SetAttributesFromInfo(FileInfo, FileQueryInfoFlags, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetAttributesFromInfo(FileInfo info, FileQueryInfoFlags flags, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.FileInfo.html">FileInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.FileQueryInfoFlags.html">FileQueryInfoFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetDisplayName_" data-uid="Gio.File.SetDisplayName*"></a>
+  <h4 id="Gio_File_SetDisplayName_System_String_Gio_Cancellable_" data-uid="Gio.File.SetDisplayName(System.String,Gio.Cancellable)">SetDisplayName(string, Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">File SetDisplayName(string displayName, Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">displayName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_SetDisplayNameFinish_" data-uid="Gio.File.SetDisplayNameFinish*"></a>
+  <h4 id="Gio_File_SetDisplayNameFinish_Gio_AsyncResult_" data-uid="Gio.File.SetDisplayNameFinish(Gio.AsyncResult)">SetDisplayNameFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">File SetDisplayNameFinish(AsyncResult res)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">res</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.File.html">File</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_StartMountableFinish_" data-uid="Gio.File.StartMountableFinish*"></a>
+  <h4 id="Gio_File_StartMountableFinish_Gio_AsyncResult_" data-uid="Gio.File.StartMountableFinish(Gio.AsyncResult)">StartMountableFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+bool StartMountableFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_StopMountableFinish_" data-uid="Gio.File.StopMountableFinish*"></a>
+  <h4 id="Gio_File_StopMountableFinish_Gio_AsyncResult_" data-uid="Gio.File.StopMountableFinish(Gio.AsyncResult)">StopMountableFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+bool StopMountableFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -696,7 +3568,7 @@ FileType QueryFileType(FileQueryInfoFlags flags, Cancellable? cancellable)</code
 bool SupportsThreadContexts()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -705,11 +3577,174 @@ bool SupportsThreadContexts()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <a id="Gio_File_Trash_" data-uid="Gio.File.Trash*"></a>
+  <h4 id="Gio_File_Trash_Gio_Cancellable_" data-uid="Gio.File.Trash(Gio.Cancellable)">Trash(Cancellable?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Trash(Cancellable? cancellable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.Cancellable.html">Cancellable</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_TrashFinish_" data-uid="Gio.File.TrashFinish*"></a>
+  <h4 id="Gio_File_TrashFinish_Gio_AsyncResult_" data-uid="Gio.File.TrashFinish(Gio.AsyncResult)">TrashFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
+bool TrashFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_UnmountMountableFinish_" data-uid="Gio.File.UnmountMountableFinish*"></a>
+  <h4 id="Gio_File_UnmountMountableFinish_Gio_AsyncResult_" data-uid="Gio.File.UnmountMountableFinish(Gio.AsyncResult)">UnmountMountableFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UnmountMountableFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gio_File_UnmountMountableWithOperationFinish_" data-uid="Gio.File.UnmountMountableWithOperationFinish*"></a>
+  <h4 id="Gio_File_UnmountMountableWithOperationFinish_Gio_AsyncResult_" data-uid="Gio.File.UnmountMountableWithOperationFinish(Gio.AsyncResult)">UnmountMountableWithOperationFinish(AsyncResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+bool UnmountMountableWithOperationFinish(AsyncResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gio.AsyncResult.html">AsyncResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
 </article>
           </div>
 
@@ -738,7 +3773,7 @@ bool SupportsThreadContexts()</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GObject.Internal.Object">
 
 
+
   <h1 id="GObject_Internal_Object" data-uid="GObject.Internal.Object" class="text-break">Class Object
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Object</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a>.<a class="xref" href="GObject.Internal.html">Internal</a></h6>
@@ -123,7 +124,7 @@ Version: 2.8</p>
 public static extern void AddToggleRef(nint @object, ToggleNotify notify, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,7 +134,7 @@ public static extern void AddToggleRef(nint @object, ToggleNotify notify, nint d
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -144,7 +145,7 @@ public static extern void AddToggleRef(nint @object, ToggleNotify notify, nint d
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -152,16 +153,16 @@ public static extern void AddToggleRef(nint @object, ToggleNotify notify, nint d
     </tbody>
   </table>
   <a id="GObject_Internal_Object_AddWeakPointer_" data-uid="GObject.Internal.Object.AddWeakPointer*"></a>
-  <h4 id="GObject_Internal_Object_AddWeakPointer_System_IntPtr_System_IntPtr_" data-uid="GObject.Internal.Object.AddWeakPointer(System.IntPtr,System.IntPtr)">AddWeakPointer(nint, nint)</h4>
+  <h4 id="GObject_Internal_Object_AddWeakPointer_System_IntPtr_System_IntPtr__" data-uid="GObject.Internal.Object.AddWeakPointer(System.IntPtr,System.IntPtr@)">AddWeakPointer(nint, ref nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_add_weak_pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void AddWeakPointer(nint @object, nint weakPointerLocation)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void AddWeakPointer(nint @object, ref nint weakPointerLocation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -171,12 +172,12 @@ public static extern void AddToggleRef(nint @object, ToggleNotify notify, nint d
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">weakPointerLocation</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -184,7 +185,7 @@ public static extern void AddToggleRef(nint @object, ToggleNotify notify, nint d
     </tbody>
   </table>
   <a id="GObject_Internal_Object_BindProperty_" data-uid="GObject.Internal.Object.BindProperty*"></a>
-  <h4 id="GObject_Internal_Object_BindProperty_System_IntPtr_System_String_System_IntPtr_System_String_GObject_BindingFlags_" data-uid="GObject.Internal.Object.BindProperty(System.IntPtr,System.String,System.IntPtr,System.String,GObject.BindingFlags)">BindProperty(nint, string, nint, string, BindingFlags)</h4>
+  <h4 id="GObject_Internal_Object_BindProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GObject_BindingFlags_" data-uid="GObject.Internal.Object.BindProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GObject.BindingFlags)">BindProperty(nint, NonNullableUtf8StringHandle, nint, NonNullableUtf8StringHandle, BindingFlags)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_bind_property.
 Version: 2.26</p>
 </div>
@@ -192,10 +193,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint BindProperty(nint source, string sourceProperty, nint target, string targetProperty, BindingFlags flags)</code></pre>
+public static extern nint BindProperty(nint source, NonNullableUtf8StringHandle sourceProperty, nint target, NonNullableUtf8StringHandle targetProperty, BindingFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -205,24 +206,24 @@ public static extern nint BindProperty(nint source, string sourceProperty, nint 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">source</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">sourceProperty</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">target</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">targetProperty</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -236,7 +237,7 @@ public static extern nint BindProperty(nint source, string sourceProperty, nint 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -245,14 +246,14 @@ public static extern nint BindProperty(nint source, string sourceProperty, nint 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_BindPropertyFull_" data-uid="GObject.Internal.Object.BindPropertyFull*"></a>
-  <h4 id="GObject_Internal_Object_BindPropertyFull_System_IntPtr_System_String_System_IntPtr_System_String_GObject_BindingFlags_GObject_Internal_BindingTransformFunc_GObject_Internal_BindingTransformFunc_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.BindPropertyFull(System.IntPtr,System.String,System.IntPtr,System.String,GObject.BindingFlags,GObject.Internal.BindingTransformFunc,GObject.Internal.BindingTransformFunc,System.IntPtr,GLib.Internal.DestroyNotify)">BindPropertyFull(nint, string, nint, string, BindingFlags, BindingTransformFunc, BindingTransformFunc, nint, DestroyNotify)</h4>
+  <h4 id="GObject_Internal_Object_BindPropertyFull_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GObject_BindingFlags_GObject_Internal_BindingTransformFunc_GObject_Internal_BindingTransformFunc_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.BindPropertyFull(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GObject.BindingFlags,GObject.Internal.BindingTransformFunc,GObject.Internal.BindingTransformFunc,System.IntPtr,GLib.Internal.DestroyNotify)">BindPropertyFull(nint, NonNullableUtf8StringHandle, nint, NonNullableUtf8StringHandle, BindingFlags, BindingTransformFunc, BindingTransformFunc, nint, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_bind_property_full.
 Version: 2.26</p>
 </div>
@@ -260,10 +261,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint BindPropertyFull(nint source, string sourceProperty, nint target, string targetProperty, BindingFlags flags, BindingTransformFunc transformTo, BindingTransformFunc transformFrom, nint userData, DestroyNotify notify)</code></pre>
+public static extern nint BindPropertyFull(nint source, NonNullableUtf8StringHandle sourceProperty, nint target, NonNullableUtf8StringHandle targetProperty, BindingFlags flags, BindingTransformFunc transformTo, BindingTransformFunc transformFrom, nint userData, DestroyNotify notify)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -273,24 +274,24 @@ public static extern nint BindPropertyFull(nint source, string sourceProperty, n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">source</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">sourceProperty</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">target</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">targetProperty</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -314,7 +315,7 @@ public static extern nint BindPropertyFull(nint source, string sourceProperty, n
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -328,7 +329,7 @@ public static extern nint BindPropertyFull(nint source, string sourceProperty, n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -337,14 +338,14 @@ public static extern nint BindPropertyFull(nint source, string sourceProperty, n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="GObject_Internal_Object_BindPropertyWithClosures_" data-uid="GObject.Internal.Object.BindPropertyWithClosures*"></a>
-  <h4 id="GObject_Internal_Object_BindPropertyWithClosures_System_IntPtr_System_String_System_IntPtr_System_String_GObject_BindingFlags_GObject_Internal_ClosureHandle_GObject_Internal_ClosureHandle_" data-uid="GObject.Internal.Object.BindPropertyWithClosures(System.IntPtr,System.String,System.IntPtr,System.String,GObject.BindingFlags,GObject.Internal.ClosureHandle,GObject.Internal.ClosureHandle)">BindPropertyWithClosures(nint, string, nint, string, BindingFlags, ClosureHandle, ClosureHandle)</h4>
+  <a id="GObject_Internal_Object_BindPropertyFull_" data-uid="GObject.Internal.Object.BindPropertyFull*"></a>
+  <h4 id="GObject_Internal_Object_BindPropertyFull_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GObject_BindingFlags_GObject_Internal_ClosureHandle_GObject_Internal_ClosureHandle_" data-uid="GObject.Internal.Object.BindPropertyFull(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GObject.BindingFlags,GObject.Internal.ClosureHandle,GObject.Internal.ClosureHandle)">BindPropertyFull(nint, NonNullableUtf8StringHandle, nint, NonNullableUtf8StringHandle, BindingFlags, ClosureHandle, ClosureHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_bind_property_with_closures.
 Version: 2.26</p>
 </div>
@@ -352,10 +353,10 @@ Version: 2.26</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.26&quot;)]
-public static extern nint BindPropertyWithClosures(nint source, string sourceProperty, nint target, string targetProperty, BindingFlags flags, ClosureHandle transformTo, ClosureHandle transformFrom)</code></pre>
+public static extern nint BindPropertyFull(nint source, NonNullableUtf8StringHandle sourceProperty, nint target, NonNullableUtf8StringHandle targetProperty, BindingFlags flags, ClosureHandle transformTo, ClosureHandle transformFrom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -365,24 +366,24 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">source</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">sourceProperty</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">target</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">targetProperty</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -408,7 +409,7 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -417,7 +418,7 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -433,7 +434,7 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     <pre><code class="lang-csharp hljs">public static extern nuint CompatControl(nuint what, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -443,13 +444,13 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">what</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -457,7 +458,7 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -466,14 +467,14 @@ public static extern nint BindPropertyWithClosures(nint source, string sourcePro
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_DupData_" data-uid="GObject.Internal.Object.DupData*"></a>
-  <h4 id="GObject_Internal_Object_DupData_System_IntPtr_System_String_GLib_Internal_DuplicateFunc_System_IntPtr_" data-uid="GObject.Internal.Object.DupData(System.IntPtr,System.String,GLib.Internal.DuplicateFunc,System.IntPtr)">DupData(nint, string, DuplicateFunc, nint)</h4>
+  <h4 id="GObject_Internal_Object_DupData_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_DuplicateFunc_System_IntPtr_" data-uid="GObject.Internal.Object.DupData(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.DuplicateFunc,System.IntPtr)">DupData(nint, NonNullableUtf8StringHandle, DuplicateFunc, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_dup_data.
 Version: 2.34</p>
 </div>
@@ -481,10 +482,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern nint DupData(nint @object, string key, DuplicateFunc dupFunc, nint userData)</code></pre>
+public static extern nint DupData(nint @object, NonNullableUtf8StringHandle key, DuplicateFunc dupFunc, nint userData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -494,12 +495,12 @@ public static extern nint DupData(nint @object, string key, DuplicateFunc dupFun
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -511,7 +512,7 @@ public static extern nint DupData(nint @object, string key, DuplicateFunc dupFun
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -519,7 +520,7 @@ public static extern nint DupData(nint @object, string key, DuplicateFunc dupFun
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -528,14 +529,14 @@ public static extern nint DupData(nint @object, string key, DuplicateFunc dupFun
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_DupQdata_" data-uid="GObject.Internal.Object.DupQdata*"></a>
-  <h4 id="GObject_Internal_Object_DupQdata_System_IntPtr_System_UInt32_GLib_Internal_DuplicateFunc_System_IntPtr_" data-uid="GObject.Internal.Object.DupQdata(System.IntPtr,System.UInt32,GLib.Internal.DuplicateFunc,System.IntPtr)">DupQdata(nint, uint, DuplicateFunc, nint)</h4>
+  <h4 id="GObject_Internal_Object_DupQdata_System_IntPtr_GLib_Quark_GLib_Internal_DuplicateFunc_System_IntPtr_" data-uid="GObject.Internal.Object.DupQdata(System.IntPtr,GLib.Quark,GLib.Internal.DuplicateFunc,System.IntPtr)">DupQdata(nint, Quark, DuplicateFunc, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_dup_qdata.
 Version: 2.34</p>
 </div>
@@ -543,10 +544,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern nint DupQdata(nint @object, uint quark, DuplicateFunc dupFunc, nint userData)</code></pre>
+public static extern nint DupQdata(nint @object, Quark quark, DuplicateFunc dupFunc, nint userData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -556,12 +557,12 @@ public static extern nint DupQdata(nint @object, uint quark, DuplicateFunc dupFu
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -573,7 +574,7 @@ public static extern nint DupQdata(nint @object, uint quark, DuplicateFunc dupFu
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -581,7 +582,7 @@ public static extern nint DupQdata(nint @object, uint quark, DuplicateFunc dupFu
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -590,7 +591,7 @@ public static extern nint DupQdata(nint @object, uint quark, DuplicateFunc dupFu
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -608,7 +609,7 @@ Version: 2.10</p>
 public static extern void ForceFloating(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -618,7 +619,7 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -634,7 +635,7 @@ public static extern void ForceFloating(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void FreezeNotify(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -644,23 +645,23 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_GetData_" data-uid="GObject.Internal.Object.GetData*"></a>
-  <h4 id="GObject_Internal_Object_GetData_System_IntPtr_System_String_" data-uid="GObject.Internal.Object.GetData(System.IntPtr,System.String)">GetData(nint, string)</h4>
+  <h4 id="GObject_Internal_Object_GetData_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GObject.Internal.Object.GetData(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetData(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_get_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetData(nint @object, string key)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint GetData(nint @object, NonNullableUtf8StringHandle key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -670,12 +671,12 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -683,7 +684,7 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -692,7 +693,7 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -708,7 +709,7 @@ public static extern void ForceFloating(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -717,23 +718,23 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_GetProperty_" data-uid="GObject.Internal.Object.GetProperty*"></a>
-  <h4 id="GObject_Internal_Object_GetProperty_System_IntPtr_System_String_GObject_Internal_ValueHandle_" data-uid="GObject.Internal.Object.GetProperty(System.IntPtr,System.String,GObject.Internal.ValueHandle)">GetProperty(nint, string, ValueHandle)</h4>
+  <h4 id="GObject_Internal_Object_GetProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GObject_Internal_ValueHandle_" data-uid="GObject.Internal.Object.GetProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GObject.Internal.ValueHandle)">GetProperty(nint, NonNullableUtf8StringHandle, ValueHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_get_property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetProperty(nint @object, string propertyName, ValueHandle value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void GetProperty(nint @object, NonNullableUtf8StringHandle propertyName, ValueHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -743,12 +744,12 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -762,16 +763,16 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_GetQdata_" data-uid="GObject.Internal.Object.GetQdata*"></a>
-  <h4 id="GObject_Internal_Object_GetQdata_System_IntPtr_System_UInt32_" data-uid="GObject.Internal.Object.GetQdata(System.IntPtr,System.UInt32)">GetQdata(nint, uint)</h4>
+  <h4 id="GObject_Internal_Object_GetQdata_System_IntPtr_GLib_Quark_" data-uid="GObject.Internal.Object.GetQdata(System.IntPtr,GLib.Quark)">GetQdata(nint, Quark)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_get_qdata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetQdata(nint @object, uint quark)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint GetQdata(nint @object, Quark quark)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -781,12 +782,12 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -794,7 +795,7 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -803,8 +804,46 @@ public static extern void ForceFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GObject_Internal_Object_GetValist_" data-uid="GObject.Internal.Object.GetValist*"></a>
+  <h4 id="GObject_Internal_Object_GetValist_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="GObject.Internal.Object.GetValist(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">GetValist(nint, NonNullableUtf8StringHandle, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_object_get_valist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void GetValist(nint @object, NonNullableUtf8StringHandle firstPropertyName, nint varArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
+        <td><span class="parametername">firstPropertyName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">varArgs</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
@@ -821,7 +860,7 @@ Version: 2.54</p>
 public static extern void Getv(nint @object, uint nProperties, string[] names, ValueData[] values)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -831,18 +870,18 @@ public static extern void Getv(nint @object, uint nProperties, string[] names, V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nProperties</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">names</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -855,46 +894,8 @@ public static extern void Getv(nint @object, uint nProperties, string[] names, V
       </tr>
     </tbody>
   </table>
-  <a id="GObject_Internal_Object_GetValist_" data-uid="GObject.Internal.Object.GetValist*"></a>
-  <h4 id="GObject_Internal_Object_GetValist_System_IntPtr_System_String_System_IntPtr_" data-uid="GObject.Internal.Object.GetValist(System.IntPtr,System.String,System.IntPtr)">GetValist(nint, string, nint)</h4>
-  <div class="markdown level1 summary"><p>Calls native method g_object_get_valist.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetValist(nint @object, string firstPropertyName, nint varArgs)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><span class="parametername">object</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">firstPropertyName</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><span class="parametername">varArgs</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="GObject_Internal_Object_InterfaceFindProperty_" data-uid="GObject.Internal.Object.InterfaceFindProperty*"></a>
-  <h4 id="GObject_Internal_Object_InterfaceFindProperty_GObject_Internal_TypeInterfaceHandle_System_String_" data-uid="GObject.Internal.Object.InterfaceFindProperty(GObject.Internal.TypeInterfaceHandle,System.String)">InterfaceFindProperty(TypeInterfaceHandle, string)</h4>
+  <h4 id="GObject_Internal_Object_InterfaceFindProperty_GObject_Internal_TypeInterfaceHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GObject.Internal.Object.InterfaceFindProperty(GObject.Internal.TypeInterfaceHandle,GLib.Internal.NonNullableUtf8StringHandle)">InterfaceFindProperty(TypeInterfaceHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_object_interface_find_property.
 Version: 2.4</p>
 </div>
@@ -902,10 +903,10 @@ Version: 2.4</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.4&quot;)]
-public static extern nint InterfaceFindProperty(TypeInterfaceHandle gIface, string propertyName)</code></pre>
+public static extern nint InterfaceFindProperty(TypeInterfaceHandle gIface, NonNullableUtf8StringHandle propertyName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -921,7 +922,7 @@ public static extern nint InterfaceFindProperty(TypeInterfaceHandle gIface, stri
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -929,7 +930,7 @@ public static extern nint InterfaceFindProperty(TypeInterfaceHandle gIface, stri
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -938,7 +939,7 @@ public static extern nint InterfaceFindProperty(TypeInterfaceHandle gIface, stri
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -956,7 +957,7 @@ Version: 2.4</p>
 public static extern void InterfaceInstallProperty(TypeInterfaceHandle gIface, nint pspec)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -972,7 +973,7 @@ public static extern void InterfaceInstallProperty(TypeInterfaceHandle gIface, n
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">pspec</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -980,7 +981,7 @@ public static extern void InterfaceInstallProperty(TypeInterfaceHandle gIface, n
     </tbody>
   </table>
   <a id="GObject_Internal_Object_InterfaceListProperties_" data-uid="GObject.Internal.Object.InterfaceListProperties*"></a>
-  <h4 id="GObject_Internal_Object_InterfaceListProperties_GObject_Internal_TypeInterfaceHandle_System_IntPtr__" data-uid="GObject.Internal.Object.InterfaceListProperties(GObject.Internal.TypeInterfaceHandle,System.IntPtr@)">InterfaceListProperties(TypeInterfaceHandle, out nint)</h4>
+  <h4 id="GObject_Internal_Object_InterfaceListProperties_GObject_Internal_TypeInterfaceHandle_System_UInt32__" data-uid="GObject.Internal.Object.InterfaceListProperties(GObject.Internal.TypeInterfaceHandle,System.UInt32@)">InterfaceListProperties(TypeInterfaceHandle, out uint)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_object_interface_list_properties.
 Version: 2.4</p>
 </div>
@@ -988,10 +989,10 @@ Version: 2.4</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.4&quot;)]
-public static extern nint[] InterfaceListProperties(TypeInterfaceHandle gIface, out nint nPropertiesP)</code></pre>
+public static extern nint[] InterfaceListProperties(TypeInterfaceHandle gIface, out uint nPropertiesP)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1007,7 +1008,7 @@ public static extern nint[] InterfaceListProperties(TypeInterfaceHandle gIface, 
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nPropertiesP</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1015,7 +1016,7 @@ public static extern nint[] InterfaceListProperties(TypeInterfaceHandle gIface, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1024,7 +1025,7 @@ public static extern nint[] InterfaceListProperties(TypeInterfaceHandle gIface, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>[]</td>
         <td><p>Transfer ownership: Container Nullable: False</p>
 </td>
       </tr>
@@ -1042,7 +1043,7 @@ Version: 2.10</p>
 public static extern bool IsFloating(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1052,14 +1053,14 @@ public static extern bool IsFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1068,78 +1069,23 @@ public static extern bool IsFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="GObject_Internal_Object_Newv_" data-uid="GObject.Internal.Object.Newv*"></a>
-  <h4 id="GObject_Internal_Object_Newv_System_UIntPtr_System_UInt32_GObject_Internal_ParameterData___" data-uid="GObject.Internal.Object.Newv(System.UIntPtr,System.UInt32,GObject.Internal.ParameterData[])">Newv(nuint, uint, ParameterData[])</h4>
-  <div class="markdown level1 summary"><p>Calls native constructor g_object_newv.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint Newv(nuint objectType, uint nParameters, ParameterData[] parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nuint</span></td>
-        <td><span class="parametername">objectType</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">uint</span></td>
-        <td><span class="parametername">nParameters</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="GObject.Internal.ParameterData.html">ParameterData</a>[]</td>
-        <td><span class="parametername">parameters</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_NewValist_" data-uid="GObject.Internal.Object.NewValist*"></a>
-  <h4 id="GObject_Internal_Object_NewValist_System_UIntPtr_System_String_System_IntPtr_" data-uid="GObject.Internal.Object.NewValist(System.UIntPtr,System.String,System.IntPtr)">NewValist(nuint, string, nint)</h4>
+  <h4 id="GObject_Internal_Object_NewValist_GObject_Type_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="GObject.Internal.Object.NewValist(GObject.Type,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">NewValist(Type, NonNullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_object_new_valist.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint NewValist(nuint objectType, string firstPropertyName, nint varArgs)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint NewValist(Type objectType, NonNullableUtf8StringHandle firstPropertyName, nint varArgs)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1149,19 +1095,19 @@ public static extern bool IsFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">objectType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">firstPropertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">varArgs</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1169,7 +1115,7 @@ public static extern bool IsFloating(nint @object)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1178,14 +1124,14 @@ public static extern bool IsFloating(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_NewWithProperties_" data-uid="GObject.Internal.Object.NewWithProperties*"></a>
-  <h4 id="GObject_Internal_Object_NewWithProperties_System_UIntPtr_System_UInt32_System_String___GObject_Internal_ValueData___" data-uid="GObject.Internal.Object.NewWithProperties(System.UIntPtr,System.UInt32,System.String[],GObject.Internal.ValueData[])">NewWithProperties(nuint, uint, string[], ValueData[])</h4>
+  <h4 id="GObject_Internal_Object_NewWithProperties_GObject_Type_System_UInt32_System_String___GObject_Internal_ValueData___" data-uid="GObject.Internal.Object.NewWithProperties(GObject.Type,System.UInt32,System.String[],GObject.Internal.ValueData[])">NewWithProperties(Type, uint, string[], ValueData[])</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_object_new_with_properties.
 Version: 2.54</p>
 </div>
@@ -1193,10 +1139,10 @@ Version: 2.54</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.54&quot;)]
-public static extern nint NewWithProperties(nuint objectType, uint nProperties, string[] names, ValueData[] values)</code></pre>
+public static extern nint NewWithProperties(Type objectType, uint nProperties, string[] names, ValueData[] values)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1206,19 +1152,19 @@ public static extern nint NewWithProperties(nuint objectType, uint nProperties, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">objectType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nProperties</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">names</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1232,7 +1178,7 @@ public static extern nint NewWithProperties(nuint objectType, uint nProperties, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1241,23 +1187,23 @@ public static extern nint NewWithProperties(nuint objectType, uint nProperties, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="GObject_Internal_Object_Notify_" data-uid="GObject.Internal.Object.Notify*"></a>
-  <h4 id="GObject_Internal_Object_Notify_System_IntPtr_System_String_" data-uid="GObject.Internal.Object.Notify(System.IntPtr,System.String)">Notify(nint, string)</h4>
-  <div class="markdown level1 summary"><p>Calls native method g_object_notify.</p>
+  <a id="GObject_Internal_Object_Newv_" data-uid="GObject.Internal.Object.Newv*"></a>
+  <h4 id="GObject_Internal_Object_Newv_GObject_Type_System_UInt32_GObject_Internal_ParameterData___" data-uid="GObject.Internal.Object.Newv(GObject.Type,System.UInt32,GObject.Internal.ParameterData[])">Newv(Type, uint, ParameterData[])</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_object_newv.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void Notify(nint @object, string propertyName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint Newv(Type objectType, uint nParameters, ParameterData[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1267,12 +1213,67 @@ public static extern nint NewWithProperties(nuint objectType, uint nProperties, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
+        <td><span class="parametername">objectType</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nParameters</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GObject.Internal.ParameterData.html">ParameterData</a>[]</td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GObject_Internal_Object_Notify_" data-uid="GObject.Internal.Object.Notify*"></a>
+  <h4 id="GObject_Internal_Object_Notify_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GObject.Internal.Object.Notify(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">Notify(nint, NonNullableUtf8StringHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_object_notify.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Notify(nint @object, NonNullableUtf8StringHandle propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1291,7 +1292,7 @@ Version: 2.26</p>
 public static extern void NotifyByPspec(nint @object, nint pspec)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1301,12 +1302,12 @@ public static extern void NotifyByPspec(nint @object, nint pspec)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">pspec</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1323,7 +1324,7 @@ public static extern void NotifyByPspec(nint @object, nint pspec)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint Ref(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1333,14 +1334,14 @@ public static extern void NotifyByPspec(nint @object, nint pspec)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1349,7 +1350,7 @@ public static extern void NotifyByPspec(nint @object, nint pspec)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1367,7 +1368,7 @@ Version: 2.10</p>
 public static extern nint RefSink(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1377,14 +1378,14 @@ public static extern nint RefSink(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1393,7 +1394,7 @@ public static extern nint RefSink(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1411,7 +1412,7 @@ Version: 2.8</p>
 public static extern void RemoveToggleRef(nint @object, ToggleNotify notify, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1421,7 +1422,7 @@ public static extern void RemoveToggleRef(nint @object, ToggleNotify notify, nin
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -1432,7 +1433,7 @@ public static extern void RemoveToggleRef(nint @object, ToggleNotify notify, nin
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1440,16 +1441,16 @@ public static extern void RemoveToggleRef(nint @object, ToggleNotify notify, nin
     </tbody>
   </table>
   <a id="GObject_Internal_Object_RemoveWeakPointer_" data-uid="GObject.Internal.Object.RemoveWeakPointer*"></a>
-  <h4 id="GObject_Internal_Object_RemoveWeakPointer_System_IntPtr_System_IntPtr_" data-uid="GObject.Internal.Object.RemoveWeakPointer(System.IntPtr,System.IntPtr)">RemoveWeakPointer(nint, nint)</h4>
+  <h4 id="GObject_Internal_Object_RemoveWeakPointer_System_IntPtr_System_IntPtr__" data-uid="GObject.Internal.Object.RemoveWeakPointer(System.IntPtr,System.IntPtr@)">RemoveWeakPointer(nint, ref nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_remove_weak_pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void RemoveWeakPointer(nint @object, nint weakPointerLocation)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void RemoveWeakPointer(nint @object, ref nint weakPointerLocation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1459,12 +1460,12 @@ public static extern void RemoveToggleRef(nint @object, ToggleNotify notify, nin
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">weakPointerLocation</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1472,7 +1473,7 @@ public static extern void RemoveToggleRef(nint @object, ToggleNotify notify, nin
     </tbody>
   </table>
   <a id="GObject_Internal_Object_ReplaceData_" data-uid="GObject.Internal.Object.ReplaceData*"></a>
-  <h4 id="GObject_Internal_Object_ReplaceData_System_IntPtr_System_String_System_IntPtr_System_IntPtr_GLib_Internal_DestroyNotify_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.ReplaceData(System.IntPtr,System.String,System.IntPtr,System.IntPtr,GLib.Internal.DestroyNotify,GLib.Internal.DestroyNotify)">ReplaceData(nint, string, nint, nint, DestroyNotify, DestroyNotify)</h4>
+  <h4 id="GObject_Internal_Object_ReplaceData_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_System_IntPtr_GLib_Internal_DestroyNotify_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.ReplaceData(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr,System.IntPtr,GLib.Internal.DestroyNotify,GLib.Internal.DestroyNotify)">ReplaceData(nint, NonNullableUtf8StringHandle, nint, nint, DestroyNotify, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_replace_data.
 Version: 2.34</p>
 </div>
@@ -1480,10 +1481,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern bool ReplaceData(nint @object, string key, nint oldval, nint newval, DestroyNotify destroy, DestroyNotify oldDestroy)</code></pre>
+public static extern bool ReplaceData(nint @object, NonNullableUtf8StringHandle key, nint oldval, nint newval, DestroyNotify destroy, DestroyNotify oldDestroy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1493,24 +1494,24 @@ public static extern bool ReplaceData(nint @object, string key, nint oldval, nin
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">oldval</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">newval</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1530,7 +1531,7 @@ public static extern bool ReplaceData(nint @object, string key, nint oldval, nin
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1539,14 +1540,14 @@ public static extern bool ReplaceData(nint @object, string key, nint oldval, nin
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_ReplaceQdata_" data-uid="GObject.Internal.Object.ReplaceQdata*"></a>
-  <h4 id="GObject_Internal_Object_ReplaceQdata_System_IntPtr_System_UInt32_System_IntPtr_System_IntPtr_GLib_Internal_DestroyNotify_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.ReplaceQdata(System.IntPtr,System.UInt32,System.IntPtr,System.IntPtr,GLib.Internal.DestroyNotify,GLib.Internal.DestroyNotify)">ReplaceQdata(nint, uint, nint, nint, DestroyNotify, DestroyNotify)</h4>
+  <h4 id="GObject_Internal_Object_ReplaceQdata_System_IntPtr_GLib_Quark_System_IntPtr_System_IntPtr_GLib_Internal_DestroyNotify_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.ReplaceQdata(System.IntPtr,GLib.Quark,System.IntPtr,System.IntPtr,GLib.Internal.DestroyNotify,GLib.Internal.DestroyNotify)">ReplaceQdata(nint, Quark, nint, nint, DestroyNotify, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_replace_qdata.
 Version: 2.34</p>
 </div>
@@ -1554,10 +1555,10 @@ Version: 2.34</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.34&quot;)]
-public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, nint newval, DestroyNotify destroy, DestroyNotify oldDestroy)</code></pre>
+public static extern bool ReplaceQdata(nint @object, Quark quark, nint oldval, nint newval, DestroyNotify destroy, DestroyNotify oldDestroy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1567,24 +1568,24 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">oldval</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">newval</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1604,7 +1605,7 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1613,7 +1614,7 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1629,7 +1630,7 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     <pre><code class="lang-csharp hljs">public static extern void RunDispose(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1639,23 +1640,23 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_SetData_" data-uid="GObject.Internal.Object.SetData*"></a>
-  <h4 id="GObject_Internal_Object_SetData_System_IntPtr_System_String_System_IntPtr_" data-uid="GObject.Internal.Object.SetData(System.IntPtr,System.String,System.IntPtr)">SetData(nint, string, nint)</h4>
+  <h4 id="GObject_Internal_Object_SetData_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="GObject.Internal.Object.SetData(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">SetData(nint, NonNullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_set_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetData(nint @object, string key, nint data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetData(nint @object, NonNullableUtf8StringHandle key, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1665,18 +1666,18 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1684,16 +1685,16 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </tbody>
   </table>
   <a id="GObject_Internal_Object_SetDataFull_" data-uid="GObject.Internal.Object.SetDataFull*"></a>
-  <h4 id="GObject_Internal_Object_SetDataFull_System_IntPtr_System_String_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.SetDataFull(System.IntPtr,System.String,System.IntPtr,GLib.Internal.DestroyNotify)">SetDataFull(nint, string, nint, DestroyNotify)</h4>
+  <h4 id="GObject_Internal_Object_SetDataFull_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.SetDataFull(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr,GLib.Internal.DestroyNotify)">SetDataFull(nint, NonNullableUtf8StringHandle, nint, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_set_data_full.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetDataFull(nint @object, string key, nint data, DestroyNotify destroy)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetDataFull(nint @object, NonNullableUtf8StringHandle key, nint data, DestroyNotify destroy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1703,18 +1704,18 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1728,16 +1729,16 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </tbody>
   </table>
   <a id="GObject_Internal_Object_SetProperty_" data-uid="GObject.Internal.Object.SetProperty*"></a>
-  <h4 id="GObject_Internal_Object_SetProperty_System_IntPtr_System_String_GObject_Internal_ValueHandle_" data-uid="GObject.Internal.Object.SetProperty(System.IntPtr,System.String,GObject.Internal.ValueHandle)">SetProperty(nint, string, ValueHandle)</h4>
+  <h4 id="GObject_Internal_Object_SetProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GObject_Internal_ValueHandle_" data-uid="GObject.Internal.Object.SetProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GObject.Internal.ValueHandle)">SetProperty(nint, NonNullableUtf8StringHandle, ValueHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_set_property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetProperty(nint @object, string propertyName, ValueHandle value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetProperty(nint @object, NonNullableUtf8StringHandle propertyName, ValueHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1747,12 +1748,12 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1766,16 +1767,16 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </tbody>
   </table>
   <a id="GObject_Internal_Object_SetQdata_" data-uid="GObject.Internal.Object.SetQdata*"></a>
-  <h4 id="GObject_Internal_Object_SetQdata_System_IntPtr_System_UInt32_System_IntPtr_" data-uid="GObject.Internal.Object.SetQdata(System.IntPtr,System.UInt32,System.IntPtr)">SetQdata(nint, uint, nint)</h4>
+  <h4 id="GObject_Internal_Object_SetQdata_System_IntPtr_GLib_Quark_System_IntPtr_" data-uid="GObject.Internal.Object.SetQdata(System.IntPtr,GLib.Quark,System.IntPtr)">SetQdata(nint, Quark, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_set_qdata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetQdata(nint @object, uint quark, nint data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetQdata(nint @object, Quark quark, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1785,18 +1786,18 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1804,16 +1805,16 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </tbody>
   </table>
   <a id="GObject_Internal_Object_SetQdataFull_" data-uid="GObject.Internal.Object.SetQdataFull*"></a>
-  <h4 id="GObject_Internal_Object_SetQdataFull_System_IntPtr_System_UInt32_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.SetQdataFull(System.IntPtr,System.UInt32,System.IntPtr,GLib.Internal.DestroyNotify)">SetQdataFull(nint, uint, nint, DestroyNotify)</h4>
+  <h4 id="GObject_Internal_Object_SetQdataFull_System_IntPtr_GLib_Quark_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="GObject.Internal.Object.SetQdataFull(System.IntPtr,GLib.Quark,System.IntPtr,GLib.Internal.DestroyNotify)">SetQdataFull(nint, Quark, nint, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_set_qdata_full.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetQdataFull(nint @object, uint quark, nint data, DestroyNotify destroy)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetQdataFull(nint @object, Quark quark, nint data, DestroyNotify destroy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1823,18 +1824,18 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1843,6 +1844,44 @@ public static extern bool ReplaceQdata(nint @object, uint quark, nint oldval, ni
         <td><a class="xref" href="GLib.Internal.DestroyNotify.html">DestroyNotify</a></td>
         <td><span class="parametername">destroy</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GObject_Internal_Object_SetValist_" data-uid="GObject.Internal.Object.SetValist*"></a>
+  <h4 id="GObject_Internal_Object_SetValist_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="GObject.Internal.Object.SetValist(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">SetValist(nint, NonNullableUtf8StringHandle, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_object_set_valist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetValist(nint @object, NonNullableUtf8StringHandle firstPropertyName, nint varArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">object</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
+        <td><span class="parametername">firstPropertyName</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">varArgs</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
@@ -1859,7 +1898,7 @@ Version: 2.54</p>
 public static extern void Setv(nint @object, uint nProperties, string[] names, ValueData[] values)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1869,18 +1908,18 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nProperties</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">names</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1893,55 +1932,17 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
       </tr>
     </tbody>
   </table>
-  <a id="GObject_Internal_Object_SetValist_" data-uid="GObject.Internal.Object.SetValist*"></a>
-  <h4 id="GObject_Internal_Object_SetValist_System_IntPtr_System_String_System_IntPtr_" data-uid="GObject.Internal.Object.SetValist(System.IntPtr,System.String,System.IntPtr)">SetValist(nint, string, nint)</h4>
-  <div class="markdown level1 summary"><p>Calls native method g_object_set_valist.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetValist(nint @object, string firstPropertyName, nint varArgs)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><span class="parametername">object</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><span class="parametername">firstPropertyName</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><span class="parametername">varArgs</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="GObject_Internal_Object_StealData_" data-uid="GObject.Internal.Object.StealData*"></a>
-  <h4 id="GObject_Internal_Object_StealData_System_IntPtr_System_String_" data-uid="GObject.Internal.Object.StealData(System.IntPtr,System.String)">StealData(nint, string)</h4>
+  <h4 id="GObject_Internal_Object_StealData_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GObject.Internal.Object.StealData(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">StealData(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_steal_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint StealData(nint @object, string key)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint StealData(nint @object, NonNullableUtf8StringHandle key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1951,12 +1952,12 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">key</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1964,7 +1965,7 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1973,23 +1974,23 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_Object_StealQdata_" data-uid="GObject.Internal.Object.StealQdata*"></a>
-  <h4 id="GObject_Internal_Object_StealQdata_System_IntPtr_System_UInt32_" data-uid="GObject.Internal.Object.StealQdata(System.IntPtr,System.UInt32)">StealQdata(nint, uint)</h4>
+  <h4 id="GObject_Internal_Object_StealQdata_System_IntPtr_GLib_Quark_" data-uid="GObject.Internal.Object.StealQdata(System.IntPtr,GLib.Quark)">StealQdata(nint, Quark)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_object_steal_qdata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint StealQdata(nint @object, uint quark)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint StealQdata(nint @object, Quark quark)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1999,12 +2000,12 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2012,7 +2013,7 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2021,7 +2022,7 @@ public static extern void Setv(nint @object, uint nProperties, string[] names, V
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -2039,7 +2040,7 @@ Version: 2.70</p>
 public static extern nint TakeRef(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2049,14 +2050,14 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2065,7 +2066,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -2081,7 +2082,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void ThawNotify(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2091,7 +2092,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -2107,7 +2108,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void Unref(nint @object)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2117,7 +2118,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -2133,7 +2134,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void WatchClosure(nint @object, ClosureHandle closure)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2143,7 +2144,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -2165,7 +2166,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void WeakRef(nint @object, WeakNotify notify, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2175,7 +2176,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -2186,7 +2187,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -2203,7 +2204,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void WeakUnref(nint @object, WeakNotify notify, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2213,7 +2214,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">object</span></td>
         <td></td>
       </tr>
@@ -2224,13 +2225,14 @@ public static extern nint TakeRef(nint @object)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -2259,7 +2261,7 @@ public static extern nint TakeRef(nint @object)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

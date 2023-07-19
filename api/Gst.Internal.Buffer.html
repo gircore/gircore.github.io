@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gst.Internal.Buffer">
 
 
+
   <h1 id="Gst_Internal_Buffer" data-uid="Gst.Internal.Buffer" class="text-break">Class Buffer
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Buffer</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a>.<a class="xref" href="Gst.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gst_Internal_Buffer_AddCustomMeta_" data-uid="Gst.Internal.Buffer.AddCustomMeta*"></a>
-  <h4 id="Gst_Internal_Buffer_AddCustomMeta_Gst_Internal_BufferHandle_System_String_" data-uid="Gst.Internal.Buffer.AddCustomMeta(Gst.Internal.BufferHandle,System.String)">AddCustomMeta(BufferHandle, string)</h4>
+  <h4 id="Gst_Internal_Buffer_AddCustomMeta_Gst_Internal_BufferHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.Buffer.AddCustomMeta(Gst.Internal.BufferHandle,GLib.Internal.NonNullableUtf8StringHandle)">AddCustomMeta(BufferHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_add_custom_meta.
 Version: 1.20</p>
 </div>
@@ -120,10 +121,10 @@ Version: 1.20</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
-public static extern CustomMetaUnownedHandle AddCustomMeta(BufferHandle buffer, string name)</code></pre>
+public static extern CustomMetaUnownedHandle AddCustomMeta(BufferHandle buffer, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -138,7 +139,7 @@ public static extern CustomMetaUnownedHandle AddCustomMeta(BufferHandle buffer, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -146,7 +147,7 @@ public static extern CustomMetaUnownedHandle AddCustomMeta(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -171,7 +172,7 @@ public static extern CustomMetaUnownedHandle AddCustomMeta(BufferHandle buffer, 
     <pre><code class="lang-csharp hljs">public static extern MetaUnownedHandle AddMeta(BufferHandle buffer, MetaInfoHandle info, nint @params)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -192,14 +193,14 @@ public static extern CustomMetaUnownedHandle AddCustomMeta(BufferHandle buffer, 
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">params</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -226,7 +227,7 @@ Version: 1.6</p>
 public static extern ParentBufferMetaUnownedHandle AddParentBufferMeta(BufferHandle buffer, BufferHandle @ref)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -248,7 +249,7 @@ public static extern ParentBufferMetaUnownedHandle AddParentBufferMeta(BufferHan
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -275,7 +276,7 @@ Version: 1.6</p>
 public static extern ProtectionMetaUnownedHandle AddProtectionMeta(BufferHandle buffer, StructureHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -298,7 +299,7 @@ public static extern ProtectionMetaUnownedHandle AddProtectionMeta(BufferHandle 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -314,7 +315,7 @@ public static extern ProtectionMetaUnownedHandle AddProtectionMeta(BufferHandle 
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_AddReferenceTimestampMeta_" data-uid="Gst.Internal.Buffer.AddReferenceTimestampMeta*"></a>
-  <h4 id="Gst_Internal_Buffer_AddReferenceTimestampMeta_Gst_Internal_BufferHandle_Gst_Internal_CapsHandle_System_UInt64_System_UInt64_" data-uid="Gst.Internal.Buffer.AddReferenceTimestampMeta(Gst.Internal.BufferHandle,Gst.Internal.CapsHandle,System.UInt64,System.UInt64)">AddReferenceTimestampMeta(BufferHandle, CapsHandle, ulong, ulong)</h4>
+  <h4 id="Gst_Internal_Buffer_AddReferenceTimestampMeta_Gst_Internal_BufferHandle_Gst_Internal_CapsHandle_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Internal.Buffer.AddReferenceTimestampMeta(Gst.Internal.BufferHandle,Gst.Internal.CapsHandle,Gst.ClockTime,Gst.ClockTime)">AddReferenceTimestampMeta(BufferHandle, CapsHandle, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_add_reference_timestamp_meta.
 Version: 1.14</p>
 </div>
@@ -322,10 +323,10 @@ Version: 1.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.14&quot;)]
-public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMeta(BufferHandle buffer, CapsHandle reference, ulong timestamp, ulong duration)</code></pre>
+public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMeta(BufferHandle buffer, CapsHandle reference, ClockTime timestamp, ClockTime duration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -346,13 +347,13 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">timestamp</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">duration</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -360,7 +361,7 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -385,7 +386,7 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
     <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle Append(BufferHandle buf1, BufferHandle buf2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -408,7 +409,7 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -433,7 +434,7 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
     <pre><code class="lang-csharp hljs">public static extern void AppendMemory(BufferHandle buffer, MemoryHandle mem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -465,7 +466,7 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
     <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle AppendRegion(BufferHandle buf1, BufferHandle buf2, long offset, long size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -486,13 +487,13 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -500,7 +501,7 @@ public static extern ReferenceTimestampMetaUnownedHandle AddReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -527,7 +528,7 @@ Version: 1.6</p>
 public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -544,7 +545,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -569,7 +570,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool CopyInto(BufferHandle dest, BufferHandle src, BufferCopyFlags flags, nuint offset, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -596,13 +597,13 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -610,7 +611,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -619,7 +620,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -635,7 +636,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle CopyRegion(BufferHandle parent, BufferCopyFlags flags, nuint offset, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -656,13 +657,13 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -670,7 +671,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -686,16 +687,16 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_Extract_" data-uid="Gst.Internal.Buffer.Extract*"></a>
-  <h4 id="Gst_Internal_Buffer_Extract_Gst_Internal_BufferHandle_System_UIntPtr_System_Byte____System_UIntPtr__" data-uid="Gst.Internal.Buffer.Extract(Gst.Internal.BufferHandle,System.UIntPtr,System.Byte[]@,System.UIntPtr@)">Extract(BufferHandle, nuint, ref byte[], out nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_Extract_Gst_Internal_BufferHandle_System_UIntPtr_System_Byte__System_UIntPtr__" data-uid="Gst.Internal.Buffer.Extract(Gst.Internal.BufferHandle,System.UIntPtr,System.Byte@,System.UIntPtr@)">Extract(BufferHandle, nuint, ref byte, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_extract.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nuint Extract(BufferHandle buffer, nuint offset, ref byte[] dest, out nuint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nuint Extract(BufferHandle buffer, nuint offset, ref byte dest, out nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -710,19 +711,19 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">dest</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -730,7 +731,7 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -739,14 +740,14 @@ public static extern BufferOwnedHandle CopyDeep(BufferHandle buf)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_ExtractDup_" data-uid="Gst.Internal.Buffer.ExtractDup*"></a>
-  <h4 id="Gst_Internal_Buffer_ExtractDup_Gst_Internal_BufferHandle_System_UIntPtr_System_UIntPtr_System_Byte____System_IntPtr__" data-uid="Gst.Internal.Buffer.ExtractDup(Gst.Internal.BufferHandle,System.UIntPtr,System.UIntPtr,System.Byte[]@,System.IntPtr@)">ExtractDup(BufferHandle, nuint, nuint, out byte[], out nint)</h4>
+  <h4 id="Gst_Internal_Buffer_ExtractDup_Gst_Internal_BufferHandle_System_UIntPtr_System_UIntPtr_System_Byte____System_UIntPtr__" data-uid="Gst.Internal.Buffer.ExtractDup(Gst.Internal.BufferHandle,System.UIntPtr,System.UIntPtr,System.Byte[]@,System.UIntPtr@)">ExtractDup(BufferHandle, nuint, nuint, out byte[], out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_extract_dup.
 Version: 1.0.10</p>
 </div>
@@ -754,10 +755,10 @@ Version: 1.0.10</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.0.10&quot;)]
-public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint size, out byte[] dest, out nint destSize)</code></pre>
+public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint size, out byte[] dest, out nuint destSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -772,25 +773,25 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
         <td><span class="parametername">dest</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">destSize</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -798,16 +799,16 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_Fill_" data-uid="Gst.Internal.Buffer.Fill*"></a>
-  <h4 id="Gst_Internal_Buffer_Fill_Gst_Internal_BufferHandle_System_UIntPtr_System_Byte___System_UIntPtr_" data-uid="Gst.Internal.Buffer.Fill(Gst.Internal.BufferHandle,System.UIntPtr,System.Byte[],System.UIntPtr)">Fill(BufferHandle, nuint, byte[], nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_Fill_Gst_Internal_BufferHandle_System_UIntPtr_System_Byte__System_UIntPtr_" data-uid="Gst.Internal.Buffer.Fill(Gst.Internal.BufferHandle,System.UIntPtr,System.Byte@,System.UIntPtr)">Fill(BufferHandle, nuint, ref byte, nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_fill.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nuint Fill(BufferHandle buffer, nuint offset, byte[] src, nuint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nuint Fill(BufferHandle buffer, nuint offset, ref byte src, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -822,19 +823,19 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">src</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -842,7 +843,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -851,23 +852,23 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_FindMemory_" data-uid="Gst.Internal.Buffer.FindMemory*"></a>
-  <h4 id="Gst_Internal_Buffer_FindMemory_Gst_Internal_BufferHandle_System_UIntPtr_System_UIntPtr_System_IntPtr__System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.Buffer.FindMemory(Gst.Internal.BufferHandle,System.UIntPtr,System.UIntPtr,System.IntPtr@,System.IntPtr@,System.IntPtr@)">FindMemory(BufferHandle, nuint, nuint, out nint, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_Buffer_FindMemory_Gst_Internal_BufferHandle_System_UIntPtr_System_UIntPtr_System_UInt32__System_UInt32__System_UIntPtr__" data-uid="Gst.Internal.Buffer.FindMemory(Gst.Internal.BufferHandle,System.UIntPtr,System.UIntPtr,System.UInt32@,System.UInt32@,System.UIntPtr@)">FindMemory(BufferHandle, nuint, nuint, out uint, out uint, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_find_memory.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool FindMemory(BufferHandle buffer, nuint offset, nuint size, out nint idx, out nint length, out nint skip)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool FindMemory(BufferHandle buffer, nuint offset, nuint size, out uint idx, out uint length, out nuint skip)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -882,31 +883,31 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">skip</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -914,7 +915,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -923,7 +924,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -939,7 +940,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     <pre><code class="lang-csharp hljs">public static extern bool ForeachMeta(BufferHandle buffer, BufferForeachMetaFunc func, nint userData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -960,7 +961,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -968,7 +969,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -977,7 +978,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -993,7 +994,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     <pre><code class="lang-csharp hljs">public static extern MemoryOwnedHandle GetAllMemory(BufferHandle buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1010,7 +1011,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1026,7 +1027,7 @@ public static extern void ExtractDup(BufferHandle buffer, nuint offset, nuint si
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_GetCustomMeta_" data-uid="Gst.Internal.Buffer.GetCustomMeta*"></a>
-  <h4 id="Gst_Internal_Buffer_GetCustomMeta_Gst_Internal_BufferHandle_System_String_" data-uid="Gst.Internal.Buffer.GetCustomMeta(Gst.Internal.BufferHandle,System.String)">GetCustomMeta(BufferHandle, string)</h4>
+  <h4 id="Gst_Internal_Buffer_GetCustomMeta_Gst_Internal_BufferHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.Buffer.GetCustomMeta(Gst.Internal.BufferHandle,GLib.Internal.NonNullableUtf8StringHandle)">GetCustomMeta(BufferHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_get_custom_meta.
 Version: 1.20</p>
 </div>
@@ -1034,10 +1035,10 @@ Version: 1.20</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
-public static extern CustomMetaUnownedHandle GetCustomMeta(BufferHandle buffer, string name)</code></pre>
+public static extern CustomMetaUnownedHandle GetCustomMeta(BufferHandle buffer, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1052,7 +1053,7 @@ public static extern CustomMetaUnownedHandle GetCustomMeta(BufferHandle buffer, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1060,7 +1061,7 @@ public static extern CustomMetaUnownedHandle GetCustomMeta(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1087,7 +1088,7 @@ Version: 1.10</p>
 public static extern BufferFlags GetFlags(BufferHandle buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1104,7 +1105,7 @@ public static extern BufferFlags GetFlags(BufferHandle buffer)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1129,7 +1130,7 @@ public static extern BufferFlags GetFlags(BufferHandle buffer)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1138,7 +1139,7 @@ public static extern BufferFlags GetFlags(BufferHandle buffer)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1156,7 +1157,7 @@ Version: 1.2</p>
 public static extern uint GetMaxMemory()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1165,7 +1166,7 @@ public static extern uint GetMaxMemory()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1181,7 +1182,7 @@ public static extern uint GetMaxMemory()</code></pre>
     <pre><code class="lang-csharp hljs">public static extern MemoryOwnedHandle GetMemory(BufferHandle buffer, uint idx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1196,7 +1197,7 @@ public static extern uint GetMaxMemory()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1204,7 +1205,7 @@ public static extern uint GetMaxMemory()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1229,7 +1230,7 @@ public static extern uint GetMaxMemory()</code></pre>
     <pre><code class="lang-csharp hljs">public static extern MemoryOwnedHandle GetMemoryRange(BufferHandle buffer, uint idx, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1244,13 +1245,13 @@ public static extern uint GetMaxMemory()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1258,7 +1259,7 @@ public static extern uint GetMaxMemory()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1274,16 +1275,16 @@ public static extern uint GetMaxMemory()</code></pre>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_GetMeta_" data-uid="Gst.Internal.Buffer.GetMeta*"></a>
-  <h4 id="Gst_Internal_Buffer_GetMeta_Gst_Internal_BufferHandle_System_UIntPtr_" data-uid="Gst.Internal.Buffer.GetMeta(Gst.Internal.BufferHandle,System.UIntPtr)">GetMeta(BufferHandle, nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_GetMeta_Gst_Internal_BufferHandle_GObject_Type_" data-uid="Gst.Internal.Buffer.GetMeta(Gst.Internal.BufferHandle,GObject.Type)">GetMeta(BufferHandle, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_get_meta.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern MetaUnownedHandle GetMeta(BufferHandle buffer, nuint api)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern MetaUnownedHandle GetMeta(BufferHandle buffer, Type api)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1298,7 +1299,7 @@ public static extern uint GetMaxMemory()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">api</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1306,7 +1307,7 @@ public static extern uint GetMaxMemory()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1322,7 +1323,7 @@ public static extern uint GetMaxMemory()</code></pre>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_GetNMeta_" data-uid="Gst.Internal.Buffer.GetNMeta*"></a>
-  <h4 id="Gst_Internal_Buffer_GetNMeta_Gst_Internal_BufferHandle_System_UIntPtr_" data-uid="Gst.Internal.Buffer.GetNMeta(Gst.Internal.BufferHandle,System.UIntPtr)">GetNMeta(BufferHandle, nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_GetNMeta_Gst_Internal_BufferHandle_GObject_Type_" data-uid="Gst.Internal.Buffer.GetNMeta(Gst.Internal.BufferHandle,GObject.Type)">GetNMeta(BufferHandle, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_get_n_meta.
 Version: 1.14</p>
 </div>
@@ -1330,10 +1331,10 @@ Version: 1.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.14&quot;)]
-public static extern uint GetNMeta(BufferHandle buffer, nuint apiType)</code></pre>
+public static extern uint GetNMeta(BufferHandle buffer, Type apiType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1348,7 +1349,7 @@ public static extern uint GetNMeta(BufferHandle buffer, nuint apiType)</code></p
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">apiType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1356,7 +1357,7 @@ public static extern uint GetNMeta(BufferHandle buffer, nuint apiType)</code></p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1365,7 +1366,7 @@ public static extern uint GetNMeta(BufferHandle buffer, nuint apiType)</code></p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1383,7 +1384,7 @@ Version: 1.14</p>
 public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMeta(BufferHandle buffer, CapsHandle reference)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1406,7 +1407,7 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1431,7 +1432,7 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     <pre><code class="lang-csharp hljs">public static extern nuint GetSize(BufferHandle buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1448,7 +1449,7 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1457,23 +1458,23 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_GetSizes_" data-uid="Gst.Internal.Buffer.GetSizes*"></a>
-  <h4 id="Gst_Internal_Buffer_GetSizes_Gst_Internal_BufferHandle_System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.Buffer.GetSizes(Gst.Internal.BufferHandle,System.IntPtr@,System.IntPtr@)">GetSizes(BufferHandle, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_Buffer_GetSizes_Gst_Internal_BufferHandle_System_UIntPtr__System_UIntPtr__" data-uid="Gst.Internal.Buffer.GetSizes(Gst.Internal.BufferHandle,System.UIntPtr@,System.UIntPtr@)">GetSizes(BufferHandle, out nuint, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_get_sizes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nuint GetSizes(BufferHandle buffer, out nint offset, out nint maxsize)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nuint GetSizes(BufferHandle buffer, out nuint offset, out nuint maxsize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1488,13 +1489,13 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">maxsize</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1502,7 +1503,7 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1511,23 +1512,23 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_GetSizesRange_" data-uid="Gst.Internal.Buffer.GetSizesRange*"></a>
-  <h4 id="Gst_Internal_Buffer_GetSizesRange_Gst_Internal_BufferHandle_System_UInt32_System_Int32_System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.Buffer.GetSizesRange(Gst.Internal.BufferHandle,System.UInt32,System.Int32,System.IntPtr@,System.IntPtr@)">GetSizesRange(BufferHandle, uint, int, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_Buffer_GetSizesRange_Gst_Internal_BufferHandle_System_UInt32_System_Int32_System_UIntPtr__System_UIntPtr__" data-uid="Gst.Internal.Buffer.GetSizesRange(Gst.Internal.BufferHandle,System.UInt32,System.Int32,System.UIntPtr@,System.UIntPtr@)">GetSizesRange(BufferHandle, uint, int, out nuint, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_get_sizes_range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nuint GetSizesRange(BufferHandle buffer, uint idx, int length, out nint offset, out nint maxsize)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nuint GetSizesRange(BufferHandle buffer, uint idx, int length, out nuint offset, out nuint maxsize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1542,25 +1543,25 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">maxsize</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1568,7 +1569,7 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1577,7 +1578,7 @@ public static extern ReferenceTimestampMetaUnownedHandle GetReferenceTimestampMe
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1595,7 +1596,7 @@ Version: 1.10</p>
 public static extern bool HasFlags(BufferHandle buffer, BufferFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1618,7 +1619,7 @@ public static extern bool HasFlags(BufferHandle buffer, BufferFlags flags)</code
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1627,7 +1628,7 @@ public static extern bool HasFlags(BufferHandle buffer, BufferFlags flags)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1643,7 +1644,7 @@ public static extern bool HasFlags(BufferHandle buffer, BufferFlags flags)</code
     <pre><code class="lang-csharp hljs">public static extern void InsertMemory(BufferHandle buffer, int idx, MemoryHandle mem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1658,7 +1659,7 @@ public static extern bool HasFlags(BufferHandle buffer, BufferFlags flags)</code
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1683,7 +1684,7 @@ Version: 1.4</p>
 public static extern bool IsAllMemoryWritable(BufferHandle buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1700,7 +1701,7 @@ public static extern bool IsAllMemoryWritable(BufferHandle buffer)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1709,7 +1710,7 @@ public static extern bool IsAllMemoryWritable(BufferHandle buffer)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1727,7 +1728,7 @@ Version: 1.4</p>
 public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1742,13 +1743,13 @@ public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, i
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1756,7 +1757,7 @@ public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, i
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1765,23 +1766,23 @@ public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, i
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_IterateMeta_" data-uid="Gst.Internal.Buffer.IterateMeta*"></a>
-  <h4 id="Gst_Internal_Buffer_IterateMeta_Gst_Internal_BufferHandle_System_IntPtr_" data-uid="Gst.Internal.Buffer.IterateMeta(Gst.Internal.BufferHandle,System.IntPtr)">IterateMeta(BufferHandle, nint)</h4>
+  <h4 id="Gst_Internal_Buffer_IterateMeta_Gst_Internal_BufferHandle_System_IntPtr__" data-uid="Gst.Internal.Buffer.IterateMeta(Gst.Internal.BufferHandle,System.IntPtr@)">IterateMeta(BufferHandle, out nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_iterate_meta.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern MetaUnownedHandle IterateMeta(BufferHandle buffer, nint state)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern MetaUnownedHandle IterateMeta(BufferHandle buffer, out nint state)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1796,7 +1797,7 @@ public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, i
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">state</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1804,7 +1805,7 @@ public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, i
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1820,7 +1821,7 @@ public static extern bool IsMemoryRangeWritable(BufferHandle buffer, uint idx, i
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_IterateMetaFiltered_" data-uid="Gst.Internal.Buffer.IterateMetaFiltered*"></a>
-  <h4 id="Gst_Internal_Buffer_IterateMetaFiltered_Gst_Internal_BufferHandle_System_IntPtr_System_UIntPtr_" data-uid="Gst.Internal.Buffer.IterateMetaFiltered(Gst.Internal.BufferHandle,System.IntPtr,System.UIntPtr)">IterateMetaFiltered(BufferHandle, nint, nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_IterateMetaFiltered_Gst_Internal_BufferHandle_System_IntPtr__GObject_Type_" data-uid="Gst.Internal.Buffer.IterateMetaFiltered(Gst.Internal.BufferHandle,System.IntPtr@,GObject.Type)">IterateMetaFiltered(BufferHandle, out nint, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_iterate_meta_filtered.
 Version: 1.12</p>
 </div>
@@ -1828,10 +1829,10 @@ Version: 1.12</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.12&quot;)]
-public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, nint state, nuint metaApiType)</code></pre>
+public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, out nint state, Type metaApiType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1846,13 +1847,13 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">state</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">metaApiType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1860,7 +1861,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1885,7 +1886,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     <pre><code class="lang-csharp hljs">public static extern bool Map(BufferHandle buffer, MapInfoHandle info, MapFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1914,7 +1915,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1923,7 +1924,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1939,7 +1940,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     <pre><code class="lang-csharp hljs">public static extern bool MapRange(BufferHandle buffer, uint idx, int length, MapInfoHandle info, MapFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1954,13 +1955,13 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1980,7 +1981,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1989,23 +1990,23 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_Memcmp_" data-uid="Gst.Internal.Buffer.Memcmp*"></a>
-  <h4 id="Gst_Internal_Buffer_Memcmp_Gst_Internal_BufferHandle_System_UIntPtr_System_Byte___System_UIntPtr_" data-uid="Gst.Internal.Buffer.Memcmp(Gst.Internal.BufferHandle,System.UIntPtr,System.Byte[],System.UIntPtr)">Memcmp(BufferHandle, nuint, byte[], nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_Memcmp_Gst_Internal_BufferHandle_System_UIntPtr_System_Byte__System_UIntPtr_" data-uid="Gst.Internal.Buffer.Memcmp(Gst.Internal.BufferHandle,System.UIntPtr,System.Byte@,System.UIntPtr)">Memcmp(BufferHandle, nuint, ref byte, nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_memcmp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern int Memcmp(BufferHandle buffer, nuint offset, byte[] mem, nuint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern int Memcmp(BufferHandle buffer, nuint offset, ref byte mem, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2020,19 +2021,19 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">mem</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2040,7 +2041,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2049,7 +2050,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2065,7 +2066,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     <pre><code class="lang-csharp hljs">public static extern nuint Memset(BufferHandle buffer, nuint offset, byte val, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2080,19 +2081,19 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">val</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2100,7 +2101,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2109,7 +2110,49 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Internal_Buffer_NMemory_" data-uid="Gst.Internal.Buffer.NMemory*"></a>
+  <h4 id="Gst_Internal_Buffer_NMemory_Gst_Internal_BufferHandle_" data-uid="Gst.Internal.Buffer.NMemory(Gst.Internal.BufferHandle)">NMemory(BufferHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method gst_buffer_n_memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint NMemory(BufferHandle buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.BufferHandle.html">BufferHandle</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2125,7 +2168,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle New()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2150,7 +2193,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle NewAllocate(nint allocator, nuint size, AllocationParamsHandle @params)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2160,13 +2203,13 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">allocator</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2179,7 +2222,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2195,7 +2238,7 @@ public static extern MetaUnownedHandle IterateMetaFiltered(BufferHandle buffer, 
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_NewMemdup_" data-uid="Gst.Internal.Buffer.NewMemdup*"></a>
-  <h4 id="Gst_Internal_Buffer_NewMemdup_System_Byte___System_UIntPtr_" data-uid="Gst.Internal.Buffer.NewMemdup(System.Byte[],System.UIntPtr)">NewMemdup(byte[], nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_NewMemdup_System_Byte__System_UIntPtr_" data-uid="Gst.Internal.Buffer.NewMemdup(System.Byte@,System.UIntPtr)">NewMemdup(ref byte, nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor gst_buffer_new_memdup.
 Version: 1.20</p>
 </div>
@@ -2203,10 +2246,10 @@ Version: 1.20</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.20&quot;)]
-public static extern BufferOwnedHandle NewMemdup(byte[] data, nuint size)</code></pre>
+public static extern BufferOwnedHandle NewMemdup(ref byte data, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2216,13 +2259,13 @@ public static extern BufferOwnedHandle NewMemdup(byte[] data, nuint size)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2230,7 +2273,7 @@ public static extern BufferOwnedHandle NewMemdup(byte[] data, nuint size)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2246,16 +2289,16 @@ public static extern BufferOwnedHandle NewMemdup(byte[] data, nuint size)</code>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_NewWrapped_" data-uid="Gst.Internal.Buffer.NewWrapped*"></a>
-  <h4 id="Gst_Internal_Buffer_NewWrapped_System_Byte___System_UIntPtr_" data-uid="Gst.Internal.Buffer.NewWrapped(System.Byte[],System.UIntPtr)">NewWrapped(byte[], nuint)</h4>
+  <h4 id="Gst_Internal_Buffer_NewWrapped_System_Byte__System_UIntPtr_" data-uid="Gst.Internal.Buffer.NewWrapped(System.Byte@,System.UIntPtr)">NewWrapped(ref byte, nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor gst_buffer_new_wrapped.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle NewWrapped(byte[] data, nuint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle NewWrapped(ref byte data, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2265,13 +2308,13 @@ public static extern BufferOwnedHandle NewMemdup(byte[] data, nuint size)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2279,7 +2322,7 @@ public static extern BufferOwnedHandle NewMemdup(byte[] data, nuint size)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2306,7 +2349,7 @@ Version: 1.16</p>
 public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2324,7 +2367,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2340,16 +2383,16 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </tbody>
   </table>
   <a id="Gst_Internal_Buffer_NewWrappedFull_" data-uid="Gst.Internal.Buffer.NewWrappedFull*"></a>
-  <h4 id="Gst_Internal_Buffer_NewWrappedFull_Gst_MemoryFlags_System_Byte___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="Gst.Internal.Buffer.NewWrappedFull(Gst.MemoryFlags,System.Byte[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.IntPtr,GLib.Internal.DestroyNotify)">NewWrappedFull(MemoryFlags, byte[], nuint, nuint, nuint, nint, DestroyNotify)</h4>
+  <h4 id="Gst_Internal_Buffer_NewWrappedFull_Gst_MemoryFlags_System_Byte__System_UIntPtr_System_UIntPtr_System_UIntPtr_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="Gst.Internal.Buffer.NewWrappedFull(Gst.MemoryFlags,System.Byte@,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.IntPtr,GLib.Internal.DestroyNotify)">NewWrappedFull(MemoryFlags, ref byte, nuint, nuint, nuint, nint, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor gst_buffer_new_wrapped_full.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle NewWrappedFull(MemoryFlags flags, byte[] data, nuint maxsize, nuint offset, nuint size, nint userData, DestroyNotify notify)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern BufferOwnedHandle NewWrappedFull(MemoryFlags flags, ref byte data, nuint maxsize, nuint offset, nuint size, nint userData, DestroyNotify notify)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2365,31 +2408,31 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">maxsize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -2403,7 +2446,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2418,48 +2461,6 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
       </tr>
     </tbody>
   </table>
-  <a id="Gst_Internal_Buffer_NMemory_" data-uid="Gst.Internal.Buffer.NMemory*"></a>
-  <h4 id="Gst_Internal_Buffer_NMemory_Gst_Internal_BufferHandle_" data-uid="Gst.Internal.Buffer.NMemory(Gst.Internal.BufferHandle)">NMemory(BufferHandle)</h4>
-  <div class="markdown level1 summary"><p>Calls native method gst_buffer_n_memory.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern uint NMemory(BufferHandle buffer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Gst.Internal.BufferHandle.html">BufferHandle</a></td>
-        <td><span class="parametername">buffer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">uint</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Gst_Internal_Buffer_PeekMemory_" data-uid="Gst.Internal.Buffer.PeekMemory*"></a>
   <h4 id="Gst_Internal_Buffer_PeekMemory_Gst_Internal_BufferHandle_System_UInt32_" data-uid="Gst.Internal.Buffer.PeekMemory(Gst.Internal.BufferHandle,System.UInt32)">PeekMemory(BufferHandle, uint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_buffer_peek_memory.</p>
@@ -2470,7 +2471,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern MemoryUnownedHandle PeekMemory(BufferHandle buffer, uint idx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2485,7 +2486,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2493,7 +2494,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2518,7 +2519,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void PrependMemory(BufferHandle buffer, MemoryHandle mem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2550,7 +2551,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void RemoveAllMemory(BufferHandle buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2576,7 +2577,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void RemoveMemory(BufferHandle buffer, uint idx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2591,7 +2592,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2608,7 +2609,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void RemoveMemoryRange(BufferHandle buffer, uint idx, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2623,13 +2624,13 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2646,7 +2647,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern bool RemoveMeta(BufferHandle buffer, MetaHandle meta)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2669,7 +2670,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2678,7 +2679,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2694,7 +2695,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void ReplaceAllMemory(BufferHandle buffer, MemoryHandle mem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2726,7 +2727,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void ReplaceMemory(BufferHandle buffer, uint idx, MemoryHandle mem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2741,7 +2742,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2764,7 +2765,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void ReplaceMemoryRange(BufferHandle buffer, uint idx, int length, MemoryHandle mem)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2779,13 +2780,13 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2808,7 +2809,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern void Resize(BufferHandle buffer, long offset, long size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2823,13 +2824,13 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2846,7 +2847,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     <pre><code class="lang-csharp hljs">public static extern bool ResizeRange(BufferHandle buffer, uint idx, int length, long offset, long size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2861,25 +2862,25 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">idx</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2887,7 +2888,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2896,7 +2897,7 @@ public static extern BufferOwnedHandle NewWrappedBytes(BytesHandle bytes)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2914,7 +2915,7 @@ Version: 1.10</p>
 public static extern bool SetFlags(BufferHandle buffer, BufferFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2937,7 +2938,7 @@ public static extern bool SetFlags(BufferHandle buffer, BufferFlags flags)</code
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2946,7 +2947,7 @@ public static extern bool SetFlags(BufferHandle buffer, BufferFlags flags)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2962,7 +2963,7 @@ public static extern bool SetFlags(BufferHandle buffer, BufferFlags flags)</code
     <pre><code class="lang-csharp hljs">public static extern void SetSize(BufferHandle buffer, long size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2977,7 +2978,7 @@ public static extern bool SetFlags(BufferHandle buffer, BufferFlags flags)</code
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2994,7 +2995,7 @@ public static extern bool SetFlags(BufferHandle buffer, BufferFlags flags)</code
     <pre><code class="lang-csharp hljs">public static extern void Unmap(BufferHandle buffer, MapInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3028,7 +3029,7 @@ Version: 1.10</p>
 public static extern bool UnsetFlags(BufferHandle buffer, BufferFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3051,7 +3052,7 @@ public static extern bool UnsetFlags(BufferHandle buffer, BufferFlags flags)</co
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3060,12 +3061,13 @@ public static extern bool UnsetFlags(BufferHandle buffer, BufferFlags flags)</co
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -3094,7 +3096,7 @@ public static extern bool UnsetFlags(BufferHandle buffer, BufferFlags flags)</co
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

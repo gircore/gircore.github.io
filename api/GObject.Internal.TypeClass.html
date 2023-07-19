@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GObject.Internal.TypeClass">
 
 
+
   <h1 id="GObject_Internal_TypeClass" data-uid="GObject.Internal.TypeClass" class="text-break">Class TypeClass
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">TypeClass</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a>.<a class="xref" href="GObject.Internal.html">Internal</a></h6>
@@ -123,7 +124,7 @@ Version: 2.4</p>
 public static extern void AddPrivate(TypeClassHandle gClass, nuint privateSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -138,7 +139,7 @@ public static extern void AddPrivate(TypeClassHandle gClass, nuint privateSize)<
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">privateSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -146,16 +147,16 @@ public static extern void AddPrivate(TypeClassHandle gClass, nuint privateSize)<
     </tbody>
   </table>
   <a id="GObject_Internal_TypeClass_AdjustPrivateOffset_" data-uid="GObject.Internal.TypeClass.AdjustPrivateOffset*"></a>
-  <h4 id="GObject_Internal_TypeClass_AdjustPrivateOffset_System_IntPtr_System_IntPtr_" data-uid="GObject.Internal.TypeClass.AdjustPrivateOffset(System.IntPtr,System.IntPtr)">AdjustPrivateOffset(nint, nint)</h4>
+  <h4 id="GObject_Internal_TypeClass_AdjustPrivateOffset_System_IntPtr_System_Int32__" data-uid="GObject.Internal.TypeClass.AdjustPrivateOffset(System.IntPtr,System.Int32@)">AdjustPrivateOffset(nint, ref int)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_class_adjust_private_offset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void AdjustPrivateOffset(nint gClass, nint privateSizeOrOffset)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void AdjustPrivateOffset(nint gClass, ref int privateSizeOrOffset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -165,13 +166,13 @@ public static extern void AddPrivate(TypeClassHandle gClass, nuint privateSize)<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">gClass</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">privateSizeOrOffset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -190,7 +191,7 @@ Version: 2.38</p>
 public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -207,7 +208,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -216,23 +217,23 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_TypeClass_GetPrivate_" data-uid="GObject.Internal.TypeClass.GetPrivate*"></a>
-  <h4 id="GObject_Internal_TypeClass_GetPrivate_GObject_Internal_TypeClassHandle_System_UIntPtr_" data-uid="GObject.Internal.TypeClass.GetPrivate(GObject.Internal.TypeClassHandle,System.UIntPtr)">GetPrivate(TypeClassHandle, nuint)</h4>
+  <h4 id="GObject_Internal_TypeClass_GetPrivate_GObject_Internal_TypeClassHandle_GObject_Type_" data-uid="GObject.Internal.TypeClass.GetPrivate(GObject.Internal.TypeClassHandle,GObject.Type)">GetPrivate(TypeClassHandle, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_type_class_get_private.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetPrivate(TypeClassHandle klass, nuint privateType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint GetPrivate(TypeClassHandle klass, Type privateType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -247,7 +248,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">privateType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -255,7 +256,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -264,23 +265,23 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_TypeClass_Peek_" data-uid="GObject.Internal.TypeClass.Peek*"></a>
-  <h4 id="GObject_Internal_TypeClass_Peek_System_UIntPtr_" data-uid="GObject.Internal.TypeClass.Peek(System.UIntPtr)">Peek(nuint)</h4>
+  <h4 id="GObject_Internal_TypeClass_Peek_GObject_Type_" data-uid="GObject.Internal.TypeClass.Peek(GObject.Type)">Peek(Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_class_peek.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern TypeClassUnownedHandle Peek(nuint type)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern TypeClassUnownedHandle Peek(Type type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -290,7 +291,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -298,7 +299,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -323,7 +324,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     <pre><code class="lang-csharp hljs">public static extern TypeClassUnownedHandle PeekParent(TypeClassHandle gClass)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -340,7 +341,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -356,7 +357,7 @@ public static extern int GetInstancePrivateOffset(TypeClassHandle gClass)</code>
     </tbody>
   </table>
   <a id="GObject_Internal_TypeClass_PeekStatic_" data-uid="GObject.Internal.TypeClass.PeekStatic*"></a>
-  <h4 id="GObject_Internal_TypeClass_PeekStatic_System_UIntPtr_" data-uid="GObject.Internal.TypeClass.PeekStatic(System.UIntPtr)">PeekStatic(nuint)</h4>
+  <h4 id="GObject_Internal_TypeClass_PeekStatic_GObject_Type_" data-uid="GObject.Internal.TypeClass.PeekStatic(GObject.Type)">PeekStatic(Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_class_peek_static.
 Version: 2.4</p>
 </div>
@@ -364,10 +365,10 @@ Version: 2.4</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.4&quot;)]
-public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
+public static extern TypeClassUnownedHandle PeekStatic(Type type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -377,7 +378,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -385,7 +386,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -401,16 +402,16 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     </tbody>
   </table>
   <a id="GObject_Internal_TypeClass_Ref_" data-uid="GObject.Internal.TypeClass.Ref*"></a>
-  <h4 id="GObject_Internal_TypeClass_Ref_System_UIntPtr_" data-uid="GObject.Internal.TypeClass.Ref(System.UIntPtr)">Ref(nuint)</h4>
+  <h4 id="GObject_Internal_TypeClass_Ref_GObject_Type_" data-uid="GObject.Internal.TypeClass.Ref(GObject.Type)">Ref(Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_class_ref.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern TypeClassUnownedHandle Ref(nuint type)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern TypeClassUnownedHandle Ref(Type type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -420,7 +421,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -428,7 +429,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -453,7 +454,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void Unref(TypeClassHandle gClass)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -479,7 +480,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void UnrefUncached(TypeClassHandle gClass)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -495,6 +496,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -523,7 +525,7 @@ public static extern TypeClassUnownedHandle PeekStatic(nuint type)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

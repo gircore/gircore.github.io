@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -74,7 +74,8 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+    <h3 id="classes">
+Classes
 </h3>
       <h4><a class="xref" href="Gst.Internal.AllocationParams.html">AllocationParams</a></h4>
       <section></section>
@@ -148,42 +149,10 @@
       <section></section>
       <h4><a class="xref" href="Gst.Internal.Buffer.html">Buffer</a></h4>
       <section></section>
-      <h4><a class="xref" href="Gst.Internal.BufferForeachMetaFuncAsyncHandler.html">BufferForeachMetaFuncAsyncHandler</a></h4>
-      <section><p>Async Handler for BufferForeachMetaFunc. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="Gst.Internal.BufferForeachMetaFuncCallHandler.html">BufferForeachMetaFuncCallHandler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Gst.Internal.BufferForeachMetaFuncForeverHandler.html">BufferForeachMetaFuncForeverHandler</a></h4>
-      <section><p>Forever Handler for BufferForeachMetaFunc. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="Gst.Internal.BufferForeachMetaFuncNotifiedHandler.html">BufferForeachMetaFuncNotifiedHandler</a></h4>
-      <section><p>Notified Handler for BufferForeachMetaFunc. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
       <h4><a class="xref" href="Gst.Internal.BufferHandle.html">BufferHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.BufferList.html">BufferList</a></h4>
       <section></section>
-      <h4><a class="xref" href="Gst.Internal.BufferListFuncAsyncHandler.html">BufferListFuncAsyncHandler</a></h4>
-      <section><p>Async Handler for BufferListFunc. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="Gst.Internal.BufferListFuncCallHandler.html">BufferListFuncCallHandler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Gst.Internal.BufferListFuncForeverHandler.html">BufferListFuncForeverHandler</a></h4>
-      <section><p>Forever Handler for BufferListFunc. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="Gst.Internal.BufferListFuncNotifiedHandler.html">BufferListFuncNotifiedHandler</a></h4>
-      <section><p>Notified Handler for BufferListFunc. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
       <h4><a class="xref" href="Gst.Internal.BufferListHandle.html">BufferListHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.BufferListManagedHandle.html">BufferListManagedHandle</a></h4>
@@ -938,6 +907,38 @@ be valid until the process terminates. Therefor the object will never be freed.<
 </section>
       <h4><a class="xref" href="Gst.Internal.LogFunctionNotifiedHandler.html">LogFunctionNotifiedHandler</a></h4>
       <section><p>Notified Handler for LogFunction. A notified annotation indicates the closure should
+be kept alive until it is manually removed by the user. This removal is indicated by a
+destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
+destroy_notify callback parameter.</p>
+</section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncAsyncHandler.html">MainFuncAsyncHandler</a></h4>
+      <section><p>Async Handler for MainFunc. An async annotation indicates the closure will
+be called precisely once, after which it is then available for garbage collection.</p>
+</section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncCallHandler.html">MainFuncCallHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncForeverHandler.html">MainFuncForeverHandler</a></h4>
+      <section><p>Forever Handler for MainFunc. An forever annotation indicates the closure will
+be valid until the process terminates. Therefor the object will never be freed.</p>
+</section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncNotifiedHandler.html">MainFuncNotifiedHandler</a></h4>
+      <section><p>Notified Handler for MainFunc. A notified annotation indicates the closure should
+be kept alive until it is manually removed by the user. This removal is indicated by a
+destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
+destroy_notify callback parameter.</p>
+</section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncSimpleAsyncHandler.html">MainFuncSimpleAsyncHandler</a></h4>
+      <section><p>Async Handler for MainFuncSimple. An async annotation indicates the closure will
+be called precisely once, after which it is then available for garbage collection.</p>
+</section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncSimpleCallHandler.html">MainFuncSimpleCallHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncSimpleForeverHandler.html">MainFuncSimpleForeverHandler</a></h4>
+      <section><p>Forever Handler for MainFuncSimple. An forever annotation indicates the closure will
+be valid until the process terminates. Therefor the object will never be freed.</p>
+</section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncSimpleNotifiedHandler.html">MainFuncSimpleNotifiedHandler</a></h4>
+      <section><p>Notified Handler for MainFuncSimple. A notified annotation indicates the closure should
 be kept alive until it is manually removed by the user. This removal is indicated by a
 destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
 destroy_notify callback parameter.</p>
@@ -2306,10 +2307,6 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.TypeFindUnownedHandle.html">TypeFindUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="Gst.Internal.Uri.html">Uri</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Gst.Internal.UriHandle.html">UriHandle</a></h4>
-      <section></section>
       <h4><a class="xref" href="Gst.Internal.URIHandler.html">URIHandler</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.URIHandlerInterfaceHandle.html">URIHandlerInterfaceHandle</a></h4>
@@ -2321,6 +2318,10 @@ destroy_notify callback parameter.</p>
       <h4><a class="xref" href="Gst.Internal.URIHandlerInterfaceOwnedHandle.html">URIHandlerInterfaceOwnedHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.URIHandlerInterfaceUnownedHandle.html">URIHandlerInterfaceUnownedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Gst.Internal.Uri.html">Uri</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Gst.Internal.UriHandle.html">UriHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.UriManagedHandle.html">UriManagedHandle</a></h4>
       <section></section>
@@ -2408,7 +2409,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.ValueTableUnownedHandle.html">ValueTableUnownedHandle</a></h4>
       <section></section>
-    <h3 id="structs">Structs
+    <h3 id="structs">
+Structs
 </h3>
       <h4><a class="xref" href="Gst.Internal.AllocationParamsData.html">AllocationParamsData</a></h4>
       <section></section>
@@ -2698,9 +2700,9 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.TypeFindFactoryData.html">TypeFindFactoryData</a></h4>
       <section></section>
-      <h4><a class="xref" href="Gst.Internal.UriData.html">UriData</a></h4>
-      <section></section>
       <h4><a class="xref" href="Gst.Internal.URIHandlerInterfaceData.html">URIHandlerInterfaceData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Gst.Internal.UriData.html">UriData</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.ValueArrayData.html">ValueArrayData</a></h4>
       <section></section>
@@ -2708,7 +2710,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.ValueTableData.html">ValueTableData</a></h4>
       <section></section>
-    <h3 id="delegates">Delegates
+    <h3 id="delegates">
+Delegates
 </h3>
       <h4><a class="xref" href="Gst.Internal.AllocatorClassData.AllocCallback.html">AllocatorClassData.AllocCallback</a></h4>
       <section></section>
@@ -2874,6 +2877,10 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.LogFunction.html">LogFunction</a></h4>
       <section></section>
+      <h4><a class="xref" href="Gst.Internal.MainFunc.html">MainFunc</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Gst.Internal.MainFuncSimple.html">MainFuncSimple</a></h4>
+      <section></section>
       <h4><a class="xref" href="Gst.Internal.MemoryCopyFunction.html">MemoryCopyFunction</a></h4>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.MemoryIsSpanFunction.html">MemoryIsSpanFunction</a></h4>
@@ -3016,6 +3023,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="Gst.Internal.ValueSerializeFunc.html">ValueSerializeFunc</a></h4>
       <section></section>
+
+
 </article>
           </div>
 
@@ -3044,7 +3053,7 @@ destroy_notify callback parameter.</p>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

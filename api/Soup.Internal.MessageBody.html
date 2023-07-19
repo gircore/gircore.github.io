@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Soup.Internal.MessageBody">
 
 
+
   <h1 id="Soup_Internal_MessageBody" data-uid="Soup.Internal.MessageBody" class="text-break">Class MessageBody
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">MessageBody</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Soup.html">Soup</a>.<a class="xref" href="Soup.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Soup_Internal_MessageBody_Append_" data-uid="Soup.Internal.MessageBody.Append*"></a>
-  <h4 id="Soup_Internal_MessageBody_Append_Soup_Internal_MessageBodyHandle_Soup_MemoryUse_System_Byte___System_UIntPtr_" data-uid="Soup.Internal.MessageBody.Append(Soup.Internal.MessageBodyHandle,Soup.MemoryUse,System.Byte[],System.UIntPtr)">Append(MessageBodyHandle, MemoryUse, byte[], nuint)</h4>
+  <h4 id="Soup_Internal_MessageBody_Append_Soup_Internal_MessageBodyHandle_Soup_MemoryUse_System_Byte__System_UIntPtr_" data-uid="Soup.Internal.MessageBody.Append(Soup.Internal.MessageBodyHandle,Soup.MemoryUse,System.Byte@,System.UIntPtr)">Append(MessageBodyHandle, MemoryUse, ref byte, nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method soup_message_body_append.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void Append(MessageBodyHandle body, MemoryUse use, byte[] data, nuint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void Append(MessageBodyHandle body, MemoryUse use, ref byte data, nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -142,13 +143,51 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Soup_Internal_MessageBody_Append_" data-uid="Soup.Internal.MessageBody.Append*"></a>
+  <h4 id="Soup_Internal_MessageBody_Append_Soup_Internal_MessageBodyHandle_System_Byte__System_UIntPtr_" data-uid="Soup.Internal.MessageBody.Append(Soup.Internal.MessageBodyHandle,System.Byte@,System.UIntPtr)">Append(MessageBodyHandle, ref byte, nuint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method soup_message_body_append_take.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void Append(MessageBodyHandle body, ref byte data, nuint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Soup.Internal.MessageBodyHandle.html">MessageBodyHandle</a></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -165,7 +204,7 @@
     <pre><code class="lang-csharp hljs">public static extern void AppendBytes(MessageBodyHandle body, BytesHandle buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -187,44 +226,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="Soup_Internal_MessageBody_AppendTake_" data-uid="Soup.Internal.MessageBody.AppendTake*"></a>
-  <h4 id="Soup_Internal_MessageBody_AppendTake_Soup_Internal_MessageBodyHandle_System_Byte___System_UIntPtr_" data-uid="Soup.Internal.MessageBody.AppendTake(Soup.Internal.MessageBodyHandle,System.Byte[],System.UIntPtr)">AppendTake(MessageBodyHandle, byte[], nuint)</h4>
-  <div class="markdown level1 summary"><p>Calls native method soup_message_body_append_take.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void AppendTake(MessageBodyHandle body, byte[] data, nuint length)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Soup.Internal.MessageBodyHandle.html">MessageBodyHandle</a></td>
-        <td><span class="parametername">body</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">byte</span>[]</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">nuint</span></td>
-        <td><span class="parametername">length</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Soup_Internal_MessageBody_Complete_" data-uid="Soup.Internal.MessageBody.Complete*"></a>
   <h4 id="Soup_Internal_MessageBody_Complete_Soup_Internal_MessageBodyHandle_" data-uid="Soup.Internal.MessageBody.Complete(Soup.Internal.MessageBodyHandle)">Complete(MessageBodyHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method soup_message_body_complete.</p>
@@ -235,7 +236,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Complete(MessageBodyHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -261,7 +262,7 @@
     <pre><code class="lang-csharp hljs">public static extern BytesOwnedHandle Flatten(MessageBodyHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -278,7 +279,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -303,7 +304,7 @@
     <pre><code class="lang-csharp hljs">public static extern bool GetAccumulate(MessageBodyHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -320,7 +321,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -329,7 +330,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -345,7 +346,7 @@
     <pre><code class="lang-csharp hljs">public static extern BytesOwnedHandle GetChunk(MessageBodyHandle body, long offset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -360,7 +361,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -368,7 +369,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -393,7 +394,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -402,7 +403,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -418,7 +419,7 @@
     <pre><code class="lang-csharp hljs">public static extern void GotChunk(MessageBodyHandle body, BytesHandle chunk)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -450,7 +451,7 @@
     <pre><code class="lang-csharp hljs">public static extern MessageBodyOwnedHandle New()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -475,7 +476,7 @@
     <pre><code class="lang-csharp hljs">public static extern MessageBodyOwnedHandle Ref(MessageBodyHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -492,7 +493,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -517,7 +518,7 @@
     <pre><code class="lang-csharp hljs">public static extern void SetAccumulate(MessageBodyHandle body, bool accumulate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -532,7 +533,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">accumulate</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -549,7 +550,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Truncate(MessageBodyHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -575,7 +576,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Unref(MessageBodyHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -601,7 +602,7 @@
     <pre><code class="lang-csharp hljs">public static extern void WroteChunk(MessageBodyHandle body, BytesHandle chunk)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -623,6 +624,7 @@
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -651,7 +653,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

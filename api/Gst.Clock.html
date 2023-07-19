@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,13 +70,14 @@
             <article class="content wrap" id="_content" data-uid="Gst.Clock">
 
 
+
   <h1 id="Gst_Clock" data-uid="Gst.Clock" class="text-break">Class Clock
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
     <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
     <div class="level3"><a class="xref" href="Gst.Object.html">Object</a></div>
@@ -86,8 +87,8 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
-    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
     <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
   </div>
@@ -98,6 +99,9 @@
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_DefaultDeepNotify_GObject_Object_Gst_Object_GObject_ParamSpec_System_String___">Object.DefaultDeepNotify(Object, Object, ParamSpec, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_RefSink_System_IntPtr_">Object.RefSink(nint)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_AddControlBinding_Gst_ControlBinding_">Object.AddControlBinding(ControlBinding)</a>
@@ -121,7 +125,10 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_GetPathString">Object.GetPathString()</a>
     </div>
     <div>
-      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_System_UInt64_">Object.GetValue(string, ulong)</a>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_Gst_ClockTime_">Object.GetValue(string, ClockTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValueArray_System_String_Gst_ClockTime_Gst_ClockTime_System_UInt32_System_IntPtr_">Object.GetValueArray(string, ClockTime, ClockTime, uint, nint)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_HasActiveControlBindings">Object.HasActiveControlBindings()</a>
@@ -148,7 +155,7 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingsDisabled_System_Boolean_">Object.SetControlBindingsDisabled(bool)</a>
     </div>
     <div>
-      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_System_UInt64_">Object.SetControlRate(ulong)</a>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_Gst_ClockTime_">Object.SetControlRate(ClockTime)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_SetName_System_String_">Object.SetName(string)</a>
@@ -160,7 +167,7 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_SuggestNextSync">Object.SuggestNextSync()</a>
     </div>
     <div>
-      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_System_UInt64_">Object.SyncValues(ulong)</a>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_Gst_ClockTime_">Object.SyncValues(ClockTime)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_Unparent">Object.Unparent()</a>
@@ -187,6 +194,9 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_OnDeepNotify">Object.OnDeepNotify</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NewValist_GObject_Type_System_String_System_IntPtr_">Object.NewValist(Type, string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
     </div>
     <div>
@@ -202,16 +212,22 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_CompatControl_System_UIntPtr_System_IntPtr_">Object.CompatControl(nuint, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_AddWeakPointer_System_IntPtr__">Object.AddWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyFull_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyFull(string, Object, string, BindingFlags, Closure, Closure)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
@@ -226,7 +242,10 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_GLib_Quark_">Object.GetQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetValist_System_String_System_IntPtr_">Object.GetValist(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
@@ -241,16 +260,28 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RemoveWeakPointer_System_IntPtr__">Object.RemoveWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetData_System_String_System_IntPtr_">Object.SetData(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetQdata_GLib_Quark_System_IntPtr_">Object.SetQdata(Quark, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetValist_System_String_System_IntPtr_">Object.SetValist(string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_GLib_Quark_">Object.StealQdata(Quark)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
@@ -268,25 +299,25 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a></h6>
@@ -314,7 +345,7 @@
     <pre><code class="lang-csharp hljs">protected Clock(params ConstructArgument[] constructArguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -339,7 +370,7 @@
     <pre><code class="lang-csharp hljs">protected Clock(nint ptr, bool ownedRef)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -349,12 +380,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">ownedRef</span></td>
         <td></td>
       </tr>
@@ -371,7 +402,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;Clock, Clock.SyncedSignalArgs&gt; SyncedSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -393,7 +424,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;ulong, Clock&gt; TimeoutPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -402,7 +433,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">ulong</span>, <a class="xref" href="Gst.Clock.html">Clock</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>, <a class="xref" href="Gst.Clock.html">Clock</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -415,7 +446,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, Clock&gt; WindowSizePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -424,7 +455,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gst.Clock.html">Clock</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gst.Clock.html">Clock</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -437,7 +468,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, Clock&gt; WindowThresholdPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -446,7 +477,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gst.Clock.html">Clock</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gst.Clock.html">Clock</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -462,7 +493,7 @@
     <pre><code class="lang-csharp hljs">public ulong Timeout { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -471,7 +502,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -485,7 +516,7 @@
     <pre><code class="lang-csharp hljs">public int WindowSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -494,7 +525,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -508,7 +539,7 @@
     <pre><code class="lang-csharp hljs">public int WindowThreshold { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -517,23 +548,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
 </h3>
-  <a id="Gst_Clock_AdjustUnlocked_" data-uid="Gst.Clock.AdjustUnlocked*"></a>
-  <h4 id="Gst_Clock_AdjustUnlocked_System_UInt64_" data-uid="Gst.Clock.AdjustUnlocked(System.UInt64)">AdjustUnlocked(ulong)</h4>
+  <a id="Gst_Clock_AddObservation_" data-uid="Gst.Clock.AddObservation*"></a>
+  <h4 id="Gst_Clock_AddObservation_Gst_ClockTime_Gst_ClockTime_System_Double__" data-uid="Gst.Clock.AddObservation(Gst.ClockTime,Gst.ClockTime,System.Double@)">AddObservation(ClockTime, ClockTime, out double)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong AdjustUnlocked(ulong @internal)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool AddObservation(ClockTime slave, ClockTime master, out double rSquared)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -543,14 +574,135 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">slave</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">master</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">rSquared</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_AddObservationUnapplied_" data-uid="Gst.Clock.AddObservationUnapplied*"></a>
+  <h4 id="Gst_Clock_AddObservationUnapplied_Gst_ClockTime_Gst_ClockTime_System_Double__Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__" data-uid="Gst.Clock.AddObservationUnapplied(Gst.ClockTime,Gst.ClockTime,System.Double@,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@)">AddObservationUnapplied(ClockTime, ClockTime, out double, out ClockTime, out ClockTime, out ClockTime, out ClockTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
+public bool AddObservationUnapplied(ClockTime slave, ClockTime master, out double rSquared, out ClockTime @internal, out ClockTime external, out ClockTime rateNum, out ClockTime rateDenom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">slave</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">master</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">rSquared</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">internal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">external</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">rateNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">rateDenom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_AdjustUnlocked_" data-uid="Gst.Clock.AdjustUnlocked*"></a>
+  <h4 id="Gst_Clock_AdjustUnlocked_Gst_ClockTime_" data-uid="Gst.Clock.AdjustUnlocked(Gst.ClockTime)">AdjustUnlocked(ClockTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClockTime AdjustUnlocked(ClockTime @internal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internal</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -559,22 +711,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_AdjustWithCalibration_" data-uid="Gst.Clock.AdjustWithCalibration*"></a>
-  <h4 id="Gst_Clock_AdjustWithCalibration_System_UInt64_System_UInt64_System_UInt64_System_UInt64_System_UInt64_" data-uid="Gst.Clock.AdjustWithCalibration(System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)">AdjustWithCalibration(ulong, ulong, ulong, ulong, ulong)</h4>
+  <h4 id="Gst_Clock_AdjustWithCalibration_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Clock.AdjustWithCalibration(Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime)">AdjustWithCalibration(ClockTime, ClockTime, ClockTime, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
-public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong cexternal, ulong cnum, ulong cdenom)</code></pre>
+public ClockTime AdjustWithCalibration(ClockTime internalTarget, ClockTime cinternal, ClockTime cexternal, ClockTime cnum, ClockTime cdenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -584,34 +736,34 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internalTarget</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cinternal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cexternal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cnum</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cdenom</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -620,7 +772,47 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_GetCalibration_" data-uid="Gst.Clock.GetCalibration*"></a>
+  <h4 id="Gst_Clock_GetCalibration_Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__" data-uid="Gst.Clock.GetCalibration(Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@)">GetCalibration(out ClockTime, out ClockTime, out ClockTime, out ClockTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCalibration(out ClockTime @internal, out ClockTime external, out ClockTime rateNum, out ClockTime rateDenom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">internal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">external</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">rateNum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">rateDenom</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -631,10 +823,10 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Type GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -643,7 +835,7 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -654,10 +846,10 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong GetInternalTime()</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockTime GetInternalTime()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -666,7 +858,7 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -680,7 +872,7 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     <pre><code class="lang-csharp hljs">public Clock? GetMaster()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -700,10 +892,10 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong GetResolution()</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockTime GetResolution()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -712,7 +904,7 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -723,10 +915,10 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong GetTime()</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockTime GetTime()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -735,7 +927,7 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -746,10 +938,10 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong GetTimeout()</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockTime GetTimeout()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -758,7 +950,359 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdCompareFunc_" data-uid="Gst.Clock.IdCompareFunc*"></a>
+  <h4 id="Gst_Clock_IdCompareFunc_System_IntPtr_System_IntPtr_" data-uid="Gst.Clock.IdCompareFunc(System.IntPtr,System.IntPtr)">IdCompareFunc(nint, nint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IdCompareFunc(nint id1, nint id2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">id1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">id2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdGetClock_" data-uid="Gst.Clock.IdGetClock*"></a>
+  <h4 id="Gst_Clock_IdGetClock_Gst_ClockID_" data-uid="Gst.Clock.IdGetClock(Gst.ClockID)">IdGetClock(ClockID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
+public static Clock? IdGetClock(ClockID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Clock.html">Clock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdGetTime_" data-uid="Gst.Clock.IdGetTime*"></a>
+  <h4 id="Gst_Clock_IdGetTime_Gst_ClockID_" data-uid="Gst.Clock.IdGetTime(Gst.ClockID)">IdGetTime(ClockID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ClockTime IdGetTime(ClockID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdRef_" data-uid="Gst.Clock.IdRef*"></a>
+  <h4 id="Gst_Clock_IdRef_Gst_ClockID_" data-uid="Gst.Clock.IdRef(Gst.ClockID)">IdRef(ClockID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ClockID IdRef(ClockID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdUnref_" data-uid="Gst.Clock.IdUnref*"></a>
+  <h4 id="Gst_Clock_IdUnref_Gst_ClockID_" data-uid="Gst.Clock.IdUnref(Gst.ClockID)">IdUnref(ClockID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IdUnref(ClockID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdUnschedule_" data-uid="Gst.Clock.IdUnschedule*"></a>
+  <h4 id="Gst_Clock_IdUnschedule_Gst_ClockID_" data-uid="Gst.Clock.IdUnschedule(Gst.ClockID)">IdUnschedule(ClockID)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void IdUnschedule(ClockID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdUsesClock_" data-uid="Gst.Clock.IdUsesClock*"></a>
+  <h4 id="Gst_Clock_IdUsesClock_Gst_ClockID_Gst_Clock_" data-uid="Gst.Clock.IdUsesClock(Gst.ClockID,Gst.Clock)">IdUsesClock(ClockID, Clock)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
+public static bool IdUsesClock(ClockID id, Clock clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Clock.html">Clock</a></td>
+        <td><span class="parametername">clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdWait_" data-uid="Gst.Clock.IdWait*"></a>
+  <h4 id="Gst_Clock_IdWait_Gst_ClockID_Gst_ClockTimeDiff__" data-uid="Gst.Clock.IdWait(Gst.ClockID,Gst.ClockTimeDiff@)">IdWait(ClockID, out ClockTimeDiff)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ClockReturn IdWait(ClockID id, out ClockTimeDiff jitter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTimeDiff.html">ClockTimeDiff</a></td>
+        <td><span class="parametername">jitter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockReturn.html">ClockReturn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_IdWaitAsync_" data-uid="Gst.Clock.IdWaitAsync*"></a>
+  <h4 id="Gst_Clock_IdWaitAsync_Gst_ClockID_Gst_ClockCallback_" data-uid="Gst.Clock.IdWaitAsync(Gst.ClockID,Gst.ClockCallback)">IdWaitAsync(ClockID, ClockCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ClockReturn IdWaitAsync(ClockID id, ClockCallback func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockCallback.html">ClockCallback</a></td>
+        <td><span class="parametername">func</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockReturn.html">ClockReturn</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -773,7 +1317,7 @@ public ulong AdjustWithCalibration(ulong internalTarget, ulong cinternal, ulong 
 public bool IsSynced()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -782,21 +1326,21 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_NewPeriodicId_" data-uid="Gst.Clock.NewPeriodicId*"></a>
-  <h4 id="Gst_Clock_NewPeriodicId_System_UInt64_System_UInt64_" data-uid="Gst.Clock.NewPeriodicId(System.UInt64,System.UInt64)">NewPeriodicId(ulong, ulong)</h4>
+  <h4 id="Gst_Clock_NewPeriodicId_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Clock.NewPeriodicId(Gst.ClockTime,Gst.ClockTime)">NewPeriodicId(ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public nint NewPeriodicId(ulong startTime, ulong interval)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockID NewPeriodicId(ClockTime startTime, ClockTime interval)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -806,19 +1350,19 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">startTime</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">interval</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -827,21 +1371,21 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_NewSingleShotId_" data-uid="Gst.Clock.NewSingleShotId*"></a>
-  <h4 id="Gst_Clock_NewSingleShotId_System_UInt64_" data-uid="Gst.Clock.NewSingleShotId(System.UInt64)">NewSingleShotId(ulong)</h4>
+  <h4 id="Gst_Clock_NewSingleShotId_Gst_ClockTime_" data-uid="Gst.Clock.NewSingleShotId(Gst.ClockTime)">NewSingleShotId(ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public nint NewSingleShotId(ulong time)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockID NewSingleShotId(ClockTime time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -851,14 +1395,14 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">time</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -867,21 +1411,21 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Gst_Clock_SetCalibration_" data-uid="Gst.Clock.SetCalibration*"></a>
-  <h4 id="Gst_Clock_SetCalibration_System_UInt64_System_UInt64_System_UInt64_System_UInt64_" data-uid="Gst.Clock.SetCalibration(System.UInt64,System.UInt64,System.UInt64,System.UInt64)">SetCalibration(ulong, ulong, ulong, ulong)</h4>
+  <a id="Gst_Clock_PeriodicIdReinit_" data-uid="Gst.Clock.PeriodicIdReinit*"></a>
+  <h4 id="Gst_Clock_PeriodicIdReinit_Gst_ClockID_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Clock.PeriodicIdReinit(Gst.ClockID,Gst.ClockTime,Gst.ClockTime)">PeriodicIdReinit(ClockID, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetCalibration(ulong @internal, ulong external, ulong rateNum, ulong rateDenom)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool PeriodicIdReinit(ClockID id, ClockTime startTime, ClockTime interval)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -891,22 +1435,72 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">startTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_SetCalibration_" data-uid="Gst.Clock.SetCalibration*"></a>
+  <h4 id="Gst_Clock_SetCalibration_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Clock.SetCalibration(Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime)">SetCalibration(ClockTime, ClockTime, ClockTime, ClockTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCalibration(ClockTime @internal, ClockTime external, ClockTime rateNum, ClockTime rateDenom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">external</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateNum</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateDenom</span></td>
         <td></td>
       </tr>
@@ -921,7 +1515,7 @@ public bool IsSynced()</code></pre>
     <pre><code class="lang-csharp hljs">public bool SetMaster(Clock? master)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -938,7 +1532,7 @@ public bool IsSynced()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -947,21 +1541,21 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_SetResolution_" data-uid="Gst.Clock.SetResolution*"></a>
-  <h4 id="Gst_Clock_SetResolution_System_UInt64_" data-uid="Gst.Clock.SetResolution(System.UInt64)">SetResolution(ulong)</h4>
+  <h4 id="Gst_Clock_SetResolution_Gst_ClockTime_" data-uid="Gst.Clock.SetResolution(Gst.ClockTime)">SetResolution(ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong SetResolution(ulong resolution)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClockTime SetResolution(ClockTime resolution)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -971,14 +1565,14 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">resolution</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -987,7 +1581,7 @@ public bool IsSynced()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1002,7 +1596,7 @@ public bool IsSynced()</code></pre>
 public void SetSynced(bool synced)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1012,22 +1606,22 @@ public void SetSynced(bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">synced</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_SetTimeout_" data-uid="Gst.Clock.SetTimeout*"></a>
-  <h4 id="Gst_Clock_SetTimeout_System_UInt64_" data-uid="Gst.Clock.SetTimeout(System.UInt64)">SetTimeout(ulong)</h4>
+  <h4 id="Gst_Clock_SetTimeout_Gst_ClockTime_" data-uid="Gst.Clock.SetTimeout(Gst.ClockTime)">SetTimeout(ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetTimeout(ulong timeout)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetTimeout(ClockTime timeout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1037,22 +1631,22 @@ public void SetSynced(bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">timeout</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="Gst_Clock_UnadjustUnlocked_" data-uid="Gst.Clock.UnadjustUnlocked*"></a>
-  <h4 id="Gst_Clock_UnadjustUnlocked_System_UInt64_" data-uid="Gst.Clock.UnadjustUnlocked(System.UInt64)">UnadjustUnlocked(ulong)</h4>
+  <a id="Gst_Clock_SingleShotIdReinit_" data-uid="Gst.Clock.SingleShotIdReinit*"></a>
+  <h4 id="Gst_Clock_SingleShotIdReinit_Gst_ClockID_Gst_ClockTime_" data-uid="Gst.Clock.SingleShotIdReinit(Gst.ClockID,Gst.ClockTime)">SingleShotIdReinit(ClockID, ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong UnadjustUnlocked(ulong external)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool SingleShotIdReinit(ClockID id, ClockTime time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1062,14 +1656,59 @@ public void SetSynced(bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockID.html">ClockID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gst_Clock_UnadjustUnlocked_" data-uid="Gst.Clock.UnadjustUnlocked*"></a>
+  <h4 id="Gst_Clock_UnadjustUnlocked_Gst_ClockTime_" data-uid="Gst.Clock.UnadjustUnlocked(Gst.ClockTime)">UnadjustUnlocked(ClockTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClockTime UnadjustUnlocked(ClockTime external)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">external</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1078,22 +1717,22 @@ public void SetSynced(bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_UnadjustWithCalibration_" data-uid="Gst.Clock.UnadjustWithCalibration*"></a>
-  <h4 id="Gst_Clock_UnadjustWithCalibration_System_UInt64_System_UInt64_System_UInt64_System_UInt64_System_UInt64_" data-uid="Gst.Clock.UnadjustWithCalibration(System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)">UnadjustWithCalibration(ulong, ulong, ulong, ulong, ulong)</h4>
+  <h4 id="Gst_Clock_UnadjustWithCalibration_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Clock.UnadjustWithCalibration(Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime)">UnadjustWithCalibration(ClockTime, ClockTime, ClockTime, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.8&quot;)]
-public ulong UnadjustWithCalibration(ulong externalTarget, ulong cinternal, ulong cexternal, ulong cnum, ulong cdenom)</code></pre>
+public ClockTime UnadjustWithCalibration(ClockTime externalTarget, ClockTime cinternal, ClockTime cexternal, ClockTime cnum, ClockTime cdenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1103,34 +1742,34 @@ public ulong UnadjustWithCalibration(ulong externalTarget, ulong cinternal, ulon
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">externalTarget</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cinternal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cexternal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cnum</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cdenom</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1139,22 +1778,22 @@ public ulong UnadjustWithCalibration(ulong externalTarget, ulong cinternal, ulon
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Clock_WaitForSync_" data-uid="Gst.Clock.WaitForSync*"></a>
-  <h4 id="Gst_Clock_WaitForSync_System_UInt64_" data-uid="Gst.Clock.WaitForSync(System.UInt64)">WaitForSync(ulong)</h4>
+  <h4 id="Gst_Clock_WaitForSync_Gst_ClockTime_" data-uid="Gst.Clock.WaitForSync(Gst.ClockTime)">WaitForSync(ClockTime)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
-public bool WaitForSync(ulong timeout)</code></pre>
+public bool WaitForSync(ClockTime timeout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1164,14 +1803,14 @@ public bool WaitForSync(ulong timeout)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">timeout</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1180,7 +1819,7 @@ public bool WaitForSync(ulong timeout)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1195,7 +1834,7 @@ public bool WaitForSync(ulong timeout)</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;Clock, Clock.SyncedSignalArgs&gt; OnSynced</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1214,10 +1853,10 @@ public bool WaitForSync(ulong timeout)</code></pre>
       <a class="xref" href="GObject.IObject.html">IObject</a>
   </div>
   <div>
-      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
   </div>
   <div>
       <a class="xref" href="GLib.IHandle.html">IHandle</a>
@@ -1225,6 +1864,7 @@ public bool WaitForSync(ulong timeout)</code></pre>
   <div>
       <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
   </div>
+
 </article>
           </div>
 
@@ -1253,7 +1893,7 @@ public bool WaitForSync(ulong timeout)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

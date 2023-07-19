@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,6 +70,7 @@
             <article class="content wrap" id="_content" data-uid="GstBase.Internal.BaseSinkClassData.GetTimesCallback">
 
 
+
   <h1 id="GstBase_Internal_BaseSinkClassData_GetTimesCallback" data-uid="GstBase.Internal.BaseSinkClassData.GetTimesCallback" class="text-break">Delegate BaseSinkClassData.GetTimesCallback
 </h1>
   <div class="markdown level0 summary"></div>
@@ -78,10 +79,10 @@
   <h6><strong>Assembly</strong>: GstBase-1.0.dll</h6>
   <h5 id="GstBase_Internal_BaseSinkClassData_GetTimesCallback_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void BaseSinkClassData.GetTimesCallback(nint sink, nint buffer, nint start, nint end)</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void BaseSinkClassData.GetTimesCallback(nint sink, nint buffer, ref ClockTime start, ref ClockTime end)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -91,27 +92,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">sink</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">buffer</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">start</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">end</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -140,7 +142,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

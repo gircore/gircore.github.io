@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Soup.Internal.WebsocketConnection">
 
 
+
   <h1 id="Soup_Internal_WebsocketConnection" data-uid="Soup.Internal.WebsocketConnection" class="text-break">Class WebsocketConnection
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">WebsocketConnection</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Soup.html">Soup</a>.<a class="xref" href="Soup.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Soup_Internal_WebsocketConnection_Close_" data-uid="Soup.Internal.WebsocketConnection.Close*"></a>
-  <h4 id="Soup_Internal_WebsocketConnection_Close_System_IntPtr_System_UInt16_System_String_" data-uid="Soup.Internal.WebsocketConnection.Close(System.IntPtr,System.UInt16,System.String)">Close(nint, ushort, string?)</h4>
+  <h4 id="Soup_Internal_WebsocketConnection_Close_System_IntPtr_System_UInt16_GLib_Internal_NullableUtf8StringHandle_" data-uid="Soup.Internal.WebsocketConnection.Close(System.IntPtr,System.UInt16,GLib.Internal.NullableUtf8StringHandle)">Close(nint, ushort, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method soup_websocket_connection_close.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void Close(nint self, ushort code, string? data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void Close(nint self, ushort code, NullableUtf8StringHandle data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -131,18 +132,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ushort</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
         <td><span class="parametername">code</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -159,7 +160,7 @@
     <pre><code class="lang-csharp hljs">public static extern ushort GetCloseCode(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -169,14 +170,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -185,7 +186,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ushort</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -198,10 +199,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetCloseData(nint self)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetCloseData(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -211,14 +212,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -227,7 +228,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -243,7 +244,7 @@
     <pre><code class="lang-csharp hljs">public static extern WebsocketConnectionType GetConnectionType(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -253,14 +254,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -285,7 +286,7 @@
     <pre><code class="lang-csharp hljs">public static extern ListUnownedHandle GetExtensions(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -295,14 +296,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -327,7 +328,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -336,7 +337,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -352,7 +353,7 @@
     <pre><code class="lang-csharp hljs">public static extern nint GetIoStream(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -362,14 +363,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -378,7 +379,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -394,7 +395,7 @@
     <pre><code class="lang-csharp hljs">public static extern uint GetKeepaliveInterval(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -404,14 +405,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -420,7 +421,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -436,7 +437,7 @@
     <pre><code class="lang-csharp hljs">public static extern ulong GetMaxIncomingPayloadSize(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -446,14 +447,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -462,7 +463,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -475,10 +476,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetOrigin(nint self)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NullableUtf8StringUnownedHandle GetOrigin(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -488,14 +489,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -504,7 +505,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -517,10 +518,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetProtocol(nint self)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NullableUtf8StringUnownedHandle GetProtocol(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -530,14 +531,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -546,7 +547,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -562,7 +563,7 @@
     <pre><code class="lang-csharp hljs">public static extern WebsocketState GetState(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -572,14 +573,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -604,7 +605,7 @@
     <pre><code class="lang-csharp hljs">public static extern UriUnownedHandle GetUri(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -614,14 +615,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -637,16 +638,16 @@
     </tbody>
   </table>
   <a id="Soup_Internal_WebsocketConnection_New_" data-uid="Soup.Internal.WebsocketConnection.New*"></a>
-  <h4 id="Soup_Internal_WebsocketConnection_New_System_IntPtr_GLib_Internal_UriHandle_Soup_WebsocketConnectionType_System_String_System_String_GLib_Internal_ListHandle_" data-uid="Soup.Internal.WebsocketConnection.New(System.IntPtr,GLib.Internal.UriHandle,Soup.WebsocketConnectionType,System.String,System.String,GLib.Internal.ListHandle)">New(nint, UriHandle, WebsocketConnectionType, string?, string?, ListHandle)</h4>
+  <h4 id="Soup_Internal_WebsocketConnection_New_System_IntPtr_GLib_Internal_UriHandle_Soup_WebsocketConnectionType_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_ListHandle_" data-uid="Soup.Internal.WebsocketConnection.New(System.IntPtr,GLib.Internal.UriHandle,Soup.WebsocketConnectionType,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.ListHandle)">New(nint, UriHandle, WebsocketConnectionType, NullableUtf8StringHandle, NullableUtf8StringHandle, ListHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor soup_websocket_connection_new.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint New(nint stream, UriHandle uri, WebsocketConnectionType type, string? origin, string? protocol, ListHandle extensions)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint New(nint stream, UriHandle uri, WebsocketConnectionType type, NullableUtf8StringHandle origin, NullableUtf8StringHandle protocol, ListHandle extensions)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -656,7 +657,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">stream</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -674,13 +675,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">origin</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">protocol</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -694,7 +695,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -703,23 +704,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Soup_Internal_WebsocketConnection_SendBinary_" data-uid="Soup.Internal.WebsocketConnection.SendBinary*"></a>
-  <h4 id="Soup_Internal_WebsocketConnection_SendBinary_System_IntPtr_System_Byte___System_UIntPtr_" data-uid="Soup.Internal.WebsocketConnection.SendBinary(System.IntPtr,System.Byte[],System.UIntPtr)">SendBinary(nint, byte[], nuint)</h4>
+  <h4 id="Soup_Internal_WebsocketConnection_SendBinary_System_IntPtr_System_Byte__System_UIntPtr_" data-uid="Soup.Internal.WebsocketConnection.SendBinary(System.IntPtr,System.Byte@,System.UIntPtr)">SendBinary(nint, ref byte, nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method soup_websocket_connection_send_binary.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SendBinary(nint self, byte[] data, nuint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SendBinary(nint self, ref byte data, nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -729,18 +730,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -757,7 +758,7 @@
     <pre><code class="lang-csharp hljs">public static extern void SendMessage(nint self, WebsocketDataType type, BytesHandle message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -767,7 +768,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
@@ -786,16 +787,16 @@
     </tbody>
   </table>
   <a id="Soup_Internal_WebsocketConnection_SendText_" data-uid="Soup.Internal.WebsocketConnection.SendText*"></a>
-  <h4 id="Soup_Internal_WebsocketConnection_SendText_System_IntPtr_System_String_" data-uid="Soup.Internal.WebsocketConnection.SendText(System.IntPtr,System.String)">SendText(nint, string)</h4>
+  <h4 id="Soup_Internal_WebsocketConnection_SendText_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Soup.Internal.WebsocketConnection.SendText(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">SendText(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method soup_websocket_connection_send_text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SendText(nint self, string text)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SendText(nint self, NonNullableUtf8StringHandle text)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -805,12 +806,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">text</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -827,7 +828,7 @@
     <pre><code class="lang-csharp hljs">public static extern void SetKeepaliveInterval(nint self, uint interval)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -837,12 +838,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">interval</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -859,7 +860,7 @@
     <pre><code class="lang-csharp hljs">public static extern void SetMaxIncomingPayloadSize(nint self, ulong maxIncomingPayloadSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -869,18 +870,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><span class="parametername">maxIncomingPayloadSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -909,7 +911,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

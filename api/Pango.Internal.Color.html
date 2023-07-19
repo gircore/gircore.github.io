@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Pango.Internal.Color">
 
 
+
   <h1 id="Pango_Internal_Color" data-uid="Pango.Internal.Color" class="text-break">Class Color
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Color</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Pango.html">Pango</a>.<a class="xref" href="Pango.Internal.html">Internal</a></h6>
@@ -121,7 +122,7 @@
     <pre><code class="lang-csharp hljs">public static extern ColorOwnedHandle Copy(ColorHandle src)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -138,7 +139,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -163,7 +164,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Free(ColorHandle color)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -189,7 +190,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -198,23 +199,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Pango_Internal_Color_Parse_" data-uid="Pango.Internal.Color.Parse*"></a>
-  <h4 id="Pango_Internal_Color_Parse_Pango_Internal_ColorHandle_System_String_" data-uid="Pango.Internal.Color.Parse(Pango.Internal.ColorHandle,System.String)">Parse(ColorHandle, string)</h4>
+  <h4 id="Pango_Internal_Color_Parse_Pango_Internal_ColorHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Pango.Internal.Color.Parse(Pango.Internal.ColorHandle,GLib.Internal.NonNullableUtf8StringHandle)">Parse(ColorHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method pango_color_parse.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool Parse(ColorHandle color, string spec)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool Parse(ColorHandle color, NonNullableUtf8StringHandle spec)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -229,7 +230,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">spec</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -237,7 +238,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -246,14 +247,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Pango_Internal_Color_ParseWithAlpha_" data-uid="Pango.Internal.Color.ParseWithAlpha*"></a>
-  <h4 id="Pango_Internal_Color_ParseWithAlpha_Pango_Internal_ColorHandle_System_IntPtr__System_String_" data-uid="Pango.Internal.Color.ParseWithAlpha(Pango.Internal.ColorHandle,System.IntPtr@,System.String)">ParseWithAlpha(ColorHandle, out nint, string)</h4>
+  <h4 id="Pango_Internal_Color_ParseWithAlpha_Pango_Internal_ColorHandle_System_UInt16__GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Pango.Internal.Color.ParseWithAlpha(Pango.Internal.ColorHandle,System.UInt16@,GLib.Internal.NonNullableUtf8StringHandle)">ParseWithAlpha(ColorHandle, out ushort, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method pango_color_parse_with_alpha.
 Version: 1.46</p>
 </div>
@@ -261,10 +262,10 @@ Version: 1.46</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.46&quot;)]
-public static extern bool ParseWithAlpha(ColorHandle color, out nint alpha, string spec)</code></pre>
+public static extern bool ParseWithAlpha(ColorHandle color, out ushort alpha, NonNullableUtf8StringHandle spec)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -279,13 +280,13 @@ public static extern bool ParseWithAlpha(ColorHandle color, out nint alpha, stri
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
         <td><span class="parametername">alpha</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">spec</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -293,7 +294,7 @@ public static extern bool ParseWithAlpha(ColorHandle color, out nint alpha, stri
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -302,7 +303,7 @@ public static extern bool ParseWithAlpha(ColorHandle color, out nint alpha, stri
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -317,10 +318,10 @@ Version: 1.16</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
-public static extern string ToString(ColorHandle color)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle ToString(ColorHandle color)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -337,7 +338,7 @@ public static extern string ToString(ColorHandle color)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -346,12 +347,13 @@ public static extern string ToString(ColorHandle color)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -380,7 +382,7 @@ public static extern string ToString(ColorHandle color)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

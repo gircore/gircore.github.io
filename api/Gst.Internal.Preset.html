@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gst.Internal.Preset">
 
 
+
   <h1 id="Gst_Internal_Preset" data-uid="Gst.Internal.Preset" class="text-break">Class Preset
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Preset</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a>.<a class="xref" href="Gst.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gst_Internal_Preset_DeletePreset_" data-uid="Gst.Internal.Preset.DeletePreset*"></a>
-  <h4 id="Gst_Internal_Preset_DeletePreset_System_IntPtr_System_String_" data-uid="Gst.Internal.Preset.DeletePreset(System.IntPtr,System.String)">DeletePreset(nint, string)</h4>
+  <h4 id="Gst_Internal_Preset_DeletePreset_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.Preset.DeletePreset(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">DeletePreset(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_preset_delete_preset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool DeletePreset(nint preset, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool DeletePreset(nint preset, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -131,12 +132,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -144,7 +145,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -153,7 +154,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -166,10 +167,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetAppDir()</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NullablePlatformStringUnownedHandle GetAppDir()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -178,7 +179,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullablePlatformStringUnownedHandle.html">NullablePlatformStringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -194,7 +195,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -203,23 +204,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Preset_GetMeta_" data-uid="Gst.Internal.Preset.GetMeta*"></a>
-  <h4 id="Gst_Internal_Preset_GetMeta_System_IntPtr_System_String_System_String_System_String__" data-uid="Gst.Internal.Preset.GetMeta(System.IntPtr,System.String,System.String,System.String@)">GetMeta(nint, string, string, out string)</h4>
+  <h4 id="Gst_Internal_Preset_GetMeta_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringOwnedHandle__" data-uid="Gst.Internal.Preset.GetMeta(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringOwnedHandle@)">GetMeta(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle, out NonNullableUtf8StringOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_preset_get_meta.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool GetMeta(nint preset, string name, string tag, out string value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool GetMeta(nint preset, NonNullableUtf8StringHandle name, NonNullableUtf8StringHandle tag, out NonNullableUtf8StringOwnedHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -229,24 +230,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">tag</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -254,7 +255,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -263,7 +264,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -279,7 +280,7 @@
     <pre><code class="lang-csharp hljs">public static extern string[] GetPresetNames(nint preset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -289,14 +290,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -305,7 +306,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -321,7 +322,7 @@
     <pre><code class="lang-csharp hljs">public static extern string[] GetPropertyNames(nint preset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -331,14 +332,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -347,7 +348,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -365,7 +366,7 @@ Version: 1.6</p>
 public static extern bool IsEditable(nint preset)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -375,14 +376,14 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -391,23 +392,23 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Preset_LoadPreset_" data-uid="Gst.Internal.Preset.LoadPreset*"></a>
-  <h4 id="Gst_Internal_Preset_LoadPreset_System_IntPtr_System_String_" data-uid="Gst.Internal.Preset.LoadPreset(System.IntPtr,System.String)">LoadPreset(nint, string)</h4>
+  <h4 id="Gst_Internal_Preset_LoadPreset_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.Preset.LoadPreset(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">LoadPreset(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_preset_load_preset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool LoadPreset(nint preset, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool LoadPreset(nint preset, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -417,12 +418,12 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -430,7 +431,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -439,23 +440,23 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Preset_RenamePreset_" data-uid="Gst.Internal.Preset.RenamePreset*"></a>
-  <h4 id="Gst_Internal_Preset_RenamePreset_System_IntPtr_System_String_System_String_" data-uid="Gst.Internal.Preset.RenamePreset(System.IntPtr,System.String,System.String)">RenamePreset(nint, string, string)</h4>
+  <h4 id="Gst_Internal_Preset_RenamePreset_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.Preset.RenamePreset(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle)">RenamePreset(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_preset_rename_preset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool RenamePreset(nint preset, string oldName, string newName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool RenamePreset(nint preset, NonNullableUtf8StringHandle oldName, NonNullableUtf8StringHandle newName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -465,18 +466,18 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">oldName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">newName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -484,7 +485,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -493,23 +494,23 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Preset_SavePreset_" data-uid="Gst.Internal.Preset.SavePreset*"></a>
-  <h4 id="Gst_Internal_Preset_SavePreset_System_IntPtr_System_String_" data-uid="Gst.Internal.Preset.SavePreset(System.IntPtr,System.String)">SavePreset(nint, string)</h4>
+  <h4 id="Gst_Internal_Preset_SavePreset_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.Preset.SavePreset(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">SavePreset(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_preset_save_preset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool SavePreset(nint preset, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool SavePreset(nint preset, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -519,12 +520,12 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -532,7 +533,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -541,23 +542,23 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Preset_SetAppDir_" data-uid="Gst.Internal.Preset.SetAppDir*"></a>
-  <h4 id="Gst_Internal_Preset_SetAppDir_System_String_" data-uid="Gst.Internal.Preset.SetAppDir(System.String)">SetAppDir(string)</h4>
+  <h4 id="Gst_Internal_Preset_SetAppDir_GLib_Internal_NonNullablePlatformStringHandle_" data-uid="Gst.Internal.Preset.SetAppDir(GLib.Internal.NonNullablePlatformStringHandle)">SetAppDir(NonNullablePlatformStringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_preset_set_app_dir.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool SetAppDir(string appDir)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool SetAppDir(NonNullablePlatformStringHandle appDir)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -567,7 +568,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullablePlatformStringHandle.html">NonNullablePlatformStringHandle</a></td>
         <td><span class="parametername">appDir</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -575,7 +576,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -584,23 +585,23 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Preset_SetMeta_" data-uid="Gst.Internal.Preset.SetMeta*"></a>
-  <h4 id="Gst_Internal_Preset_SetMeta_System_IntPtr_System_String_System_String_System_String_" data-uid="Gst.Internal.Preset.SetMeta(System.IntPtr,System.String,System.String,System.String)">SetMeta(nint, string, string, string?)</h4>
+  <h4 id="Gst_Internal_Preset_SetMeta_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NullableUtf8StringHandle_" data-uid="Gst.Internal.Preset.SetMeta(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NullableUtf8StringHandle)">SetMeta(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_preset_set_meta.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool SetMeta(nint preset, string name, string tag, string? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool SetMeta(nint preset, NonNullableUtf8StringHandle name, NonNullableUtf8StringHandle tag, NullableUtf8StringHandle value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -610,24 +611,24 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">preset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">tag</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -635,7 +636,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -644,12 +645,13 @@ public static extern bool IsEditable(nint preset)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -678,7 +680,7 @@ public static extern bool IsEditable(nint preset)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

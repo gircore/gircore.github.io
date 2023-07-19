@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Adw.Internal.MessageDialog">
 
 
+
   <h1 id="Adw_Internal_MessageDialog" data-uid="Adw.Internal.MessageDialog" class="text-break">Class MessageDialog
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">MessageDialog</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Adw.html">Adw</a>.<a class="xref" href="Adw.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Adw_Internal_MessageDialog_AddResponse_" data-uid="Adw.Internal.MessageDialog.AddResponse*"></a>
-  <h4 id="Adw_Internal_MessageDialog_AddResponse_System_IntPtr_System_String_System_String_" data-uid="Adw.Internal.MessageDialog.AddResponse(System.IntPtr,System.String,System.String)">AddResponse(nint, string, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_AddResponse_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.AddResponse(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle)">AddResponse(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_add_response.
 Version: 1.2</p>
 </div>
@@ -120,10 +121,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void AddResponse(nint self, string id, string label)</code></pre>
+public static extern void AddResponse(nint self, NonNullableUtf8StringHandle id, NonNullableUtf8StringHandle label)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,19 +134,115 @@ public static extern void AddResponse(nint self, string id, string label)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">label</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Adw_Internal_MessageDialog_Choose_" data-uid="Adw.Internal.MessageDialog.Choose*"></a>
+  <h4 id="Adw_Internal_MessageDialog_Choose_System_IntPtr_System_IntPtr_Gio_Internal_AsyncReadyCallback_System_IntPtr_" data-uid="Adw.Internal.MessageDialog.Choose(System.IntPtr,System.IntPtr,Gio.Internal.AsyncReadyCallback,System.IntPtr)">Choose(nint, nint, AsyncReadyCallback, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_choose.
+Version: 1.3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.3&quot;)]
+public static extern void Choose(nint self, nint cancellable, AsyncReadyCallback callback, nint userData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">cancellable</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gio.Internal.AsyncReadyCallback.html">AsyncReadyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Adw_Internal_MessageDialog_ChooseFinish_" data-uid="Adw.Internal.MessageDialog.ChooseFinish*"></a>
+  <h4 id="Adw_Internal_MessageDialog_ChooseFinish_System_IntPtr_System_IntPtr_" data-uid="Adw.Internal.MessageDialog.ChooseFinish(System.IntPtr,System.IntPtr)">ChooseFinish(nint, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_choose_finish.
+Version: 1.3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.3&quot;)]
+public static extern NonNullableUtf8StringUnownedHandle ChooseFinish(nint self, nint result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">self</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -160,10 +257,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern nint GetBody(nint self)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetBody(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -173,14 +270,14 @@ public static extern nint GetBody(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -189,7 +286,7 @@ public static extern nint GetBody(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -207,7 +304,7 @@ Version: 1.2</p>
 public static extern bool GetBodyUseMarkup(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -217,14 +314,14 @@ public static extern bool GetBodyUseMarkup(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -233,7 +330,7 @@ public static extern bool GetBodyUseMarkup(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -248,10 +345,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern nint GetCloseResponse(nint self)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetCloseResponse(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -261,14 +358,14 @@ public static extern nint GetCloseResponse(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -277,7 +374,7 @@ public static extern nint GetCloseResponse(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -292,10 +389,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern nint GetDefaultResponse(nint self)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetDefaultResponse(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -305,14 +402,14 @@ public static extern nint GetDefaultResponse(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -321,7 +418,7 @@ public static extern nint GetDefaultResponse(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -339,7 +436,7 @@ Version: 1.2</p>
 public static extern nint GetExtraChild(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -349,14 +446,14 @@ public static extern nint GetExtraChild(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -365,7 +462,7 @@ public static extern nint GetExtraChild(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -381,7 +478,7 @@ public static extern nint GetExtraChild(nint self)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -390,7 +487,7 @@ public static extern nint GetExtraChild(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -405,10 +502,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern nint GetHeading(nint self)</code></pre>
+public static extern NullableUtf8StringUnownedHandle GetHeading(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -418,14 +515,14 @@ public static extern nint GetHeading(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -434,7 +531,7 @@ public static extern nint GetHeading(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -452,7 +549,7 @@ Version: 1.2</p>
 public static extern bool GetHeadingUseMarkup(nint self)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -462,14 +559,14 @@ public static extern bool GetHeadingUseMarkup(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -478,14 +575,14 @@ public static extern bool GetHeadingUseMarkup(nint self)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_GetResponseAppearance_" data-uid="Adw.Internal.MessageDialog.GetResponseAppearance*"></a>
-  <h4 id="Adw_Internal_MessageDialog_GetResponseAppearance_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.GetResponseAppearance(System.IntPtr,System.String)">GetResponseAppearance(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_GetResponseAppearance_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.GetResponseAppearance(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetResponseAppearance(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_get_response_appearance.
 Version: 1.2</p>
 </div>
@@ -493,10 +590,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern ResponseAppearance GetResponseAppearance(nint self, string response)</code></pre>
+public static extern ResponseAppearance GetResponseAppearance(nint self, NonNullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -506,12 +603,12 @@ public static extern ResponseAppearance GetResponseAppearance(nint self, string 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -519,7 +616,7 @@ public static extern ResponseAppearance GetResponseAppearance(nint self, string 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -535,7 +632,7 @@ public static extern ResponseAppearance GetResponseAppearance(nint self, string 
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_GetResponseEnabled_" data-uid="Adw.Internal.MessageDialog.GetResponseEnabled*"></a>
-  <h4 id="Adw_Internal_MessageDialog_GetResponseEnabled_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.GetResponseEnabled(System.IntPtr,System.String)">GetResponseEnabled(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_GetResponseEnabled_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.GetResponseEnabled(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetResponseEnabled(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_get_response_enabled.
 Version: 1.2</p>
 </div>
@@ -543,10 +640,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern bool GetResponseEnabled(nint self, string response)</code></pre>
+public static extern bool GetResponseEnabled(nint self, NonNullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -556,12 +653,12 @@ public static extern bool GetResponseEnabled(nint self, string response)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -569,7 +666,7 @@ public static extern bool GetResponseEnabled(nint self, string response)</code><
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -578,14 +675,14 @@ public static extern bool GetResponseEnabled(nint self, string response)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_GetResponseLabel_" data-uid="Adw.Internal.MessageDialog.GetResponseLabel*"></a>
-  <h4 id="Adw_Internal_MessageDialog_GetResponseLabel_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.GetResponseLabel(System.IntPtr,System.String)">GetResponseLabel(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_GetResponseLabel_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.GetResponseLabel(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">GetResponseLabel(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_get_response_label.
 Version: 1.2</p>
 </div>
@@ -593,10 +690,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern nint GetResponseLabel(nint self, string response)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetResponseLabel(nint self, NonNullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -606,12 +703,12 @@ public static extern nint GetResponseLabel(nint self, string response)</code></p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -619,7 +716,7 @@ public static extern nint GetResponseLabel(nint self, string response)</code></p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -628,14 +725,14 @@ public static extern nint GetResponseLabel(nint self, string response)</code></p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_HasResponse_" data-uid="Adw.Internal.MessageDialog.HasResponse*"></a>
-  <h4 id="Adw_Internal_MessageDialog_HasResponse_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.HasResponse(System.IntPtr,System.String)">HasResponse(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_HasResponse_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.HasResponse(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">HasResponse(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_has_response.
 Version: 1.2</p>
 </div>
@@ -643,10 +740,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern bool HasResponse(nint self, string response)</code></pre>
+public static extern bool HasResponse(nint self, NonNullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -656,12 +753,12 @@ public static extern bool HasResponse(nint self, string response)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -669,7 +766,7 @@ public static extern bool HasResponse(nint self, string response)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -678,14 +775,14 @@ public static extern bool HasResponse(nint self, string response)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_New_" data-uid="Adw.Internal.MessageDialog.New*"></a>
-  <h4 id="Adw_Internal_MessageDialog_New_System_IntPtr_System_String_System_String_" data-uid="Adw.Internal.MessageDialog.New(System.IntPtr,System.String,System.String)">New(nint, string?, string?)</h4>
+  <h4 id="Adw_Internal_MessageDialog_New_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_NullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.New(System.IntPtr,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.NullableUtf8StringHandle)">New(nint, NullableUtf8StringHandle, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor adw_message_dialog_new.
 Version: 1.2</p>
 </div>
@@ -693,10 +790,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern nint New(nint parent, string? heading, string? body)</code></pre>
+public static extern nint New(nint parent, NullableUtf8StringHandle heading, NullableUtf8StringHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -706,19 +803,19 @@ public static extern nint New(nint parent, string? heading, string? body)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">parent</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">heading</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">body</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -726,7 +823,7 @@ public static extern nint New(nint parent, string? heading, string? body)</code>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -735,14 +832,14 @@ public static extern nint New(nint parent, string? heading, string? body)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_Response_" data-uid="Adw.Internal.MessageDialog.Response*"></a>
-  <h4 id="Adw_Internal_MessageDialog_Response_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.Response(System.IntPtr,System.String)">Response(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_Response_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.Response(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">Response(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_response.
 Version: 1.2</p>
 </div>
@@ -750,10 +847,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void Response(nint self, string response)</code></pre>
+public static extern void Response(nint self, NonNullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -763,12 +860,12 @@ public static extern void Response(nint self, string response)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -776,7 +873,7 @@ public static extern void Response(nint self, string response)</code></pre>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetBody_" data-uid="Adw.Internal.MessageDialog.SetBody*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetBody_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.SetBody(System.IntPtr,System.String)">SetBody(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetBody_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.SetBody(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">SetBody(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_body.
 Version: 1.2</p>
 </div>
@@ -784,10 +881,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetBody(nint self, string body)</code></pre>
+public static extern void SetBody(nint self, NonNullableUtf8StringHandle body)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -797,12 +894,12 @@ public static extern void SetBody(nint self, string body)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">body</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -821,7 +918,7 @@ Version: 1.2</p>
 public static extern void SetBodyUseMarkup(nint self, bool useMarkup)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -831,12 +928,12 @@ public static extern void SetBodyUseMarkup(nint self, bool useMarkup)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">useMarkup</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -844,7 +941,7 @@ public static extern void SetBodyUseMarkup(nint self, bool useMarkup)</code></pr
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetCloseResponse_" data-uid="Adw.Internal.MessageDialog.SetCloseResponse*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetCloseResponse_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.SetCloseResponse(System.IntPtr,System.String)">SetCloseResponse(nint, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetCloseResponse_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.SetCloseResponse(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">SetCloseResponse(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_close_response.
 Version: 1.2</p>
 </div>
@@ -852,10 +949,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetCloseResponse(nint self, string response)</code></pre>
+public static extern void SetCloseResponse(nint self, NonNullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -865,12 +962,12 @@ public static extern void SetCloseResponse(nint self, string response)</code></p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -878,7 +975,7 @@ public static extern void SetCloseResponse(nint self, string response)</code></p
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetDefaultResponse_" data-uid="Adw.Internal.MessageDialog.SetDefaultResponse*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetDefaultResponse_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.SetDefaultResponse(System.IntPtr,System.String)">SetDefaultResponse(nint, string?)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetDefaultResponse_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.SetDefaultResponse(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetDefaultResponse(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_default_response.
 Version: 1.2</p>
 </div>
@@ -886,10 +983,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetDefaultResponse(nint self, string? response)</code></pre>
+public static extern void SetDefaultResponse(nint self, NullableUtf8StringHandle response)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -899,12 +996,12 @@ public static extern void SetDefaultResponse(nint self, string? response)</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -923,7 +1020,7 @@ Version: 1.2</p>
 public static extern void SetExtraChild(nint self, nint child)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -933,12 +1030,12 @@ public static extern void SetExtraChild(nint self, nint child)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">child</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -946,7 +1043,7 @@ public static extern void SetExtraChild(nint self, nint child)</code></pre>
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetHeading_" data-uid="Adw.Internal.MessageDialog.SetHeading*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetHeading_System_IntPtr_System_String_" data-uid="Adw.Internal.MessageDialog.SetHeading(System.IntPtr,System.String)">SetHeading(nint, string?)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetHeading_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.SetHeading(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">SetHeading(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_heading.
 Version: 1.2</p>
 </div>
@@ -954,10 +1051,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetHeading(nint self, string? heading)</code></pre>
+public static extern void SetHeading(nint self, NullableUtf8StringHandle heading)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -967,12 +1064,12 @@ public static extern void SetHeading(nint self, string? heading)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">heading</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -991,7 +1088,7 @@ Version: 1.2</p>
 public static extern void SetHeadingUseMarkup(nint self, bool useMarkup)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1001,12 +1098,12 @@ public static extern void SetHeadingUseMarkup(nint self, bool useMarkup)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">useMarkup</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1014,7 +1111,7 @@ public static extern void SetHeadingUseMarkup(nint self, bool useMarkup)</code><
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetResponseAppearance_" data-uid="Adw.Internal.MessageDialog.SetResponseAppearance*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetResponseAppearance_System_IntPtr_System_String_Adw_ResponseAppearance_" data-uid="Adw.Internal.MessageDialog.SetResponseAppearance(System.IntPtr,System.String,Adw.ResponseAppearance)">SetResponseAppearance(nint, string, ResponseAppearance)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetResponseAppearance_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_Adw_ResponseAppearance_" data-uid="Adw.Internal.MessageDialog.SetResponseAppearance(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,Adw.ResponseAppearance)">SetResponseAppearance(nint, NonNullableUtf8StringHandle, ResponseAppearance)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_response_appearance.
 Version: 1.2</p>
 </div>
@@ -1022,10 +1119,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetResponseAppearance(nint self, string response, ResponseAppearance appearance)</code></pre>
+public static extern void SetResponseAppearance(nint self, NonNullableUtf8StringHandle response, ResponseAppearance appearance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1035,12 +1132,12 @@ public static extern void SetResponseAppearance(nint self, string response, Resp
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1054,7 +1151,7 @@ public static extern void SetResponseAppearance(nint self, string response, Resp
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetResponseEnabled_" data-uid="Adw.Internal.MessageDialog.SetResponseEnabled*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetResponseEnabled_System_IntPtr_System_String_System_Boolean_" data-uid="Adw.Internal.MessageDialog.SetResponseEnabled(System.IntPtr,System.String,System.Boolean)">SetResponseEnabled(nint, string, bool)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetResponseEnabled_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_Boolean_" data-uid="Adw.Internal.MessageDialog.SetResponseEnabled(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.Boolean)">SetResponseEnabled(nint, NonNullableUtf8StringHandle, bool)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_response_enabled.
 Version: 1.2</p>
 </div>
@@ -1062,10 +1159,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetResponseEnabled(nint self, string response, bool enabled)</code></pre>
+public static extern void SetResponseEnabled(nint self, NonNullableUtf8StringHandle response, bool enabled)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1075,18 +1172,18 @@ public static extern void SetResponseEnabled(nint self, string response, bool en
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">enabled</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1094,7 +1191,7 @@ public static extern void SetResponseEnabled(nint self, string response, bool en
     </tbody>
   </table>
   <a id="Adw_Internal_MessageDialog_SetResponseLabel_" data-uid="Adw.Internal.MessageDialog.SetResponseLabel*"></a>
-  <h4 id="Adw_Internal_MessageDialog_SetResponseLabel_System_IntPtr_System_String_System_String_" data-uid="Adw.Internal.MessageDialog.SetResponseLabel(System.IntPtr,System.String,System.String)">SetResponseLabel(nint, string, string)</h4>
+  <h4 id="Adw_Internal_MessageDialog_SetResponseLabel_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Adw.Internal.MessageDialog.SetResponseLabel(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringHandle)">SetResponseLabel(nint, NonNullableUtf8StringHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method adw_message_dialog_set_response_label.
 Version: 1.2</p>
 </div>
@@ -1102,10 +1199,10 @@ Version: 1.2</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.2&quot;)]
-public static extern void SetResponseLabel(nint self, string response, string label)</code></pre>
+public static extern void SetResponseLabel(nint self, NonNullableUtf8StringHandle response, NonNullableUtf8StringHandle label)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1115,24 +1212,25 @@ public static extern void SetResponseLabel(nint self, string response, string la
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">response</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">label</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1161,7 +1259,7 @@ public static extern void SetResponseLabel(nint self, string response, string la
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

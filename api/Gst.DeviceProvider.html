@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,13 +70,14 @@
             <article class="content wrap" id="_content" data-uid="Gst.DeviceProvider">
 
 
+
   <h1 id="Gst_DeviceProvider" data-uid="Gst.DeviceProvider" class="text-break">Class DeviceProvider
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
     <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
     <div class="level3"><a class="xref" href="Gst.Object.html">Object</a></div>
@@ -85,8 +86,8 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
-    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
     <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
   </div>
@@ -97,6 +98,9 @@
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_DefaultDeepNotify_GObject_Object_Gst_Object_GObject_ParamSpec_System_String___">Object.DefaultDeepNotify(Object, Object, ParamSpec, string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_RefSink_System_IntPtr_">Object.RefSink(nint)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_AddControlBinding_Gst_ControlBinding_">Object.AddControlBinding(ControlBinding)</a>
@@ -120,7 +124,10 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_GetPathString">Object.GetPathString()</a>
     </div>
     <div>
-      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_System_UInt64_">Object.GetValue(string, ulong)</a>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValue_System_String_Gst_ClockTime_">Object.GetValue(string, ClockTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gst.Object.html#Gst_Object_GetValueArray_System_String_Gst_ClockTime_Gst_ClockTime_System_UInt32_System_IntPtr_">Object.GetValueArray(string, ClockTime, ClockTime, uint, nint)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_HasActiveControlBindings">Object.HasActiveControlBindings()</a>
@@ -147,7 +154,7 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_SetControlBindingsDisabled_System_Boolean_">Object.SetControlBindingsDisabled(bool)</a>
     </div>
     <div>
-      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_System_UInt64_">Object.SetControlRate(ulong)</a>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SetControlRate_Gst_ClockTime_">Object.SetControlRate(ClockTime)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_SetName_System_String_">Object.SetName(string)</a>
@@ -159,7 +166,7 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_SuggestNextSync">Object.SuggestNextSync()</a>
     </div>
     <div>
-      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_System_UInt64_">Object.SyncValues(ulong)</a>
+      <a class="xref" href="Gst.Object.html#Gst_Object_SyncValues_Gst_ClockTime_">Object.SyncValues(ClockTime)</a>
     </div>
     <div>
       <a class="xref" href="Gst.Object.html#Gst_Object_Unparent">Object.Unparent()</a>
@@ -186,6 +193,9 @@
       <a class="xref" href="Gst.Object.html#Gst_Object_OnDeepNotify">Object.OnDeepNotify</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NewValist_GObject_Type_System_String_System_IntPtr_">Object.NewValist(Type, string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
     </div>
     <div>
@@ -201,16 +211,22 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_CompatControl_System_UIntPtr_System_IntPtr_">Object.CompatControl(nuint, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_AddWeakPointer_System_IntPtr__">Object.AddWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyFull_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyFull(string, Object, string, BindingFlags, Closure, Closure)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
@@ -225,7 +241,10 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_GLib_Quark_">Object.GetQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetValist_System_String_System_IntPtr_">Object.GetValist(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
@@ -240,16 +259,28 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RemoveWeakPointer_System_IntPtr__">Object.RemoveWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetData_System_String_System_IntPtr_">Object.SetData(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetQdata_GLib_Quark_System_IntPtr_">Object.SetQdata(Quark, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetValist_System_String_System_IntPtr_">Object.SetValist(string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_GLib_Quark_">Object.StealQdata(Quark)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
@@ -267,25 +298,25 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a></h6>
@@ -313,7 +344,7 @@
     <pre><code class="lang-csharp hljs">protected DeviceProvider(params ConstructArgument[] constructArguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -338,7 +369,7 @@
     <pre><code class="lang-csharp hljs">protected DeviceProvider(nint ptr, bool ownedRef)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -348,12 +379,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">ownedRef</span></td>
         <td></td>
       </tr>
@@ -370,7 +401,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;DeviceProvider, DeviceProvider.ProviderHiddenSignalArgs&gt; ProviderHiddenSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -393,7 +424,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;DeviceProvider, DeviceProvider.ProviderUnhiddenSignalArgs&gt; ProviderUnhiddenSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -418,7 +449,7 @@
     <pre><code class="lang-csharp hljs">public bool CanMonitor()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -427,7 +458,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -442,7 +473,7 @@
 public void DeviceAdd(Device device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -468,7 +499,7 @@ public void DeviceAdd(Device device)</code></pre>
 public void DeviceChanged(Device device, Device changedDevice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -499,7 +530,7 @@ public void DeviceChanged(Device device, Device changedDevice)</code></pre>
 public void DeviceRemove(Device device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -525,7 +556,7 @@ public void DeviceRemove(Device device)</code></pre>
 public Bus GetBus()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -549,7 +580,7 @@ public Bus GetBus()</code></pre>
 public List GetDevices()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -573,7 +604,7 @@ public List GetDevices()</code></pre>
 public DeviceProviderFactory? GetFactory()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -593,10 +624,10 @@ public DeviceProviderFactory? GetFactory()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Type GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -605,7 +636,7 @@ public DeviceProviderFactory? GetFactory()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -620,7 +651,7 @@ public DeviceProviderFactory? GetFactory()</code></pre>
 public string[] GetHiddenProviders()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -629,7 +660,7 @@ public string[] GetHiddenProviders()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -644,7 +675,7 @@ public string[] GetHiddenProviders()</code></pre>
 public string GetMetadata(string key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -654,14 +685,14 @@ public string GetMetadata(string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -670,7 +701,7 @@ public string GetMetadata(string key)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -685,7 +716,7 @@ public string GetMetadata(string key)</code></pre>
 public void HideProvider(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -695,7 +726,7 @@ public void HideProvider(string name)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -711,7 +742,7 @@ public void HideProvider(string name)</code></pre>
 public bool IsStarted()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -720,22 +751,22 @@ public bool IsStarted()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_DeviceProvider_Register_" data-uid="Gst.DeviceProvider.Register*"></a>
-  <h4 id="Gst_DeviceProvider_Register_Gst_Plugin_System_String_System_UInt32_System_UIntPtr_" data-uid="Gst.DeviceProvider.Register(Gst.Plugin,System.String,System.UInt32,System.UIntPtr)">Register(Plugin?, string, uint, nuint)</h4>
+  <h4 id="Gst_DeviceProvider_Register_Gst_Plugin_System_String_System_UInt32_GObject_Type_" data-uid="Gst.DeviceProvider.Register(Gst.Plugin,System.String,System.UInt32,GObject.Type)">Register(Plugin?, string, uint, Type)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
-public static bool Register(Plugin? plugin, string name, uint rank, nuint type)</code></pre>
+public static bool Register(Plugin? plugin, string name, uint rank, Type type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -750,24 +781,24 @@ public static bool Register(Plugin? plugin, string name, uint rank, nuint type)<
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">rank</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -776,7 +807,7 @@ public static bool Register(Plugin? plugin, string name, uint rank, nuint type)<
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -791,7 +822,7 @@ public static bool Register(Plugin? plugin, string name, uint rank, nuint type)<
 public bool Start()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -800,7 +831,7 @@ public bool Start()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -824,7 +855,7 @@ public void Stop()</code></pre>
 public void UnhideProvider(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -834,7 +865,7 @@ public void UnhideProvider(string name)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -850,7 +881,7 @@ public void UnhideProvider(string name)</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;DeviceProvider, DeviceProvider.ProviderHiddenSignalArgs&gt; OnProviderHidden</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -872,7 +903,7 @@ public void UnhideProvider(string name)</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;DeviceProvider, DeviceProvider.ProviderUnhiddenSignalArgs&gt; OnProviderUnhidden</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -891,10 +922,10 @@ public void UnhideProvider(string name)</code></pre>
       <a class="xref" href="GObject.IObject.html">IObject</a>
   </div>
   <div>
-      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
   </div>
   <div>
       <a class="xref" href="GLib.IHandle.html">IHandle</a>
@@ -902,6 +933,7 @@ public void UnhideProvider(string name)</code></pre>
   <div>
       <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
   </div>
+
 </article>
           </div>
 
@@ -930,7 +962,7 @@ public void UnhideProvider(string name)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

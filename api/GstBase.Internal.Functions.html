@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GstBase.Internal.Functions">
 
 
+
   <h1 id="GstBase_Internal_Functions" data-uid="GstBase.Internal.Functions" class="text-break">Class Functions
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Functions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GstBase.html">GstBase</a>.<a class="xref" href="GstBase.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="GstBase_Internal_Functions_BitReaderNew_" data-uid="GstBase.Internal.Functions.BitReaderNew*"></a>
-  <h4 id="GstBase_Internal_Functions_BitReaderNew_System_Byte___System_UInt32_" data-uid="GstBase.Internal.Functions.BitReaderNew(System.Byte[],System.UInt32)">BitReaderNew(byte[], uint)</h4>
+  <h4 id="GstBase_Internal_Functions_BitReaderNew_System_Byte__System_UInt32_" data-uid="GstBase.Internal.Functions.BitReaderNew(System.Byte@,System.UInt32)">BitReaderNew(ref byte, uint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_bit_reader_new.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern BitReaderOwnedHandle BitReaderNew(byte[] data, uint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern BitReaderOwnedHandle BitReaderNew(ref byte data, uint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -131,13 +132,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -145,7 +146,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -170,7 +171,7 @@
     <pre><code class="lang-csharp hljs">public static extern BitWriterOwnedHandle BitWriterNew()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -186,16 +187,16 @@
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_BitWriterNewWithData_" data-uid="GstBase.Internal.Functions.BitWriterNewWithData*"></a>
-  <h4 id="GstBase_Internal_Functions_BitWriterNewWithData_System_Byte___System_UInt32_System_Boolean_" data-uid="GstBase.Internal.Functions.BitWriterNewWithData(System.Byte[],System.UInt32,System.Boolean)">BitWriterNewWithData(byte[], uint, bool)</h4>
+  <h4 id="GstBase_Internal_Functions_BitWriterNewWithData_System_Byte__System_UInt32_System_Boolean_" data-uid="GstBase.Internal.Functions.BitWriterNewWithData(System.Byte@,System.UInt32,System.Boolean)">BitWriterNewWithData(ref byte, uint, bool)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_bit_writer_new_with_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern BitWriterOwnedHandle BitWriterNewWithData(byte[] data, uint size, bool initialized)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern BitWriterOwnedHandle BitWriterNewWithData(ref byte data, uint size, bool initialized)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -205,19 +206,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">initialized</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -225,7 +226,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -250,7 +251,7 @@
     <pre><code class="lang-csharp hljs">public static extern BitWriterOwnedHandle BitWriterNewWithSize(uint size, bool @fixed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -260,20 +261,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">fixed</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -289,16 +290,16 @@
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_ByteReaderNew_" data-uid="GstBase.Internal.Functions.ByteReaderNew*"></a>
-  <h4 id="GstBase_Internal_Functions_ByteReaderNew_System_Byte___System_UInt32_" data-uid="GstBase.Internal.Functions.ByteReaderNew(System.Byte[],System.UInt32)">ByteReaderNew(byte[], uint)</h4>
+  <h4 id="GstBase_Internal_Functions_ByteReaderNew_System_Byte__System_UInt32_" data-uid="GstBase.Internal.Functions.ByteReaderNew(System.Byte@,System.UInt32)">ByteReaderNew(ref byte, uint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_byte_reader_new.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ByteReaderOwnedHandle ByteReaderNew(byte[] data, uint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ByteReaderOwnedHandle ByteReaderNew(ref byte data, uint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -308,13 +309,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -322,7 +323,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -347,7 +348,7 @@
     <pre><code class="lang-csharp hljs">public static extern ByteWriterOwnedHandle ByteWriterNew()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -363,16 +364,16 @@
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_ByteWriterNewWithData_" data-uid="GstBase.Internal.Functions.ByteWriterNewWithData*"></a>
-  <h4 id="GstBase_Internal_Functions_ByteWriterNewWithData_System_IntPtr_System_UInt32_System_Boolean_" data-uid="GstBase.Internal.Functions.ByteWriterNewWithData(System.IntPtr,System.UInt32,System.Boolean)">ByteWriterNewWithData(nint, uint, bool)</h4>
+  <h4 id="GstBase_Internal_Functions_ByteWriterNewWithData_System_Byte__System_UInt32_System_Boolean_" data-uid="GstBase.Internal.Functions.ByteWriterNewWithData(System.Byte@,System.UInt32,System.Boolean)">ByteWriterNewWithData(ref byte, uint, bool)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_byte_writer_new_with_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ByteWriterOwnedHandle ByteWriterNewWithData(nint data, uint size, bool initialized)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ByteWriterOwnedHandle ByteWriterNewWithData(ref byte data, uint size, bool initialized)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -382,19 +383,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">initialized</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -402,7 +403,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -427,7 +428,7 @@
     <pre><code class="lang-csharp hljs">public static extern ByteWriterOwnedHandle ByteWriterNewWithSize(uint size, bool @fixed)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -437,20 +438,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">fixed</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -477,7 +478,7 @@ Version: 1.2</p>
 public static extern QueueArrayUnownedHandle QueueArrayNew(uint initialSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -487,7 +488,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNew(uint initialSize)</co
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">initialSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -495,7 +496,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNew(uint initialSize)</co
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -522,7 +523,7 @@ Version: 1.6</p>
 public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint structSize, uint initialSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -532,13 +533,13 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">structSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">initialSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -546,7 +547,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -561,6 +562,63 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
       </tr>
     </tbody>
   </table>
+  <a id="GstBase_Internal_Functions_TypeFindDataNew_" data-uid="GstBase.Internal.Functions.TypeFindDataNew*"></a>
+  <h4 id="GstBase_Internal_Functions_TypeFindDataNew_System_IntPtr_System_Byte__System_UIntPtr_" data-uid="GstBase.Internal.Functions.TypeFindDataNew(System.IntPtr,System.Byte@,System.UIntPtr)">TypeFindDataNew(nint, ref byte, nuint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_type_find_data_new.
+Version: 1.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.22&quot;)]
+public static extern TypeFindDataOwnedHandle TypeFindDataNew(nint obj, ref byte data, nuint size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GstBase.Internal.TypeFindDataOwnedHandle.html">TypeFindDataOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="GstBase_Internal_Functions_TypeFindHelper_" data-uid="GstBase.Internal.Functions.TypeFindHelper*"></a>
   <h4 id="GstBase_Internal_Functions_TypeFindHelper_System_IntPtr_System_UInt64_" data-uid="GstBase.Internal.Functions.TypeFindHelper(System.IntPtr,System.UInt64)">TypeFindHelper(nint, ulong)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper.</p>
@@ -571,7 +629,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelper(nint src, ulong size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -581,13 +639,13 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">src</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -595,7 +653,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -620,7 +678,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperForBuffer(nint obj, BufferHandle buf, out nint prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -630,7 +688,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -642,7 +700,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">prob</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -650,7 +708,70 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsOwnedHandle.html">CapsOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GstBase_Internal_Functions_TypeFindHelperForBufferWithCaps_" data-uid="GstBase.Internal.Functions.TypeFindHelperForBufferWithCaps*"></a>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperForBufferWithCaps_System_IntPtr_Gst_Internal_BufferHandle_Gst_Internal_CapsHandle_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForBufferWithCaps(System.IntPtr,Gst.Internal.BufferHandle,Gst.Internal.CapsHandle,System.IntPtr@)">TypeFindHelperForBufferWithCaps(nint, BufferHandle, CapsHandle, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_for_buffer_with_caps.
+Version: 1.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.22&quot;)]
+public static extern CapsOwnedHandle TypeFindHelperForBufferWithCaps(nint obj, BufferHandle buf, CapsHandle caps, out nint prob)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.BufferHandle.html">BufferHandle</a></td>
+        <td><span class="parametername">buf</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsHandle.html">CapsHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">prob</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -666,7 +787,7 @@ public static extern QueueArrayUnownedHandle QueueArrayNewForStruct(nuint struct
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_TypeFindHelperForBufferWithExtension_" data-uid="GstBase.Internal.Functions.TypeFindHelperForBufferWithExtension*"></a>
-  <h4 id="GstBase_Internal_Functions_TypeFindHelperForBufferWithExtension_System_IntPtr_Gst_Internal_BufferHandle_System_String_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForBufferWithExtension(System.IntPtr,Gst.Internal.BufferHandle,System.String,System.IntPtr@)">TypeFindHelperForBufferWithExtension(nint, BufferHandle, string?, out nint)</h4>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperForBufferWithExtension_System_IntPtr_Gst_Internal_BufferHandle_GLib_Internal_NullableUtf8StringHandle_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForBufferWithExtension(System.IntPtr,Gst.Internal.BufferHandle,GLib.Internal.NullableUtf8StringHandle,System.IntPtr@)">TypeFindHelperForBufferWithExtension(nint, BufferHandle, NullableUtf8StringHandle, out nint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_for_buffer_with_extension.
 Version: 1.16</p>
 </div>
@@ -674,10 +795,10 @@ Version: 1.16</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
-public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint obj, BufferHandle buf, string? extension, out nint prob)</code></pre>
+public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint obj, BufferHandle buf, NullableUtf8StringHandle extension, out nint prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -687,7 +808,7 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -699,13 +820,13 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">extension</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">prob</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -713,7 +834,7 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -729,16 +850,16 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_TypeFindHelperForData_" data-uid="GstBase.Internal.Functions.TypeFindHelperForData*"></a>
-  <h4 id="GstBase_Internal_Functions_TypeFindHelperForData_System_IntPtr_System_Byte___System_UIntPtr_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForData(System.IntPtr,System.Byte[],System.UIntPtr,System.IntPtr@)">TypeFindHelperForData(nint, byte[], nuint, out nint)</h4>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperForData_System_IntPtr_System_Byte__System_UIntPtr_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForData(System.IntPtr,System.Byte@,System.UIntPtr,System.IntPtr@)">TypeFindHelperForData(nint, ref byte, nuint, out nint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_for_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperForData(nint obj, byte[] data, nuint size, out nint prob)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperForData(nint obj, ref byte data, nuint size, out nint prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -748,25 +869,25 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">prob</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -774,7 +895,76 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsOwnedHandle.html">CapsOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GstBase_Internal_Functions_TypeFindHelperForDataWithCaps_" data-uid="GstBase.Internal.Functions.TypeFindHelperForDataWithCaps*"></a>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperForDataWithCaps_System_IntPtr_System_Byte__System_UIntPtr_Gst_Internal_CapsHandle_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForDataWithCaps(System.IntPtr,System.Byte@,System.UIntPtr,Gst.Internal.CapsHandle,System.IntPtr@)">TypeFindHelperForDataWithCaps(nint, ref byte, nuint, CapsHandle, out nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_for_data_with_caps.
+Version: 1.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.22&quot;)]
+public static extern CapsOwnedHandle TypeFindHelperForDataWithCaps(nint obj, ref byte data, nuint size, CapsHandle caps, out nint prob)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsHandle.html">CapsHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">prob</span></td>
+        <td><p>Transfer ownership: Full Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -790,7 +980,7 @@ public static extern CapsOwnedHandle TypeFindHelperForBufferWithExtension(nint o
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_TypeFindHelperForDataWithExtension_" data-uid="GstBase.Internal.Functions.TypeFindHelperForDataWithExtension*"></a>
-  <h4 id="GstBase_Internal_Functions_TypeFindHelperForDataWithExtension_System_IntPtr_System_Byte___System_UIntPtr_System_String_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForDataWithExtension(System.IntPtr,System.Byte[],System.UIntPtr,System.String,System.IntPtr@)">TypeFindHelperForDataWithExtension(nint, byte[], nuint, string?, out nint)</h4>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperForDataWithExtension_System_IntPtr_System_Byte__System_UIntPtr_GLib_Internal_NullableUtf8StringHandle_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperForDataWithExtension(System.IntPtr,System.Byte@,System.UIntPtr,GLib.Internal.NullableUtf8StringHandle,System.IntPtr@)">TypeFindHelperForDataWithExtension(nint, ref byte, nuint, NullableUtf8StringHandle, out nint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_for_data_with_extension.
 Version: 1.16</p>
 </div>
@@ -798,10 +988,10 @@ Version: 1.16</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.16&quot;)]
-public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj, byte[] data, nuint size, string? extension, out nint prob)</code></pre>
+public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj, ref byte data, nuint size, NullableUtf8StringHandle extension, out nint prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -811,31 +1001,31 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">extension</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">prob</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -843,7 +1033,7 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -859,16 +1049,16 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_TypeFindHelperForExtension_" data-uid="GstBase.Internal.Functions.TypeFindHelperForExtension*"></a>
-  <h4 id="GstBase_Internal_Functions_TypeFindHelperForExtension_System_IntPtr_System_String_" data-uid="GstBase.Internal.Functions.TypeFindHelperForExtension(System.IntPtr,System.String)">TypeFindHelperForExtension(nint, string)</h4>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperForExtension_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GstBase.Internal.Functions.TypeFindHelperForExtension(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">TypeFindHelperForExtension(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_for_extension.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperForExtension(nint obj, string extension)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperForExtension(nint obj, NonNullableUtf8StringHandle extension)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -878,13 +1068,13 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">extension</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -892,7 +1082,7 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -908,16 +1098,16 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_TypeFindHelperGetRange_" data-uid="GstBase.Internal.Functions.TypeFindHelperGetRange*"></a>
-  <h4 id="GstBase_Internal_Functions_TypeFindHelperGetRange_System_IntPtr_System_IntPtr_GstBase_Internal_TypeFindHelperGetRangeFunction_System_UInt64_System_String_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperGetRange(System.IntPtr,System.IntPtr,GstBase.Internal.TypeFindHelperGetRangeFunction,System.UInt64,System.String,System.IntPtr@)">TypeFindHelperGetRange(nint, nint, TypeFindHelperGetRangeFunction, ulong, string?, out nint)</h4>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperGetRange_System_IntPtr_System_IntPtr_GstBase_Internal_TypeFindHelperGetRangeFunction_System_UInt64_GLib_Internal_NullableUtf8StringHandle_System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperGetRange(System.IntPtr,System.IntPtr,GstBase.Internal.TypeFindHelperGetRangeFunction,System.UInt64,GLib.Internal.NullableUtf8StringHandle,System.IntPtr@)">TypeFindHelperGetRange(nint, nint, TypeFindHelperGetRangeFunction, ulong, NullableUtf8StringHandle, out nint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_get_range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperGetRange(nint obj, nint parent, TypeFindHelperGetRangeFunction func, ulong size, string? extension, out nint prob)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CapsOwnedHandle TypeFindHelperGetRange(nint obj, nint parent, TypeFindHelperGetRangeFunction func, ulong size, NullableUtf8StringHandle extension, out nint prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -927,13 +1117,13 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">parent</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -945,19 +1135,19 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">extension</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">prob</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -965,7 +1155,7 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -981,7 +1171,7 @@ public static extern CapsOwnedHandle TypeFindHelperForDataWithExtension(nint obj
     </tbody>
   </table>
   <a id="GstBase_Internal_Functions_TypeFindHelperGetRangeFull_" data-uid="GstBase.Internal.Functions.TypeFindHelperGetRangeFull*"></a>
-  <h4 id="GstBase_Internal_Functions_TypeFindHelperGetRangeFull_System_IntPtr_System_IntPtr_GstBase_Internal_TypeFindHelperGetRangeFunction_System_UInt64_System_String_Gst_Internal_CapsOwnedHandle__System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperGetRangeFull(System.IntPtr,System.IntPtr,GstBase.Internal.TypeFindHelperGetRangeFunction,System.UInt64,System.String,Gst.Internal.CapsOwnedHandle@,System.IntPtr@)">TypeFindHelperGetRangeFull(nint, nint, TypeFindHelperGetRangeFunction, ulong, string?, out CapsOwnedHandle, out nint)</h4>
+  <h4 id="GstBase_Internal_Functions_TypeFindHelperGetRangeFull_System_IntPtr_System_IntPtr_GstBase_Internal_TypeFindHelperGetRangeFunction_System_UInt64_GLib_Internal_NullableUtf8StringHandle_Gst_Internal_CapsOwnedHandle__System_IntPtr__" data-uid="GstBase.Internal.Functions.TypeFindHelperGetRangeFull(System.IntPtr,System.IntPtr,GstBase.Internal.TypeFindHelperGetRangeFunction,System.UInt64,GLib.Internal.NullableUtf8StringHandle,Gst.Internal.CapsOwnedHandle@,System.IntPtr@)">TypeFindHelperGetRangeFull(nint, nint, TypeFindHelperGetRangeFunction, ulong, NullableUtf8StringHandle, out CapsOwnedHandle, out nint)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_type_find_helper_get_range_full.
 Version: 1.14.3</p>
 </div>
@@ -989,10 +1179,10 @@ Version: 1.14.3</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.14.3&quot;)]
-public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent, TypeFindHelperGetRangeFunction func, ulong size, string? extension, out CapsOwnedHandle caps, out nint prob)</code></pre>
+public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent, TypeFindHelperGetRangeFunction func, ulong size, NullableUtf8StringHandle extension, out CapsOwnedHandle caps, out nint prob)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1002,13 +1192,13 @@ public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">obj</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">parent</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1020,13 +1210,13 @@ public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">extension</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1038,7 +1228,7 @@ public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">prob</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1046,7 +1236,7 @@ public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1061,6 +1251,58 @@ public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent
       </tr>
     </tbody>
   </table>
+  <a id="GstBase_Internal_Functions_TypeFindListFactoriesForCaps_" data-uid="GstBase.Internal.Functions.TypeFindListFactoriesForCaps*"></a>
+  <h4 id="GstBase_Internal_Functions_TypeFindListFactoriesForCaps_System_IntPtr_Gst_Internal_CapsHandle_" data-uid="GstBase.Internal.Functions.TypeFindListFactoriesForCaps(System.IntPtr,Gst.Internal.CapsHandle)">TypeFindListFactoriesForCaps(nint, CapsHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native function gst_type_find_list_factories_for_caps.
+Version: 1.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;1.22&quot;)]
+public static extern ListOwnedHandle TypeFindListFactoriesForCaps(nint obj, CapsHandle caps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>Transfer ownership: None Nullable: True</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gst.Internal.CapsHandle.html">CapsHandle</a></td>
+        <td><span class="parametername">caps</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ListOwnedHandle.html">ListOwnedHandle</a></td>
+        <td><p>Transfer ownership: Full Nullable: True</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
 </article>
           </div>
 
@@ -1089,7 +1331,7 @@ public static extern FlowReturn TypeFindHelperGetRangeFull(nint obj, nint parent
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

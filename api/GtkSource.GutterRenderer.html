@@ -1,0 +1,2406 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GutterRenderer
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GutterRenderer
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../img/gircore-logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GtkSource.GutterRenderer">
+
+
+
+  <h1 id="GtkSource_GutterRenderer" data-uid="GtkSource.GutterRenderer" class="text-break">Class GutterRenderer
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
+    <div class="level3"><a class="xref" href="Gtk.Widget.html">Widget</a></div>
+    <div class="level4"><span class="xref">GutterRenderer</span></div>
+      <div class="level5"><a class="xref" href="GtkSource.GutterRendererPixbuf.html">GutterRendererPixbuf</a></div>
+      <div class="level5"><a class="xref" href="GtkSource.GutterRendererText.html">GutterRendererText</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="Gtk.Accessible.html">Accessible</a></div>
+    <div><a class="xref" href="Gtk.Buildable.html">Buildable</a></div>
+    <div><a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a></div>
+    <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
+    <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDefaultDirection">Widget.GetDefaultDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetDefaultDirection_Gtk_TextDirection_">Widget.SetDefaultDirection(TextDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActionSetEnabled_System_String_System_Boolean_">Widget.ActionSetEnabled(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Activate">Widget.Activate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateAction_System_String_GLib_Variant_">Widget.ActivateAction(string, Variant)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateDefault">Widget.ActivateDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddController_Gtk_EventController_">Widget.AddController(EventController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddCssClass_System_String_">Widget.AddCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddMnemonicLabel_Gtk_Widget_">Widget.AddMnemonicLabel(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_AddTickCallback_Gtk_TickCallback_">Widget.AddTickCallback(TickCallback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Allocate_System_Int32_System_Int32_System_Int32_Gsk_Transform_">Widget.Allocate(int, int, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ChildFocus_Gtk_DirectionType_">Widget.ChildFocus(DirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ComputeExpand_Gtk_Orientation_">Widget.ComputeExpand(Orientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Contains_System_Double_System_Double_">Widget.Contains(double, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoContext">Widget.CreatePangoContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoLayout_System_String_">Widget.CreatePangoLayout(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DisposeTemplate_GObject_Type_">Widget.DisposeTemplate(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragCheckThreshold_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.DragCheckThreshold(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ErrorBell">Widget.ErrorBell()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedBaseline">Widget.GetAllocatedBaseline()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedHeight">Widget.GetAllocatedHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedWidth">Widget.GetAllocatedWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAncestor_GObject_Type_">Widget.GetAncestor(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanFocus">Widget.GetCanFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanTarget">Widget.GetCanTarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetChildVisible">Widget.GetChildVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetClipboard">Widget.GetClipboard()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCssClasses">Widget.GetCssClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCssName">Widget.GetCssName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCursor">Widget.GetCursor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDirection">Widget.GetDirection()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetDisplay">Widget.GetDisplay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFirstChild">Widget.GetFirstChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusChild">Widget.GetFocusChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusOnClick">Widget.GetFocusOnClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFocusable">Widget.GetFocusable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFontMap">Widget.GetFontMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFontOptions">Widget.GetFontOptions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetFrameClock">Widget.GetFrameClock()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHalign">Widget.GetHalign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasTooltip">Widget.GetHasTooltip()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHeight">Widget.GetHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHexpand">Widget.GetHexpand()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHexpandSet">Widget.GetHexpandSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetLastChild">Widget.GetLastChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetLayoutManager">Widget.GetLayoutManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMapped">Widget.GetMapped()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginBottom">Widget.GetMarginBottom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginEnd">Widget.GetMarginEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginStart">Widget.GetMarginStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetMarginTop">Widget.GetMarginTop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetName">Widget.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetNative">Widget.GetNative()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetNextSibling">Widget.GetNextSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetOpacity">Widget.GetOpacity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetOverflow">Widget.GetOverflow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPangoContext">Widget.GetPangoContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetParent">Widget.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPrevSibling">Widget.GetPrevSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetPrimaryClipboard">Widget.GetPrimaryClipboard()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRealized">Widget.GetRealized()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetReceivesDefault">Widget.GetReceivesDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRequestMode">Widget.GetRequestMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetRoot">Widget.GetRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetScaleFactor">Widget.GetScaleFactor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSensitive">Widget.GetSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSettings">Widget.GetSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSize_Gtk_Orientation_">Widget.GetSize(Orientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSizeRequest_System_Int32__System_Int32__">Widget.GetSizeRequest(out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStateFlags">Widget.GetStateFlags()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStyleContext">Widget.GetStyleContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTemplateChild_GObject_Type_System_String_">Widget.GetTemplateChild(Type, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipMarkup">Widget.GetTooltipMarkup()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipText">Widget.GetTooltipText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetValign">Widget.GetValign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVexpand">Widget.GetVexpand()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVexpandSet">Widget.GetVexpandSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetVisible">Widget.GetVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetWidth">Widget.GetWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GrabFocus">Widget.GrabFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasCssClass_System_String_">Widget.HasCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasDefault">Widget.GetHasDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetHasFocus">Widget.GetHasFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasVisibleFocus">Widget.HasVisibleFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Hide">Widget.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InDestruction">Widget.InDestruction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InitTemplate">Widget.InitTemplate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertActionGroup_System_String_Gio_ActionGroup_">Widget.InsertActionGroup(string, ActionGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertAfter_Gtk_Widget_Gtk_Widget_">Widget.InsertAfter(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_InsertBefore_Gtk_Widget_Gtk_Widget_">Widget.InsertBefore(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsAncestor_Gtk_Widget_">Widget.IsAncestor(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsDrawable">Widget.IsDrawable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsFocus">Widget.IsFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsSensitive">Widget.IsSensitive()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_IsVisible">Widget.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailed_Gtk_DirectionType_">Widget.KeynavFailed(DirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ListMnemonicLabels">Widget.ListMnemonicLabels()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Map">Widget.Map()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Measure_Gtk_Orientation_System_Int32_System_Int32__System_Int32__System_Int32__System_Int32__">Widget.Measure(Orientation, int, out int, out int, out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivate_System_Boolean_">Widget.MnemonicActivate(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ObserveChildren">Widget.ObserveChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ObserveControllers">Widget.ObserveControllers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Pick_System_Double_System_Double_Gtk_PickFlags_">Widget.Pick(double, double, PickFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueAllocate">Widget.QueueAllocate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueDraw">Widget.QueueDraw()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueueResize">Widget.QueueResize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Realize">Widget.Realize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveController_Gtk_EventController_">Widget.RemoveController(EventController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveCssClass_System_String_">Widget.RemoveCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveMnemonicLabel_Gtk_Widget_">Widget.RemoveMnemonicLabel(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RemoveTickCallback_System_UInt32_">Widget.RemoveTickCallback(uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCanFocus_System_Boolean_">Widget.SetCanFocus(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCanTarget_System_Boolean_">Widget.SetCanTarget(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetChildVisible_System_Boolean_">Widget.SetChildVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCssClasses_System_String___">Widget.SetCssClasses(string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCursor_Gdk_Cursor_">Widget.SetCursor(Cursor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetCursorFromName_System_String_">Widget.SetCursorFromName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetDirection_Gtk_TextDirection_">Widget.SetDirection(TextDirection)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusChild_Gtk_Widget_">Widget.SetFocusChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusOnClick_System_Boolean_">Widget.SetFocusOnClick(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFocusable_System_Boolean_">Widget.SetFocusable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFontMap_Pango_FontMap_">Widget.SetFontMap(FontMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetFontOptions_Cairo_FontOptions_">Widget.SetFontOptions(FontOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHalign_Gtk_Align_">Widget.SetHalign(Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHasTooltip_System_Boolean_">Widget.SetHasTooltip(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHexpand_System_Boolean_">Widget.SetHexpand(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetHexpandSet_System_Boolean_">Widget.SetHexpandSet(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetLayoutManager_Gtk_LayoutManager_">Widget.SetLayoutManager(LayoutManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginBottom_System_Int32_">Widget.SetMarginBottom(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginEnd_System_Int32_">Widget.SetMarginEnd(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginStart_System_Int32_">Widget.SetMarginStart(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetMarginTop_System_Int32_">Widget.SetMarginTop(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetName_System_String_">Widget.SetName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetOpacity_System_Double_">Widget.SetOpacity(double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetOverflow_Gtk_Overflow_">Widget.SetOverflow(Overflow)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetParent_Gtk_Widget_">Widget.SetParent(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetReceivesDefault_System_Boolean_">Widget.SetReceivesDefault(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetSensitive_System_Boolean_">Widget.SetSensitive(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetSizeRequest_System_Int32_System_Int32_">Widget.SetSizeRequest(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetStateFlags_Gtk_StateFlags_System_Boolean_">Widget.SetStateFlags(StateFlags, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetTooltipMarkup_System_String_">Widget.SetTooltipMarkup(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetTooltipText_System_String_">Widget.SetTooltipText(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetValign_Gtk_Align_">Widget.SetValign(Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVexpand_System_Boolean_">Widget.SetVexpand(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVexpandSet_System_Boolean_">Widget.SetVexpandSet(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SetVisible_System_Boolean_">Widget.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShouldLayout">Widget.ShouldLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Show">Widget.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SnapshotChild_Gtk_Widget_Gtk_Snapshot_">Widget.SnapshotChild(Widget, Snapshot)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TranslateCoordinates_Gtk_Widget_System_Double_System_Double_System_Double__System_Double__">Widget.TranslateCoordinates(Widget, double, double, out double, out double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TriggerTooltipQuery">Widget.TriggerTooltipQuery()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unmap">Widget.Unmap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unparent">Widget.Unparent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Unrealize">Widget.Unrealize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnsetStateFlags_Gtk_StateFlags_">Widget.UnsetStateFlags(StateFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanFocusPropertyDefinition">Widget.CanFocusPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanFocus">Widget.CanFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanTargetPropertyDefinition">Widget.CanTargetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CanTarget">Widget.CanTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssClassesPropertyDefinition">Widget.CssClassesPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssClasses">Widget.CssClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssNamePropertyDefinition">Widget.CssNamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CssName">Widget.CssName</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CursorPropertyDefinition">Widget.CursorPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Cursor">Widget.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOnClickPropertyDefinition">Widget.FocusOnClickPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusOnClick">Widget.FocusOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_FocusablePropertyDefinition">Widget.FocusablePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Focusable">Widget.Focusable</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HalignPropertyDefinition">Widget.HalignPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Halign">Widget.Halign</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasDefaultPropertyDefinition">Widget.HasDefaultPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasDefault">Widget.HasDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasFocusPropertyDefinition">Widget.HasFocusPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasFocus">Widget.HasFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasTooltipPropertyDefinition">Widget.HasTooltipPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HasTooltip">Widget.HasTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HeightRequestPropertyDefinition">Widget.HeightRequestPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HeightRequest">Widget.HeightRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandPropertyDefinition">Widget.HexpandPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Hexpand">Widget.Hexpand</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandSetPropertyDefinition">Widget.HexpandSetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HexpandSet">Widget.HexpandSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LayoutManagerPropertyDefinition">Widget.LayoutManagerPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_LayoutManager">Widget.LayoutManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginBottomPropertyDefinition">Widget.MarginBottomPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginBottom">Widget.MarginBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginEndPropertyDefinition">Widget.MarginEndPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginEnd">Widget.MarginEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginStartPropertyDefinition">Widget.MarginStartPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginStart">Widget.MarginStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginTopPropertyDefinition">Widget.MarginTopPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MarginTop">Widget.MarginTop</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_NamePropertyDefinition">Widget.NamePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Name">Widget.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OpacityPropertyDefinition">Widget.OpacityPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Opacity">Widget.Opacity</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OverflowPropertyDefinition">Widget.OverflowPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Overflow">Widget.Overflow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ParentPropertyDefinition">Widget.ParentPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Parent">Widget.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ReceivesDefaultPropertyDefinition">Widget.ReceivesDefaultPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ReceivesDefault">Widget.ReceivesDefault</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RootPropertyDefinition">Widget.RootPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Root">Widget.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScaleFactorPropertyDefinition">Widget.ScaleFactorPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ScaleFactor">Widget.ScaleFactor</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SensitivePropertyDefinition">Widget.SensitivePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Sensitive">Widget.Sensitive</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipMarkupPropertyDefinition">Widget.TooltipMarkupPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipMarkup">Widget.TooltipMarkup</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipTextPropertyDefinition">Widget.TooltipTextPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TooltipText">Widget.TooltipText</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ValignPropertyDefinition">Widget.ValignPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Valign">Widget.Valign</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandPropertyDefinition">Widget.VexpandPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Vexpand">Widget.Vexpand</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandSetPropertyDefinition">Widget.VexpandSetPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VexpandSet">Widget.VexpandSet</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_VisiblePropertyDefinition">Widget.VisiblePropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Visible">Widget.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WidthRequestPropertyDefinition">Widget.WidthRequestPropertyDefinition</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_WidthRequest">Widget.WidthRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DestroySignal">Widget.DestroySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDestroy">Widget.OnDestroy</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DirectionChangedSignal">Widget.DirectionChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnDirectionChanged">Widget.OnDirectionChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_HideSignal">Widget.HideSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnHide">Widget.OnHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_KeynavFailedSignal">Widget.KeynavFailedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnKeynavFailed">Widget.OnKeynavFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MapSignal">Widget.MapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMap">Widget.OnMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivateSignal">Widget.MnemonicActivateSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMnemonicActivate">Widget.OnMnemonicActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MoveFocusSignal">Widget.MoveFocusSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnMoveFocus">Widget.OnMoveFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_QueryTooltipSignal">Widget.QueryTooltipSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnQueryTooltip">Widget.OnQueryTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_RealizeSignal">Widget.RealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnRealize">Widget.OnRealize</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ShowSignal">Widget.ShowSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnShow">Widget.OnShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_StateFlagsChangedSignal">Widget.StateFlagsChangedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnStateFlagsChanged">Widget.OnStateFlagsChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnmapSignal">Widget.UnmapSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnmap">Widget.OnUnmap</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_UnrealizeSignal">Widget.UnrealizeSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnrealize">Widget.OnUnrealize</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NewValist_GObject_Type_System_String_System_IntPtr_">Object.NewValist(Type, string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_CompatControl_System_UIntPtr_System_IntPtr_">Object.CompatControl(nuint, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_AddWeakPointer_System_IntPtr__">Object.AddWeakPointer(ref nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyFull_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyFull(string, Object, string, BindingFlags, Closure, Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_FreezeNotify">Object.FreezeNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetData_System_String_">Object.GetData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_GLib_Quark_">Object.GetQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetValist_System_String_System_IntPtr_">Object.GetValist(string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Notify_System_String_">Object.Notify(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifyByPspec_GObject_ParamSpec_">Object.NotifyByPspec(ParamSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Ref">Object.Ref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RemoveWeakPointer_System_IntPtr__">Object.RemoveWeakPointer(ref nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetData_System_String_System_IntPtr_">Object.SetData(string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetQdata_GLib_Quark_System_IntPtr_">Object.SetQdata(Quark, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetValist_System_String_System_IntPtr_">Object.SetValist(string, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_GLib_Quark_">Object.StealQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_ThawNotify">Object.ThawNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_Unref">Object.Unref()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_WatchClosure_GObject_Closure_">Object.WatchClosure(Closure)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NotifySignal">Object.NotifySignal</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GtkSource.html">GtkSource</a></h6>
+  <h6><strong>Assembly</strong>: GtkSource-5.dll</h6>
+  <h5 id="GtkSource_GutterRenderer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GutterRenderer : Widget, IObject, INotifyPropertyChanged, IDisposable, Accessible, Buildable, ConstraintTarget, IHandle, GTypeProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="GtkSource_GutterRenderer__ctor_" data-uid="GtkSource.GutterRenderer.#ctor*"></a>
+  <h4 id="GtkSource_GutterRenderer__ctor" data-uid="GtkSource.GutterRenderer.#ctor">GutterRenderer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GutterRenderer()</code></pre>
+  </div>
+  <a id="GtkSource_GutterRenderer__ctor_" data-uid="GtkSource.GutterRenderer.#ctor*"></a>
+  <h4 id="GtkSource_GutterRenderer__ctor_GObject_ConstructArgument___" data-uid="GtkSource.GutterRenderer.#ctor(GObject.ConstructArgument[])">GutterRenderer(params ConstructArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GutterRenderer(params ConstructArgument[] constructArguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ConstructArgument.html">ConstructArgument</a>[]</td>
+        <td><span class="parametername">constructArguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer__ctor_" data-uid="GtkSource.GutterRenderer.#ctor*"></a>
+  <h4 id="GtkSource_GutterRenderer__ctor_System_IntPtr_System_Boolean_" data-uid="GtkSource.GutterRenderer.#ctor(System.IntPtr,System.Boolean)">GutterRenderer(nint, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GutterRenderer(nint ptr, bool ownedRef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ownedRef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="GtkSource_GutterRenderer_ActivateSignal" data-uid="GtkSource.GutterRenderer.ActivateSignal">ActivateSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnActivate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;GutterRenderer, GutterRenderer.ActivateSignalArgs&gt; ActivateSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>.<a class="xref" href="GtkSource.GutterRenderer.ActivateSignalArgs.html">ActivateSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_AlignmentModePropertyDefinition" data-uid="GtkSource.GutterRenderer.AlignmentModePropertyDefinition">AlignmentModePropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;GutterRendererAlignmentMode, GutterRenderer&gt; AlignmentModePropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="GtkSource.GutterRendererAlignmentMode.html">GutterRendererAlignmentMode</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_LinesPropertyDefinition" data-uid="GtkSource.GutterRenderer.LinesPropertyDefinition">LinesPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;GutterLines?, GutterRenderer&gt; LinesPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="GtkSource.GutterLines.html">GutterLines</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_QueryActivatableSignal" data-uid="GtkSource.GutterRenderer.QueryActivatableSignal">QueryActivatableSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnQueryActivatable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ReturningSignal&lt;GutterRenderer, GutterRenderer.QueryActivatableSignalArgs, bool&gt; QueryActivatableSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ReturningSignal-3.html">ReturningSignal</a>&lt;<a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>.<a class="xref" href="GtkSource.GutterRenderer.QueryActivatableSignalArgs.html">QueryActivatableSignalArgs</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_QueryDataSignal" data-uid="GtkSource.GutterRenderer.QueryDataSignal">QueryDataSignal</h4>
+  <div class="markdown level1 summary"><p>Signal Descriptor for OnQueryData.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Signal&lt;GutterRenderer, GutterRenderer.QueryDataSignalArgs&gt; QueryDataSignal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Signal-2.html">Signal</a>&lt;<a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>.<a class="xref" href="GtkSource.GutterRenderer.QueryDataSignalArgs.html">QueryDataSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_ViewPropertyDefinition" data-uid="GtkSource.GutterRenderer.ViewPropertyDefinition">ViewPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;TextView?, GutterRenderer&gt; ViewPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="Gtk.TextView.html">TextView</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_XalignPropertyDefinition" data-uid="GtkSource.GutterRenderer.XalignPropertyDefinition">XalignPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;float, GutterRenderer&gt; XalignPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_XpadPropertyDefinition" data-uid="GtkSource.GutterRenderer.XpadPropertyDefinition">XpadPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, GutterRenderer&gt; XpadPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_YalignPropertyDefinition" data-uid="GtkSource.GutterRenderer.YalignPropertyDefinition">YalignPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;float, GutterRenderer&gt; YalignPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_YpadPropertyDefinition" data-uid="GtkSource.GutterRenderer.YpadPropertyDefinition">YpadPropertyDefinition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, GutterRenderer&gt; YpadPropertyDefinition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="GtkSource_GutterRenderer_AccessibleRole_" data-uid="GtkSource.GutterRenderer.AccessibleRole*"></a>
+  <h4 id="GtkSource_GutterRenderer_AccessibleRole" data-uid="GtkSource.GutterRenderer.AccessibleRole">AccessibleRole</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibleRole AccessibleRole { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRole.html">AccessibleRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_AlignmentMode_" data-uid="GtkSource.GutterRenderer.AlignmentMode*"></a>
+  <h4 id="GtkSource_GutterRenderer_AlignmentMode" data-uid="GtkSource.GutterRenderer.AlignmentMode">AlignmentMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GutterRendererAlignmentMode AlignmentMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.GutterRendererAlignmentMode.html">GutterRendererAlignmentMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_Lines_" data-uid="GtkSource.GutterRenderer.Lines*"></a>
+  <h4 id="GtkSource_GutterRenderer_Lines" data-uid="GtkSource.GutterRenderer.Lines">Lines</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GutterLines? Lines { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.GutterLines.html">GutterLines</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_View_" data-uid="GtkSource.GutterRenderer.View*"></a>
+  <h4 id="GtkSource_GutterRenderer_View" data-uid="GtkSource.GutterRenderer.View">View</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextView? View { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextView.html">TextView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_Xalign_" data-uid="GtkSource.GutterRenderer.Xalign*"></a>
+  <h4 id="GtkSource_GutterRenderer_Xalign" data-uid="GtkSource.GutterRenderer.Xalign">Xalign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Xalign { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_Xpad_" data-uid="GtkSource.GutterRenderer.Xpad*"></a>
+  <h4 id="GtkSource_GutterRenderer_Xpad" data-uid="GtkSource.GutterRenderer.Xpad">Xpad</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Xpad { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_Yalign_" data-uid="GtkSource.GutterRenderer.Yalign*"></a>
+  <h4 id="GtkSource_GutterRenderer_Yalign" data-uid="GtkSource.GutterRenderer.Yalign">Yalign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Yalign { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_Ypad_" data-uid="GtkSource.GutterRenderer.Ypad*"></a>
+  <h4 id="GtkSource_GutterRenderer_Ypad" data-uid="GtkSource.GutterRenderer.Ypad">Ypad</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Ypad { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="GtkSource_GutterRenderer_Activate_" data-uid="GtkSource.GutterRenderer.Activate*"></a>
+  <h4 id="GtkSource_GutterRenderer_Activate_Gtk_TextIter_Gdk_Rectangle_System_UInt32_Gdk_ModifierType_System_Int32_" data-uid="GtkSource.GutterRenderer.Activate(Gtk.TextIter,Gdk.Rectangle,System.UInt32,Gdk.ModifierType,System.Int32)">Activate(TextIter, Rectangle, uint, ModifierType, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Activate(TextIter iter, Rectangle area, uint button, ModifierType state, int nPresses)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">area</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.ModifierType.html">ModifierType</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nPresses</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_AlignCell_" data-uid="GtkSource.GutterRenderer.AlignCell*"></a>
+  <h4 id="GtkSource_GutterRenderer_AlignCell_System_UInt32_System_Single_System_Single_System_Single__System_Single__" data-uid="GtkSource.GutterRenderer.AlignCell(System.UInt32,System.Single,System.Single,System.Single@,System.Single@)">AlignCell(uint, float, float, out float, out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AlignCell(uint line, float width, float height, out float x, out float y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetAccessibleParent_" data-uid="GtkSource.GutterRenderer.GetAccessibleParent*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetAccessibleParent" data-uid="GtkSource.GutterRenderer.GetAccessibleParent">GetAccessibleParent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public Accessible? GetAccessibleParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetAccessibleRole_" data-uid="GtkSource.GutterRenderer.GetAccessibleRole*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetAccessibleRole" data-uid="GtkSource.GutterRenderer.GetAccessibleRole">GetAccessibleRole()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessibleRole GetAccessibleRole()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRole.html">AccessibleRole</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetAlignmentMode_" data-uid="GtkSource.GutterRenderer.GetAlignmentMode*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetAlignmentMode" data-uid="GtkSource.GutterRenderer.GetAlignmentMode">GetAlignmentMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GutterRendererAlignmentMode GetAlignmentMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.GutterRendererAlignmentMode.html">GutterRendererAlignmentMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetAtContext_" data-uid="GtkSource.GutterRenderer.GetAtContext*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetAtContext" data-uid="GtkSource.GutterRenderer.GetAtContext">GetAtContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public ATContext GetAtContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.ATContext.html">ATContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetBounds_" data-uid="GtkSource.GutterRenderer.GetBounds*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetBounds_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="GtkSource.GutterRenderer.GetBounds(System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetBounds(out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public bool GetBounds(out int x, out int y, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetBuffer_" data-uid="GtkSource.GutterRenderer.GetBuffer*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetBuffer" data-uid="GtkSource.GutterRenderer.GetBuffer">GetBuffer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Buffer? GetBuffer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.Buffer.html">Buffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetBuildableId_" data-uid="GtkSource.GutterRenderer.GetBuildableId*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetBuildableId" data-uid="GtkSource.GutterRenderer.GetBuildableId">GetBuildableId()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetBuildableId()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetFirstAccessibleChild_" data-uid="GtkSource.GutterRenderer.GetFirstAccessibleChild*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetFirstAccessibleChild" data-uid="GtkSource.GutterRenderer.GetFirstAccessibleChild">GetFirstAccessibleChild()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public Accessible? GetFirstAccessibleChild()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetGType_" data-uid="GtkSource.GutterRenderer.GetGType*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetGType" data-uid="GtkSource.GutterRenderer.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetNextAccessibleSibling_" data-uid="GtkSource.GutterRenderer.GetNextAccessibleSibling*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetNextAccessibleSibling" data-uid="GtkSource.GutterRenderer.GetNextAccessibleSibling">GetNextAccessibleSibling()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public Accessible? GetNextAccessibleSibling()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetPlatformState_" data-uid="GtkSource.GutterRenderer.GetPlatformState*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetPlatformState_Gtk_AccessiblePlatformState_" data-uid="GtkSource.GutterRenderer.GetPlatformState(Gtk.AccessiblePlatformState)">GetPlatformState(AccessiblePlatformState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public bool GetPlatformState(AccessiblePlatformState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessiblePlatformState.html">AccessiblePlatformState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetView_" data-uid="GtkSource.GutterRenderer.GetView*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetView" data-uid="GtkSource.GutterRenderer.GetView">GetView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View GetView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.View.html">View</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetXalign_" data-uid="GtkSource.GutterRenderer.GetXalign*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetXalign" data-uid="GtkSource.GutterRenderer.GetXalign">GetXalign()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetXalign()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetXpad_" data-uid="GtkSource.GutterRenderer.GetXpad*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetXpad" data-uid="GtkSource.GutterRenderer.GetXpad">GetXpad()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetXpad()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetYalign_" data-uid="GtkSource.GutterRenderer.GetYalign*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetYalign" data-uid="GtkSource.GutterRenderer.GetYalign">GetYalign()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetYalign()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_GetYpad_" data-uid="GtkSource.GutterRenderer.GetYpad*"></a>
+  <h4 id="GtkSource_GutterRenderer_GetYpad" data-uid="GtkSource.GutterRenderer.GetYpad">GetYpad()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetYpad()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_QueryActivatable_" data-uid="GtkSource.GutterRenderer.QueryActivatable*"></a>
+  <h4 id="GtkSource_GutterRenderer_QueryActivatable_Gtk_TextIter_Gdk_Rectangle_" data-uid="GtkSource.GutterRenderer.QueryActivatable(Gtk.TextIter,Gdk.Rectangle)">QueryActivatable(TextIter, Rectangle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool QueryActivatable(TextIter iter, Rectangle area)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gdk.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">area</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_ResetProperty_" data-uid="GtkSource.GutterRenderer.ResetProperty*"></a>
+  <h4 id="GtkSource_GutterRenderer_ResetProperty_Gtk_AccessibleProperty_" data-uid="GtkSource.GutterRenderer.ResetProperty(Gtk.AccessibleProperty)">ResetProperty(AccessibleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetProperty(AccessibleProperty property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleProperty.html">AccessibleProperty</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_ResetRelation_" data-uid="GtkSource.GutterRenderer.ResetRelation*"></a>
+  <h4 id="GtkSource_GutterRenderer_ResetRelation_Gtk_AccessibleRelation_" data-uid="GtkSource.GutterRenderer.ResetRelation(Gtk.AccessibleRelation)">ResetRelation(AccessibleRelation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRelation(AccessibleRelation relation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleRelation.html">AccessibleRelation</a></td>
+        <td><span class="parametername">relation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_ResetState_" data-uid="GtkSource.GutterRenderer.ResetState*"></a>
+  <h4 id="GtkSource_GutterRenderer_ResetState_Gtk_AccessibleState_" data-uid="GtkSource.GutterRenderer.ResetState(Gtk.AccessibleState)">ResetState(AccessibleState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetState(AccessibleState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessibleState.html">AccessibleState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_SetAccessibleParent_" data-uid="GtkSource.GutterRenderer.SetAccessibleParent*"></a>
+  <h4 id="GtkSource_GutterRenderer_SetAccessibleParent_Gtk_Accessible_Gtk_Accessible_" data-uid="GtkSource.GutterRenderer.SetAccessibleParent(Gtk.Accessible,Gtk.Accessible)">SetAccessibleParent(Accessible?, Accessible?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public void SetAccessibleParent(Accessible? parent, Accessible? nextSibling)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">nextSibling</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_SetAlignmentMode_" data-uid="GtkSource.GutterRenderer.SetAlignmentMode*"></a>
+  <h4 id="GtkSource_GutterRenderer_SetAlignmentMode_GtkSource_GutterRendererAlignmentMode_" data-uid="GtkSource.GutterRenderer.SetAlignmentMode(GtkSource.GutterRendererAlignmentMode)">SetAlignmentMode(GutterRendererAlignmentMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlignmentMode(GutterRendererAlignmentMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GtkSource.GutterRendererAlignmentMode.html">GutterRendererAlignmentMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_SetXalign_" data-uid="GtkSource.GutterRenderer.SetXalign*"></a>
+  <h4 id="GtkSource_GutterRenderer_SetXalign_System_Single_" data-uid="GtkSource.GutterRenderer.SetXalign(System.Single)">SetXalign(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetXalign(float xalign)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">xalign</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_SetXpad_" data-uid="GtkSource.GutterRenderer.SetXpad*"></a>
+  <h4 id="GtkSource_GutterRenderer_SetXpad_System_Int32_" data-uid="GtkSource.GutterRenderer.SetXpad(System.Int32)">SetXpad(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetXpad(int xpad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">xpad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_SetYalign_" data-uid="GtkSource.GutterRenderer.SetYalign*"></a>
+  <h4 id="GtkSource_GutterRenderer_SetYalign_System_Single_" data-uid="GtkSource.GutterRenderer.SetYalign(System.Single)">SetYalign(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetYalign(float yalign)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">yalign</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_SetYpad_" data-uid="GtkSource.GutterRenderer.SetYpad*"></a>
+  <h4 id="GtkSource_GutterRenderer_SetYpad_System_Int32_" data-uid="GtkSource.GutterRenderer.SetYpad(System.Int32)">SetYpad(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetYpad(int ypad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ypad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GtkSource_GutterRenderer_UpdateNextAccessibleSibling_" data-uid="GtkSource.GutterRenderer.UpdateNextAccessibleSibling*"></a>
+  <h4 id="GtkSource_GutterRenderer_UpdateNextAccessibleSibling_Gtk_Accessible_" data-uid="GtkSource.GutterRenderer.UpdateNextAccessibleSibling(Gtk.Accessible)">UpdateNextAccessibleSibling(Accessible?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public void UpdateNextAccessibleSibling(Accessible? newSibling)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">newSibling</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <h4 id="GtkSource_GutterRenderer_OnActivate" data-uid="GtkSource.GutterRenderer.OnActivate">OnActivate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;GutterRenderer, GutterRenderer.ActivateSignalArgs&gt; OnActivate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>.<a class="xref" href="GtkSource.GutterRenderer.ActivateSignalArgs.html">ActivateSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_OnQueryActivatable" data-uid="GtkSource.GutterRenderer.OnQueryActivatable">OnQueryActivatable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReturningSignalHandler&lt;GutterRenderer, GutterRenderer.QueryActivatableSignalArgs, bool&gt; OnQueryActivatable</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.ReturningSignalHandler-3.html">ReturningSignalHandler</a>&lt;<a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>.<a class="xref" href="GtkSource.GutterRenderer.QueryActivatableSignalArgs.html">QueryActivatableSignalArgs</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="GtkSource_GutterRenderer_OnQueryData" data-uid="GtkSource.GutterRenderer.OnQueryData">OnQueryData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SignalHandler&lt;GutterRenderer, GutterRenderer.QueryDataSignalArgs&gt; OnQueryData</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.SignalHandler-2.html">SignalHandler</a>&lt;<a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>, <a class="xref" href="GtkSource.GutterRenderer.html">GutterRenderer</a>.<a class="xref" href="GtkSource.GutterRenderer.QueryDataSignalArgs.html">QueryDataSignalArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GObject.IObject.html">IObject</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Accessible.html">Accessible</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.Buildable.html">Buildable</a>
+  </div>
+  <div>
+      <a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a>
+  </div>
+  <div>
+      <a class="xref" href="GLib.IHandle.html">IHandle</a>
+  </div>
+  <div>
+      <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

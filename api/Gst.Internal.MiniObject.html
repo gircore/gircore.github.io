@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gst.Internal.MiniObject">
 
 
+
   <h1 id="Gst_Internal_MiniObject" data-uid="Gst.Internal.MiniObject" class="text-break">Class MiniObject
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">MiniObject</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a>.<a class="xref" href="Gst.Internal.html">Internal</a></h6>
@@ -123,7 +124,7 @@ Version: 1.16</p>
 public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle parent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -155,7 +156,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     <pre><code class="lang-csharp hljs">public static extern MiniObjectOwnedHandle Copy(MiniObjectHandle miniObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -172,7 +173,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -197,7 +198,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -206,23 +207,23 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_MiniObject_GetQdata_" data-uid="Gst.Internal.MiniObject.GetQdata*"></a>
-  <h4 id="Gst_Internal_MiniObject_GetQdata_Gst_Internal_MiniObjectHandle_System_UInt32_" data-uid="Gst.Internal.MiniObject.GetQdata(Gst.Internal.MiniObjectHandle,System.UInt32)">GetQdata(MiniObjectHandle, uint)</h4>
+  <h4 id="Gst_Internal_MiniObject_GetQdata_Gst_Internal_MiniObjectHandle_GLib_Quark_" data-uid="Gst.Internal.MiniObject.GetQdata(Gst.Internal.MiniObjectHandle,GLib.Quark)">GetQdata(MiniObjectHandle, Quark)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_mini_object_get_qdata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetQdata(MiniObjectHandle @object, uint quark)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint GetQdata(MiniObjectHandle @object, Quark quark)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -237,7 +238,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -245,7 +246,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -254,23 +255,23 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_MiniObject_Init_" data-uid="Gst.Internal.MiniObject.Init*"></a>
-  <h4 id="Gst_Internal_MiniObject_Init_Gst_Internal_MiniObjectHandle_System_UInt32_System_UIntPtr_Gst_Internal_MiniObjectCopyFunction_Gst_Internal_MiniObjectDisposeFunction_Gst_Internal_MiniObjectFreeFunction_" data-uid="Gst.Internal.MiniObject.Init(Gst.Internal.MiniObjectHandle,System.UInt32,System.UIntPtr,Gst.Internal.MiniObjectCopyFunction,Gst.Internal.MiniObjectDisposeFunction,Gst.Internal.MiniObjectFreeFunction)">Init(MiniObjectHandle, uint, nuint, MiniObjectCopyFunction, MiniObjectDisposeFunction, MiniObjectFreeFunction)</h4>
+  <h4 id="Gst_Internal_MiniObject_Init_Gst_Internal_MiniObjectHandle_System_UInt32_GObject_Type_Gst_Internal_MiniObjectCopyFunction_Gst_Internal_MiniObjectDisposeFunction_Gst_Internal_MiniObjectFreeFunction_" data-uid="Gst.Internal.MiniObject.Init(Gst.Internal.MiniObjectHandle,System.UInt32,GObject.Type,Gst.Internal.MiniObjectCopyFunction,Gst.Internal.MiniObjectDisposeFunction,Gst.Internal.MiniObjectFreeFunction)">Init(MiniObjectHandle, uint, Type, MiniObjectCopyFunction, MiniObjectDisposeFunction, MiniObjectFreeFunction)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_mini_object_init.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void Init(MiniObjectHandle miniObject, uint flags, nuint type, MiniObjectCopyFunction copyFunc, MiniObjectDisposeFunction disposeFunc, MiniObjectFreeFunction freeFunc)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void Init(MiniObjectHandle miniObject, uint flags, Type type, MiniObjectCopyFunction copyFunc, MiniObjectDisposeFunction disposeFunc, MiniObjectFreeFunction freeFunc)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -285,13 +286,13 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">flags</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -326,7 +327,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     <pre><code class="lang-csharp hljs">public static extern bool IsWritable(MiniObjectHandle miniObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -343,7 +344,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -352,7 +353,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -368,7 +369,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     <pre><code class="lang-csharp hljs">public static extern bool Lock(MiniObjectHandle @object, LockFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -391,7 +392,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -400,7 +401,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -416,7 +417,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     <pre><code class="lang-csharp hljs">public static extern MiniObjectOwnedHandle MakeWritable(MiniObjectHandle miniObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -433,7 +434,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -458,7 +459,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     <pre><code class="lang-csharp hljs">public static extern MiniObjectOwnedHandle Ref(MiniObjectHandle miniObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -475,7 +476,7 @@ public static extern void AddParent(MiniObjectHandle @object, MiniObjectHandle p
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -502,7 +503,7 @@ Version: 1.16</p>
 public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandle parent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -534,7 +535,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern bool Replace(MiniObjectOwnedHandle olddata, MiniObjectHandle newdata)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -558,7 +559,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -567,23 +568,23 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_MiniObject_SetQdata_" data-uid="Gst.Internal.MiniObject.SetQdata*"></a>
-  <h4 id="Gst_Internal_MiniObject_SetQdata_Gst_Internal_MiniObjectHandle_System_UInt32_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="Gst.Internal.MiniObject.SetQdata(Gst.Internal.MiniObjectHandle,System.UInt32,System.IntPtr,GLib.Internal.DestroyNotify)">SetQdata(MiniObjectHandle, uint, nint, DestroyNotify)</h4>
+  <h4 id="Gst_Internal_MiniObject_SetQdata_Gst_Internal_MiniObjectHandle_GLib_Quark_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="Gst.Internal.MiniObject.SetQdata(Gst.Internal.MiniObjectHandle,GLib.Quark,System.IntPtr,GLib.Internal.DestroyNotify)">SetQdata(MiniObjectHandle, Quark, nint, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_mini_object_set_qdata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetQdata(MiniObjectHandle @object, uint quark, nint data, DestroyNotify destroy)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetQdata(MiniObjectHandle @object, Quark quark, nint data, DestroyNotify destroy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -598,13 +599,13 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -627,7 +628,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern MiniObjectOwnedHandle Steal(MiniObjectOwnedHandle olddata)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -645,7 +646,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -661,16 +662,16 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </tbody>
   </table>
   <a id="Gst_Internal_MiniObject_StealQdata_" data-uid="Gst.Internal.MiniObject.StealQdata*"></a>
-  <h4 id="Gst_Internal_MiniObject_StealQdata_Gst_Internal_MiniObjectHandle_System_UInt32_" data-uid="Gst.Internal.MiniObject.StealQdata(Gst.Internal.MiniObjectHandle,System.UInt32)">StealQdata(MiniObjectHandle, uint)</h4>
+  <h4 id="Gst_Internal_MiniObject_StealQdata_Gst_Internal_MiniObjectHandle_GLib_Quark_" data-uid="Gst.Internal.MiniObject.StealQdata(Gst.Internal.MiniObjectHandle,GLib.Quark)">StealQdata(MiniObjectHandle, Quark)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_mini_object_steal_qdata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint StealQdata(MiniObjectHandle @object, uint quark)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint StealQdata(MiniObjectHandle @object, Quark quark)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -685,7 +686,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">quark</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -693,7 +694,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -702,7 +703,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -718,7 +719,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern bool Take(MiniObjectOwnedHandle olddata, MiniObjectHandle newdata)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -742,7 +743,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -751,7 +752,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -767,7 +768,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern void Unlock(MiniObjectHandle @object, LockFlags flags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -799,7 +800,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern void Unref(MiniObjectHandle miniObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -825,7 +826,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern void WeakRef(MiniObjectHandle @object, MiniObjectNotify notify, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -846,7 +847,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -863,7 +864,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
     <pre><code class="lang-csharp hljs">public static extern void WeakUnref(MiniObjectHandle @object, MiniObjectNotify notify, nint data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -884,13 +885,14 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -919,7 +921,7 @@ public static extern void RemoveParent(MiniObjectHandle @object, MiniObjectHandl
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

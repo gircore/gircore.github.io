@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gst.Internal.TocEntry">
 
 
+
   <h1 id="Gst_Internal_TocEntry" data-uid="Gst.Internal.TocEntry" class="text-break">Class TocEntry
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">TocEntry</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a>.<a class="xref" href="Gst.Internal.html">Internal</a></h6>
@@ -121,7 +122,7 @@
     <pre><code class="lang-csharp hljs">public static extern void AppendSubEntry(TocEntryHandle entry, TocEntryHandle subentry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -153,7 +154,7 @@
     <pre><code class="lang-csharp hljs">public static extern TocEntryType GetEntryType(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -170,7 +171,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -195,7 +196,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -204,14 +205,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_TocEntry_GetLoop_" data-uid="Gst.Internal.TocEntry.GetLoop*"></a>
-  <h4 id="Gst_Internal_TocEntry_GetLoop_Gst_Internal_TocEntryHandle_System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.TocEntry.GetLoop(Gst.Internal.TocEntryHandle,System.IntPtr@,System.IntPtr@)">GetLoop(TocEntryHandle, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_TocEntry_GetLoop_Gst_Internal_TocEntryHandle_System_IntPtr__System_Int32__" data-uid="Gst.Internal.TocEntry.GetLoop(Gst.Internal.TocEntryHandle,System.IntPtr@,System.Int32@)">GetLoop(TocEntryHandle, out nint, out int)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_toc_entry_get_loop.
 Version: 1.4</p>
 </div>
@@ -219,10 +220,10 @@ Version: 1.4</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.4&quot;)]
-public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out nint repeatCount)</code></pre>
+public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out int repeatCount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -237,13 +238,13 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">loopType</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">repeatCount</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -251,7 +252,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -260,7 +261,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -276,7 +277,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern TocEntryUnownedHandle GetParent(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -293,7 +294,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -309,16 +310,16 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <a id="Gst_Internal_TocEntry_GetStartStopTimes_" data-uid="Gst.Internal.TocEntry.GetStartStopTimes*"></a>
-  <h4 id="Gst_Internal_TocEntry_GetStartStopTimes_Gst_Internal_TocEntryHandle_System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.TocEntry.GetStartStopTimes(Gst.Internal.TocEntryHandle,System.IntPtr@,System.IntPtr@)">GetStartStopTimes(TocEntryHandle, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_TocEntry_GetStartStopTimes_Gst_Internal_TocEntryHandle_System_Int64__System_Int64__" data-uid="Gst.Internal.TocEntry.GetStartStopTimes(Gst.Internal.TocEntryHandle,System.Int64@,System.Int64@)">GetStartStopTimes(TocEntryHandle, out long, out long)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_toc_entry_get_start_stop_times.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool GetStartStopTimes(TocEntryHandle entry, out nint start, out nint stop)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool GetStartStopTimes(TocEntryHandle entry, out long start, out long stop)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -333,13 +334,13 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">start</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stop</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -347,7 +348,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -356,7 +357,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -372,7 +373,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern ListUnownedHandle GetSubEntries(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -389,7 +390,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -414,7 +415,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern TagListUnownedHandle GetTags(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -431,7 +432,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -456,7 +457,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern TocUnownedHandle GetToc(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -473,7 +474,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -495,10 +496,10 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetUid(TocEntryHandle entry)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetUid(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -515,7 +516,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -524,7 +525,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -540,7 +541,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern bool IsAlternative(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -557,7 +558,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -566,7 +567,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -582,7 +583,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern bool IsSequence(TocEntryHandle entry)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -599,7 +600,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -608,7 +609,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -624,7 +625,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     <pre><code class="lang-csharp hljs">public static extern void MergeTags(TocEntryHandle entry, TagListHandle tags, TagMergeMode mode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -653,16 +654,16 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <a id="Gst_Internal_TocEntry_New_" data-uid="Gst.Internal.TocEntry.New*"></a>
-  <h4 id="Gst_Internal_TocEntry_New_Gst_TocEntryType_System_String_" data-uid="Gst.Internal.TocEntry.New(Gst.TocEntryType,System.String)">New(TocEntryType, string)</h4>
+  <h4 id="Gst_Internal_TocEntry_New_Gst_TocEntryType_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gst.Internal.TocEntry.New(Gst.TocEntryType,GLib.Internal.NonNullableUtf8StringHandle)">New(TocEntryType, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor gst_toc_entry_new.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern TocEntryOwnedHandle New(TocEntryType type, string uid)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern TocEntryOwnedHandle New(TocEntryType type, NonNullableUtf8StringHandle uid)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -678,7 +679,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">uid</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -686,7 +687,7 @@ public static extern bool GetLoop(TocEntryHandle entry, out nint loopType, out n
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -713,7 +714,7 @@ Version: 1.4</p>
 public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, int repeatCount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -734,7 +735,7 @@ public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, in
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">repeatCount</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -751,7 +752,7 @@ public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, in
     <pre><code class="lang-csharp hljs">public static extern void SetStartStopTimes(TocEntryHandle entry, long start, long stop)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -766,13 +767,13 @@ public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, in
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">start</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">stop</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -789,7 +790,7 @@ public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, in
     <pre><code class="lang-csharp hljs">public static extern void SetTags(TocEntryHandle entry, TagListHandle tags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -811,6 +812,7 @@ public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, in
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -839,7 +841,7 @@ public static extern void SetLoop(TocEntryHandle entry, TocLoopType loopType, in
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

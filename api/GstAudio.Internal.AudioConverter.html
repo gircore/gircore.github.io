@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GstAudio.Internal.AudioConverter">
 
 
+
   <h1 id="GstAudio_Internal_AudioConverter" data-uid="GstAudio.Internal.AudioConverter" class="text-break">Class AudioConverter
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">AudioConverter</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GstAudio.html">GstAudio</a>.<a class="xref" href="GstAudio.Internal.html">Internal</a></h6>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="GstAudio_Internal_AudioConverter_Convert_" data-uid="GstAudio.Internal.AudioConverter.Convert*"></a>
-  <h4 id="GstAudio_Internal_AudioConverter_Convert_GstAudio_Internal_AudioConverterHandle_GstAudio_AudioConverterFlags_System_Byte___System_UIntPtr_System_Byte____System_IntPtr__" data-uid="GstAudio.Internal.AudioConverter.Convert(GstAudio.Internal.AudioConverterHandle,GstAudio.AudioConverterFlags,System.Byte[],System.UIntPtr,System.Byte[]@,System.IntPtr@)">Convert(AudioConverterHandle, AudioConverterFlags, byte[], nuint, out byte[], out nint)</h4>
+  <h4 id="GstAudio_Internal_AudioConverter_Convert_GstAudio_Internal_AudioConverterHandle_GstAudio_AudioConverterFlags_System_Byte__System_UIntPtr_System_Byte____System_UIntPtr__" data-uid="GstAudio.Internal.AudioConverter.Convert(GstAudio.Internal.AudioConverterHandle,GstAudio.AudioConverterFlags,System.Byte@,System.UIntPtr,System.Byte[]@,System.UIntPtr@)">Convert(AudioConverterHandle, AudioConverterFlags, ref byte, nuint, out byte[], out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_convert.
 Version: 1.14</p>
 </div>
@@ -120,10 +121,10 @@ Version: 1.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.14&quot;)]
-public static extern bool Convert(AudioConverterHandle convert, AudioConverterFlags flags, byte[] @in, nuint inSize, out byte[] @out, out nint outSize)</code></pre>
+public static extern bool Convert(AudioConverterHandle convert, AudioConverterFlags flags, ref byte @in, nuint inSize, out byte[] @out, out nuint outSize)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -144,23 +145,23 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">in</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">inSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
         <td><span class="parametername">out</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">outSize</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -168,7 +169,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -177,7 +178,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -193,7 +194,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     <pre><code class="lang-csharp hljs">public static extern void Free(AudioConverterHandle convert)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -210,16 +211,16 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </tbody>
   </table>
   <a id="GstAudio_Internal_AudioConverter_GetConfig_" data-uid="GstAudio.Internal.AudioConverter.GetConfig*"></a>
-  <h4 id="GstAudio_Internal_AudioConverter_GetConfig_GstAudio_Internal_AudioConverterHandle_System_IntPtr__System_IntPtr__" data-uid="GstAudio.Internal.AudioConverter.GetConfig(GstAudio.Internal.AudioConverterHandle,System.IntPtr@,System.IntPtr@)">GetConfig(AudioConverterHandle, out nint, out nint)</h4>
+  <h4 id="GstAudio_Internal_AudioConverter_GetConfig_GstAudio_Internal_AudioConverterHandle_System_Int32__System_Int32__" data-uid="GstAudio.Internal.AudioConverter.GetConfig(GstAudio.Internal.AudioConverterHandle,System.Int32@,System.Int32@)">GetConfig(AudioConverterHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_audio_converter_get_config.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern StructureUnownedHandle GetConfig(AudioConverterHandle convert, out nint inRate, out nint outRate)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern StructureUnownedHandle GetConfig(AudioConverterHandle convert, out int inRate, out int outRate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -234,13 +235,13 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">inRate</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">outRate</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -248,7 +249,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -273,7 +274,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -282,7 +283,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -298,7 +299,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     <pre><code class="lang-csharp hljs">public static extern nuint GetInFrames(AudioConverterHandle convert, nuint outFrames)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -313,7 +314,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">outFrames</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -321,7 +322,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -330,7 +331,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -346,7 +347,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     <pre><code class="lang-csharp hljs">public static extern nuint GetMaxLatency(AudioConverterHandle convert)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -363,7 +364,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -372,7 +373,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -388,7 +389,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     <pre><code class="lang-csharp hljs">public static extern nuint GetOutFrames(AudioConverterHandle convert, nuint inFrames)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -403,7 +404,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">inFrames</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -411,7 +412,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -420,7 +421,7 @@ public static extern bool Convert(AudioConverterHandle convert, AudioConverterFl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -438,7 +439,7 @@ Version: 1.16</p>
 public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -455,7 +456,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -464,7 +465,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -480,7 +481,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     <pre><code class="lang-csharp hljs">public static extern AudioConverterOwnedHandle New(AudioConverterFlags flags, AudioInfoHandle inInfo, AudioInfoHandle outInfo, StructureHandle config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -516,7 +517,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -541,7 +542,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     <pre><code class="lang-csharp hljs">public static extern void Reset(AudioConverterHandle convert)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -567,7 +568,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     <pre><code class="lang-csharp hljs">public static extern bool Samples(AudioConverterHandle convert, AudioConverterFlags flags, nint @in, nuint inFrames, nint @out, nuint outFrames)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -588,23 +589,23 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">in</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">inFrames</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">out</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">outFrames</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -612,7 +613,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -621,7 +622,7 @@ public static extern bool IsPassthrough(AudioConverterHandle convert)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -639,7 +640,7 @@ Version: 1.12</p>
 public static extern bool SupportsInplace(AudioConverterHandle convert)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -656,7 +657,7 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -665,7 +666,7 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -681,7 +682,7 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
     <pre><code class="lang-csharp hljs">public static extern bool UpdateConfig(AudioConverterHandle convert, int inRate, int outRate, StructureHandle config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -696,13 +697,13 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">inRate</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">outRate</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -716,7 +717,7 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -725,12 +726,13 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -759,7 +761,7 @@ public static extern bool SupportsInplace(AudioConverterHandle convert)</code></
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

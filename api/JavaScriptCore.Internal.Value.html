@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,41 +70,42 @@
             <article class="content wrap" id="_content" data-uid="JavaScriptCore.Internal.Value">
 
 
+
   <h1 id="JavaScriptCore_Internal_Value" data-uid="JavaScriptCore.Internal.Value" class="text-break">Class Value
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Value</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="JavaScriptCore.html">JavaScriptCore</a>.<a class="xref" href="JavaScriptCore.Internal.html">Internal</a></h6>
-  <h6><strong>Assembly</strong>: JavaScriptCore-5.0.dll</h6>
+  <h6><strong>Assembly</strong>: JavaScriptCore-6.0.dll</h6>
   <h5 id="JavaScriptCore_Internal_Value_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class Value</code></pre>
@@ -112,7 +113,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="JavaScriptCore_Internal_Value_ArrayBufferGetData_" data-uid="JavaScriptCore.Internal.Value.ArrayBufferGetData*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ArrayBufferGetData_System_IntPtr_System_IntPtr_" data-uid="JavaScriptCore.Internal.Value.ArrayBufferGetData(System.IntPtr,System.IntPtr)">ArrayBufferGetData(nint, nint)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ArrayBufferGetData_System_IntPtr_System_UIntPtr__" data-uid="JavaScriptCore.Internal.Value.ArrayBufferGetData(System.IntPtr,System.UIntPtr@)">ArrayBufferGetData(nint, ref nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_array_buffer_get_data.
 Version: 2.38</p>
 </div>
@@ -120,10 +121,10 @@ Version: 2.38</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
-public static extern nint ArrayBufferGetData(nint value, nint size)</code></pre>
+public static extern nint ArrayBufferGetData(nint value, ref nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -133,12 +134,12 @@ public static extern nint ArrayBufferGetData(nint value, nint size)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -146,7 +147,7 @@ public static extern nint ArrayBufferGetData(nint value, nint size)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -155,7 +156,7 @@ public static extern nint ArrayBufferGetData(nint value, nint size)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -173,7 +174,7 @@ Version: 2.38</p>
 public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -183,14 +184,14 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -199,23 +200,23 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="JavaScriptCore_Internal_Value_ConstructorCallv_" data-uid="JavaScriptCore.Internal.Value.ConstructorCallv*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ConstructorCallv_System_IntPtr_System_UInt32_System_IntPtr___" data-uid="JavaScriptCore.Internal.Value.ConstructorCallv(System.IntPtr,System.UInt32,System.IntPtr[])">ConstructorCallv(nint, uint, nint[])</h4>
+  <a id="JavaScriptCore_Internal_Value_ConstructorCall_" data-uid="JavaScriptCore.Internal.Value.ConstructorCall*"></a>
+  <h4 id="JavaScriptCore_Internal_Value_ConstructorCall_System_IntPtr_System_UInt32_System_IntPtr___" data-uid="JavaScriptCore.Internal.Value.ConstructorCall(System.IntPtr,System.UInt32,System.IntPtr[])">ConstructorCall(nint, uint, nint[])</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_constructor_callv.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint ConstructorCallv(nint value, uint nParameters, nint[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint ConstructorCall(nint value, uint nParameters, nint[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -225,18 +226,18 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nParameters</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>[]</td>
         <td><span class="parametername">parameters</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -244,7 +245,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -253,23 +254,23 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="JavaScriptCore_Internal_Value_FunctionCallv_" data-uid="JavaScriptCore.Internal.Value.FunctionCallv*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_FunctionCallv_System_IntPtr_System_UInt32_System_IntPtr___" data-uid="JavaScriptCore.Internal.Value.FunctionCallv(System.IntPtr,System.UInt32,System.IntPtr[])">FunctionCallv(nint, uint, nint[])</h4>
+  <a id="JavaScriptCore_Internal_Value_FunctionCall_" data-uid="JavaScriptCore.Internal.Value.FunctionCall*"></a>
+  <h4 id="JavaScriptCore_Internal_Value_FunctionCall_System_IntPtr_System_UInt32_System_IntPtr___" data-uid="JavaScriptCore.Internal.Value.FunctionCall(System.IntPtr,System.UInt32,System.IntPtr[])">FunctionCall(nint, uint, nint[])</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_function_callv.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint FunctionCallv(nint value, uint nParameters, nint[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint FunctionCall(nint value, uint nParameters, nint[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -279,18 +280,18 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nParameters</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>[]</td>
         <td><span class="parametername">parameters</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -298,7 +299,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -307,7 +308,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -323,7 +324,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint GetContext(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -333,14 +334,14 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -349,7 +350,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -365,7 +366,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -374,7 +375,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -390,7 +391,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsArray(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -400,14 +401,14 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -416,7 +417,7 @@ public static extern nuint ArrayBufferGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -434,7 +435,7 @@ Version: 2.38</p>
 public static extern bool IsArrayBuffer(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -444,14 +445,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -460,7 +461,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -476,7 +477,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsBoolean(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -486,14 +487,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -502,7 +503,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -518,7 +519,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsConstructor(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -528,14 +529,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -544,7 +545,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -560,7 +561,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsFunction(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -570,14 +571,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -586,7 +587,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -602,7 +603,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsNull(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -612,14 +613,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -628,7 +629,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -644,7 +645,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsNumber(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -654,14 +655,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -670,7 +671,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -686,7 +687,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsObject(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -696,14 +697,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -712,7 +713,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -728,7 +729,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsString(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -738,14 +739,14 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -754,7 +755,7 @@ public static extern bool IsArrayBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -772,7 +773,7 @@ Version: 2.38</p>
 public static extern bool IsTypedArray(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -782,14 +783,14 @@ public static extern bool IsTypedArray(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -798,7 +799,7 @@ public static extern bool IsTypedArray(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -814,7 +815,7 @@ public static extern bool IsTypedArray(nint value)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool IsUndefined(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -824,14 +825,14 @@ public static extern bool IsTypedArray(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -840,7 +841,7 @@ public static extern bool IsTypedArray(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -858,7 +859,7 @@ Version: 2.38</p>
 public static extern nint NewArrayBuffer(nint context, nint data, nuint size, DestroyNotify destroyNotify, nint userData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -868,19 +869,19 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -892,7 +893,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -900,7 +901,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -909,7 +910,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -925,7 +926,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     <pre><code class="lang-csharp hljs">public static extern nint NewArrayFromGarray(nint context, nint array)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -935,13 +936,13 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">array</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -949,7 +950,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -958,7 +959,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -974,7 +975,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     <pre><code class="lang-csharp hljs">public static extern nint NewArrayFromStrv(nint context, nint strv)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -984,13 +985,13 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">strv</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -998,7 +999,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1007,7 +1008,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1023,7 +1024,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     <pre><code class="lang-csharp hljs">public static extern nint NewBoolean(nint context, bool value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1033,13 +1034,13 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">value</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1047,7 +1048,7 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1056,14 +1057,14 @@ public static extern nint NewArrayBuffer(nint context, nint data, nuint size, De
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_NewFromJson_" data-uid="JavaScriptCore.Internal.Value.NewFromJson*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_NewFromJson_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Value.NewFromJson(System.IntPtr,System.String)">NewFromJson(nint, string)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_NewFromJson_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="JavaScriptCore.Internal.Value.NewFromJson(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">NewFromJson(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor jsc_value_new_from_json.
 Version: 2.28</p>
 </div>
@@ -1071,10 +1072,10 @@ Version: 2.28</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.28&quot;)]
-public static extern nint NewFromJson(nint context, string json)</code></pre>
+public static extern nint NewFromJson(nint context, NonNullableUtf8StringHandle json)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1084,13 +1085,13 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">json</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1098,7 +1099,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1107,23 +1108,23 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_NewFunctionVariadic_" data-uid="JavaScriptCore.Internal.Value.NewFunctionVariadic*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_NewFunctionVariadic_System_IntPtr_System_String_GObject_Internal_Callback_System_IntPtr_GLib_Internal_DestroyNotify_System_UIntPtr_" data-uid="JavaScriptCore.Internal.Value.NewFunctionVariadic(System.IntPtr,System.String,GObject.Internal.Callback,System.IntPtr,GLib.Internal.DestroyNotify,System.UIntPtr)">NewFunctionVariadic(nint, string?, Callback, nint, DestroyNotify, nuint)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_NewFunctionVariadic_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_GObject_Internal_Callback_System_IntPtr_GLib_Internal_DestroyNotify_GObject_Type_" data-uid="JavaScriptCore.Internal.Value.NewFunctionVariadic(System.IntPtr,GLib.Internal.NullableUtf8StringHandle,GObject.Internal.Callback,System.IntPtr,GLib.Internal.DestroyNotify,GObject.Type)">NewFunctionVariadic(nint, NullableUtf8StringHandle, Callback, nint, DestroyNotify, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor jsc_value_new_function_variadic.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint NewFunctionVariadic(nint context, string? name, Callback callback, nint userData, DestroyNotify destroyNotify, nuint returnType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint NewFunctionVariadic(nint context, NullableUtf8StringHandle name, Callback callback, nint userData, DestroyNotify destroyNotify, Type returnType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1133,13 +1134,13 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1151,7 +1152,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1163,7 +1164,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">returnType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1171,7 +1172,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1180,7 +1181,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1196,7 +1197,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint NewNull(nint context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1206,7 +1207,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1214,7 +1215,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1223,7 +1224,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1239,7 +1240,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint NewNumber(nint context, double number)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1249,13 +1250,13 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">number</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1263,7 +1264,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1272,7 +1273,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1288,7 +1289,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint NewObject(nint context, nint instance, nint jscClass)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1298,19 +1299,19 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">instance</span></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">jscClass</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1318,7 +1319,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1327,23 +1328,23 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_NewString_" data-uid="JavaScriptCore.Internal.Value.NewString*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_NewString_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Value.NewString(System.IntPtr,System.String)">NewString(nint, string?)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_NewString_System_IntPtr_GLib_Internal_NullableUtf8StringHandle_" data-uid="JavaScriptCore.Internal.Value.NewString(System.IntPtr,GLib.Internal.NullableUtf8StringHandle)">NewString(nint, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor jsc_value_new_string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint NewString(nint context, string? @string)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint NewString(nint context, NullableUtf8StringHandle @string)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1353,20 +1354,20 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1375,7 +1376,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1391,7 +1392,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint NewStringFromBytes(nint context, BytesHandle bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1401,7 +1402,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1415,7 +1416,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1424,7 +1425,7 @@ public static extern nint NewFromJson(nint context, string json)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1442,7 +1443,7 @@ Version: 2.38</p>
 public static extern nint NewTypedArray(nint context, TypedArrayType type, nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1452,7 +1453,7 @@ public static extern nint NewTypedArray(nint context, TypedArrayType type, nuint
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1464,7 +1465,7 @@ public static extern nint NewTypedArray(nint context, TypedArrayType type, nuint
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1472,7 +1473,7 @@ public static extern nint NewTypedArray(nint context, TypedArrayType type, nuint
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1481,7 +1482,7 @@ public static extern nint NewTypedArray(nint context, TypedArrayType type, nuint
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1499,7 +1500,7 @@ Version: 2.38</p>
 public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayType type, nuint offset, long length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1509,7 +1510,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">arrayBuffer</span></td>
         <td></td>
       </tr>
@@ -1520,13 +1521,13 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1534,7 +1535,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1543,7 +1544,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1559,7 +1560,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern nint NewUndefined(nint context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1569,7 +1570,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1577,7 +1578,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1586,23 +1587,23 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectDefinePropertyAccessor_" data-uid="JavaScriptCore.Internal.Value.ObjectDefinePropertyAccessor*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectDefinePropertyAccessor_System_IntPtr_System_String_JavaScriptCore_ValuePropertyFlags_System_UIntPtr_GObject_Internal_Callback_GObject_Internal_Callback_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="JavaScriptCore.Internal.Value.ObjectDefinePropertyAccessor(System.IntPtr,System.String,JavaScriptCore.ValuePropertyFlags,System.UIntPtr,GObject.Internal.Callback,GObject.Internal.Callback,System.IntPtr,GLib.Internal.DestroyNotify)">ObjectDefinePropertyAccessor(nint, string, ValuePropertyFlags, nuint, Callback, Callback, nint, DestroyNotify)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectDefinePropertyAccessor_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_JavaScriptCore_ValuePropertyFlags_GObject_Type_GObject_Internal_Callback_GObject_Internal_Callback_System_IntPtr_GLib_Internal_DestroyNotify_" data-uid="JavaScriptCore.Internal.Value.ObjectDefinePropertyAccessor(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,JavaScriptCore.ValuePropertyFlags,GObject.Type,GObject.Internal.Callback,GObject.Internal.Callback,System.IntPtr,GLib.Internal.DestroyNotify)">ObjectDefinePropertyAccessor(nint, NonNullableUtf8StringHandle, ValuePropertyFlags, Type, Callback, Callback, nint, DestroyNotify)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_define_property_accessor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void ObjectDefinePropertyAccessor(nint value, string propertyName, ValuePropertyFlags flags, nuint propertyType, Callback getter, Callback setter, nint userData, DestroyNotify destroyNotify)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void ObjectDefinePropertyAccessor(nint value, NonNullableUtf8StringHandle propertyName, ValuePropertyFlags flags, Type propertyType, Callback getter, Callback setter, nint userData, DestroyNotify destroyNotify)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1612,12 +1613,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1629,7 +1630,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">propertyType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1647,7 +1648,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1661,16 +1662,16 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectDefinePropertyData_" data-uid="JavaScriptCore.Internal.Value.ObjectDefinePropertyData*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectDefinePropertyData_System_IntPtr_System_String_JavaScriptCore_ValuePropertyFlags_System_IntPtr_" data-uid="JavaScriptCore.Internal.Value.ObjectDefinePropertyData(System.IntPtr,System.String,JavaScriptCore.ValuePropertyFlags,System.IntPtr)">ObjectDefinePropertyData(nint, string, ValuePropertyFlags, nint)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectDefinePropertyData_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_JavaScriptCore_ValuePropertyFlags_System_IntPtr_" data-uid="JavaScriptCore.Internal.Value.ObjectDefinePropertyData(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,JavaScriptCore.ValuePropertyFlags,System.IntPtr)">ObjectDefinePropertyData(nint, NonNullableUtf8StringHandle, ValuePropertyFlags, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_define_property_data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void ObjectDefinePropertyData(nint value, string propertyName, ValuePropertyFlags flags, nint propertyValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void ObjectDefinePropertyData(nint value, NonNullableUtf8StringHandle propertyName, ValuePropertyFlags flags, nint propertyValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1680,12 +1681,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1697,7 +1698,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">propertyValue</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1705,16 +1706,16 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectDeleteProperty_" data-uid="JavaScriptCore.Internal.Value.ObjectDeleteProperty*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectDeleteProperty_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Value.ObjectDeleteProperty(System.IntPtr,System.String)">ObjectDeleteProperty(nint, string)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectDeleteProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="JavaScriptCore.Internal.Value.ObjectDeleteProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">ObjectDeleteProperty(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_delete_property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool ObjectDeleteProperty(nint value, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool ObjectDeleteProperty(nint value, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1724,12 +1725,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1737,7 +1738,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1746,7 +1747,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1762,7 +1763,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern string[] ObjectEnumerateProperties(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1772,14 +1773,14 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1788,23 +1789,23 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectGetProperty_" data-uid="JavaScriptCore.Internal.Value.ObjectGetProperty*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectGetProperty_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Value.ObjectGetProperty(System.IntPtr,System.String)">ObjectGetProperty(nint, string)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectGetProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="JavaScriptCore.Internal.Value.ObjectGetProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">ObjectGetProperty(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_get_property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint ObjectGetProperty(nint value, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint ObjectGetProperty(nint value, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1814,12 +1815,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1827,7 +1828,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1836,7 +1837,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1852,7 +1853,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern nint ObjectGetPropertyAtIndex(nint value, uint index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1862,12 +1863,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">index</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1875,7 +1876,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1884,23 +1885,23 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectHasProperty_" data-uid="JavaScriptCore.Internal.Value.ObjectHasProperty*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectHasProperty_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Value.ObjectHasProperty(System.IntPtr,System.String)">ObjectHasProperty(nint, string)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectHasProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="JavaScriptCore.Internal.Value.ObjectHasProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">ObjectHasProperty(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_has_property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool ObjectHasProperty(nint value, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool ObjectHasProperty(nint value, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1910,12 +1911,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1923,7 +1924,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1932,23 +1933,23 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="JavaScriptCore_Internal_Value_ObjectInvokeMethodv_" data-uid="JavaScriptCore.Internal.Value.ObjectInvokeMethodv*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectInvokeMethodv_System_IntPtr_System_String_System_UInt32_System_IntPtr___" data-uid="JavaScriptCore.Internal.Value.ObjectInvokeMethodv(System.IntPtr,System.String,System.UInt32,System.IntPtr[])">ObjectInvokeMethodv(nint, string, uint, nint[])</h4>
+  <a id="JavaScriptCore_Internal_Value_ObjectInvokeMethod_" data-uid="JavaScriptCore.Internal.Value.ObjectInvokeMethod*"></a>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectInvokeMethod_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_UInt32_System_IntPtr___" data-uid="JavaScriptCore.Internal.Value.ObjectInvokeMethod(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.UInt32,System.IntPtr[])">ObjectInvokeMethod(nint, NonNullableUtf8StringHandle, uint, nint[])</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_invoke_methodv.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint ObjectInvokeMethodv(nint value, string name, uint nParameters, nint[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint ObjectInvokeMethod(nint value, NonNullableUtf8StringHandle name, uint nParameters, nint[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1958,24 +1959,24 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nParameters</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>[]</td>
         <td><span class="parametername">parameters</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1983,7 +1984,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1992,23 +1993,23 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectIsInstanceOf_" data-uid="JavaScriptCore.Internal.Value.ObjectIsInstanceOf*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectIsInstanceOf_System_IntPtr_System_String_" data-uid="JavaScriptCore.Internal.Value.ObjectIsInstanceOf(System.IntPtr,System.String)">ObjectIsInstanceOf(nint, string)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectIsInstanceOf_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="JavaScriptCore.Internal.Value.ObjectIsInstanceOf(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle)">ObjectIsInstanceOf(nint, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_is_instance_of.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool ObjectIsInstanceOf(nint value, string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool ObjectIsInstanceOf(nint value, NonNullableUtf8StringHandle name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2018,12 +2019,12 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2031,7 +2032,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2040,23 +2041,23 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_ObjectSetProperty_" data-uid="JavaScriptCore.Internal.Value.ObjectSetProperty*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_ObjectSetProperty_System_IntPtr_System_String_System_IntPtr_" data-uid="JavaScriptCore.Internal.Value.ObjectSetProperty(System.IntPtr,System.String,System.IntPtr)">ObjectSetProperty(nint, string, nint)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_ObjectSetProperty_System_IntPtr_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="JavaScriptCore.Internal.Value.ObjectSetProperty(System.IntPtr,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">ObjectSetProperty(nint, NonNullableUtf8StringHandle, nint)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_object_set_property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void ObjectSetProperty(nint value, string name, nint property)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void ObjectSetProperty(nint value, NonNullableUtf8StringHandle name, nint property)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2066,18 +2067,18 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">property</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2094,7 +2095,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern void ObjectSetPropertyAtIndex(nint value, uint index, nint property)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2104,18 +2105,18 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">index</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">property</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2132,7 +2133,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern bool ToBoolean(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2142,14 +2143,14 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2158,7 +2159,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2174,7 +2175,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern double ToDouble(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2184,14 +2185,14 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2200,7 +2201,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2216,7 +2217,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     <pre><code class="lang-csharp hljs">public static extern int ToInt32(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2226,14 +2227,14 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2242,7 +2243,7 @@ public static extern nint NewTypedArrayWithBuffer(nint arrayBuffer, TypedArrayTy
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2257,10 +2258,10 @@ Version: 2.28</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.28&quot;)]
-public static extern string ToJson(nint value, uint indent)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle ToJson(nint value, uint indent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2270,12 +2271,12 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">indent</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -2283,7 +2284,7 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2292,7 +2293,7 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -2305,10 +2306,10 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string ToString(nint value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringOwnedHandle ToString(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2318,14 +2319,14 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2334,7 +2335,7 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -2350,7 +2351,7 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern BytesOwnedHandle ToStringAsBytes(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2360,14 +2361,14 @@ public static extern string ToJson(nint value, uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2394,7 +2395,7 @@ Version: 2.38</p>
 public static extern nint TypedArrayGetBuffer(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2404,14 +2405,14 @@ public static extern nint TypedArrayGetBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2420,14 +2421,14 @@ public static extern nint TypedArrayGetBuffer(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="JavaScriptCore_Internal_Value_TypedArrayGetData_" data-uid="JavaScriptCore.Internal.Value.TypedArrayGetData*"></a>
-  <h4 id="JavaScriptCore_Internal_Value_TypedArrayGetData_System_IntPtr_System_IntPtr__" data-uid="JavaScriptCore.Internal.Value.TypedArrayGetData(System.IntPtr,System.IntPtr@)">TypedArrayGetData(nint, out nint)</h4>
+  <h4 id="JavaScriptCore_Internal_Value_TypedArrayGetData_System_IntPtr_System_UIntPtr__" data-uid="JavaScriptCore.Internal.Value.TypedArrayGetData(System.IntPtr,System.UIntPtr@)">TypedArrayGetData(nint, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method jsc_value_typed_array_get_data.
 Version: 2.38</p>
 </div>
@@ -2435,10 +2436,10 @@ Version: 2.38</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
-public static extern nint TypedArrayGetData(nint value, out nint length)</code></pre>
+public static extern nint TypedArrayGetData(nint value, out nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2448,12 +2449,12 @@ public static extern nint TypedArrayGetData(nint value, out nint length)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
@@ -2461,7 +2462,7 @@ public static extern nint TypedArrayGetData(nint value, out nint length)</code><
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2470,7 +2471,7 @@ public static extern nint TypedArrayGetData(nint value, out nint length)</code><
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
@@ -2488,7 +2489,7 @@ Version: 2.38</p>
 public static extern nuint TypedArrayGetLength(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2498,14 +2499,14 @@ public static extern nuint TypedArrayGetLength(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2514,7 +2515,7 @@ public static extern nuint TypedArrayGetLength(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2532,7 +2533,7 @@ Version: 2.38</p>
 public static extern nuint TypedArrayGetOffset(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2542,14 +2543,14 @@ public static extern nuint TypedArrayGetOffset(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2558,7 +2559,7 @@ public static extern nuint TypedArrayGetOffset(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2576,7 +2577,7 @@ Version: 2.38</p>
 public static extern nuint TypedArrayGetSize(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2586,14 +2587,14 @@ public static extern nuint TypedArrayGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2602,7 +2603,7 @@ public static extern nuint TypedArrayGetSize(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -2620,7 +2621,7 @@ Version: 2.38</p>
 public static extern TypedArrayType TypedArrayGetType(nint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2630,14 +2631,14 @@ public static extern TypedArrayType TypedArrayGetType(nint value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2652,6 +2653,7 @@ public static extern TypedArrayType TypedArrayGetType(nint value)</code></pre>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -2680,7 +2682,7 @@ public static extern TypedArrayType TypedArrayGetType(nint value)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gtk.Internal.RecentInfo">
 
 
+
   <h1 id="Gtk_Internal_RecentInfo" data-uid="Gtk.Internal.RecentInfo" class="text-break">Class RecentInfo
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">RecentInfo</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a>.<a class="xref" href="Gtk.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gtk_Internal_RecentInfo_CreateAppInfo_" data-uid="Gtk.Internal.RecentInfo.CreateAppInfo*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_CreateAppInfo_Gtk_Internal_RecentInfoHandle_System_String_GLib_Internal_ErrorOwnedHandle__" data-uid="Gtk.Internal.RecentInfo.CreateAppInfo(Gtk.Internal.RecentInfoHandle,System.String,GLib.Internal.ErrorOwnedHandle@)">CreateAppInfo(RecentInfoHandle, string?, out ErrorOwnedHandle)</h4>
+  <h4 id="Gtk_Internal_RecentInfo_CreateAppInfo_Gtk_Internal_RecentInfoHandle_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_ErrorOwnedHandle__" data-uid="Gtk.Internal.RecentInfo.CreateAppInfo(Gtk.Internal.RecentInfoHandle,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.ErrorOwnedHandle@)">CreateAppInfo(RecentInfoHandle, NullableUtf8StringHandle, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gtk_recent_info_create_app_info.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint CreateAppInfo(RecentInfoHandle info, string? appName, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint CreateAppInfo(RecentInfoHandle info, NullableUtf8StringHandle appName, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -136,7 +137,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">appName</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -144,13 +145,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -159,7 +159,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -175,7 +175,7 @@
     <pre><code class="lang-csharp hljs">public static extern bool Exists(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -192,7 +192,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -201,7 +201,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -217,7 +217,7 @@
     <pre><code class="lang-csharp hljs">public static extern DateTimeUnownedHandle GetAdded(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -234,7 +234,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -259,7 +259,7 @@
     <pre><code class="lang-csharp hljs">public static extern int GetAge(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -276,7 +276,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -285,23 +285,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gtk_Internal_RecentInfo_GetApplicationInfo_" data-uid="Gtk.Internal.RecentInfo.GetApplicationInfo*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_GetApplicationInfo_Gtk_Internal_RecentInfoHandle_System_String_System_String__System_IntPtr__GLib_Internal_DateTimeUnownedHandle__" data-uid="Gtk.Internal.RecentInfo.GetApplicationInfo(Gtk.Internal.RecentInfoHandle,System.String,System.String@,System.IntPtr@,GLib.Internal.DateTimeUnownedHandle@)">GetApplicationInfo(RecentInfoHandle, string, out string, out nint, out DateTimeUnownedHandle)</h4>
+  <h4 id="Gtk_Internal_RecentInfo_GetApplicationInfo_Gtk_Internal_RecentInfoHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_NonNullableUtf8StringUnownedHandle__System_UInt32__GLib_Internal_DateTimeUnownedHandle__" data-uid="Gtk.Internal.RecentInfo.GetApplicationInfo(Gtk.Internal.RecentInfoHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.NonNullableUtf8StringUnownedHandle@,System.UInt32@,GLib.Internal.DateTimeUnownedHandle@)">GetApplicationInfo(RecentInfoHandle, NonNullableUtf8StringHandle, out NonNullableUtf8StringUnownedHandle, out uint, out DateTimeUnownedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gtk_recent_info_get_application_info.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool GetApplicationInfo(RecentInfoHandle info, string appName, out string appExec, out nint count, out DateTimeUnownedHandle stamp)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool GetApplicationInfo(RecentInfoHandle info, NonNullableUtf8StringHandle appName, out NonNullableUtf8StringUnownedHandle appExec, out uint count, out DateTimeUnownedHandle stamp)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -316,19 +316,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">appName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><span class="parametername">appExec</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -342,7 +342,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -351,23 +351,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gtk_Internal_RecentInfo_GetApplications_" data-uid="Gtk.Internal.RecentInfo.GetApplications*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_GetApplications_Gtk_Internal_RecentInfoHandle_System_IntPtr__" data-uid="Gtk.Internal.RecentInfo.GetApplications(Gtk.Internal.RecentInfoHandle,System.IntPtr@)">GetApplications(RecentInfoHandle, out nint)</h4>
+  <h4 id="Gtk_Internal_RecentInfo_GetApplications_Gtk_Internal_RecentInfoHandle_System_UIntPtr__" data-uid="Gtk.Internal.RecentInfo.GetApplications(Gtk.Internal.RecentInfoHandle,System.UIntPtr@)">GetApplications(RecentInfoHandle, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gtk_recent_info_get_applications.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string[] GetApplications(RecentInfoHandle info, out nint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern string[] GetApplications(RecentInfoHandle info, out nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -382,7 +382,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -390,7 +390,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -399,7 +399,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -412,10 +412,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetDescription(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetDescription(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -432,7 +432,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -441,7 +441,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -454,10 +454,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetDisplayName(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetDisplayName(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -474,7 +474,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -483,7 +483,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_Internal_RecentInfo_GetGType_" data-uid="Gtk.Internal.RecentInfo.GetGType*"></a>
+  <h4 id="Gtk_Internal_RecentInfo_GetGType" data-uid="Gtk.Internal.RecentInfo.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"><p>Calls native function gtk_recent_info_get_type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -499,7 +524,7 @@
     <pre><code class="lang-csharp hljs">public static extern nint GetGicon(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -516,7 +541,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -525,23 +550,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gtk_Internal_RecentInfo_GetGroups_" data-uid="Gtk.Internal.RecentInfo.GetGroups*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_GetGroups_Gtk_Internal_RecentInfoHandle_System_IntPtr__" data-uid="Gtk.Internal.RecentInfo.GetGroups(Gtk.Internal.RecentInfoHandle,System.IntPtr@)">GetGroups(RecentInfoHandle, out nint)</h4>
+  <h4 id="Gtk_Internal_RecentInfo_GetGroups_Gtk_Internal_RecentInfoHandle_System_UIntPtr__" data-uid="Gtk.Internal.RecentInfo.GetGroups(Gtk.Internal.RecentInfoHandle,System.UIntPtr@)">GetGroups(RecentInfoHandle, out nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method gtk_recent_info_get_groups.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string[] GetGroups(RecentInfoHandle info, out nint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern string[] GetGroups(RecentInfoHandle info, out nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -556,7 +581,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -564,7 +589,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -573,33 +598,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Gtk_Internal_RecentInfo_GetGType_" data-uid="Gtk.Internal.RecentInfo.GetGType*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_GetGType" data-uid="Gtk.Internal.RecentInfo.GetGType">GetGType()</h4>
-  <div class="markdown level1 summary"><p>Calls native function gtk_recent_info_get_type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nuint</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
@@ -611,10 +611,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetMimeType(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetMimeType(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -631,7 +631,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -640,7 +640,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -656,7 +656,7 @@
     <pre><code class="lang-csharp hljs">public static extern DateTimeUnownedHandle GetModified(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -673,7 +673,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -698,7 +698,7 @@
     <pre><code class="lang-csharp hljs">public static extern bool GetPrivateHint(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -715,7 +715,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -724,7 +724,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -737,10 +737,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string GetShortName(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringOwnedHandle GetShortName(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -757,7 +757,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -766,7 +766,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -779,10 +779,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetUri(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetUri(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -799,7 +799,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -808,7 +808,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -821,10 +821,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string? GetUriDisplay(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NullableUtf8StringOwnedHandle GetUriDisplay(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -841,7 +841,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -850,7 +850,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringOwnedHandle.html">NullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -866,7 +866,7 @@
     <pre><code class="lang-csharp hljs">public static extern DateTimeUnownedHandle GetVisited(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -883,7 +883,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -899,16 +899,16 @@
     </tbody>
   </table>
   <a id="Gtk_Internal_RecentInfo_HasApplication_" data-uid="Gtk.Internal.RecentInfo.HasApplication*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_HasApplication_Gtk_Internal_RecentInfoHandle_System_String_" data-uid="Gtk.Internal.RecentInfo.HasApplication(Gtk.Internal.RecentInfoHandle,System.String)">HasApplication(RecentInfoHandle, string)</h4>
+  <h4 id="Gtk_Internal_RecentInfo_HasApplication_Gtk_Internal_RecentInfoHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gtk.Internal.RecentInfo.HasApplication(Gtk.Internal.RecentInfoHandle,GLib.Internal.NonNullableUtf8StringHandle)">HasApplication(RecentInfoHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gtk_recent_info_has_application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool HasApplication(RecentInfoHandle info, string appName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool HasApplication(RecentInfoHandle info, NonNullableUtf8StringHandle appName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -923,7 +923,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">appName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -931,7 +931,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -940,23 +940,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gtk_Internal_RecentInfo_HasGroup_" data-uid="Gtk.Internal.RecentInfo.HasGroup*"></a>
-  <h4 id="Gtk_Internal_RecentInfo_HasGroup_Gtk_Internal_RecentInfoHandle_System_String_" data-uid="Gtk.Internal.RecentInfo.HasGroup(Gtk.Internal.RecentInfoHandle,System.String)">HasGroup(RecentInfoHandle, string)</h4>
+  <h4 id="Gtk_Internal_RecentInfo_HasGroup_Gtk_Internal_RecentInfoHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="Gtk.Internal.RecentInfo.HasGroup(Gtk.Internal.RecentInfoHandle,GLib.Internal.NonNullableUtf8StringHandle)">HasGroup(RecentInfoHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method gtk_recent_info_has_group.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool HasGroup(RecentInfoHandle info, string groupName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool HasGroup(RecentInfoHandle info, NonNullableUtf8StringHandle groupName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -971,7 +971,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">groupName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -979,7 +979,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -988,7 +988,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1004,7 +1004,7 @@
     <pre><code class="lang-csharp hljs">public static extern bool IsLocal(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1021,7 +1021,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1030,7 +1030,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1043,10 +1043,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern string LastApplication(RecentInfoHandle info)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringOwnedHandle LastApplication(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1063,7 +1063,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1072,7 +1072,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -1088,7 +1088,7 @@
     <pre><code class="lang-csharp hljs">public static extern bool Match(RecentInfoHandle infoA, RecentInfoHandle infoB)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1111,7 +1111,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1120,7 +1120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1136,7 +1136,7 @@
     <pre><code class="lang-csharp hljs">public static extern RecentInfoOwnedHandle Ref(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1153,7 +1153,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1178,7 +1178,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Unref(RecentInfoHandle info)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1194,6 +1194,7 @@
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1222,7 +1223,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

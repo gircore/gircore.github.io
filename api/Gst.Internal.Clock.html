@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="Gst.Internal.Clock">
 
 
+
   <h1 id="Gst_Internal_Clock" data-uid="Gst.Internal.Clock" class="text-break">Class Clock
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Clock</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gst.html">Gst</a>.<a class="xref" href="Gst.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="Gst_Internal_Clock_AddObservation_" data-uid="Gst.Internal.Clock.AddObservation*"></a>
-  <h4 id="Gst_Internal_Clock_AddObservation_System_IntPtr_System_UInt64_System_UInt64_System_IntPtr__" data-uid="Gst.Internal.Clock.AddObservation(System.IntPtr,System.UInt64,System.UInt64,System.IntPtr@)">AddObservation(nint, ulong, ulong, out nint)</h4>
+  <h4 id="Gst_Internal_Clock_AddObservation_System_IntPtr_Gst_ClockTime_Gst_ClockTime_System_Double__" data-uid="Gst.Internal.Clock.AddObservation(System.IntPtr,Gst.ClockTime,Gst.ClockTime,System.Double@)">AddObservation(nint, ClockTime, ClockTime, out double)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_add_observation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool AddObservation(nint clock, ulong slave, ulong master, out nint rSquared)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool AddObservation(nint clock, ClockTime slave, ClockTime master, out double rSquared)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -131,24 +132,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">slave</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">master</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">rSquared</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -156,7 +157,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -165,14 +166,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_AddObservationUnapplied_" data-uid="Gst.Internal.Clock.AddObservationUnapplied*"></a>
-  <h4 id="Gst_Internal_Clock_AddObservationUnapplied_System_IntPtr_System_UInt64_System_UInt64_System_IntPtr__System_IntPtr__System_IntPtr__System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.Clock.AddObservationUnapplied(System.IntPtr,System.UInt64,System.UInt64,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.IntPtr@)">AddObservationUnapplied(nint, ulong, ulong, out nint, out nint, out nint, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_Clock_AddObservationUnapplied_System_IntPtr_Gst_ClockTime_Gst_ClockTime_System_Double__Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__" data-uid="Gst.Internal.Clock.AddObservationUnapplied(System.IntPtr,Gst.ClockTime,Gst.ClockTime,System.Double@,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@)">AddObservationUnapplied(nint, ClockTime, ClockTime, out double, out ClockTime, out ClockTime, out ClockTime, out ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_add_observation_unapplied.
 Version: 1.6</p>
 </div>
@@ -180,10 +181,10 @@ Version: 1.6</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
-public static extern bool AddObservationUnapplied(nint clock, ulong slave, ulong master, out nint rSquared, out nint @internal, out nint external, out nint rateNum, out nint rateDenom)</code></pre>
+public static extern bool AddObservationUnapplied(nint clock, ClockTime slave, ClockTime master, out double rSquared, out ClockTime @internal, out ClockTime external, out ClockTime rateNum, out ClockTime rateDenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -193,47 +194,47 @@ public static extern bool AddObservationUnapplied(nint clock, ulong slave, ulong
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">slave</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">master</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">rSquared</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">external</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateNum</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateDenom</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -241,7 +242,7 @@ public static extern bool AddObservationUnapplied(nint clock, ulong slave, ulong
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -250,23 +251,23 @@ public static extern bool AddObservationUnapplied(nint clock, ulong slave, ulong
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_AdjustUnlocked_" data-uid="Gst.Internal.Clock.AdjustUnlocked*"></a>
-  <h4 id="Gst_Internal_Clock_AdjustUnlocked_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.AdjustUnlocked(System.IntPtr,System.UInt64)">AdjustUnlocked(nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_AdjustUnlocked_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.AdjustUnlocked(System.IntPtr,Gst.ClockTime)">AdjustUnlocked(nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_adjust_unlocked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ulong AdjustUnlocked(nint clock, ulong @internal)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ulong AdjustUnlocked(nint clock, ClockTime @internal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -276,19 +277,19 @@ public static extern bool AddObservationUnapplied(nint clock, ulong slave, ulong
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internal</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -297,14 +298,14 @@ public static extern bool AddObservationUnapplied(nint clock, ulong slave, ulong
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_AdjustWithCalibration_" data-uid="Gst.Internal.Clock.AdjustWithCalibration*"></a>
-  <h4 id="Gst_Internal_Clock_AdjustWithCalibration_System_IntPtr_System_UInt64_System_UInt64_System_UInt64_System_UInt64_System_UInt64_" data-uid="Gst.Internal.Clock.AdjustWithCalibration(System.IntPtr,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)">AdjustWithCalibration(nint, ulong, ulong, ulong, ulong, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_AdjustWithCalibration_System_IntPtr_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Internal.Clock.AdjustWithCalibration(System.IntPtr,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime)">AdjustWithCalibration(nint, ClockTime, ClockTime, ClockTime, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_adjust_with_calibration.
 Version: 1.6</p>
 </div>
@@ -312,10 +313,10 @@ Version: 1.6</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
-public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarget, ulong cinternal, ulong cexternal, ulong cnum, ulong cdenom)</code></pre>
+public static extern ulong AdjustWithCalibration(nint clock, ClockTime internalTarget, ClockTime cinternal, ClockTime cexternal, ClockTime cnum, ClockTime cdenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -325,36 +326,36 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internalTarget</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cinternal</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cexternal</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cnum</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cdenom</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -362,7 +363,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -371,23 +372,23 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_GetCalibration_" data-uid="Gst.Internal.Clock.GetCalibration*"></a>
-  <h4 id="Gst_Internal_Clock_GetCalibration_System_IntPtr_System_IntPtr__System_IntPtr__System_IntPtr__System_IntPtr__" data-uid="Gst.Internal.Clock.GetCalibration(System.IntPtr,System.IntPtr@,System.IntPtr@,System.IntPtr@,System.IntPtr@)">GetCalibration(nint, out nint, out nint, out nint, out nint)</h4>
+  <h4 id="Gst_Internal_Clock_GetCalibration_System_IntPtr_Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__Gst_ClockTime__" data-uid="Gst.Internal.Clock.GetCalibration(System.IntPtr,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@,Gst.ClockTime@)">GetCalibration(nint, out ClockTime, out ClockTime, out ClockTime, out ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_get_calibration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetCalibration(nint clock, out nint @internal, out nint external, out nint rateNum, out nint rateDenom)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void GetCalibration(nint clock, out ClockTime @internal, out ClockTime external, out ClockTime rateNum, out ClockTime rateDenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -397,29 +398,29 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">external</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateNum</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateDenom</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -436,7 +437,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -445,7 +446,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -461,7 +462,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern ulong GetInternalTime(nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -471,14 +472,14 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -487,7 +488,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -503,7 +504,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern nint GetMaster(nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -513,14 +514,14 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -529,7 +530,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -545,7 +546,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern ulong GetResolution(nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -555,14 +556,14 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -571,7 +572,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -587,7 +588,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern ulong GetTime(nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -597,14 +598,14 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -613,7 +614,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -629,7 +630,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern ulong GetTimeout(nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -639,14 +640,14 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -655,7 +656,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -671,7 +672,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     <pre><code class="lang-csharp hljs">public static extern int IdCompareFunc(nint id1, nint id2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -681,13 +682,13 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id1</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id2</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -695,7 +696,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -704,7 +705,7 @@ public static extern ulong AdjustWithCalibration(nint clock, ulong internalTarge
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -722,7 +723,7 @@ Version: 1.16</p>
 public static extern nint IdGetClock(nint id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -732,7 +733,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -740,7 +741,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -749,7 +750,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: True</p>
 </td>
       </tr>
@@ -765,7 +766,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern ulong IdGetTime(nint id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -775,7 +776,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -783,7 +784,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -792,7 +793,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -808,7 +809,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern nint IdRef(nint id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -818,7 +819,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -826,7 +827,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -835,7 +836,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -851,7 +852,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void IdUnref(nint id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -861,7 +862,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -878,7 +879,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern void IdUnschedule(nint id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -888,7 +889,7 @@ public static extern nint IdGetClock(nint id)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -907,7 +908,7 @@ Version: 1.16</p>
 public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -917,13 +918,13 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -931,7 +932,7 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -940,23 +941,23 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_IdWait_" data-uid="Gst.Internal.Clock.IdWait*"></a>
-  <h4 id="Gst_Internal_Clock_IdWait_System_IntPtr_System_IntPtr__" data-uid="Gst.Internal.Clock.IdWait(System.IntPtr,System.IntPtr@)">IdWait(nint, out nint)</h4>
+  <h4 id="Gst_Internal_Clock_IdWait_System_IntPtr_Gst_ClockTimeDiff__" data-uid="Gst.Internal.Clock.IdWait(System.IntPtr,Gst.ClockTimeDiff@)">IdWait(nint, out ClockTimeDiff)</h4>
   <div class="markdown level1 summary"><p>Calls native function gst_clock_id_wait.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ClockReturn IdWait(nint id, out nint jitter)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ClockReturn IdWait(nint id, out ClockTimeDiff jitter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -966,13 +967,13 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="Gst.ClockTimeDiff.html">ClockTimeDiff</a></td>
         <td><span class="parametername">jitter</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -980,7 +981,7 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1005,7 +1006,7 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern ClockReturn IdWaitAsync(nint id, ClockCallback func, nint userData, DestroyNotify destroyData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1015,7 +1016,7 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1027,7 +1028,7 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1041,7 +1042,7 @@ public static extern bool IdUsesClock(nint id, nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1068,7 +1069,7 @@ Version: 1.6</p>
 public static extern bool IsSynced(nint clock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1078,14 +1079,14 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1094,23 +1095,23 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_NewPeriodicId_" data-uid="Gst.Internal.Clock.NewPeriodicId*"></a>
-  <h4 id="Gst_Internal_Clock_NewPeriodicId_System_IntPtr_System_UInt64_System_UInt64_" data-uid="Gst.Internal.Clock.NewPeriodicId(System.IntPtr,System.UInt64,System.UInt64)">NewPeriodicId(nint, ulong, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_NewPeriodicId_System_IntPtr_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Internal.Clock.NewPeriodicId(System.IntPtr,Gst.ClockTime,Gst.ClockTime)">NewPeriodicId(nint, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_new_periodic_id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint NewPeriodicId(nint clock, ulong startTime, ulong interval)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint NewPeriodicId(nint clock, ClockTime startTime, ClockTime interval)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1120,18 +1121,18 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">startTime</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">interval</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1139,7 +1140,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1148,23 +1149,23 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_NewSingleShotId_" data-uid="Gst.Internal.Clock.NewSingleShotId*"></a>
-  <h4 id="Gst_Internal_Clock_NewSingleShotId_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.NewSingleShotId(System.IntPtr,System.UInt64)">NewSingleShotId(nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_NewSingleShotId_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.NewSingleShotId(System.IntPtr,Gst.ClockTime)">NewSingleShotId(nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_new_single_shot_id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint NewSingleShotId(nint clock, ulong time)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint NewSingleShotId(nint clock, ClockTime time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1174,12 +1175,12 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">time</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1187,7 +1188,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1196,23 +1197,23 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_PeriodicIdReinit_" data-uid="Gst.Internal.Clock.PeriodicIdReinit*"></a>
-  <h4 id="Gst_Internal_Clock_PeriodicIdReinit_System_IntPtr_System_IntPtr_System_UInt64_System_UInt64_" data-uid="Gst.Internal.Clock.PeriodicIdReinit(System.IntPtr,System.IntPtr,System.UInt64,System.UInt64)">PeriodicIdReinit(nint, nint, ulong, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_PeriodicIdReinit_System_IntPtr_System_IntPtr_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Internal.Clock.PeriodicIdReinit(System.IntPtr,System.IntPtr,Gst.ClockTime,Gst.ClockTime)">PeriodicIdReinit(nint, nint, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_periodic_id_reinit.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool PeriodicIdReinit(nint clock, nint id, ulong startTime, ulong interval)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool PeriodicIdReinit(nint clock, nint id, ClockTime startTime, ClockTime interval)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1222,24 +1223,24 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">startTime</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">interval</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1247,7 +1248,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1256,23 +1257,23 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_SetCalibration_" data-uid="Gst.Internal.Clock.SetCalibration*"></a>
-  <h4 id="Gst_Internal_Clock_SetCalibration_System_IntPtr_System_UInt64_System_UInt64_System_UInt64_System_UInt64_" data-uid="Gst.Internal.Clock.SetCalibration(System.IntPtr,System.UInt64,System.UInt64,System.UInt64,System.UInt64)">SetCalibration(nint, ulong, ulong, ulong, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_SetCalibration_System_IntPtr_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Internal.Clock.SetCalibration(System.IntPtr,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime)">SetCalibration(nint, ClockTime, ClockTime, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_set_calibration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetCalibration(nint clock, ulong @internal, ulong external, ulong rateNum, ulong rateDenom)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetCalibration(nint clock, ClockTime @internal, ClockTime external, ClockTime rateNum, ClockTime rateDenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1282,29 +1283,29 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">internal</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">external</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateNum</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">rateDenom</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1321,7 +1322,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     <pre><code class="lang-csharp hljs">public static extern bool SetMaster(nint clock, nint master)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1331,12 +1332,12 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">master</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1344,7 +1345,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1353,23 +1354,23 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_SetResolution_" data-uid="Gst.Internal.Clock.SetResolution*"></a>
-  <h4 id="Gst_Internal_Clock_SetResolution_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.SetResolution(System.IntPtr,System.UInt64)">SetResolution(nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_SetResolution_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.SetResolution(System.IntPtr,Gst.ClockTime)">SetResolution(nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_set_resolution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ulong SetResolution(nint clock, ulong resolution)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ulong SetResolution(nint clock, ClockTime resolution)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1379,12 +1380,12 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">resolution</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1392,7 +1393,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1401,7 +1402,7 @@ public static extern bool IsSynced(nint clock)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1419,7 +1420,7 @@ Version: 1.6</p>
 public static extern void SetSynced(nint clock, bool synced)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1429,12 +1430,12 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">synced</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1442,16 +1443,16 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_SetTimeout_" data-uid="Gst.Internal.Clock.SetTimeout*"></a>
-  <h4 id="Gst_Internal_Clock_SetTimeout_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.SetTimeout(System.IntPtr,System.UInt64)">SetTimeout(nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_SetTimeout_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.SetTimeout(System.IntPtr,Gst.ClockTime)">SetTimeout(nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_set_timeout.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetTimeout(nint clock, ulong timeout)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetTimeout(nint clock, ClockTime timeout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1461,12 +1462,12 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">timeout</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1474,16 +1475,16 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_SingleShotIdReinit_" data-uid="Gst.Internal.Clock.SingleShotIdReinit*"></a>
-  <h4 id="Gst_Internal_Clock_SingleShotIdReinit_System_IntPtr_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.SingleShotIdReinit(System.IntPtr,System.IntPtr,System.UInt64)">SingleShotIdReinit(nint, nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_SingleShotIdReinit_System_IntPtr_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.SingleShotIdReinit(System.IntPtr,System.IntPtr,Gst.ClockTime)">SingleShotIdReinit(nint, nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_single_shot_id_reinit.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool SingleShotIdReinit(nint clock, nint id, ulong time)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool SingleShotIdReinit(nint clock, nint id, ClockTime time)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1493,18 +1494,18 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">id</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">time</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1512,7 +1513,7 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1521,23 +1522,23 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_UnadjustUnlocked_" data-uid="Gst.Internal.Clock.UnadjustUnlocked*"></a>
-  <h4 id="Gst_Internal_Clock_UnadjustUnlocked_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.UnadjustUnlocked(System.IntPtr,System.UInt64)">UnadjustUnlocked(nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_UnadjustUnlocked_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.UnadjustUnlocked(System.IntPtr,Gst.ClockTime)">UnadjustUnlocked(nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_unadjust_unlocked.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ulong UnadjustUnlocked(nint clock, ulong external)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ulong UnadjustUnlocked(nint clock, ClockTime external)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1547,12 +1548,12 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">external</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1560,7 +1561,7 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1569,14 +1570,14 @@ public static extern void SetSynced(nint clock, bool synced)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_UnadjustWithCalibration_" data-uid="Gst.Internal.Clock.UnadjustWithCalibration*"></a>
-  <h4 id="Gst_Internal_Clock_UnadjustWithCalibration_System_IntPtr_System_UInt64_System_UInt64_System_UInt64_System_UInt64_System_UInt64_" data-uid="Gst.Internal.Clock.UnadjustWithCalibration(System.IntPtr,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)">UnadjustWithCalibration(nint, ulong, ulong, ulong, ulong, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_UnadjustWithCalibration_System_IntPtr_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_Gst_ClockTime_" data-uid="Gst.Internal.Clock.UnadjustWithCalibration(System.IntPtr,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime,Gst.ClockTime)">UnadjustWithCalibration(nint, ClockTime, ClockTime, ClockTime, ClockTime, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_unadjust_with_calibration.
 Version: 1.8</p>
 </div>
@@ -1584,10 +1585,10 @@ Version: 1.8</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.8&quot;)]
-public static extern ulong UnadjustWithCalibration(nint clock, ulong externalTarget, ulong cinternal, ulong cexternal, ulong cnum, ulong cdenom)</code></pre>
+public static extern ulong UnadjustWithCalibration(nint clock, ClockTime externalTarget, ClockTime cinternal, ClockTime cexternal, ClockTime cnum, ClockTime cdenom)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1597,36 +1598,36 @@ public static extern ulong UnadjustWithCalibration(nint clock, ulong externalTar
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">externalTarget</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cinternal</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cexternal</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cnum</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">cdenom</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1634,7 +1635,7 @@ public static extern ulong UnadjustWithCalibration(nint clock, ulong externalTar
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1643,14 +1644,14 @@ public static extern ulong UnadjustWithCalibration(nint clock, ulong externalTar
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Gst_Internal_Clock_WaitForSync_" data-uid="Gst.Internal.Clock.WaitForSync*"></a>
-  <h4 id="Gst_Internal_Clock_WaitForSync_System_IntPtr_System_UInt64_" data-uid="Gst.Internal.Clock.WaitForSync(System.IntPtr,System.UInt64)">WaitForSync(nint, ulong)</h4>
+  <h4 id="Gst_Internal_Clock_WaitForSync_System_IntPtr_Gst_ClockTime_" data-uid="Gst.Internal.Clock.WaitForSync(System.IntPtr,Gst.ClockTime)">WaitForSync(nint, ClockTime)</h4>
   <div class="markdown level1 summary"><p>Calls native method gst_clock_wait_for_sync.
 Version: 1.6</p>
 </div>
@@ -1658,10 +1659,10 @@ Version: 1.6</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;1.6&quot;)]
-public static extern bool WaitForSync(nint clock, ulong timeout)</code></pre>
+public static extern bool WaitForSync(nint clock, ClockTime timeout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1671,12 +1672,12 @@ public static extern bool WaitForSync(nint clock, ulong timeout)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">clock</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="Gst.ClockTime.html">ClockTime</a></td>
         <td><span class="parametername">timeout</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1684,7 +1685,7 @@ public static extern bool WaitForSync(nint clock, ulong timeout)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1693,12 +1694,13 @@ public static extern bool WaitForSync(nint clock, ulong timeout)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1727,7 +1729,7 @@ public static extern bool WaitForSync(nint clock, ulong timeout)</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GLib.Internal.IOChannel">
 
 
+
   <h1 id="GLib_Internal_IOChannel" data-uid="GLib.Internal.IOChannel" class="text-break">Class IOChannel
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">IOChannel</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a>.<a class="xref" href="GLib.Internal.html">Internal</a></h6>
@@ -121,7 +122,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Close(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -147,7 +148,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOChannelError ErrorFromErrno(int en)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -157,7 +158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">en</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -165,7 +166,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -190,7 +191,7 @@
     <pre><code class="lang-csharp hljs">public static extern uint ErrorQuark()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -199,7 +200,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -215,7 +216,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOStatus Flush(IOChannelHandle channel, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -232,13 +233,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -263,7 +263,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOCondition GetBufferCondition(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -280,7 +280,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -290,48 +290,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GLib.IOCondition.html">IOCondition</a></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="GLib_Internal_IOChannel_GetBuffered_" data-uid="GLib.Internal.IOChannel.GetBuffered*"></a>
-  <h4 id="GLib_Internal_IOChannel_GetBuffered_GLib_Internal_IOChannelHandle_" data-uid="GLib.Internal.IOChannel.GetBuffered(GLib.Internal.IOChannelHandle)">GetBuffered(IOChannelHandle)</h4>
-  <div class="markdown level1 summary"><p>Calls native method g_io_channel_get_buffered.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool GetBuffered(IOChannelHandle channel)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GLib.Internal.IOChannelHandle.html">IOChannelHandle</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">bool</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -347,7 +305,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetBufferSize(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -364,7 +322,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -373,7 +331,49 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GLib_Internal_IOChannel_GetBuffered_" data-uid="GLib.Internal.IOChannel.GetBuffered*"></a>
+  <h4 id="GLib_Internal_IOChannel_GetBuffered_GLib_Internal_IOChannelHandle_" data-uid="GLib.Internal.IOChannel.GetBuffered(GLib.Internal.IOChannelHandle)">GetBuffered(IOChannelHandle)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_io_channel_get_buffered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool GetBuffered(IOChannelHandle channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.IOChannelHandle.html">IOChannelHandle</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -389,7 +389,7 @@
     <pre><code class="lang-csharp hljs">public static extern bool GetCloseOnUnref(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -406,7 +406,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -415,7 +415,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -428,10 +428,10 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetEncoding(IOChannelHandle channel)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetEncoding(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -448,7 +448,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -457,7 +457,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -473,7 +473,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOFlags GetFlags(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -490,7 +490,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -515,7 +515,7 @@
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -524,23 +524,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_GetLineTerm_" data-uid="GLib.Internal.IOChannel.GetLineTerm*"></a>
-  <h4 id="GLib_Internal_IOChannel_GetLineTerm_GLib_Internal_IOChannelHandle_System_IntPtr_" data-uid="GLib.Internal.IOChannel.GetLineTerm(GLib.Internal.IOChannelHandle,System.IntPtr)">GetLineTerm(IOChannelHandle, nint)</h4>
+  <h4 id="GLib_Internal_IOChannel_GetLineTerm_GLib_Internal_IOChannelHandle_System_Int32__" data-uid="GLib.Internal.IOChannel.GetLineTerm(GLib.Internal.IOChannelHandle,System.Int32@)">GetLineTerm(IOChannelHandle, out int)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_get_line_term.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetLineTerm(IOChannelHandle channel, nint length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern NonNullableUtf8StringUnownedHandle GetLineTerm(IOChannelHandle channel, out int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -555,15 +555,15 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
+        <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -572,7 +572,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -588,7 +588,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Init(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -605,16 +605,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_NewFile_" data-uid="GLib.Internal.IOChannel.NewFile*"></a>
-  <h4 id="GLib_Internal_IOChannel_NewFile_System_String_System_String_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.NewFile(System.String,System.String,GLib.Internal.ErrorOwnedHandle@)">NewFile(string, string, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_NewFile_GLib_Internal_NonNullablePlatformStringHandle_GLib_Internal_NonNullableUtf8StringHandle_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.NewFile(GLib.Internal.NonNullablePlatformStringHandle,GLib.Internal.NonNullableUtf8StringHandle,GLib.Internal.ErrorOwnedHandle@)">NewFile(NonNullablePlatformStringHandle, NonNullableUtf8StringHandle, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_io_channel_new_file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOChannelOwnedHandle NewFile(string filename, string mode, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOChannelOwnedHandle NewFile(NonNullablePlatformStringHandle filename, NonNullableUtf8StringHandle mode, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -624,13 +624,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullablePlatformStringHandle.html">NonNullablePlatformStringHandle</a></td>
         <td><span class="parametername">filename</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">mode</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -638,13 +638,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -660,16 +659,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_Read_" data-uid="GLib.Internal.IOChannel.Read*"></a>
-  <h4 id="GLib_Internal_IOChannel_Read_GLib_Internal_IOChannelHandle_System_String_System_UIntPtr_System_IntPtr_" data-uid="GLib.Internal.IOChannel.Read(GLib.Internal.IOChannelHandle,System.String,System.UIntPtr,System.IntPtr)">Read(IOChannelHandle, string, nuint, nint)</h4>
+  <h4 id="GLib_Internal_IOChannel_Read_GLib_Internal_IOChannelHandle_GLib_Internal_NonNullableUtf8StringHandle_System_UIntPtr_System_UIntPtr__" data-uid="GLib.Internal.IOChannel.Read(GLib.Internal.IOChannelHandle,GLib.Internal.NonNullableUtf8StringHandle,System.UIntPtr,System.UIntPtr@)">Read(IOChannelHandle, NonNullableUtf8StringHandle, nuint, ref nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_read.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOError Read(IOChannelHandle channel, string buf, nuint count, nint bytesRead)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOError Read(IOChannelHandle channel, NonNullableUtf8StringHandle buf, nuint count, ref nuint bytesRead)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -684,19 +683,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">buf</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">bytesRead</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -704,7 +703,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -720,16 +719,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_ReadChars_" data-uid="GLib.Internal.IOChannel.ReadChars*"></a>
-  <h4 id="GLib_Internal_IOChannel_ReadChars_GLib_Internal_IOChannelHandle_System_Byte____System_UIntPtr_System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadChars(GLib.Internal.IOChannelHandle,System.Byte[]@,System.UIntPtr,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadChars(IOChannelHandle, ref byte[], nuint, out nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_ReadChars_GLib_Internal_IOChannelHandle_System_Byte__System_UIntPtr_System_UIntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadChars(GLib.Internal.IOChannelHandle,System.Byte@,System.UIntPtr,System.UIntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadChars(IOChannelHandle, ref byte, nuint, out nuint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_read_chars.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadChars(IOChannelHandle channel, ref byte[] buf, nuint count, out nint bytesRead, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadChars(IOChannelHandle channel, ref byte buf, nuint count, out nuint bytesRead, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -744,19 +743,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">buf</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">bytesRead</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -764,13 +763,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -786,16 +784,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_ReadLine_" data-uid="GLib.Internal.IOChannel.ReadLine*"></a>
-  <h4 id="GLib_Internal_IOChannel_ReadLine_GLib_Internal_IOChannelHandle_System_String__System_IntPtr__System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadLine(GLib.Internal.IOChannelHandle,System.String@,System.IntPtr@,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadLine(IOChannelHandle, out string, out nint, out nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_ReadLine_GLib_Internal_IOChannelHandle_GLib_Internal_NonNullableUtf8StringOwnedHandle__System_UIntPtr__System_UIntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadLine(GLib.Internal.IOChannelHandle,GLib.Internal.NonNullableUtf8StringOwnedHandle@,System.UIntPtr@,System.UIntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadLine(IOChannelHandle, out NonNullableUtf8StringOwnedHandle, out nuint, out nuint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_read_line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadLine(IOChannelHandle channel, out string strReturn, out nint length, out nint terminatorPos, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadLine(IOChannelHandle channel, out NonNullableUtf8StringOwnedHandle strReturn, out nuint length, out nuint terminatorPos, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -810,19 +808,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><span class="parametername">strReturn</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">terminatorPos</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -830,13 +828,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -852,16 +849,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_ReadLineString_" data-uid="GLib.Internal.IOChannel.ReadLineString*"></a>
-  <h4 id="GLib_Internal_IOChannel_ReadLineString_GLib_Internal_IOChannelHandle_GLib_Internal_StringHandle_System_IntPtr_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadLineString(GLib.Internal.IOChannelHandle,GLib.Internal.StringHandle,System.IntPtr,GLib.Internal.ErrorOwnedHandle@)">ReadLineString(IOChannelHandle, StringHandle, nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_ReadLineString_GLib_Internal_IOChannelHandle_GLib_Internal_StringHandle_System_UIntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadLineString(GLib.Internal.IOChannelHandle,GLib.Internal.StringHandle,System.UIntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadLineString(IOChannelHandle, StringHandle, ref nuint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_read_line_string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadLineString(IOChannelHandle channel, StringHandle buffer, nint terminatorPos, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadLineString(IOChannelHandle channel, StringHandle buffer, ref nuint terminatorPos, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -882,7 +879,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">terminatorPos</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -890,13 +887,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -912,16 +908,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_ReadToEnd_" data-uid="GLib.Internal.IOChannel.ReadToEnd*"></a>
-  <h4 id="GLib_Internal_IOChannel_ReadToEnd_GLib_Internal_IOChannelHandle_System_Byte____System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadToEnd(GLib.Internal.IOChannelHandle,System.Byte[]@,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadToEnd(IOChannelHandle, out byte[], out nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_ReadToEnd_GLib_Internal_IOChannelHandle_System_Byte____System_UIntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadToEnd(GLib.Internal.IOChannelHandle,System.Byte[]@,System.UIntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadToEnd(IOChannelHandle, out byte[], out nuint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_read_to_end.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadToEnd(IOChannelHandle channel, out byte[] strReturn, out nint length, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadToEnd(IOChannelHandle channel, out byte[] strReturn, out nuint length, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -936,13 +932,13 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
         <td><span class="parametername">strReturn</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -950,13 +946,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -972,16 +967,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_ReadUnichar_" data-uid="GLib.Internal.IOChannel.ReadUnichar*"></a>
-  <h4 id="GLib_Internal_IOChannel_ReadUnichar_GLib_Internal_IOChannelHandle_System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadUnichar(GLib.Internal.IOChannelHandle,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">ReadUnichar(IOChannelHandle, out nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_ReadUnichar_GLib_Internal_IOChannelHandle_System_UInt32__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.ReadUnichar(GLib.Internal.IOChannelHandle,System.UInt32@,GLib.Internal.ErrorOwnedHandle@)">ReadUnichar(IOChannelHandle, out uint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_read_unichar.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadUnichar(IOChannelHandle channel, out nint thechar, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus ReadUnichar(IOChannelHandle channel, out uint thechar, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -996,7 +991,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">thechar</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1004,13 +999,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1035,7 +1029,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOChannelOwnedHandle Ref(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1052,7 +1046,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1077,7 +1071,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOError Seek(IOChannelHandle channel, long offset, SeekType type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1092,7 +1086,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1106,7 +1100,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1131,7 +1125,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOStatus SeekPosition(IOChannelHandle channel, long offset, SeekType type, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1146,7 +1140,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">offset</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1160,13 +1154,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1176,38 +1169,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GLib.IOStatus.html">IOStatus</a></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="GLib_Internal_IOChannel_SetBuffered_" data-uid="GLib.Internal.IOChannel.SetBuffered*"></a>
-  <h4 id="GLib_Internal_IOChannel_SetBuffered_GLib_Internal_IOChannelHandle_System_Boolean_" data-uid="GLib.Internal.IOChannel.SetBuffered(GLib.Internal.IOChannelHandle,System.Boolean)">SetBuffered(IOChannelHandle, bool)</h4>
-  <div class="markdown level1 summary"><p>Calls native method g_io_channel_set_buffered.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetBuffered(IOChannelHandle channel, bool buffered)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GLib.Internal.IOChannelHandle.html">IOChannelHandle</a></td>
-        <td><span class="parametername">channel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">buffered</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1223,7 +1184,7 @@
     <pre><code class="lang-csharp hljs">public static extern void SetBufferSize(IOChannelHandle channel, nuint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1238,8 +1199,40 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">size</span></td>
+        <td><p>Transfer ownership: None Nullable: False</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GLib_Internal_IOChannel_SetBuffered_" data-uid="GLib.Internal.IOChannel.SetBuffered*"></a>
+  <h4 id="GLib_Internal_IOChannel_SetBuffered_GLib_Internal_IOChannelHandle_System_Boolean_" data-uid="GLib.Internal.IOChannel.SetBuffered(GLib.Internal.IOChannelHandle,System.Boolean)">SetBuffered(IOChannelHandle, bool)</h4>
+  <div class="markdown level1 summary"><p>Calls native method g_io_channel_set_buffered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void SetBuffered(IOChannelHandle channel, bool buffered)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.IOChannelHandle.html">IOChannelHandle</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">buffered</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1255,7 +1248,7 @@
     <pre><code class="lang-csharp hljs">public static extern void SetCloseOnUnref(IOChannelHandle channel, bool doClose)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1270,7 +1263,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">doClose</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1278,16 +1271,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_SetEncoding_" data-uid="GLib.Internal.IOChannel.SetEncoding*"></a>
-  <h4 id="GLib_Internal_IOChannel_SetEncoding_GLib_Internal_IOChannelHandle_System_String_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.SetEncoding(GLib.Internal.IOChannelHandle,System.String,GLib.Internal.ErrorOwnedHandle@)">SetEncoding(IOChannelHandle, string?, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_SetEncoding_GLib_Internal_IOChannelHandle_GLib_Internal_NullableUtf8StringHandle_GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.SetEncoding(GLib.Internal.IOChannelHandle,GLib.Internal.NullableUtf8StringHandle,GLib.Internal.ErrorOwnedHandle@)">SetEncoding(IOChannelHandle, NullableUtf8StringHandle, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_set_encoding.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus SetEncoding(IOChannelHandle channel, string? encoding, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus SetEncoding(IOChannelHandle channel, NullableUtf8StringHandle encoding, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1302,7 +1295,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">encoding</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -1310,13 +1303,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1341,7 +1333,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOStatus SetFlags(IOChannelHandle channel, IOFlags flags, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1364,13 +1356,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1386,16 +1377,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_SetLineTerm_" data-uid="GLib.Internal.IOChannel.SetLineTerm*"></a>
-  <h4 id="GLib_Internal_IOChannel_SetLineTerm_GLib_Internal_IOChannelHandle_System_String_System_Int32_" data-uid="GLib.Internal.IOChannel.SetLineTerm(GLib.Internal.IOChannelHandle,System.String,System.Int32)">SetLineTerm(IOChannelHandle, string?, int)</h4>
+  <h4 id="GLib_Internal_IOChannel_SetLineTerm_GLib_Internal_IOChannelHandle_GLib_Internal_NullableUtf8StringHandle_System_Int32_" data-uid="GLib.Internal.IOChannel.SetLineTerm(GLib.Internal.IOChannelHandle,GLib.Internal.NullableUtf8StringHandle,System.Int32)">SetLineTerm(IOChannelHandle, NullableUtf8StringHandle, int)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_set_line_term.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void SetLineTerm(IOChannelHandle channel, string? lineTerm, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void SetLineTerm(IOChannelHandle channel, NullableUtf8StringHandle lineTerm, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1410,13 +1401,13 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">lineTerm</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1433,7 +1424,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOStatus Shutdown(IOChannelHandle channel, bool flush, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1448,7 +1439,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flush</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1456,13 +1447,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1487,7 +1477,7 @@
     <pre><code class="lang-csharp hljs">public static extern int UnixGetFd(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1504,7 +1494,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1513,7 +1503,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -1529,7 +1519,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOChannelOwnedHandle UnixNew(int fd)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1539,7 +1529,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">fd</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1547,7 +1537,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1572,7 +1562,7 @@
     <pre><code class="lang-csharp hljs">public static extern void Unref(IOChannelHandle channel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1589,16 +1579,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_Write_" data-uid="GLib.Internal.IOChannel.Write*"></a>
-  <h4 id="GLib_Internal_IOChannel_Write_GLib_Internal_IOChannelHandle_System_String_System_UIntPtr_System_IntPtr_" data-uid="GLib.Internal.IOChannel.Write(GLib.Internal.IOChannelHandle,System.String,System.UIntPtr,System.IntPtr)">Write(IOChannelHandle, string, nuint, nint)</h4>
+  <h4 id="GLib_Internal_IOChannel_Write_GLib_Internal_IOChannelHandle_GLib_Internal_NonNullableUtf8StringHandle_System_UIntPtr_System_UIntPtr__" data-uid="GLib.Internal.IOChannel.Write(GLib.Internal.IOChannelHandle,GLib.Internal.NonNullableUtf8StringHandle,System.UIntPtr,System.UIntPtr@)">Write(IOChannelHandle, NonNullableUtf8StringHandle, nuint, ref nuint)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_write.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOError Write(IOChannelHandle channel, string buf, nuint count, nint bytesWritten)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOError Write(IOChannelHandle channel, NonNullableUtf8StringHandle buf, nuint count, ref nuint bytesWritten)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1613,19 +1603,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">buf</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">bytesWritten</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1633,7 +1623,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1649,16 +1639,16 @@
     </tbody>
   </table>
   <a id="GLib_Internal_IOChannel_WriteChars_" data-uid="GLib.Internal.IOChannel.WriteChars*"></a>
-  <h4 id="GLib_Internal_IOChannel_WriteChars_GLib_Internal_IOChannelHandle_System_Byte___System_Int64_System_IntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.WriteChars(GLib.Internal.IOChannelHandle,System.Byte[],System.Int64,System.IntPtr@,GLib.Internal.ErrorOwnedHandle@)">WriteChars(IOChannelHandle, byte[], long, out nint, out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_IOChannel_WriteChars_GLib_Internal_IOChannelHandle_System_Byte__System_Int64_System_UIntPtr__GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.IOChannel.WriteChars(GLib.Internal.IOChannelHandle,System.Byte@,System.Int64,System.UIntPtr@,GLib.Internal.ErrorOwnedHandle@)">WriteChars(IOChannelHandle, ref byte, long, out nuint, out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_io_channel_write_chars.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IOStatus WriteChars(IOChannelHandle channel, byte[] buf, long count, out nint bytesWritten, out ErrorOwnedHandle error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern IOStatus WriteChars(IOChannelHandle channel, ref byte buf, long count, out nuint bytesWritten, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1673,19 +1663,19 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">byte</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
         <td><span class="parametername">buf</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">bytesWritten</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -1693,13 +1683,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1724,7 +1713,7 @@
     <pre><code class="lang-csharp hljs">public static extern IOStatus WriteUnichar(IOChannelHandle channel, uint thechar, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1739,7 +1728,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">thechar</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -1747,13 +1736,12 @@
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1768,6 +1756,7 @@
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1796,7 +1785,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -74,7 +74,8 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+    <h3 id="classes">
+Classes
 </h3>
       <h4><a class="xref" href="GstBase.Internal.Adapter.html">Adapter</a></h4>
       <section></section>
@@ -344,22 +345,6 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GstBase.Internal.CollectPadsClassUnownedHandle.html">CollectPadsClassUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GstBase.Internal.CollectPadsClipFunctionAsyncHandler.html">CollectPadsClipFunctionAsyncHandler</a></h4>
-      <section><p>Async Handler for CollectPadsClipFunction. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="GstBase.Internal.CollectPadsClipFunctionCallHandler.html">CollectPadsClipFunctionCallHandler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GstBase.Internal.CollectPadsClipFunctionForeverHandler.html">CollectPadsClipFunctionForeverHandler</a></h4>
-      <section><p>Forever Handler for CollectPadsClipFunction. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="GstBase.Internal.CollectPadsClipFunctionNotifiedHandler.html">CollectPadsClipFunctionNotifiedHandler</a></h4>
-      <section><p>Notified Handler for CollectPadsClipFunction. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
       <h4><a class="xref" href="GstBase.Internal.CollectPadsCompareFunctionAsyncHandler.html">CollectPadsCompareFunctionAsyncHandler</a></h4>
       <section><p>Async Handler for CollectPadsCompareFunction. An async annotation indicates the closure will
 be called precisely once, after which it is then available for garbage collection.</p>
@@ -578,23 +563,20 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GstBase.Internal.QueueArrayUnownedHandle.html">QueueArrayUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GstBase.Internal.TypeFindHelperGetRangeFunctionAsyncHandler.html">TypeFindHelperGetRangeFunctionAsyncHandler</a></h4>
-      <section><p>Async Handler for TypeFindHelperGetRangeFunction. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="GstBase.Internal.TypeFindHelperGetRangeFunctionCallHandler.html">TypeFindHelperGetRangeFunctionCallHandler</a></h4>
+      <h4><a class="xref" href="GstBase.Internal.TypeFindData.html">TypeFindData</a></h4>
       <section></section>
-      <h4><a class="xref" href="GstBase.Internal.TypeFindHelperGetRangeFunctionForeverHandler.html">TypeFindHelperGetRangeFunctionForeverHandler</a></h4>
-      <section><p>Forever Handler for TypeFindHelperGetRangeFunction. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="GstBase.Internal.TypeFindHelperGetRangeFunctionNotifiedHandler.html">TypeFindHelperGetRangeFunctionNotifiedHandler</a></h4>
-      <section><p>Notified Handler for TypeFindHelperGetRangeFunction. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
-    <h3 id="structs">Structs
+      <h4><a class="xref" href="GstBase.Internal.TypeFindDataHandle.html">TypeFindDataHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GstBase.Internal.TypeFindDataManagedHandle.html">TypeFindDataManagedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GstBase.Internal.TypeFindDataNullHandle.html">TypeFindDataNullHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GstBase.Internal.TypeFindDataOwnedHandle.html">TypeFindDataOwnedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GstBase.Internal.TypeFindDataUnownedHandle.html">TypeFindDataUnownedHandle</a></h4>
+      <section></section>
+    <h3 id="structs">
+Structs
 </h3>
       <h4><a class="xref" href="GstBase.Internal.AdapterClassData.html">AdapterClassData</a></h4>
       <section></section>
@@ -674,7 +656,10 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GstBase.Internal.QueueArrayData.html">QueueArrayData</a></h4>
       <section></section>
-    <h3 id="delegates">Delegates
+      <h4><a class="xref" href="GstBase.Internal.TypeFindDataData.html">TypeFindDataData</a></h4>
+      <section></section>
+    <h3 id="delegates">
+Delegates
 </h3>
       <h4><a class="xref" href="GstBase.Internal.AggregatorClassData.AggregateCallback.html">AggregatorClassData.AggregateCallback</a></h4>
       <section></section>
@@ -902,6 +887,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GstBase.Internal.TypeFindHelperGetRangeFunction.html">TypeFindHelperGetRangeFunction</a></h4>
       <section></section>
+
+
 </article>
           </div>
 
@@ -930,7 +917,7 @@ destroy_notify callback parameter.</p>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -74,7 +74,8 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+    <h3 id="classes">
+Classes
 </h3>
       <h4><a class="xref" href="GLib.Internal.Array.html">Array</a></h4>
       <section></section>
@@ -470,6 +471,38 @@ destroy_notify callback parameter.</p>
 </section>
       <h4><a class="xref" href="GLib.Internal.Functions.html">Functions</a></h4>
       <section></section>
+      <h4><a class="xref" href="GLib.Internal.HFuncAsyncHandler.html">HFuncAsyncHandler</a></h4>
+      <section><p>Async Handler for HFunc. An async annotation indicates the closure will
+be called precisely once, after which it is then available for garbage collection.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.HFuncCallHandler.html">HFuncCallHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.HFuncForeverHandler.html">HFuncForeverHandler</a></h4>
+      <section><p>Forever Handler for HFunc. An forever annotation indicates the closure will
+be valid until the process terminates. Therefor the object will never be freed.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.HFuncNotifiedHandler.html">HFuncNotifiedHandler</a></h4>
+      <section><p>Notified Handler for HFunc. A notified annotation indicates the closure should
+be kept alive until it is manually removed by the user. This removal is indicated by a
+destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
+destroy_notify callback parameter.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.HRFuncAsyncHandler.html">HRFuncAsyncHandler</a></h4>
+      <section><p>Async Handler for HRFunc. An async annotation indicates the closure will
+be called precisely once, after which it is then available for garbage collection.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.HRFuncCallHandler.html">HRFuncCallHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.HRFuncForeverHandler.html">HRFuncForeverHandler</a></h4>
+      <section><p>Forever Handler for HRFunc. An forever annotation indicates the closure will
+be valid until the process terminates. Therefor the object will never be freed.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.HRFuncNotifiedHandler.html">HRFuncNotifiedHandler</a></h4>
+      <section><p>Notified Handler for HRFunc. A notified annotation indicates the closure should
+be kept alive until it is manually removed by the user. This removal is indicated by a
+destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
+destroy_notify callback parameter.</p>
+</section>
       <h4><a class="xref" href="GLib.Internal.HashFuncAsyncHandler.html">HashFuncAsyncHandler</a></h4>
       <section><p>Async Handler for HashFunc. An async annotation indicates the closure will
 be called precisely once, after which it is then available for garbage collection.</p>
@@ -510,22 +543,6 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.HashTableUnownedHandle.html">HashTableUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.HFuncAsyncHandler.html">HFuncAsyncHandler</a></h4>
-      <section><p>Async Handler for HFunc. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="GLib.Internal.HFuncCallHandler.html">HFuncCallHandler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.HFuncForeverHandler.html">HFuncForeverHandler</a></h4>
-      <section><p>Forever Handler for HFunc. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="GLib.Internal.HFuncNotifiedHandler.html">HFuncNotifiedHandler</a></h4>
-      <section><p>Notified Handler for HFunc. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
       <h4><a class="xref" href="GLib.Internal.Hmac.html">Hmac</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.HmacHandle.html">HmacHandle</a></h4>
@@ -674,22 +691,6 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.HookUnownedHandle.html">HookUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.HRFuncAsyncHandler.html">HRFuncAsyncHandler</a></h4>
-      <section><p>Async Handler for HRFunc. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="GLib.Internal.HRFuncCallHandler.html">HRFuncCallHandler</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.HRFuncForeverHandler.html">HRFuncForeverHandler</a></h4>
-      <section><p>Forever Handler for HRFunc. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="GLib.Internal.HRFuncNotifiedHandler.html">HRFuncNotifiedHandler</a></h4>
-      <section><p>Notified Handler for HRFunc. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
       <h4><a class="xref" href="GLib.Internal.IConv.html">IConv</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.IConvHandle.html">IConvHandle</a></h4>
@@ -828,6 +829,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.MainLoopOwnedHandle.html">MainLoopOwnedHandle</a></h4>
       <section></section>
+      <h4><a class="xref" href="GLib.Internal.MainLoopSynchronizationContext.html">MainLoopSynchronizationContext</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.MainLoopUnownedHandle.html">MainLoopUnownedHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.MappedFile.html">MappedFile</a></h4>
@@ -932,6 +935,40 @@ destroy_notify callback parameter.</p>
 </section>
       <h4><a class="xref" href="GLib.Internal.NodeUnownedHandle.html">NodeUnownedHandle</a></h4>
       <section></section>
+      <h4><a class="xref" href="GLib.Internal.NonNullablePlatformStringHandle.html">NonNullablePlatformStringHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NonNullablePlatformStringOwnedHandle.html">NonNullablePlatformStringOwnedHandle</a></h4>
+      <section><p>Represents an owned non nullable platform string. If an instance of this class
+is collected by the garbage collecctor the associated memory is freed.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.NonNullablePlatformStringUnownedHandle.html">NonNullablePlatformStringUnownedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></h4>
+      <section><p>Represents an owned non nullable utf8 string. If an instance of this class
+is collected by the garbage collecctor the associated memory is freed.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NullHandleException.html">NullHandleException</a></h4>
+      <section><p>This exception is raised if an unexpeected NULL handle is received. Please report any occurence of this
+exception to the gir.core project as it is likely to be a generation error.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.NullablePlatformStringHandle.html">NullablePlatformStringHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NullablePlatformStringOwnedHandle.html">NullablePlatformStringOwnedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NullablePlatformStringUnownedHandle.html">NullablePlatformStringUnownedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.NullableUtf8StringOwnedHandle.html">NullableUtf8StringOwnedHandle</a></h4>
+      <section><p>Represents an owned nullable utf8 string. If an instance of this class
+is collected by the garbage collecctor the associated memory is freed.</p>
+</section>
+      <h4><a class="xref" href="GLib.Internal.NullableUtf8StringUnownedHandle.html">NullableUtf8StringUnownedHandle</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.Once.html">Once</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.OnceHandle.html">OnceHandle</a></h4>
@@ -1026,6 +1063,18 @@ be kept alive until it is manually removed by the user. This removal is indicate
 destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
 destroy_notify callback parameter.</p>
 </section>
+      <h4><a class="xref" href="GLib.Internal.PathBuf.html">PathBuf</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.PathBufHandle.html">PathBufHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.PathBufManagedHandle.html">PathBufManagedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.PathBufNullHandle.html">PathBufNullHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.PathBufOwnedHandle.html">PathBufOwnedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.PathBufUnownedHandle.html">PathBufUnownedHandle</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.PatternSpec.html">PatternSpec</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.PatternSpecHandle.html">PatternSpecHandle</a></h4>
@@ -1118,6 +1167,18 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.QueueUnownedHandle.html">QueueUnownedHandle</a></h4>
       <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLock.html">RWLock</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLockHandle.html">RWLockHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLockManagedHandle.html">RWLockManagedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLockNullHandle.html">RWLockNullHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLockOwnedHandle.html">RWLockOwnedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLockUnownedHandle.html">RWLockUnownedHandle</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.Rand.html">Rand</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.RandHandle.html">RandHandle</a></h4>
@@ -1170,17 +1231,17 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.RegexUnownedHandle.html">RegexUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLock.html">RWLock</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SList.html">SList</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLockHandle.html">RWLockHandle</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SListHandle.html">SListHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLockManagedHandle.html">RWLockManagedHandle</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SListManagedHandle.html">SListManagedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLockNullHandle.html">RWLockNullHandle</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SListNullHandle.html">SListNullHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLockOwnedHandle.html">RWLockOwnedHandle</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SListOwnedHandle.html">SListOwnedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLockUnownedHandle.html">RWLockUnownedHandle</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SListUnownedHandle.html">SListUnownedHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.Scanner.html">Scanner</a></h4>
       <section></section>
@@ -1259,18 +1320,6 @@ destroy_notify callback parameter.</p>
       <h4><a class="xref" href="GLib.Internal.SequenceOwnedHandle.html">SequenceOwnedHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.SequenceUnownedHandle.html">SequenceUnownedHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SList.html">SList</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SListHandle.html">SListHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SListManagedHandle.html">SListManagedHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SListNullHandle.html">SListNullHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SListOwnedHandle.html">SListOwnedHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SListUnownedHandle.html">SListUnownedHandle</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.Source.html">Source</a></h4>
       <section></section>
@@ -1606,18 +1655,6 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.ThreadUnownedHandle.html">ThreadUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.Timer.html">Timer</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.TimerHandle.html">TimerHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.TimerManagedHandle.html">TimerManagedHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.TimerNullHandle.html">TimerNullHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.TimerOwnedHandle.html">TimerOwnedHandle</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.TimerUnownedHandle.html">TimerUnownedHandle</a></h4>
-      <section></section>
       <h4><a class="xref" href="GLib.Internal.TimeVal.html">TimeVal</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.TimeValHandle.html">TimeValHandle</a></h4>
@@ -1642,22 +1679,18 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.TimeZoneUnownedHandle.html">TimeZoneUnownedHandle</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.TranslateFuncAsyncHandler.html">TranslateFuncAsyncHandler</a></h4>
-      <section><p>Async Handler for TranslateFunc. An async annotation indicates the closure will
-be called precisely once, after which it is then available for garbage collection.</p>
-</section>
-      <h4><a class="xref" href="GLib.Internal.TranslateFuncCallHandler.html">TranslateFuncCallHandler</a></h4>
+      <h4><a class="xref" href="GLib.Internal.Timer.html">Timer</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.TranslateFuncForeverHandler.html">TranslateFuncForeverHandler</a></h4>
-      <section><p>Forever Handler for TranslateFunc. An forever annotation indicates the closure will
-be valid until the process terminates. Therefor the object will never be freed.</p>
-</section>
-      <h4><a class="xref" href="GLib.Internal.TranslateFuncNotifiedHandler.html">TranslateFuncNotifiedHandler</a></h4>
-      <section><p>Notified Handler for TranslateFunc. A notified annotation indicates the closure should
-be kept alive until it is manually removed by the user. This removal is indicated by a
-destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
-destroy_notify callback parameter.</p>
-</section>
+      <h4><a class="xref" href="GLib.Internal.TimerHandle.html">TimerHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.TimerManagedHandle.html">TimerManagedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.TimerNullHandle.html">TimerNullHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.TimerOwnedHandle.html">TimerOwnedHandle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.TimerUnownedHandle.html">TimerUnownedHandle</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.TrashStack.html">TrashStack</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.TrashStackHandle.html">TrashStackHandle</a></h4>
@@ -1842,7 +1875,8 @@ be kept alive until it is manually removed by the user. This removal is indicate
 destroy_notify event, emitted by the relevant library. Pass <code>DestroyNotify</code> in place of a
 destroy_notify callback parameter.</p>
 </section>
-    <h3 id="structs">Structs
+    <h3 id="structs">
+Structs
 </h3>
       <h4><a class="xref" href="GLib.Internal.ArrayData.html">ArrayData</a></h4>
       <section></section>
@@ -1922,6 +1956,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.OptionGroupData.html">OptionGroupData</a></h4>
       <section></section>
+      <h4><a class="xref" href="GLib.Internal.PathBufData.html">PathBufData</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.PatternSpecData.html">PatternSpecData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.PollFDData.html">PollFDData</a></h4>
@@ -1932,13 +1968,15 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.QueueData.html">QueueData</a></h4>
       <section></section>
+      <h4><a class="xref" href="GLib.Internal.RWLockData.html">RWLockData</a></h4>
+      <section></section>
       <h4><a class="xref" href="GLib.Internal.RandData.html">RandData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.RecMutexData.html">RecMutexData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.RegexData.html">RegexData</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.RWLockData.html">RWLockData</a></h4>
+      <h4><a class="xref" href="GLib.Internal.SListData.html">SListData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.ScannerConfigData.html">ScannerConfigData</a></h4>
       <section></section>
@@ -1947,8 +1985,6 @@ destroy_notify callback parameter.</p>
       <h4><a class="xref" href="GLib.Internal.SequenceData.html">SequenceData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.SequenceIterData.html">SequenceIterData</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.SListData.html">SListData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.SourceCallbackFuncsData.html">SourceCallbackFuncsData</a></h4>
       <section></section>
@@ -1980,11 +2016,11 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.ThreadPoolData.html">ThreadPoolData</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.TimerData.html">TimerData</a></h4>
-      <section></section>
       <h4><a class="xref" href="GLib.Internal.TimeValData.html">TimeValData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.TimeZoneData.html">TimeZoneData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.TimerData.html">TimerData</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.TokenValueData.html">TokenValueData</a></h4>
       <section></section>
@@ -2008,7 +2044,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.VariantTypeData.html">VariantTypeData</a></h4>
       <section></section>
-    <h3 id="delegates">Delegates
+    <h3 id="delegates">
+Delegates
 </h3>
       <h4><a class="xref" href="GLib.Internal.ChildWatchFunc.html">ChildWatchFunc</a></h4>
       <section></section>
@@ -2040,9 +2077,11 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.Func.html">Func</a></h4>
       <section></section>
-      <h4><a class="xref" href="GLib.Internal.HashFunc.html">HashFunc</a></h4>
-      <section></section>
       <h4><a class="xref" href="GLib.Internal.HFunc.html">HFunc</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.HRFunc.html">HRFunc</a></h4>
+      <section></section>
+      <h4><a class="xref" href="GLib.Internal.HashFunc.html">HashFunc</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.HookCheckFunc.html">HookCheckFunc</a></h4>
       <section></section>
@@ -2057,8 +2096,6 @@ destroy_notify callback parameter.</p>
       <h4><a class="xref" href="GLib.Internal.HookFunc.html">HookFunc</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.HookMarshaller.html">HookMarshaller</a></h4>
-      <section></section>
-      <h4><a class="xref" href="GLib.Internal.HRFunc.html">HRFunc</a></h4>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.IOFunc.html">IOFunc</a></h4>
       <section></section>
@@ -2168,6 +2205,8 @@ destroy_notify callback parameter.</p>
       <section></section>
       <h4><a class="xref" href="GLib.Internal.VoidFunc.html">VoidFunc</a></h4>
       <section></section>
+
+
 </article>
           </div>
 
@@ -2196,7 +2235,7 @@ destroy_notify callback parameter.</p>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

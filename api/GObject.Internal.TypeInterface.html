@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GObject.Internal.TypeInterface">
 
 
+
   <h1 id="GObject_Internal_TypeInterface" data-uid="GObject.Internal.TypeInterface" class="text-break">Class TypeInterface
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">TypeInterface</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GObject.html">GObject</a>.<a class="xref" href="GObject.Internal.html">Internal</a></h6>
@@ -112,16 +113,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="GObject_Internal_TypeInterface_AddPrerequisite_" data-uid="GObject.Internal.TypeInterface.AddPrerequisite*"></a>
-  <h4 id="GObject_Internal_TypeInterface_AddPrerequisite_System_UIntPtr_System_UIntPtr_" data-uid="GObject.Internal.TypeInterface.AddPrerequisite(System.UIntPtr,System.UIntPtr)">AddPrerequisite(nuint, nuint)</h4>
+  <h4 id="GObject_Internal_TypeInterface_AddPrerequisite_GObject_Type_GObject_Type_" data-uid="GObject.Internal.TypeInterface.AddPrerequisite(GObject.Type,GObject.Type)">AddPrerequisite(Type, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_interface_add_prerequisite.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void AddPrerequisite(nuint interfaceType, nuint prerequisiteType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void AddPrerequisite(Type interfaceType, Type prerequisiteType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -131,13 +132,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">interfaceType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">prerequisiteType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -145,16 +146,16 @@
     </tbody>
   </table>
   <a id="GObject_Internal_TypeInterface_GetPlugin_" data-uid="GObject.Internal.TypeInterface.GetPlugin*"></a>
-  <h4 id="GObject_Internal_TypeInterface_GetPlugin_System_UIntPtr_System_UIntPtr_" data-uid="GObject.Internal.TypeInterface.GetPlugin(System.UIntPtr,System.UIntPtr)">GetPlugin(nuint, nuint)</h4>
+  <h4 id="GObject_Internal_TypeInterface_GetPlugin_GObject_Type_GObject_Type_" data-uid="GObject.Internal.TypeInterface.GetPlugin(GObject.Type,GObject.Type)">GetPlugin(Type, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_interface_get_plugin.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern nint GetPlugin(nuint instanceType, nuint interfaceType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern nint GetPlugin(Type instanceType, Type interfaceType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -164,13 +165,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">instanceType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">interfaceType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -178,7 +179,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -187,14 +188,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_TypeInterface_InstantiatablePrerequisite_" data-uid="GObject.Internal.TypeInterface.InstantiatablePrerequisite*"></a>
-  <h4 id="GObject_Internal_TypeInterface_InstantiatablePrerequisite_System_UIntPtr_" data-uid="GObject.Internal.TypeInterface.InstantiatablePrerequisite(System.UIntPtr)">InstantiatablePrerequisite(nuint)</h4>
+  <h4 id="GObject_Internal_TypeInterface_InstantiatablePrerequisite_GObject_Type_" data-uid="GObject.Internal.TypeInterface.InstantiatablePrerequisite(GObject.Type)">InstantiatablePrerequisite(Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_interface_instantiatable_prerequisite.
 Version: 2.68</p>
 </div>
@@ -202,10 +203,10 @@ Version: 2.68</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.68&quot;)]
-public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code></pre>
+public static extern nuint InstantiatablePrerequisite(Type interfaceType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -215,7 +216,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">interfaceType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -223,7 +224,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -232,23 +233,23 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GObject_Internal_TypeInterface_Peek_" data-uid="GObject.Internal.TypeInterface.Peek*"></a>
-  <h4 id="GObject_Internal_TypeInterface_Peek_GObject_Internal_TypeClassHandle_System_UIntPtr_" data-uid="GObject.Internal.TypeInterface.Peek(GObject.Internal.TypeClassHandle,System.UIntPtr)">Peek(TypeClassHandle, nuint)</h4>
+  <h4 id="GObject_Internal_TypeInterface_Peek_GObject_Internal_TypeClassHandle_GObject_Type_" data-uid="GObject.Internal.TypeInterface.Peek(GObject.Internal.TypeClassHandle,GObject.Type)">Peek(TypeClassHandle, Type)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_type_interface_peek.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern TypeInterfaceUnownedHandle Peek(TypeClassHandle instanceClass, nuint ifaceType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern TypeInterfaceUnownedHandle Peek(TypeClassHandle instanceClass, Type ifaceType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -264,7 +265,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">ifaceType</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -272,7 +273,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -297,7 +298,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
     <pre><code class="lang-csharp hljs">public static extern TypeInterfaceUnownedHandle PeekParent(TypeInterfaceHandle gIface)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -314,7 +315,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -329,57 +330,7 @@ public static extern nuint InstantiatablePrerequisite(nuint interfaceType)</code
       </tr>
     </tbody>
   </table>
-  <a id="GObject_Internal_TypeInterface_Prerequisites_" data-uid="GObject.Internal.TypeInterface.Prerequisites*"></a>
-  <h4 id="GObject_Internal_TypeInterface_Prerequisites_System_UIntPtr_System_IntPtr__" data-uid="GObject.Internal.TypeInterface.Prerequisites(System.UIntPtr,System.IntPtr@)">Prerequisites(nuint, out nint)</h4>
-  <div class="markdown level1 summary"><p>Calls native function g_type_interface_prerequisites.
-Version: 2.2</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Version(&quot;2.2&quot;)]
-public static extern nuint[] Prerequisites(nuint interfaceType, out nint nPrerequisites)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nuint</span></td>
-        <td><span class="parametername">interfaceType</span></td>
-        <td><p>Transfer ownership: None Nullable: False</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">nint</span></td>
-        <td><span class="parametername">nPrerequisites</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">nuint</span>[]</td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
 </article>
           </div>
 
@@ -408,7 +359,7 @@ public static extern nuint[] Prerequisites(nuint interfaceType, out nint nPrereq
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

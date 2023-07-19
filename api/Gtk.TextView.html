@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,23 +70,25 @@
             <article class="content wrap" id="_content" data-uid="Gtk.TextView">
 
 
+
   <h1 id="Gtk_TextView" data-uid="Gtk.TextView" class="text-break">Class TextView
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
     <div class="level2"><a class="xref" href="GObject.InitiallyUnowned.html">InitiallyUnowned</a></div>
     <div class="level3"><a class="xref" href="Gtk.Widget.html">Widget</a></div>
     <div class="level4"><span class="xref">TextView</span></div>
+      <div class="level5"><a class="xref" href="GtkSource.View.html">View</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
-    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="Gtk.Accessible.html">Accessible</a></div>
     <div><a class="xref" href="Gtk.Buildable.html">Buildable</a></div>
     <div><a class="xref" href="Gtk.ConstraintTarget.html">ConstraintTarget</a></div>
@@ -109,7 +111,7 @@
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Activate">Widget.Activate()</a>
     </div>
     <div>
-      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateActionVariant_System_String_GLib_Variant_">Widget.ActivateActionVariant(string, Variant)</a>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateAction_System_String_GLib_Variant_">Widget.ActivateAction(string, Variant)</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_ActivateDefault">Widget.ActivateDefault()</a>
@@ -145,7 +147,7 @@
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_CreatePangoLayout_System_String_">Widget.CreatePangoLayout(string)</a>
     </div>
     <div>
-      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DisposeTemplate_System_UIntPtr_">Widget.DisposeTemplate(nuint)</a>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DisposeTemplate_GObject_Type_">Widget.DisposeTemplate(Type)</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_DragCheckThreshold_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.DragCheckThreshold(int, int, int, int)</a>
@@ -163,7 +165,7 @@
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAllocatedWidth">Widget.GetAllocatedWidth()</a>
     </div>
     <div>
-      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAncestor_System_UIntPtr_">Widget.GetAncestor(nuint)</a>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetAncestor_GObject_Type_">Widget.GetAncestor(Type)</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetCanFocus">Widget.GetCanFocus()</a>
@@ -301,13 +303,16 @@
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSize_Gtk_Orientation_">Widget.GetSize(Orientation)</a>
     </div>
     <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetSizeRequest_System_Int32__System_Int32__">Widget.GetSizeRequest(out int, out int)</a>
+    </div>
+    <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStateFlags">Widget.GetStateFlags()</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetStyleContext">Widget.GetStyleContext()</a>
     </div>
     <div>
-      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTemplateChild_System_UIntPtr_System_String_">Widget.GetTemplateChild(nuint, string)</a>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTemplateChild_GObject_Type_System_String_">Widget.GetTemplateChild(Type, string)</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_GetTooltipMarkup">Widget.GetTooltipMarkup()</a>
@@ -386,6 +391,9 @@
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Map">Widget.Map()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Measure_Gtk_Orientation_System_Int32_System_Int32__System_Int32__System_Int32__System_Int32__">Widget.Measure(Orientation, int, out int, out int, out int, out int)</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_MnemonicActivate_System_Boolean_">Widget.MnemonicActivate(bool)</a>
@@ -535,10 +543,10 @@
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_Show">Widget.Show()</a>
     </div>
     <div>
-      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SizeAllocate_Gdk_Rectangle_System_Int32_">Widget.SizeAllocate(Rectangle, int)</a>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SnapshotChild_Gtk_Widget_Gtk_Snapshot_">Widget.SnapshotChild(Widget, Snapshot)</a>
     </div>
     <div>
-      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_SnapshotChild_Gtk_Widget_Gtk_Snapshot_">Widget.SnapshotChild(Widget, Snapshot)</a>
+      <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TranslateCoordinates_Gtk_Widget_System_Double_System_Double_System_Double__System_Double__">Widget.TranslateCoordinates(Widget, double, double, out double, out double)</a>
     </div>
     <div>
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_TriggerTooltipQuery">Widget.TriggerTooltipQuery()</a>
@@ -838,6 +846,9 @@
       <a class="xref" href="Gtk.Widget.html#Gtk_Widget_OnUnrealize">Widget.OnUnrealize</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NewValist_GObject_Type_System_String_System_IntPtr_">Object.NewValist(Type, string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
     </div>
     <div>
@@ -853,16 +864,22 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_CompatControl_System_UIntPtr_System_IntPtr_">Object.CompatControl(nuint, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_AddWeakPointer_System_IntPtr__">Object.AddWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyFull_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyFull(string, Object, string, BindingFlags, Closure, Closure)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
@@ -877,7 +894,10 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_GLib_Quark_">Object.GetQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetValist_System_String_System_IntPtr_">Object.GetValist(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
@@ -895,16 +915,28 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RemoveWeakPointer_System_IntPtr__">Object.RemoveWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetData_System_String_System_IntPtr_">Object.SetData(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetQdata_GLib_Quark_System_IntPtr_">Object.SetQdata(Quark, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetValist_System_String_System_IntPtr_">Object.SetValist(string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_GLib_Quark_">Object.StealQdata(Quark)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
@@ -925,25 +957,25 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gtk.html">Gtk</a></h6>
@@ -971,7 +1003,7 @@
     <pre><code class="lang-csharp hljs">protected TextView(params ConstructArgument[] constructArguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -996,7 +1028,7 @@
     <pre><code class="lang-csharp hljs">protected TextView(nint ptr, bool ownedRef)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1006,12 +1038,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">ownedRef</span></td>
         <td></td>
       </tr>
@@ -1027,7 +1059,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextView&gt; AcceptsTabPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1036,7 +1068,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1050,7 +1082,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; BackspaceSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1072,7 +1104,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; BottomMarginPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1081,7 +1113,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1094,7 +1126,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;TextBuffer?, TextView&gt; BufferPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1117,7 +1149,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; CopyClipboardSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1139,7 +1171,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextView&gt; CursorVisiblePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1148,7 +1180,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1162,7 +1194,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; CutClipboardSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1185,7 +1217,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView, TextView.DeleteFromCursorSignalArgs&gt; DeleteFromCursorSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1207,7 +1239,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextView&gt; EditablePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1216,7 +1248,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1230,7 +1262,7 @@
     <pre><code class="lang-csharp hljs">public static readonly ReturningSignal&lt;TextView, TextView.ExtendSelectionSignalArgs, bool&gt; ExtendSelectionSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1239,7 +1271,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.ReturningSignal-3.html">ReturningSignal</a>&lt;<a class="xref" href="Gtk.TextView.html">TextView</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>.<a class="xref" href="Gtk.TextView.ExtendSelectionSignalArgs.html">ExtendSelectionSignalArgs</a>, <span class="xref">bool</span>&gt;</td>
+        <td><a class="xref" href="GObject.ReturningSignal-3.html">ReturningSignal</a>&lt;<a class="xref" href="Gtk.TextView.html">TextView</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>.<a class="xref" href="Gtk.TextView.ExtendSelectionSignalArgs.html">ExtendSelectionSignalArgs</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1252,7 +1284,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;MenuModel?, TextView&gt; ExtraMenuPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1274,7 +1306,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;string?, TextView&gt; ImModulePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1283,7 +1315,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">string</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1296,7 +1328,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; IndentPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1305,7 +1337,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1318,7 +1350,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;InputHints, TextView&gt; InputHintsPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1340,7 +1372,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;InputPurpose, TextView&gt; InputPurposePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1363,7 +1395,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView, TextView.InsertAtCursorSignalArgs&gt; InsertAtCursorSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1386,7 +1418,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; InsertEmojiSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1408,7 +1440,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;Justification, TextView&gt; JustificationPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1430,7 +1462,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; LeftMarginPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1439,7 +1471,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1452,7 +1484,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextView&gt; MonospacePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1461,7 +1493,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1475,7 +1507,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView, TextView.MoveCursorSignalArgs&gt; MoveCursorSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1498,7 +1530,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView, TextView.MoveViewportSignalArgs&gt; MoveViewportSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1520,7 +1552,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;bool, TextView&gt; OverwritePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1529,7 +1561,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">bool</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1543,7 +1575,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; PasteClipboardSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1565,7 +1597,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; PixelsAboveLinesPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1574,7 +1606,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1587,7 +1619,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; PixelsBelowLinesPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1596,7 +1628,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1609,7 +1641,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; PixelsInsideWrapPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1618,7 +1650,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1632,7 +1664,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView, TextView.PreeditChangedSignalArgs&gt; PreeditChangedSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1654,7 +1686,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; RightMarginPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1663,7 +1695,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1677,7 +1709,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView, TextView.SelectAllSignalArgs&gt; SelectAllSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1700,7 +1732,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; SetAnchorSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1723,7 +1755,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; ToggleCursorVisibleSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1746,7 +1778,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Signal&lt;TextView&gt; ToggleOverwriteSignal</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1768,7 +1800,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;int, TextView&gt; TopMarginPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1777,7 +1809,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<span class="xref">int</span>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
+        <td><a class="xref" href="GObject.Property-2.html">Property</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1790,7 +1822,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;WrapMode, TextView&gt; WrapModePropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1815,7 +1847,7 @@
     <pre><code class="lang-csharp hljs">public bool AcceptsTab { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1824,7 +1856,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1838,7 +1870,7 @@
     <pre><code class="lang-csharp hljs">public AccessibleRole AccessibleRole { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1861,7 +1893,7 @@
     <pre><code class="lang-csharp hljs">public int BottomMargin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1870,7 +1902,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1884,7 +1916,7 @@
     <pre><code class="lang-csharp hljs">public TextBuffer? Buffer { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1907,7 +1939,7 @@
     <pre><code class="lang-csharp hljs">public bool CursorVisible { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1916,7 +1948,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1930,7 +1962,7 @@
     <pre><code class="lang-csharp hljs">public bool Editable { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1939,7 +1971,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1953,7 +1985,7 @@
     <pre><code class="lang-csharp hljs">public MenuModel? ExtraMenu { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1976,7 +2008,7 @@
     <pre><code class="lang-csharp hljs">public Adjustment? Hadjustment { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1999,7 +2031,7 @@
     <pre><code class="lang-csharp hljs">public ScrollablePolicy HscrollPolicy { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2022,7 +2054,7 @@
     <pre><code class="lang-csharp hljs">public string? ImModule { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2031,7 +2063,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2045,7 +2077,7 @@
     <pre><code class="lang-csharp hljs">public int Indent { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2054,7 +2086,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2068,7 +2100,7 @@
     <pre><code class="lang-csharp hljs">public InputHints InputHints { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2091,7 +2123,7 @@
     <pre><code class="lang-csharp hljs">public InputPurpose InputPurpose { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2114,7 +2146,7 @@
     <pre><code class="lang-csharp hljs">public Justification Justification { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2137,7 +2169,7 @@
     <pre><code class="lang-csharp hljs">public int LeftMargin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2146,7 +2178,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2160,7 +2192,7 @@
     <pre><code class="lang-csharp hljs">public bool Monospace { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2169,7 +2201,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2183,7 +2215,7 @@
     <pre><code class="lang-csharp hljs">public bool Overwrite { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2192,7 +2224,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2206,7 +2238,7 @@
     <pre><code class="lang-csharp hljs">public int PixelsAboveLines { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2215,7 +2247,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2229,7 +2261,7 @@
     <pre><code class="lang-csharp hljs">public int PixelsBelowLines { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2238,7 +2270,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2252,7 +2284,7 @@
     <pre><code class="lang-csharp hljs">public int PixelsInsideWrap { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2261,7 +2293,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2275,7 +2307,7 @@
     <pre><code class="lang-csharp hljs">public int RightMargin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2284,7 +2316,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2298,7 +2330,7 @@
     <pre><code class="lang-csharp hljs">public int TopMargin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2307,7 +2339,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2321,7 +2353,7 @@
     <pre><code class="lang-csharp hljs">public Adjustment? Vadjustment { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2344,7 +2376,7 @@
     <pre><code class="lang-csharp hljs">public ScrollablePolicy VscrollPolicy { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2367,7 +2399,7 @@
     <pre><code class="lang-csharp hljs">public WrapMode WrapMode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2392,7 +2424,7 @@
     <pre><code class="lang-csharp hljs">public void AddChildAtAnchor(Widget child, TextChildAnchor anchor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2422,7 +2454,7 @@
     <pre><code class="lang-csharp hljs">public void AddOverlay(Widget child, int xpos, int ypos)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2437,12 +2469,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">xpos</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">ypos</span></td>
         <td></td>
       </tr>
@@ -2457,7 +2489,7 @@
     <pre><code class="lang-csharp hljs">public bool BackwardDisplayLine(TextIter iter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2474,7 +2506,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2483,7 +2515,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2497,7 +2529,7 @@
     <pre><code class="lang-csharp hljs">public bool BackwardDisplayLineStart(TextIter iter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2514,7 +2546,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2523,7 +2555,52 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_BufferToWindowCoords_" data-uid="Gtk.TextView.BufferToWindowCoords*"></a>
+  <h4 id="Gtk_TextView_BufferToWindowCoords_Gtk_TextWindowType_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Gtk.TextView.BufferToWindowCoords(Gtk.TextWindowType,System.Int32,System.Int32,System.Int32@,System.Int32@)">BufferToWindowCoords(TextWindowType, int, int, out int, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BufferToWindowCoords(TextWindowType win, int bufferX, int bufferY, out int windowX, out int windowY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextWindowType.html">TextWindowType</a></td>
+        <td><span class="parametername">win</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bufferX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bufferY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">windowX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">windowY</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2537,7 +2614,7 @@
     <pre><code class="lang-csharp hljs">public bool ForwardDisplayLine(TextIter iter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2554,7 +2631,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2563,7 +2640,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2577,7 +2654,7 @@
     <pre><code class="lang-csharp hljs">public bool ForwardDisplayLineEnd(TextIter iter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2594,7 +2671,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2603,7 +2680,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2617,7 +2694,7 @@
     <pre><code class="lang-csharp hljs">public bool GetAcceptsTab()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2626,7 +2703,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_GetAccessibleParent_" data-uid="Gtk.TextView.GetAccessibleParent*"></a>
+  <h4 id="Gtk_TextView_GetAccessibleParent" data-uid="Gtk.TextView.GetAccessibleParent">GetAccessibleParent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public Accessible? GetAccessibleParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2640,7 +2741,7 @@
     <pre><code class="lang-csharp hljs">public AccessibleRole GetAccessibleRole()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2654,6 +2755,30 @@
       </tr>
     </tbody>
   </table>
+  <a id="Gtk_TextView_GetAtContext_" data-uid="Gtk.TextView.GetAtContext*"></a>
+  <h4 id="Gtk_TextView_GetAtContext" data-uid="Gtk.TextView.GetAtContext">GetAtContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public ATContext GetAtContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.ATContext.html">ATContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Gtk_TextView_GetBottomMargin_" data-uid="Gtk.TextView.GetBottomMargin*"></a>
   <h4 id="Gtk_TextView_GetBottomMargin" data-uid="Gtk.TextView.GetBottomMargin">GetBottomMargin()</h4>
   <div class="markdown level1 summary"></div>
@@ -2663,7 +2788,7 @@
     <pre><code class="lang-csharp hljs">public int GetBottomMargin()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2672,7 +2797,63 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_GetBounds_" data-uid="Gtk.TextView.GetBounds*"></a>
+  <h4 id="Gtk_TextView_GetBounds_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="Gtk.TextView.GetBounds(System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetBounds(out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public bool GetBounds(out int x, out int y, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2686,7 +2867,7 @@
     <pre><code class="lang-csharp hljs">public TextBuffer GetBuffer()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2709,7 +2890,7 @@
     <pre><code class="lang-csharp hljs">public string? GetBuildableId()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2718,7 +2899,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2732,7 +2913,7 @@
     <pre><code class="lang-csharp hljs">public bool GetCursorVisible()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2741,7 +2922,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2755,7 +2936,7 @@
     <pre><code class="lang-csharp hljs">public bool GetEditable()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2764,7 +2945,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2778,7 +2959,7 @@
     <pre><code class="lang-csharp hljs">public MenuModel GetExtraMenu()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2792,16 +2973,17 @@
       </tr>
     </tbody>
   </table>
-  <a id="Gtk_TextView_GetGType_" data-uid="Gtk.TextView.GetGType*"></a>
-  <h4 id="Gtk_TextView_GetGType" data-uid="Gtk.TextView.GetGType">GetGType()</h4>
+  <a id="Gtk_TextView_GetFirstAccessibleChild_" data-uid="Gtk.TextView.GetFirstAccessibleChild*"></a>
+  <h4 id="Gtk_TextView_GetFirstAccessibleChild" data-uid="Gtk.TextView.GetFirstAccessibleChild">GetFirstAccessibleChild()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public Accessible? GetFirstAccessibleChild()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2810,7 +2992,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_GetGType_" data-uid="Gtk.TextView.GetGType*"></a>
+  <h4 id="Gtk_TextView_GetGType" data-uid="Gtk.TextView.GetGType">GetGType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetGType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2824,7 +3029,7 @@
     <pre><code class="lang-csharp hljs">public Widget? GetGutter(TextWindowType win)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2841,7 +3046,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2864,7 +3069,7 @@
     <pre><code class="lang-csharp hljs">public Adjustment? GetHadjustment()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2887,7 +3092,7 @@
     <pre><code class="lang-csharp hljs">public ScrollablePolicy GetHscrollPolicy()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2910,7 +3115,7 @@
     <pre><code class="lang-csharp hljs">public int GetIndent()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2919,7 +3124,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2933,7 +3138,7 @@
     <pre><code class="lang-csharp hljs">public InputHints GetInputHints()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2956,7 +3161,7 @@
     <pre><code class="lang-csharp hljs">public InputPurpose GetInputPurpose()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -2979,7 +3184,7 @@
     <pre><code class="lang-csharp hljs">public Justification GetJustification()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3002,7 +3207,7 @@
     <pre><code class="lang-csharp hljs">public int GetLeftMargin()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3011,7 +3216,42 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_GetLineYrange_" data-uid="Gtk.TextView.GetLineYrange*"></a>
+  <h4 id="Gtk_TextView_GetLineYrange_Gtk_TextIter_System_Int32__System_Int32__" data-uid="Gtk.TextView.GetLineYrange(Gtk.TextIter,System.Int32@,System.Int32@)">GetLineYrange(TextIter, out int, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetLineYrange(TextIter iter, out int y, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextIter.html">TextIter</a></td>
+        <td><span class="parametername">iter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3026,7 +3266,7 @@
 public Context GetLtrContext()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3049,7 +3289,7 @@ public Context GetLtrContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool GetMonospace()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3058,7 +3298,31 @@ public Context GetLtrContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_GetNextAccessibleSibling_" data-uid="Gtk.TextView.GetNextAccessibleSibling*"></a>
+  <h4 id="Gtk_TextView_GetNextAccessibleSibling" data-uid="Gtk.TextView.GetNextAccessibleSibling">GetNextAccessibleSibling()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public Accessible? GetNextAccessibleSibling()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3072,7 +3336,7 @@ public Context GetLtrContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool GetOverwrite()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3081,7 +3345,7 @@ public Context GetLtrContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3095,7 +3359,7 @@ public Context GetLtrContext()</code></pre>
     <pre><code class="lang-csharp hljs">public int GetPixelsAboveLines()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3104,7 +3368,7 @@ public Context GetLtrContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3118,7 +3382,7 @@ public Context GetLtrContext()</code></pre>
     <pre><code class="lang-csharp hljs">public int GetPixelsBelowLines()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3127,7 +3391,7 @@ public Context GetLtrContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3141,7 +3405,7 @@ public Context GetLtrContext()</code></pre>
     <pre><code class="lang-csharp hljs">public int GetPixelsInsideWrap()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3150,7 +3414,48 @@ public Context GetLtrContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_GetPlatformState_" data-uid="Gtk.TextView.GetPlatformState*"></a>
+  <h4 id="Gtk_TextView_GetPlatformState_Gtk_AccessiblePlatformState_" data-uid="Gtk.TextView.GetPlatformState(Gtk.AccessiblePlatformState)">GetPlatformState(AccessiblePlatformState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public bool GetPlatformState(AccessiblePlatformState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.AccessiblePlatformState.html">AccessiblePlatformState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3164,7 +3469,7 @@ public Context GetLtrContext()</code></pre>
     <pre><code class="lang-csharp hljs">public int GetRightMargin()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3173,7 +3478,7 @@ public Context GetLtrContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3188,7 +3493,7 @@ public Context GetLtrContext()</code></pre>
 public Context GetRtlContext()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3211,7 +3516,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public TabArray GetTabs()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3234,7 +3539,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public int GetTopMargin()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3243,7 +3548,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3257,7 +3562,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public Adjustment? GetVadjustment()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3280,7 +3585,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public ScrollablePolicy GetVscrollPolicy()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3303,7 +3608,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public WrapMode GetWrapMode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3326,7 +3631,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool ImContextFilterKeypress(Event @event)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3343,7 +3648,7 @@ public Context GetRtlContext()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3352,7 +3657,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3366,7 +3671,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool MoveMarkOnscreen(TextMark mark)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3383,7 +3688,7 @@ public Context GetRtlContext()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3392,7 +3697,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3406,7 +3711,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void MoveOverlay(Widget child, int xpos, int ypos)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3421,12 +3726,12 @@ public Context GetRtlContext()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">xpos</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">ypos</span></td>
         <td></td>
       </tr>
@@ -3441,7 +3746,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool MoveVisually(TextIter iter, int count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3456,14 +3761,14 @@ public Context GetRtlContext()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">count</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3472,7 +3777,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3486,7 +3791,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public static TextView New()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3509,7 +3814,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public static TextView NewWithBuffer(TextBuffer buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3526,7 +3831,7 @@ public Context GetRtlContext()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3549,7 +3854,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool PlaceCursorOnscreen()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3558,7 +3863,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3572,7 +3877,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void Remove(Widget child)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3613,7 +3918,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void ResetProperty(AccessibleProperty property)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3638,7 +3943,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void ResetRelation(AccessibleRelation relation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3663,7 +3968,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void ResetState(AccessibleState state)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3688,7 +3993,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void ScrollMarkOnscreen(TextMark mark)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3713,7 +4018,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool ScrollToIter(TextIter iter, double withinMargin, bool useAlign, double xalign, double yalign)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3728,29 +4033,29 @@ public Context GetRtlContext()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">withinMargin</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">useAlign</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">xalign</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">yalign</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3759,7 +4064,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -3773,7 +4078,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void ScrollToMark(TextMark mark, double withinMargin, bool useAlign, double xalign, double yalign)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3788,22 +4093,22 @@ public Context GetRtlContext()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">withinMargin</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">useAlign</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">xalign</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">yalign</span></td>
         <td></td>
       </tr>
@@ -3818,7 +4123,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetAcceptsTab(bool acceptsTab)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3828,8 +4133,39 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">acceptsTab</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_SetAccessibleParent_" data-uid="Gtk.TextView.SetAccessibleParent*"></a>
+  <h4 id="Gtk_TextView_SetAccessibleParent_Gtk_Accessible_Gtk_Accessible_" data-uid="Gtk.TextView.SetAccessibleParent(Gtk.Accessible,Gtk.Accessible)">SetAccessibleParent(Accessible?, Accessible?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public void SetAccessibleParent(Accessible? parent, Accessible? nextSibling)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">nextSibling</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3843,7 +4179,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetBottomMargin(int bottomMargin)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3853,7 +4189,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">bottomMargin</span></td>
         <td></td>
       </tr>
@@ -3868,7 +4204,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetBuffer(TextBuffer? buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3893,7 +4229,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetCursorVisible(bool setting)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3903,7 +4239,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">setting</span></td>
         <td></td>
       </tr>
@@ -3918,7 +4254,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetEditable(bool setting)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3928,7 +4264,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">setting</span></td>
         <td></td>
       </tr>
@@ -3943,7 +4279,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetExtraMenu(MenuModel? model)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3968,7 +4304,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetGutter(TextWindowType win, Widget? widget)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -3998,7 +4334,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetHadjustment(Adjustment? hadjustment)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4023,7 +4359,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetHscrollPolicy(ScrollablePolicy policy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4048,7 +4384,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetIndent(int indent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4058,7 +4394,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">indent</span></td>
         <td></td>
       </tr>
@@ -4073,7 +4409,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetInputHints(InputHints hints)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4098,7 +4434,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetInputPurpose(InputPurpose purpose)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4123,7 +4459,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetJustification(Justification justification)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4148,7 +4484,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetLeftMargin(int leftMargin)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4158,7 +4494,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">leftMargin</span></td>
         <td></td>
       </tr>
@@ -4173,7 +4509,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetMonospace(bool monospace)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4183,7 +4519,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">monospace</span></td>
         <td></td>
       </tr>
@@ -4198,7 +4534,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetOverwrite(bool overwrite)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4208,7 +4544,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">overwrite</span></td>
         <td></td>
       </tr>
@@ -4223,7 +4559,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetPixelsAboveLines(int pixelsAboveLines)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4233,7 +4569,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">pixelsAboveLines</span></td>
         <td></td>
       </tr>
@@ -4248,7 +4584,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetPixelsBelowLines(int pixelsBelowLines)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4258,7 +4594,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">pixelsBelowLines</span></td>
         <td></td>
       </tr>
@@ -4273,7 +4609,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetPixelsInsideWrap(int pixelsInsideWrap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4283,7 +4619,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">pixelsInsideWrap</span></td>
         <td></td>
       </tr>
@@ -4298,7 +4634,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetRightMargin(int rightMargin)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4308,7 +4644,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">rightMargin</span></td>
         <td></td>
       </tr>
@@ -4323,7 +4659,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetTabs(TabArray tabs)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4348,7 +4684,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetTopMargin(int topMargin)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4358,7 +4694,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">topMargin</span></td>
         <td></td>
       </tr>
@@ -4373,7 +4709,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetVadjustment(Adjustment? vadjustment)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4398,7 +4734,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetVscrollPolicy(ScrollablePolicy policy)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4423,7 +4759,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public void SetWrapMode(WrapMode wrapMode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4448,7 +4784,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public bool StartsDisplayLine(TextIter iter)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4465,7 +4801,7 @@ public Context GetRtlContext()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4474,7 +4810,78 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_UpdateNextAccessibleSibling_" data-uid="Gtk.TextView.UpdateNextAccessibleSibling*"></a>
+  <h4 id="Gtk_TextView_UpdateNextAccessibleSibling_Gtk_Accessible_" data-uid="Gtk.TextView.UpdateNextAccessibleSibling(Gtk.Accessible)">UpdateNextAccessibleSibling(Accessible?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;4.10&quot;)]
+public void UpdateNextAccessibleSibling(Accessible? newSibling)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.Accessible.html">Accessible</a></td>
+        <td><span class="parametername">newSibling</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Gtk_TextView_WindowToBufferCoords_" data-uid="Gtk.TextView.WindowToBufferCoords*"></a>
+  <h4 id="Gtk_TextView_WindowToBufferCoords_Gtk_TextWindowType_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Gtk.TextView.WindowToBufferCoords(Gtk.TextWindowType,System.Int32,System.Int32,System.Int32@,System.Int32@)">WindowToBufferCoords(TextWindowType, int, int, out int, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WindowToBufferCoords(TextWindowType win, int windowX, int windowY, out int bufferX, out int bufferY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gtk.TextWindowType.html">TextWindowType</a></td>
+        <td><span class="parametername">win</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">windowX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">windowY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bufferX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bufferY</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -4489,7 +4896,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnBackspace</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4511,7 +4918,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnCopyClipboard</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4533,7 +4940,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnCutClipboard</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4555,7 +4962,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView, TextView.DeleteFromCursorSignalArgs&gt; OnDeleteFromCursor</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4577,7 +4984,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event ReturningSignalHandler&lt;TextView, TextView.ExtendSelectionSignalArgs, bool&gt; OnExtendSelection</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4586,7 +4993,7 @@ public Context GetRtlContext()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GObject.ReturningSignalHandler-3.html">ReturningSignalHandler</a>&lt;<a class="xref" href="Gtk.TextView.html">TextView</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>.<a class="xref" href="Gtk.TextView.ExtendSelectionSignalArgs.html">ExtendSelectionSignalArgs</a>, <span class="xref">bool</span>&gt;</td>
+        <td><a class="xref" href="GObject.ReturningSignalHandler-3.html">ReturningSignalHandler</a>&lt;<a class="xref" href="Gtk.TextView.html">TextView</a>, <a class="xref" href="Gtk.TextView.html">TextView</a>.<a class="xref" href="Gtk.TextView.ExtendSelectionSignalArgs.html">ExtendSelectionSignalArgs</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -4599,7 +5006,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView, TextView.InsertAtCursorSignalArgs&gt; OnInsertAtCursor</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4621,7 +5028,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnInsertEmoji</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4643,7 +5050,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView, TextView.MoveCursorSignalArgs&gt; OnMoveCursor</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4665,7 +5072,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView, TextView.MoveViewportSignalArgs&gt; OnMoveViewport</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4687,7 +5094,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnPasteClipboard</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4709,7 +5116,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView, TextView.PreeditChangedSignalArgs&gt; OnPreeditChanged</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4731,7 +5138,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView, TextView.SelectAllSignalArgs&gt; OnSelectAll</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4753,7 +5160,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnSetAnchor</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4775,7 +5182,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnToggleCursorVisible</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4797,7 +5204,7 @@ public Context GetRtlContext()</code></pre>
     <pre><code class="lang-csharp hljs">public event SignalHandler&lt;TextView&gt; OnToggleOverwrite</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -4816,10 +5223,10 @@ public Context GetRtlContext()</code></pre>
       <a class="xref" href="GObject.IObject.html">IObject</a>
   </div>
   <div>
-      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
   </div>
   <div>
       <a class="xref" href="Gtk.Accessible.html">Accessible</a>
@@ -4839,6 +5246,7 @@ public Context GetRtlContext()</code></pre>
   <div>
       <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
   </div>
+
 </article>
           </div>
 
@@ -4867,7 +5275,7 @@ public Context GetRtlContext()</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

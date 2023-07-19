@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GLib.Internal.Error">
 
 
+
   <h1 id="GLib_Internal_Error" data-uid="GLib.Internal.Error" class="text-break">Class Error
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Error</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a>.<a class="xref" href="GLib.Internal.html">Internal</a></h6>
@@ -121,7 +122,7 @@
     <pre><code class="lang-csharp hljs">public static extern ErrorOwnedHandle Copy(ErrorHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -138,7 +139,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -154,7 +155,7 @@
     </tbody>
   </table>
   <a id="GLib_Internal_Error_DomainRegister_" data-uid="GLib.Internal.Error.DomainRegister*"></a>
-  <h4 id="GLib_Internal_Error_DomainRegister_System_String_System_UIntPtr_GLib_Internal_ErrorInitFunc_GLib_Internal_ErrorCopyFunc_GLib_Internal_ErrorClearFunc_" data-uid="GLib.Internal.Error.DomainRegister(System.String,System.UIntPtr,GLib.Internal.ErrorInitFunc,GLib.Internal.ErrorCopyFunc,GLib.Internal.ErrorClearFunc)">DomainRegister(string, nuint, ErrorInitFunc, ErrorCopyFunc, ErrorClearFunc)</h4>
+  <h4 id="GLib_Internal_Error_DomainRegister_GLib_Internal_NonNullableUtf8StringHandle_System_UIntPtr_GLib_Internal_ErrorInitFunc_GLib_Internal_ErrorCopyFunc_GLib_Internal_ErrorClearFunc_" data-uid="GLib.Internal.Error.DomainRegister(GLib.Internal.NonNullableUtf8StringHandle,System.UIntPtr,GLib.Internal.ErrorInitFunc,GLib.Internal.ErrorCopyFunc,GLib.Internal.ErrorClearFunc)">DomainRegister(NonNullableUtf8StringHandle, nuint, ErrorInitFunc, ErrorCopyFunc, ErrorClearFunc)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_error_domain_register.
 Version: 2.68</p>
 </div>
@@ -162,10 +163,10 @@ Version: 2.68</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.68&quot;)]
-public static extern uint DomainRegister(string errorTypeName, nuint errorTypePrivateSize, ErrorInitFunc errorTypeInit, ErrorCopyFunc errorTypeCopy, ErrorClearFunc errorTypeClear)</code></pre>
+public static extern uint DomainRegister(NonNullableUtf8StringHandle errorTypeName, nuint errorTypePrivateSize, ErrorInitFunc errorTypeInit, ErrorCopyFunc errorTypeCopy, ErrorClearFunc errorTypeClear)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -175,13 +176,13 @@ public static extern uint DomainRegister(string errorTypeName, nuint errorTypePr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">errorTypeName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">errorTypePrivateSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -207,7 +208,7 @@ public static extern uint DomainRegister(string errorTypeName, nuint errorTypePr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -216,14 +217,14 @@ public static extern uint DomainRegister(string errorTypeName, nuint errorTypePr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Error_DomainRegisterStatic_" data-uid="GLib.Internal.Error.DomainRegisterStatic*"></a>
-  <h4 id="GLib_Internal_Error_DomainRegisterStatic_System_String_System_UIntPtr_GLib_Internal_ErrorInitFunc_GLib_Internal_ErrorCopyFunc_GLib_Internal_ErrorClearFunc_" data-uid="GLib.Internal.Error.DomainRegisterStatic(System.String,System.UIntPtr,GLib.Internal.ErrorInitFunc,GLib.Internal.ErrorCopyFunc,GLib.Internal.ErrorClearFunc)">DomainRegisterStatic(string, nuint, ErrorInitFunc, ErrorCopyFunc, ErrorClearFunc)</h4>
+  <h4 id="GLib_Internal_Error_DomainRegisterStatic_GLib_Internal_NonNullableUtf8StringHandle_System_UIntPtr_GLib_Internal_ErrorInitFunc_GLib_Internal_ErrorCopyFunc_GLib_Internal_ErrorClearFunc_" data-uid="GLib.Internal.Error.DomainRegisterStatic(GLib.Internal.NonNullableUtf8StringHandle,System.UIntPtr,GLib.Internal.ErrorInitFunc,GLib.Internal.ErrorCopyFunc,GLib.Internal.ErrorClearFunc)">DomainRegisterStatic(NonNullableUtf8StringHandle, nuint, ErrorInitFunc, ErrorCopyFunc, ErrorClearFunc)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_error_domain_register_static.
 Version: 2.68</p>
 </div>
@@ -231,10 +232,10 @@ Version: 2.68</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.68&quot;)]
-public static extern uint DomainRegisterStatic(string errorTypeName, nuint errorTypePrivateSize, ErrorInitFunc errorTypeInit, ErrorCopyFunc errorTypeCopy, ErrorClearFunc errorTypeClear)</code></pre>
+public static extern uint DomainRegisterStatic(NonNullableUtf8StringHandle errorTypeName, nuint errorTypePrivateSize, ErrorInitFunc errorTypeInit, ErrorCopyFunc errorTypeCopy, ErrorClearFunc errorTypeClear)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -244,13 +245,13 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">errorTypeName</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">errorTypePrivateSize</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -276,7 +277,7 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -285,7 +286,7 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -301,7 +302,7 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     <pre><code class="lang-csharp hljs">public static extern void Free(ErrorHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -327,7 +328,7 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     <pre><code class="lang-csharp hljs">public static extern nuint GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -336,23 +337,23 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Error_Matches_" data-uid="GLib.Internal.Error.Matches*"></a>
-  <h4 id="GLib_Internal_Error_Matches_GLib_Internal_ErrorHandle_System_UInt32_System_Int32_" data-uid="GLib.Internal.Error.Matches(GLib.Internal.ErrorHandle,System.UInt32,System.Int32)">Matches(ErrorHandle, uint, int)</h4>
+  <h4 id="GLib_Internal_Error_Matches_GLib_Internal_ErrorHandle_GLib_Quark_System_Int32_" data-uid="GLib.Internal.Error.Matches(GLib.Internal.ErrorHandle,GLib.Quark,System.Int32)">Matches(ErrorHandle, Quark, int)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_error_matches.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern bool Matches(ErrorHandle error, uint domain, int code)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern bool Matches(ErrorHandle error, Quark domain, int code)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -367,13 +368,13 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">domain</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">code</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -381,7 +382,7 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -390,23 +391,23 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_Error_NewLiteral_" data-uid="GLib.Internal.Error.NewLiteral*"></a>
-  <h4 id="GLib_Internal_Error_NewLiteral_System_UInt32_System_Int32_System_String_" data-uid="GLib.Internal.Error.NewLiteral(System.UInt32,System.Int32,System.String)">NewLiteral(uint, int, string)</h4>
+  <h4 id="GLib_Internal_Error_NewLiteral_GLib_Quark_System_Int32_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GLib.Internal.Error.NewLiteral(GLib.Quark,System.Int32,GLib.Internal.NonNullableUtf8StringHandle)">NewLiteral(Quark, int, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native constructor g_error_new_literal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ErrorOwnedHandle NewLiteral(uint domain, int code, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ErrorOwnedHandle NewLiteral(Quark domain, int code, NonNullableUtf8StringHandle message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -416,19 +417,19 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">domain</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">code</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">message</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -436,7 +437,7 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -451,19 +452,16 @@ public static extern uint DomainRegisterStatic(string errorTypeName, nuint error
       </tr>
     </tbody>
   </table>
-  <a id="GLib_Internal_Error_NewValist_" data-uid="GLib.Internal.Error.NewValist*"></a>
-  <h4 id="GLib_Internal_Error_NewValist_System_UInt32_System_Int32_System_String_System_IntPtr_" data-uid="GLib.Internal.Error.NewValist(System.UInt32,System.Int32,System.String,System.IntPtr)">NewValist(uint, int, string, nint)</h4>
-  <div class="markdown level1 summary"><p>Calls native constructor g_error_new_valist.
-Version: 2.22</p>
-</div>
+  <a id="GLib_Internal_Error_NewLiteralUnowned_" data-uid="GLib.Internal.Error.NewLiteralUnowned*"></a>
+  <h4 id="GLib_Internal_Error_NewLiteralUnowned_System_UInt32_System_Int32_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GLib.Internal.Error.NewLiteralUnowned(System.UInt32,System.Int32,GLib.Internal.NonNullableUtf8StringHandle)">NewLiteralUnowned(uint, int, NonNullableUtf8StringHandle)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
-public static extern ErrorOwnedHandle NewValist(uint domain, int code, string format, nint args)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ErrorUnownedHandle NewLiteralUnowned(uint domain, int code, NonNullableUtf8StringHandle message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -473,25 +471,78 @@ public static extern ErrorOwnedHandle NewValist(uint domain, int code, string fo
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">domain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Internal.ErrorUnownedHandle.html">ErrorUnownedHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="GLib_Internal_Error_NewValist_" data-uid="GLib.Internal.Error.NewValist*"></a>
+  <h4 id="GLib_Internal_Error_NewValist_GLib_Quark_System_Int32_GLib_Internal_NonNullableUtf8StringHandle_System_IntPtr_" data-uid="GLib.Internal.Error.NewValist(GLib.Quark,System.Int32,GLib.Internal.NonNullableUtf8StringHandle,System.IntPtr)">NewValist(Quark, int, NonNullableUtf8StringHandle, nint)</h4>
+  <div class="markdown level1 summary"><p>Calls native constructor g_error_new_valist.
+Version: 2.22</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.22&quot;)]
+public static extern ErrorOwnedHandle NewValist(Quark domain, int code, NonNullableUtf8StringHandle format, nint args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GLib.Quark.html">Quark</a></td>
         <td><span class="parametername">domain</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">code</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">format</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">args</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -499,7 +550,7 @@ public static extern ErrorOwnedHandle NewValist(uint domain, int code, string fo
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -514,6 +565,7 @@ public static extern ErrorOwnedHandle NewValist(uint domain, int code, string fo
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -542,7 +594,7 @@ public static extern ErrorOwnedHandle NewValist(uint domain, int code, string fo
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

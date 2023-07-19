@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,37 +70,38 @@
             <article class="content wrap" id="_content" data-uid="GLib.Internal.OptionContext">
 
 
+
   <h1 id="GLib_Internal_OptionContext" data-uid="GLib.Internal.OptionContext" class="text-break">Class OptionContext
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">OptionContext</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GLib.html">GLib</a>.<a class="xref" href="GLib.Internal.html">Internal</a></h6>
@@ -123,7 +124,7 @@ Version: 2.6</p>
 public static extern void AddGroup(OptionContextHandle context, OptionGroupHandle group)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -146,7 +147,7 @@ public static extern void AddGroup(OptionContextHandle context, OptionGroupHandl
     </tbody>
   </table>
   <a id="GLib_Internal_OptionContext_AddMainEntries_" data-uid="GLib.Internal.OptionContext.AddMainEntries*"></a>
-  <h4 id="GLib_Internal_OptionContext_AddMainEntries_GLib_Internal_OptionContextHandle_System_IntPtr___System_String_" data-uid="GLib.Internal.OptionContext.AddMainEntries(GLib.Internal.OptionContextHandle,System.IntPtr[],System.String)">AddMainEntries(OptionContextHandle, nint[], string?)</h4>
+  <h4 id="GLib_Internal_OptionContext_AddMainEntries_GLib_Internal_OptionContextHandle_System_IntPtr___GLib_Internal_NullableUtf8StringHandle_" data-uid="GLib.Internal.OptionContext.AddMainEntries(GLib.Internal.OptionContextHandle,System.IntPtr[],GLib.Internal.NullableUtf8StringHandle)">AddMainEntries(OptionContextHandle, nint[], NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_option_context_add_main_entries.
 Version: 2.6</p>
 </div>
@@ -154,10 +155,10 @@ Version: 2.6</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.6&quot;)]
-public static extern void AddMainEntries(OptionContextHandle context, nint[] entries, string? translationDomain)</code></pre>
+public static extern void AddMainEntries(OptionContextHandle context, nint[] entries, NullableUtf8StringHandle translationDomain)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -172,13 +173,13 @@ public static extern void AddMainEntries(OptionContextHandle context, nint[] ent
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>[]</td>
         <td><span class="parametername">entries</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">translationDomain</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -197,7 +198,7 @@ Version: 2.6</p>
 public static extern void Free(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -222,10 +223,10 @@ Version: 2.12</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.12&quot;)]
-public static extern nint GetDescription(OptionContextHandle context)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetDescription(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -242,7 +243,7 @@ public static extern nint GetDescription(OptionContextHandle context)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -251,7 +252,7 @@ public static extern nint GetDescription(OptionContextHandle context)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -266,10 +267,10 @@ Version: 2.14</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.14&quot;)]
-public static extern string GetHelp(OptionContextHandle context, bool mainHelp, OptionGroupHandle group)</code></pre>
+public static extern NonNullableUtf8StringOwnedHandle GetHelp(OptionContextHandle context, bool mainHelp, OptionGroupHandle group)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -284,7 +285,7 @@ public static extern string GetHelp(OptionContextHandle context, bool mainHelp, 
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">mainHelp</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -298,7 +299,7 @@ public static extern string GetHelp(OptionContextHandle context, bool mainHelp, 
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -307,7 +308,7 @@ public static extern string GetHelp(OptionContextHandle context, bool mainHelp, 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringOwnedHandle.html">NonNullableUtf8StringOwnedHandle</a></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
@@ -325,7 +326,7 @@ Version: 2.6</p>
 public static extern bool GetHelpEnabled(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -342,7 +343,7 @@ public static extern bool GetHelpEnabled(OptionContextHandle context)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -351,7 +352,7 @@ public static extern bool GetHelpEnabled(OptionContextHandle context)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -369,7 +370,7 @@ Version: 2.6</p>
 public static extern bool GetIgnoreUnknownOptions(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -386,7 +387,7 @@ public static extern bool GetIgnoreUnknownOptions(OptionContextHandle context)</
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -395,7 +396,7 @@ public static extern bool GetIgnoreUnknownOptions(OptionContextHandle context)</
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -413,7 +414,7 @@ Version: 2.6</p>
 public static extern OptionGroupUnownedHandle GetMainGroup(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -430,7 +431,7 @@ public static extern OptionGroupUnownedHandle GetMainGroup(OptionContextHandle c
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -457,7 +458,7 @@ Version: 2.44</p>
 public static extern bool GetStrictPosix(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -474,7 +475,7 @@ public static extern bool GetStrictPosix(OptionContextHandle context)</code></pr
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -483,7 +484,7 @@ public static extern bool GetStrictPosix(OptionContextHandle context)</code></pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -498,10 +499,10 @@ Version: 2.12</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.12&quot;)]
-public static extern nint GetSummary(OptionContextHandle context)</code></pre>
+public static extern NonNullableUtf8StringUnownedHandle GetSummary(OptionContextHandle context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -518,7 +519,7 @@ public static extern nint GetSummary(OptionContextHandle context)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -527,14 +528,14 @@ public static extern nint GetSummary(OptionContextHandle context)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringUnownedHandle.html">NonNullableUtf8StringUnownedHandle</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_OptionContext_New_" data-uid="GLib.Internal.OptionContext.New*"></a>
-  <h4 id="GLib_Internal_OptionContext_New_System_String_" data-uid="GLib.Internal.OptionContext.New(System.String)">New(string?)</h4>
+  <h4 id="GLib_Internal_OptionContext_New_GLib_Internal_NullableUtf8StringHandle_" data-uid="GLib.Internal.OptionContext.New(GLib.Internal.NullableUtf8StringHandle)">New(NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native function g_option_context_new.
 Version: 2.6</p>
 </div>
@@ -542,10 +543,10 @@ Version: 2.6</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.6&quot;)]
-public static extern OptionContextUnownedHandle New(string? parameterString)</code></pre>
+public static extern OptionContextUnownedHandle New(NullableUtf8StringHandle parameterString)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -555,7 +556,7 @@ public static extern OptionContextUnownedHandle New(string? parameterString)</co
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">parameterString</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -563,7 +564,7 @@ public static extern OptionContextUnownedHandle New(string? parameterString)</co
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -579,7 +580,7 @@ public static extern OptionContextUnownedHandle New(string? parameterString)</co
     </tbody>
   </table>
   <a id="GLib_Internal_OptionContext_Parse_" data-uid="GLib.Internal.OptionContext.Parse*"></a>
-  <h4 id="GLib_Internal_OptionContext_Parse_GLib_Internal_OptionContextHandle_System_IntPtr__System_String___GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.OptionContext.Parse(GLib.Internal.OptionContextHandle,System.IntPtr@,System.String[],GLib.Internal.ErrorOwnedHandle@)">Parse(OptionContextHandle, ref nint, string[], out ErrorOwnedHandle)</h4>
+  <h4 id="GLib_Internal_OptionContext_Parse_GLib_Internal_OptionContextHandle_System_Int32__System_String___GLib_Internal_ErrorOwnedHandle__" data-uid="GLib.Internal.OptionContext.Parse(GLib.Internal.OptionContextHandle,System.Int32@,System.String[],GLib.Internal.ErrorOwnedHandle@)">Parse(OptionContextHandle, ref int, string[], out ErrorOwnedHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_option_context_parse.
 Version: 2.6</p>
 </div>
@@ -587,10 +588,10 @@ Version: 2.6</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.6&quot;)]
-public static extern bool Parse(OptionContextHandle context, ref nint argc, string[] argv, out ErrorOwnedHandle error)</code></pre>
+public static extern bool Parse(OptionContextHandle context, ref int argc, string[] argv, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -605,13 +606,13 @@ public static extern bool Parse(OptionContextHandle context, ref nint argc, stri
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">argc</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">argv</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -619,13 +620,12 @@ public static extern bool Parse(OptionContextHandle context, ref nint argc, stri
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -634,7 +634,7 @@ public static extern bool Parse(OptionContextHandle context, ref nint argc, stri
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
@@ -652,7 +652,7 @@ Version: 2.40</p>
 public static extern bool ParseStrv(OptionContextHandle context, string[] arguments, out ErrorOwnedHandle error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -667,7 +667,7 @@ public static extern bool ParseStrv(OptionContextHandle context, string[] argume
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">arguments</span></td>
         <td><p>Transfer ownership: Full Nullable: False</p>
 </td>
@@ -675,13 +675,12 @@ public static extern bool ParseStrv(OptionContextHandle context, string[] argume
       <tr>
         <td><a class="xref" href="GLib.Internal.ErrorOwnedHandle.html">ErrorOwnedHandle</a></td>
         <td><span class="parametername">error</span></td>
-        <td><p>Transfer ownership: Full Nullable: False</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -690,14 +689,14 @@ public static extern bool ParseStrv(OptionContextHandle context, string[] argume
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GLib_Internal_OptionContext_SetDescription_" data-uid="GLib.Internal.OptionContext.SetDescription*"></a>
-  <h4 id="GLib_Internal_OptionContext_SetDescription_GLib_Internal_OptionContextHandle_System_String_" data-uid="GLib.Internal.OptionContext.SetDescription(GLib.Internal.OptionContextHandle,System.String)">SetDescription(OptionContextHandle, string?)</h4>
+  <h4 id="GLib_Internal_OptionContext_SetDescription_GLib_Internal_OptionContextHandle_GLib_Internal_NullableUtf8StringHandle_" data-uid="GLib.Internal.OptionContext.SetDescription(GLib.Internal.OptionContextHandle,GLib.Internal.NullableUtf8StringHandle)">SetDescription(OptionContextHandle, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_option_context_set_description.
 Version: 2.12</p>
 </div>
@@ -705,10 +704,10 @@ Version: 2.12</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.12&quot;)]
-public static extern void SetDescription(OptionContextHandle context, string? description)</code></pre>
+public static extern void SetDescription(OptionContextHandle context, NullableUtf8StringHandle description)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -723,7 +722,7 @@ public static extern void SetDescription(OptionContextHandle context, string? de
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -742,7 +741,7 @@ Version: 2.6</p>
 public static extern void SetHelpEnabled(OptionContextHandle context, bool helpEnabled)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -757,7 +756,7 @@ public static extern void SetHelpEnabled(OptionContextHandle context, bool helpE
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">helpEnabled</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -776,7 +775,7 @@ Version: 2.6</p>
 public static extern void SetIgnoreUnknownOptions(OptionContextHandle context, bool ignoreUnknown)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -791,7 +790,7 @@ public static extern void SetIgnoreUnknownOptions(OptionContextHandle context, b
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">ignoreUnknown</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -810,7 +809,7 @@ Version: 2.6</p>
 public static extern void SetMainGroup(OptionContextHandle context, OptionGroupHandle group)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -844,7 +843,7 @@ Version: 2.44</p>
 public static extern void SetStrictPosix(OptionContextHandle context, bool strictPosix)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -859,7 +858,7 @@ public static extern void SetStrictPosix(OptionContextHandle context, bool stric
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">strictPosix</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
@@ -867,7 +866,7 @@ public static extern void SetStrictPosix(OptionContextHandle context, bool stric
     </tbody>
   </table>
   <a id="GLib_Internal_OptionContext_SetSummary_" data-uid="GLib.Internal.OptionContext.SetSummary*"></a>
-  <h4 id="GLib_Internal_OptionContext_SetSummary_GLib_Internal_OptionContextHandle_System_String_" data-uid="GLib.Internal.OptionContext.SetSummary(GLib.Internal.OptionContextHandle,System.String)">SetSummary(OptionContextHandle, string?)</h4>
+  <h4 id="GLib_Internal_OptionContext_SetSummary_GLib_Internal_OptionContextHandle_GLib_Internal_NullableUtf8StringHandle_" data-uid="GLib.Internal.OptionContext.SetSummary(GLib.Internal.OptionContextHandle,GLib.Internal.NullableUtf8StringHandle)">SetSummary(OptionContextHandle, NullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_option_context_set_summary.
 Version: 2.12</p>
 </div>
@@ -875,10 +874,10 @@ Version: 2.12</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.12&quot;)]
-public static extern void SetSummary(OptionContextHandle context, string? summary)</code></pre>
+public static extern void SetSummary(OptionContextHandle context, NullableUtf8StringHandle summary)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -893,7 +892,7 @@ public static extern void SetSummary(OptionContextHandle context, string? summar
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NullableUtf8StringHandle.html">NullableUtf8StringHandle</a></td>
         <td><span class="parametername">summary</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -912,7 +911,7 @@ Version: 2.12</p>
 public static extern void SetTranslateFunc(OptionContextHandle context, TranslateFunc func, nint data, DestroyNotify destroyNotify)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -933,7 +932,7 @@ public static extern void SetTranslateFunc(OptionContextHandle context, Translat
 </td>
       </tr>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>Transfer ownership: None Nullable: True</p>
 </td>
@@ -947,7 +946,7 @@ public static extern void SetTranslateFunc(OptionContextHandle context, Translat
     </tbody>
   </table>
   <a id="GLib_Internal_OptionContext_SetTranslationDomain_" data-uid="GLib.Internal.OptionContext.SetTranslationDomain*"></a>
-  <h4 id="GLib_Internal_OptionContext_SetTranslationDomain_GLib_Internal_OptionContextHandle_System_String_" data-uid="GLib.Internal.OptionContext.SetTranslationDomain(GLib.Internal.OptionContextHandle,System.String)">SetTranslationDomain(OptionContextHandle, string)</h4>
+  <h4 id="GLib_Internal_OptionContext_SetTranslationDomain_GLib_Internal_OptionContextHandle_GLib_Internal_NonNullableUtf8StringHandle_" data-uid="GLib.Internal.OptionContext.SetTranslationDomain(GLib.Internal.OptionContextHandle,GLib.Internal.NonNullableUtf8StringHandle)">SetTranslationDomain(OptionContextHandle, NonNullableUtf8StringHandle)</h4>
   <div class="markdown level1 summary"><p>Calls native method g_option_context_set_translation_domain.
 Version: 2.12</p>
 </div>
@@ -955,10 +954,10 @@ Version: 2.12</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Version(&quot;2.12&quot;)]
-public static extern void SetTranslationDomain(OptionContextHandle context, string domain)</code></pre>
+public static extern void SetTranslationDomain(OptionContextHandle context, NonNullableUtf8StringHandle domain)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -973,13 +972,14 @@ public static extern void SetTranslationDomain(OptionContextHandle context, stri
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="GLib.Internal.NonNullableUtf8StringHandle.html">NonNullableUtf8StringHandle</a></td>
         <td><span class="parametername">domain</span></td>
         <td><p>Transfer ownership: None Nullable: False</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -1008,7 +1008,7 @@ public static extern void SetTranslationDomain(OptionContextHandle context, stri
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

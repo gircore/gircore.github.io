@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -70,26 +70,30 @@
             <article class="content wrap" id="_content" data-uid="JavaScriptCore.Value">
 
 
+
   <h1 id="JavaScriptCore_Value" data-uid="JavaScriptCore.Value" class="text-break">Class Value
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="GObject.Object.html">Object</a></div>
     <div class="level2"><span class="xref">Value</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="GObject.IObject.html">IObject</a></div>
-    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><a class="xref" href="GLib.IHandle.html">IHandle</a></div>
     <div><a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_NewValist_GObject_Type_System_String_System_IntPtr_">Object.NewValist(Type, string, nint)</a>
+    </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_PropertyChanged">Object.PropertyChanged</a>
     </div>
@@ -97,13 +101,10 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_Handle">Object.Handle</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_Initialize">Object.Initialize()</a>
-    </div>
-    <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_OnPropertyChanged_System_String_">Object.OnPropertyChanged(string)</a>
-    </div>
-    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_Dispose">Object.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_CompatControl_System_UIntPtr_System_IntPtr_">Object.CompatControl(nuint, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceFindProperty_GObject_TypeInterface_System_String_">Object.InterfaceFindProperty(TypeInterface, string)</a>
@@ -112,10 +113,13 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_InterfaceInstallProperty_GObject_TypeInterface_GObject_ParamSpec_">Object.InterfaceInstallProperty(TypeInterface, ParamSpec)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_AddWeakPointer_System_IntPtr__">Object.AddWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_BindProperty_System_String_GObject_Object_System_String_GObject_BindingFlags_">Object.BindProperty(string, Object, string, BindingFlags)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyWithClosures_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyWithClosures(string, Object, string, BindingFlags, Closure, Closure)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_BindPropertyFull_System_String_GObject_Object_System_String_GObject_BindingFlags_GObject_Closure_GObject_Closure_">Object.BindPropertyFull(string, Object, string, BindingFlags, Closure, Closure)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_ForceFloating">Object.ForceFloating()</a>
@@ -130,7 +134,10 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_GetProperty_System_String_GObject_Value_">Object.GetProperty(string, Value)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_System_UInt32_">Object.GetQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetQdata_GLib_Quark_">Object.GetQdata(Quark)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_GetValist_System_String_System_IntPtr_">Object.GetValist(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_IsFloating">Object.IsFloating()</a>
@@ -148,16 +155,28 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_RefSink">Object.RefSink()</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_RemoveWeakPointer_System_IntPtr__">Object.RemoveWeakPointer(ref nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_RunDispose">Object.RunDispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetData_System_String_System_IntPtr_">Object.SetData(string, nint)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_SetProperty_System_String_GObject_Value_">Object.SetProperty(string, Value)</a>
     </div>
     <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetQdata_GLib_Quark_System_IntPtr_">Object.SetQdata(Quark, nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="GObject.Object.html#GObject_Object_SetValist_System_String_System_IntPtr_">Object.SetValist(string, nint)</a>
+    </div>
+    <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_StealData_System_String_">Object.StealData(string)</a>
     </div>
     <div>
-      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_System_UInt32_">Object.StealQdata(uint)</a>
+      <a class="xref" href="GObject.Object.html#GObject_Object_StealQdata_GLib_Quark_">Object.StealQdata(Quark)</a>
     </div>
     <div>
       <a class="xref" href="GObject.Object.html#GObject_Object_TakeRef">Object.TakeRef()</a>
@@ -178,29 +197,26 @@
       <a class="xref" href="GObject.Object.html#GObject_Object_OnNotify">Object.OnNotify</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">object.Equals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">object.ReferenceEquals(object, object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="JavaScriptCore.html">JavaScriptCore</a></h6>
-  <h6><strong>Assembly</strong>: JavaScriptCore-5.0.dll</h6>
+  <h6><strong>Assembly</strong>: JavaScriptCore-6.0.dll</h6>
   <h5 id="JavaScriptCore_Value_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Value : Object, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Value : Object, IObject, INotifyPropertyChanged, IDisposable, IHandle, GTypeProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -213,7 +229,7 @@
     <pre><code class="lang-csharp hljs">protected Value(bool owned, params ConstructArgument[] constructArguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -223,7 +239,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">owned</span></td>
         <td></td>
       </tr>
@@ -243,7 +259,7 @@
     <pre><code class="lang-csharp hljs">protected Value(nint ptr, bool ownedRef)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -253,12 +269,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">ownedRef</span></td>
         <td></td>
       </tr>
@@ -274,7 +290,7 @@
     <pre><code class="lang-csharp hljs">public static readonly Property&lt;Context?, Value&gt; ContextPropertyDefinition</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -299,7 +315,7 @@
     <pre><code class="lang-csharp hljs">public Context? Context { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -315,6 +331,47 @@
   </table>
   <h3 id="methods">Methods
 </h3>
+  <a id="JavaScriptCore_Value_ArrayBufferGetData_" data-uid="JavaScriptCore.Value.ArrayBufferGetData*"></a>
+  <h4 id="JavaScriptCore_Value_ArrayBufferGetData_System_UIntPtr__" data-uid="JavaScriptCore.Value.ArrayBufferGetData(System.UIntPtr@)">ArrayBufferGetData(ref nuint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
+public nint ArrayBufferGetData(ref nuint size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="JavaScriptCore_Value_ArrayBufferGetSize_" data-uid="JavaScriptCore.Value.ArrayBufferGetSize*"></a>
   <h4 id="JavaScriptCore_Value_ArrayBufferGetSize" data-uid="JavaScriptCore.Value.ArrayBufferGetSize">ArrayBufferGetSize()</h4>
   <div class="markdown level1 summary"></div>
@@ -325,7 +382,7 @@
 public nuint ArrayBufferGetSize()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -334,21 +391,21 @@ public nuint ArrayBufferGetSize()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="JavaScriptCore_Value_ConstructorCallv_" data-uid="JavaScriptCore.Value.ConstructorCallv*"></a>
-  <h4 id="JavaScriptCore_Value_ConstructorCallv_System_UInt32_JavaScriptCore_Value___" data-uid="JavaScriptCore.Value.ConstructorCallv(System.UInt32,JavaScriptCore.Value[])">ConstructorCallv(uint, Value[])</h4>
+  <a id="JavaScriptCore_Value_ConstructorCall_" data-uid="JavaScriptCore.Value.ConstructorCall*"></a>
+  <h4 id="JavaScriptCore_Value_ConstructorCall_System_UInt32_JavaScriptCore_Value___" data-uid="JavaScriptCore.Value.ConstructorCall(System.UInt32,JavaScriptCore.Value[])">ConstructorCall(uint, Value[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Value ConstructorCallv(uint nParameters, Value[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public Value ConstructorCall(uint nParameters, Value[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -358,7 +415,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nParameters</span></td>
         <td></td>
       </tr>
@@ -370,7 +427,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -384,16 +441,16 @@ public nuint ArrayBufferGetSize()</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="JavaScriptCore_Value_FunctionCallv_" data-uid="JavaScriptCore.Value.FunctionCallv*"></a>
-  <h4 id="JavaScriptCore_Value_FunctionCallv_System_UInt32_JavaScriptCore_Value___" data-uid="JavaScriptCore.Value.FunctionCallv(System.UInt32,JavaScriptCore.Value[])">FunctionCallv(uint, Value[])</h4>
+  <a id="JavaScriptCore_Value_FunctionCall_" data-uid="JavaScriptCore.Value.FunctionCall*"></a>
+  <h4 id="JavaScriptCore_Value_FunctionCall_System_UInt32_JavaScriptCore_Value___" data-uid="JavaScriptCore.Value.FunctionCall(System.UInt32,JavaScriptCore.Value[])">FunctionCall(uint, Value[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Value FunctionCallv(uint nParameters, Value[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public Value FunctionCall(uint nParameters, Value[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -403,7 +460,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nParameters</span></td>
         <td></td>
       </tr>
@@ -415,7 +472,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -438,7 +495,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     <pre><code class="lang-csharp hljs">public Context GetContext()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -458,10 +515,10 @@ public nuint ArrayBufferGetSize()</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nuint GetGType()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Type GetGType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -470,7 +527,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -484,7 +541,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsArray()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -493,7 +550,7 @@ public nuint ArrayBufferGetSize()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -508,7 +565,7 @@ public nuint ArrayBufferGetSize()</code></pre>
 public bool IsArrayBuffer()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -517,7 +574,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -531,7 +588,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsBoolean()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -540,7 +597,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -554,7 +611,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsConstructor()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -563,7 +620,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -577,7 +634,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsFunction()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -586,7 +643,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -600,7 +657,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsNull()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -609,7 +666,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -623,7 +680,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsNumber()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -632,7 +689,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -646,7 +703,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsObject()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -655,7 +712,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -669,7 +726,7 @@ public bool IsArrayBuffer()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -678,7 +735,7 @@ public bool IsArrayBuffer()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -693,7 +750,7 @@ public bool IsArrayBuffer()</code></pre>
 public bool IsTypedArray()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -702,7 +759,7 @@ public bool IsTypedArray()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -716,7 +773,7 @@ public bool IsTypedArray()</code></pre>
     <pre><code class="lang-csharp hljs">public bool IsUndefined()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -725,7 +782,7 @@ public bool IsTypedArray()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -739,7 +796,7 @@ public bool IsTypedArray()</code></pre>
     <pre><code class="lang-csharp hljs">public static Value NewArrayFromStrv(Context context, string[] strv)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -754,14 +811,14 @@ public bool IsTypedArray()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">strv</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -784,7 +841,7 @@ public bool IsTypedArray()</code></pre>
     <pre><code class="lang-csharp hljs">public static Value NewBoolean(Context context, bool value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -799,14 +856,14 @@ public bool IsTypedArray()</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -830,7 +887,7 @@ public bool IsTypedArray()</code></pre>
 public static Value NewFromJson(Context context, string json)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -845,14 +902,14 @@ public static Value NewFromJson(Context context, string json)</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">json</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -867,15 +924,15 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     </tbody>
   </table>
   <a id="JavaScriptCore_Value_NewFunctionVariadic_" data-uid="JavaScriptCore.Value.NewFunctionVariadic*"></a>
-  <h4 id="JavaScriptCore_Value_NewFunctionVariadic_JavaScriptCore_Context_System_String_GObject_Callback_System_UIntPtr_" data-uid="JavaScriptCore.Value.NewFunctionVariadic(JavaScriptCore.Context,System.String,GObject.Callback,System.UIntPtr)">NewFunctionVariadic(Context, string?, Callback, nuint)</h4>
+  <h4 id="JavaScriptCore_Value_NewFunctionVariadic_JavaScriptCore_Context_System_String_GObject_Callback_GObject_Type_" data-uid="JavaScriptCore.Value.NewFunctionVariadic(JavaScriptCore.Context,System.String,GObject.Callback,GObject.Type)">NewFunctionVariadic(Context, string?, Callback, Type)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Value NewFunctionVariadic(Context context, string? name, Callback callback, nuint returnType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Value NewFunctionVariadic(Context context, string? name, Callback callback, Type returnType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -890,7 +947,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -900,14 +957,14 @@ public static Value NewFromJson(Context context, string json)</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="GObject.Type.html">Type</a></td>
         <td><span class="parametername">returnType</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -930,7 +987,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static Value NewNull(Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -947,7 +1004,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -970,7 +1027,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static Value NewNumber(Context context, double number)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -985,14 +1042,64 @@ public static Value NewFromJson(Context context, string json)</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">number</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.Value.html">Value</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="JavaScriptCore_Value_NewObject_" data-uid="JavaScriptCore.Value.NewObject*"></a>
+  <h4 id="JavaScriptCore_Value_NewObject_JavaScriptCore_Context_System_IntPtr_JavaScriptCore_Class_" data-uid="JavaScriptCore.Value.NewObject(JavaScriptCore.Context,System.IntPtr,JavaScriptCore.Class)">NewObject(Context, nint, Class?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Value NewObject(Context context, nint instance, Class? jscClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.Context.html">Context</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="JavaScriptCore.Class.html">Class</a></td>
+        <td><span class="parametername">jscClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1015,7 +1122,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static Value NewString(Context context, string? @string)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1030,14 +1137,14 @@ public static Value NewFromJson(Context context, string json)</code></pre>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">string</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1060,7 +1167,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     <pre><code class="lang-csharp hljs">public static Value NewStringFromBytes(Context context, Bytes? bytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1082,7 +1189,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1106,7 +1213,7 @@ public static Value NewFromJson(Context context, string json)</code></pre>
 public static Value NewTypedArray(Context context, TypedArrayType type, nuint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1126,14 +1233,14 @@ public static Value NewTypedArray(Context context, TypedArrayType type, nuint le
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">length</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1157,7 +1264,7 @@ public static Value NewTypedArray(Context context, TypedArrayType type, nuint le
 public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1172,19 +1279,19 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td><span class="parametername">offset</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">long</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td><span class="parametername">length</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1207,7 +1314,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public static Value NewUndefined(Context context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1224,7 +1331,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1247,7 +1354,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public void ObjectDefinePropertyData(string propertyName, ValuePropertyFlags flags, Value? propertyValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1257,7 +1364,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">propertyName</span></td>
         <td></td>
       </tr>
@@ -1282,7 +1389,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public bool ObjectDeleteProperty(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1292,14 +1399,14 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1308,7 +1415,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1322,7 +1429,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public string[] ObjectEnumerateProperties()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1331,7 +1438,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -1345,7 +1452,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public Value ObjectGetProperty(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1355,14 +1462,14 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1385,7 +1492,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public Value ObjectGetPropertyAtIndex(uint index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1395,14 +1502,14 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">index</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1425,7 +1532,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public bool ObjectHasProperty(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1435,14 +1542,14 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1451,21 +1558,21 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="JavaScriptCore_Value_ObjectInvokeMethodv_" data-uid="JavaScriptCore.Value.ObjectInvokeMethodv*"></a>
-  <h4 id="JavaScriptCore_Value_ObjectInvokeMethodv_System_String_System_UInt32_JavaScriptCore_Value___" data-uid="JavaScriptCore.Value.ObjectInvokeMethodv(System.String,System.UInt32,JavaScriptCore.Value[])">ObjectInvokeMethodv(string, uint, Value[])</h4>
+  <a id="JavaScriptCore_Value_ObjectInvokeMethod_" data-uid="JavaScriptCore.Value.ObjectInvokeMethod*"></a>
+  <h4 id="JavaScriptCore_Value_ObjectInvokeMethod_System_String_System_UInt32_JavaScriptCore_Value___" data-uid="JavaScriptCore.Value.ObjectInvokeMethod(System.String,System.UInt32,JavaScriptCore.Value[])">ObjectInvokeMethod(string, uint, Value[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Value ObjectInvokeMethodv(string name, uint nParameters, Value[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public Value ObjectInvokeMethod(string name, uint nParameters, Value[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1475,12 +1582,12 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">nParameters</span></td>
         <td></td>
       </tr>
@@ -1492,7 +1599,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1515,7 +1622,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public bool ObjectIsInstanceOf(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1525,14 +1632,14 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1541,7 +1648,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1555,7 +1662,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public void ObjectSetProperty(string name, Value property)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1565,7 +1672,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -1585,7 +1692,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public void ObjectSetPropertyAtIndex(uint index, Value property)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1595,7 +1702,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">index</span></td>
         <td></td>
       </tr>
@@ -1615,7 +1722,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public bool ToBoolean()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1624,7 +1731,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1638,7 +1745,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public double ToDouble()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1647,7 +1754,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">double</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1661,7 +1768,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     <pre><code class="lang-csharp hljs">public int ToInt32()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1670,7 +1777,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1685,7 +1792,7 @@ public Value NewTypedArrayWithBuffer(TypedArrayType type, nuint offset, long len
 public string ToJson(uint indent)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1695,14 +1802,14 @@ public string ToJson(uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">uint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">indent</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1711,7 +1818,7 @@ public string ToJson(uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1725,7 +1832,7 @@ public string ToJson(uint indent)</code></pre>
     <pre><code class="lang-csharp hljs">public string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1734,7 +1841,7 @@ public string ToJson(uint indent)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">string</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1748,7 +1855,7 @@ public string ToJson(uint indent)</code></pre>
     <pre><code class="lang-csharp hljs">public Bytes ToStringAsBytes()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1772,7 +1879,7 @@ public string ToJson(uint indent)</code></pre>
 public Value TypedArrayGetBuffer()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1782,6 +1889,47 @@ public Value TypedArrayGetBuffer()</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="JavaScriptCore.Value.html">Value</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="JavaScriptCore_Value_TypedArrayGetData_" data-uid="JavaScriptCore.Value.TypedArrayGetData*"></a>
+  <h4 id="JavaScriptCore_Value_TypedArrayGetData_System_UIntPtr__" data-uid="JavaScriptCore.Value.TypedArrayGetData(System.UIntPtr@)">TypedArrayGetData(out nuint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Version(&quot;2.38&quot;)]
+public nint TypedArrayGetData(out nuint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1796,7 +1944,7 @@ public Value TypedArrayGetBuffer()</code></pre>
 public nuint TypedArrayGetLength()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1805,7 +1953,7 @@ public nuint TypedArrayGetLength()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1820,7 +1968,7 @@ public nuint TypedArrayGetLength()</code></pre>
 public nuint TypedArrayGetOffset()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1829,7 +1977,7 @@ public nuint TypedArrayGetOffset()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1844,7 +1992,7 @@ public nuint TypedArrayGetOffset()</code></pre>
 public nuint TypedArrayGetSize()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1853,7 +2001,7 @@ public nuint TypedArrayGetSize()</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">nuint</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1868,7 +2016,7 @@ public nuint TypedArrayGetSize()</code></pre>
 public TypedArrayType TypedArrayGetType()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -1887,10 +2035,10 @@ public TypedArrayType TypedArrayGetType()</code></pre>
       <a class="xref" href="GObject.IObject.html">IObject</a>
   </div>
   <div>
-      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
   </div>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
   </div>
   <div>
       <a class="xref" href="GLib.IHandle.html">IHandle</a>
@@ -1898,6 +2046,7 @@ public TypedArrayType TypedArrayGetType()</code></pre>
   <div>
       <a class="xref" href="GObject.GTypeProvider.html">GTypeProvider</a>
   </div>
+
 </article>
           </div>
 
@@ -1926,7 +2075,7 @@ public TypedArrayType TypedArrayGetType()</code></pre>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>
